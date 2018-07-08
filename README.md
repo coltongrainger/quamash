@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 ## Welcome
 
 This wiki contains my lecture notes and a partial bibliography.
@@ -12,8 +16,10 @@ I have taken similar projects as rubrics; see also:
 
 ### License
 
-Content is licensed (to the extend possible under law) as public domain.
+Content is licensed (to the extend possible under law) as public domain. 
 
 ### Contributing
 
-One may fork the repository on Github, and from there open a pull-request.
+One may fork the 
+[wikidata repo on Github](https://github.com/coltongrainger/quamash),
+and from there open a pull-request.
