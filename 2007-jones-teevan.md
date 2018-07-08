@@ -1,13 +1,7 @@
 ---
 title: Personal Information Management
 author: Colton Grainger
-date:
-revised:
-status:
-belief:
 ---
-
-## Personal Information Management
 
 p. 3
 
