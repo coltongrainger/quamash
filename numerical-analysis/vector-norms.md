@@ -12,8 +12,6 @@ DEF! The $l_\infty$ norm is ... $\norm{x}_\infty = \max\{\abs{x_i} : i=1,n\}$.
 
 EXAMPLE! The $l_2$ norm is ... $\norm{x}_2 = \sum_{i=1}^n \abs{x_i}^2 = \sqrt{x^T x}$.
 
-DEF! We say two vector norms $\norm{\cdot}_\alpha$ and $\norm{\cdot}_beta$ are equivalent when ... 
-
 DEF! A matrix norm is a real valued function $\norm{\cdot}\colon \RR^{m\times n} \to \RR$ with $3$ properties, namely ... it's positive unless zero, or $\norm{A}\geq 0$ and $\norm{A}= 0$ iff $A=0$; it scales, i.e., $\norm{\alpha A} = \abs{\alpha}\cdot \norm{A}$; and it respects the triangle inequality $\norm{A + B} \leq \norm{A}+\norm{B}$.
 
 DEF! A matrix norm has the submultiplicative property iff ... $$\forall A \in \RR^{m\times n}\, \forall B \in \RR^{n\times p}\, \norm{AB}\leq\norm{A}\norm{B}.$$
