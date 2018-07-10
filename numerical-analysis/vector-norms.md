@@ -4,7 +4,7 @@ title: Vector Norms
 
 DEF! A vector norm is a real valued function $\norm{\cdot}\colon \RR^n \to \RR$ with $3$ properties, namely ... it's positive unless zero, or $\norm{x}\geq 0$ and $\norm{x}= 0$ iff $x=0$; it scales, i.e., $\norm{\alpha x} = \abs{\alpha}\cdot \norm{x}$; and it respects the triangle inequality $\norm{x + y} \leq \norm{x}+\norm{y}$.
 
-DEF! The $l_p$ norms (for $p \in \RR+$) are given by ... $\norm{x}_p = \sum_{i=1}^n \abs{x_i}^p$.
+DEF! The $l_p$ norms (for $p \in \RR^+$) are given by ... $\norm{x}_p = \sum_{i=1}^n \abs{x_i}^p$.
 
 FACT! The Holder inequality (of which the Cauchy Bunyakovsky Schwarz inequality is a special case) states ... for all $x,y \in \RR^n$ and $p,q$ such that $\frac1p + \frac1q = 1$ we have $\abs{x^Ty} \leq \norm{x}_p\norm{y}_q$.
 
@@ -27,4 +27,4 @@ EX! The matrix norm given by the max row sum of magnitudes is ... the $l_\infty$
 
 EX! Turns out that the scalar $\max_i\{\sqrt{\lambda_i}: \lambda_i \text{ is an eigenvalue of } A^T A\}$ is given by ... $\norm{A}_2$, the spectral norm.
 
-DEF! Given a vector norm, the induced matrix norm is ... $$\norm{A} = \sup_{x\neq 0} \frac\norm{Ax}\norm{x}.$$
+DEF! Given a vector norm, the induced matrix norm is ... $$\norm{A} = \sup_{x\neq 0} \frac{\norm{Ax}}{\norm{x}}.$$
