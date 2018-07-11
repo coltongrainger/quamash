@@ -4,13 +4,13 @@ toc: false
 
 ## Welcome
 
-This wiki consolidates my maths notes and a partial bibliography.
+This wiki consolidates my notes and a partial bibliography.
 
-I aim to add content while I am preparing for my preliminary exams at CU Boulder. Some of the passages might be intolerable to read raw,^[For example, I have a [parsing script](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.local/bin/scripts/mnep.sh) to format lines beginning with `CAPS!` as [$\LaTeX$ front-back cards](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.config/mnemosyne/config.py) for mnemosyne.] but others I think will be polished and directed a general audience. Moreover, I have for a long time wanted to commit to such a rite of passage.
+I aim to prepare content while I am preparing for my preliminary exams (in mathematics) at CU Boulder. Some passages may be intolerably raw,^[For example, I have a [parsing script](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.local/bin/scripts/mnep.sh) to format lines beginning with `CAPS!` into $\LaTeX$ [front-back cards](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.config/mnemosyne/config.py) for mnemosyne.] but are eventually meant to be *cooked and et*.
 
 ### Related
 
-I have looked up to many others who've started similar projects; please see also:
+I look up to many others who've started similar projects; please see also:
 
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
