@@ -19,9 +19,9 @@ I look up to many others who've started similar projects; please see also:
 - Dave Herman's [Research Blog](https://calculist.blogspot.com/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
 
-### License
+### Colophon
 
-Content (the raw markdown) is licensed to the extend possible under law as [public domain (CC-0)](http://creativecommons.org/about/cc0). (However, attached documents or those linked to may be not be.)
+The markdown files are licensed as [public domain (CC-0)](http://creativecommons.org/about/cc0). Attached documents are provided for educational purpose, and may have their own copyright. [Gitit](https://github.com/jgm/gitit/) is released under the [GNU General Public License](http://www.aaronsw.com/weblog/000360), [Fira Sans](https://github.com/mozilla/Fira) under [SIL Open Font License](https://github.com/mozilla/Fira/blob/master/LICENSE), and [MathJax](https://www.mathjax.org/) under [Apache License 2.0](https://github.com/mathjax/MathJax/blob/master/LICENSE).
 
 ### Contributing
 
