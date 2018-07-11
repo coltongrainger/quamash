@@ -6,7 +6,7 @@ toc: false
 
 This wiki consolidates my notes and a partial bibliography.
 
-I aim to prepare content while I am preparing for my preliminary exams (in mathematics) at CU Boulder. Some passages may be intolerably raw,^[For example, I have a [parsing script](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.local/bin/scripts/mnep.sh) to format lines beginning with `CAPS!` into $\LaTeX$ [front-back cards](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.config/mnemosyne/config.py) for mnemosyne.] but are eventually meant to be *cooked and et*.
+I aim to tend to the content while I am preparing for my preliminary exams (in mathematics) at the University of Colorado in Boulder. Some passages may be intolerably raw,^[For example, I have a [parsing script](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.local/bin/scripts/mnep.sh) to format lines beginning with `CAPS!` into $\LaTeX$ [front-back cards](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.config/mnemosyne/config.py) for mnemosyne.] but others are eventually meant to be *cooked and et*.
 
 ### Related
 
@@ -21,7 +21,7 @@ I look up to many others who've started similar projects; please see also:
 
 ### License
 
-Content (namely, all the markdown) is licensed to the extend possible under law as [public domain (CC-0)](http://creativecommons.org/about/cc0). 
+Content (the raw markdown) is licensed to the extend possible under law as [public domain (CC-0)](http://creativecommons.org/about/cc0). (However, attached documents or those linked to may be not be.)
 
 ### Contributing
 

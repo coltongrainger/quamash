@@ -18,8 +18,7 @@ DEF! A matrix norm has the submultiplicative property iff ... $$\forall A \in \R
 
 Vector norms induce matrix norms; these are called *natural* matrix norms.
 
-FACT! Some matrix norms guaranteed to have the submultiplicative property are ... those
-induced by $l_p$ vector norms.
+FACT! Some matrix norms guaranteed to have the submultiplicative property are ... those induced by $l_p$ vector norms.
 
 EX! The matrix norm given by the max column sum of magnitudes is ... the $l_1$ matrix norm.
 
