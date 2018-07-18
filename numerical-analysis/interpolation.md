@@ -39,7 +39,7 @@ Here's the application of polynomial approximation in numerical quadrature:
 
 The set of Taylor polynomials is an obvious candidate to approximate a differentiable function. Yet, looking at Taylor's theorem, we might not have a promising error bound our interval of integration.
 
-!FACT (Taylor error bounds) Let $f(x)$ be defined on $[a,b]$ and suppose $f^{(n+1)}$ is (defined and) continuous on $[a,b]$. For any $x, x_0 \in [a,b]$ there exists $\xi(x) = \xi$ between $x$ and $x_0$ such that, where $p_n$ is the $n$th degree Taylor polynomial centered at $x_0$, the remainder $r = f - p_n$ is given ... $$r(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$$.
+!FACT (Taylor error bounds) Let $f(x)$ be defined on $[a,b]$ and suppose $f^{(n+1)}$ is (defined and) continuous on $[a,b]$. For any $x, x_0 \in [a,b]$ there exists $\xi(x) = \xi$ between $x$ and $x_0$ such that, where $p_n$ is the $n$th degree Taylor polynomial centered at $x_0$, the remainder $r = f - p_n$ is given ... $$r(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}.$$
 
 For example, the Taylor series representation of the function $f(x) = \frac{1}{1+25x^2}$ only converges uniformly for $\abs{x}<0.2$. 
 
