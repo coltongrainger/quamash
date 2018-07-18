@@ -76,7 +76,7 @@ $$\begin{align} p_1(x) = &\sum_{k=0}^1 f(x1) \cdot l_k(x) &\\
 
 For computational efficiency we are motivated compute $p_n$ from $p_{n-1}$ recursively. In the Newton form we define $p_n$ with the same $n-1$ basis vectors and coordinates as $p_{n-1}$, but add a basis vector that's $0$ at all points $x_i$ with $i < n$. 
 
-Namely, $$p_n(x) = p_{n-1}(x)+a_n\prod_{i < n} (x-x_i)$$ with $$a_n = \left\(f(x_n) - p_{n-1}(x_n)\right)\left(\prod_{i < n} (x_n-x_i)\right)^{-1}.$$
+Namely, $$p_n(x) = p_{n-1}(x)+a_n\prod_{i < n} (x-x_i)$$ with $$a_n = \left(f(x_n) - p_{n-1}(x_n)\right)\left(\prod_{i < n} (x_n-x_i)\right)^{-1}.$$
 
 In practice we express the coordinate $a_n$ in recursive *divided differences*, i.e., $$a_n = f[x_0,\ldots,x_n] = \frac{f[x_1, \ldots, x_n] - f[x_0, \ldots, x_{n-1}]}{x_n-x_0}$$
 where the identification $\forall x. f[x] = f(x)$ is the base for recursion.
