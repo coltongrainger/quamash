@@ -2,6 +2,8 @@
 title: Special Matrices
 ---
 
+\renewcommand{\abs}[1]{\lvert #1\rvert}
+
 When the set of $n \times n$ matrices with entries from $\mathcal{R}$ forms a
 ring under matrix addition and multiplication, we have a 
 [Matrix Ring](https://en.wikipedia.org/wiki/Matrix_ring) (or "full ring of n-by-n

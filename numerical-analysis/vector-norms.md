@@ -2,6 +2,10 @@
 title: Vector Norms
 ---
 
+\renewcommand{\abs}[1]{\lvert #1\rvert}
+\renewcommand{\norm}[1]{\lVert #1\rVert}
+\renewcommand{\RR}{\mathbf{R}}
+
 DEF! A vector norm is a real valued function $\norm{\cdot}\colon \RR^n \to \RR$ with $3$ properties, namely ... it's positive unless zero, or $\norm{x}\geq 0$ and $\norm{x}= 0$ iff $x=0$; it scales, i.e., $\norm{\alpha x} = \abs{\alpha}\cdot \norm{x}$; and it respects the triangle inequality $\norm{x + y} \leq \norm{x}+\norm{y}$.
 
 DEF! The $l_p$ norms (for $p \in \RR^+$) are given by ... $\norm{x}_p = \sum_{i=1}^n \abs{x_i}^p$.
