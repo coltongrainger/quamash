@@ -9,7 +9,7 @@ This wiki consolidates lecture notes and a partial bibliography.
 
 I aim to tend to the content while I am preparing for preliminary exams (in mathematics) at the University of Colorado in Boulder. Some pages may be intolerably raw,^[Avoid them!] but others are eventually meant to be dug up and eaten. 
 
-The name quamash (kwəˈmæʃ) is an early anglicization of *Camas*:
+The name quamash (kwəˈmæʃ) is an early anglicization of *camas*:
 
 > 1814 *Lewis & Clarke's Exp.* (1893) 958 The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash. (OED)
 
