@@ -41,7 +41,7 @@ For example, the Taylor series representation of the function $f(x) = \frac{1}{1
 
 Consider $f \in C[a,b]$ (the set of continuous real-valued functions on the compact interval $[a,b]$), and let $x_0,\ldots,x_n$ be $n+1$ distinct points. Does there exist polynomial of least degree $p \in \RR[x]$ which *interpolates* $f$ at the given points? such that $f(x_i) = p(x_i)$ for all $i \in \{0,1,\ldots,n\}$? Is it unique?
 
-The fundamental theorem of algebra guarantees uniqueness,[^The difference between any two least degree interpolating polynomials is the zero polynomial.] and Lagrange's construction demonstrates existence.
+The fundamental theorem of algebra guarantees uniqueness,^[The difference between any two least degree interpolating polynomials is the zero polynomial.] and Lagrange's construction demonstrates existence.
 
 DEF! Having $n+1$ distinct points $x_i$ specified, the $n+1$ Lagrange polynomials $l_k$ are written as the product ... $$l_k(x) = \prod_{i\neq k} \frac{x-x_i}{x_k-x_i} \text{ for all } k \in \{0,1,\ldots,n\}.$$
 
