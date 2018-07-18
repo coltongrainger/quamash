@@ -29,7 +29,7 @@ We'll make concrete use of the [Weierstrass Approximation Theorem](https://en.wi
 
 For notation's sake, we also define a general [polynomial ring](https://en.wikipedia.org/wiki/Polynomial_ring).
 
-!DEF (The polynomial ring $K[X]$) Let $K$ be a field. By the ring of polynomials in the indeterminate, $X$, written as $K[X]$, we mean ... the set of all symbols $\sum_{i=1}^n a_i X^i$ where $n \in \NN$ and the coefficients $a_i$ are elements of the field $K$.
+!DEF (The polynomial ring $\mathbf{K}[X]$) Let $\mathbf{K}$ be a field. By the ring of polynomials in the indeterminate, $X$, written as $\mathbf{K}[X]$, we mean ... the set of all symbols $\sum_{i=1}^n a_i X^i$ where $n \in \NN$ and the coefficients $a_i$ are elements of the field $\mathbf{K}$.
 
 Here's the application of polynomial approximation in numerical quadrature:
 

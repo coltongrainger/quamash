@@ -11,7 +11,7 @@ matrices") over the field $\mathcal{R}$, denoted $\mathcal{M}_n(\mathcal{R})$
 (or generally $\mathcal{M}_n$).
 
 For example, the [Biquaternions](https://en.wikipedia.org/wiki/Biquaternion),
-$\mathcal{M}_2(\CC)$ were in algebraic vogue among British mathematicians
+$\mathcal{M}_2(\mathbf{C})$ were in algebraic vogue among British mathematicians
 during the middle of the 19th century. A notable subset is the set of 
 [Pauli Matrices](https://en.wikipedia.org/wiki/Pauli_matrices)---the 
 biquaternions $hi$, $hj$, $hk$---which forms a basis for the vector space of 
