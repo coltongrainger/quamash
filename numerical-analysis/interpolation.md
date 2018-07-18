@@ -7,8 +7,8 @@ author: Colton Grainger
 \renewcommand{\RR}{\mathbf{R}}
 \newcommand{\FF}{\mathbf{F}}
 \renewcommand{\eps}{\varepsilon}
-\renewcommand{\abs}[1]{\lvert#1\rvert}
-\renewcommand{\norm}[1]{\lVert#1\rVert}
+\renewcommand{\abs}[1]{\lvert #1\rvert}
+\renewcommand{\norm}[1]{\lVert #1\rVert}
 
 ## Polynomial approximation
 
