@@ -12,4 +12,4 @@ DEF! $A \in \mathcal{M}_n$ is positive definite iff ... $x^T A x > 0$ for all $x
 
 DEF! $A \in \mathcal{M}_n$ is strictly diagonally dominant iff ... $$\abs{a_{ii}} > \sum_{j\neq i} \abs{a_{ij}}.$$
 
-DEF! $A$ \in \mathcal{M}_n$ is called a band matrix (with bandwidth $2p+1$) iff ... $a_{ij} = 0$ for $\abs{i-j} > p$.
+DEF! $A \in \mathcal{M}_n$ is called a band matrix (with bandwidth $2p+1$) iff ... $a_{ij} = 0$ for $\abs{i-j} > p$.
