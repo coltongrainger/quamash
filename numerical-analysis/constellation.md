@@ -4,8 +4,8 @@
 
 - numerical quadrature
 
-  - differentiation
-  - integration
+    - differentiation
+    - integration
 
 - interpolation
 
@@ -13,12 +13,12 @@
 
 - solution of linear systems
 
-  - error analysis
-  - "distance to singularity"
+    - error analysis
+    - "distance to singularity"
 
 - linearization
 
-  - local/global convergence?
+    - local/global convergence?
 
 ### Desiderata
 
@@ -32,7 +32,7 @@ We can evaluate a method based on:
 
 - implementation
 
-  - functional/imperative
-  - legibility
-  - sanity
-  - computational complexity
+    - functional/imperative
+    - legibility
+    - sanity
+    - computational complexity
