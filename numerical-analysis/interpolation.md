@@ -74,4 +74,51 @@ $$\begin{align} p_1(x) = &\sum_{k=0}^1 f(x1) \cdot l_k(x) &\\
 &=f(x_0) + f(x_1)\frac{f(x_1)-f(x_0)}{x_1-x_0}& \text{(Newton form)}
 \end{align}$$
 
-For interpolating polynomials of degree $n>1$, we want a recursive formula to compute $p_n$ from $p_{n-1}$.
+For computational efficiency we are motivated compute $p_n$ from $p_{n-1}$ recursively. In the Newton form we define $p_n$ with the same $n-1$ basis vectors and coordinates as $p_{n-1}$, but add a basis vector that's $0$ at all points $x_i$ with $i < n$. 
+
+Namely, $$p_n(x) = p_{n-1}(x)+a_n\prod_{i < n} (x-x_i)$$ with $$a_n = \left\(f(x_n) - p_{n-1}(x_n)\right)\left(\prod_{i < n} (x_n-x_i)\right)^{-1}.$$
+
+In practice we express the coordinate $a_n$ in recursive *divided differences*, i.e., $$a_n = f[x_0,\ldots,x_n] = \frac{f[x_1, \ldots, x_n] - f[x_0, \ldots, x_{n-1}]}{x_n-x_0}$$
+where the identification $\forall x. f[x] = f(x)$ is the base for recursion.
+
+A general Newton form interpolating polynomial is written
+$$p_n(x) = a_0 + a_1(x-x_0) + \cdots + a_n(x-x_0)\cdots(x-x_{n-1})$$
+which prompts another view
+$$p_n(x) =  a_0 + (x-x_0)\bigg(a_1 + (x-x_1)\big(a_2+\cdots + a_n(x-x_{n-1})\cdots\big)\bigg).$$
+
+Redistributing the parentheses by nesting them, we can evaulate $p_n(x)$ with $O(n)$ operations, namely, $n$ multiplications and $n$ additions.
+
+## Matrix interpretation
+
+For $n+1$ generating points $(x_i,f(x_i))$, there is a unique interpolating polynomial $p_n$ of degree $n$.
+
+But $p_n$ is just point in the vector space $\mathcal{P}_n$, so we should try to express the constraint that $p_n(x_i) = f(x_i) \forall i \in \{0,1,\ldots,n\}$ as $n+1$ linear equations to determine the coordinates of $p_n$. 
+
+We are required to choose a basis for $\mathcal{P}_n$, and we've thus far seen three:
+
+- the standard basis $\{1,x,x^2,\ldots, x^n\} 
+
+  - yields a power series approximation[^taylor] to $f$
+
+- the Lagrange polynomials $\{l_0, l_1, \ldots, l_n\}$
+
+  - produces the Lagrange form of the interpolating polynomial
+
+- the basis of the Newton form $\{1, (x-x_0), \ldots, (x-x_n)\}$
+
+  - gives rise to the Newton/nested form
+
+[^taylor]: Indeed, the standard basis *is a minimal spanning set* for $\mathcal{P}_n$, so the divergence of Taylor series representation cannot be blamed on having the wrong vectors to create $p_n$. Instead, we find that the Taylor series representation implements a differential (rather than linear algebraic) algorithm for reducing a highly ill-conditioned system, which, in some cases, as when the function to be interpolated is analytic, proceeds, but fails for merely continuous functions.
+
+The constraint as a matrix equation (in any basis) is
+$$A \begin{pmatrix}a_0\\ \vdots\\ a_n\end{pmatrix} = \begin{pmatrix}f(x_0)\\ \vdots\\ f(x_n)\end{pmatrix}.$$
+
+For the standard basis, $A$ is the Vandermode matrix, which tends to be ill-conditioned.
+
+For the Lagrange polynomial basis, we have simply[^It's computing the basis that's expensive!] $A = I$.
+
+For the basis of the Newton form, $A$ is a lower triangular matrix. Solving $A a = f$ for the coefficient vector $a$ requires $n^2/2$ operations---the same required to compute with a divided difference table. In practice, we use divided differences to avoid storing the matrix elements in memory.
+
+## Error bounds
+
+THEOREM! Let $f \in C^{n+1}[a,b]$, the $x_i$ be $n+1$ distinct points in $[a,b]$, and suppose $p_n$ is a polynomial of degree at most $n$ that interpolates $f$ at the $x_i$. Given $x \in [a,b]$, there exists a point $\xi \in (a,b)$ such that ... $$f(x) = p_n(x) + \frac{f^{(n+1)}}{(n+1)!}\prod_{\forall i}(x-x_i).$$
