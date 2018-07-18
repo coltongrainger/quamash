@@ -1,16 +1,21 @@
 ---
+title: Lecture Notes Wiki
 toc: false
 ---
 
 ## Welcome
 
-This wiki consolidates my notes and a partial bibliography.
+This wiki consolidates lecture notes and a partial bibliography.
 
-I aim to tend to the content while I am preparing for my preliminary exams (in mathematics) at the University of Colorado in Boulder. Some passages may be intolerably raw,^[For example, I have a [parsing script](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.local/bin/scripts/mnep.sh) to format lines beginning with `CAPS!` into $\LaTeX$ [front-back cards](https://raw.githubusercontent.com/coltongrainger/dotfiles/master/.config/mnemosyne/config.py) for mnemosyne.] but others are eventually meant to be *cooked and et*.
+I aim to tend to the content while I am preparing for preliminary exams (in mathematics) at the University of Colorado in Boulder. Some pages may be intolerably raw,^[Avoid them!] but others are eventually meant to be dug up and eaten. 
 
-### Related
+The name quamash (kwəˈmæʃ) is an early anglicization of *Camas*:
 
-I look up to many others who've started similar projects; please see also:
+> 1814 *Lewis & Clarke's Exp.* (1893) 958 The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash. (OED)
+
+### Related work
+
+I appreciate folks who've started similar projects; see also:
 
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
@@ -25,4 +30,4 @@ The markdown files are licensed as [public domain (CC-0)](http://creativecommons
 
 ### Contributing
 
-One may edit a fork of the [wikidata repo](https://github.com/coltongrainger/quamash) on GitHub, and from there open a pull-request.
+One may fork the [markdown files on github](https://github.com/coltongrainger/quamash), edit, and from there open a pull-request.
