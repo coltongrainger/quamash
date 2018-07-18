@@ -35,7 +35,7 @@ The set of Taylor polynomials is an obvious candidate to approximate a different
 
 !FACT (Taylor error bounds) Let $f(x)$ be defined on $[a,b]$ and suppose $f^{(n+1)}$ is (defined and) continuous on $[a,b]$. For any $x, x_0 \in [a,b]$ there exists $\xi(x) = \xi$ between $x$ and $x_0$ such that, where $p_n$ is the $n$th degree Taylor polynomial centered at $x_0$, the remainder $r = f - p_n$ is given ... $$r(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-x_0)^{n+1}$$.
 
-For example, the Taylor series representation of the function $f(x) = \frac{1}{1+25x^2}$ only converges uniformly for $\abs{x}<0.2$. We are motivated to define another set of polynomials to approximate continuous real-valued functions on some compact interval.
+For example, the Taylor series representation of the function $f(x) = \frac{1}{1+25x^2}$ only converges uniformly for $\abs{x}<0.2$. 
 
 ## Lagrange form
 
@@ -68,32 +68,32 @@ Coming up:
 
 ## Newton form
 
-To begin with an example, consider the linear interpolant (degree $n=1$) between $(x_0,f(x_0))$ and $(x_1,f(x_1))$.
+An examples first. Consider the linear interpolant (degree $n=1$) between $(x_0,f(x_0))$ and $(x_1,f(x_1))$.
 
-$$\begin{align} p_1(x) = &\sum_{k=0}^1 f(x1) \cdot l_k(x) &\\
+$$\begin{align} p_1(x) &= f(x_1)l_1(x)+f(x_1)l_1(x) &\\
 &=f(x_0)\frac{x-x_1}{x_0-x_1} + f(x_1)\frac{x-x_0}{x_1-x_0}& \text{(Lagrange form)}\\
 &=f(x_0) + f(x_1)\frac{f(x_1)-f(x_0)}{x_1-x_0}& \text{(Newton form)}
 \end{align}$$
 
-For computational efficiency we are motivated compute $p_n$ from $p_{n-1}$ recursively. In the Newton form we define $p_n$ with the same $n-1$ basis vectors and coordinates as $p_{n-1}$, but add a basis vector that's $0$ at all points $x_i$ with $i < n$. 
+Newton's form allows us to compute $p_n$ from $p_{n-1}$ recursively. That is, we define $p_n$ with the same $n-1$ basis vectors and $n-1$ coordinates as $p_{n-1}$, but add a basis vector that's $0$ at all points $x_i$ with $i < n$. 
 
 Namely, $$p_n(x) = p_{n-1}(x)+a_n\prod_{i < n} (x-x_i)$$ with $$a_n = \left(f(x_n) - p_{n-1}(x_n)\right)\left(\prod_{i < n} (x_n-x_i)\right)^{-1}.$$
 
 In practice we express the coordinate $a_n$ in recursive *divided differences*, i.e., $$a_n = f[x_0,\ldots,x_n] = \frac{f[x_1, \ldots, x_n] - f[x_0, \ldots, x_{n-1}]}{x_n-x_0}$$
-where the identification $\forall x. f[x] = f(x)$ is the base for recursion.
+where the identification $f[x] = f(x)$ for all $x$ is the base for recursion.
 
-A general Newton form interpolating polynomial is written
+The Newton form of the interpolating polynomial is
 $$p_n(x) = a_0 + a_1(x-x_0) + \cdots + a_n(x-x_0)\cdots(x-x_{n-1})$$
-which prompts another view
-$$p_n(x) =  a_0 + (x-x_0)\bigg(a_1 + (x-x_1)\big(a_2+\cdots + a_n(x-x_{n-1})\cdots\big)\bigg).$$
+or, from another view,
+$$p_n(x) =  a_0 + (x-x_0)\bigg(a_1 + (x-x_1)\Big(a_2+\cdots + a_n(x-x_{n-1})\cdots\Big)\bigg).$$
 
-Redistributing the parentheses by nesting them, we can evaulate $p_n(x)$ with $O(n)$ operations, namely, $n$ multiplications and $n$ additions.
+Redistributing the parentheses by nesting them, we can evaluate $p_n(x)$ with $O(n)$ operations, namely, $n$ multiplications and $n$ additions.
 
 ## Matrix interpretation
 
 For $n+1$ generating points $(x_i,f(x_i))$, there is a unique interpolating polynomial $p_n$ of degree $n$.
 
-But $p_n$ is just point in the vector space $\mathcal{P}_n$, so we should try to express the constraint that $p_n(x_i) = f(x_i) \forall i \in \{0,1,\ldots,n\}$ as $n+1$ linear equations to determine the coordinates of $p_n$. 
+But $p_n$ is just point in the vector space $\mathcal{P}_n$, so we should try to express the constraint that $p_n(x_i) = f(x_i)$ for all $i \in \{0,1,\ldots,n\}$ as $n+1$ linear equations to determine the coordinates of $p_n$. 
 
 We are required to choose a basis for $\mathcal{P}_n$, and we've thus far seen three:
 
@@ -116,9 +116,9 @@ $$A \begin{pmatrix}a_0\\ \vdots\\ a_n\end{pmatrix} = \begin{pmatrix}f(x_0)\\ \vd
 
 For the standard basis, $A$ is the Vandermode matrix, which tends to be ill-conditioned.
 
-For the Lagrange polynomial basis, we have simply[^It's computing the basis that's expensive!] $A = I$.
+For the Lagrange polynomial basis, we have simply^[It's computing the basis that's expensive!] $A = I$.
 
-For the basis of the Newton form, $A$ is a lower triangular matrix. Solving $A a = f$ for the coefficient vector $a$ requires $n^2/2$ operations---the same required to compute with a divided difference table. In practice, we use divided differences to avoid storing the matrix elements in memory.
+For the basis of the Newton form, $A$ is a lower triangular matrix. Solving $A \vec{a} = \vec{f}$ for the coordinates $\vec{a}$ requires $n^2/2$ operations---the same required to compute with a divided difference table. In practice, we use divided differences to avoid storing the matrix elements in memory.
 
 ## Error bounds
 
