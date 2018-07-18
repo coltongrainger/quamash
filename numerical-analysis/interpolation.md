@@ -43,7 +43,7 @@ Consider $f \in C[a,b]$ (the set of continuous real-valued functions on the comp
 
 The fundamental theorem of algebra guarantees uniqueness,[^The difference between any two least degree interpolating polynomials is the zero polynomial.] and Lagrange's construction demonstrates existence.
 
-DEF! Having $n+1$ distinct points $x_i$ specified, the $n+1$ Lagrange polynomials $l_k$ are written as the product ... $$l_k(x) = \prod_{i\neq k} \frac{x-x_i}{x_k-x_i} \forall k \in \{0,1,\ldots,n\}.$$
+DEF! Having $n+1$ distinct points $x_i$ specified, the $n+1$ Lagrange polynomials $l_k$ are written as the product ... $$l_k(x) = \prod_{i\neq k} \frac{x-x_i}{x_k-x_i} \text{ for all } k \in \{0,1,\ldots,n\}.$$
 
 It can be shown that the set of $n+1$ Lagrange polynomials spans $\mathcal{P}_n$---the vector space of polynomials of degree at most $n$ over the field $\RR$. We note the Lagrange polynomials form a basis for $\mathcal{P}_n$ since $\dim(\mathcal{P}_n) = n+1$.
 
