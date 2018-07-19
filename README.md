@@ -5,7 +5,7 @@ toc: false
 
 This is an (experimental) open notebook: a repository for lecture notes, definition lists, and tangential ideas I scrawl out on paper through the day, which otherwise accumulate in my recycling bin.
 
-Some pages may be intolerable, in terms of form, conviction, tone, and so on; avoid them! But others I hope to iteratively improve on; these are eventually meant for general consumption.
+Some pages may be intolerable, in terms of form, conviction, tone, and so on; avoid them! But others I hope to iteratively improve; these are eventually meant for general consumption.
 
 The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
