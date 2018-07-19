@@ -21,9 +21,9 @@ Go get 'em!
 
 ## Functions
 
-- Q: When is a function $f\colon A \to B$ said to be \textbf{one-to-one}? 
+- Q: When is a function $f\colon A \to B$ said to be one-to-one? 
 - A: Whenever no two elements in $A$ are mapped by $f$ to the same element in $B$. That is, $f$ is one-to-one if and only if $x_1 \neq x_2 \implies f(x_1) \neq f(x_2)$.
-- Q: When is a function $f\colon A \to B$ said to be \textbf{onto}? 
+- Q: When is a function $f\colon A \to B$ said to be onto? 
 - A: If every element in $B$ is the image of some element in $A$. That is, $f$ is onto if and only if for all $b \in B$, there exists $a \in A$ such that $f(a) = b$.
 - Q: Suppose $f \colon A \to B$ is a function. When does the inverse function $f^{-1}\colon B \to A$ exist? Define it. 
 - A: The proper inverse,\[f^{-1}\colon B \to A \text{ s.th. } f^{-1} \circ f = \text{id}_A \text{ and }f \circ f^{-1} = \text{id}_B,\]exists exactly when $f$ is both one-to-one and onto, i.e. when $f$ is a \textbf{bijection}. We define $f^{-1}:B \to A$ by \[f^{-1}(b) = a \Leftrightarrow f(a) = b.\]
