@@ -57,7 +57,7 @@ Now, for a bit of motivation from Scott Aaronson's *[Trigonometry? No Way: These
 - A: It is $\mathbf{r} -\mathbf{r}_0$, i.e. ``to the point, from the source.''
 - Q: Classically define an ellipse. 
 - A: An ellipse is the set of points in the plane such that the sum of the distances from every point on the ellipse to two given fixed points (the foci) is a constant. (And to avoid a degenerate case, the constant sum must be greater than the distance between the foci.)
-- Q: Describe the \emphfeatures of an ellipse. 
+- Q: Describe the features of an ellipse. 
 - A: The longer symmetry axis of an ellipse is called the major axis (on which the foci are located), the shorter one is the minor axis. The endpoints of the major axis are the vertices. The eccentricity of an ellipse is the ratio of the length of the segment connecting the foci to the length of the minor axis.
 - Q: What is the standard equation of an ellipse centered at the origin---with axes parallel to the coordinate axes? 
 - A: It is $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1. $$
@@ -105,7 +105,7 @@ Now, for a bit of motivation from Scott Aaronson's *[Trigonometry? No Way: These
 
 - Q: Logarithms are exponents. Whence $\log_bx = y$ means 
 - A: $b^y = x$.
-- Q: The function $f^{-1}(y) = \log_by$ is the inverse of the exponential function $f(x)= b^x$. State the domain of the identity function $$(f^{-1} \circ f)(x) = \log_b(b^x)$$ and the domain of the \emph{other} identity function $$(f \circ f^{-1})(y) =b^{\log_b(y)}.$$ 
+- Q: The function $f^{-1}(y) = \log_by$ is the inverse of the exponential function $f(x)= b^x$. State the domain of the identity function $$(f^{-1} \circ f)(x) = \log_b(b^x)$$ and the domain of the other identity function $$(f \circ f^{-1})(y) =b^{\log_b(y)}.$$ 
 - A: The domain of $f^{-1} \circ f$ is $\mathbf{R}$. The domain of $f \circ f^{-1}$ is $\{y \in \mathbf{R} : y > 0\}$.
 - Q: What restrictions exist on $b$ such that $x = \log_b(y)$ is the well defined inverse function of $y = b^x$? 
 - A: We require $b > 0$ and $b \neq 1$.
@@ -176,11 +176,11 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: Consider real and imaginary parts\begin{align*}&\cos(\alpha + \beta) + i\sin(\alpha + \beta) \\& = \left[\cos\alpha\cos\beta - \sin\alpha\sin\beta\right] + i\left[\cos\alpha\sin\beta+\sin\alpha\cos\beta\right].\end{align*}Recalling $\cos(-\beta) = \cos\beta$ and $\sin(-\beta) = -\sin\beta$,\begin{align*}&\cos(\alpha + (-\beta)) + i\sin(\alpha +(-\beta)) \\& = \left[\cos\alpha\cos(-\beta) - \sin\alpha\sin(-\beta)\right] + i\left[\cos\alpha\sin(-\beta)+\sin\alpha\cos(-\beta)\right]\\& = \left[\cos\alpha\cos\beta + \sin\alpha\sin\beta\right] + i\left[-\cos\alpha\sin\beta+\sin\alpha\cos\beta\right].\end{align*}
 - Q: In the (polar coordinate) plane, what is the equation of a circle with the line segment from the origin to the point $(2a, 0)$ as a diameter (for any nonzero $a \in \RR$)? 
 - A: Intuitively picturing the cosine function ``rolled around" the origin, we find$$r(\theta) = 2a\cos(\theta)$$ where $r$ is a function of $\theta$. If $a>0$, then the circle lies on the $\theta = 0$ side of the origin. If $a <0$, then the circles lies on the $\theta = \pi$ side of the origin.
-- Q: In the plane, what is the \emph{polar} equation of a circle with diameter connecting the origin to the point $(2a, 0)$? 
+- Q: In the plane, what is the polar equation of a circle with diameter connecting the origin to the point $(2a, 0)$? 
 - A: Picturing the cosine function ``rolled around" the origin, we find$$r(\theta) = 2a\cos(\theta)$$ where $r$ is a function of $\theta$.\begin{itemize}\item If $a>0$, the circle lies in the $\theta = 0$ direction.\item If $a <0$, the circles lies in the $\theta = \pi$ direction.\end{itemize}
-- Q: In the plane, what is the \emph{polar} equation of a circle with diameter connecting the origin to the point $(2a, \frac{\pi}{2})$? 
+- Q: In the plane, what is the polar equation of a circle with diameter connecting the origin to the point $(2a, \frac{\pi}{2})$? 
 - A: Picturing the sine function ``rolled around" the origin, we find$$r(\theta) = 2a\sin(\theta)$$ where $r$ is a function of $\theta$.\begin{itemize}\item If $a>0$, the circle lies in the $\theta = \frac{\pi}{2}$ direction.\item If $a <0$, the circles lies in the $\theta = -\frac{\pi}{2}$ direction.\end{itemize}
-- Q: In the plane, what is the \emph{polar} equation of a cardioid with axis of symmetry connecting the origin to the point a radial distance of $4a$ away at an angle of $\theta =0$? 
+- Q: In the plane, what is the polar equation of a cardioid with axis of symmetry connecting the origin to the point a radial distance of $4a$ away at an angle of $\theta =0$? 
 - A: Picturing a upshifted cosine function ``rolled around" the origin, we find$$r(\theta) = 2a(1+\cos(\theta))$$ where $r$ is a function of $\theta$. Note that $a>0$ implies the cardioid lies in the $\theta = 0$ direction.
 - Q: Express $\sin 2\theta$ in terms of $\cos\theta$ and $\sin\theta$. 
 - A: Given $$\sin(\alpha+\beta) = \cos\alpha\sin\beta + \sin\alpha\cos\beta,$$ substitute $\theta = \alpha = \beta$ to find $$\sin(2\theta) = 2\sin\theta\cos\theta.$$
@@ -231,7 +231,7 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: If $f(x)$ is a positive, monotonically decreasing function for $x\geq 1$, such that $f(n) = a_n$ for all $n$ in $\NN$, then $$\sum_{n=1}^{\infty}a_n \text{ conv. } \Leftrightarrow \int_1^\infty f(x)dx \text{ conv.}$$
 - Q: Consider a series $\sum_{n=1}^{\infty}a_n$. State the geometric series test for convergence. 
 - A: A series, $\sum_{n=1}^{\infty}a_n$, is called geometric if and only if $$a_n = kr^n$$ for some constant $k$. The limit of a geometric series is, pneumatically, $$\frac{\text{first term}}{1-\text{ ratio between terms}}.$$
-- Q: State the \textbf{p-series test} for convergence. 
+- Q: State the p-series test for convergence. 
 - A: The series $$\sum_{n=1}^\infty \frac{1}{n^p}$$ converges if and only if $p>1$; $\sum1/{n^p}$ diverges when $p \leq 1$. When $p = 1$, the (harmonic) series $\sum 1/n$ diverges.
 - Q: Consider a series $\sum_{n=1}^{\infty}a_n$. State the ratio test for absolute convergence. 
 - A: We'll test $\sum a_n$ for absolute convergence. Form the limit $$L = \lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|.$$ Then,\begin{align*}&L < 1 \implies \sum |a_n| \text{ conv }\\&L > 1\implies \sum |a_n| \text{ div }\\&L = 0 \text{ the test is inconclusive}).\end{align*}
@@ -249,21 +249,36 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 ## Continuity 
 
 - Q: A real number $x$ is a limit point of the set $A\subseteq\RR$ if and only if 
-- A: either\begin{itemize}\item $x = \lim{a_n}$ for some sequence of real numbers $\{a_n\}_{n\in\NN}$ contained in a set $A$ satisfying $a_n \neq x$ for all $n \in \NN$; or\itemfor every $\RR_{std}$-open set $U$ containing $x$, the intersection $(U\setminus\{x\})\cap A$ is not empty.\end{itemize}
-- Q: A function $f\colon D \subseteq \RR \to \RR$ is \textbf{continuous at a point} $x$ if and only if (state the distance metric definition) 
-- A: for every $\eps>0$ there is a $\delta >0$ such that $$\text{if } z\in D \text{ and } |x-z|<\delta \text{ then } |f(x)-f(z)|<\eps.$$ We say that $f$ is \textbf{continuous} if it is \textbf{continuous at every point} $x$ in its domain $D$.
-- Q: A function $f\colon D \subseteq \RR \to \RR$ is \textbf{continuous} $x$ if and only if (state the topological definition) 
+- A: either
+    - $x = \lim{a_n}$ for some sequence of real numbers $\{a_n\}_{n\in\NN}$ contained in a set $A$ satisfying $a_n \neq x$ for all $n \in \NN$; or
+    - for every $\RR_{std}$-open set $U$ containing $x$, the intersection $(U\setminus\{x\})\cap A$ is not empty.
+- Q: A function $f\colon D \subseteq \RR \to \RR$ is continuous at a point $x$ if and only if (state the distance metric definition) 
+- A: for every $\eps>0$ there is a $\delta >0$ such that $$\text{if } z\in D \text{ and } |x-z|<\delta \text{ then } |f(x)-f(z)|<\eps.$$ We say that $f$ is continuous if it is continuous at every point $x$ in its domain $D$.
+- Q: A function $f\colon D \subseteq \RR \to \RR$ is continuous $x$ if and only if (state the topological definition) 
 - A: for every $\RR_{std}$-open set $U \subseteq \RR$, $f^{-1}(U)$ is open in $D$ (where $D$ is given the subspace topology from $\RR_{std}$).
-- Q: Consider the function $f\colon D \subseteq \RR \to \RR$. The \textbf{limit of the function} $f(x)$ (as $x$ approaches $a$) is$L$if and only if 
-- A: either\begin{itemize}\item for every sequence $(x_n) \subseteq D$ such that $x_n \to a$, the sequence $(f(x_n))$ converges to $L$; or\item for every $\eps>0$ there is a $\delta >0$ such that $$\text{if } x\in D \text{ and } |x-a|<\delta \text{ then } |f(x)-L|<\eps.$$\end{itemize}In either case we write $\lim_{x\to a} f(x) = L$.
-- Q: We say that a function $f$ is \textbf{continuous at }$\mathbf{a}$ if and only if (point-limit definition)
+- Q: Consider the function $f\colon D \subseteq \RR \to \RR$. The limit of the function $f(x)$ (as $x$ approaches $a$) is $L$ if and only if 
+- A: either 
+    - for every sequence $(x_n) \subseteq D$ such that $x_n \to a$, the sequence $(f(x_n))$ converges to $L$; or
+    - for every $\eps>0$ there is a $\delta >0$ such that $$\text{if } x\in D \text{ and } |x-a|<\delta \text{ then } |f(x)-L|<\eps.$$
+  In either case we write $\lim_{x\to a} f(x) = L$.
+
+- Q: We say that a function $f$ is continuous at $a$ if and only if (point-limit definition)
 - A: it is true that $$\lim_{x\to a} f(x) = f(a).$$First, $f$ must be defined at $x =a$ (so that $f(a)$ exists); second, the limit of $f(x)$ as $x \to a$ must exist (and be finite); and third, this limit must be equal to the value of $f$ at $x=a$.
-- Q: For what values of $x \in \RR$ are the following functions cts? \begin{itemize}\item Any constant function, $f(x) =k$\item Any polynomialfunction, $$f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0$$\item Any exponential function, $f(x) = k^x$ (with $k>0$)\end{itemize} 
+- Q: For what values of $x \in \RR$ are the following functions cts? 
+    - Any constant function, $f(x) =k$
+    - Any polynomial function, $$f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x + a_0$$
+    - Any exponential function, $f(x) = k^x$ (with $k>0$)
 - A: Everywhere! That is, for all values $x$ in $\RR$.
 - Q: The following functions are continuous everywhere they're defined: 
-- A: \begin{itemize}\item Every function of the form $f(x) = x^r$ (with $r \in \QQ$)\item The logarithm function, $f(x) = \log x$\item The trig functions\end{itemize}
+- A: 
+    - Every function of the form $f(x) = x^r$ (with $r \in \QQ$)
+    - The logarithm function, $f(x) = \log x$
+    - The trig functions
 - Q: If the functions $f$ and $g$ are both continuous at $a$, then each of the following functions is also continuous at $a$: 
-- A: \begin{itemize}\item $(f+g)(x) = f(x)+g(x)$\item $(f\cdot g)(x) =f(x)\cdot g(x)$\item $\left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}$ (provided that $g(a) \neq 0$)\end{itemize}
+- A: 
+    - $(f+g)(x) = f(x)+g(x)$
+    - $(f\cdot g)(x) =f(x)\cdot g(x)$
+    - $\left(\frac{f}{g}\right)(x) = \frac{f(x)}{g(x)}$ (provided that $g(a) \neq 0$)
 - Q: If $f:X \to Y$ is continuous at $a \in X$ and $g:Y \to Z$ is continuous at $f(a) \in Y$, is the composite function $g \circ f : X \to Z$ continuous at $x =a$? 
 - A: Of course it is!
 - Q: Suppose $f$ is defined on a closed interval $[a,b]$. Define continuity at the left-hand endpoint, $a$. Also define continuity at the right-hand endpoint, $b$.  
@@ -285,99 +300,110 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: Well, if $\arcsin(x) = \theta$, then $x = \sin(\theta)$. Applying $\frac{d}{dx}$ to both sides of the equation, we find\begin{align*}1 &= \frac{d}{dx}\sin(\theta)\\&= \frac{d}{d\theta}\sin(\theta)\frac{d\theta}{dx}\text{ (by the chain rule)}\\&= \cos(\theta) \frac{d\theta}{dx}\\&= \cos(\arcsin(x)) \frac{d\theta}{dx}.\end{align*}Whence $\frac{d\theta}{dx} =\frac{1}{\cos(\arcsin(x))}= \frac{1}{\sqrt{1-x^2}}.$
 - Q: What is the derivative (with respect to $x$) of $\theta = \arccos(x)$? 
 - A: Well, if $\arccos(x) = \theta$, then $x = \cos(\theta)$. Applying $\frac{d}{dx}$ to both sides of the equation, we find\begin{align*}1 &= \frac{d}{dx} \cos(\theta)\\ &= \frac{d}{d\theta}\cos(\theta)\frac{d\theta}{dx}\text{ (by the chain rule)}\\ &= -\sin(\theta) \frac{d\theta}{dx}\\ &= -\sin(\arccos(x)) \frac{d\theta}{dx}.\end{align*}Whence $\frac{d\theta}{dx} =\frac{-1}{\sin(\arccos(x))}= \frac{-1}{\sqrt{1-x^2}}.$
-- Q: State the \textbf{Extreme Value Theorem}. 
+- Q: State the Extreme Value Theorem. 
 - A: Suppose $f:[a,b] \to \RR$ is a continuous function. There exist points $c$ and $d$ in $[a,b]$ such that $$f(c)\leq f(x)\leq f(d)$$ holds true for every $x \in [a,b]$.
-- Q: State \textbf{Bolzano's theorem}. 
+- Q: State Bolzano's theorem. 
 - A: Suppose $f:[a,b] \to \RR$ is a continuous function. If $f(a)$ and $f(b)$ have opposite signs, then there exists a point $x_0$ in $(a,b)$ such that $f(x_0) = 0$.
-- Q: State the \textbf{Intermediate Value theorem}. 
-- A: Suppose $f:[a,b] \to \RR$ is a continuous function. Let $y_0$ be a real number lying between $f(a)$ and $f(b)$, i.e. with$$f(a)\leq y_0 \leq f(b) \text{ or } f(b) \leq y_0 \leq f(a).$$There is at least one $c$, with $$a\leq c \leq b, \text{ such that } y_0 = f(c).$$I postulate that the \textbf{IVT} is equivalently stated:\begin{align*}f:[a,b] \to \RR \text{ is cts. and } y_0 \in (f(a),(f(b))\\\implies \text{there is } c \in (a,b) \text{ s.th. } f(c) = y_0.\end{align*}
-- Q: State and prove \textbf{Brouwer's fixed-point theorem}. 
-- A: If $f:[0,1]\to[0,1]$ is cts. there is $c \in [0,1]$ s.th. $f(c) = c$.\emph{Proof}. If $f(0) = 0$ or $f(1) = 1$, the conclusion is immediate, so assume $f(0) \in (0,1]$ and $f(1) \in [0,1)$. Define the cts. function$$g(x) = f(x) -x.$$ We can see that $$g(0) = f(0) >0 \text{ and } g(1) = f(1) - 1 < 0.$$ By Bolzano's theorem, there must be a point $c \in [a,b]$ such that $g(c) = 0$. So $f(c) - c =0$ or $f(c) = c$.
-- Q: For a real-valued function $f$ of a single real variable, the \textbf{derivative} of $f$ is the function $f'$ whose value at $x$ is \emph{what}? 
+- Q: State the Intermediate Value theorem. 
+- A: Suppose $f:[a,b] \to \RR$ is a continuous function. Let $y_0$ be a real number lying between $f(a)$ and $f(b)$, i.e. with$$f(a)\leq y_0 \leq f(b) \text{ or } f(b) \leq y_0 \leq f(a).$$There is at least one $c$, with $$a\leq c \leq b, \text{ such that } y_0 = f(c).$$I postulate that the IVT is equivalently stated:\begin{align*}f:[a,b] \to \RR \text{ is cts. and } y_0 \in (f(a),(f(b))\\\implies \text{there is } c \in (a,b) \text{ s.th. } f(c) = y_0.\end{align*}
+- Q: State and prove Brouwer's fixed-point theorem. 
+- A: If $f:[0,1]\to[0,1]$ is cts. there is $c \in [0,1]$ s.th. $f(c) = c$.
+    - Proof. If $f(0) = 0$ or $f(1) = 1$, the conclusion is immediate, so assume $f(0) \in (0,1]$ and $f(1) \in [0,1)$. Define the cts. function$$g(x) = f(x) -x.$$ We can see that $$g(0) = f(0) >0 \text{ and } g(1) = f(1) - 1 < 0.$$ By Bolzano's theorem, there must be a point $c \in [a,b]$ such that $g(c) = 0$. So $f(c) - c =0$ or $f(c) = c$.
+- Q: For a real-valued function $f$ of a single real variable, the derivative of $f$ is the function $f'$ whose value at $x$ is what? 
 - A: $$f'(x) = \lim_{h\to 0}\frac{f(x+h)-f(x)}{h},$$ provided the limit exists.
 - Q: What is the relation between continuity at a point and differentiability at a point? 
 - A: If $f$ is not continuous at a point $a$, them $f$ is not differentiable at $a$. Equivalently,$$f \text{ is diff'ble at } a \implies f \text{ is cts. at } a.$$
-- Q: Define \textbf{Leibniz notation}. 
-- A: The difference quotient used in the definition of the derivatice is a change in $f$ divided by a change in $x$; that is, we can write$$f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = \frac{df}{dx}.$$
-- Q: What is the \textbf{derivative of a sum}? 
+- Q: Define Leibniz notation. 
+- A: The difference quotient used in the definition of the derivative is a change in $f$ divided by a change in $x$; that is, we can write$$f'(x) = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x} = \lim_{\Delta x \to 0} \frac{\Delta f}{\Delta x} = \frac{df}{dx}.$$
+- Q: What is the derivative of a sum? 
 - A: $$(f+g)'(x) = f'(x) + g'(x)$$
-- Q: What is the \textbf{derivative of a constant multiple}? 
+- Q: What is the derivative of a constant multiple? 
 - A: $$(kf)'(x) = kf'(x)$$
-- Q: What is the \textbf{derivative of a product?} 
-- A: The \textbf{product rule} states: $$(fg)'(x) = f'(x)g(x) + f(x)g'(x).$$
-- Q: What is the \textbf{derivative of a quotient}? 
-- A: The \textbf{quotient rule} states: $$\left(\frac{f}{g}\right)'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}.$$
-- Q: What is the \textbf{derivative of a composite function}? 
-- A: The \textbf{chain rule} states: $$(f\circ u)'(x) = f'(u(x))\cdot u'(x).$$
-- Q: What is the \textbf{derivative of an inverse function}? 
-- A: The \textbf{inverse function rule} states that if $f^{-1}$ is the inverse of $f$, and $f$ has a nonzero derivative at $x_0$, then $f^{-1}$ has a derivative at $y_0 = f(x_0)$, and $$(f^{-1})'(y_0) = \frac{1}{f'(x_0)}.$$ In Leibniz notation, $$\frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}.$$
+- Q: What is the derivative of a product? 
+- A: The product rule states: $$(fg)'(x) = f'(x)g(x) + f(x)g'(x).$$
+- Q: What is the derivative of a quotient? 
+- A: The quotient rule states: $$\left(\frac{f}{g}\right)'(x) = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}.$$
+- Q: What is the derivative of a composite function? 
+- A: The chain rule states: $$(f\circ u)'(x) = f'(u(x))\cdot u'(x).$$
+- Q: What is the derivative of an inverse function? 
+- A: The inverse function rule states that if $f^{-1}$ is the inverse of $f$, and $f$ has a nonzero derivative at $x_0$, then $f^{-1}$ has a derivative at $y_0 = f(x_0)$, and $$(f^{-1})'(y_0) = \frac{1}{f'(x_0)}.$$ In Leibniz notation, $$\frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}.$$
 - Q: Given a function, $y = f(x)$, use implicit differentiation to find the derivative of the inverse function, $f^{-1}(y) = x$. 
-- A: If $y = f(x)$, then $f^{-1}(y) = x$. Differentiating w.r.t. $x$,$$\frac{d}{dx}(f^{-1}(y)) = \frac{d}{dx}(x) = 1.$$ The chain ruleimplies $$\frac{d}{dx}(f^{-1}(y)) = \frac{d}{dy}(f^{-1}(y))\frac{dy}{dx},$$ whence $\frac{d}{dy}(f^{-1}(y)) = \frac{1}{\frac{dx}{dy}}.$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(k)$$ 
+- A: If $y = f(x)$, then $f^{-1}(y) = x$. Differentiating w.r.t. $x$,$$\frac{d}{dx}(f^{-1}(y)) = \frac{d}{dx}(x) = 1.$$ The chain rule implies $$\frac{d}{dx}(f^{-1}(y)) = \frac{d}{dy}(f^{-1}(y))\frac{dy}{dx},$$ whence $\frac{d}{dy}(f^{-1}(y)) = \frac{1}{\frac{dx}{dy}}.$
+- Q: Write the following differential in terms of $du$:$$d(k)$$ 
 - A: $$d(k) = 0$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(u^k)$$ 
+- Q: Write the following differential in terms of $du$:$$d(u^k)$$ 
 - A: It can be proven that $$d(u^k) = ku^{k-1}du.$$Of course, as a special case, $$d(u^0) = 0u^{-1}du = 0.$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(e^u)$$ 
+- Q: Write the following differential in terms of $du$:$$d(e^u)$$ 
 - A: $$d(e^u) = e^udu$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(a^u)$$ 
+- Q: Write the following differential in terms of $du$:$$d(a^u)$$ 
 - A: $$d(a^u) = (\log (a))a^udu$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\log (u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\log (u))$$ 
 - A: $$d(\log (u)) = \frac{1}{u}du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\log_a (u))$$where $a \neq 1$. 
+- Q: Write the following differential in terms of $du$:$$d(\log_a (u))$$where $a \neq 1$. 
 - A: $$d(\log_a (u)) = \frac{1}{\log (a)} \cdot \frac{1}{u}du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\sin(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\sin(u))$$ 
 - A: $$d(\sin (u)) = \cos (u) du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\cos (u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\cos (u))$$ 
 - A: $$d(\cos (u)) = -\sin (u) du $$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\tan (u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\tan (u))$$ 
 - A: $$d(\tan (u)) = \sec^2 (u) du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\cot (u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\cot (u))$$ 
 - A: $$d(\cot (u)) =-\csc^2(u)du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\sec(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\sec(u))$$ 
 - A: $$d(\sec (u)) =\sec(u)\tan(u)du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\csc(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\csc(u))$$ 
 - A: $$d(\csc(u) = -\csc(u)\cot(u)du$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\arcsin(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\arcsin(u))$$ 
 - A: $$d(\arcsin(u)) = \frac{du}{\sqrt{1-u^2}}$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\arccos(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\arccos(u))$$ 
 - A: $$d(\arccos(u)) = -\frac{du}{\sqrt{1-u^2}}$$
-- Q: Write the following \textbf{differential} in terms of $du$:$$d(\arctan(u))$$ 
+- Q: Write the following differential in terms of $du$:$$d(\arctan(u))$$ 
 - A: $$d(\arctan(u)) = \frac{du}{1+u^2}$$
 - Q: What is the equation of the line tangent to the graph of $y = f(x)$ at the point $x = a$? 
-- A: The equation is $$T_1(x) = f'(a)(x-a) + f(a),$$the first order \textbf{Taylor Expansion} of $f(x)$ about $x=a$.
+- A: The equation is $$T_1(x) = f'(a)(x-a) + f(a),$$the first order Taylor Expansion of $f(x)$ about $x=a$.
 - Q: Let $f: D \subseteq \RR \to \RR$. For $x_0 \in D$, suppose $f(x_0)$ and $f'(x_0)$ are known. If $|\Delta x|<<1$, what is an approximate value for $f(x_0 + \Delta x)$? 
 - A: With $\Delta y = f'(x_0)\Delta x$, we know$$f(x_0 + \Delta x) \approx f(x_0) + \Delta y = f(x_0) +f'(x_0)\Delta x.$$
 
 ## Basic Analysis
 
-- Q: State the \textbf{Implicit Function Theorem}. 
+- Q: State the Implicit Function Theorem. 
 - A: If $P_0 = (x_0,y_0)$ satisfies the equation $f(x,y) = c$ and both partial derivatives $f_x$ and $f_y$ are cts. in a neighborhood of $P_0$ (with $f_y \neq 0$ at $P_0$), then there exists a unique differentiable function, $$y = g(x),$$ that satisfies both $$f(x,y) = c \text{ and }y_0 = g(x_0).$$ Furthermore,$$y' = \frac{-f_x}{f_y}.$$
-- Q: Describe the \textbf{properties of the first derivative}. 
-- A: \begin{itemize}\item Where $f'(x) > 0$, the slope is positive---the function is increasing.\item Where $f'(x) < 0$, the slope is negative---the function is decreasing.\item Where $f'(x) = 0$, the function has a horizontal tangent line.\item Where $f'(x)$ does not exist, the function could have a vertical tangent line or it might not be differentiable at that point.\end{itemize}
-- Q: Describe the \textbf{properties of the second derivative}. 
-- A: \begin{itemize}\item Where $f''(x) > 0$, the curve is \textbf{concave up}---the curve lies \emph{above} its tangent line.\item Where $f''(x) < 0$, the curve is \textbf{concave down}---the curve lies \emph{below} its tangent line.\item $f''(x) = 0$ or $f''(x)$ D.N.E. are necessary, yet not sufficient, conditions for \textbf{points of inflection}.\end{itemize}
-- Q: State \textbf{Rolle's Theorem}. 
+- Q: Describe the properties of the first derivative. 
+- A: 
+    - Where $f'(x) > 0$, the slope is positive---the function is increasing.
+    - Where $f'(x) < 0$, the slope is negative---the function is decreasing.
+    - Where $f'(x) = 0$, the function has a horizontal tangent line.
+    - Where $f'(x)$ does not exist, the function could have a vertical tangent line or it might not be differentiable at that point.
+- Q: Describe the properties of the second derivative. 
+- A: 
+    - Where $f''(x) > 0$, the curve is concave up---the curve lies above its tangent line. 
+    - Where $f''(x) < 0$, the curve is concave down---the curve lies below its tangent line.
+    - $f''(x) = 0$ or $f''(x)$ D.N.E. are necessary, yet not sufficient, conditions for points of inflection.
+- Q: State Rolle's Theorem. 
 - A: Let $f:[a,b] \to \RR$ be a cts. function, which is diff'ble at every point in $(a,b)$. If $f(a) = f(b)$, then there exists a point $c$ in $(a,b)$ at which $f'(c) = 0$.
-- Q: State the \textbf{Mean-Value Theorem}. 
+- Q: State the Mean-Value Theorem. 
 - A: Let $f:[a,b] \to \RR$ be a cts. function, which is diff'ble at every point in $(a,b)$. There exists a point $c$ in $(a,b)$ at which$$f'(c) = \frac{f(b)-f(a)}{b-a}$$.
 - Q: Let $f$ be a function, cts. on the interval $I$. If $f'(x) = 0$ for all $x \in I$, then (describe $f$) 
 - A: for some constant $k$, we know $$f(x) = k$$ for all $x \in I$.
-- Q: Let $f$ be a function, cts. on the interval $I$. Define a \textbf{local minimum} of $f$. 
-- A: We say $(c,f(c))$ is a \textbf{local minimum} if and only if there exists some subinterval, $$U \subseteq I,$$ such that $$f(c)\leq f(x) \text{ for all }x \in U.$$
-- Q: Let $f$ be a function, cts. on the interval $I$. Define the \textbf{absolute minimum} of $f$. 
-- A: There exists $c$ in $I$ such that $f(c)\leq f(x)$ for all $x \in I$ if and only if $(c,f(c))$ is a \textbf{absolute minimum}.
-- Q: Let $f$ be a function, cts. on the interval $I$. Define a \textbf{local maximum} of $f$. 
-- A: We say $(c,f(c))$ is a \textbf{local maximum} if and only if there exists some subinterval, $$U \subseteq I,$$ such that $$f(c)\geq f(x) \text{ for all }x \in U.$$
-- Q: Let $f$ be a function, cts. on the interval $I$. Define the \textbf{absolute maximum} of $f$. 
-- A: There exists $c$ in $I$ such that $f(c)\leq f(x)$ for all $x \in I$ if and only if $(c,f(c))$ is a \textbf{absolute minimum}.
-- Q: Let $f$ be a function, cts. on the interval $I$. Define an \textbf{extremum} for the function $f$. 
-- A: An \textbf{extremum} of $f$ is the ordered pair $(c,f(c))$ if and only if $(c,f(c))$ is a local maximum or minimum of $f$.
-- Q: What is the \textbf{Second Derivative Test}? 
+- Q: Let $f$ be a function, cts. on the interval $I$. Define a local minimum of $f$. 
+- A: We say $(c,f(c))$ is a local minimum if and only if there exists some subinterval, $$U \subseteq I,$$ such that $$f(c)\leq f(x) \text{ for all }x \in U.$$
+- Q: Let $f$ be a function, cts. on the interval $I$. Define the absolute minimum of $f$. 
+- A: There exists $c$ in $I$ such that $f(c)\leq f(x)$ for all $x \in I$ if and only if $(c,f(c))$ is a absolute minimum.
+- Q: Let $f$ be a function, cts. on the interval $I$. Define a local maximum of $f$. 
+- A: We say $(c,f(c))$ is a local maximum if and only if there exists some subinterval, $$U \subseteq I,$$ such that $$f(c)\geq f(x) \text{ for all }x \in U.$$
+- Q: Let $f$ be a function, cts. on the interval $I$. Define the absolute maximum of $f$. 
+- A: There exists $c$ in $I$ such that $f(c)\leq f(x)$ for all $x \in I$ if and only if $(c,f(c))$ is a absolute minimum.
+- Q: Let $f$ be a function, cts. on the interval $I$. Define an extremum for the function $f$. 
+- A: An extremum of $f$ is the ordered pair $(c,f(c))$ if and only if $(c,f(c))$ is a local maximum or minimum of $f$.
+- Q: What is the Second Derivative Test? 
 - A: \begin{align*}f'(c) = 0 \text{ and } f''(c) > 0 &\implies (c,f(c)) \text{ is a local minimum;}\\f'(c) = 0 \text{ and } f''(c) < 0 &\implies (c,f(c)) \text{ is a local maximum.}\end{align*}
 - Q: What are the three possibilities for the location of the absolute extrema for a cts. function $f:[a,b] \to \RR$? 
-- A: An absolute extremum will occur\begin{enumerate}\item at a point $(c,f(c))$ such that $f'(c) = 0$,\item at a point $(c,f(c))$ such that $f'(c)$ fails to exist, or\item at either $(a,f(a))$ or $(b,f(b))$, where $a$ and $b$ are the endpoints of the domain.\end{enumerate}
-- Q: State the $\mathbf{n^{th}}$ \textbf{derivative test}. 
-- A: Assume that the function $f(x)$ is smooth, and let $x = x_0$ be a critical point of $f$. Find the smallest integer $n$ such that $f^{(n)}(x_0) \neq 0$. If $n$ is even and $$f^{(n)}(x_0) > 0,$$ then the graph lies about its tangent line and $f$ has a \emph{local minimum} at $x_0$; if $n$ is even and $$f^{(n)}(x_0) < 0,$$ then the graph lies below its tangent line and $f$ has a \emph{local maximum} at $x_0$; if $n$ is odd, then $f$ has neither a local minimum nor a local maximum at $x_0$.
+- A: An absolute extremum will occur
+    - at a point $(c,f(c))$ such that $f'(c) = 0$,
+    - at a point $(c,f(c))$ such that $f'(c)$ fails to exist, or
+    - at either $(a,f(a))$ or $(b,f(b))$, where $a$ and $b$ are the endpoints of the domain.
+- Q: State the $n^{th}$ derivative test. 
+- A: Assume that the function $f(x)$ is smooth, and let $x = x_0$ be a critical point of $f$. Find the smallest integer $n$ such that $f^{(n)}(x_0) \neq 0$. If $n$ is even and $$f^{(n)}(x_0) > 0,$$ then the graph lies about its tangent line and $f$ has a local minimum at $x_0$; if $n$ is even and $$f^{(n)}(x_0) < 0,$$ then the graph lies below its tangent line and $f$ has a maximum at $x_0$; if $n$ is odd, then $f$ has neither a local minimum nor a local maximum at $x_0$.
 
 ## Integration
 
@@ -389,7 +415,7 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: \begin{align*}&\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3} \\&=g\left(\frac{8}{3}\right)\cdot\frac{2}{3} +g\left(\frac{10}{3}\right)\cdot\frac{2}{3}+g\left(\frac{12}{3}\right)\cdot\frac{2}{3}\\&\approx \int_{8/3}^{14/3} g(x)dx.\end{align*}
 - Q: If $\mathbf{x}(t)$ is a parameterized curve and $\mathbf{v}(t)$ is its velocity, $\frac{d\mathbf{x}}{dt}$, the length of the curve traced out between $t = a$ and $t = b$ is given by 
 - A: $$s = \int_a^b|\mathbf{v}(t)|dt.$$
-- Q: An \textbf{antiderivative} (or \textbf{indefinite integral}) of a function $f(x)$ is a function $F(x)$ whose derivative is $f(x)$. Because $$\frac{d}{dx}\left[x^n\right] = nx^{n-1} \text{ and } \frac{d}{dx}\left[\log(x)\right] = x^{-1}$$ what is$$\int x^n dx?$$ 
+- Q: An antiderivative (or indefinite integral) of a function $f(x)$ is a function $F(x)$ whose derivative is $f(x)$. Because $$\frac{d}{dx}\left[x^n\right] = nx^{n-1} \text{ and } \frac{d}{dx}\left[\log(x)\right] = x^{-1}$$ what is$$\int x^n dx?$$ 
 - A: \begin{equation*}\int x^n dx =\begin{cases}\frac{x^{n+1}}{n+1} &\text{if } n \neq -1\\\log|x| &\text{if } n =-1\\\end{cases}\end{equation*}
 - Q: Suppose $F(x)$ is an antiderivative of $f(x)$. If $a$ and $b$ are constants, what's $$\int f(ax+b) dx?$$ 
 - A: $$\int f(ax+b) dx = \frac{1}{a}F(ax+b)+c.$$
@@ -425,72 +451,66 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: \begin{align*}&\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3} \\&=g\left(\frac{8}{3}\right)\cdot\frac{2}{3} +g\left(\frac{10}{3}\right)\cdot\frac{2}{3}+g\left(\frac{12}{3}\right)\cdot\frac{2}{3}\\&\approx \int_{8/3}^{14/3} g(x)dx.\end{align*}
 - Q: If $\mathbf{x}(t)$ is a parameterized curve and $\mathbf{v}(t)$ is its velocity, $\frac{d\mathbf{x}}{dt}$, the length of the curve traced out between $t = a$ and $t = b$ is given by 
 - A: $$s = \int_a^b|\mathbf{v}(t)|dt.$$
-- Q: The differential of the product of the functions $u$ and $v$ is $$d(uv) = du\cdot v + u\cdot dv.$$ Equivalently, $$u\cdot dv = d(uv) - v \cdot du.$$ State the formula for \textbf{integration by parts}. 
+- Q: The differential of the product of the functions $u$ and $v$ is $$d(uv) = du\cdot v + u\cdot dv.$$ Equivalently, $$u\cdot dv = d(uv) - v \cdot du.$$ State the formula for integration by parts. 
 - A: We find $$\int u\cdot dv = uv - \int v \cdot du.$$
-- Q: If $u$ is the variable of integration and the integral contains $\sqrt{a^2-u^2}$, what \textbf{trigonometric substitution} could be helpful? 
-- A: Let $u = a\sin(\theta)$ and $du = a\cos(\theta) d\theta$. \emph{Don't forget to draw a picture for the back-subsitution!}
-- Q: If $u$ is the variable of integration and the integral contains $\sqrt{a^2+u^2}$, what \textbf{trigonometric substitution} could be helpful? 
-- A: $u = a\tan(\theta)$ and $du = a\sec^2(\theta) d\theta$. \emph{Don't forget to draw a picture for the back-subsitution!}
-- Q: If $u$ is the variable of integration and the integral contains $\sqrt{u^2-a^2}$, what \textbf{trigonometric substitution} could be helpful? 
-- A: Let $u = a\sec(\theta)$ and $du = a\sec(\theta)\tan(\theta) d\theta$.\emph{Don't forget to draw a picture for the back-subsitution!}
+- Q: If $u$ is the variable of integration and the integral contains $\sqrt{a^2-u^2}$, what trigonometric substitution could be helpful? 
+- A: Let $u = a\sin(\theta)$ and $du = a\cos(\theta) d\theta$. 
+- Q: If $u$ is the variable of integration and the integral contains $\sqrt{a^2+u^2}$, what trigonometric substitution could be helpful? 
+- A: $u = a\tan(\theta)$ and $du = a\sec^2(\theta) d\theta$. 
+- Q: If $u$ is the variable of integration and the integral contains $\sqrt{u^2-a^2}$, what trigonometric substitution could be helpful? 
+- A: Let $u = a\sec(\theta)$ and $du = a\sec(\theta)\tan(\theta) d\theta$.
 - Q: To find the algebraic area under $$f\colon[a,b] \to \RR.$$ Consider$n$ rectangular strips, each of width $$\Delta x = \frac{b-a}{n}.$$ Let the height of each rectangle be $f(x)$ at the right hand endpoint of the rectangle's base. What is the sum of the areas of these rectangles? 
-- A: \begin{align*}S_n &=\\&\Delta x[f(a+\Delta x)+ f(a+2\Delta x)+ \cdots\\&+ f(a+(n-1)\Delta x ) + f(b)],\end{align*} a \textbf{Riemann Sum}. As $n \to \infty$, we find that $S_n$ approaches the algebraic area under the function $f$ (between the lines $x=a$ and $x=b$).
-- Q: What is a \textbf{definite integral}? 
-- A: The definite integral is the algebraic area under a real-valued function $f(x)$, between two lines $x=a$ and $x=b$. This area is \emph{denoted} by $$\int_a^b f(x)dx,$$ and \emph{defined} by the limit of a Riemann sum.
-- Q: State the \textbf{FTC (Part I)}. 
+- A: \begin{align*}S_n &=\\&\Delta x[f(a+\Delta x)+ f(a+2\Delta x)+ \cdots\\&+ f(a+(n-1)\Delta x ) + f(b)],\end{align*} a Riemann Sum. As $n \to \infty$, we find that $S_n$ approaches the algebraic area under the function $f$ (between the lines $x=a$ and $x=b$).
+- Q: What is a definite integral? 
+- A: The definite integral is the algebraic area under a real-valued function $f(x)$, between two lines $x=a$ and $x=b$. This area is denoted by $$\int_a^b f(x)dx,$$ and defined by the limit of a Riemann sum.
+- Q: State the FTC (Part I). 
 - A: If $f\colon[a,b] \to \RR$ be a cts. function and $F(x)$ be an antiderivative of $f(x)$, then $$\int_a^b f(x)dx = \left[F(x)\right]_a^b = F(b) - F(a).$$
-- Q: State the \textbf{FTC (Part II)}. 
+- Q: State the FTC (Part II). 
 - A: If $f\colon[a,b] \to \RR$ be a cts. function, then, for any $x \in [a,b]$, $$\frac{d}{dx}\int_a^t f(t)dt = f(x).$$
 - Q: Suppose $a(x)$ and $b(x)$ are functions of $x$. What is $$\frac{d}{dx}\int_{a(x)}^{b(x)}f(t)dt?$$ 
 - A: Let $F(t)$ be an antiderivative of $f(t)$. Then\begin{align*}\frac{d}{dx}\left[\int_{a(x)}^{b(x)}f(t)dt\right] &= \frac{d}{dx}\left[F(b(x))-F(a(x))\right] &\text{by the FTC I,}\\&=\frac{dF}{db}\frac{db}{dx}-\frac{dF}{da}\frac{da}{dx} &\text{by the Chain Rule,}\\&=f(b(x))\frac{db}{dx} - f(a(x))\frac{da}{dx} &\text{as $\frac{dF}{dt}= f(t)$.}\end{align*}
-- Q: Regarding \textbf{definite integral rules}, what is the relation between $\int_a^b f(x)dx$ and $\int_b^a f(x)dx$? 
+- Q: Regarding definite integral rules, what is the relation between $\int_a^b f(x)dx$ and $\int_b^a f(x)dx$? 
 - A: It can be proven that $$\int_a^b f(x)dx = -\int_b^a f(x)dx.$$
-- Q: Regarding \textbf{definite integral rules}, what is $\int_a^a f(x)dx$? 
+- Q: Regarding definite integral rules, what is $\int_a^a f(x)dx$? 
 - A: Consider the fact that $$\int_a^b f(x)dx = -\int_b^a f(x)dx.$$ Letting $a=b$, we find $\int_a^a f(x)dx = -\int_a^a f(x)dx$. So $$\int_a^a f(x)dx = 0.$$
-- Q: Regarding \textbf{definite integral rules}, Assuming $a \leq b \leq c$, what is $$\int_a^b f(x)dx + \int_b^c f(x)dx?$$ 
+- Q: Regarding definite integral rules, Assuming $a \leq b \leq c$, what is $$\int_a^b f(x)dx + \int_b^c f(x)dx?$$ 
 - A: It can be proven that $$\int_a^b f(x)dx + \int_b^c f(x)dx = \int_a^c f(x)dx.$$
-- Q: Regarding \textbf{definite integral rules}, for a constant $k$, what's $$\int_a^b kf(x)dx?$$ 
+- Q: Regarding definite integral rules, for a constant $k$, what's $$\int_a^b kf(x)dx?$$ 
 - A: It can be proven that $$\int_a^b kf(x)dx = k\int_a^b f(x)dx.$$
-- Q: Regarding \textbf{definite integral rules}, what is $$\int_a^b [f(x)\pm g(x)]dx?$$ 
+- Q: Regarding definite integral rules, what is $$\int_a^b [f(x)\pm g(x)]dx?$$ 
 - A: It can be proven that $$\int_a^b [f(x)\pm g(x)]dx = \int_a^b f(x)dx \pm \int_a^b g(x)dx.$$
-- Q: Regarding \textbf{definite integral rules}, if $$f(x) \leq g(x)\text{ for all } x \in [a,b],$$ what is the relation between $\int_a^b f(x)dx$ and $\int_a^b g(x)dx$? 
+- Q: Regarding definite integral rules, if $$f(x) \leq g(x)\text{ for all } x \in [a,b],$$ what is the relation between $\int_a^b f(x)dx$ and $\int_a^b g(x)dx$? 
 - A: It can be proven that $$\int_a^b f(x)dx \leq \int_a^b g(x)dx.$$
-- Q: State the \textbf{mean-value theorem for integrals}. 
+- Q: State the mean-value theorem for integrals. 
 - A: If $f\colon [a,b] \to \RR$ is a cts. function, there exists $c \in (a,b)$ such that $$\int_a^b f(x)dx = f(c)(b-a).$$
 - Q: What is the area of an infinitesmal circular sector of angle $d\theta$ and radius $r$? 
 - A: A circle of radius $r$ has area $\pi r^2$. So the sum of all of the infinitesmal circular sectors (of a constant radius, from angle $0$ to $2\pi$) should have the area $\pi r^2$. We solve for $\alpha$,\begin{align*}\pi r^2 &= \int_0^{2\pi} \alpha r^2d\theta\\&= \alpha r^2 \cdot 2\pi\end{align*}We find $\alpha = \frac{1}{2}$; thus the area of an infinitesmal circular sector is $$\frac{1}{2}r^2d\theta.$$
-- Q: When we rotate a portion of a curve, $y = f(x)$ from $x=a$ to $x=b$, around the $x$-axis we enclose a \textbf{solid of revolution}. What is its \textbf{volume}? 
-- A: Consider \textbf{thin disks} normal to the $x$-axis, whose radius is $f(x)$ and height is $dx$. The volume of each disk is $$dV = \pi[f(x)]^2dx.$$ The volume of the solid is the sum of the volume of the disks, so$$V = \int_a^b \pi[f(x)]^2dx.$$
-- Q: When we rotate a portion of a curve, $x = g(y)$ from $y=a$ to $y=b$, around the $y$-axis we enclose a \textbf{solid of revolution}. What is its \textbf{volume}? 
-- A: Consider \textbf{thin disks} normal to the $y$-axis, whose radius is $g(y)$ and height is $dy$. The volume of each disk is $$dV = \pi[g(y)]^2dy.$$ The volume of the solid is the sum of the volume of the disks, so$$V = \int_a^b \pi[g(y)]^2dy.$$
-- Q: List $2^3$, $2^6$, $2^9$ and $2^{12}$ in decimal expansions. 
-- A: We compute $8$, $64$, $512$ and $4092$ respectively.
-- Q: List out $2^2$, $2^4$, $2^8$ and $2^{16}$ in decimal expansions. 
-- A: We have $4$, $16$, $256$ and $65536$ respectively.
-- Q: Prove that the \textbf{natural logarithm} is an antiderivative of the function $g(x) = \frac{1}{x}$. 
+- Q: When we rotate a portion of a curve, $y = f(x)$ from $x=a$ to $x=b$, around the $x$-axis we enclose a solid of revolution. What is its volume? 
+- A: Consider thin disks normal to the $x$-axis, whose radius is $f(x)$ and height is $dx$. The volume of each disk is $$dV = \pi[f(x)]^2dx.$$ The volume of the solid is the sum of the volume of the disks, so$$V = \int_a^b \pi[f(x)]^2dx.$$
+- Q: When we rotate a portion of a curve, $x = g(y)$ from $y=a$ to $y=b$, around the $y$-axis we enclose a solid of revolution. What is its volume? 
+- A: Consider thin disks normal to the $y$-axis, whose radius is $g(y)$ and height is $dy$. The volume of each disk is $$dV = \pi[g(y)]^2dy.$$ The volume of the solid is the sum of the volume of the disks, so$$V = \int_a^b \pi[g(y)]^2dy.$$
+- Q: Prove that the natural logarithm is an antiderivative of the function $g(x) = \frac{1}{x}$. 
 - A: We'll prove that $\frac{d}{dx}[\ln(x)] = \frac{1}{x}$. Let $y = \ln(x)$. So $x = e^y$. (The two previous sentences are equivalent.) Implicitly differentiating w.r.t. $x$,$$1 =e^y\frac{dy}{dx} \implies \frac{dy}{dx} = \frac{1}{e^y} = \frac{1}{x}.$$
-- Q: Define the \textbf{natural logarithm} as an integral. 
+- Q: Define the natural logarithm as an integral. 
 - A: The natural logarithm is an antiderivative of $g(t) = \frac{1}{t}$. So\begin{align*}\int_1^x g(t)dt &= \log(x) - \log(1) &\text{by the FTC I,}\\&= \log(x) &\text{because $\log(1) = 0$, i.e.,$e^0 =1$.}\end{align*}
-- Q: State \textbf{L'H\^opital's Rule}. 
+- Q: State L'H\^opital's Rule. 
 - A: If $f(x)$ and $g(x)$ are diff'ble functions in an open interval, $I$, containing $a$ (except possibly at $a$ itself) such that $g'(x) \neq 0$ for all $x\neq a$ in $I$, and $f(a) = g(a) = 0$, then $$\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}$$ provided that the limit on the right exists (or is possibly indeterminate).
 - Q: Define $$\int_a^\infty f(x)dx.$$ 
-- A: We define $$\int_a^\infty f(x)dx = \lim_{b\to\infty} \int_a^b f(x)dx.$$ The integral \textbf{converges} if and only if the limit exists.
-- Q: The length of a smooth curve (or an \textbf{arc}) is the sum of the infinitesmal displacements along its breadth. For a curve $y=f(x)$ in the plane, what is the arc length from $x=a$ to $x=b$? 
-- A: Let $ds = \sqrt{dx^2+dy^2}$. The arc length is\begin{align*}S &= \int_a^b ds\\&= \int_a^b \sqrt{dx^2+dy^2}\\&= \int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\cdot dx.\end{align*}\emph{So we must differentiate, then integrate!}
-- Q: The length of a smooth curve (or an \textbf{arc}) is the sum of the infinitesmal displacements along its breadth. For a curve $x = g(y)$ in the plane, what is the arc length from $y=a$ to $y=b$? 
-- A: Let $ds = \sqrt{dx^2+dy^2}$. The arc length is\begin{align*}S &= \int_a^b ds\\&= \int_a^b \sqrt{dx^2+dy^2}\\&= \int_a^b \sqrt{\left(\frac{dx}{dy}\right)^2+1}\cdot dy.\end{align*}\emph{So we must differentiate, then integrate!}
-- Q: The derivative of every exponential function of the form $f(x) = a^x$ (with $a>0$) is equal to a multiple of itself:\begin{align*}f'(x) &= \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\\&= \lim_{h\to 0}\frac{a^{x+h} -a^x}{h}\\&=a^x \lim_{h\to 0}\frac{a^h-1}{h}\end{align*}Keeping in mind the above calculation, define the base of the \textbf{natural exponential function}. 
+- A: We define $$\int_a^\infty f(x)dx = \lim_{b\to\infty} \int_a^b f(x)dx.$$ The integral converges if and only if the limit exists.
+- Q: The length of a smooth curve (or an arc) is the sum of the infinitesmal displacements along its breadth. For a curve $y=f(x)$ in the plane, what is the arc length from $x=a$ to $x=b$? 
+- A: Let $ds = \sqrt{dx^2+dy^2}$. The arc length is\begin{align*}S &= \int_a^b ds\\&= \int_a^b \sqrt{dx^2+dy^2}\\&= \int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\cdot dx.\end{align*} So we must differentiate, then integrate!
+- Q: The derivative of every exponential function of the form $f(x) = a^x$ (with $a>0$) is equal to a multiple of itself:\begin{align*}f'(x) &= \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}\\&= \lim_{h\to 0}\frac{a^{x+h} -a^x}{h}\\&=a^x \lim_{h\to 0}\frac{a^h-1}{h}\end{align*}Keeping in mind the above calculation, define the base of the natural exponential function. 
 - A: If we can find the value of $a$ such that $\frac{a^h-1}{h} = 1$, then $f'(x) = f(x)$. So let's define $e$ such that $$\lim_{h\to 0}\frac{e^h-1}{h} = 1.$$
 - Q: Considering $$\lim_{h\to 0}\frac{e^h-1}{h} = 1,$$ approximate $e$. Also give a numerical approxiamation. 
 - A: If $h$ is very small, then $$e^h-1 \approx h\implies e^h \approx 1+h \implies e \approx (1+h)^{1/h}.$$ The value of $e$ is about $2.718$.
-- Q: What is the slope of the \textbf{natural exponential function}, $f(x) = e^x$, at $x = 0$? Why is this special? 
+- Q: What is the slope of the natural exponential function, $f(x) = e^x$, at $x = 0$? Why is this special? 
 - A: The slope of the natural exponential function at $x =0$ is $1$. No exponential function, distinct from $e^x$, has a slope of $1$ at $x=0$.
 - Q: Define $$\int_{-\infty}^b f(x)dx.$$ 
-- A: We define $$\int_{-\infty}^b f(x)dx = \lim_{a\to -\infty} \int_a^b f(x)dx.$$ The integral \textbf{converges} if and only if the limit exists.
+- A: We define $$\int_{-\infty}^b f(x)dx = \lim_{a\to -\infty} \int_a^b f(x)dx.$$ The integral converges if and only if the limit exists.
 - Q: Define $$\int_{-\infty}^\infty f(x)dx.$$ 
-- A: For any $c \in \RR$, we define $$\int_{-\infty}^\infty f(x)dx = \int_{-\infty}^c f(x)dx + \int_c^{\infty} f(x)dx.$$ The integral \textbf{converges} if and only if both the right hand integrals converge.
+- A: For any $c \in \RR$, we define $$\int_{-\infty}^\infty f(x)dx = \int_{-\infty}^c f(x)dx + \int_c^{\infty} f(x)dx.$$ The integral converges if and only if both the right hand integrals converge.
 - Q: Consider a function $f:D \to \RR$, where $D \subseteq \RR$. If $z$ is on the boundary of $D$, what is $$\int_{z}^b f(x)dx?$$ 
-- A: For $a \in D$, we define $$\int_{z}^b f(x)dx = \lim_{a \to z} \int_a^b f(x)dx.$$ The integral \textbf{converges} if and only if the limit exists.
+- A: For $a \in D$, we define $$\int_{z}^b f(x)dx = \lim_{a \to z} \int_a^b f(x)dx.$$ The integral converges if and only if the limit exists.
 
 - Q: Using the partial fraction decomposition$$\frac{1}{(u-a)(u-b)} = \frac{1}{a-b}\left(\frac{1}{u-a}-\frac{1}{u-b}\right)$$ find a primitive of the secant function. 
 - A: \begin{align*}\int \sec\theta d\theta &= \int\frac{d\theta}{\cos\theta}\\&= \int\frac{\cos\theta d\theta}{\cos^2\theta}\\&=\int \frac{\cos\theta d\theta}{1-\sin^2\theta}\\&=\int \frac{du}{1-u^2} &\text{substituting} u = \sin\theta\\&=\int \frac{1}{2}\left(\frac{1}{1-u}+\frac{1}{1+u}\right)du &\text{by partial fractions}\\&=\frac{1}{2}\big(-\ln|1-u|+\ln|1+u|\big)\\&=\frac{1}{2}\ln\left|\frac{1+u}{1-u}\right|\\&= \frac{1}{2}\ln\left|\frac{1+\sin\theta}{1-\sin\theta}\right| &\text{back-substituting}\\&= \frac{1}{2}\ln\left|\frac{(1+\sin\theta)^2}{1-\sin^2\theta}\right| &\text{multiplying by }\frac{1+\sin\theta}{1+\sin\theta}\\&= \ln\left|\sqrt{\frac{(1+\sin\theta)^2}{\cos^2\theta}}\right| &\text{log rule and trig identity}\\& = \ln\left|\frac{1+\sin\theta}{\cos\theta}\right|\\&= \ln|\sec\theta+\tan\theta|.\end{align*}
@@ -503,14 +523,14 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: I don't know how to do this.
 - Q: Suppose $\sum_{n=0}^{\infty}a_nx^n$ converges whenever $x \in I$. List three important facts about the function $f\colon I \to \RR$ defined by $$f(x) = \sum_{n=0}^{\infty}a_nx^n.$$ 
 - A: \begin{description}\item[cts.] $f$ is continuous on its domain.\item[diff'ble.] The function $f$ is differentiable and$$f'(x) = \sum_{n=0}^{\infty}\frac{d}{dx}\left[a_nx^n\right] =\sum_{n=1}^{\infty}na_nx^{n-1}.$$\item[int'ble.] The function $f$ is integrable and$$\int f(x)dx = \sum_{n=0}^{\infty}\int a_nx^ndx=\sum_{n=0}^{\infty}\frac{a_n}{n+1}x^{n+1}.$$\end{description}
-- Q: Assuming the function $f$ has a power series representation (centered at $0$), what are the \textbf{Taylor coefficients} of the power series? Will any other coefficients do the trick? 
-- A: We have $f(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots$. Finding the value of the n-th derivative of $f$ at $x = 0$ yields$$a_n = \frac{f^{(n)}(0)}{n!}.$$ The power series $$f(x) = \sum_{n=1}^\infty\frac{f^{(n)}(0)}{n!}x^n$$ is called the \textbf{Taylor series} (centered at $0$) of $f$; if $f(x)$ can be represented by a power series, then this is it (it's a unique representation).
+- Q: Assuming the function $f$ has a power series representation (centered at $0$), what are the Taylor coefficients of the power series? Will any other coefficients do the trick? 
+- A: We have $f(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots$. Finding the value of the n-th derivative of $f$ at $x = 0$ yields$$a_n = \frac{f^{(n)}(0)}{n!}.$$ The power series $$f(x) = \sum_{n=1}^\infty\frac{f^{(n)}(0)}{n!}x^n$$ is called the Taylor series (centered at $0$) of $f$; if $f(x)$ can be represented by a power series, then this is it (it's a unique representation).
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = \frac{1}{1-x}.$$ 
-- A: This is a geometric series. We find $$\frac{1}{1-x}= 1 + x+x^2+x^3+\cdots = \sum_{n=0}^\infty x^n,$$ which is valid for $$-1<x<1.$$
+- A: This is a geometric series. We find $$\frac{1}{1-x}= 1 + x+x^2+x^3+\cdots = \sum_{n=0}^\infty x^n,$$ which is valid for $$-1 l< x < 1.$$
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = \frac{1}{1+x}.$$ 
-- A: This is the geometric series with $-x$ substituted, $$\frac{1}{1+x}= 1 - x +x^2-x^3+\cdots = \sum_{n=0}^\infty (-1)^n x^n,$$ which is valid for $$-1<x<1.$$
+- A: This is the geometric series with $-x$ substituted, $$\frac{1}{1+x}= 1 - x +x^2-x^3+\cdots = \sum_{n=0}^\infty (-1)^n x^n,$$ which is valid for $$-1 < x<1.$$
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = \log(1+x).$$ 
-- A: This may be derived integrating the geometric series of $-x$: $$\int\frac{1}{1+x}dx = \log(1+x)= x -\frac{x^2}{2}+\frac{x^3}{3}-\cdots = \sum_{n=1}^\infty \frac{(-1)^n}{n}x^n,$$ (note the index begins at $1$). This series converges when $$-1<x\leq1.$$
+- A: This may be derived integrating the geometric series of $-x$: $$\int\frac{1}{1+x}dx = \log(1+x)= x -\frac{x^2}{2}+\frac{x^3}{3}-\cdots = \sum_{n=1}^\infty \frac{(-1)^n}{n}x^n,$$ (note the index begins at $1$). This series converges when $$-1< x\leq1.$$
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = e^x.$$ 
 - A: Compute a few Taylor coefficients, then guess: $$e^x = 1 + x+\frac{x^2}{2!}+\frac{x^3}{3!}+\cdots = \sum_{n=0}^\infty\frac{1}{n!} x^n.$$ Turns out to be valid for all $x$ in $\RR$.
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = \sin x.$$ 
@@ -520,6 +540,10 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 
 ## Leftovers
 
+- Q: List $2^3$, $2^6$, $2^9$ and $2^{12}$ in decimal expansions. 
+- A: We compute $8$, $64$, $512$ and $4092$ respectively.
+- Q: List out $2^2$, $2^4$, $2^8$ and $2^{16}$ in decimal expansions. 
+- A: We have $4$, $16$, $256$ and $65536$ respectively.
 - Q: How do I use Lagrange multipliers to solve a constrained optimization problem? 
 - A: To solve the problem$$ \text{ min (or max) }f(x,y,z) \text{ subject to } g(x,y,z) =0,$$\begin{enumerate}\item Form the augmented function,$$L(x,y,z,\lambda) = f(x,y,z)-\lambda g(x,y,z)$$\item Set all partial derivatives of $L$ equal to zero,\item Solve for $x,y,z$.\end{enumerate}
 - Q: What is the partial fraction decomposition of $$\frac{1}{(x-a)(x-b)}?$$ 
