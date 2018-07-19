@@ -87,7 +87,7 @@ Now, for a bit of motivation from Scott Aaronson's *[Trigonometry? No Way: These
 - Q: Let $p(x)$ be a polynomial of degree at least 1. The remainder theorem states ``when $p(x)$ is divided by $x-k$, the remainder is $p(k)$.'' From these grounds, state and prove the Factor Theorem. 
 - A: 
     - The Factor Theorem states that $x=k$ is a root of the polynomial equation $p(x) = 0$ if and only if $x-k$ is a factor of $p(x)$.
-    - Suppose $x=k$ satisfies $p(x) = 0$. Then $p(k) = 0$. The Remainder theorem states $$ p(x) = q(x) \cdot (x-k) + p(k)$$ and substitution implies$$p(x) =q(x) \cdot (x-k) + 0.$$ So $x-k$ is a factor of $p(x)$. Conversely, suppose$x-k$ is a factor of $p(x)$. Then$$p(x) =q(x) \cdot (x-k).$$ I claim $x=k$ satisfies $p(x) = 0$. Well, $p(x) = 0$ exactly when $$q(x) \cdot (x-k)= 0.$$ This is true when $x =k$.\end{enumerate}
+    - Suppose $x=k$ satisfies $p(x) = 0$. Then $p(k) = 0$. The Remainder theorem states $$ p(x) = q(x) \cdot (x-k) + p(k)$$ and substitution implies$$p(x) =q(x) \cdot (x-k) + 0.$$ So $x-k$ is a factor of $p(x)$. Conversely, suppose$x-k$ is a factor of $p(x)$. Then$$p(x) =q(x) \cdot (x-k).$$ I claim $x=k$ satisfies $p(x) = 0$. Well, $p(x) = 0$ exactly when $$q(x) \cdot (x-k)= 0.$$ This is true when $x =k$.
 - Q: State the Fundamental Theorem of Algebra. 
 - A: Every polynomial equation $$a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x+a_0 = 0$$ of degree $n \geq 1$ has at least one (real or complex) root.
 - Q: How can the polynomial $$a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x+a_0$$ be written as the product of unique, linear (degree 1) factors? 
@@ -136,7 +136,8 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: The inverse of a $2 \times 2$ matrix is given by swapping the diagonal entries, negating the off-diagonal entries, and dividing by the determinant:$$\left(\begin{array}{cc}a &b \\c & d \\\end{array}\right)^{-1} = \frac{1}{ad-bc}\left(\begin{array}{cc}d & -b \\-c & a \\\end{array}\right).$$ The inverse is not defined if the determinant is zero.
 - Q: What is the inverse of the $3 \times 3$ matrix$\left(\begin{array}{ccc}a &b & c\\d & e &f \\g &h &i\end{array}\right)$? 
 - A: To find the inverse of a $3 \times 3$ matrix,
-    - Compute the minors of each element;\item Negate every other element, according to a checkerboard pattern;
+    - Compute the minors of each element;
+    - Negate every other element, according to a checkerboard pattern;
     - Take the transpose;
     - Divide by the determinant of the original matrix.
   The inverse is not defined if the determinant is zero. Note:the minor of the $(i,j)$th entry of a matrix $\mathbf{A}$ is the determinant of the submatrix obtained by removing the $i$th row and the $j$th column of $\mathbf{A}$.
@@ -148,7 +149,10 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - Q: Write the equation of a line in $\mathbf{R}^2$ which intersects a point $\mathbf{x}_0$ and has the normal vector $\mathbf{n}$. 
 - A: The line in $\mathbf{R}^2$ going through $\mathbf{x}_0$ with normal vector $\mathbf{n}$ is given by$$\mathbf{n}\cdot\mathbf{x} = \mathbf{n}\cdot\mathbf{x}_0.$$
 - Q: State three ways to find a vector perpendicular to $\mathbf{x}$. 
-- A: \begin{itemize}\item In $\mathbf{R}^2$ a vector perpendicular to $\mathbf{x} = \langle a, b \rangle$ is $\langle -b,a \rangle$.\item Write and solve the equation $\mathbf{x} \cdot \mathbf{y} = 0$.\item Take the cross product with any vector that is not a multiple of $\mathbf{x}$.\end{itemize}
+- A: 
+    - In $\mathbf{R}^2$ a vector perpendicular to $\mathbf{x} = \langle a, b \rangle$ is $\langle -b,a \rangle$.
+    - Write and solve the equation $\mathbf{x} \cdot \mathbf{y} = 0$.
+    - Take the cross product with any vector that is not a multiple of $\mathbf{x}$.
 
 ## Trigonometry
 
@@ -183,9 +187,13 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - Q: In the (polar coordinate) plane, what is the equation of a circle with the line segment from the origin to the point $(2a, 0)$ as a diameter (for any nonzero $a \in \RR$)? 
 - A: Intuitively picturing the cosine function ``rolled around" the origin, we find$$r(\theta) = 2a\cos(\theta)$$ where $r$ is a function of $\theta$. If $a>0$, then the circle lies on the $\theta = 0$ side of the origin. If $a <0$, then the circles lies on the $\theta = \pi$ side of the origin.
 - Q: In the plane, what is the polar equation of a circle with diameter connecting the origin to the point $(2a, 0)$? 
-- A: Picturing the cosine function ``rolled around" the origin, we find$$r(\theta) = 2a\cos(\theta)$$ where $r$ is a function of $\theta$.\begin{itemize}\item If $a>0$, the circle lies in the $\theta = 0$ direction.\item If $a <0$, the circles lies in the $\theta = \pi$ direction.\end{itemize}
+- A: Picturing the cosine function ``rolled around" the origin, we find$$r(\theta) = 2a\cos(\theta)$$ where $r$ is a function of $\theta$.
+    - If $a>0$, the circle lies in the $\theta = 0$ direction.
+    - If $a <0$, the circles lies in the $\theta = \pi$ direction.
 - Q: In the plane, what is the polar equation of a circle with diameter connecting the origin to the point $(2a, \frac{\pi}{2})$? 
-- A: Picturing the sine function ``rolled around" the origin, we find$$r(\theta) = 2a\sin(\theta)$$ where $r$ is a function of $\theta$.\begin{itemize}\item If $a>0$, the circle lies in the $\theta = \frac{\pi}{2}$ direction.\item If $a <0$, the circles lies in the $\theta = -\frac{\pi}{2}$ direction.\end{itemize}
+- A: Picturing the sine function ``rolled around" the origin, we find$$r(\theta) = 2a\sin(\theta)$$ where $r$ is a function of $\theta$.
+    - If $a>0$, the circle lies in the $\theta = \frac{\pi}{2}$ direction.
+    - If $a <0$, the circles lies in the $\theta = -\frac{\pi}{2}$ direction.
 - Q: In the plane, what is the polar equation of a cardioid with axis of symmetry connecting the origin to the point a radial distance of $4a$ away at an angle of $\theta =0$? 
 - A: Picturing a upshifted cosine function ``rolled around" the origin, we find$$r(\theta) = 2a(1+\cos(\theta))$$ where $r$ is a function of $\theta$. Note that $a>0$ implies the cardioid lies in the $\theta = 0$ direction.
 - Q: Express $\sin 2\theta$ in terms of $\cos\theta$ and $\sin\theta$. 
@@ -415,7 +423,11 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 
 - Q: Evaluate $\int_0^{1/6} \frac{\sin^{-1}(3t)}{\sqrt{1-9t^2}}dt$. 
 - A: Let $u(t) = \sin^{-1}(3t)$. Then $$du = \frac{1}{\sqrt{1-(3t)^2}}\cdot 3dt.$$ With $u(0) = \sin^{-1}(0) = 0$ and $u(1/6) = \sin^{-1}(1/2) = \pi/6$, we can express the integral entirely in terms of $u$:\begin{align*}\int_0^{1/6} \frac{\sin^{-1}(3t)}{\sqrt{1-9t^2}}dt &=\int_0^{\pi/6} u\cdot \frac{du}{3}\\&= \frac{\pi^2}{216}.\end{align*}
-- Q: Which of the following are not approximation methods?\begin{enumerate}\item Newton’s Method\item Average rate of change\item Linearization\item Riemann Sum\end{enumerate} 
+- Q: Which of the following are not approximation methods?
+    - Newton’s Method
+    - Average rate of change
+    - Linearization
+    - Riemann Sum
 - A: Average rate of change is NOT an approximation method.
 - Q: The expression $$\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3}$$ is a left endpoint approximation for which integral? 
 - A: \begin{align*}&\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3} \\&=g\left(\frac{8}{3}\right)\cdot\frac{2}{3} +g\left(\frac{10}{3}\right)\cdot\frac{2}{3}+g\left(\frac{12}{3}\right)\cdot\frac{2}{3}\\&\approx \int_{8/3}^{14/3} g(x)dx.\end{align*}
@@ -451,7 +463,11 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - A: For any arbitrary constant $c$, we find the antiderivative $$\int \frac{du}{1+u^2} = \arctan(u) + c.$$ This follows from $$d(\arctan(u) + c) = \frac{1}{1+u^2}du.$$
 - Q: Evaluate $\int_0^{1/6} \frac{\sin^{-1}(3t)}{\sqrt{1-9t^2}}dt$. 
 - A: Let $u(t) = \sin^{-1}(3t)$. Then $$du = \frac{1}{\sqrt{1-(3t)^2}}\cdot 3dt.$$ With $u(0) = \sin^{-1}(0) = 0$ and $u(1/6) = \sin^{-1}(1/2) = \pi/6$, we can express the integral entirely in terms of $u$:\begin{align*}\int_0^{1/6} \frac{\sin^{-1}(3t)}{\sqrt{1-9t^2}}dt &=\int_0^{\pi/6} u\cdot \frac{du}{3}\\&= \frac{\pi^2}{216}.\end{align*}
-- Q: Which of the following are not approximation methods?\begin{enumerate}\item Newton’s Method\item Average rate of change\item Linearization\item Riemann Sum\end{enumerate} 
+- Q: Which of the following are not approximation methods?
+    - Newton’s Method
+    - Average rate of change
+    - Linearization
+    - Riemann Sum
 - A: Average rate of change is NOT an approximation method.
 - Q: The expression $$\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3}$$ is a left endpoint approximation for which integral? 
 - A: \begin{align*}&\sum_{i=1}^3 g\left(2+\frac{2i}{3}\right)\cdot\frac{2}{3} \\&=g\left(\frac{8}{3}\right)\cdot\frac{2}{3} +g\left(\frac{10}{3}\right)\cdot\frac{2}{3}+g\left(\frac{12}{3}\right)\cdot\frac{2}{3}\\&\approx \int_{8/3}^{14/3} g(x)dx.\end{align*}
@@ -528,7 +544,10 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - Q: Knowing $$\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt{\pi},$$ find $$\int_{0}^{\infty}x^2e^{-x^2}dx$$ 
 - A: I don't know how to do this.
 - Q: Suppose $\sum_{n=0}^{\infty}a_nx^n$ converges whenever $x \in I$. List three important facts about the function $f\colon I \to \RR$ defined by $$f(x) = \sum_{n=0}^{\infty}a_nx^n.$$ 
-- A: \begin{description}\item[cts.] $f$ is continuous on its domain.\item[diff'ble.] The function $f$ is differentiable and$$f'(x) = \sum_{n=0}^{\infty}\frac{d}{dx}\left[a_nx^n\right] =\sum_{n=1}^{\infty}na_nx^{n-1}.$$\item[int'ble.] The function $f$ is integrable and$$\int f(x)dx = \sum_{n=0}^{\infty}\int a_nx^ndx=\sum_{n=0}^{\infty}\frac{a_n}{n+1}x^{n+1}.$$\end{description}
+- A: \begin{description}
+    - continuous: $f$ is continuous on its domain.
+    - diff'ble: The function $f$ is differentiable and$$f'(x) = \sum_{n=0}^{\infty}\frac{d}{dx}\left[a_nx^n\right] =\sum_{n=1}^{\infty}na_nx^{n-1}.$$
+    - intg'ble: The function $f$ is integrable and$$\int f(x)dx = \sum_{n=0}^{\infty}\int a_nx^ndx=\sum_{n=0}^{\infty}\frac{a_n}{n+1}x^{n+1}.$$\end{description}
 - Q: Assuming the function $f$ has a power series representation (centered at $0$), what are the Taylor coefficients of the power series? Will any other coefficients do the trick? 
 - A: We have $f(x) = a_0 + a_1x + a_2x^2 + a_3x^3 + \cdots$. Finding the value of the n-th derivative of $f$ at $x = 0$ yields$$a_n = \frac{f^{(n)}(0)}{n!}.$$ The power series $$f(x) = \sum_{n=1}^\infty\frac{f^{(n)}(0)}{n!}x^n$$ is called the Taylor series (centered at $0$) of $f$; if $f(x)$ can be represented by a power series, then this is it (it's a unique representation).
 - Q: Write the Taylor series representation of the following function and state the interval for which the representation converges: $$f(x) = \frac{1}{1-x}.$$ 
@@ -551,6 +570,9 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - Q: List out $2^2$, $2^4$, $2^8$ and $2^{16}$ in decimal expansions. 
 - A: We have $4$, $16$, $256$ and $65536$ respectively.
 - Q: How do I use Lagrange multipliers to solve a constrained optimization problem? 
-- A: To solve the problem$$ \text{ min (or max) }f(x,y,z) \text{ subject to } g(x,y,z) =0,$$\begin{enumerate}\item Form the augmented function,$$L(x,y,z,\lambda) = f(x,y,z)-\lambda g(x,y,z)$$\item Set all partial derivatives of $L$ equal to zero,\item Solve for $x,y,z$.\end{enumerate}
+- A: Turn a calculus problem into linear algebra. Suppose we want $$\text{ min (or max) }f(x,y,z) \text{ subject to } g(x,y,z) =0,$$
+    - Form the augmented function,$$L(x,y,z,\lambda) = f(x,y,z)-\lambda g(x,y,z)$$
+    - Set all partial derivatives of $L$ equal to zero,
+    - Solve for $x,y,z$.
 - Q: What is the partial fraction decomposition of $$\frac{1}{(x-a)(x-b)}?$$ 
 - A: This special case decomposes to the form $$\frac{1}{a-b}\left(\frac{1}{x-a}-\frac{1}{x-b}\right).$$
