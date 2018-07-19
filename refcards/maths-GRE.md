@@ -1,12 +1,12 @@
 ---
-title: Maths Subject GRE refcard
+title: Subject GRE refcard
 author: Colton Grainger
 ---
 
 \newcommand{\RR}{\mathbf{R}}
 \newcommand{\NN}{\mathbf{N}}
 \newcommand{\CC}{\mathbf{C}}
-\newcommand{\eps}{\varepsilon}}
+\newcommand{\eps}{\varepsilon}
 
 The title says it all. These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE.
 
