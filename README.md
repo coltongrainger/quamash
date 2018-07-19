@@ -13,7 +13,7 @@ The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
 In Idaho's bitterbrush country, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in late fall. While the true camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made the mistake of confusing the two, the whole community is prudent to dig out the deathcamas bulbs in the spring. The flower is still on the plant, and the difference is plain. 
 
-So that is what I am upto. Wiki-gardening.
+So that's what I'm upto. Wiki-gardening.
 
 ### Related projects
 
