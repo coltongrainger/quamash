@@ -8,9 +8,9 @@ author: Colton Grainger
 \newcommand{\CC}{\mathbf{C}}
 \newcommand{\eps}{\varepsilon}
 
-The title says it all. These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE.
+These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE.
 
-Now, for a bit of motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*
+I'm posting this with motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*
 
 > "As with any other ‘sport,’ basketball players need to stay in shape through regular ‘practice meets’," explains Gary Richardson, a "coach" of one of the camp’s teams. "You don’t want your bicep neurons to go weak."
 >
