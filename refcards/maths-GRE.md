@@ -85,7 +85,9 @@ Now, for a bit of motivation from Scott Aaronson's *[Trigonometry? No Way: These
 - Q: Let $p(x)$ be a polynomial of degree at least 1 and define another degree 1 polynomial $d(x) = x - k$ (where $k$ is a complex number). If $p(x)$ is divided by $d(x)$, there exist unique polynomials $q(x)$ and $r(x)$ such that $$ p(x) = q(x) \cdot (x-k) + r$$where $r$ is a constant. State the Remainder Theorem. 
 - A: Substituting $x = k$ into the equation yields $p(k) = r$. Therefore, when $p(x)$ is divided by $x-k$, the remainder is $p(k)$.
 - Q: Let $p(x)$ be a polynomial of degree at least 1. The remainder theorem states ``when $p(x)$ is divided by $x-k$, the remainder is $p(k)$.'' From these grounds, state and prove the Factor Theorem. 
-- A: \begin{enumerate}\item The Factor Theorem states that $x=k$ is a root of the polynomial equation $p(x) = 0$ if and only if $x-k$ is a factor of $p(x)$.\item Suppose $x=k$ satisfies $p(x) = 0$. Then $p(k) = 0$. The Remainder theorem states $$ p(x) = q(x) \cdot (x-k) + p(k)$$ and substitution implies$$p(x) =q(x) \cdot (x-k) + 0.$$ So $x-k$ is a factor of $p(x)$. Conversely, suppose$x-k$ is a factor of $p(x)$. Then$$p(x) =q(x) \cdot (x-k).$$ I claim $x=k$ satisfies $p(x) = 0$. Well, $p(x) = 0$ exactly when $$q(x) \cdot (x-k)= 0.$$ This is true when $x =k$.\end{enumerate}
+- A: 
+    - The Factor Theorem states that $x=k$ is a root of the polynomial equation $p(x) = 0$ if and only if $x-k$ is a factor of $p(x)$.
+    - Suppose $x=k$ satisfies $p(x) = 0$. Then $p(k) = 0$. The Remainder theorem states $$ p(x) = q(x) \cdot (x-k) + p(k)$$ and substitution implies$$p(x) =q(x) \cdot (x-k) + 0.$$ So $x-k$ is a factor of $p(x)$. Conversely, suppose$x-k$ is a factor of $p(x)$. Then$$p(x) =q(x) \cdot (x-k).$$ I claim $x=k$ satisfies $p(x) = 0$. Well, $p(x) = 0$ exactly when $$q(x) \cdot (x-k)= 0.$$ This is true when $x =k$.\end{enumerate}
 - Q: State the Fundamental Theorem of Algebra. 
 - A: Every polynomial equation $$a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x+a_0 = 0$$ of degree $n \geq 1$ has at least one (real or complex) root.
 - Q: How can the polynomial $$a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1x+a_0$$ be written as the product of unique, linear (degree 1) factors? 
@@ -133,7 +135,11 @@ These questions are from [Paul Hand](http://www.leadinglesson.com/), included he
 - Q: What is the inverse of the $2 \times 2$ matrix$\left(\begin{array}{cc}a & b \\c & d \\\end{array}\right)$? 
 - A: The inverse of a $2 \times 2$ matrix is given by swapping the diagonal entries, negating the off-diagonal entries, and dividing by the determinant:$$\left(\begin{array}{cc}a &b \\c & d \\\end{array}\right)^{-1} = \frac{1}{ad-bc}\left(\begin{array}{cc}d & -b \\-c & a \\\end{array}\right).$$ The inverse is not defined if the determinant is zero.
 - Q: What is the inverse of the $3 \times 3$ matrix$\left(\begin{array}{ccc}a &b & c\\d & e &f \\g &h &i\end{array}\right)$? 
-- A: To find the inverse of a $3 \times 3$ matrix,\begin{enumerate}\item Compute the minors of each element;\item Negate every other element, according to a checkerboard pattern;\item Take the transpose;\item Divide by the determinant of the original matrix.\end{enumerate}The inverse is not defined if the determinant is zero. Note:the minor of the $(i,j)$th entry of a matrix $\mathbf{A}$ is the determinant of the submatrix obtained by removing the $i$th row and the $j$th column of $\mathbf{A}$.
+- A: To find the inverse of a $3 \times 3$ matrix,
+    - Compute the minors of each element;\item Negate every other element, according to a checkerboard pattern;
+    - Take the transpose;
+    - Divide by the determinant of the original matrix.
+  The inverse is not defined if the determinant is zero. Note:the minor of the $(i,j)$th entry of a matrix $\mathbf{A}$ is the determinant of the submatrix obtained by removing the $i$th row and the $j$th column of $\mathbf{A}$.
 
 ## Vector geometry
 
