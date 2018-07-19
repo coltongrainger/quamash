@@ -5,6 +5,7 @@ revised: 2018-07-19
 ---
 
 \newcommand{\RR}{\mathbf{R}}
+\newcommand{\QQ}{\mathbf{Q}}
 \newcommand{\NN}{\mathbf{N}}
 \newcommand{\CC}{\mathbf{C}}
 \newcommand{\eps}{\varepsilon}
