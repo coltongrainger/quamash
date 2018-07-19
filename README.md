@@ -3,23 +3,24 @@ title: Open notebook
 toc: false
 ---
 
-This is an (experimental) open notebook. It's a repository for lecture notes, definition lists, and tangential ideas I scrawl out on paper throughout the day, which otherwise would accumulate in my recycling bin.
+This is an (experimental) open notebook: a repository for lecture notes, definition lists, and tangential ideas I scrawl out on paper through the day, which otherwise accumulate in my recycling bin.
 
-Some pages may be intolerable,^[in terms of veracity, conviction, tone, etc. Avoid them!] but others are meant to be returned to and iteratively improved.
+Some pages may be intolerable, in terms of form, conviction, tone, and so on; avoid them! But others I hope to iteratively improve on; these are eventually meant for general consumption.
 
-The name quamash refers to *Cammassia quamash*, e.g.,
+The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
-> 1814 *Lewis & Clarke's Exp.* (1893) 958 The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash. (OED)
+> 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash.
 
-So here's the metaphor: In Idaho, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in the Fall. Yet, while the *true* camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made unfortunate mistake of confusing the two, we are prudent to dig the bulb while the flower is still on the plant.
+In Idaho's bitterbrush country, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in late fall. While the true camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made the mistake of confusing the two, the whole community is prudent to dig out the deathcamas bulbs in the spring. The flower is still on the plant, and the difference is plain. 
+
+So that is what I am upto. Wiki-gardening.
 
 ### Related projects
 
-I look up to others who have done sophisticated and *extremely* exemplar work in the same spirit. Please see also:
+I look up to others who have done sophisticated work in same spirit. Please see also:
 
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
-- Michael Goerz's [Studies](https://michaelgoerz.net/studies/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
 - Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
