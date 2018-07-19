@@ -5,17 +5,17 @@ toc: false
 
 This is an (experimental) open notebook. It's a repository for lecture notes, definition lists, and tangential ideas I scrawl out on paper throughout the day, which otherwise would accumulate in my recycling bin.
 
-Some pages may be intolerable^[in terms of veracity, conviction, tone, etc. Avoid them!] but others are meant to be returned to and iteratively improved.
+Some pages may be intolerable,^[in terms of veracity, conviction, tone, etc. Avoid them!] but others are meant to be returned to and iteratively improved.
 
 The name quamash refers to *Cammassia quamash*, e.g.,
 
 > 1814 *Lewis & Clarke's Exp.* (1893) 958 The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash. (OED)
 
-Here's the metaphor: In Idaho, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in the Fall---yet, while the true camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made unfortunate mistake of confusing the two, we are prudent to dig the bulb while the flower is still on the plant.
+So here's the metaphor: In Idaho, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in the Fall. Yet, while the *true* camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made unfortunate mistake of confusing the two, we are prudent to dig the bulb while the flower is still on the plant.
 
 ### Related projects
 
-I look up to others who have done sophisticated and extremely exemplar work in the same spirit. Please see also:
+I look up to others who have done sophisticated and *extremely* exemplar work in the same spirit. Please see also:
 
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
