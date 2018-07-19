@@ -1,33 +1,33 @@
 ---
-title: Lecture Notes Wiki
+title: Open notebook
 toc: false
 ---
 
-## Welcome
+This is an (experimental) open notebook. It's a repository for lecture notes, definition lists, and tangential ideas I scrawl out on paper throughout the day, which otherwise would accumulate in my recycling bin.
 
-This wiki consolidates lecture notes and a partial bibliography.
+Some pages may be intolerable^[in terms of veracity, conviction, tone, etc. Avoid them!] but others are meant to be returned to and iteratively improved.
 
-I aim to tend to the content while I am preparing for preliminary exams (in mathematics) at the University of Colorado in Boulder. Some pages may be intolerably raw,^[Avoid them!] but others are eventually meant to be dug up and eaten. 
-
-The name quamash (kwəˈmæʃ) is an early anglicization of *camas*:
+The name quamash refers to *Cammassia quamash*, e.g.,
 
 > 1814 *Lewis & Clarke's Exp.* (1893) 958 The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash. (OED)
 
-### Related work
+Here's the metaphor: In Idaho, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in the Fall---yet, while the true camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made unfortunate mistake of confusing the two, we are prudent to dig the bulb while the flower is still on the plant.
 
-I appreciate folks who've started similar projects; see also:
+### Related projects
 
+I look up to others who have done sophisticated and extremely exemplar work in the same spirit. Please see also:
+
+- W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
-- Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
-- W. Caleb McDaniel's [citation style](http://wcm1.web.rice.edu/plain-text-citations.html) and [open notebook](http://wiki.wcaleb.rice.edu/)
-- Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
-- Dave Herman's [Research Blog](https://calculist.blogspot.com/)
+- Michael Goerz's [Studies](https://michaelgoerz.net/studies/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
-
-### Colophon
-
-The markdown files are licensed as [public domain (CC-0)](http://creativecommons.org/about/cc0). Attached documents are provided for educational purpose, and may have their own copyright. [Gitit](https://github.com/jgm/gitit/) is released under the [GNU General Public License](http://www.aaronsw.com/weblog/000360), [Fira Sans](https://github.com/mozilla/Fira) under [SIL Open Font License](https://github.com/mozilla/Fira/blob/master/LICENSE), and [MathJax](https://www.mathjax.org/) under [Apache License 2.0](https://github.com/mathjax/MathJax/blob/master/LICENSE).
+- Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
+- Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
 
 ### Contributing
 
-One may fork the [markdown files on github](https://github.com/coltongrainger/quamash), edit, and from there open a pull-request.
+One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
+
+### Colophon
+
+The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). References may be attached in [fair use](https://libguides.bc.edu/copyright/fairuse). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The body font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
