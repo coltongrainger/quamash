@@ -1,6 +1,7 @@
 ---
-title: Subject GRE refcard
+title: Mathematics Subject GRE refcard
 author: Colton Grainger
+revised: 2018-07-19
 ---
 
 \newcommand{\RR}{\mathbf{R}}
@@ -8,16 +9,15 @@ author: Colton Grainger
 \newcommand{\CC}{\mathbf{C}}
 \newcommand{\eps}{\varepsilon}
 
-These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the tab separated text version for importing into spaced repetition software: [2016-10-27-maths-GRE-flashcards.txt]())
+These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the accompanying [tab separated text file](/refcards/2016-10-27-math-gre-flashcards.txt) for importing into spaced repetition software, e.g., mnemosyne.)
 
-I'm posting this with motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*
+To take motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*:
 
 > "As with any other ‘sport,’ basketball players need to stay in shape through regular ‘practice meets’," explains Gary Richardson, a "coach" of one of the camp’s teams. "You don’t want your bicep neurons to go weak."
 >
 > Ferguson, who started throwing a ball when he was only three years old, describes the camp in almost reverential terms. "At my high school," he says, "I was ostracized as a jock, teased and humiliated because I didn’t enjoy inverting matrices or grinding out Taylor series expansions. But here, I’ve finally found friends who share my passion for basketball."
 >
 > Don’t think, though, that life is all court and hoop for these precocious young wizards. Like anyone else, they need to unwind—except that when they do, their favored recreations are even odder than their eccentric passion. Rather than playing high-stakes Scrabble, beguiling one another with Goedelian logic puzzles, or composing poems without using the letter ‘e,’ these teens regale each other with anecdotes about beer and sex.
-
 
 ## Functions
 
