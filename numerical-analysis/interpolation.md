@@ -128,4 +128,4 @@ For the basis of the Newton form, $A$ is a lower triangular matrix. Solving $A \
 
 ## Error bounds
 
-THEOREM! Let $f \in C^{n+1}[a,b]$, the $x_i$ be $n+1$ distinct points in $[a,b]$, and suppose $p_n$ is a polynomial of degree at most $n$ that interpolates $f$ at the $x_i$. Given $x \in [a,b]$, there exists a point $\xi \in (a,b)$ such that ... $$f(x) = p_n(x) + \frac{f^{(n+1)}}{(n+1)!}\prod_{\forall i}(x-x_i).$$
+THEOREM! Let $f \in C^{n+1}[a,b]$, the $x_i$ be $n+1$ distinct points in $[a,b]$, and suppose $p_n$ is a polynomial of degree at most $n$ that interpolates $f$ at the $x_i$. Given $x \in [a,b]$, there exists a point $\xi \in (a,b)$ such that ... $$f(x) = p_n(x) + \frac{f^{(n+1)}(\xi)}{(n+1)!}\prod_{\forall i}(x-x_i).$$
