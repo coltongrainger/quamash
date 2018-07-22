@@ -3,11 +3,11 @@ title: Interpolation
 author: Colton Grainger
 ---
 
-\renewcommand{\NN}{\mathbf{N}}
-\renewcommand{\RR}{\mathbf{R}}
-\renewcommand{\eps}{\varepsilon}
-\renewcommand{\abs}[1]{\lvert #1\rvert}
-\renewcommand{\norm}[1]{\lVert #1\rVert}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\abs}[1]{\lvert #1\rvert}
+\newcommand{\norm}[1]{\lVert #1\rVert}
 
 ## Polynomial approximation
 
@@ -74,7 +74,7 @@ Coming up:
 
 ## Newton form
 
-An examples first. Consider the linear interpolant (degree $n=1$) between $(x_0,f(x_0))$ and $(x_1,f(x_1))$.
+An example first. Consider the linear interpolant (degree $n=1$) between $(x_0,f(x_0))$ and $(x_1,f(x_1))$.
 
 \begin{align} p_1(x) &= f(x_1)\ell_1(x)+f(x_1)\ell_1(x) &\\
 &=f(x_0)\frac{x-x_1}{x_0-x_1} + f(x_1)\frac{x-x_0}{x_1-x_0}& \text{(Lagrange form)}\\
@@ -111,7 +111,7 @@ We are required to choose a basis for $\mathcal{P}_n$, and we've thus far seen t
 
     - produces the Lagrange form of the interpolating polynomial
 
-- the basis of the Newton form $\{1, (x-x_0), \ldots, (x-x_n)\}$
+- the basis of the Newton form $\{1, (x-x_0), \ldots, (x-x_0)\cdots(x-x_n)\}$
 
     - gives rise to the Newton/nested form
 
