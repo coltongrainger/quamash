@@ -9,7 +9,7 @@ Some pages may be intolerable, in terms of form, conviction, tone, and so on; av
 
 The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
-> 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages‥for the purpose of collecting quamash.
+> 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages...for the purpose of collecting quamash.
 
 In Idaho's bitterbrush country, camases and deathcamases grow together---flowering blue and white, then withering down to bulbs in late fall. While the true camas bulbs are edible and nutritious, deathcamas is alkaline and terrible. Learning from those who have made the mistake of confusing the two, the whole community is prudent to dig out the deathcamas bulbs in the spring. The flower is still on the plant, and the difference is plain. 
 
