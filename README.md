@@ -3,7 +3,7 @@ title: Open notebook
 toc: false
 ---
 
-This repository is for definitions, references, and problem sets.
+For (Colton Grainger's) definitions, references, and problem sets.
 
 ### Contributing
 
@@ -24,4 +24,3 @@ The markdown files are licensed in the [public domain (CC-0)](http://creativecom
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
 - Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
-
