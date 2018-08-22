@@ -11,11 +11,9 @@ revised:
 
 [“Mathematics (MATH) University of Colorado Boulder”](https://catalog.colorado.edu/courses-a-z/math/). Retrieved August 17, 2018.
 
-
 - [Calculus I](https://math.colorado.edu/math1300/)
 - [Calculus II](https://math.colorado.edu/math2300/)
 - [Calculus III](https://math.colorado.edu/math2400/)
-
 
 ### College of Idaho catalog 2012-13
 
@@ -111,9 +109,9 @@ Update for 2018--19
 
 ## meta
 
-    - mitschrieben
-    - SE
-    - Anki/mnemosyne
-    - allow oneself to do 2/3 of the work (but set the bar really high!)
-        - drop lowest scores
-        - *iterate*
+- mitschrieben
+- SE
+- Anki/mnemosyne
+- allow oneself to do 2/3 of the work (but set the bar really high!)
+    - drop lowest scores
+    - *iterate*
