@@ -49,3 +49,27 @@ PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that g
 PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why does $d$ divide $a$ and $d$? ... Because $a \in d\ZZ$ and $b \in d\ZZ$.
 
 PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why, if $k$ divides $a$ and $b$, does $k$ also divide $d$? ... Because $a, b \in k\ZZ$, and under closure $ar + bs \in k\ZZ$, alas, $d$ has this form, so $k$ divides $d$.
+
+DEF! A subset $U$ of a group $G$ is said to generate $G$ if every element in $G$ is ... a product of a string of elements (and their inverses) in $U$.
+
+Would be good to see [particular groups of importance](https://groupprops.subwiki.org/wiki/Category:Particular_groups) for further examples. I can't get into a catalog of group properties, and it's seemingly hopeless to memorize.
+
+### Making new groups out of old
+
+- subspaces of a vector space
+
+- cyclic subgroups of a single element
+
+- *products of spaces* correspond to groups, why?
+
+    - automorphism groups $\mathrm{Aut}(G)$
+    - in impressionistic language, the "symmetries of $G$"
+    - isomorphisms as "structure preserving maps"
+
+One should verify that the inverse of an automorphism is an automorphism.
+
+EX! What's a homomorphism from $\GLnR \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
+
+> Show that there exists a bijection from $\GLnR$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
+
+DEF! Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n! = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n! = n(n-1)!$ for $n > 1$ and $1! = 1$.
