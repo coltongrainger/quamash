@@ -28,7 +28,7 @@ EX! What is the order of the permutation group on $n$ letters? ... $S_n$ is a fi
 
 FACT! The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
 
-EX! What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \}$, since the first basis vector is taken to a scalar multiple of itself!
+EX! What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
 
 PROP! The subgroups of $(\ZZ, +)$ are precisely given by ... $(b\ZZ, +)$, where $b$ is a fixed integer.
 
