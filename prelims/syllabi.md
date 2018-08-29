@@ -260,3 +260,46 @@ Dugundji, Topology.
 Kelley, General Topology. Munkres, Topology.
 Steen, Counterexamples in Topology.
 
+### Part III analogues
+
+In addition to passing the preliminary exams, I've imported three goals from [Julia Groedecke](https://www.dpmms.cam.ac.uk/~jg352/) namely, to learn how to
+
+- give a talk
+- read a paper
+- write an essay
+
+Concerning the [Part III essays](http://www.maths.cam.ac.uk/postgrad/mathiii/part-iii-essays)
+
+> For motivation, today I found interesting ... topics, e.g.,
+> 
+>  - 6 Homotopy type theory
+>  - 11 Hodge decomposition theorem
+>  - 21 Hochschild Homology
+> 
+> To approach any of these subjects, I clearly have some work to do.
+> 
+> Here are the prerequisites I think I could integrate into CU Boulder's pillar courses:
+> 
+>  - (Fall 2018) supplementing Topology 1 with category theory from E Riehl, and, as much as possible, notes from A Hatcher and J Peter May
+>  - (Spring 2018) supplementing Differential Geometry with notes from M Spivak, J Milnor
+
+From algebraic topology, I'll want
+
+- chain complexes
+- simplicial homology
+- fundamental groups
+- smooth manifolds
+
+From differential geometry, I'll want
+
+- linear algebra (upto dual vector spaces and bilinear forms)
+- multivariable calculus
+- calculus on manifolds
+- classic differential geometry
+
+Incredibly noteworthy authors
+
+- JP May
+- A Hatcher
+- E Riehl
+- Vikil
