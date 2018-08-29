@@ -16,7 +16,7 @@ date: 2018-08-27
 
 EX! The Ur monoid on a non-trivial set $S$ is ... the set of transformations of $S$ into itself, with composition of functions as the binary operation.
 
-EX! The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)= \{ \text{all bijections } $\sigma \colon T \to T$ \}$, with composition of functions as the binary operation.
+EX! The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
 
 EX! $\GLnR$ is a subgroup, properly contained in ... $Sym(\RR^n)$.
 
