@@ -4,7 +4,7 @@ author: Colton Grainger
 toc: false
 ---
 
-For lecture notes, course outlines, and reference management. Meant as a prose complement [github](https://github.com/coltongrainger/).
+For mathematical writing, lecture outlines, and reference management, i.e., a prose complement to [github](https://github.com/coltongrainger/).
 
 ### Relevant pages Fall 2018
 
