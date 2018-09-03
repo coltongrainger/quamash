@@ -8,9 +8,9 @@ For lecture notes, course outlines, and reference management. Meant as a prose c
 
 ### Relevant pages Fall 2018
 
-- [prelims]()
-- [math1300](/teaching/math1300)
-- [lit]() (literature)
+- [prelims](prelims/)
+- [math1300](teaching/math1300)
+- [literature](lit)
 
 ### Contributing
 
