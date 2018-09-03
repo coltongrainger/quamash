@@ -8,7 +8,7 @@ url: https://www.math.utah.edu/~jasonu/flash-cards/
 license: CC-2.5
 ---
 
-Note: These flashcards and the accompanying source code are licensed under a Creative Commons Attribution--NonCommercial--ShareAlike 2.5 License. I have forked them from https://www.math.utah.edu/~jasonu/flash-cards/. The original author is Jason Underdown. The file is modified for compatibility with mnemosyne.
+Note: These flashcards and the accompanying source are licensed under a Creative Commons Attribution--NonCommercial--ShareAlike 2.5 License. I have forked them from <https://www.math.utah.edu/~jasonu/flash-cards/>. The original author is Jason Underdown. I've modified his work for compatibility with mnemosyne.
 
 ## Algebra
 
