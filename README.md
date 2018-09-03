@@ -4,13 +4,12 @@ author: Colton Grainger
 toc: false
 ---
 
-For mathematical writing, lecture outlines, and reference management, i.e., a prose complement to [github](https://github.com/coltongrainger/).
+For [definition lists](refcards/), [lecture notes](numerical-analysis/interpolation), and [reference management](lit/). Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-### Relevant pages Fall 2018
+### Links for academic year 2018-19
 
-- [prelims](prelims/)
-- [math1300](teaching/math1300)
-- [literature](lit)
+    - Coursework for [prelims](prelims/)
+    - TA-ing [math1300](teaching/math1300)
 
 ### Contributing
 
