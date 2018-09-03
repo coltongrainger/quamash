@@ -8,8 +8,8 @@ For definition lists, notes, and references. Meant as a prose complement to [git
 
 - [all pages](_index/)
 
-    - just [references](lit/)
-    - just [handwritten notes](raw/)
+    - just [references](lit)
+    - just [handwritten notes](raw)
     - related to [preliminary exams](prelims/)
     - teaching [math1300](teaching/math1300)
 
