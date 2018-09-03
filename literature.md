@@ -5,213 +5,212 @@ date: 2018-09-03
 
 title | size | type
 --- | --- | ---
-[1400-voynich-manuscript](/lit/1400-voynich-manuscript.pdf) |  | cannot open `1400-voynich-manuscript.pdf' (No such file or directory)
-[1620-bacon-novum_organon](/lit/1620-bacon-novum_organon.pdf) |  | cannot open `1620-bacon-novum_organon.pdf' (No such file or directory)
-[1678-bunyan-pilgrims-progress](/lit/1678-bunyan-pilgrims-progress.pdf) |  | cannot open `1678-bunyan-pilgrims-progress.pdf' (No such file or directory)
-[1872-nietzsche-the-birth-of-tragedy](/lit/1872-nietzsche-the-birth-of-tragedy.pdf) |  | cannot open `1872-nietzsche-the-birth-of-tragedy.pdf' (No such file or directory)
-[1886-nietzsche-beyond-good-and-evil](/lit/1886-nietzsche-beyond-good-and-evil.pdf) |  | cannot open `1886-nietzsche-beyond-good-and-evil.pdf' (No such file or directory)
-[1905-wilde-de-profundis](/lit/1905-wilde-de-profundis.epub) |  | cannot open `1905-wilde-de-profundis.epub' (No such file or directory)
-[1912-runge-graphical-methods](/lit/1912-runge-graphical-methods.pdf) |  | cannot open `1912-runge-graphical-methods.pdf' (No such file or directory)
-[1916-veblen-analysis-situ](/lit/1916-veblen-analysis-situ.pdf) |  | cannot open `1916-veblen-analysis-situ.pdf' (No such file or directory)
-[1921-hardy-pure-mathematics](/lit/1921-hardy-pure-mathematics.pdf) |  | cannot open `1921-hardy-pure-mathematics.pdf' (No such file or directory)
-[1926-hemingway-sun-also-rises](/lit/1926-hemingway-sun-also-rises.pdf) |  | cannot open `1926-hemingway-sun-also-rises.pdf' (No such file or directory)
-[1942-faulkner-go-down-moses](/lit/1942-faulkner-go-down-moses.pdf) |  | cannot open `1942-faulkner-go-down-moses.pdf' (No such file or directory)
-[1955-furstenberg-on-the-infinitude-of-primes](/lit/1955-furstenberg-on-the-infinitude-of-primes.pdf) |  | cannot open `1955-furstenberg-on-the-infinitude-of-primes.pdf' (No such file or directory)
-[1960-steenrod-topology-of-fiber-bundles](/lit/1960-steenrod-topology-of-fiber-bundles.djvu) |  | cannot open `1960-steenrod-topology-of-fiber-bundles.djvu' (No such file or directory)
-[1962-tolstov-fourier-series](/lit/1962-tolstov-fourier-series.pdf) |  | cannot open `1962-tolstov-fourier-series.pdf' (No such file or directory)
-[1964-abramowitz-stegun-handbook-functions](/lit/1964-abramowitz-stegun-handbook-functions.pdf) |  | cannot open `1964-abramowitz-stegun-handbook-functions.pdf' (No such file or directory)
-[1964-herstein-topics-in-algebra](/lit/1964-herstein-topics-in-algebra.pdf) |  | cannot open `1964-herstein-topics-in-algebra.pdf' (No such file or directory)
-[1965-milnor-topology](/lit/1965-milnor-topology.pdf) |  | cannot open `1965-milnor-topology.pdf' (No such file or directory)
-[1969-angelou-i-know-why-the-caged-bird-sings](/lit/1969-angelou-i-know-why-the-caged-bird-sings.pdf) |  | cannot open `1969-angelou-i-know-why-the-caged-bird-sings.pdf' (No such file or directory)
-[1970-feller-probability-theory-applications](/lit/1970-feller-probability-theory-applications.pdf) |  | cannot open `1970-feller-probability-theory-applications.pdf' (No such file or directory)
-[1971-maclane-categories-for-the-working-mathematician](/lit/1971-maclane-categories-for-the-working-mathematician.pdf) |  | cannot open `1971-maclane-categories-for-the-working-mathematician.pdf' (No such file or directory)
-[1972-iser-the-reading-process](/lit/1972-iser-the-reading-process.pdf) |  | cannot open `1972-iser-the-reading-process.pdf' (No such file or directory)
-[1974-ross-first-course-probability](/lit/1974-ross-first-course-probability.pdf) |  | cannot open `1974-ross-first-course-probability.pdf' (No such file or directory)
-[1976-knuth-coping-with-finiteness](/lit/1976-knuth-coping-with-finiteness.pdf) |  | cannot open `1976-knuth-coping-with-finiteness.pdf' (No such file or directory)
-[1976-serafini-codex-seraphinianus](/lit/1976-serafini-codex-seraphinianus.pdf) |  | cannot open `1976-serafini-codex-seraphinianus.pdf' (No such file or directory)
-[1982-bott-tu-differential-forms-in-algebraic-topology](/lit/1982-bott-tu-differential-forms-in-algebraic-topology.pdf) |  | cannot open `1982-bott-tu-differential-forms-in-algebraic-topology.pdf' (No such file or directory)
-[1983-ellis-tools-environment-time-shared-computing](/lit/1983-ellis-tools-environment-time-shared-computing.pdf) |  | cannot open `1983-ellis-tools-environment-time-shared-computing.pdf' (No such file or directory)
-[1984-munkres-elements-of-algebraic-topology](/lit/1984-munkres-elements-of-algebraic-topology.pdf) |  | cannot open `1984-munkres-elements-of-algebraic-topology.pdf' (No such file or directory)
-[1987-knuth-mathwriting](/lit/1987-knuth-mathwriting.pdf) |  | cannot open `1987-knuth-mathwriting.pdf' (No such file or directory)
-[1988-bird-walder-intro-to-functional-programming](/lit/1988-bird-walder-intro-to-functional-programming.pdf) |  | cannot open `1988-bird-walder-intro-to-functional-programming.pdf' (No such file or directory)
-[1989-brookshear-theory-of-computation](/lit/1989-brookshear-theory-of-computation.djvu) |  | cannot open `1989-brookshear-theory-of-computation.djvu' (No such file or directory)
-[1990-Handbook-of-Numerical-Analysis-1](/lit/1990-Handbook-of-Numerical-Analysis-1.djvu) |  | cannot open `1990-Handbook-of-Numerical-Analysis-1.djvu' (No such file or directory)
-[1990-pfeiffer-probability-for-applications](/lit/1990-pfeiffer-probability-for-applications.pdf) |  | cannot open `1990-pfeiffer-probability-for-applications.pdf' (No such file or directory)
-[1990-snyder-the-practice-of-the-wild](/lit/1990-snyder-the-practice-of-the-wild.pdf) |  | cannot open `1990-snyder-the-practice-of-the-wild.pdf' (No such file or directory)
-[1991-Finite-Element-Methods-Part-1](/lit/1991-Finite-Element-Methods-Part-1.djvu) |  | cannot open `1991-Finite-Element-Methods-Part-1.djvu' (No such file or directory)
-[1992-van-leunen-a-handbook-for-scholars](/lit/1992-van-leunen-a-handbook-for-scholars.djvu) |  | cannot open `1992-van-leunen-a-handbook-for-scholars.djvu' (No such file or directory)
-[1993-bredon-topology-and-geometry](/lit/1993-bredon-topology-and-geometry.pdf) |  | cannot open `1993-bredon-topology-and-geometry.pdf' (No such file or directory)
-[1993-jones-imperative](/lit/1993-jones-imperative.ps) |  | cannot open `1993-jones-imperative.ps' (No such file or directory)
-[1994-Handbook-of-Numerical-Analysis-3](/lit/1994-Handbook-of-Numerical-Analysis-3.djvu) |  | cannot open `1994-Handbook-of-Numerical-Analysis-3.djvu' (No such file or directory)
-[1994-landwehr-taxonomy-security-flaws](/lit/1994-landwehr-taxonomy-security-flaws.pdf) |  | cannot open `1994-landwehr-taxonomy-security-flaws.pdf' (No such file or directory)
-[1994-shewchuk-painless-conjugate-gradient](/lit/1994-shewchuk-painless-conjugate-gradient.pdf) |  | cannot open `1994-shewchuk-painless-conjugate-gradient.pdf' (No such file or directory)
-[1994-spivak-calculus](/lit/1994-spivak-calculus.pdf) |  | cannot open `1994-spivak-calculus.pdf' (No such file or directory)
-[1995-miller-wordnet-lexical-database](/lit/1995-miller-wordnet-lexical-database.pdf) |  | cannot open `1995-miller-wordnet-lexical-database.pdf' (No such file or directory)
-[1995-miller-wordnet](/lit/1995-miller-wordnet.pdf) |  | cannot open `1995-miller-wordnet.pdf' (No such file or directory)
-[1995-walder-monads-for-functional-programming](/lit/1995-walder-monads-for-functional-programming.pdf) |  | cannot open `1995-walder-monads-for-functional-programming.pdf' (No such file or directory)
-[1996-Finite-Element-Methods-Part-2-Numerical-Methods-for-Solids-Part-2](/lit/1996-Finite-Element-Methods-Part-2-Numerical-Methods-for-Solids-Part-2.djvu) |  | cannot open `1996-Finite-Element-Methods-Part-2-Numerical-Methods-for-Solids-Part-2.djvu' (No such file or directory)
-[1997-EKMM-elmendorf-kriz-mandell-may](/lit/1997-EKMM-elmendorf-kriz-mandell-may.pdf) |  | cannot open `1997-EKMM-elmendorf-kriz-mandell-may.pdf' (No such file or directory)
-[1997-Techniques-of-Scientific-Computing-Part-2](/lit/1997-Techniques-of-Scientific-Computing-Part-2.djvu) |  | cannot open `1997-Techniques-of-Scientific-Computing-Part-2.djvu' (No such file or directory)
-[1997-carter-shotetsu-unforgottendreams](/lit/1997-carter-shotetsu-unforgottendreams.djvu) |  | cannot open `1997-carter-shotetsu-unforgottendreams.djvu' (No such file or directory)
-[1997-fadiman-the-spirit-catches-you](/lit/1997-fadiman-the-spirit-catches-you.pdf) |  | cannot open `1997-fadiman-the-spirit-catches-you.pdf' (No such file or directory)
-[1997-lay-linear-algebra](/lit/1997-lay-linear-algebra.pdf) |  | cannot open `1997-lay-linear-algebra.pdf' (No such file or directory)
-[1998-Numerical-Methods-for-Solids-Part-3-Numerical-Methods-for-Fluids-Part-1](/lit/1998-Numerical-Methods-for-Solids-Part-3-Numerical-Methods-for-Fluids-Part-1.djvu) |  | cannot open `1998-Numerical-Methods-for-Solids-Part-3-Numerical-Methods-for-Fluids-Part-1.djvu' (No such file or directory)
-[1998-bressoud-personal-thoughts-on-mature-teaching](/lit/1998-bressoud-personal-thoughts-on-mature-teaching.pdf) |  | cannot open `1998-bressoud-personal-thoughts-on-mature-teaching.pdf' (No such file or directory)
-[1998-korner-how-to-write-a-part-III-essay](/lit/1998-korner-how-to-write-a-part-III-essay.pdf) |  | cannot open `1998-korner-how-to-write-a-part-III-essay.pdf' (No such file or directory)
-[1998-tvieto-winther-pdes-computational-approach](/lit/1998-tvieto-winther-pdes-computational-approach.pdf) |  | cannot open `1998-tvieto-winther-pdes-computational-approach.pdf' (No such file or directory)
-[1999-derrida-adieu-levinas](/lit/1999-derrida-adieu-levinas.pdf) |  | cannot open `1999-derrida-adieu-levinas.pdf' (No such file or directory)
-[1999-may-concise-course-algebraic-topology](/lit/1999-may-concise-course-algebraic-topology.pdf) |  | cannot open `1999-may-concise-course-algebraic-topology.pdf' (No such file or directory)
-[1999-needham-visual-complex-analysis](/lit/1999-needham-visual-complex-analysis.pdf) |  | cannot open `1999-needham-visual-complex-analysis.pdf' (No such file or directory)
-[2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3](/lit/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) |  | cannot open `2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu' (No such file or directory)
-[2000-bransford-how-people-learn-brain-mind-experience-and-school](/lit/2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf) |  | cannot open `2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf' (No such file or directory)
-[2000-may-outline-summary-of-basic-point-set-topology](/lit/2000-may-outline-summary-of-basic-point-set-topology.pdf) |  | cannot open `2000-may-outline-summary-of-basic-point-set-topology.pdf' (No such file or directory)
-[2000-outline-summary-of-point-set-topology](/lit/2000-outline-summary-of-point-set-topology.pdf) |  | cannot open `2000-outline-summary-of-point-set-topology.pdf' (No such file or directory)
-[2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2](/lit/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) |  | cannot open `2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu' (No such file or directory)
-[2003-Computational-Chemistry](/lit/2003-Computational-Chemistry.pdf) |  | cannot open `2003-Computational-Chemistry.pdf' (No such file or directory)
-[2003-Foundations-of-Computational-Mathematics](/lit/2003-Foundations-of-Computational-Mathematics.pdf) |  | cannot open `2003-Foundations-of-Computational-Mathematics.pdf' (No such file or directory)
-[2003-Numerical-Methods-for-Fluids-Part-3](/lit/2003-Numerical-Methods-for-Fluids-Part-3.pdf) |  | cannot open `2003-Numerical-Methods-for-Fluids-Part-3.pdf' (No such file or directory)
-[2003-chomsky-hegemony-survival](/lit/2003-chomsky-hegemony-survival.pdf) |  | cannot open `2003-chomsky-hegemony-survival.pdf' (No such file or directory)
-[2003-moore-intro-to-pdes](/lit/2003-moore-intro-to-pdes.pdf) |  | cannot open `2003-moore-intro-to-pdes.pdf' (No such file or directory)
-[2003-strang-lineare-algebra](/lit/2003-strang-lineare-algebra.djvu) |  | cannot open `2003-strang-lineare-algebra.djvu' (No such file or directory)
-[2004-Computational-Models-for-the-Human-Body](/lit/2004-Computational-Models-for-the-Human-Body.pdf) |  | cannot open `2004-Computational-Models-for-the-Human-Body.pdf' (No such file or directory)
-[2004-bain-how-do-they-evaluate-their-students](/lit/2004-bain-how-do-they-evaluate-their-students.pdf) |  | cannot open `2004-bain-how-do-they-evaluate-their-students.pdf' (No such file or directory)
-[2004-boyd-and-vandenberghe-convex-optimization](/lit/2004-boyd-and-vandenberghe-convex-optimization.pdf) |  | cannot open `2004-boyd-and-vandenberghe-convex-optimization.pdf' (No such file or directory)
-[2004-korner-in-praise-of-lectures](/lit/2004-korner-in-praise-of-lectures.pdf) |  | cannot open `2004-korner-in-praise-of-lectures.pdf' (No such file or directory)
-[2004-rael-predatory-reading](/lit/2004-rael-predatory-reading.pdf) |  | cannot open `2004-rael-predatory-reading.pdf' (No such file or directory)
-[2005-Numerical-Methods-in-Electromagnetics](/lit/2005-Numerical-Methods-in-Electromagnetics.pdf) |  | cannot open `2005-Numerical-Methods-in-Electromagnetics.pdf' (No such file or directory)
-[2005-griffiths-quantum-mechanics](/lit/2005-griffiths-quantum-mechanics.pdf) |  | cannot open `2005-griffiths-quantum-mechanics.pdf' (No such file or directory)
-[2005-hatcher-notes-on-introductory-point-set-topology](/lit/2005-hatcher-notes-on-introductory-point-set-topology.pdf) |  | cannot open `2005-hatcher-notes-on-introductory-point-set-topology.pdf' (No such file or directory)
-[2005-koch-the-long-line](/lit/2005-koch-the-long-line.pdf) |  | cannot open `2005-koch-the-long-line.pdf' (No such file or directory)
-[2005-schey-div-grad-curl-and-all-that](/lit/2005-schey-div-grad-curl-and-all-that.pdf) |  | cannot open `2005-schey-div-grad-curl-and-all-that.pdf' (No such file or directory)
-[2005-sternberg-theory-real-variable](/lit/2005-sternberg-theory-real-variable.pdf) |  | cannot open `2005-sternberg-theory-real-variable.pdf' (No such file or directory)
-[2005-struwe-differential-geometrie-I](/lit/2005-struwe-differential-geometrie-I.pdf) |  | cannot open `2005-struwe-differential-geometrie-I.pdf' (No such file or directory)
-[2005-thru-2012-aaron-swartz-blog](/lit/2005-thru-2012-aaron-swartz-blog) |  | cannot open `2005-thru-2012-aaron-swartz-blog' (No such file or directory)
-[2005-zomorodian-carlsson-computing-persistent-homology](/lit/2005-zomorodian-carlsson-computing-persistent-homology.pdf) |  | cannot open `2005-zomorodian-carlsson-computing-persistent-homology.pdf' (No such file or directory)
-[2006-mader-using-wiki-in-education](/lit/2006-mader-using-wiki-in-education.pdf) |  | cannot open `2006-mader-using-wiki-in-education.pdf' (No such file or directory)
-[2006-martin-on-the-stability-of-four-legged-tables](/lit/2006-martin-on-the-stability-of-four-legged-tables.pdf) |  | cannot open `2006-martin-on-the-stability-of-four-legged-tables.pdf' (No such file or directory)
-[2006-telcs-art-random-walks](/lit/2006-telcs-art-random-walks.pdf) |  | cannot open `2006-telcs-art-random-walks.pdf' (No such file or directory)
-[2006-thru-2017-jean-yang-blog](/lit/2006-thru-2017-jean-yang-blog) |  | cannot open `2006-thru-2017-jean-yang-blog' (No such file or directory)
-[2007-beah-alongwaygone](/lit/2007-beah-alongwaygone.pdf) |  | cannot open `2007-beah-alongwaygone.pdf' (No such file or directory)
-[2007-clark-theory-groups](/lit/2007-clark-theory-groups.pdf) |  | cannot open `2007-clark-theory-groups.pdf' (No such file or directory)
-[2007-lefebvre-applied-stochastic-processes](/lit/2007-lefebvre-applied-stochastic-processes.pdf) |  | cannot open `2007-lefebvre-applied-stochastic-processes.pdf' (No such file or directory)
-[2007-oprea-differential-geometry](/lit/2007-oprea-differential-geometry.pdf) |  | cannot open `2007-oprea-differential-geometry.pdf' (No such file or directory)
-[2007-starbird-algebraic-topology-moore-method](/lit/2007-starbird-algebraic-topology-moore-method.pdf) |  | cannot open `2007-starbird-algebraic-topology-moore-method.pdf' (No such file or directory)
-[2007-tao-what-is-good-mathematics](/lit/2007-tao-what-is-good-mathematics.pdf) |  | cannot open `2007-tao-what-is-good-mathematics.pdf' (No such file or directory)
-[2007-turabian-manual-chicago-style](/lit/2007-turabian-manual-chicago-style.epub) |  | cannot open `2007-turabian-manual-chicago-style.epub' (No such file or directory)
-[2008-clark-linear-algebra](/lit/2008-clark-linear-algebra.pdf) |  | cannot open `2008-clark-linear-algebra.pdf' (No such file or directory)
-[2008-edwards-penny-differential-equations](/lit/2008-edwards-penny-differential-equations.pdf) |  | cannot open `2008-edwards-penny-differential-equations.pdf' (No such file or directory)
-[2008-feuerstein-green-dharma](/lit/2008-feuerstein-green-dharma.pdf) |  | cannot open `2008-feuerstein-green-dharma.pdf' (No such file or directory)
-[2008-levine-motivic-homotopy-theory](/lit/2008-levine-motivic-homotopy-theory.pdf) |  | cannot open `2008-levine-motivic-homotopy-theory.pdf' (No such file or directory)
-[2008-yiro-ivanov-netzvetaev-kharlamov](/lit/2008-yiro-ivanov-netzvetaev-kharlamov.pdf) |  | cannot open `2008-yiro-ivanov-netzvetaev-kharlamov.pdf' (No such file or directory)
-[2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans](/lit/2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans.pdf) |  | cannot open `2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans.pdf' (No such file or directory)
-[2009-boyce-diprima-diffeqs](/lit/2009-boyce-diprima-diffeqs.pdf) |  | cannot open `2009-boyce-diprima-diffeqs.pdf' (No such file or directory)
-[2009-chacon-pro-git](/lit/2009-chacon-pro-git.pdf) |  | cannot open `2009-chacon-pro-git.pdf' (No such file or directory)
-[2009-dieudonne-a-history-of-algebraic-and-differential-topology](/lit/2009-dieudonne-a-history-of-algebraic-and-differential-topology.pdf) |  | cannot open `2009-dieudonne-a-history-of-algebraic-and-differential-topology.pdf' (No such file or directory)
-[2009-reinwald-xmlsql](/lit/2009-reinwald-xmlsql.pdf) |  | cannot open `2009-reinwald-xmlsql.pdf' (No such file or directory)
-[2009-starbird-abstr-math-intro](/lit/2009-starbird-abstr-math-intro.pdf) |  | cannot open `2009-starbird-abstr-math-intro.pdf' (No such file or directory)
-[2009-stewart-calculus-concepts-and-contexts](/lit/2009-stewart-calculus-concepts-and-contexts.pdf) |  | cannot open `2009-stewart-calculus-concepts-and-contexts.pdf' (No such file or directory)
-[2009-strang-intro-to-linear-algebra](/lit/2009-strang-intro-to-linear-algebra.pdf) |  | cannot open `2009-strang-intro-to-linear-algebra.pdf' (No such file or directory)
-[2009-sutherland-intro-to-metric-and-topological-spaces](/lit/2009-sutherland-intro-to-metric-and-topological-spaces.pdf) |  | cannot open `2009-sutherland-intro-to-metric-and-topological-spaces.pdf' (No such file or directory)
-[2009-treil-linear-algebra-done-wrong](/lit/2009-treil-linear-algebra-done-wrong.pdf) |  | cannot open `2009-treil-linear-algebra-done-wrong.pdf' (No such file or directory)
-[2010-artin-algebra](/lit/2010-artin-algebra.djvu) |  | cannot open `2010-artin-algebra.djvu' (No such file or directory)
-[2010-awodey-type-theory-and-homotopy](/lit/2010-awodey-type-theory-and-homotopy.pdf) |  | cannot open `2010-awodey-type-theory-and-homotopy.pdf' (No such file or directory)
-[2010-baez-math-blogs](/lit/2010-baez-math-blogs.pdf) |  | cannot open `2010-baez-math-blogs.pdf' (No such file or directory)
-[2010-bard-sage-undergrads](/lit/2010-bard-sage-undergrads.pdf) |  | cannot open `2010-bard-sage-undergrads.pdf' (No such file or directory)
-[2010-edelsbrunner-computational-topology](/lit/2010-edelsbrunner-computational-topology.pdf) |  | cannot open `2010-edelsbrunner-computational-topology.pdf' (No such file or directory)
-[2010-leduc-cracking-the-GRE-mathematics-subject-test](/lit/2010-leduc-cracking-the-GRE-mathematics-subject-test.pdf) |  | cannot open `2010-leduc-cracking-the-GRE-mathematics-subject-test.pdf' (No such file or directory)
-[2010-math-subject-classification](/lit/2010-math-subject-classification.pdf) |  | cannot open `2010-math-subject-classification.pdf' (No such file or directory)
-[2010-mcquarrie-diffeqs-final-review](/lit/2010-mcquarrie-diffeqs-final-review.pdf) |  | cannot open `2010-mcquarrie-diffeqs-final-review.pdf' (No such file or directory)
-[2010-palmieri-real-analysis-notes](/lit/2010-palmieri-real-analysis-notes) |  | cannot open `2010-palmieri-real-analysis-notes' (No such file or directory)
-[2010-priestley-diy-number-theory](/lit/2010-priestley-diy-number-theory.pdf) |  | cannot open `2010-priestley-diy-number-theory.pdf' (No such file or directory)
-[2010-samsha-skills-for-psychological-recovery](/lit/2010-samsha-skills-for-psychological-recovery.pdf) |  | cannot open `2010-samsha-skills-for-psychological-recovery.pdf' (No such file or directory)
-[2010-yu-method-of-series-expansion](/lit/2010-yu-method-of-series-expansion.pdf) |  | cannot open `2010-yu-method-of-series-expansion.pdf' (No such file or directory)
-[2011-Numerical-Methods-for-Non-Newtonian-Fluids](/lit/2011-Numerical-Methods-for-Non-Newtonian-Fluids.pdf) |  | cannot open `2011-Numerical-Methods-for-Non-Newtonian-Fluids.pdf' (No such file or directory)
-[2011-epstein-carlsson-edelsbrunner-topological-data-analysis](/lit/2011-epstein-carlsson-edelsbrunner-topological-data-analysis.pdf) |  | cannot open `2011-epstein-carlsson-edelsbrunner-topological-data-analysis.pdf' (No such file or directory)
-[2011-joldes-rigorous-polynomial-approximations](/lit/2011-joldes-rigorous-polynomial-approximations.pdf) |  | cannot open `2011-joldes-rigorous-polynomial-approximations.pdf' (No such file or directory)
-[2011-lee-intro-to-topological-manifolds](/lit/2011-lee-intro-to-topological-manifolds.pdf) |  | cannot open `2011-lee-intro-to-topological-manifolds.pdf' (No such file or directory)
-[2011-merzbach-history-of-math](/lit/2011-merzbach-history-of-math.pdf) |  | cannot open `2011-merzbach-history-of-math.pdf' (No such file or directory)
-[2011-muflax-backup-all-the-things](/lit/2011-muflax-backup-all-the-things.pdf) |  | cannot open `2011-muflax-backup-all-the-things.pdf' (No such file or directory)
-[2011-rowlett-the-unplanned-impact-of-mathematics](/lit/2011-rowlett-the-unplanned-impact-of-mathematics.pdf) |  | cannot open `2011-rowlett-the-unplanned-impact-of-mathematics.pdf' (No such file or directory)
-[2012-Loeliger-git](/lit/2012-Loeliger-git.pdf) |  | cannot open `2012-Loeliger-git.pdf' (No such file or directory)
-[2012-Neil-practical-vim](/lit/2012-Neil-practical-vim.pdf) |  | cannot open `2012-Neil-practical-vim.pdf' (No such file or directory)
-[2012-arnaudo-wordatlas](/lit/2012-arnaudo-wordatlas.pdf) |  | cannot open `2012-arnaudo-wordatlas.pdf' (No such file or directory)
-[2012-cox-computational-engineering](/lit/2012-cox-computational-engineering.pdf) |  | cannot open `2012-cox-computational-engineering.pdf' (No such file or directory)
-[2012-guo-teaching-statement](/lit/2012-guo-teaching-statement.pdf) |  | cannot open `2012-guo-teaching-statement.pdf' (No such file or directory)
-[2012-horstmann-c++](/lit/2012-horstmann-c++.pdf) |  | cannot open `2012-horstmann-c++.pdf' (No such file or directory)
-[2012-knepley-programming-languages-scientific-computing](/lit/2012-knepley-programming-languages-scientific-computing.pdf) |  | cannot open `2012-knepley-programming-languages-scientific-computing.pdf' (No such file or directory)
-[2012-lee-intro-to-smooth-manifolds](/lit/2012-lee-intro-to-smooth-manifolds.pdf) |  | cannot open `2012-lee-intro-to-smooth-manifolds.pdf' (No such file or directory)
-[2012-may-exporing-affine-transformations](/lit/2012-may-exporing-affine-transformations.pdf) |  | cannot open `2012-may-exporing-affine-transformations.pdf' (No such file or directory)
-[2012-miersemann-pde-notes](/lit/2012-miersemann-pde-notes.pdf) |  | cannot open `2012-miersemann-pde-notes.pdf' (No such file or directory)
-[2012-morrow-intro-to-abstract-algebra](/lit/2012-morrow-intro-to-abstract-algebra.pdf) |  | cannot open `2012-morrow-intro-to-abstract-algebra.pdf' (No such file or directory)
-[2012-muflax-dreaming-of-a-world-undone](/lit/2012-muflax-dreaming-of-a-world-undone) |  | cannot open `2012-muflax-dreaming-of-a-world-undone' (No such file or directory)
-[2012-rogawski-calculus-multivariable-sols](/lit/2012-rogawski-calculus-multivariable-sols.pdf) |  | cannot open `2012-rogawski-calculus-multivariable-sols.pdf' (No such file or directory)
-[2012-rogawski-calculus-single-variable-sols](/lit/2012-rogawski-calculus-single-variable-sols.pdf) |  | cannot open `2012-rogawski-calculus-single-variable-sols.pdf' (No such file or directory)
-[2012-rogawski-calculus](/lit/2012-rogawski-calculus.pdf) |  | cannot open `2012-rogawski-calculus.pdf' (No such file or directory)
-[2012-runborg-convergence-theory-for-linear-methods](/lit/2012-runborg-convergence-theory-for-linear-methods.pdf) |  | cannot open `2012-runborg-convergence-theory-for-linear-methods.pdf' (No such file or directory)
-[2012-runborg-verifying-numerical-convergence-rates](/lit/2012-runborg-verifying-numerical-convergence-rates.pdf) |  | cannot open `2012-runborg-verifying-numerical-convergence-rates.pdf' (No such file or directory)
-[2012-struwe-analysis-I-and-II](/lit/2012-struwe-analysis-I-and-II.pdf) |  | cannot open `2012-struwe-analysis-I-and-II.pdf' (No such file or directory)
-[2013-01-11-adbusters](/lit/2013-01-11-adbusters.pdf) |  | cannot open `2013-01-11-adbusters.pdf' (No such file or directory)
-[2013-03-26-adbusters](/lit/2013-03-26-adbusters.pdf) |  | cannot open `2013-03-26-adbusters.pdf' (No such file or directory)
-[2013-06-10-adbusters](/lit/2013-06-10-adbusters.pdf) |  | cannot open `2013-06-10-adbusters.pdf' (No such file or directory)
-[2013-07-10-adbusters](/lit/2013-07-10-adbusters.pdf) |  | cannot open `2013-07-10-adbusters.pdf' (No such file or directory)
-[2013-09-05-adbusters](/lit/2013-09-05-adbusters.pdf) |  | cannot open `2013-09-05-adbusters.pdf' (No such file or directory)
-[2013-armoni-computer-science-concepts-in-scratch](/lit/2013-armoni-computer-science-concepts-in-scratch.pdf) |  | cannot open `2013-armoni-computer-science-concepts-in-scratch.pdf' (No such file or directory)
-[2013-computing-programmes-england-primary](/lit/2013-computing-programmes-england-primary.pdf) |  | cannot open `2013-computing-programmes-england-primary.pdf' (No such file or directory)
-[2013-griffiths-electrodynamics](/lit/2013-griffiths-electrodynamics.pdf) |  | cannot open `2013-griffiths-electrodynamics.pdf' (No such file or directory)
-[2013-hand-teaching-statement](/lit/2013-hand-teaching-statement.pdf) |  | cannot open `2013-hand-teaching-statement.pdf' (No such file or directory)
-[2013-klein-coding-the-matrix](/lit/2013-klein-coding-the-matrix.pdf) |  | cannot open `2013-klein-coding-the-matrix.pdf' (No such file or directory)
-[2013-mahavier-linear-topology](/lit/2013-mahavier-linear-topology.pdf) |  | cannot open `2013-mahavier-linear-topology.pdf' (No such file or directory)
-[2013-struwe-analysis-III-mass-und-integral](/lit/2013-struwe-analysis-III-mass-und-integral.pdf) |  | cannot open `2013-struwe-analysis-III-mass-und-integral.pdf' (No such file or directory)
-[2013-univalent-foundations-program-homotopy-type-theory](/lit/2013-univalent-foundations-program-homotopy-type-theory.pdf) |  | cannot open `2013-univalent-foundations-program-homotopy-type-theory.pdf' (No such file or directory)
-[2014-02-05-adbusters](/lit/2014-02-05-adbusters.pdf) |  | cannot open `2014-02-05-adbusters.pdf' (No such file or directory)
-[2014-04-08-adbusters](/lit/2014-04-08-adbusters.pdf) |  | cannot open `2014-04-08-adbusters.pdf' (No such file or directory)
-[2014-05-13-adbusters](/lit/2014-05-13-adbusters.pdf) |  | cannot open `2014-05-13-adbusters.pdf' (No such file or directory)
-[2014-05-29-adbusters](/lit/2014-05-29-adbusters.pdf) |  | cannot open `2014-05-29-adbusters.pdf' (No such file or directory)
-[2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III](/lit/2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf) |  | cannot open `2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf' (No such file or directory)
-[2014-katz-taming-the-unknown](/lit/2014-katz-taming-the-unknown.pdf) |  | cannot open `2014-katz-taming-the-unknown.pdf' (No such file or directory)
-[2014-riehl-category-theory-in-context](/lit/2014-riehl-category-theory-in-context.pdf) |  | cannot open `2014-riehl-category-theory-in-context.pdf' (No such file or directory)
-[2014-spivak-category-theory-for-the-sciences](/lit/2014-spivak-category-theory-for-the-sciences.pdf) |  | cannot open `2014-spivak-category-theory-for-the-sciences.pdf' (No such file or directory)
-[2014-wadler-propositions-as-types](/lit/2014-wadler-propositions-as-types.pdf) |  | cannot open `2014-wadler-propositions-as-types.pdf' (No such file or directory)
-[2014-yang-teaching-statement](/lit/2014-yang-teaching-statement.pdf) |  | cannot open `2014-yang-teaching-statement.pdf' (No such file or directory)
-[2015-axler-linear-algebra-done-right](/lit/2015-axler-linear-algebra-done-right.pdf) |  | cannot open `2015-axler-linear-algebra-done-right.pdf' (No such file or directory)
-[2015-kolter-linalg-cs229](/lit/2015-kolter-linalg-cs229.pdf) |  | cannot open `2015-kolter-linalg-cs229.pdf' (No such file or directory)
-[2015-korner-an-unofficial-guide-to-part-III](/lit/2015-korner-an-unofficial-guide-to-part-III.pdf) |  | cannot open `2015-korner-an-unofficial-guide-to-part-III.pdf' (No such file or directory)
-[2015-mcdaniel-rubric-for-historical-thinking](/lit/2015-mcdaniel-rubric-for-historical-thinking.pdf) |  | cannot open `2015-mcdaniel-rubric-for-historical-thinking.pdf' (No such file or directory)
-[2015-pink--algebra-I-und-II](/lit/2015-pink--algebra-I-und-II.pdf) |  | cannot open `2015-pink--algebra-I-und-II.pdf' (No such file or directory)
-[2015-riehl-on-the-construction-of-new-topological-spaces](/lit/2015-riehl-on-the-construction-of-new-topological-spaces.pdf) |  | cannot open `2015-riehl-on-the-construction-of-new-topological-spaces.pdf' (No such file or directory)
-[2015-spencer-howto-lit-paper](/lit/2015-spencer-howto-lit-paper.pdf) |  | cannot open `2015-spencer-howto-lit-paper.pdf' (No such file or directory)
-[2015-united-nations-sustainable-development-agenda](/lit/2015-united-nations-sustainable-development-agenda.pdf) |  | cannot open `2015-united-nations-sustainable-development-agenda.pdf' (No such file or directory)
-[2015-wright-rational-billiards-to-dynamics-on-moduli-spaces](/lit/2015-wright-rational-billiards-to-dynamics-on-moduli-spaces.pdf) |  | cannot open `2015-wright-rational-billiards-to-dynamics-on-moduli-spaces.pdf' (No such file or directory)
-[2015-zorich-mathematical-analysis-I](/lit/2015-zorich-mathematical-analysis-I.pdf) |  | cannot open `2015-zorich-mathematical-analysis-I.pdf' (No such file or directory)
-[2016-03-30-adbusters](/lit/2016-03-30-adbusters.pdf) |  | cannot open `2016-03-30-adbusters.pdf' (No such file or directory)
-[2016-08-11-adbusters](/lit/2016-08-11-adbusters.pdf) |  | cannot open `2016-08-11-adbusters.pdf' (No such file or directory)
-[2016-11-28-adbusters](/lit/2016-11-28-adbusters.pdf) |  | cannot open `2016-11-28-adbusters.pdf' (No such file or directory)
-[2016-ashi-basic-life-support](/lit/2016-ashi-basic-life-support.pdf) |  | cannot open `2016-ashi-basic-life-support.pdf' (No such file or directory)
-[2016-beck-marchesi-pixton-sabalka-complex](/lit/2016-beck-marchesi-pixton-sabalka-complex.pdf) |  | cannot open `2016-beck-marchesi-pixton-sabalka-complex.pdf' (No such file or directory)
-[2016-colah-topology](/lit/2016-colah-topology.pdf) |  | cannot open `2016-colah-topology.pdf' (No such file or directory)
-[2016-eghbal-roads-and-bridges-digital-infrastructure](/lit/2016-eghbal-roads-and-bridges-digital-infrastructure) |  | cannot open `2016-eghbal-roads-and-bridges-digital-infrastructure' (No such file or directory)
-[2016-koch-complex-variable-outline](/lit/2016-koch-complex-variable-outline.pdf) |  | cannot open `2016-koch-complex-variable-outline.pdf' (No such file or directory)
-[2016-naik-linear-algebra-lecture-omnibus](/lit/2016-naik-linear-algebra-lecture-omnibus.pdf) |  | cannot open `2016-naik-linear-algebra-lecture-omnibus.pdf' (No such file or directory)
-[2016-vanderplas-a-whirlwind-tour-of-python](/lit/2016-vanderplas-a-whirlwind-tour-of-python.pdf) |  | cannot open `2016-vanderplas-a-whirlwind-tour-of-python.pdf' (No such file or directory)
-[2016-zorich-mathematical-analysis-II](/lit/2016-zorich-mathematical-analysis-II.pdf) |  | cannot open `2016-zorich-mathematical-analysis-II.pdf' (No such file or directory)
-[2017-beaudry-intro-topology](/lit/2017-beaudry-intro-topology.pdf) |  | cannot open `2017-beaudry-intro-topology.pdf' (No such file or directory)
-[2017-donoho-50-years-of-data-science](/lit/2017-donoho-50-years-of-data-science.pdf) |  | cannot open `2017-donoho-50-years-of-data-science.pdf' (No such file or directory)
-[2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc](/lit/2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc.pdf) |  | cannot open `2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc.pdf' (No such file or directory)
-[2017-jia-calculus-of-variations](/lit/2017-jia-calculus-of-variations.pdf) |  | cannot open `2017-jia-calculus-of-variations.pdf' (No such file or directory)
-[2017-lamport-pluscal-c-manual](/lit/2017-lamport-pluscal-c-manual.pdf) |  | cannot open `2017-lamport-pluscal-c-manual.pdf' (No such file or directory)
-[2017-lamport-pluscal-p-manual](/lit/2017-lamport-pluscal-p-manual.pdf) |  | cannot open `2017-lamport-pluscal-p-manual.pdf' (No such file or directory)
-[2017-pappe-ten-myths-about-israel](/lit/2017-pappe-ten-myths-about-israel.epub) |  | cannot open `2017-pappe-ten-myths-about-israel.epub' (No such file or directory)
-[2017-wüst-do-you-need-a-block-chain](/lit/2017-wüst-do-you-need-a-block-chain.pdf) |  | cannot open `2017-wüst-do-you-need-a-block-chain.pdf' (No such file or directory)
-[2018-beaudry-motivic-homotopical-galois-extensions](/lit/2018-beaudry-motivic-homotopical-galois-extensions.pdf) |  | cannot open `2018-beaudry-motivic-homotopical-galois-extensions.pdf' (No such file or directory)
-[2018-demailly-complex-analytic-and-differential-geometry](/lit/2018-demailly-complex-analytic-and-differential-geometry.pdf) |  | cannot open `2018-demailly-complex-analytic-and-differential-geometry.pdf' (No such file or directory)
-[2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci](/lit/2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci.pdf) |  | cannot open `2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci.pdf' (No such file or directory)
-[2018-gallier-fundementals-of-linear-algebra-and-optimization](/lit/2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf) |  | cannot open `2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf' (No such file or directory)
-[2018-grochow-tucker-foltz-computational-topology](/lit/2018-grochow-tucker-foltz-computational-topology.pdf) |  | cannot open `2018-grochow-tucker-foltz-computational-topology.pdf' (No such file or directory)
-[2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks](/lit/2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks.pdf) |  | cannot open `2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks.pdf' (No such file or directory)
-[2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds](/lit/2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf) |  | cannot open `2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf' (No such file or directory)
-[2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty](/lit/2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf) |  | cannot open `2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf' (No such file or directory)
-[2018-tang-quantum-inspired-classical-algorithm](/lit/2018-tang-quantum-inspired-classical-algorithm.pdf) |  | cannot open `2018-tang-quantum-inspired-classical-algorithm.pdf' (No such file or directory)
-[index](/lit/index.html) |  | cannot open `index.html' (No such file or directory)
-[index](/lit/index.md) |  | cannot open `index.md' (No such file or directory)
-[litup](/lit/litup.sh) |  | cannot open `litup.sh' (No such file or directory)
-[test](/lit/test.md) |  | cannot open `test.md' (No such file or directory)
+[1400-voynich-manuscript](/lit/1400-voynich-manuscript.pdf) | 54M | PDF document, version 1.5
+[1620-bacon-novum_organon](/lit/1620-bacon-novum_organon.pdf) | 680K | PDF document, version 1.4
+[1678-bunyan-pilgrims-progress](/lit/1678-bunyan-pilgrims-progress.pdf) | 4.7M | PDF document, version 1.7
+[1872-nietzsche-the-birth-of-tragedy](/lit/1872-nietzsche-the-birth-of-tragedy.pdf) | 624K | PDF document, version 1.4
+[1886-nietzsche-beyond-good-and-evil](/lit/1886-nietzsche-beyond-good-and-evil.pdf) | 860K | PDF document, version 1.5
+[1905-wilde-de-profundis](/lit/1905-wilde-de-profundis.epub) | 48K | EPUB document
+[1912-runge-graphical-methods](/lit/1912-runge-graphical-methods.pdf) | 9.4M | PDF document, version 1.5
+[1916-veblen-analysis-situ](/lit/1916-veblen-analysis-situ.pdf) | 10M | PDF document, version 1.5
+[1921-hardy-pure-mathematics](/lit/1921-hardy-pure-mathematics.pdf) | 3.2M | PDF document, version 1.4
+[1926-hemingway-sun-also-rises](/lit/1926-hemingway-sun-also-rises.pdf) | 932K | PDF document, version 1.5
+[1942-faulkner-go-down-moses](/lit/1942-faulkner-go-down-moses.pdf) | 212K | PDF document, version 1.6
+[1955-furstenberg-on-the-infinitude-of-primes](/lit/1955-furstenberg-on-the-infinitude-of-primes.pdf) | 188K | PDF document, version 1.4
+[1960-steenrod-topology-of-fiber-bundles](/lit/1960-steenrod-topology-of-fiber-bundles.djvu) | 11M | DjVu multiple page document
+[1962-tolstov-fourier-series](/lit/1962-tolstov-fourier-series.pdf) | 17M | PDF document, version 1.4
+[1964-abramowitz-stegun-handbook-functions](/lit/1964-abramowitz-stegun-handbook-functions.pdf) | 47M | PDF document, version 1.5
+[1964-herstein-topics-in-algebra](/lit/1964-herstein-topics-in-algebra.pdf) | 39M | PDF document, version 1.6
+[1965-milnor-topology](/lit/1965-milnor-topology.pdf) | 1.6M | PDF document, version 1.6
+[1969-angelou-i-know-why-the-caged-bird-sings](/lit/1969-angelou-i-know-why-the-caged-bird-sings.pdf) | 1.8M | PDF document, version 1.5
+[1970-feller-probability-theory-applications](/lit/1970-feller-probability-theory-applications.pdf) | 41M | PDF document, version 1.6
+[1971-maclane-categories-for-the-working-mathematician](/lit/1971-maclane-categories-for-the-working-mathematician.pdf) | 2.8M | PDF document, version 1.7
+[1972-iser-the-reading-process](/lit/1972-iser-the-reading-process.pdf) | 2.0M | PDF document, version 1.6
+[1974-ross-first-course-probability](/lit/1974-ross-first-course-probability.pdf) | 3.1M | PDF document, version 1.5
+[1976-knuth-coping-with-finiteness](/lit/1976-knuth-coping-with-finiteness.pdf) | 1.7M | PDF document, version 1.4
+[1976-serafini-codex-seraphinianus](/lit/1976-serafini-codex-seraphinianus.pdf) | 54M | PDF document, version 1.6
+[1982-bott-tu-differential-forms-in-algebraic-topology](/lit/1982-bott-tu-differential-forms-in-algebraic-topology.pdf) | 15M | PDF document, version 1.6
+[1983-ellis-tools-environment-time-shared-computing](/lit/1983-ellis-tools-environment-time-shared-computing.pdf) | 1.4M | PDF document, version 1.3
+[1984-munkres-elements-of-algebraic-topology](/lit/1984-munkres-elements-of-algebraic-topology.pdf) | 23M | PDF document, version 1.4
+[1987-knuth-mathwriting](/lit/1987-knuth-mathwriting.pdf) | 656K | PDF document, version 1.2
+[1988-bird-walder-intro-to-functional-programming](/lit/1988-bird-walder-intro-to-functional-programming.pdf) | 0 | empty
+[1989-brookshear-theory-of-computation](/lit/1989-brookshear-theory-of-computation.djvu) | 3.0M | DjVu multiple page document
+[1990-Handbook-of-Numerical-Analysis-1](/lit/1990-Handbook-of-Numerical-Analysis-1.djvu) | 4.3M | DjVu multiple page document
+[1990-pfeiffer-probability-for-applications](/lit/1990-pfeiffer-probability-for-applications.pdf) | 12M | PDF document, version 1.4
+[1990-snyder-the-practice-of-the-wild](/lit/1990-snyder-the-practice-of-the-wild.pdf) | 1.5M | PDF document, version 1.3
+[1991-Finite-Element-Methods-Part-1](/lit/1991-Finite-Element-Methods-Part-1.djvu) | 6.9M | DjVu multiple page document
+[1992-van-leunen-a-handbook-for-scholars](/lit/1992-van-leunen-a-handbook-for-scholars.djvu) | 3.6M | DjVu multiple page document
+[1993-bredon-topology-and-geometry](/lit/1993-bredon-topology-and-geometry.pdf) | 48M | PDF document, version 1.4
+[1993-jones-imperative](/lit/1993-jones-imperative.ps) | 216K | PostScript document text conforming DSC level 2.0
+[1994-Handbook-of-Numerical-Analysis-3](/lit/1994-Handbook-of-Numerical-Analysis-3.djvu) | 5.5M | DjVu multiple page document
+[1994-landwehr-taxonomy-security-flaws](/lit/1994-landwehr-taxonomy-security-flaws.pdf) | 3.6M | PDF document, version 1.2
+[1994-shewchuk-painless-conjugate-gradient](/lit/1994-shewchuk-painless-conjugate-gradient.pdf) | 504K | PDF document, version 1.2
+[1994-spivak-calculus](/lit/1994-spivak-calculus.pdf) | 49M | PDF document, version 1.4
+[1995-miller-wordnet-lexical-database](/lit/1995-miller-wordnet-lexical-database.pdf) | 236K | PDF document, version 1.3
+[1995-miller-wordnet](/lit/1995-miller-wordnet.pdf) | 236K | PDF document, version 1.3
+[1995-walder-monads-for-functional-programming](/lit/1995-walder-monads-for-functional-programming.pdf) | 0 | empty
+[1996-Finite-Element-Methods-Part-2-Numerical-Methods-for-Solids-Part-2](/lit/1996-Finite-Element-Methods-Part-2-Numerical-Methods-for-Solids-Part-2.djvu) | 7.3M | DjVu multiple page document
+[1997-EKMM-elmendorf-kriz-mandell-may](/lit/1997-EKMM-elmendorf-kriz-mandell-may.pdf) | 1.7M | PDF document, version 1.4
+[1997-Techniques-of-Scientific-Computing-Part-2](/lit/1997-Techniques-of-Scientific-Computing-Part-2.djvu) | 5.6M | DjVu multiple page document
+[1997-carter-shotetsu-unforgottendreams](/lit/1997-carter-shotetsu-unforgottendreams.djvu) | 4.8M | DjVu multiple page document
+[1997-fadiman-the-spirit-catches-you](/lit/1997-fadiman-the-spirit-catches-you.pdf) | 1.6M | PDF document, version 1.3
+[1997-lay-linear-algebra](/lit/1997-lay-linear-algebra.pdf) | 7.9M | PDF document, version 1.7
+[1998-Numerical-Methods-for-Solids-Part-3-Numerical-Methods-for-Fluids-Part-1](/lit/1998-Numerical-Methods-for-Solids-Part-3-Numerical-Methods-for-Fluids-Part-1.djvu) | 6.3M | DjVu multiple page document
+[1998-bressoud-personal-thoughts-on-mature-teaching](/lit/1998-bressoud-personal-thoughts-on-mature-teaching.pdf) | 124K | PDF document, version 1.5
+[1998-korner-how-to-write-a-part-III-essay](/lit/1998-korner-how-to-write-a-part-III-essay.pdf) | 352K | PDF document, version 1.3
+[1998-tvieto-winther-pdes-computational-approach](/lit/1998-tvieto-winther-pdes-computational-approach.pdf) | 2.0M | PDF document, version 1.5
+[1999-derrida-adieu-levinas](/lit/1999-derrida-adieu-levinas.pdf) | 1.6M | PDF document, version 1.6
+[1999-may-concise-course-algebraic-topology](/lit/1999-may-concise-course-algebraic-topology.pdf) | 1.7M | PDF document, version 1.3
+[1999-needham-visual-complex-analysis](/lit/1999-needham-visual-complex-analysis.pdf) | 9.2M | PDF document, version 1.6
+[2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3](/lit/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) | 7.2M | DjVu multiple page document
+[2000-bransford-how-people-learn-brain-mind-experience-and-school](/lit/2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf) | 6.2M | PDF document, version 1.5
+[2000-may-outline-summary-of-basic-point-set-topology](/lit/2000-may-outline-summary-of-basic-point-set-topology.pdf) | 128K | PDF document, version 1.3
+[2000-outline-summary-of-point-set-topology](/lit/2000-outline-summary-of-point-set-topology.pdf) | 128K | PDF document, version 1.3
+[2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2](/lit/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) | 4.8M | DjVu multiple page document
+[2003-Computational-Chemistry](/lit/2003-Computational-Chemistry.pdf) | 29M | PDF document, version 1.5
+[2003-Foundations-of-Computational-Mathematics](/lit/2003-Foundations-of-Computational-Mathematics.pdf) | 4.9M | PDF document, version 1.6
+[2003-Numerical-Methods-for-Fluids-Part-3](/lit/2003-Numerical-Methods-for-Fluids-Part-3.pdf) | 14M | PDF document, version 1.5
+[2003-chomsky-hegemony-survival](/lit/2003-chomsky-hegemony-survival.pdf) | 3.0M | PDF document, version 1.3
+[2003-moore-intro-to-pdes](/lit/2003-moore-intro-to-pdes.pdf) | 2.8M | PDF document, version 1.3
+[2003-strang-lineare-algebra](/lit/2003-strang-lineare-algebra.djvu) | 18M | DjVu multiple page document
+[2004-Computational-Models-for-the-Human-Body](/lit/2004-Computational-Models-for-the-Human-Body.pdf) | 18M | PDF document, version 1.6
+[2004-bain-how-do-they-evaluate-their-students](/lit/2004-bain-how-do-they-evaluate-their-students.pdf) | 72K | PDF document, version 1.5
+[2004-boyd-and-vandenberghe-convex-optimization](/lit/2004-boyd-and-vandenberghe-convex-optimization.pdf) | 5.8M | PDF document, version 1.4
+[2004-korner-in-praise-of-lectures](/lit/2004-korner-in-praise-of-lectures.pdf) | 68K | PDF document, version 1.2
+[2004-rael-predatory-reading](/lit/2004-rael-predatory-reading.pdf) | 28K | PDF document, version 1.3
+[2005-Numerical-Methods-in-Electromagnetics](/lit/2005-Numerical-Methods-in-Electromagnetics.pdf) | 6.5M | PDF document, version 1.5
+[2005-griffiths-quantum-mechanics](/lit/2005-griffiths-quantum-mechanics.pdf) | 20M | PDF document, version 1.1
+[2005-hatcher-notes-on-introductory-point-set-topology](/lit/2005-hatcher-notes-on-introductory-point-set-topology.pdf) | 464K | PDF document, version 1.3
+[2005-koch-the-long-line](/lit/2005-koch-the-long-line.pdf) | 160K | PDF document, version 1.4
+[2005-schey-div-grad-curl-and-all-that](/lit/2005-schey-div-grad-curl-and-all-that.pdf) | 23M | PDF document, version 1.6
+[2005-sternberg-theory-real-variable](/lit/2005-sternberg-theory-real-variable.pdf) | 1.5M | PDF document, version 1.3
+[2005-struwe-differential-geometrie-I](/lit/2005-struwe-differential-geometrie-I.pdf) | 652K | PDF document, version 1.3
+[2005-thru-2012-aaron-swartz-blog](/lit/2005-thru-2012-aaron-swartz-blog) | 3.4M | directory
+[2005-zomorodian-carlsson-computing-persistent-homology](/lit/2005-zomorodian-carlsson-computing-persistent-homology.pdf) | 500K | PDF document, version 1.4
+[2006-mader-using-wiki-in-education](/lit/2006-mader-using-wiki-in-education.pdf) | 872K | PDF document, version 1.4
+[2006-martin-on-the-stability-of-four-legged-tables](/lit/2006-martin-on-the-stability-of-four-legged-tables.pdf) | 120K | PDF document, version 1.4
+[2006-telcs-art-random-walks](/lit/2006-telcs-art-random-walks.pdf) | 3.0M | PDF document, version 1.4
+[2006-thru-2017-jean-yang-blog](/lit/2006-thru-2017-jean-yang-blog) | 1.6M | directory
+[2007-beah-alongwaygone](/lit/2007-beah-alongwaygone.pdf) | 1.1M | PDF document, version 1.3
+[2007-clark-theory-groups](/lit/2007-clark-theory-groups.pdf) | 208K | PDF document, version 1.2
+[2007-lefebvre-applied-stochastic-processes](/lit/2007-lefebvre-applied-stochastic-processes.pdf) | 15M | PDF document, version 1.3
+[2007-oprea-differential-geometry](/lit/2007-oprea-differential-geometry.pdf) | 58M | PDF document, version 1.6
+[2007-starbird-algebraic-topology-moore-method](/lit/2007-starbird-algebraic-topology-moore-method.pdf) | 724K | PDF document, version 1.4
+[2007-tao-what-is-good-mathematics](/lit/2007-tao-what-is-good-mathematics.pdf) | 176K | PDF document, version 1.2
+[2007-turabian-manual-chicago-style](/lit/2007-turabian-manual-chicago-style.epub) | 1.7M | EPUB document
+[2008-clark-linear-algebra](/lit/2008-clark-linear-algebra.pdf) | 180K | PDF document, version 1.2
+[2008-edwards-penny-differential-equations](/lit/2008-edwards-penny-differential-equations.pdf) | 14M | PDF document, version 1.6
+[2008-feuerstein-green-dharma](/lit/2008-feuerstein-green-dharma.pdf) | 1.2M | PDF document, version 1.6
+[2008-levine-motivic-homotopy-theory](/lit/2008-levine-motivic-homotopy-theory.pdf) | 320K | PDF document, version 1.4
+[2008-yiro-ivanov-netzvetaev-kharlamov](/lit/2008-yiro-ivanov-netzvetaev-kharlamov.pdf) | 2.5M | PDF document, version 1.5
+[2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans](/lit/2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans.pdf) | 22M | PDF document, version 1.6
+[2009-boyce-diprima-diffeqs](/lit/2009-boyce-diprima-diffeqs.pdf) | 5.5M | PDF document, version 1.6
+[2009-chacon-pro-git](/lit/2009-chacon-pro-git.pdf) | 5.3M | PDF document, version 1.4
+[2009-dieudonne-a-history-of-algebraic-and-differential-topology](/lit/2009-dieudonne-a-history-of-algebraic-and-differential-topology.pdf) | 167M | PDF document, version 1.4
+[2009-reinwald-xmlsql](/lit/2009-reinwald-xmlsql.pdf) | 592K | PDF document, version 1.4
+[2009-starbird-abstr-math-intro](/lit/2009-starbird-abstr-math-intro.pdf) | 1.2M | PDF document, version 1.3
+[2009-stewart-calculus-concepts-and-contexts](/lit/2009-stewart-calculus-concepts-and-contexts.pdf) | 23M | PDF document, version 1.7
+[2009-strang-intro-to-linear-algebra](/lit/2009-strang-intro-to-linear-algebra.pdf) | 90M | PDF document, version 1.4
+[2009-sutherland-intro-to-metric-and-topological-spaces](/lit/2009-sutherland-intro-to-metric-and-topological-spaces.pdf) | 9.7M | PDF document, version 1.6
+[2009-treil-linear-algebra-done-wrong](/lit/2009-treil-linear-algebra-done-wrong.pdf) | 1.3M | PDF document, version 1.5
+[2010-artin-algebra](/lit/2010-artin-algebra.djvu) | 13M | DjVu multiple page document
+[2010-awodey-type-theory-and-homotopy](/lit/2010-awodey-type-theory-and-homotopy.pdf) | 252K | PDF document, version 1.4
+[2010-baez-math-blogs](/lit/2010-baez-math-blogs.pdf) | 36K | PDF document, version 1.4
+[2010-bard-sage-undergrads](/lit/2010-bard-sage-undergrads.pdf) | 4.0M | PDF document, version 1.5
+[2010-edelsbrunner-computational-topology](/lit/2010-edelsbrunner-computational-topology.pdf) | 2.4M | PDF document, version 1.2
+[2010-leduc-cracking-the-GRE-mathematics-subject-test](/lit/2010-leduc-cracking-the-GRE-mathematics-subject-test.pdf) | 31M | PDF document, version 1.7
+[2010-math-subject-classification](/lit/2010-math-subject-classification.pdf) | 1.4M | PDF document, version 1.4
+[2010-mcquarrie-diffeqs-final-review](/lit/2010-mcquarrie-diffeqs-final-review.pdf) | 116K | PDF document, version 1.4
+[2010-palmieri-real-analysis-notes](/lit/2010-palmieri-real-analysis-notes) | 208K | directory
+[2010-priestley-diy-number-theory](/lit/2010-priestley-diy-number-theory.pdf) | 304K | PDF document, version 1.2
+[2010-samsha-skills-for-psychological-recovery](/lit/2010-samsha-skills-for-psychological-recovery.pdf) | 1.9M | PDF document, version 1.6
+[2010-yu-method-of-series-expansion](/lit/2010-yu-method-of-series-expansion.pdf) | 280K | PDF document, version 1.4
+[2011-Numerical-Methods-for-Non-Newtonian-Fluids](/lit/2011-Numerical-Methods-for-Non-Newtonian-Fluids.pdf) | 18M | PDF document, version 1.6
+[2011-epstein-carlsson-edelsbrunner-topological-data-analysis](/lit/2011-epstein-carlsson-edelsbrunner-topological-data-analysis.pdf) | 100K | PDF document, version 1.4
+[2011-joldes-rigorous-polynomial-approximations](/lit/2011-joldes-rigorous-polynomial-approximations.pdf) | 2.5M | PDF document, version 1.5
+[2011-lee-intro-to-topological-manifolds](/lit/2011-lee-intro-to-topological-manifolds.pdf) | 3.5M | PDF document, version 1.3
+[2011-merzbach-history-of-math](/lit/2011-merzbach-history-of-math.pdf) | 6.3M | PDF document, version 1.6
+[2011-muflax-backup-all-the-things](/lit/2011-muflax-backup-all-the-things.pdf) | 36K | PDF document, version 1.4
+[2011-rowlett-the-unplanned-impact-of-mathematics](/lit/2011-rowlett-the-unplanned-impact-of-mathematics.pdf) | 1.4M | PDF document, version 1.6
+[2012-Loeliger-git](/lit/2012-Loeliger-git.pdf) | 12M | PDF document, version 1.4
+[2012-Neil-practical-vim](/lit/2012-Neil-practical-vim.pdf) | 8.9M | PDF document, version 1.4
+[2012-arnaudo-wordatlas](/lit/2012-arnaudo-wordatlas.pdf) | 892K | PDF document, version 1.6
+[2012-cox-computational-engineering](/lit/2012-cox-computational-engineering.pdf) | 3.6M | PDF document, version 1.4
+[2012-guo-teaching-statement](/lit/2012-guo-teaching-statement.pdf) | 108K | PDF document, version 1.4
+[2012-horstmann-c++](/lit/2012-horstmann-c++.pdf) | 28M | PDF document, version 1.6
+[2012-knepley-programming-languages-scientific-computing](/lit/2012-knepley-programming-languages-scientific-computing.pdf) | 184K | PDF document, version 1.4
+[2012-lee-intro-to-smooth-manifolds](/lit/2012-lee-intro-to-smooth-manifolds.pdf) | 7.4M | PDF document, version 1.4
+[2012-may-exporing-affine-transformations](/lit/2012-may-exporing-affine-transformations.pdf) | 208K | PDF document, version 1.2
+[2012-miersemann-pde-notes](/lit/2012-miersemann-pde-notes.pdf) | 1.4M | PDF document, version 1.3
+[2012-morrow-intro-to-abstract-algebra](/lit/2012-morrow-intro-to-abstract-algebra.pdf) | 124K | PDF document, version 1.2
+[2012-muflax-dreaming-of-a-world-undone](/lit/2012-muflax-dreaming-of-a-world-undone) | 20K | directory
+[2012-rogawski-calculus-multivariable-sols](/lit/2012-rogawski-calculus-multivariable-sols.pdf) | 15M | PDF document, version 1.6
+[2012-rogawski-calculus-single-variable-sols](/lit/2012-rogawski-calculus-single-variable-sols.pdf) | 16M | PDF document, version 1.6
+[2012-rogawski-calculus](/lit/2012-rogawski-calculus.pdf) | 81M | PDF document, version 1.3
+[2012-runborg-convergence-theory-for-linear-methods](/lit/2012-runborg-convergence-theory-for-linear-methods.pdf) | 176K | PDF document, version 1.3
+[2012-runborg-verifying-numerical-convergence-rates](/lit/2012-runborg-verifying-numerical-convergence-rates.pdf) | 184K | PDF document, version 1.3
+[2012-struwe-analysis-I-and-II](/lit/2012-struwe-analysis-I-and-II.pdf) | 2.4M | PDF document, version 1.4
+[2013-01-11-adbusters](/lit/2013-01-11-adbusters.pdf) | 86M | PDF document, version 1.3
+[2013-03-26-adbusters](/lit/2013-03-26-adbusters.pdf) | 76M | PDF document, version 1.6
+[2013-06-10-adbusters](/lit/2013-06-10-adbusters.pdf) | 52M | PDF document, version 1.6
+[2013-07-10-adbusters](/lit/2013-07-10-adbusters.pdf) | 40M | PDF document, version 1.6
+[2013-09-05-adbusters](/lit/2013-09-05-adbusters.pdf) | 50M | PDF document, version 1.6
+[2013-armoni-computer-science-concepts-in-scratch](/lit/2013-armoni-computer-science-concepts-in-scratch.pdf) | 1.3M | PDF document, version 1.5
+[2013-computing-programmes-england-primary](/lit/2013-computing-programmes-england-primary.pdf) | 116K | PDF document, version 1.4
+[2013-griffiths-electrodynamics](/lit/2013-griffiths-electrodynamics.pdf) | 153M | PDF document, version 1.4
+[2013-hand-teaching-statement](/lit/2013-hand-teaching-statement.pdf) | 108K | PDF document, version 1.5
+[2013-klein-coding-the-matrix](/lit/2013-klein-coding-the-matrix.pdf) | 8.6M | PDF document, version 1.4
+[2013-mahavier-linear-topology](/lit/2013-mahavier-linear-topology.pdf) | 60K | PDF document, version 1.2
+[2013-struwe-analysis-III-mass-und-integral](/lit/2013-struwe-analysis-III-mass-und-integral.pdf) | 724K | PDF document, version 1.4
+[2013-univalent-foundations-program-homotopy-type-theory](/lit/2013-univalent-foundations-program-homotopy-type-theory.pdf) | 3.2M | PDF document, version 1.5
+[2014-02-05-adbusters](/lit/2014-02-05-adbusters.pdf) | 68M | PDF document, version 1.6
+[2014-04-08-adbusters](/lit/2014-04-08-adbusters.pdf) | 32M | PDF document, version 1.7
+[2014-05-13-adbusters](/lit/2014-05-13-adbusters.pdf) | 71M | PDF document, version 1.6
+[2014-05-29-adbusters](/lit/2014-05-29-adbusters.pdf) | 48M | PDF document, version 1.7
+[2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III](/lit/2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf) | 7.8M | PDF document, version 1.4
+[2014-katz-taming-the-unknown](/lit/2014-katz-taming-the-unknown.pdf) | 13M | PDF document, version 1.6
+[2014-riehl-category-theory-in-context](/lit/2014-riehl-category-theory-in-context.pdf) | 1.4M | PDF document, version 1.5
+[2014-spivak-category-theory-for-the-sciences](/lit/2014-spivak-category-theory-for-the-sciences.pdf) | 5.6M | PDF document, version 1.7
+[2014-wadler-propositions-as-types](/lit/2014-wadler-propositions-as-types.pdf) | 256K | PDF document, version 1.4
+[2014-yang-teaching-statement](/lit/2014-yang-teaching-statement.pdf) | 76K | PDF document, version 1.5
+[2015-axler-linear-algebra-done-right](/lit/2015-axler-linear-algebra-done-right.pdf) | 3.1M | PDF document, version 1.4
+[2015-kolter-linalg-cs229](/lit/2015-kolter-linalg-cs229.pdf) | 204K | PDF document, version 1.4
+[2015-korner-an-unofficial-guide-to-part-III](/lit/2015-korner-an-unofficial-guide-to-part-III.pdf) | 216K | PDF document, version 1.4
+[2015-mcdaniel-rubric-for-historical-thinking](/lit/2015-mcdaniel-rubric-for-historical-thinking.pdf) | 80K | PDF document, version 1.5
+[2015-pink--algebra-I-und-II](/lit/2015-pink--algebra-I-und-II.pdf) | 612K | PDF document, version 1.3
+[2015-riehl-on-the-construction-of-new-topological-spaces](/lit/2015-riehl-on-the-construction-of-new-topological-spaces.pdf) | 340K | PDF document, version 1.5
+[2015-spencer-howto-lit-paper](/lit/2015-spencer-howto-lit-paper.pdf) | 124K | PDF document, version 1.3
+[2015-united-nations-sustainable-development-agenda](/lit/2015-united-nations-sustainable-development-agenda.pdf) | 436K | PDF document, version 1.5
+[2015-wright-rational-billiards-to-dynamics-on-moduli-spaces](/lit/2015-wright-rational-billiards-to-dynamics-on-moduli-spaces.pdf) | 1012K | PDF document, version 1.5
+[2015-zorich-mathematical-analysis-I](/lit/2015-zorich-mathematical-analysis-I.pdf) | 5.1M | PDF document, version 1.4
+[2016-03-30-adbusters](/lit/2016-03-30-adbusters.pdf) | 43M | PDF document, version 1.5
+[2016-08-11-adbusters](/lit/2016-08-11-adbusters.pdf) | 52M | PDF document, version 1.5
+[2016-11-28-adbusters](/lit/2016-11-28-adbusters.pdf) | 48M | PDF document, version 1.3
+[2016-ashi-basic-life-support](/lit/2016-ashi-basic-life-support.pdf) | 2.5M | PDF document, version 1.6
+[2016-beck-marchesi-pixton-sabalka-complex](/lit/2016-beck-marchesi-pixton-sabalka-complex.pdf) | 1.1M | PDF document, version 1.5
+[2016-colah-topology](/lit/2016-colah-topology.pdf) | 280K | PDF document, version 1.5
+[2016-eghbal-roads-and-bridges-digital-infrastructure](/lit/2016-eghbal-roads-and-bridges-digital-infrastructure) | 876K | PDF document, version 1.7
+[2016-koch-complex-variable-outline](/lit/2016-koch-complex-variable-outline.pdf) | 5.6M | PDF document, version 1.5
+[2016-naik-linear-algebra-lecture-omnibus](/lit/2016-naik-linear-algebra-lecture-omnibus.pdf) | 1.8M | PDF document, version 1.6
+[2016-vanderplas-a-whirlwind-tour-of-python](/lit/2016-vanderplas-a-whirlwind-tour-of-python.pdf) | 3.3M | PDF document, version 1.6
+[2016-zorich-mathematical-analysis-II](/lit/2016-zorich-mathematical-analysis-II.pdf) | 6.0M | PDF document, version 1.4
+[2017-beaudry-intro-topology](/lit/2017-beaudry-intro-topology.pdf) | 972K | PDF document, version 1.5
+[2017-donoho-50-years-of-data-science](/lit/2017-donoho-50-years-of-data-science.pdf) | 1.3M | PDF document, version 1.4
+[2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc](/lit/2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc.pdf) | 6.3M | PDF document, version 1.5
+[2017-jia-calculus-of-variations](/lit/2017-jia-calculus-of-variations.pdf) | 120K | PDF document, version 1.4
+[2017-lamport-pluscal-c-manual](/lit/2017-lamport-pluscal-c-manual.pdf) | 540K | PDF document, version 1.4
+[2017-lamport-pluscal-p-manual](/lit/2017-lamport-pluscal-p-manual.pdf) | 540K | PDF document, version 1.4
+[2017-pappe-ten-myths-about-israel](/lit/2017-pappe-ten-myths-about-israel.epub) | 708K | EPUB document
+[2017-wüst-do-you-need-a-block-chain](/lit/2017-wüst-do-you-need-a-block-chain.pdf) | 180K | PDF document, version 1.5
+[2018-beaudry-motivic-homotopical-galois-extensions](/lit/2018-beaudry-motivic-homotopical-galois-extensions.pdf) | 1.4M | PDF document, version 1.7
+[2018-demailly-complex-analytic-and-differential-geometry](/lit/2018-demailly-complex-analytic-and-differential-geometry.pdf) | 3.4M | PDF document, version 1.4
+[2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci](/lit/2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci.pdf) | 14M | PDF document, version 1.5
+[2018-gallier-fundementals-of-linear-algebra-and-optimization](/lit/2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf) | 12M | PDF document, version 1.5
+[2018-grochow-tucker-foltz-computational-topology](/lit/2018-grochow-tucker-foltz-computational-topology.pdf) | 588K | PDF document, version 1.5
+[2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks](/lit/2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks.pdf) | 6.7M | PDF document, version 1.5
+[2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds](/lit/2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf) | 432K | PDF document, version 1.3
+[2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty](/lit/2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf) | 1.2M | PDF document, version 1.5
+[2018-tang-quantum-inspired-classical-algorithm](/lit/2018-tang-quantum-inspired-classical-algorithm.pdf) | 760K | PDF document, version 1.5
+[index](/lit/index.html) | 48K | HTML document, UTF-8 Unicode text, with very long lines
+[index](/lit/index.md) | 28K | UTF-8 Unicode text
+[litup](/lit/litup.sh) | 4.0K | POSIX shell script, ASCII text executable
