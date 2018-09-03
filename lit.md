@@ -1,3 +1,8 @@
+---
+title: Literature
+date: 2018-09-03
+---
+
 - [1400-voynich-manuscript.pdf](/lit/1400-voynich-manuscript.pdf) (54M)
 - [1620-bacon-novum_organon.pdf](/lit/1620-bacon-novum_organon.pdf) (680K)
 - [1678-bunyan-pilgrims-progress.pdf](/lit/1678-bunyan-pilgrims-progress.pdf) (4.7M)
