@@ -6,7 +6,7 @@ toc: false
 
 For definition lists, notes, and references. Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-- **site [index](_index/)**
+- [all pages](_index/)
 - notes for [prelims](prelims/)
 - teaching [math1300](teaching/math1300)
 
