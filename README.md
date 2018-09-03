@@ -8,8 +8,8 @@ For [definition lists](refcards/), [lecture notes](numerical-analysis/interpolat
 
 ### Links for academic year 2018-19
 
-    - Coursework for [prelims](prelims/)
-    - TA-ing [math1300](teaching/math1300)
+- Coursework for [prelims](prelims/)
+- TA-ing [math1300](teaching/math1300)
 
 ### Contributing
 
