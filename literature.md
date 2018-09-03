@@ -211,6 +211,6 @@ title | size | type
 [2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds](/lit/2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf) | 432K | PDF document, version 1.3
 [2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty](/lit/2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf) | 1.2M | PDF document, version 1.5
 [2018-tang-quantum-inspired-classical-algorithm](/lit/2018-tang-quantum-inspired-classical-algorithm.pdf) | 760K | PDF document, version 1.5
-[index](/lit/index.html) | 48K | HTML document, UTF-8 Unicode text, with very long lines
+[index](/lit/index.html) | 40K | HTML document, UTF-8 Unicode text
 [index](/lit/index.md) | 28K | UTF-8 Unicode text
 [litup](/lit/litup.sh) | 4.0K | POSIX shell script, ASCII text executable
