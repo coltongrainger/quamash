@@ -73,9 +73,9 @@ Update for 2018--19
 
 ### Calculus sequence omnibus
 
-- https://vipulnaik.com/math-151/
-- https://vipulnaik.com/math-152/
-- https://vipulnaik.com/math-153/
+- <https://vipulnaik.com/math-151/>
+- <https://vipulnaik.com/math-152/>
+- <https://vipulnaik.com/math-153/>
 
 ### Cognito mentoring
 

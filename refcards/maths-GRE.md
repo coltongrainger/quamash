@@ -10,7 +10,7 @@ revised: 2018-07-19
 \newcommand{\CC}{\mathbf{C}}
 \newcommand{\eps}{\varepsilon}
 
-These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the accompanying [tab separated text file](/refcards/2016-10-27-maths-GRE-flashcards.txt) for importing into spaced repetition software, e.g., mnemosyne.)
+These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the accompanying [tab separated text file](/2016-10-27-maths-GRE-flashcards.txt) for importing into spaced repetition software, e.g., mnemosyne.)
 
 To take motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*:
 
