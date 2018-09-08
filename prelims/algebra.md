@@ -2,15 +2,8 @@
 title: Algebra for prelims
 author: Colton Grainger
 date: 2018-08-27
+macros: true
 ---
-
-\newcommand{\NN}{\mathbf{N}}
-\newcommand{\ZZ}{\mathbf{Z}}
-\newcommand{\RR}{\mathbf{R}}
-\newcommand{\GLnR}{GL_n(\mathbf{R})}
-\newcommand{\eps}{\varepsilon}
-\newcommand{\abs}[1]{\lvert #1\rvert}
-\newcommand{\norm}[1]{\lVert #1\rVert}
 
 ## Exam syllabus
 
@@ -140,7 +133,7 @@ EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of 
 
 EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
 
-EX: $\GLnR$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
+EX: $GL_n(\RR)$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
 > You cannot learn too much linear algebra!
 
@@ -197,3 +190,61 @@ EX: What's a homomorphism from $\GLnR \to \RR^\times = (\RR \setminus \{0\})$? .
 DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n! = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n! = n(n-1)!$ for $n > 1$ and $1! = 1$.
 
 ### Week 1
+
+Course with Nat Thiem. Still haven't hammered out the bibliography. Maybe: 
+
+- Artin
+- Hungerford
+- Dummit and Foote
+- R. Vakil 
+- E. Riehl
+
+I created a repo for sage projects and assignments at <http://github.com/coltongrainger/alg1>.
+
+#### What to expect?
+
+1. Axiomatic treatment of fundamental algebraic categories
+2. Preparation for half of the examinable material on the prelim
+    - chapters 1 to 9 in Dummit and Foote
+    - see syllabus
+3. Guidance and topic advise for grad school.
+4. Evaluations
+    - definition quizzes weekly
+    - written homeworks weekly
+    - three timed exams
+
+#### Categorical perspective
+
+A category is a pair of a collection of so-called objects and a collection of so-called morphisms, where each morphism is associated to a pair of objects such that reasonable properties hold.
+
+EX! In the category of sets, the morphisms are ... functions (set homomorphisms).
+EX! In the category of vector spaces, the morphisms are ... linear transformations (vector space homomorphisms).
+EX! In the category of groups, the morphisms are ... group homomorphisms.
+EX! In the category of rings, the morphisms are ... ring homomorphisms.
+
+DEF! (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
+DEF! (Naive) A vector space homomorphism $\phi \colon V \to U$, also known as a linear transformation, is a function that ... respects scalar multiplication and vector addition.
+
+DEF! A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such that ... the binary operation $\cdot$ is (finitely) associative, there's a (unique) identity element $1 \in G$ such that $g1= 1g = g$ for all $g \in G$, and for each $g \in G$ there's a (unique) $g^{-1}$ where $gg^{-1} = g^{-1}g =1$. 
+DEF! A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
+
+DEF! (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
+DEF! (Naive) A ring homomorphism $\phi \colon \KK \to \SS$  is a function that ... respecting both multiplication and addition for all elements.
+
+What are the benefits to the categorical perspective?
+
+- One works with shared characteristics.
+    - Consider just the non-trivial structure on categories and morphisms.
+- One generalizes familiar notions.
+    - subobjects
+    - quotient objects
+    - sameness, or isomorphism classes
+
+And what are the costs of such perspective?
+
+- It's not pedagogically ideal.
+    - Abstraction is best performed on second or third viewing.
+    - Beware the lotus-eaters.
+- One sweeps aside the idiosyncracies of groups, rings, etc.
+
+We do our best to state the isomorphism theorems in categorical language.
