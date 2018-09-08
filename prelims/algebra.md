@@ -2,8 +2,20 @@
 title: Algebra for prelims
 author: Colton Grainger
 date: 2018-08-27
-macros: true
 ---
+
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\KK}{\mathbf{K}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\SS}{\mathbf{S}}
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
+\renewcommand{\phi}{\varphi}
+\newcommand{\eps}{\varepsilon}
+\renewcommand{\emptyset}{\O}
+\newcommand{\GLnR}{GL_n(\mathbf{R})}
 
 ## Exam syllabus
 
@@ -132,6 +144,7 @@ macros: true
 EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of $S$ into itself, with composition of functions as the binary operation.
 
 EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
+
 
 EX: $GL_n(\RR)$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
