@@ -10,6 +10,7 @@ date: 2018-08-27
 \newcommand{\QQ}{\mathbf{Q}}
 \newcommand{\RR}{\mathbf{R}}
 \newcommand{\SS}{\mathbf{S}}
+\newcommand{\ZZ}{\mathbf{Z}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
 \renewcommand{\phi}{\varphi}
