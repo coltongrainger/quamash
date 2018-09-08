@@ -12,56 +12,176 @@ date: 2018-08-27
 \newcommand{\abs}[1]{\lvert #1\rvert}
 \newcommand{\norm}[1]{\lVert #1\rVert}
 
-## Benedict Gross lectures
+## Exam syllabus
 
-EX! The Ur monoid on a non-trivial set $S$ is ... the set of transformations of $S$ into itself, with composition of functions as the binary operation.
+### Group theory
 
-EX! The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
+- foundations
+- canonical examples
+    - cyclic groups
+    - permutation groups (symmetric and alternating)
+    - matrix groups
+- lattices
+    - subgroups
+    - normal subgroups
+- automorphisms
+- conjugacy
+- quotient groups
+- direct products
+- isomorphism theorems
+- Lagrange’s Theorem
+    - cosets
+- structure of finitely generated abelian groups
+- Cauchy’s Theorem
+- group actions
+    - Cayley’s Theorem
+    - G-sets
+- the class equation
+- Sylow’s Theorems
+- the Jordan-Hölder Theorem
+- simple groups
+- solvable groups
+- semidirect products
+- free groups
+- presentations of groups
 
-EX! $\GLnR$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
+###  Ring theory
+
+- foundations
+- canonical examples
+    - matrix rings
+    - polynomial rings
+- lattices
+    - subrings
+    - ideals
+- prime and maximal ideals
+- quotient rings
+- homomorphism theorems
+- chain conditions
+- rings of fractions
+- Chinese remainder theorem
+- euclidean domains
+- principal ideal domains
+- unique factorization domains
+- irreducibility criteria
+- localization of rings
+- field of fractions
+- integral ring extensions
+
+### Modules and linear algebra
+
+- foundations
+- canonical examples
+    - finite dimensional vector spaces
+    - linear transformations 
+    - matrix representations
+- modules
+    - lattice of submodules
+    - quotient modules
+- homomorphism theorems
+- structure of finitely generated modules
+- language of categories and functors
+- minimal polynomial of a transformation
+- Cayley-Hamilton theorem over a commutative ring
+- direct sums and products
+- free, projective, injective modules
+- duality
+- multilinear forms
+- determinants
+- canonical forms
+    - Jordan
+    - rational
+    - primary rational
+- invariant factors
+- elementary divisors
+- localization of modules
+
+### Field theory
+
+- foundations
+- canonical examples
+    - finite fields
+- field extensions
+    - algebraic
+    - transcendental
+    - cyclotomic and cyclic
+    - transcendence degree
+    - algebraic closure
+- Greek construction problems
+    - impossibility proofs
+    - e.g., trisecting angles
+- Fundamental theorem of Galois theory
+    - Galois correspondence
+- splitting fields
+    - separability
+    - normality
+- Galois groups of extensions/polynomials
+    - solvable and nilpotent groups
+- solvable and radical extensions
+    - the insolvability of the quintic
+- Fundamental Theorem of Algebra
+- Frobenius endomorphism
+
+### Additional Algebra
+
+- applications of Zorn’s lemma
+- tensor products
+    - algebras
+- chain conditions
+    - Artinian and Noetherian rings and modules
+    - Hilbert basis theorem
+- Nullstellensatz
+
+## Fall semester 2018
+
+### Week 0
+
+EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of $S$ into itself, with composition of functions as the binary operation.
+
+EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
+
+EX: $\GLnR$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
 > You cannot learn too much linear algebra!
 
-EX! What is the order of the permutation group on $n$ letters? ... $S_n$ is a finite group with order $n!$.
+EX: What is the order of the permutation group on $n$ letters? ... $S_n$ is a finite group with order $n!$.
 
-> I recommend you never write out multiplication tables when reasoning throught the problem will do.
+> I recommend you never write out multiplication tables when reasoning through the problem will do.
 
-FACT! The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
+FACT: The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
 
-EX! What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
+EX: What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
 
-PROP! The subgroups of $(\ZZ, +)$ are precisely given by ... $(b\ZZ, +)$, where $b$ is a fixed integer.
+PROP: The subgroups of $(\ZZ, +)$ are precisely given by ... $(b\ZZ, +)$, where $b$ is a fixed integer.
 
-PROOF! Show that $(b\ZZ, +)$ for any fixed integer $b$ is a subgroup of $(\ZZ,+)$. ... It's closed: $bm + bn = b(m+n)$; inverses exist: $-bm = -b(m)$; the identity is $b0 =0$. 
+PROOF: Show that $(b\ZZ, +)$ for any fixed integer $b$ is a subgroup of $(\ZZ,+)$. ... It's closed: $bm + bn = b(m+n)$; inverses exist: $-bm = -b(m)$; the identity is $b0 =0$. 
 
-PROOF! Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. [...] In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. 
+PROOF: Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. [...] In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. 
 
 <!---
-PROOF! Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. [...] Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$.
+PROOF: Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. [...] Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$.
 
-PROOF! Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. [...] Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... Then $H \supset b\ZZ$ by closure under addition and inversion. 
+PROOF: Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. [...] Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. So $H \subset b\ZZ$. ... Then $H \supset b\ZZ$ by closure under addition and inversion. 
 
-PROOF! Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. [...]  So $H \subset b\ZZ$. ... Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. 
+PROOF: Show that the $(b\ZZ, +)$ for $b \in \ZZ$ exhaust the subgroups of $(\ZZ, +)$. If $H$ is a subgroup of $\ZZ$, either $H = \{0\}$ (a subgroup) or $H$ is non-empty. In this latter case, $H$ has $m \neq 0$ and inverses exist, so $H$ has a least positive integer $b > 0$. Then $H \supset b\ZZ$ by closure under addition and inversion. Suppose $h \in H$. [...]  So $H \subset b\ZZ$. ... Then $h = mb + r$ by the Euclidean algorithm, and $m \in \ZZ$, $0 \leq r < b$. I claim $r=0$. Why? $r = h - mb \in H$ and $r < b$, but $b$ is the least positive element. 
 --->
 
-THM! The subgroup of $\ZZ$ of the form $$\{ a\ZZ + b\ZZ \} = \{ n \in \ZZ : n = ar + bs \text{ for } r,s \in \ZZ\}$$ is generated by $d$, where $d$ is ... the greatest common divisor of $a$ and $b$.
+THM: The subgroup of $\ZZ$ of the form $$\{ a\ZZ + b\ZZ \} = \{ n \in \ZZ : n = ar + bs \text{ for } r,s \in \ZZ\}$$ is generated by $d$, where $d$ is ... the greatest common divisor of $a$ and $b$.
 
-PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why can $d$ be written as $ar + bs \text{ for } r,s \in \ZZ$? ... Because $d \in a\ZZ + b\ZZ$.
+PROP: Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why can $d$ be written as $ar + bs \text{ for } r,s \in \ZZ$? ... Because $d \in a\ZZ + b\ZZ$.
 
-PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why does $d$ divide $a$ and $d$? ... Because $a \in d\ZZ$ and $b \in d\ZZ$.
+PROP: Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why does $d$ divide $a$ and $d$? ... Because $a \in d\ZZ$ and $b \in d\ZZ$.
 
-PROP! Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why, if $k$ divides $a$ and $b$, does $k$ also divide $d$? ... Because $a, b \in k\ZZ$, and under closure $ar + bs \in k\ZZ$, alas, $d$ has this form, so $k$ divides $d$.
+PROP: Let $a,b \in \ZZ$ both not zero and let $d$ be the positive integer that generates the subgroup $a\ZZ + b\ZZ$. Why, if $k$ divides $a$ and $b$, does $k$ also divide $d$? ... Because $a, b \in k\ZZ$, and under closure $ar + bs \in k\ZZ$, alas, $d$ has this form, so $k$ divides $d$.
 
-DEF! A subset $U$ of a group $G$ is said to generate $G$ if every element in $G$ is ... a product of a string of elements (and their inverses) in $U$.
+DEF: A subset $U$ of a group $G$ is said to generate $G$ if every element in $G$ is ... a product of a string of elements (and their inverses) in $U$.
 
 Would be good to see [particular groups of importance](https://groupprops.subwiki.org/wiki/Category:Particular_groups) for further examples. I can't get into a catalog of group properties, and it's seemingly hopeless to memorize.
 
-### Making new groups out of old
+Ideas for making new groups out of old
 
 - subspaces of a vector space
-
 - cyclic subgroups of a single element
-
 - *products of spaces* correspond to groups, why?
 
     - automorphism groups $\mathrm{Aut}(G)$
@@ -70,8 +190,10 @@ Would be good to see [particular groups of importance](https://groupprops.subwik
 
 One should verify that the inverse of an automorphism is an automorphism.
 
-EX! What's a homomorphism from $\GLnR \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
+EX: What's a homomorphism from $\GLnR \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
 
 > Show that there exists a bijection from $\GLnR$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
 
-DEF! Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n! = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n! = n(n-1)!$ for $n > 1$ and $1! = 1$.
+DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n! = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n! = n(n-1)!$ for $n > 1$ and $1! = 1$.
+
+### Week 1
