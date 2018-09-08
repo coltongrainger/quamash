@@ -2,10 +2,9 @@
 title: Analysis for prelims
 author: Colton Grainger
 date: 2018-08-27
-revised:
 ---
 
-## Prelim Syllabus
+## Exam syllabus
 
 ### Calculus
 
@@ -98,3 +97,5 @@ revised:
 - Fourier transform
 - distributions
 - Sobolev spaces
+
+## Fall semester 2018
