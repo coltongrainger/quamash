@@ -268,3 +268,25 @@ And what are the costs of such perspective?
 - One sweeps aside the idiosyncracies of groups, rings, etc.
 
 We do our best to state the isomorphism theorems in categorical language.
+
+#### Monoids and groups
+
+Notes from [@Ja85, chapter 1].
+
+DEF! A monoid is ... a set $M$ with an associative binary composition and a unit.
+
+In this light, a group is a monoid each of whose elements has an inverse relative to the unit, and a ring is a pair of monoids with the same underlying set and satisfying additional properties, e.g., distributivity.
+
+DEF! A monoid of transformations is ... a monoid on the set of functions that map some given set $X$ to itself, with composition $\circ$ as a binary operation.
+
+Here's a [Hasse diagram](https://en.wikipedia.org/wiki/Hasse_diagram) for a partially ordering (under inclusion) from the class of monoids to the class of "groups of transformation," i.e., symmetric groups.
+
+```
+      monoids
+    /         \
+groups      monoids of transformations
+    \         /
+  groups of transformations
+```
+
+That is, the class of symmetric groups is precisely the intersection of the class of monoids of transformations with the class of groups.
