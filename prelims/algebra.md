@@ -317,7 +317,7 @@ Again from [@DM41]:
 
 > A system is called a partial order if the following conditions are satisfied. (1) If $x < y$, then $y\nless x$; and (2) if $x < y$ and $y < z$, then $x < z$. 
 
-Bringing things upto speed, we have Rosoff's [@Ro16] definition:
+Bringing things up to speed, we have Rosoff's [@Ro16] definition:
 
 DEF! (Modern poset) A set $X$ is partially ordered by the relation $\preceq$
 if for each $x, y, z \in X$, we have ... (1) reflexivity, $x \preceq x$; (2) antisymmetry, $x \preceq y$ and $y \preceq x$ implies $x =y$; (3) transitivity, $x \preceq y$ and $y \preceq z$ implies $x \preceq z$.
@@ -326,4 +326,7 @@ if for each $x, y, z \in X$, we have ... (1) reflexivity, $x \preceq x$; (2) ant
 
 The concept of an equivalence relation is "equivalence" to that of a partition of a set.
 
-DEF! If $S$ is a set
+DEF! If $S$ is a set we define a partition $\pi(S)$ to be ... a collection of non-vacuous subsets of $S$ (i.e., $\pi(S) \subset 2^S$ and $\emptyset \notin \pi(S)$) such that the blocks constituting $\pi(S)$ have empty pairwise intersection and the union of the collection is equal to $S$.
+
+We can argue that for any partition $\pi$ there's an equivalence class $E_\pi$, and vice versa, for any $E$ there's a partition $\pi_E$; moreover, the relation between $E$ and $\pi$ is reciprocal in the sense that $\pi_{E_\pi} = \pi$ and $E_{\pi_E} = E$.
+
