@@ -106,3 +106,7 @@ date: 2018-08-27
     - Kahler manifolds
     - symplectic manifolds
     - contact manifolds
+
+## Fall semester notes
+
+### Week 1

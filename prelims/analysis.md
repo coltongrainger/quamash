@@ -63,7 +63,7 @@ date: 2018-08-27
 - Fatou’s Lemma
 - monotone and dominated convergence
 - convergence in measure
-- dense subspaces of L^1
+- dense subspaces of $L^1$
     - simple functions
     - continuous functions with compact support
 - integration convergence theorems
@@ -98,4 +98,6 @@ date: 2018-08-27
 - distributions
 - Sobolev spaces
 
-## Fall semester 2018
+## Fall semester notes
+
+### Week 0

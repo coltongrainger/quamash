@@ -132,7 +132,7 @@ date: 2018-08-27
     - Hilbert basis theorem
 - Nullstellensatz
 
-## Fall semester 2018
+## Fall semester notes
 
 ### Week 0
 
