@@ -232,17 +232,23 @@ I created a repo for sage projects and assignments at <http://github.com/coltong
 A category is a pair of a collection of so-called objects and a collection of so-called morphisms, where each morphism is associated to a pair of objects such that reasonable properties hold.
 
 EX! In the category of sets, the morphisms are ... functions (set homomorphisms).
+
 EX! In the category of vector spaces, the morphisms are ... linear transformations (vector space homomorphisms).
+
 EX! In the category of groups, the morphisms are ... group homomorphisms.
+
 EX! In the category of rings, the morphisms are ... ring homomorphisms.
 
 DEF! (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
+
 DEF! (Naive) A vector space homomorphism $\phi \colon V \to U$, also known as a linear transformation, is a function that ... respects scalar multiplication and vector addition.
 
 DEF! A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such that ... the binary operation $\cdot$ is (finitely) associative, there's a (unique) identity element $1 \in G$ such that $g1= 1g = g$ for all $g \in G$, and for each $g \in G$ there's a (unique) $g^{-1}$ where $gg^{-1} = g^{-1}g =1$. 
+
 DEF! A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
 
 DEF! (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
+
 DEF! (Naive) A ring homomorphism $\phi \colon \KK \to \SS$  is a function that ... respecting both multiplication and addition for all elements.
 
 What are the benefits to the categorical perspective?
