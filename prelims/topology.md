@@ -55,7 +55,7 @@ date: 2018-08-27
     - universal coefficient 
     - Kunneth Theorem
 
-## Differential Geometry
+### Differential Geometry
 
 - Smooth manifolds
     - implicit function theorem and regular values of functions
