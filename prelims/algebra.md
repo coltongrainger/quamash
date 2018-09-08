@@ -289,4 +289,41 @@ groups      monoids of transformations
   groups of transformations
 ```
 
-That is, the class of symmetric groups is precisely the intersection of the class of monoids of transformations with the class of groups.
+That is, the class of symmetric groups is precisely the intersection of the class of monoids of transformations with the class of groups. 
+
+To let "composition of functions" be the binary operator underpinning our development of (monoid and) group theory, we had better rigorously define *composite functions*, and show that *composition is associative*.
+
+DEF! (Composite, resultant, or product of functions.) Let $\alpha \colon S \to T$ and $\beta \colon T \to U$. Then define $\beta \alpha \colon S \to U$ as the map (be rigorous) ... having the domain $S$, the codomain $U$ and graph that's the subset of $S\times U$ containing only $(s, \beta(\alpha(s))$ for each $s \in S$.
+
+When functions factor into products of functions, e.g., if $\beta \alpha = \gamma$, we indicate this relation by saying that some triangle forms a commutative diagram. Likewise, for $\beta\alpha = \delta\gamma$, we say some rectangle is commutative. (Why not higher polygons?)
+
+PROOF! Composition of maps satisfies the associative law. Let $\alpha \colon S \to T$, $\beta \colon T \to U$, and $\gamma \colon U to V$. Clearly $\gamma(\beta\alpha) = (\gramma\beta)\alpha$ because ... both compositions have the same domain $S$, the same codomain $V$, and the same graph $$\left\{\big(s, (\gamma(\beta\alpha))(s) = ((\gramma\beta)\alpha)(s)\big) : s \in S\right\}.$$
+
+#### Equivalence relations, factoring a map
+
+From Jacobson [@Ja85, chapter 0.3]:
+
+One defines binary relations on a set $S$ as any subset of the product $S \times S$.
+
+From Dushnik and Miller [@DM41]:
+
+> By a system is meant a set $S$ together with a binary relation $R(x, y)$ which may hold for certain pairs of elements $x$ and $y$ of $S$. The relation $R (x, y)$ is read "$x$ precedes $y$" and is written "$x < y$".
+
+DEF! An equivalence relation is a binary relation that's ... reflexive, symmetric, and transitive. 
+
+Compare equivalence relations to partial orderings on a set, which are reflexive, *antisymmetric*, and transitive.
+
+Again from [@DM41]:
+
+> A system is called a partial order if the following conditions are satisfied. (1) If $x < y$, then $y\nless x$; and (2) if $x < y$ and $y < z$, then $x < z$. 
+
+Bringing things upto speed, we have Rosoff's [@Ro16] definition:
+
+DEF! (Modern poset) A set $X$ is partially ordered by the relation $\preceq$
+if for each $x, y, z \in X$, we have ... (1) reflexivity, $x \preceq x$; (2) antisymmetry, $x \preceq y$ and $y \preceq x$ implies $x =y$; (3) transitivity, $x \preceq y$ and $y \preceq z$ implies $x \preceq z$.
+
+> A partial order defined on a set $S$ is called a linear order if every two distinct elements $x$ and $y$ of $S$ are comparable, i.e., if $x< y$ or $y < x$. If the partial order $P$ and the linear order $L$ are both defined on the same set of elements, and if every ordered pair in $P$ occurs in $L$, then $L$ will be called a linear extension of $P$.
+
+The concept of an equivalence relation is "equivalence" to that of a partition of a set.
+
+DEF! If $S$ is a set
