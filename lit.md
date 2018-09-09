@@ -1,6 +1,6 @@
 ---
 title: Literature
-date: 2018-09-05
+date: 2018-09-08
 ---
 
 - [2018-tang-quantum-inspired-classical-algorithm.pdf](/2018-tang-quantum-inspired-classical-algorithm.pdf) (760K)
@@ -66,6 +66,7 @@ date: 2018-09-05
 - [2013-03-26-adbusters.pdf](/2013-03-26-adbusters.pdf) (76M)
 - [2013-01-11-adbusters.pdf](/2013-01-11-adbusters.pdf) (86M)
 - [2012-struwe-analysis-I-and-II.pdf](/2012-struwe-analysis-I-and-II.pdf) (2.4M)
+- [2012-scoville-georg-cantor-at-the-dawn-of-point-set-topology.pdf](/2012-scoville-georg-cantor-at-the-dawn-of-point-set-topology.pdf) (268K)
 - [2012-runborg-verifying-numerical-convergence-rates.pdf](/2012-runborg-verifying-numerical-convergence-rates.pdf) (184K)
 - [2012-runborg-convergence-theory-for-linear-methods.pdf](/2012-runborg-convergence-theory-for-linear-methods.pdf) (176K)
 - [2012-rogawski-calculus-single-variable-sols.pdf](/2012-rogawski-calculus-single-variable-sols.pdf) (16M)
@@ -115,12 +116,14 @@ date: 2018-09-05
 - [2008-feuerstein-green-dharma.pdf](/2008-feuerstein-green-dharma.pdf) (1.2M)
 - [2008-edwards-penny-differential-equations.pdf](/2008-edwards-penny-differential-equations.pdf) (14M)
 - [2008-clark-linear-algebra.pdf](/2008-clark-linear-algebra.pdf) (180K)
+- [2008-bressoud-a-radical-approach-to-lebesgues-theory-of-integration.pdf](/2008-bressoud-a-radical-approach-to-lebesgues-theory-of-integration.pdf) (4.1M)
 - [2007-turabian-manual-chicago-style.epub](/2007-turabian-manual-chicago-style.epub) (1.7M)
 - [2007-tao-what-is-good-mathematics.pdf](/2007-tao-what-is-good-mathematics.pdf) (176K)
 - [2007-starbird-algebraic-topology-moore-method.pdf](/2007-starbird-algebraic-topology-moore-method.pdf) (724K)
 - [2007-oprea-differential-geometry.pdf](/2007-oprea-differential-geometry.pdf) (58M)
 - [2007-lefebvre-applied-stochastic-processes.pdf](/2007-lefebvre-applied-stochastic-processes.pdf) (15M)
 - [2007-clark-theory-groups.pdf](/2007-clark-theory-groups.pdf) (208K)
+- [2007-bressoud-a-radical-approach-to-real-analysis.pdf](/2007-bressoud-a-radical-approach-to-real-analysis.pdf) (15M)
 - [2007-beah-alongwaygone.pdf](/2007-beah-alongwaygone.pdf) (1.1M)
 - [2006-telcs-art-random-walks.pdf](/2006-telcs-art-random-walks.pdf) (3.0M)
 - [2006-martin-on-the-stability-of-four-legged-tables.pdf](/2006-martin-on-the-stability-of-four-legged-tables.pdf) (120K)
@@ -147,6 +150,7 @@ date: 2018-09-05
 - [2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu](/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) (4.8M)
 - [2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu](/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) (7.2M)
 - [2000-outline-summary-of-point-set-topology.pdf](/2000-outline-summary-of-point-set-topology.pdf) (128K)
+- [2000-munkres-topology.djvu](/2000-munkres-topology.djvu) (4.4M)
 - [2000-may-outline-summary-of-basic-point-set-topology.pdf](/2000-may-outline-summary-of-basic-point-set-topology.pdf) (128K)
 - [2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf](/2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf) (6.2M)
 - [1999-needham-visual-complex-analysis.pdf](/1999-needham-visual-complex-analysis.pdf) (9.2M)
@@ -169,6 +173,7 @@ date: 2018-09-05
 - [1994-shewchuk-painless-conjugate-gradient.pdf](/1994-shewchuk-painless-conjugate-gradient.pdf) (504K)
 - [1994-landwehr-taxonomy-security-flaws.pdf](/1994-landwehr-taxonomy-security-flaws.pdf) (3.6M)
 - [1994-Handbook-of-Numerical-Analysis-3.djvu](/1994-Handbook-of-Numerical-Analysis-3.djvu) (5.5M)
+- [1994-gordon-the-integrals-of-lebesgue-denjoy-perron-and-henstock.pdf](/1994-gordon-the-integrals-of-lebesgue-denjoy-perron-and-henstock.pdf) (5.1M)
 - [1993-bredon-topology-and-geometry.pdf](/1993-bredon-topology-and-geometry.pdf) (48M)
 - [1992-van-leunen-a-handbook-for-scholars.djvu](/1992-van-leunen-a-handbook-for-scholars.djvu) (3.6M)
 - [1991-Finite-Element-Methods-Part-1.djvu](/1991-Finite-Element-Methods-Part-1.djvu) (6.9M)
@@ -195,6 +200,7 @@ date: 2018-09-05
 - [1960-steenrod-topology-of-fiber-bundles.djvu](/1960-steenrod-topology-of-fiber-bundles.djvu) (11M)
 - [1955-furstenberg-on-the-infinitude-of-primes.pdf](/1955-furstenberg-on-the-infinitude-of-primes.pdf) (188K)
 - [1942-faulkner-go-down-moses.pdf](/1942-faulkner-go-down-moses.pdf) (212K)
+- [1941-dushnik-partially-ordered-sets.pdf](/1941-dushnik-partially-ordered-sets.pdf) (1.2M)
 - [1926-hemingway-sun-also-rises.pdf](/1926-hemingway-sun-also-rises.pdf) (932K)
 - [1921-hardy-pure-mathematics.pdf](/1921-hardy-pure-mathematics.pdf) (3.2M)
 - [1916-veblen-analysis-situ.pdf](/1916-veblen-analysis-situ.pdf) (10M)
