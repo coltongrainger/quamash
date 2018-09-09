@@ -110,3 +110,19 @@ date: 2018-08-27
 ## Fall semester notes
 
 ### Week 1
+
+Course with Carla Farsi. We'll cover Munkres chapters 1 to 13 [@Mu00], excluding
+
+- the Tychonoff theorem
+    - Stone-Čech compactification
+- Baire spaces
+    - nowhere differentiable functions
+    - dimension theory
+- separation theorems in the place
+    - the Jordan separation theorem
+    - the Jordan curve theorem
+    - embedding graphs in the plane
+    - the Cauchy integral formula
+- applications to group theory
+    - covering spaces of a graph
+    - subgroups of free groups
