@@ -164,8 +164,17 @@ For motivation, consider the sequence of functions $\{f_n \colon [a,b] \to \RR\}
 - How can we integrate Fourier series (or, generally, series representation of functions)?  
     - Does $\int_a^b \sum_{n=1}^\infty f_n\,dx =\sum_{n=1}^\infty \int_a^b f_n\,dx$?
 
->  When Fourier submitted his paper [*Mémoire sur la propagation de la chaleur dans les corps solides*] in 1807, the committee (which included Lagrange, Laplace, Malus and Legendre, among others) concluded: *...the manner in which the author arrives at these equations is not exempt of difficulties and [...] his analysis to integrate them still leaves something to be desired on the score of generality and even rigour.* [*[List of important publications in mathematics](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis).* English Wikipedia. Retrieved September 9, 2018.]
+>  When Fourier submitted his paper [*Mémoire sur la propagation de la chaleur dans les corps solides*] in 1807, the committee (which included Lagrange, Laplace, Malus and Legendre, among others) concluded: ...the manner in which the author arrives at these equations is not exempt of difficulties and [...] his analysis to integrate them still leaves something to be desired on the score of generality and even rigour. [[List of important publications in mathematics](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis). English Wikipedia. Retrieved September 9, 2018.]
 
-DESIDERATA! We need (general) integrals that allow ... interchange of sums and limits that have values coinciding with Riemann integrals (whenever these Riemann integrals exist).
+We need (general) integrals that (i) allow reasonable interchange of sums and limits and that (ii) have values coinciding with Riemann integrals (whenever these Riemann integrals exist). Some options.
 
-Indeed, we owe the *Lebesgue* integral to the [burst of productivity](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis) in continental Europe between Bernhard Riemann's 1853 *Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe* and Henri Lebesgue's 1901 doctoral dissertation *Intégrale, longueur, aire*.
+- the Lebesgue integral (1901)
+- the (narrow) [Denjoy integral](https://www.encyclopediaofmath.org/index.php/Denjoy_integral) defined via transfinite induction (1912)
+- the [Kinchin integral](https://en.wikipedia.org/wiki/Khinchin_integral) or "wide Denjoy integral" (1916)
+- the [Perron integral](https://www.encyclopediaofmath.org/index.php/Perron_integral) defined via minor and major functions
+- the [Henstock-Kurzweil integral](https://en.wikipedia.org/wiki/Henstock%E2%80%93Kurzweil_integral) or "[gauge integral](https://math.vanderbilt.edu/schectex/ccc/gauge/letter/)" (1957)
+- 
+
+THANKS! We owe the Lebesgue integral to a burst of productivity in continental Europe between ... Bernhard Riemann's 1853 *Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe* and Henri Lebesgue's 1901 doctoral dissertation, *Intégrale, longueur, aire*.
+
+
