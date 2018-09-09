@@ -127,10 +127,45 @@ Immediately, we're looking to address
 
 RECALL! (Lower sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The lower sum $\sL_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
 
-The upper sum $\sU_\sP$ is defined analogously with the supremum. We have $\sU_sP(f) \geq \sL_\sP(f)$ for all partitions of any real valued function defined on $[a,b]$. With these sums, we proceed to "Cauchy and Riemann's interpretation of the calculus of Newton and Leibniz".
+The upper sum $\sU_\sP$ is defined analogously with the supremum. We have $\sL_\sP(f)\leq  \sU_\sP(f)$ for all partitions of any real valued function defined on $[a,b]$. 
 
 <!---
-RECALL! (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
+RECALL! (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$
 --->
 
+With these sums, we proceed to "Cauchy and Riemann's interpretation of the calculus of Newton and Leibniz".
+
 DEF! (Lower Riemann integral) $\underline{\int}_a^b f(x)\,dx:=$ ... $\sup\{\sL_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
+
+DEF! (Upper Riemann integral) $\overline{\int}_a^b f(x)\,dx:=$ ... $\inf\{\sU_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
+
+Because $\sL_\sP(f)\leq \sU_\sP(f)$, it is always true that $\overline{\int}_a^b f(x)\,dx \leq \underline{\int}_a^b f(x)\,dx$. 
+
+DEF! (The Riemann intergral) We say that $f$ is Riemann integrable over $[a,b]$ iff 
+... $\overline{\int}_a^b f(x)\,dx = \underline{\int}_a^b f(x)\,dx$, that is, the lower and upper Riemann integrals (suitably defined) are equal.
+
+What limitations should we expect of the Riemann integral?
+
+1. It's easy to find witness functions not integrable, e.g., Dirichlet's function.[^Peter]
+
+[^Peter]: Introduced by Dirichlet in 1829 *for the purpose* of testing the convergence of Fourier series. See *Sur la convergence des séries trigonométriques qui servent à représenter une fonction arbitraire entre des limites données*.
+
+2. A Riemann integral function is necessarily *bounded*. We have to define improper integrals as the limit of a sequence integral values.
+
+3. The Riemann integral is not easy to manipulate when tied up in another limiting process. (Why? We occasionally want to commute limits.)
+
+EX! For the unbounded function $f \colon [0,1] \to \RR$ defined $f(0) = 0$ and $f(x) = x^{-1/2}$ for all $x \in (0,1]$, the improper Riemann integral of $f$ on it's domain is defined as the limit ... $\lim_{t\to 0^+}\int_t^1 x^{-1/2}\,dx$.
+
+For motivation, consider the sequence of functions $\{f_n \colon [a,b] \to \RR\}_{n\in \NN}$, and suppose each is Riemann integrable.
+
+- When does the limit of Riemann integrals $\lim_{n \to \infty} \int_a^b f_n(x)\,dx$ exist?
+- When does an outer limit commute with the Riemann integral's inner infima and suprema?
+    - When does $\lim_{n \to \infty} \int_a^b f_n(x)\,dx =  \int_a^b\lim_{n \to \infty} f_n(x)\,dx$?
+- How can we integrate Fourier series (or, generally, series representation of functions)?  
+    - Does $\int_a^b \sum_{n=1}^\infty f_n\,dx =\sum_{n=1}^\infty \int_a^b f_n\,dx$?
+
+>  When Fourier submitted his paper [*Mémoire sur la propagation de la chaleur dans les corps solides*] in 1807, the committee (which included Lagrange, Laplace, Malus and Legendre, among others) concluded: *...the manner in which the author arrives at these equations is not exempt of difficulties and [...] his analysis to integrate them still leaves something to be desired on the score of generality and even rigour.* [*[List of important publications in mathematics](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis).* English Wikipedia. Retrieved September 9, 2018.]
+
+DESIDERATA! We need (general) integrals that allow ... interchange of sums and limits that have values coinciding with Riemann integrals (whenever these Riemann integrals exist).
+
+Indeed, we owe the *Lebesgue* integral to the [burst of productivity](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis) in continental Europe between Bernhard Riemann's 1853 *Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe* and Henri Lebesgue's 1901 doctoral dissertation *Intégrale, longueur, aire*.
