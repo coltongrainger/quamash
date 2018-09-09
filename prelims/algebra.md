@@ -291,6 +291,8 @@ That is, the class of symmetric groups is precisely the intersection of the clas
 
 To let "composition of functions" be the binary operator underpinning our development of (monoid and) group theory, we had better rigorously define *composite functions*, and show that *composition is associative*.
 
+We take three elementary definitions from Spivak [@Sp94].
+
 RECALL: (Cartesian product style) A function $f$ from the domain set $A$ to the codomain set $B$ is a collection $f$ of ordered pairs in cartesian product $A\times B$ such that ... for each $a \in A$, there's a pair of the form $(a,b) \in f$; and if both $(a,b)$ and $(a,c)$ are in $f$, then $b=c$.
 
 NOTATION: (Domain of a function) If $f$ is a function, the domain of the function is ... the set of all $a$ such If $a$ is in the domain of a function $f$, 
