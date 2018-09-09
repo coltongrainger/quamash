@@ -181,7 +181,40 @@ We now aim to rigorously define the Lebesgue measure, the Lebesgue integral, and
 
 ### Assumed background
 
-We assume rudiments of set theory and an axiomatic derivation of the real numbers are known.
+We assume the rudiments of set theory and an axiomatic derivation of the real numbers are known.
 
-DEF: (Naive) The real numbers are ... elements of the unique complete ordered field, that is, to be sophisticated, Dedekind cuts.
+\newcommand{\QQ}{\mathbf{Q}}
 
+DEF: (Naive) The real numbers are ... elements of the complete ordered field $\RR$ containing $\QQ$; they are, to be hand-wavy, Dedekind cuts.
+
+But what are Dedekind cuts? Well, real numbers, defined as so [@Sp94 chapter 29].
+
+> A real number is a set $\alpha$ of rational numbers, with the following properties.
+> 
+> 1. if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$
+> 2. $\alpha \noteq \emptyset$
+> 3. $\alpha \noteq \QQ$
+> 4. there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$.
+
+
+<!---
+DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties [...] (2) $\alpha \noteq \emptyset$; (3) $\alpha \noteq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$;
+DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; [...] (3) $\alpha \noteq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (2) $\alpha \noteq \emptyset$;
+DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \noteq \emptyset$; [...]  (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (3) $\alpha \noteq \QQ$;
+DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \noteq \emptyset$; (3) $\alpha \noteq \QQ$; [...] ... (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$.
+--->
+
+We ought also to define the order $<$ we've imposed on the field.
+
+\newcommand{\FF}{\mathbf{F}}
+
+DEF! An ordered field is a field $\FF$ with operations $+$ and $\cdot$ together with a certain subset $P$ of $\FF$ (the positive elements) with the following properties ... First, for all $a \in \FF$ one and only one of the following hold (i) $a = 0$, (ii) $a$ is in $P$, (iii) $-a$ is in $P$. Second, if $a$ and $b$ are in $P$, then their sum $a + b$ is in $P$. Lastly, if $a$ and $b$ are in $P$, then their product $a \cdot b$ is in $P$.
+
+We are now in a position to give the traditional definition of the real numbers.
+
+DEF! (Axiom of completeness) The set of real numbers is ... the ordered field with the least upper bound property, i.e., if $A$ is a set of real numbers, $A \neq \emptyset$, and $A$ is bounded above, then $A$ has a least upper bound.
+
+Other definitions of the reals might require:
+
+- equivalence classes of Cauchy sequences 
+- (?) adjoining two transcendental elements (yuck)
