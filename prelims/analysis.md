@@ -100,4 +100,37 @@ date: 2018-08-27
 
 ## Fall semester notes
 
-### Week 0
+### Week 1
+
+The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
+
+We'll be evaluated on:
+
+- three timed exams
+- biweekly homework
+
+We assume rudiments of set theory and the axiomatic derivation of the real numbers are known.
+
+Immediately, we're looking to address
+
+\newcommand{\RR}{\mathbf{R}}
+
+- Lebesgue measures and their relation to integration on $\RR^n$
+- "high powered calculus"
+- integration beyond the Riemann integral
+
+#### Riemannian interpretation
+
+\newcommand{\sP}{\mathscr{P}}
+\newcommand{\sU}{\mathscr{U}}
+\newcommand{\sL}{\mathscr{L}}
+
+RECALL! (Lower sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The lower sum $\sL_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
+
+The upper sum $\sU_\sP$ is defined analogously with the supremum. We have $\sU_sP(f) \geq \sL_\sP(f)$ for all partitions of any real valued function defined on $[a,b]$. With these sums, we proceed to "Cauchy and Riemann's interpretation of the calculus of Newton and Leibniz".
+
+<!---
+RECALL! (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
+--->
+
+DEF! (Lower Riemann integral) $\underline{\int}_a^b f(x)\,dx:=$ ... $\sup\{\sL_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
