@@ -109,8 +109,6 @@ We'll be evaluated on:
 - three timed exams
 - biweekly homework
 
-We assume rudiments of set theory and the axiomatic derivation of the real numbers are known.
-
 Immediately, we're looking to address
 
 \newcommand{\RR}{\mathbf{R}}
@@ -120,43 +118,43 @@ Immediately, we're looking to address
 - "high powered calculus"
 - integration beyond the Riemann integral
 
-#### Riemannian interpretation
+#### Riemannian interpretation of the calculus
 
 \newcommand{\sP}{\mathscr{P}}
 \newcommand{\sU}{\mathscr{U}}
 \newcommand{\sL}{\mathscr{L}}
 
-RECALL! (Lower sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The lower sum $\sL_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
+RECALL: (Lower sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The lower sum $\sL_\sP(f)$ is defined ... $$\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$$
 
 The upper sum $\sU_\sP$ is defined analogously with the supremum. We have $\sL_\sP(f)\leq  \sU_\sP(f)$ for all partitions of any real valued function defined on $[a,b]$. 
 
 <!---
-RECALL! (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$
+RECALL: (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$
 --->
 
 With these sums, we proceed to "Cauchy and Riemann's interpretation of the calculus of Newton and Leibniz".
 
-DEF! (Lower Riemann integral) $\underline{\int}_a^b f(x)\,dx:=$ ... $\sup\{\sL_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
+DEF: (Lower Riemann integral) $\underline{\int}_a^b f(x)\,dx:=$ ... $\sup\{\sL_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
 
-DEF! (Upper Riemann integral) $\overline{\int}_a^b f(x)\,dx:=$ ... $\inf\{\sU_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
+DEF: (Upper Riemann integral) $\overline{\int}_a^b f(x)\,dx:=$ ... $\inf\{\sU_\sP(f) : \sP \text{ is a partition of $[a,b]$}\}$.
 
 Because $\sL_\sP(f)\leq \sU_\sP(f)$, it is always true that $\overline{\int}_a^b f(x)\,dx \leq \underline{\int}_a^b f(x)\,dx$. 
 
-DEF! (The Riemann intergral) We say that $f$ is Riemann integrable over $[a,b]$ iff 
-... $\overline{\int}_a^b f(x)\,dx = \underline{\int}_a^b f(x)\,dx$, that is, the lower and upper Riemann integrals (suitably defined) are equal.
+DEF: (The Riemann intergral) We say that $f$ is Riemann integrable over $[a,b]$ iff ... $\overline{\int}_a^b f(x)\,dx = \underline{\int}_a^b f(x)\,dx$, that is, the lower and upper Riemann integrals (suitably defined) are equal.
+
+#### Historical motivation for Lebesgue integration
 
 What limitations should we expect of the Riemann integral?
 
-1. It's easy to find witness functions not integrable, e.g., Dirichlet's function.[^Peter]
+1. It's easy to find witness functions not integrable, e.g., Dirichlet's function.
 
-[^Peter]: Introduced by Dirichlet in 1829 *for the purpose* of testing the convergence of Fourier series. See *Sur la convergence des séries trigonométriques qui servent à représenter une fonction arbitraire entre des limites données*.
+    - Introduced by Dirichlet in *Sur la convergence des séries trigonométriques qui servent à représenter une fonction arbitraire entre des limites données* (1829) for the purpose of testing the convergence of Fourier series approximations to general functions.
 
 2. A Riemann integral function is necessarily *bounded*. We have to define improper integrals as the limit of a sequence integral values.
 
 3. The Riemann integral is not easy to manipulate when tied up in another limiting process. (Why? We occasionally want to commute limits.)
 
-EX! For the unbounded function $f \colon [0,1] \to \RR$ defined $f(0) = 0$ and $f(x) = x^{-1/2}$ for all $x \in (0,1]$, the improper Riemann integral of $f$ on it's domain is defined as the limit ... $\lim_{t\to 0^+}\int_t^1 x^{-1/2}\,dx$.
-
+EX: For the unbounded function $f \colon [0,1] \to \RR$ defined $f(0) = 0$ and $f(x) = x^{-1/2}$ for all $x \in (0,1]$, the improper Riemann integral of $f$ on it's domain is defined as the limit ... $\lim_{t\to 0^+}\int_t^1 x^{-1/2}\,dx$.
 
 For motivation, consider the sequence of functions $\{f_n \colon [a,b] \to \RR\}_{n\in \NN}$, and suppose each is Riemann integrable.
 
@@ -168,15 +166,22 @@ For motivation, consider the sequence of functions $\{f_n \colon [a,b] \to \RR\}
 
 >  When Fourier submitted his paper [*Mémoire sur la propagation de la chaleur dans les corps solides*] in 1807, the committee (which included Lagrange, Laplace, Malus and Legendre, among others) concluded: ...the manner in which the author arrives at these equations is not exempt of difficulties and [...] his analysis to integrate them still leaves something to be desired on the score of generality and even rigour. [[List of important publications in mathematics](https://en.wikipedia.org/wiki/List_of_important_publications_in_mathematics#Analysis). English Wikipedia. Retrieved September 9, 2018.]
 
-We need (general) integrals that (i) allow reasonable interchange of sums and limits and that (ii) have values coinciding with Riemann integrals (whenever these Riemann integrals exist). Some options.
+We need (general) integrals that (i) allow reasonable interchange of sums and limits and that (ii) have values coinciding with Riemann integrals (whenever these Riemann integrals exist).
 
-- the Lebesgue integral (1901)
+THANKS: We owe the Lebesgue integral to a burst of productivity in continental Europe between ... Bernhard Riemann's 1853 *Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe* and Henri Lebesgue's 1901 doctoral dissertation, *Intégrale, longueur, aire*.
+
+Some generalizations of the Lebesgue integral include
+
 - the (narrow) [Denjoy integral](https://www.encyclopediaofmath.org/index.php/Denjoy_integral) defined via transfinite induction (1912)
 - the [Kinchin integral](https://en.wikipedia.org/wiki/Khinchin_integral) or "wide Denjoy integral" (1916)
 - the [Perron integral](https://www.encyclopediaofmath.org/index.php/Perron_integral) defined via minor and major functions
 - the [Henstock-Kurzweil integral](https://en.wikipedia.org/wiki/Henstock%E2%80%93Kurzweil_integral) or "[gauge integral](https://math.vanderbilt.edu/schectex/ccc/gauge/letter/)" (1957)
-- 
 
-THANKS! We owe the Lebesgue integral to a burst of productivity in continental Europe between ... Bernhard Riemann's 1853 *Über die Darstellbarkeit einer Function durch eine trigonometrische Reihe* and Henri Lebesgue's 1901 doctoral dissertation, *Intégrale, longueur, aire*.
+We now aim to rigorously define the Lebesgue measure, the Lebesgue integral, and it's relation to differentiation (we are happy with the differentiation's naive definition). By the end of the semester, we should be able to make an analogous statement of the fundamental theory of calculus for Lebesgue integration.
 
+### Assumed background
+
+We assume rudiments of set theory and an axiomatic derivation of the real numbers are known.
+
+DEF: (Naive) The real numbers are ... elements of the unique complete ordered field, that is, to be sophisticated, Dedekind cuts.
 

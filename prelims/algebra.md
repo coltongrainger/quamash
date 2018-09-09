@@ -4,20 +4,6 @@ author: Colton Grainger
 date: 2018-08-27
 ---
 
-\newcommand{\FF}{\mathbf{F}}
-\newcommand{\KK}{\mathbf{K}}
-\newcommand{\NN}{\mathbf{N}}
-\newcommand{\QQ}{\mathbf{Q}}
-\newcommand{\RR}{\mathbf{R}}
-\newcommand{\SS}{\mathbf{S}}
-\newcommand{\ZZ}{\mathbf{Z}}
-\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
-\providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
-\renewcommand{\phi}{\varphi}
-\newcommand{\eps}{\varepsilon}
-\renewcommand{\emptyset}{\O}
-\newcommand{\GLnR}{GL_n(\mathbf{R})}
-
 ## Exam syllabus
 
 ### Group theory
@@ -140,12 +126,15 @@ date: 2018-08-27
 
 ## Fall semester notes
 
+
+
 ### Week 0
 
 EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of $S$ into itself, with composition of functions as the binary operation.
 
 EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
 
+\newcommand{\RR}{\mathbf{R}}
 
 EX: $GL_n(\RR)$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
@@ -156,6 +145,8 @@ EX: What is the order of the permutation group on $n$ letters? ... $S_n$ is a fi
 > I recommend you never write out multiplication tables when reasoning through the problem will do.
 
 FACT: The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
+
+\newcommand{\ZZ}{\mathbf{Z}}
 
 EX: What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
 
@@ -197,11 +188,11 @@ Ideas for making new groups out of old
 
 One should verify that the inverse of an automorphism is an automorphism.
 
-EX: What's a homomorphism from $\GLnR \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
+EX: What's a homomorphism from $\GL_n(\RR) \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
 
-> Show that there exists a bijection from $\GLnR$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
+> Show that there exists a bijection from $\GL_n(\RR)$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
 
-DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n! = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n! = n(n-1)!$ for $n > 1$ and $1! = 1$.
+DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n: = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n: = n(n-1)!$ for $n > 1$ and $1! = 1$.
 
 ### Week 1
 
@@ -231,25 +222,32 @@ I created a repo for sage projects and assignments at <http://github.com/coltong
 
 A category is a pair of a collection of so-called objects and a collection of so-called morphisms, where each morphism is associated to a pair of objects such that reasonable properties hold.
 
-EX! In the category of sets, the morphisms are ... functions (set homomorphisms).
+EX: In the category of sets, the morphisms are ... functions (set homomorphisms).
 
-EX! In the category of vector spaces, the morphisms are ... linear transformations (vector space homomorphisms).
+EX: In the category of vector spaces, the morphisms are ... linear transformations (vector space homomorphisms).
 
-EX! In the category of groups, the morphisms are ... group homomorphisms.
+EX: In the category of groups, the morphisms are ... group homomorphisms.
 
-EX! In the category of rings, the morphisms are ... ring homomorphisms.
+EX: In the category of rings, the morphisms are ... ring homomorphisms.
 
-DEF! (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
+\newcommand{\FF}{\mathbf{F}}
 
-DEF! (Naive) A vector space homomorphism $\phi \colon V \to U$, also known as a linear transformation, is a function that ... respects scalar multiplication and vector addition.
+DEF: (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
 
-DEF! A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such that ... the binary operation $\cdot$ is (finitely) associative, there's a (unique) identity element $1 \in G$ such that $g1= 1g = g$ for all $g \in G$, and for each $g \in G$ there's a (unique) $g^{-1}$ where $gg^{-1} = g^{-1}g =1$. 
+\renewcommand{\phi}{\varphi}
 
-DEF! A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
+DEF: (Naive) A vector space homomorphism $\phi \colon V \to U$, also known as a linear transformation, is a function that ... respects scalar multiplication and vector addition.
 
-DEF! (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
+DEF: A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such that ... the binary operation $\cdot$ is (finitely) associative, there's a (unique) identity element $1 \in G$ such that $g1= 1g = g$ for all $g \in G$, and for each $g \in G$ there's a (unique) $g^{-1}$ where $gg^{-1} = g^{-1}g =1$. 
 
-DEF! (Naive) A ring homomorphism $\phi \colon \KK \to \SS$  is a function that ... respecting both multiplication and addition for all elements.
+DEF: A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
+
+\newcommand{\KK}{\mathbf{K}}
+\newcommand{\SS}{\mathbf{S}}
+
+DEF: (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
+
+DEF: (Naive) A ring homomorphism $\phi \colon \KK \to \SS$  is a function that ... respecting both multiplication and addition for all elements.
 
 What are the benefits to the categorical perspective?
 
@@ -273,11 +271,11 @@ We do our best to state the isomorphism theorems in categorical language.
 
 Notes from [@Ja85, chapter 1].
 
-DEF! A monoid is ... a set $M$ with an associative binary composition and a unit.
+DEF: A monoid is ... a set $M$ with an associative binary composition and a unit.
 
 In this light, a group is a monoid each of whose elements has an inverse relative to the unit, and a ring is a pair of monoids with the same underlying set and satisfying additional properties, e.g., distributivity.
 
-DEF! A monoid of transformations is ... a monoid on the set of functions that map some given set $X$ to itself, with composition $\circ$ as a binary operation.
+DEF: A monoid of transformations is ... a monoid on the set of functions that map some given set $X$ to itself, with composition $\circ$ as a binary operation.
 
 Here's a [Hasse diagram](https://en.wikipedia.org/wiki/Hasse_diagram) for a partially ordering (under inclusion) from the class of monoids to the class of "groups of transformation," i.e., symmetric groups.
 
@@ -293,11 +291,17 @@ That is, the class of symmetric groups is precisely the intersection of the clas
 
 To let "composition of functions" be the binary operator underpinning our development of (monoid and) group theory, we had better rigorously define *composite functions*, and show that *composition is associative*.
 
-DEF! (Composite, resultant, or product of functions.) Let $\alpha \colon S \to T$ and $\beta \colon T \to U$. Then define $\beta \alpha \colon S \to U$ as the map (be rigorous) ... having the domain $S$, the codomain $U$ and graph that's the subset of $S\times U$ containing only $(s, \beta(\alpha(s))$ for each $s \in S$.
+RECALL: (Cartesian product style) A function $f$ from the domain set $A$ to the codomain set $B$ is a collection $f$ of ordered pairs in cartesian product $A\times B$ such that ... for each $a \in A$, there's a pair of the form $(a,b) \in f$; and if both $(a,b)$ and $(a,c)$ are in $f$, then $b=c$.
+
+NOTATION: (Domain of a function) If $f$ is a function, the domain of the function is ... the set of all $a$ such If $a$ is in the domain of a function $f$, 
+
+NOTATION: (Value of a function) If $a$ is in the domain of $f$, it follows by the definition of the function that there is ... a unique element $b$ such that $(a,b)$ is in $f$, this unique $b$ is denoted $f(a)$.
+
+DEF: (Composite, resultant, or product of functions.) Let $\alpha \colon S \to T$ and $\beta \colon T \to U$. Then define $\beta \alpha \colon S \to U$ as the map (be rigorous) ... having the domain $S$, the codomain $U$ and graph that's the subset of $S\times U$ containing only $(s, \beta(\alpha(s))$ for each $s \in S$.
 
 When functions factor into products of functions, e.g., if $\beta \alpha = \gamma$, we indicate this relation by saying that some triangle forms a commutative diagram. Likewise, for $\beta\alpha = \delta\gamma$, we say some rectangle is commutative. (Why not higher polygons?)
 
-PROOF! Composition of maps satisfies the associative law. Let $\alpha \colon S \to T$, $\beta \colon T \to U$, and $\gamma \colon U to V$. Clearly $\gamma(\beta\alpha) = (\gamma\beta)\alpha$ because ... both compositions have the same domain $S$, the same codomain $V$, and the same graph $$\left\{\big(s, (\gamma(\beta\alpha))(s) = ((\gamma\beta)\alpha)(s)\big) : s \in S\right\}.$$
+PROOF: Composition of maps satisfies the associative law. Let $\alpha \colon S \to T$, $\beta \colon T \to U$, and $\gamma \colon U to V$. Clearly $\gamma(\beta\alpha) = (\gamma\beta)\alpha$ because ... both compositions have the same domain $S$, the same codomain $V$, and the same graph $$\left\{\big(s, (\gamma(\beta\alpha))(s) = ((\gamma\beta)\alpha)(s)\big) : s \in S\right\}.$$
 
 #### Equivalence relations, factoring a map
 
@@ -309,7 +313,7 @@ From Dushnik and Miller [@DM41]:
 
 > By a system is meant a set $S$ together with a binary relation $R(x, y)$ which may hold for certain pairs of elements $x$ and $y$ of $S$. The relation $R (x, y)$ is read "$x$ precedes $y$" and is written "$x < y$".
 
-DEF! An equivalence relation is a binary relation that's ... reflexive, symmetric, and transitive. 
+DEF: An equivalence relation is a binary relation that's ... reflexive, symmetric, and transitive. 
 
 Compare equivalence relations to partial orderings on a set, which are reflexive, *antisymmetric*, and transitive.
 
@@ -319,14 +323,12 @@ Again from [@DM41]:
 
 Bringing things up to speed, we have Rosoff's [@Ro16] definition:
 
-DEF! (Modern poset) A set $X$ is partially ordered by the relation $\preceq$
-if for each $x, y, z \in X$, we have ... (1) reflexivity, $x \preceq x$; (2) antisymmetry, $x \preceq y$ and $y \preceq x$ implies $x =y$; (3) transitivity, $x \preceq y$ and $y \preceq z$ implies $x \preceq z$.
+DEF: (Modern poset) A set $X$ is partially ordered by the relation $\preceq$ if for each $x, y, z \in X$, we have ... (1) reflexivity, $x \preceq x$; (2) antisymmetry, $x \preceq y$ and $y \preceq x$ implies $x =y$; (3) transitivity, $x \preceq y$ and $y \preceq z$ implies $x \preceq z$.
 
 > A partial order defined on a set $S$ is called a linear order if every two distinct elements $x$ and $y$ of $S$ are comparable, i.e., if $x< y$ or $y < x$. If the partial order $P$ and the linear order $L$ are both defined on the same set of elements, and if every ordered pair in $P$ occurs in $L$, then $L$ will be called a linear extension of $P$.
 
 The concept of an equivalence relation is "equivalence" to that of a partition of a set.
 
-DEF! If $S$ is a set we define a partition $\pi(S)$ to be ... a collection of non-vacuous subsets of $S$ (i.e., $\pi(S) \subset 2^S$ and $\emptyset \notin \pi(S)$) such that the blocks constituting $\pi(S)$ have empty pairwise intersection and the union of the collection is equal to $S$.
+DEF: If $S$ is a set we define a partition $\pi(S)$ to be ... a collection of non-vacuous subsets of $S$ (i.e., $\pi(S) \subset 2^S$ and $\emptyset \notin \pi(S)$) such that the blocks constituting $\pi(S)$ have empty pairwise intersection and the union of the collection is equal to $S$.
 
-We can argue that for any partition $\pi$ there's an equivalence class $E_\pi$, and vice versa, for any $E$ there's a partition $\pi_E$; moreover, the relation between $E$ and $\pi$ is reciprocal in the sense that $\pi_{E_\pi} = \pi$ and $E_{\pi_E} = E$.
-
+We can argue that for any partition $\pi$ there's an (natural) equivalence class $E_\pi$, and vice versa, for any $E$ there's a partition $\pi_E$; moreover, the relation between $E$ and $\pi$ is reciprocal in the sense that $\pi_{E_\pi} = \pi$ and $E_{\pi_E} = E$. (Why?)

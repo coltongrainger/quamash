@@ -111,7 +111,7 @@ date: 2018-08-27
 
 ### Week 1
 
-Course with Carla Farsi. We'll cover Munkres chapters 1 to 13 [@Mu00], excluding
+Course with Carla Farsi. We'll cover Munkres [@Mu00], excluding
 
 - the Tychonoff theorem
     - Stone-Čech compactification
@@ -126,3 +126,5 @@ Course with Carla Farsi. We'll cover Munkres chapters 1 to 13 [@Mu00], excluding
 - applications to group theory
     - covering spaces of a graph
     - subgroups of free groups
+
+The course's first part will address point-set topology up to the definitions of connected, respectively compact, spaces (which, fortunately, mirrors Rosoff's notes [@Ro16]).
