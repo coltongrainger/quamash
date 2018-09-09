@@ -114,6 +114,7 @@ We assume rudiments of set theory and the axiomatic derivation of the real numbe
 Immediately, we're looking to address
 
 \newcommand{\RR}{\mathbf{R}}
+\newcommand{\NN}{\mathbf{N}}
 
 - Lebesgue measures and their relation to integration on $\RR^n$
 - "high powered calculus"
@@ -156,7 +157,6 @@ What limitations should we expect of the Riemann integral?
 
 EX! For the unbounded function $f \colon [0,1] \to \RR$ defined $f(0) = 0$ and $f(x) = x^{-1/2}$ for all $x \in (0,1]$, the improper Riemann integral of $f$ on it's domain is defined as the limit ... $\lim_{t\to 0^+}\int_t^1 x^{-1/2}\,dx$.
 
-\newcommand{\NN}{\mathbf{N}}
 
 For motivation, consider the sequence of functions $\{f_n \colon [a,b] \to \RR\}_{n\in \NN}$, and suppose each is Riemann integrable.
 
