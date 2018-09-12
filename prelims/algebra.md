@@ -408,7 +408,7 @@ DEF! The image $\phi(G)$ of a homomorphism $\phi \colon G \to H$ is (also show i
 
 DEF! The kernel $\ker(\phi)$ of a homomorphism $\phi \colon g \to h$ is (show also it's a group) ... the inverse image of the identity in $H$, i.e., $\phi^{-1}(e_h)$; it's a subgroup of $G$ by the criterion, for each $a,b \in \ker(\phi)$, the image $\phi(ab^{-1}) = \phi(a)\phi(b)^{-1} = 1\cdot1^{-1} = 1$, whence $ab^{-1} \in \ker(\phi)$.
 
-DEF! An isomorphism $\phi\colon G \to \H$ is a (quick!) ... bijective homomorphism. 
+DEF! An isomorphism $\phi\colon G \to H$ is a (quick!) ... bijective homomorphism. 
 
 If such an isomorphism exists, we say that $G$ and $H$ are isomorphic and write $G \cong H$. For example, 
 
@@ -479,5 +479,27 @@ EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts fai
 \newcommand{\QQ}{\mathbf{Q}}
 
 EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
+
+\newcommand{\FF}{\mathbf{F}}
+
+DEF! ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
+
+DEF! An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \maps to u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
+
+EX! (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\hdots \\\v_{\sigma(1)}\end{pmatrix}$$
+
+TODO: What's $\FF^n$?
+
+EX! (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv (\text{by matrix multiplication}).$$
+
+#### G-modules
+
+PROP! The vector space $V$ is a $G$-module if and only if ... there exists a homomorphism $G \to GL(V) = \{ \text{invertible linear transf. of $V$}\} \subset S_V$. 
+
+To specify the homomorphism from $GL(V)$ to $S_V$ we need to choose both a *basis set* and an *order of the coordinates*. This leads to representation theory.
+
+- How to represent a group as a set of matrices?
+- What are the possible dimensions of such a matrical representation?
+- What eigenvalues arise? What traces? u.s.w.
 
 ### Week 3
