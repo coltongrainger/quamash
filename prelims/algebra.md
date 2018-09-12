@@ -490,7 +490,7 @@ EX! (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to 
 
 TODO: What's $\FF^n$?
 
-EX! (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv (\text{by matrix multiplication}).$$
+EX! (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv \quad (\text{matrix multiplication}).$$
 
 #### G-modules
 
