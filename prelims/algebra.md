@@ -402,5 +402,64 @@ We should have a notion of "sameness" sufficient to classify
 
 DEF! A group homomorphism $\phi \colon G \to H$ from a group $G$ to a group $H$ is a function such that $\phi(ab) = \phi(a)\phi(b)$ for all $a,b \in G$.
 
-DEF! The image $\phi(G)$ of a homomorphism $\phi \colon G \to H$
-DEF! The kernel $\ker(G)$ of a homomorphism $\phi \colon G \to H$
+PROP! (Structure properties) For the homomorphism $\phi \colon g \to h$, we have ... (1) $\phi(1) = 1$; (2) $\phi(g^{-1}) = \phi(g)^{-1}$ for all $g \in G$; (3) $\phi(G) \subset H$ and $\ker(\phi) \subset G$ are subgroups.
+
+DEF! The image $\phi(G)$ of a homomorphism $\phi \colon G \to H$ is (also show it's a group) ... the set $\{\phi(g) : \text{ for all } g \in G\}$; it's a subgroup of $H$ by the criterion, for each $\phi(a), \phi(b)$ we have $\phi(a)\phi(b)^{-1} = \phi(ab^{-2}) \in \phi(G)$.
+
+DEF! The kernel $\ker(\phi)$ of a homomorphism $\phi \colon g \to h$ is (show also it's a group) ... the inverse image of the identity in $H$, i.e., $\phi^{-1}(e_h)$; it's a subgroup of $G$ by the criterion, for each $a,b \in \ker(\phi)$, the image $\phi(ab^{-1}) = \phi(a)\phi(b)^{-1} = 1\cdot1^{-1} = 1$, whence $ab^{-1} \in \ker(\phi)$.
+
+DEF! An isomorphism $\phi\colon G \to \H$ is a (quick!) ... bijective homomorphism. 
+
+If such an isomorphism exists, we say that $G$ and $H$ are isomorphic and write $G \conj H$. For example, 
+
+- if $G$ is a cyclic group of order $n$, then $G \conj \ZZ/n\ZZ$;
+- if $G$ is a cyclic group of infinite order, then $G \conj \ZZ$.
+
+THM! Let $A$ be a finite set of $n$ elements. Then there exists a (non-canonical) isomorphism from $S_n$ to $S_A$ defined by ... $$\phi:S_n \to S_A \text{ where } w\mapsto \text{ the permutation } \phi(w)\colon A\to A \text{ which sends } a_j \to a_{w(j)}.$$
+
+TODO: Find $D_{2n} \in S_{C_n}$.
+
+Coming up, group actions!
+
+#### Examples of homomorphisms and isomorphisms
+
+Reading from [@DF04, chapter 1.6].
+
+\newcommand{\sG}{\mathscr{G}}
+\newcommand{\sP}{\mathscr{P}}
+
+- We have $G \conj G$ perhaps with many isomorphisms.
+- With $\sG$ any nonempty collection of groups, isomorphism $\conj$ is an equivalence relation on $\sG$.
+
+IDEA! Classification theorems set out (naively) ... to prove that if $G$ is an object some structure and $G$ has property $\sP$ then any other similarly structured object $X$ with property $\sP$ is isomorphic to $G$.
+
+EX! Any non-abelian group of order $6$ is isomorphic ... to $S_3$.
+
+EX! With $\Delta$ and $\Omega$ nonempty sets, $S_\Delta \conj S_\Omega$ iff $\abs{\Delta} = \abs{\Omega}$. Why (in terms of permutations)? ... $\abs{\Delta} = \abs{\Omega}$ implies there's a bijection $\theta \colon \Delta \to \Omega$, from whence we define $\phi\colon S_\Delta \to S_\Omega$ such that if $\sigma(x) = y$ in $\Delta$, then $\phi(\sigma)(\theta(x)) = \theta(y)$ in $\Omega$.
+
+Three criteria for an isomorphism to exist. If $\phi\colon G \to H$ is an isomorphism, then 
+1. $\abs{G} = \abs{H}$.
+2. $G$ is abelian if and only if $H$ is abelian.
+3. For all $x \in G$, $\abs{x} = \abs{\phi(x)}$.
+
+EX! $S_3 \not\conj \ZZ/6\ZZ$ because (quick!) ... $S_3$ is not abelian, but $\ZZ/6\ZZ$ is.
+
+EX! $(\RR\setminus\{0\}, \times) \not\conj (\RR, +)$ because (quick!) ... in $(\RR\setminus\{0\}, \times)$ the element $-1$ has order $2$, but in $(\RR, +)$ no element has order $2$.
+
+#### Group actions
+
+From [@DF04, chapter 1.7].
+
+DEF! A group action of a group $G$ on set $A$ is a map from $G\times A$ to $A$ (written $g\cdot a, \forall g\in G, \forall a\in A$) satisfying ... (GA1) $g\cdot(h\cdot a) = (gh)\cdot a, \forall g,h\in G, \forall a\in A$; (GA2) $1\cdot a$ = $a$ for all $a \in A$.
+
+The idea of "$G$ acting on a set $A$" is that for a fixed $g \in G$, we have a permutation $\sigma_g \colon A \to A$ defined by $a \mapsto g\cdot a$. We might think that a group $G$ acts on a set $A$ if there exists a homomorphism $\phi \colon G \to S_A$. Indeed, the map $\phi \colon G \to S_A$ defined by $g\mapsto \sigma_g$ is a homomorphism because $\phi(gh) = \phi(g)\circ\phi(h)$ for all $g,h \in G$. We formalize this notion in the following proposition.
+
+PROP! $G \times A \to A$ (where elements of the image are written $g\cdot a$) is an action iff $\phi \colon G \to S_A$ is (define and give required condition) ... a homomorphism that maps element of the group $g$ to permutations of the set $\phi(g) \colon A \to A$ such that $\phi(g)$ maps elements of the set $a$ to their images under the group action $g(a)$.
+
+DEF! An action $G\times A \to A$ is trivial if ... $g\cdot a = a$ for all $a \in A$ and all $g \in G$.
+
+DEF! An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \in A$ implies $g = 1$.
+
+Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).
+
+### Week 3
