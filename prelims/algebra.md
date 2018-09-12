@@ -484,7 +484,7 @@ EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{
 
 DEF! ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
 
-DEF! An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \maps to u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
+DEF! An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \mapsto u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
 
 EX! (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\vdots \\v_{\sigma(1)}\end{pmatrix}$$
 
