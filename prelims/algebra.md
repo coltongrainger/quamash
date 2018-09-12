@@ -410,10 +410,10 @@ DEF! The kernel $\ker(\phi)$ of a homomorphism $\phi \colon g \to h$ is (show al
 
 DEF! An isomorphism $\phi\colon G \to \H$ is a (quick!) ... bijective homomorphism. 
 
-If such an isomorphism exists, we say that $G$ and $H$ are isomorphic and write $G \conj H$. For example, 
+If such an isomorphism exists, we say that $G$ and $H$ are isomorphic and write $G \cong H$. For example, 
 
-- if $G$ is a cyclic group of order $n$, then $G \conj \ZZ/n\ZZ$;
-- if $G$ is a cyclic group of infinite order, then $G \conj \ZZ$.
+- if $G$ is a cyclic group of order $n$, then $G \cong \ZZ/n\ZZ$;
+- if $G$ is a cyclic group of infinite order, then $G \cong \ZZ$.
 
 THM! Let $A$ be a finite set of $n$ elements. Then there exists a (non-canonical) isomorphism from $S_n$ to $S_A$ defined by ... $$\phi:S_n \to S_A \text{ where } w\mapsto \text{ the permutation } \phi(w)\colon A\to A \text{ which sends } a_j \to a_{w(j)}.$$
 
@@ -428,23 +428,23 @@ Reading from [@DF04, chapter 1.6].
 \newcommand{\sG}{\mathscr{G}}
 \newcommand{\sP}{\mathscr{P}}
 
-- We have $G \conj G$ perhaps with many isomorphisms.
-- With $\sG$ any nonempty collection of groups, isomorphism $\conj$ is an equivalence relation on $\sG$.
+- We have $G \cong G$ perhaps with many isomorphisms.
+- With $\sG$ any nonempty collection of groups, isomorphism $\cong$ is an equivalence relation on $\sG$.
 
 IDEA! Classification theorems set out (naively) ... to prove that if $G$ is an object some structure and $G$ has property $\sP$ then any other similarly structured object $X$ with property $\sP$ is isomorphic to $G$.
 
 EX! Any non-abelian group of order $6$ is isomorphic ... to $S_3$.
 
-EX! With $\Delta$ and $\Omega$ nonempty sets, $S_\Delta \conj S_\Omega$ iff $\abs{\Delta} = \abs{\Omega}$. Why (in terms of permutations)? ... $\abs{\Delta} = \abs{\Omega}$ implies there's a bijection $\theta \colon \Delta \to \Omega$, from whence we define $\phi\colon S_\Delta \to S_\Omega$ such that if $\sigma(x) = y$ in $\Delta$, then $\phi(\sigma)(\theta(x)) = \theta(y)$ in $\Omega$.
+EX! With $\Delta$ and $\Omega$ nonempty sets, $S_\Delta \cong S_\Omega$ iff $\abs{\Delta} = \abs{\Omega}$. Why (in terms of permutations)? ... $\abs{\Delta} = \abs{\Omega}$ implies there's a bijection $\theta \colon \Delta \to \Omega$, from whence we define $\phi\colon S_\Delta \to S_\Omega$ such that if $\sigma(x) = y$ in $\Delta$, then $\phi(\sigma)(\theta(x)) = \theta(y)$ in $\Omega$.
 
 Three criteria for an isomorphism to exist. If $\phi\colon G \to H$ is an isomorphism, then 
 1. $\abs{G} = \abs{H}$.
 2. $G$ is abelian if and only if $H$ is abelian.
 3. For all $x \in G$, $\abs{x} = \abs{\phi(x)}$.
 
-EX! $S_3 \not\conj \ZZ/6\ZZ$ because (quick!) ... $S_3$ is not abelian, but $\ZZ/6\ZZ$ is.
+EX! $S_3 \not\cong \ZZ/6\ZZ$ because (quick!) ... $S_3$ is not abelian, but $\ZZ/6\ZZ$ is.
 
-EX! $(\RR\setminus\{0\}, \times) \not\conj (\RR, +)$ because (quick!) ... in $(\RR\setminus\{0\}, \times)$ the element $-1$ has order $2$, but in $(\RR, +)$ no element has order $2$.
+EX! $(\RR\setminus\{0\}, \times) \not\cong (\RR, +)$ because (quick!) ... in $(\RR\setminus\{0\}, \times)$ the element $-1$ has order $2$, but in $(\RR, +)$ no element has order $2$.
 
 #### Group actions
 
@@ -462,17 +462,17 @@ DEF! An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \i
 
 (Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
 
-THM! If $G$ acts faithfully on $A$ then $G \conj H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
+THM! If $G$ acts faithfully on $A$ then $G \cong H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
 
 We have Cayley's theorem, philosophically pleasing, yet useless.
 
-THM! (Cayley's theorem) If $G$ is a group and $\abs{G} = n$ then ... $G \conj H \leq S_n$. That is, every finite group of order $n$ is isomorphic to a subgroup of the group of symmetries on $n$ elements.
+THM! (Cayley's theorem) If $G$ is a group and $\abs{G} = n$ then ... $G \cong H \leq S_n$. That is, every finite group of order $n$ is isomorphic to a subgroup of the group of symmetries on $n$ elements.
 
 To sketch the proof. $G$ acts on $G$ by $G \times G \to G$ where $(g,h) \mapsto g(h) = gh$. The action is faithful ("hyperfaithful") because $gh = h$ implies $g=1$.
 
-Thus $G\conj \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi\colon G \to S_G$, which we've shown is injective. Now $\phi(G) \subset S_G \conj S_n$, from whence we conclude the desired subgroup $\phi(G) \conj (?) \subset S_n$ exists.
+Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi\colon G \to S_G$, which we've shown is injective. Now $\phi(G) \subset S_G \cong S_n$, from whence we conclude the desired subgroup $\phi(G) \cong (?) \subset S_n$ exists.
 
-EX: $D_{2n} \subset S_{D_{2n}} \conj S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
+EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
 
 EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{ units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
 
