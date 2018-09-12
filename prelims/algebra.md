@@ -462,6 +462,8 @@ DEF! An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \i
 
 (Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
 
+\newcommand{\id}{\mathrm{id}}
+
 THM! If $G$ acts faithfully on $A$ then $G \cong H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
 
 We have Cayley's theorem, philosophically pleasing, yet useless.
@@ -474,6 +476,8 @@ Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi
 
 EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
 
-EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{ units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
+\newcommand{\QQ}{\mathbf{Q}}
+
+EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
 
 ### Week 3
