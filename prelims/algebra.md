@@ -186,9 +186,9 @@ Ideas for making new groups out of old
 
 One should verify that the inverse of an automorphism is an automorphism.
 
-EX: What's a homomorphism from $\GL_n(\RR) \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
+EX: What's a homomorphism from $GL_n(\RR) \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
 
-> Show that there exists a bijection from $\GL_n(\RR)$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
+> Show that there exists a bijection from $GL_n(\RR)$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
 
 DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Explicitly (or imperatively) $n: = 1 \cdot 2 \cdot 3 \cdots (n-1) \cdot n$, inductively (or recursively) $n: = n(n-1)!$ for $n > 1$ and $1! = 1$.
 
@@ -341,7 +341,7 @@ NOTATION! We write $\langle S \rangle = G$ to indicate that ... the set of eleme
 
 EX! $\ZZ$ in terms of generators is ... $\langle 1 \rangle$
 
-EX! $\D_{2n}$ in terms of generators is ... $\langle r, s\rangle$
+EX! $D_{2n}$ in terms of generators is ... $\langle r, s\rangle$
 
 In a finite group $G$, the set $S$ generates $G$ if every element of $G$ is a finite product of elements of $S$ (that is, excluding inverses of elements in $S$).
 
@@ -369,6 +369,8 @@ DEF! The order $\langle g \rangle$ of an element $g \in G$ ... is the size of th
 
 DEF! A group $G$ is cyclic iff ... there's a $g \in G$ such that $G = \langle g \rangle$.
 
+\newcommand{\CC}{\mathbf{C}}
+
 EX! Suppose $x$ is an nth root of unity in $\CC$. Then $C_n :=$ ... $\{1,x,x^2,\ldots,x^{n-1}\}$ with the usual product in $\CC$. Note $C_n = \langle x \rangle$.
 
 DEF! The dihedral group $D_{2n}$ is the subgroup of $S_{C_n}$ given by ... $$D_{2n} = \left\{w \in S_{C_n} : w(x^j) = x^k \text{ implies } w(x^{j+1}) \in \{x^{k+1},x^{k-1}\}\right\}.$$
@@ -386,6 +388,8 @@ and show that it is "[outer automorphic](https://en.wikipedia.org/wiki/Outer_aut
 ### Week 2
 
 #### Homomorphisms and isomorphisms
+
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
 We should have a notion of "sameness" sufficient to classify 
 
