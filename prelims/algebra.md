@@ -486,7 +486,7 @@ DEF! ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with function
 
 DEF! An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \maps to u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
 
-EX! (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\hdots \\\v_{\sigma(1)}\end{pmatrix}$$
+EX! (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\vdots \\v_{\sigma(1)}\end{pmatrix}$$
 
 TODO: What's $\FF^n$?
 
