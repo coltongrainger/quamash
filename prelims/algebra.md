@@ -458,8 +458,22 @@ PROP! $G \times A \to A$ (where elements of the image are written $g\cdot a$) is
 
 DEF! An action $G\times A \to A$ is trivial if ... $g\cdot a = a$ for all $a \in A$ and all $g \in G$.
 
-DEF! An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \in A$ implies $g = 1$.
+DEF! An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \in A$ implies $g = 1$. In other words, distinct elements of $G$ induce distinct permutations of $A$.
 
-Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).
+(Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
+
+THM! If $G$ acts faithfully on $A$ then $G \conj H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
+
+We have Cayley's theorem, philosophically pleasing, yet useless.
+
+THM! (Cayley's theorem) If $G$ is a group and $\abs{G} = n$ then ... $G \conj H \leq S_n$. That is, every finite group of order $n$ is isomorphic to a subgroup of the group of symmetries on $n$ elements.
+
+To sketch the proof. $G$ acts on $G$ by $G \times G \to G$ where $(g,h) \mapsto g(h) = gh$. The action is faithful ("hyperfaithful") because $gh = h$ implies $g=1$.
+
+Thus $G\conj \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi\colon G \to S_G$, which we've shown is injective. Now $\phi(G) \subset S_G \conj S_n$, from whence we conclude the desired subgroup $\phi(G) \conj (?) \subset S_n$ exists.
+
+EX: $D_{2n} \subset S_{D_{2n}} \conj S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
+
+EX! Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{ units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
 
 ### Week 3
