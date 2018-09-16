@@ -270,7 +270,19 @@ We do our best to state the isomorphism theorems in categorical language.
 \newcommand{\sC}{\mathscr{C}}
 \newcommand{\hom}{\mathrm{hom}}
 
-DEF! A category $\sC$ is a class of objects (capital letters) with two functions satisfying the conditions that ... (CT1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$ and written $X\xrightarrow{f} Y$.
+Notes from [@Ja84, chapter 1].
+
+DEF! To define a category, we need  a class of objects, call it $\sC$ (containing capital letters), with two functions satisfying ... (CL1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$, written $X\xrightarrow{f} Y$; (CL2) the other function assigns to each triple $(X,Y,Z)$ of objects of $\sC$ an operation $\hom(Y,Z) \times \hom(X,Y) \to \hom(X,Z)$ called composition.
+
+DEF! To suppose we have a class $\sC$ with a morphism and composition assigning functions. The class $\sC$ is a category if the following conditions hold. ... (CT1) if $X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}W$ are morphisms of $\sC$, then composition of morphisms is associative $(h \circ g) \circ f = h \circ (g \circ f)$; (CT2) for each object $X$ of $\sC$ there's a morphism $\id_{X}\colon X \to X$ such that $\id_X \circ f = f$ and $g\circ \id_X = g$ for each morphism $f$ and $g$ on the appropriate domains.
+
+DEF!  A monoid is a category ... with precisely one object.
+
+DEF!  A groupoid is a category ... where all morphisms are equivalences.
+
+EX! Let $G$ be a group and $H$ a subgroup. Then a groupoid is defined in which the objects and morphisms are respectively ... (objects) the right cosets $Hx$ of $H$ in $G$ and (morphisms from $Hx$ to $Hy$) the elements $g \in G$ such that $Hxg = Hy$ where the composition of morphisms is given by the binary operation of $G$.
+
+In context, consider a category $\sC$. For each object $X$ of $\sC$ the set $\mathrm{end}(X) = \hom(X,X)$ forms a monoid under composition, while the set $\mathrm{aut}(X) \subset \mathrm{end}(X)$ of equivalences of $X$ with itself forms a groupoid.
 
 #### Monoids and groups
 

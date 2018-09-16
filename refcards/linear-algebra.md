@@ -54,7 +54,7 @@ DUH! The number of vectors in any basis for a subspace $V$ is  ... $\mathrm{dim}
 
 NOTE! What's an algorithmic construction of a basis of the image $\mathrm{im}(A)$? ... To construct a basis of the image of $A$, pick those column vectors of $A$ that correspond to the columns of $rref(A)$ that contain leading $1$s.
 
-THM! State the rank-nullity theorem. ... For any $m \times n$ matrix $A$ we have $$\mathrm{dim}(\mathrm{im}(A)) + \mathrm{dim}(\mathrm{ker}(A)) = m.$$ Alternatively, defining $\mathrm{dim}(\mathrm{ker}(A))$ as the nullity of $A$, $$\mathrm{rank}(A) + \mathrm{nullity}(A) = m.$$ 
+THM! State the rank-nullity theorem. ... For any $m \times n$ matrix $A$ we have $$\mathrm{dim}(\mathrm{im}(A)) + \mathrm{dim}(\mathrm{ker}(A)) = n.$$ Alternatively, defining $\mathrm{dim}(\mathrm{ker}(A))$ as the nullity of $A$, $$\mathrm{rank}(A) + \mathrm{nullity}(A) = n.$$ 
 
 THM! A function $T$ that maps vectors from $\mathbf{F}^n$ to $\mathbf{F}^m$ is called a linear transformation if there is an matrix $A$, living in  ... $A \in \mathbf{F}^{m \times n}$ such that $T(\vec{x}) = A\vec{x}$ for all $\vec{x}$ in $\mathbf{F}^n$.
 

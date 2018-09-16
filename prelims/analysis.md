@@ -179,7 +179,7 @@ Some generalizations of the Lebesgue integral include
 
 We now aim to rigorously define the Lebesgue measure, the Lebesgue integral, and it's relation to differentiation (we are happy with the differentiation's naive definition). By the end of the semester, we should be able to make an analogous statement of the fundamental theory of calculus for Lebesgue integration.
 
-### Assumed background
+#### Assumed background
 
 We assume the rudiments of set theory and an axiomatic derivation of the real numbers are known.
 
@@ -214,10 +214,20 @@ We are now in a position to give the traditional definition of the real numbers.
 
 DEF: (Axiom of completeness) The set of real numbers is ... the ordered field with the least upper bound property, i.e., if $A$ is a set of real numbers, $A \neq \emptyset$, and $A$ is bounded above, then $A$ has a least upper bound.
 
-Other definitions of the reals might require:
+Other definitions of the reals might require
 
-- equivalence classes of Cauchy sequences 
-- (?) adjoining two transcendental elements (yuck)
+- [Constructing the real numbers via Cauchy sequences](https://math.stackexchange.com/questions/11923) 
+- adjoining two elements? (yuck)
+
+DEF: State the axiom of completeness for the extended reals $\overline{\RR} = \RR \cup \{-\infty, + \infty\}$. ... Every subset of the extended reals has a supremum (whence also an infimum). Note that $\sup \emptyset = \infty$ and $\inf \emptyset = -\infty$.
+
+FACT: Suppose $\{x_n\}$ is a sequence of extended real numbers. Then $\limsup x_n$ and $\liminf x_n$ both ... always exist.
+
+<---!
+DEF: The limit superior (of a sequence of elements $x_n$ in a linearly ordered set) is denoted $\limsup x_n$ and defined ... $\limsup x_n := \inf_{k\geq 1}\left(\sup_{n\geq k} x_n \right)$.
+
+DEF: The limit inferior (of a sequence of elements $x_n$ in a linearly ordered set) is denoted $\liminf x_n$ and defined ... $\liminf x_n := \sup_{k\geq 1}\left(\inf_{n\geq k} x_n \right)$.
+--->
 
 #### Products
 
@@ -225,36 +235,36 @@ Notes from [@Fo99, chapter 0].
 
 Open question: how is one to firm up the circular definition (in terms of functions, which are themselves defined as subsets of Cartesian products) of Cartesian products of infinite families?
 
-DEF! If $\{X_\alpha\}_{\alpha \in A}$ is an indexed family of sets, their Cartesian product $\product_{\alpha \in A}$ is defined as ... the set of all maps $$f\colon A \to \bigcup_{\alpha \in A} X_\alpha$$ such that $f(\alpha) \in X_\alpha$ for every $\alpha \in A$. (Usually we write $x$ instead of $f$.)
+DEF: If $\{X_\alpha\}_{\alpha \in A}$ is an indexed family of sets, their Cartesian product $\prod_{\alpha \in A}$ is defined as ... the set of all maps $$f\colon A \to \bigcup_{\alpha \in A} X_\alpha$$ such that $f(\alpha) \in X_\alpha$ for every $\alpha \in A$. (Usually we write $x$ instead of $f$.)
 
-DEF! Suppose $X = \product_{\alpha \in A}$. We define the $\alpha$th coordinate projection (or coordinate map) $\pi_\alpha \colon X \to X_\alpha$ by ... $\pi_\alpha(f) = f(\alpha)$. (Usually we write $x_\alpha$ instead of $f(\alpha)$.)
+DEF: Suppose $X = \prod_{\alpha \in A}$. We define the $\alpha$th coordinate projection (or coordinate map) $\pi_\alpha \colon X \to X_\alpha$ by ... $\pi_\alpha(f) = f(\alpha)$. (Usually we write $x_\alpha$ instead of $f(\alpha)$.)
 
-DEF! If the sets $X_\alpha$ for all $\alpha \in A$ are all equal to some fixed set $Y$, then the Cartesian product $\product_{\alpha \in A} X_\alpha$ is just ... the set of all mappings from $A$ into $Y$, denoted $Y^A$. If $A = \{1, \ldots, n\}$, we write $Y^A$ as $Y^n$ and identify it with n tuples of elements of $Y$.
+DEF: If the sets $X_\alpha$ for all $\alpha \in A$ are all equal to some fixed set $Y$, then the Cartesian product $\prod_{\alpha \in A} X_\alpha$ is just ... the set of all mappings from $A$ into $Y$, denoted $Y^A$. If $A = \{1, \ldots, n\}$, we write $Y^A$ as $Y^n$ and identify it with n tuples of elements of $Y$.
 
 #### Orderings
 
 Recall that a partial ordering on a nonempty set $X$ is a relation that's reflexive, antisymmetric, and transitive.
 
-DEF! A linear (or total) ordering on a set $X$ is ... a partial ordering on $X$ with the additional requirement that any two distinct elements are comparable.
+DEF: A linear (or total) ordering on a set $X$ is ... a partial ordering on $X$ with the additional requirement that any two distinct elements are comparable.
 
-EX! Let $E$ be a set and $\sP(E)$ its powerset. There's a natural partial order on $\sP(E)$ by the relation ... $\subset$ (set inclusion).
+EX: Let $E$ be a set and $\sP(E)$ its powerset. There's a natural partial order on $\sP(E)$ by the relation ... $\subset$ (set inclusion).
 
-EX! $\RR$ and $\QQ$ are (linearly) ordered fields by the relation ... $\leq$ (less than or equal to).
+EX: $\RR$ and $\QQ$ are (linearly) ordered fields by the relation ... $\leq$ (less than or equal to).
 
-DEF! Two partially ordered sets $X$ and $Y$ are order isomorphic if there's a bijection $f \colon X \to Y$ such that ... for all points $x_1$ and $x_2$ in $X$, we have $x_1 \leq x_2$ iff $f(x_1) = f(x_2)$.
+DEF: Two partially ordered sets $X$ and $Y$ are order isomorphic if there's a bijection $f \colon X \to Y$ such that ... for all points $x_1$ and $x_2$ in $X$, we have $x_1 \leq x_2$ iff $f(x_1) = f(x_2)$.
 
-DEF! If $X$ is partially ordered by $\leq$ a maximal (minimal) element of $X$ is an $x \in X$ such that ... the only $y \in X$ satisfying $x \geq y$ (resp $y\leq x$) is $x$ itself.
+DEF: If $X$ is partially ordered by $\leq$ a maximal (minimal) element of $X$ is an $x \in X$ such that ... the only $y \in X$ satisfying $x \geq y$ (resp $y\leq x$) is $x$ itself.
 
 - A maximal (resp minimal) element may not exist.
 - It also may not be unique, unless the ordering is *linear*.
 
-DEF! With $X$ a poset and $\leq$ the relation on $E \subset X$, we define an upper (lower) bound for $E$ as an element $x \in X$ such that ... $y\leq x$ (resp $x \leq y$) for all $y \in E$.
+DEF: With $X$ a poset and $\leq$ the relation on $E \subset X$, we define an upper (lower) bound for $E$ as an element $x \in X$ such that ... $y\leq x$ (resp $x \leq y$) for all $y \in E$.
 
 - An upper (resp lower) bound may not exist.
 - It may not be an element of $E$.
 - It may not be a maximal (resp minimal) element of $E$, unless the ordering is *linear*.
 
-DEF! If $X$ is linearly ordered by $\leq$ and every nonempty subset of $X$ has a (necessarily unique) minimal element, $X$ is said to be ... well ordered by $\leq$ and $\leq$ is called (in defiance of the laws of grammar) a well ordering on $X$.
+DEF: If $X$ is linearly ordered by $\leq$ and every nonempty subset of $X$ has a (necessarily unique) minimal element, $X$ is said to be ... well ordered by $\leq$ and $\leq$ is called (in defiance of the laws of grammar) a well ordering on $X$.
 
 #### Set theoretic rudiments
 
@@ -264,20 +274,34 @@ Some motivation from [Jerry Bona](https://en.wikipedia.org/wiki/Jerry_L._Bona):
 
 > The Axiom of Choice is obviously true, the Well–ordering theorem is obviously false; and who can tell about Zorn’s Lemma?
 
-PROP! The Hausdorff maximal principle states ... every partially ordered set has a maximally linearly ordered subset. (In other words, there exists a subset $B$ of a poset $A$ with the relation $\prec$ such that no subset of $A$ that properly contains $B$ is linearly ordered by $\prec$.)
+<!---
+RECALL: From Jerry Bona: The Axiom of Choice is [...], the Well–ordering theorem is [...]; and who can tell about Zorn’s Lemma? ... The Axiom of Choice is obviously true, the Well–ordering theorem is obviously false; and who can tell about Zorn’s Lemma?
+--->
 
-Copied verbatim from [@Mu00, section 11]:
+PROP: The Hausdorff maximal principle states ... every partially ordered set has a maximally linearly ordered subset. (In other words, there exists a subset $B$ of a poset $A$ with the relation $\prec$ such that no subset of $A$ that properly contains $B$ is linearly ordered by $\prec$.)
+
+The next example taken verbatim from [@Mu00, section 11]:
 
 \newcommand{\sA}{\mathscr{A}}
 
 If $\sA$ is any collection of sets, the relation $\subsetneq$ (is a proper subset of) is a strict partial order on $\sA$. 
 
-EX! Suppose that $\sA$ is the collection of all circular regions (interiors of circles) in the plane, ordered by $\subsetneq$. Name two maximal totally ordered sub-collections of $\sA$. ... (1) All circular regions with centers at the origin; (2) all circular regions bounded by circles tangent from the right to the $y$-axis at the origin.
+EX: Suppose that $\sA$ is the collection of all circular regions (interiors of circles) in the plane, ordered by $\subsetneq$. Name two maximal totally ordered sub-collections of $\sA$. ... (1) All circular regions with centers at the origin; (2) all circular regions bounded by circles tangent from the right to the $y$-axis at the origin.
 
-EX! Consider the continuous functions $C^0(\RR)$ with the relation $f \preq g$ iff $f(x) < g(x)$ for all points $x \in \RR$. Name a maximal totally ordered collection of functions of $C^0(\RR)$. ... Fix a function $h \in C^0(\RR)$ and let $\lambda \in \RR$ parameterize the constant functions $c_\lambda \in C^0(\RR)$. Then the collection $\{ h + c_\lambda : \lambda \in \RR\}$ is maximal and totally ordered.
+One more organic example ($C^k(D)$ notation from <http://mathworld.wolfram.com/C-kFunction.html>):
 
-(We take notation from <http://mathworld.wolfram.com/C-kFunction.html>.)
+EX: Consider the continuous functions $C^0(\RR)$ with the relation $f \prec g$ iff $f(x) < g(x)$ for all points $x \in \RR$. Name a maximal totally ordered collection of functions of $C^0(\RR)$. ... Fix a function $h \in C^0(\RR)$ and let $\lambda \in \RR$ parameterize the constant functions $c_\lambda \in C^0(\RR)$. Then the collection $\{ h + c_\lambda : \lambda \in \RR\}$ is maximal and totally ordered.
 
-PROP! Zorn's lemma states ... if $X$ is a poset and every linearly ordered subset of $X$ has an upper bound then $X$ has a maximal element.
+PROP: Zorn's lemma states ... if $X$ is a poset and every linearly ordered subset of $X$ has an upper bound then $X$ has a maximal element.
+
+- Usually applied for non-constructive proofs of existence theorems.
+- See Keith Conrad's [Zorn's lemma and some applications](https://www.math.uconn.edu/~kconrad/blurbs/zorn1.pdf).
+
+PROP: The Well Ordering Principle states ... every nonempty set $X$ can be well ordered.
+
+PROP: The axiom of choice states ... if $\{X_\alpha\}$ is a nonempty family of nonempty sets, then the Cartesian product $\prod_{\alpha \in A} X_\alpha$ is nonempty.
+
+- Will eventually be invoked in the proof of [Tychonoff's theorem](https://en.wikipedia.org/wiki/Tychonoff%27s_theorem).
+
 
 
