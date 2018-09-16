@@ -265,6 +265,13 @@ And what are the costs of such perspective?
 
 We do our best to state the isomorphism theorems in categorical language.
 
+#### Basic framework for category theory
+
+\newcommand{\sC}{\mathscr{C}}
+\newcommand{\hom}{\mathrm{hom}}
+
+DEF! A category $\sC$ is a class of objects (capital letters) with two functions satisfying the conditions that ... (CT1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$ and written $X\xrightarrow{f} Y$.
+
 #### Monoids and groups
 
 Notes from [@Ja85, chapter 1].
@@ -340,23 +347,25 @@ We can argue that for any partition $\pi$ there's an (natural) equivalence class
 
 #### Modular arithmetic
 
+\newcommand{\NN}{\mathbf{N}}
+
 We work from two intuitive examples: the additive group $\ZZ/n\ZZ$ of integers modulo $n \in \NN$ and the multiplicative group of units in $\ZZ/n\ZZ$. We need to define *residue classes* of integers as the elements in each group.
 
-DEF! (Modulo $n$ equivalence relation) Let $n \in \NN$ be fixed. Define an equivalence relation on $\ZZ$ by ... $a \sim b$ iff $n$ divides $b-a$ iff there's a $m \in \ZZ$ such that $nm = b-a$.
+DEF: (Modulo $n$ equivalence relation) Let $n \in \NN$ be fixed. Define an equivalence relation on $\ZZ$ by ... $a \sim b$ iff $n$ divides $b-a$ iff there's a $m \in \ZZ$ such that $nm = b-a$.
 
-DEF! (Modulo $n$ equivalence classes) For any $k \in \ZZ$ the equivalence class of $a$ is denoted $\overline{a}$, and defined ... $\overline{a} = \{a+kn : k \in \ZZ\}$.
+DEF: (Modulo $n$ equivalence classes) For any $k \in \ZZ$ the equivalence class of $a$ is denoted $\overline{a}$, and defined ... $\overline{a} = \{a+kn : k \in \ZZ\}$.
 
-DEF! (Integers modulo $n$) $\ZZ/n\ZZ$ is the set ... $\{\overline{0}, \ldots, \overline{n-1}\}$
+DEF: (Integers modulo $n$) $\ZZ/n\ZZ$ is the set ... $\{\overline{0}, \ldots, \overline{n-1}\}$
 
-DEF! The lease residue of an integer $a$ is ... the smallest non-negative integer congruent to $a$, to find such an integer we say we are reducing $a$ modulo $n$.
+DEF: The lease residue of an integer $a$ is ... the smallest non-negative integer congruent to $a$, to find such an integer we say we are reducing $a$ modulo $n$.
 
-DEF! For residue classes $\overline{a},\overline{b} \in \ZZ/n\ZZ$, define their sum and product as ... $\overline{a}+\overline{b} = \overline{a + b}$ and $\overline{a}\cdot\overline{b} = \overline{a\cdot b}$. Both binary operations rely on a choice of representative integers from $\overline{a}$ and $\overline{b}$, but regardless of the choice, the operations are both well defined.
+DEF: For residue classes $\overline{a},\overline{b} \in \ZZ/n\ZZ$, define their sum and product as ... $\overline{a}+\overline{b} = \overline{a + b}$ and $\overline{a}\cdot\overline{b} = \overline{a\cdot b}$. Both binary operations rely on a choice of representative integers from $\overline{a}$ and $\overline{b}$, but regardless of the choice, the operations are both well defined.
 
-DEF! The multiplicative group of integers modulo $n$, denoted $(\ZZ/n\ZZ)^\times$, is ... $\{\overline{a} \in \ZZ/n\ZZ : \exists \overline{c} \in \ZZ/n\ZZ \text{ with } \overline{a}\cdot\overline{c} = \overline{1}\}$.
+DEF: The multiplicative group of integers modulo $n$, denoted $(\ZZ/n\ZZ)^\times$, is defined as ... $\{\overline{a} \in \ZZ/n\ZZ : \exists \overline{c} \in \ZZ/n\ZZ \text{ with } \overline{a}\cdot\overline{c} = \overline{1}\}$.
 
-PROP! Alternatively $(\ZZ/n\ZZ)^\times$ is the set ... $\{\overline{a} \in \ZZ/n\ZZ : \mathrm{gcd}(a,n) = 1\}$.
+PROP: Alternatively $(\ZZ/n\ZZ)^\times$ is the set ... $\{\overline{a} \in \ZZ/n\ZZ : \mathrm{gcd}(a,n) = 1\}$.
 
-EX! How many elements are in $(\ZZ/n\ZZ)^\times$ for an arbitrary $n\in\NN$? ... Consider the Euler totient function $\phi$, defined for each natural number $n$ as the number of positive integers $a \leq n$ with $a$ relatively prime to $n$.
+EX: How many elements are in $(\ZZ/n\ZZ)^\times$ for an arbitrary $n\in\NN$? ... Consider the Euler totient function $\phi$, defined for each natural number $n$ as the number of positive integers $a \leq n$ with $a$ relatively prime to $n$.
 
 #### Naive generators and relations 
 
