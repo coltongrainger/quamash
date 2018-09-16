@@ -192,29 +192,92 @@ But what are Dedekind cuts? Well, real numbers, defined as so [@Sp94 chapter 29]
 > A real number is a set $\alpha$ of rational numbers, with the following properties.
 > 
 > 1. if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$
-> 2. $\alpha \noteq \emptyset$
-> 3. $\alpha \noteq \QQ$
+> 2. $\alpha \neq \emptyset$
+> 3. $\alpha \neq \QQ$
 > 4. there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$.
 
 
 <!---
-DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties [...] (2) $\alpha \noteq \emptyset$; (3) $\alpha \noteq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$;
-DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; [...] (3) $\alpha \noteq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (2) $\alpha \noteq \emptyset$;
-DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \noteq \emptyset$; [...]  (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (3) $\alpha \noteq \QQ$;
-DEF! (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \noteq \emptyset$; (3) $\alpha \noteq \QQ$; [...] ... (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$.
+DEF: (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties [...] (2) $\alpha \neq \emptyset$; (3) $\alpha \neq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$;
+DEF: (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; [...] (3) $\alpha \neq \QQ$; (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (2) $\alpha \neq \emptyset$;
+DEF: (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \neq \emptyset$; [...]  (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$. ... (3) $\alpha \neq \QQ$;
+DEF: (Dedekind cuts) A real number is a set $\alpha$ of rational numbers, with the following properties (1) if $x$ is in $\alpha$ and $y$ is a rational number with $y < x$, then $y$ is in $\alpha$; (2) $\alpha \neq \emptyset$; (3) $\alpha \neq \QQ$; [...] ... (4) there is no greatest element in $\alpha$, i.e., if $x$ is in $\alpha$, then there's some $y$ in $\alpha$ with $x < y$.
 --->
 
 We ought also to define the order $<$ we've imposed on the field.
 
 \newcommand{\FF}{\mathbf{F}}
 
-DEF! An ordered field is a field $\FF$ with operations $+$ and $\cdot$ together with a certain subset $P$ of $\FF$ (the positive elements) with the following properties ... First, for all $a \in \FF$ one and only one of the following hold (i) $a = 0$, (ii) $a$ is in $P$, (iii) $-a$ is in $P$. Second, if $a$ and $b$ are in $P$, then their sum $a + b$ is in $P$. Lastly, if $a$ and $b$ are in $P$, then their product $a \cdot b$ is in $P$.
+DEF: An ordered field is a field $\FF$ with operations $+$ and $\cdot$ together with a certain subset $P$ of $\FF$ (the positive elements) with the following properties ... First, for all $a \in \FF$ one and only one of the following hold (i) $a = 0$, (ii) $a$ is in $P$, (iii) $-a$ is in $P$. Second, if $a$ and $b$ are in $P$, then their sum $a + b$ is in $P$. Lastly, if $a$ and $b$ are in $P$, then their product $a \cdot b$ is in $P$.
 
 We are now in a position to give the traditional definition of the real numbers.
 
-DEF! (Axiom of completeness) The set of real numbers is ... the ordered field with the least upper bound property, i.e., if $A$ is a set of real numbers, $A \neq \emptyset$, and $A$ is bounded above, then $A$ has a least upper bound.
+DEF: (Axiom of completeness) The set of real numbers is ... the ordered field with the least upper bound property, i.e., if $A$ is a set of real numbers, $A \neq \emptyset$, and $A$ is bounded above, then $A$ has a least upper bound.
 
 Other definitions of the reals might require:
 
 - equivalence classes of Cauchy sequences 
 - (?) adjoining two transcendental elements (yuck)
+
+#### Products
+
+Notes from [@Fo99, chapter 0].
+
+Open question: how is one to firm up the circular definition (in terms of functions, which are themselves defined as subsets of Cartesian products) of Cartesian products of infinite families?
+
+DEF! If $\{X_\alpha\}_{\alpha \in A}$ is an indexed family of sets, their Cartesian product $\product_{\alpha \in A}$ is defined as ... the set of all maps $$f\colon A \to \bigcup_{\alpha \in A} X_\alpha$$ such that $f(\alpha) \in X_\alpha$ for every $\alpha \in A$. (Usually we write $x$ instead of $f$.)
+
+DEF! Suppose $X = \product_{\alpha \in A}$. We define the $\alpha$th coordinate projection (or coordinate map) $\pi_\alpha \colon X \to X_\alpha$ by ... $\pi_\alpha(f) = f(\alpha)$. (Usually we write $x_\alpha$ instead of $f(\alpha)$.)
+
+DEF! If the sets $X_\alpha$ for all $\alpha \in A$ are all equal to some fixed set $Y$, then the Cartesian product $\product_{\alpha \in A} X_\alpha$ is just ... the set of all mappings from $A$ into $Y$, denoted $Y^A$. If $A = \{1, \ldots, n\}$, we write $Y^A$ as $Y^n$ and identify it with n tuples of elements of $Y$.
+
+#### Orderings
+
+Recall that a partial ordering on a nonempty set $X$ is a relation that's reflexive, antisymmetric, and transitive.
+
+DEF! A linear (or total) ordering on a set $X$ is ... a partial ordering on $X$ with the additional requirement that any two distinct elements are comparable.
+
+EX! Let $E$ be a set and $\sP(E)$ its powerset. There's a natural partial order on $\sP(E)$ by the relation ... $\subset$ (set inclusion).
+
+EX! $\RR$ and $\QQ$ are (linearly) ordered fields by the relation ... $\leq$ (less than or equal to).
+
+DEF! Two partially ordered sets $X$ and $Y$ are order isomorphic if there's a bijection $f \colon X \to Y$ such that ... for all points $x_1$ and $x_2$ in $X$, we have $x_1 \leq x_2$ iff $f(x_1) = f(x_2)$.
+
+DEF! If $X$ is partially ordered by $\leq$ a maximal (minimal) element of $X$ is an $x \in X$ such that ... the only $y \in X$ satisfying $x \geq y$ (resp $y\leq x$) is $x$ itself.
+
+- A maximal (resp minimal) element may not exist.
+- It also may not be unique, unless the ordering is *linear*.
+
+DEF! With $X$ a poset and $\leq$ the relation on $E \subset X$, we define an upper (lower) bound for $E$ as an element $x \in X$ such that ... $y\leq x$ (resp $x \leq y$) for all $y \in E$.
+
+- An upper (resp lower) bound may not exist.
+- It may not be an element of $E$.
+- It may not be a maximal (resp minimal) element of $E$, unless the ordering is *linear*.
+
+DEF! If $X$ is linearly ordered by $\leq$ and every nonempty subset of $X$ has a (necessarily unique) minimal element, $X$ is said to be ... well ordered by $\leq$ and $\leq$ is called (in defiance of the laws of grammar) a well ordering on $X$.
+
+#### Set theoretic rudiments
+
+As much as I think these are funny, I do have to list them here.
+
+Some motivation from [Jerry Bona](https://en.wikipedia.org/wiki/Jerry_L._Bona):
+
+> The Axiom of Choice is obviously true, the Well–ordering theorem is obviously false; and who can tell about Zorn’s Lemma?
+
+PROP! The Hausdorff maximal principle states ... every partially ordered set has a maximally linearly ordered subset. (In other words, there exists a subset $B$ of a poset $A$ with the relation $\prec$ such that no subset of $A$ that properly contains $B$ is linearly ordered by $\prec$.)
+
+Copied verbatim from [@Mu00, section 11]:
+
+\newcommand{\sA}{\mathscr{A}}
+
+If $\sA$ is any collection of sets, the relation $\subsetneq$ (is a proper subset of) is a strict partial order on $\sA$. 
+
+EX! Suppose that $\sA$ is the collection of all circular regions (interiors of circles) in the plane, ordered by $\subsetneq$. Name two maximal totally ordered sub-collections of $\sA$. ... (1) All circular regions with centers at the origin; (2) all circular regions bounded by circles tangent from the right to the $y$-axis at the origin.
+
+EX! Consider the continuous functions $C^0(\RR)$ with the relation $f \preq g$ iff $f(x) < g(x)$ for all points $x \in \RR$. Name a maximal totally ordered collection of functions of $C^0(\RR)$. ... Fix a function $h \in C^0(\RR)$ and let $\lambda \in \RR$ parameterize the constant functions $c_\lambda \in C^0(\RR)$. Then the collection $\{ h + c_\lambda : \lambda \in \RR\}$ is maximal and totally ordered.
+
+(We take notation from <http://mathworld.wolfram.com/C-kFunction.html>.)
+
+PROP! Zorn's lemma states ... if $X$ is a poset and every linearly ordered subset of $X$ has an upper bound then $X$ has a maximal element.
+
+
