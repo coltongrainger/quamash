@@ -303,5 +303,24 @@ PROP: The axiom of choice states ... if $\{X_\alpha\}$ is a nonempty family of n
 
 - Will eventually be invoked in the proof of [Tychonoff's theorem](https://en.wikipedia.org/wiki/Tychonoff%27s_theorem).
 
+### Week 2
 
+### Week 3
 
+### Week 4
+
+An analogy (from Rudin).
+
+topological spaces | measureable spaces
+--- | ---
+topology | $\sigma$-algebra
+open set | measurable set
+continuous function | measureable function
+
+\newcommand{\sM}{\mathscr{M}}
+
+DEF! A collection $\sM$ of subsets of a set $X$ is said to be a $\sigma$-algebra in $X$ if $\sM$ has the following properties ... (SA1) $X \in \sM$; (SA2) If $A \in \sM$ then $A^c \in \sM$ where $A^c$ is the complement of $A$ relative to $X$; (SA3) if $A = \cup_{n=1}^\infty A_n$ and $A_n \in \sM$ for $n =1, 2, 3, \ldots$, then $A \in \sM$.
+
+DEF! If $\sM$ is a $\sigma$-algebra in $X$ then $X$ is called a measurable space, and the members of $\sM$ are called ... the measurable sets in $X$.
+
+DEF! If $X$ is a measurable space, $Y$ a topological space, and $f \colon X \to Y$ a function, then $f$ is said to be measurable provided that ... $f^{-1}(V)$ is a measurable set in $X$ for every open set $V$ in $Y$.
