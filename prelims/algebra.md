@@ -571,7 +571,7 @@ In the following definitions, let some group $G$ act on $B$ and fix a subset $A 
 
 \newcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
 
-DEF! Let $G$ act on $B$ and fix $A \subset B$. The stabilizer $\Stab{G}{A}$ of $A$ in $G$ is ... the subgroup $\Stab{G}{A} = \{g \in G: g(a) = a, a \in A\}$.
+DEF: Let $G$ act on $B$ and fix $A \subset B$. The stabilizer $\Stab{G}{A}$ of $A$ in $G$ is ... the subgroup $\Stab{G}{A} = \{g \in G: g(a) = a, a \in A\}$.
 
 If $\phi \colon G \to S_B$ is the corresponding homomorphism, then $\Stab{G}{A} = \ker(\phi)$, that is, the subgroup of $G$ for which each element fixes every $a \in A$.
 
@@ -583,13 +583,13 @@ Stabilizers are easy to compute; stable elements are somehow easier to find than
 
 \newcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
 
-DEF! Let $G$ act on $B$ and fix $A \subset B$. The normalizeer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
+DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizeer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
 
 - When $GL_n (\RR)$ acts on $\RR^2$, the normalizer $\Norm{GL_n(\RR)}{\{(x,0) : x \in \RR\}}$ is the subgroup of upper triangular matrices.
 - $\Norm{S_n}{\{1,\ldots, n\}} \cong S_{n-2}\times S_2$
 - Where, again, $x$ is an $n$th root of unity, $\Norm{D_{2n}}{\{x\}}  = \Stab{D_{2n}}{\{x\}} \cong \{1, rsr^{-1}\}$. Why?
 
-DEF! The conjugation action of a group $G$ on itself is defined as ... the function $G \times G \to G$ which maps $(g,h) \to gh^g{-1}$. We write $g(h) = ghg^{-1}$ for all $g,h \in G$.
+DEF: The conjugation action of a group $G$ on itself is defined as ... the function $G \times G \to G$ which maps $(g,h) \to gh^g{-1}$. We write $g(h) = ghg^{-1}$ for all $g,h \in G$.
 
 - Conjugation is a group action.
 - Conjugation is not necessarily faithful.
@@ -599,20 +599,56 @@ DEF! The conjugation action of a group $G$ on itself is defined as ... the funct
 
 \newcommand{\C}[2]{C_{#1}\left( #2\right)}
 
-DEF! The centralizer $\C{G}{A}$ of a subset $A \subset G$ is ... the subgroup $\Stab{G}{A}$ where $G$ acts on itself by conjugation.
+DEF: The centralizer $\C{G}{A}$ of a subset $A \subset G$ is ... the subgroup $\Stab{G}{A}$ where $G$ acts on itself by conjugation.
 
 - Note that when $A = \{g\}$ we have $\C{G}{A} = \C{G}{\{g\}}$ the subgroup of elements $h \in G$ that commute with $g$, since $h = ghg^{-1}$ implies $hg = gh$.
 - Idea: conjugation is "measuring commutation".
 
-DEF! The center $Z(G)$ of $G$ is ... the (nonempty, perhaps trivial, definitely abelian) subgroup $Z(G) = \C{G}{G}$ which consists of every element that commutes with all elements of $G$.
+DEF: The center $Z(G)$ of $G$ is ... the (nonempty, perhaps trivial, definitely abelian) subgroup $Z(G) = \C{G}{G}$ which consists of every element that commutes with all elements of $G$.
 
 - Conjugation is faithful is the center of a group is trivial.
 - Conjugation is faithful is the center of a group is the group itself.
 
-DEF! The normalizer $N_G(A)$ of a set $A \subset G$ is the subgroup $\Norm{G}{A}$ where $G$ acts on itself by conjugation.
+DEF: The normalizer $N_G(A)$ of a set $A \subset G$ is the subgroup $\Norm{G}{A}$ where $G$ acts on itself by conjugation.
 
 - $N_G(G) = G$, that is, $G$ is normal in itself.
 
-DEF! (Normalizer definition) A subgroup $H \le G$ is normal in $G$ if ... $\Norm{G}{H} = G$, in which case we write $H \triangleleft G$.
+DEF: (Normalizer definition) A subgroup $H \le G$ is normal in $G$ if ... $\Norm{G}{H} = G$, in which case we write $H \triangleleft G$.
 
 - Since $N_G(Z(G)) = G$, we have $Z(G) \triangleleft G$.
+
+### Week 4
+
+- [“Bruhat decomposition - Wikipedia”](https://en.wikipedia.org/wiki/Bruhat_decomposition). English Wikipedia. Retrieved September 18, 2018.
+
+Consulting Prof Thiem during office hours, we seemed to agree that, of the curriculum, 
+
+- canonical examples
+    - cyclic groups
+    - permutation groups (symmetric and alternating)
+    - matrix groups
+- presentations of groups
+- free groups
+- group actions
+    - Cayley’s theorem
+    - G-sets
+- lattices
+    - subgroups
+    - normal subgroups
+- Lagrange’s theorem
+    - cosets
+
+had been covered so far and 
+
+- group actions *applied*
+    - automorphisms
+    - conjugacy
+    - quotient groups
+- Sylow’s Theorems
+- isomorphism theorems
+
+would be coming up in the next 3 weeks.
+
+Ian, Erik, Hunter, and I tried to show that two presentations of a group are isomorphic if we bijectively identify the "correct elements" in each presentation, and show that certain relations in each presentation are satisfied. I felt hand-wavy to talk about an isomorphism of words via letters without having grounded the argument in the *set of reduced words*. We cited [@Hu80, chapter 1.9] and started a weekly review group.
+
+### Week 5
