@@ -129,7 +129,7 @@ RECALL: (Lower sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$
 The upper sum $\sU_\sP$ is defined analogously with the supremum. We have $\sL_\sP(f)\leq  \sU_\sP(f)$ for all partitions of any real valued function defined on $[a,b]$. 
 
 <!---
-RECALL: (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $\sum_{i=1}^n \inf\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$
+RECALL: (Upper sum) Suppose $f$ is a bounded function on $f\colon [a,b] \to \RR$. Let $a < b$ and fix $\sP = \{a, x_1, \ldots, x_{n-1}, b\}$ a partition of the set $[a,b]$. The upper sum $\sU_\sP(f)$ is defined ... $\sum_{i=1}^n \sup\{f(x): x \in [x_{i-1}, x_i]\}\cdot(x_i - x_{i-1}).$
 --->
 
 With these sums, we proceed to "Cauchy and Riemann's interpretation of the calculus of Newton and Leibniz".
@@ -302,6 +302,65 @@ PROP: The Well Ordering Principle states ... every nonempty set $X$ can be well 
 PROP: The axiom of choice states ... if $\{X_\alpha\}$ is a nonempty family of nonempty sets, then the Cartesian product $\prod_{\alpha \in A} X_\alpha$ is nonempty.
 
 - Will eventually be invoked in the proof of [Tychonoff's theorem](https://en.wikipedia.org/wiki/Tychonoff%27s_theorem).
+
+#### Metric Spaces
+
+We'll primarily be concerned with the metric space $\RR^n$.
+
+\providecommand{\abs}[1]{\lvert #1 \rvert}
+
+IDEA: The endpoints of open and closed intervals in $\RR$ are ought to be measured by the distance function $\abs{x-y}$, and this turns out to be a metric on $\RR$.
+
+Some intuitive properties of the distance function on $\RR$:
+
+0. $\abs{x-y} \ge 0$ for all $x, y \in \RR$ (non-negativity)
+1. $\abs{x-y} = 0$ iff $x = y$ (identical points have no distance)
+2. $\abs{x-y} = \abs{y-x}$ (symmetry)
+3. $\abs{x-z} \le \abs{x-y} + \abs{y-z}$ for all $x,y \in \RR$ (triangle inequality)
+
+Note that metrics and vector norms are not generally compatible. There are "more" metrics on $\RR^n$ than those induced by vector space norms.^[ [“Difference between metric and norm made concrete: The case of Euclid”](https://math.stackexchange.com/questions/38634/difference-between-metric-and-norm-made-concrete-the-case-of-euclid/38638#38638). Mathematics Stack Exchange. Retrieved September 24, 2018.]
+
+> The metric $d(u,v)$ induced by a vector space norm has additional properties that are not true of general metrics. These are:
+> 
+> **Translation Invariance:** $d(u+w,v+w)=d(u,v)$
+> 
+> **Scaling Property:** For any real number $t$, $d(tu,tv)=|t|d(u,v)$.
+> 
+> Conversely, if a metric has the above properties, then $d(u,0)$ is a norm.
+> 
+> More informally, the metric induced by a norm "plays nicely" with the vector space structure.  The usual metric on $\mathbb{R}^n$ has the two properties mentioned above.  But there are metrics on $\mathbb{R}^n$ that are *topologically equivalent* to the usual metric, but not translation invariant, and so are not induced by a norm.
+
+\providecommand{\norm}[1]{\lVert #1 \rVert}
+
+To list some intuitive "distances" we care about.
+
+- distances between points and sets 
+- distances between sets
+
+DEF: $(X, \rho)$ be a metric space, $A \subset X$ and $b \in X$. The distance from the point $b$ to the set $A$ is ... the number $\rho(b,A) = \inf\{\rho(b,a) : a \in A\}$.
+
+DEF: Let $A$ and $B$ be two bounded subsets in a metric space $(X, \rho)$. We define the Hausdorff distance between $A$ and $B$ as ... $$d_\rho(A,B) = \max\left\{\sup_{a \in A}\rho(a, B), \sup_{b \in B}\rho(b, A)\right\}.$$
+
+- euclidean norms $d(x,y) = \norm{x - y} = \left(\sum_1^n (x_i - y_i)^2\right)^{1/2}$
+- complex distances (e.g., by conjugation)
+- the Minkowski norms $\ell_p$ of a point $x \in \RR^k$ for any $1 \leq p \leq \infty$, $$\norm{x}_p = \left(\sum_1^n \abs{x_i}^p\right)^{1/p}$$
+
+DEF: (Hölder inequality) Let $x, y \in \RR^n$, and take real number $p,q >0$ such that $1/p + 1/q =1$. Then the sum $$\sum_1^n x_i y_i$$ is less than or equal to the product ... $$\left(\sum_1^n x_i^p\right)^{1/p} \left(\sum_1^n y_i^q\right)^{1/q}.$$
+
+- the "length of a shortest path in the set"
+- the supremum of the pointwise distance between continuous functions on a compact set
+- metrics on product spaces
+- metrizable topological spaces
+
+We showed that open balls in a metric spaces generate a topology. We *did* need finiteness to show that the intersection of so many open balls is again an open ball. Whence we appealed to the notions of "largest" and "smallest" (under set containment) to get interiors, closures, denseness, and nowhere denseness.
+
+DEF: For a metric space $(X, \rho)$, the interior of a set $E \subset X$ is ... $$E^\circ = \bigcup\{ U \subset X \text{ such that } U \subset E \text{ is open}\}.$$
+
+DEF: For a metric space $(X, \rho)$, the closure of a set $E \subset X$ is ... $$\overline{E} = \bigcap\{ F \subset X \text{ such that } E \subset F \text{ where $F$ is closed}\}.$$
+
+DEF: A set $E$ in a topological space is called dense in $X$ if ... $\overline{E} = X$. 
+
+DEF: A set $E$ in a topological space is called nowhere dense in $X$ if ... $(\overline{E})^\circ = \emptyset$. 
 
 ### Week 2
 
