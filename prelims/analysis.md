@@ -448,7 +448,7 @@ PROP: Let $X_1, \ldots, X_n$ be metric spaces and let $\prod_1^n X_j$ equipped w
 
 #### Elementary families
 
-DEF! An elementary family (or semi-algebra) on a set $X$ is a nonempty collection of subsets of $X$ such that ... (SA1) $\emptyset \in \sE$; (SA2) if $E, F \in \sE$, then $E\cap F \in \sE$; (SA3) if $E \in \sE$, then $E^c = X \setminus E$ can be written as a finite disjoint union of elements of $\sE$.
+DEF: An elementary family (or semi-algebra) on a set $X$ is a nonempty collection of subsets of $X$ such that ... (SA1) $\emptyset \in \sE$; (SA2) if $E, F \in \sE$, then $E\cap F \in \sE$; (SA3) if $E \in \sE$, then $E^c = X \setminus E$ can be written as a finite disjoint union of elements of $\sE$.
 
 - Find an elementary family.
 - Generate an algebra from that elementary family.
@@ -456,7 +456,7 @@ DEF! An elementary family (or semi-algebra) on a set $X$ is a nonempty collectio
 
 Riemann–Stieltjes measures arise when $f \colon \RR \to \RR$ is monotone, increasing, bounded, (and right continuous?) and we take as a elementary family $$\sE = \{f^{-1}((a,b]), f^{-1}(\emptyset), f^{-1}(\RR) : -\infty\le a < b \le \infty\}.$$
 
-PROP! If $\sE$ is an elementary family of subsets of $X$, then the collections $\sA$ of finite disjoint unions of members of $\sE$ is ... an algebra of subsets of $X$.
+PROP: If $\sE$ is an elementary family of subsets of $X$, then the collections $\sA$ of finite disjoint unions of members of $\sE$ is ... an algebra of subsets of $X$.
 
 - check $\emptyset \in \sA$
 - check if $A, B \in \sA$, then $A \cup B \in \sA$ (try $A \cup B = [A \cap B^c] \sqcup B$)
@@ -471,7 +471,7 @@ Coming up: outer measures on algebras!
 
 #### Defining measures
 
-DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j)$$ where it's possible that both sides are infinite.
+DEF: Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j)$$ where it's possible that both sides are infinite.
 
 \newcommand{\ZZ}{\mathbf{Z}}
 
@@ -487,35 +487,35 @@ Now we usually leave $(\RR, \sB_\RR)$ on the corner of the board to indicate whe
 
 Ian asked a question about signed measures (or complex measures?). Packer immediately jumped to $C^*$ algebras(?) and mentioned that we have complex measures, usually *finite*, but that we can also consider (the projections of?) bounded operators that are self-adjoint and idempotent.
 
-DEF! A measure space is ... a triple consisting of a set, a $\sigma$-algebra on that set, and a measure defined on that $\sigma$-algebra, $(X, \sM, \mu)$.
+DEF: A measure space is ... a triple consisting of a set, a $\sigma$-algebra on that set, and a measure defined on that $\sigma$-algebra, $(X, \sM, \mu)$.
 
-DEF! A probability space is ... a "normalized" measure space $(X, \sM, \mu)$ where $\mu(X) = 1$.
+DEF: A probability space is ... a "normalized" measure space $(X, \sM, \mu)$ where $\mu(X) = 1$.
 
-DEF! A finite measure space is ... a measure space $(X, \sM, \mu)$ where $\mu(X) < \infty$ [and thus for all $E \in \sM$ we have $\mu(E) < \infty$].
+DEF: A finite measure space is ... a measure space $(X, \sM, \mu)$ where $\mu(X) < \infty$ [and thus for all $E \in \sM$ we have $\mu(E) < \infty$].
 
-DEF! Now if some measure space can be written as the union $X = \cup_1^\infty X_n$ with each $X_n \in \sM$ (for all $n \in \NN$) and $\mu(X_n) < \infty$ we say that $(X, \sM, \mu)$ is ... $\sigma$-finite ($\sigma$ for "Somme").
+DEF: Now if some measure space can be written as the union $X = \cup_1^\infty X_n$ with each $X_n \in \sM$ (for all $n \in \NN$) and $\mu(X_n) < \infty$ we say that $(X, \sM, \mu)$ is ... $\sigma$-finite ($\sigma$ for "Somme").
 
-EX! The counting measure on the integers as a measure space $(\ZZ, 2^\ZZ, \mu_1)$ is $\sigma$-finite because ... $\mu(\ZZ) = \infty$ yet $$\ZZ = \bigcup_{-\infty}^\infty \{n\} \text{ and } \mu(\{n\}) = 1 < \infty.$$
+EX: The counting measure on the integers as a measure space $(\ZZ, 2^\ZZ, \mu_1)$ is $\sigma$-finite because ... $\mu(\ZZ) = \infty$ yet $$\ZZ = \bigcup_{-\infty}^\infty \{n\} \text{ and } \mu(\{n\}) = 1 < \infty.$$
 
-DEF! We say $(X, \sM, \mu)$ is semifinite if whenever $E \in \sM$ such that $\mu(E) = \infty$ there's a ... measurable set $F \in \sM$ where $F \subset E$ and $\mu(F) < \infty$.
+DEF: We say $(X, \sM, \mu)$ is semifinite if whenever $E \in \sM$ such that $\mu(E) = \infty$ there's a ... measurable set $F \in \sM$ where $F \subset E$ and $\mu(F) < \infty$.
 
 We can sets of finite measure in a semifinite measure space *as large as we want*.
 
-EX! $(\RR, 2^\RR, \mu_1)$ is the measure space of real numbers with the counting measure. It's semifinite because ... if $\mu(A) = \infty$ then $A \neq \emptyset$ and so we can find $r \in A$ with $\mu_1(\{r\}) = 1 < \infty$.
+EX: $(\RR, 2^\RR, \mu_1)$ is the measure space of real numbers with the counting measure. It's semifinite because ... if $\mu(A) = \infty$ then $A \neq \emptyset$ and so we can find $r \in A$ with $\mu_1(\{r\}) = 1 < \infty$.
 
 In general any $\sigma$-finite measure space is semifinite. Now, as we want Fubini's theorem, we'll likely work in $\sigma$-finite spaces.
 
 #### Properties of measures
 
-THM! Let $(X, \sM, \mu)$ be a measure space. Then $\mu$ has four basic properties ... monotonicity, countable subadditivity, continuity from below, and continuity from above (with finiteness restriction).
+THM: Let $(X, \sM, \mu)$ be a measure space. Then $\mu$ has four basic properties ... monotonicity, countable subadditivity, continuity from below, and continuity from above (with finiteness restriction).
 
-DEF! What's monotonicity of $\mu$ in a measure space? ... If $E, F \in \sM$ then $E \subset F$ and $\mu(E) \le \mu(F)$. (key idea: order preserving)
+DEF: What's monotonicity of $\mu$ in a measure space? ... If $E, F \in \sM$ then $E \subset F$ and $\mu(E) \le \mu(F)$. (key idea: order preserving)
 
-DEF! What's countable subadditivity of $\mu$ in a measure space? ... For any countable sequence $E_1, E_2, E_3, \ldots$ of (not necessarily disjoint) measurable sets, $$\mu\left(\bigcup_1^\infty E_j \right) \le \sum_1^\infty \mu(E_j).$$
+DEF: What's countable subadditivity of $\mu$ in a measure space? ... For any countable sequence $E_1, E_2, E_3, \ldots$ of (not necessarily disjoint) measurable sets, $$\mu\left(\bigcup_1^\infty E_j \right) \le \sum_1^\infty \mu(E_j).$$
 
-DEF! What's continuity from below of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j$ is a subset of $E_{j+1}$ for all $j \in \NN$, then the union of the sets $E_j$ is measurable, and $$\mu\left(\bigcup_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: nested-ness)
+DEF: What's continuity from below of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j$ is a subset of $E_{j+1}$ for all $j \in \NN$, then the union of the sets $E_j$ is measurable, and $$\mu\left(\bigcup_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: nested-ness)
 
-DEF! What's continuity from above of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j \supset E_{j+1}$ for all $j \in \NN$, then the intersection of the sets $E_j$ is measurable; futhermore, if at least one of the $E_n$ has finite measure, then $$\mu\left(\bigcap_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: one of the sets down the line needs be finite)
+DEF: What's continuity from above of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j \supset E_{j+1}$ for all $j \in \NN$, then the intersection of the sets $E_j$ is measurable; futhermore, if at least one of the $E_n$ has finite measure, then $$\mu\left(\bigcap_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: one of the sets down the line needs be finite)
 
 For example, in the measure space $(\ZZ, 2^\ZZ, \mu)$, if we take sets $E_n = \{n , n + 1, \ldots\}$ for all $n \in \NN$, then 
 $$0 = \mu(\emptyset) = \mu\left(\bigcap_1^\infty E_n \right) \neq \lim_{n \to \infty}\mu(E_n) = \infty.$$
@@ -535,8 +535,22 @@ See notes from 2018-09-14. Need to define
 - constructing an outer measure
     - $\mu^*(A)$ as the infimum of the $\rho$ weights of all countable coverings of $A$
 - outer-measurable?
-    - $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$
 
+DEF! If $(X, \sM, \mu)$ is a measure space, a set $E \in \sM$ such that $\mu(E) = 0$ is called a ... null set.
+
+DEF! If a statement about points $x \in X$ in a measure space is true expect for $x$ in some null set, we say that it is true ... almost everywhere (or $\mu$-almost everywhere).
+
+DEF! A measure whose domain contains all subsets of null sets is called ... complete.
+
+\newcommand{\sN}{\mathscr{N}}
+
+THM! Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
+
+We say that the measure $\overline{\mu}$ and the $\sigma$-algebra $\overline{\sM}$ are the *completions* of $\mu$ and $\sM$ (with respect to $\mu$).
+
+PROP! Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
+
+DEF! If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
 ### Week 4
 
@@ -555,6 +569,8 @@ Constellation of concepts so far:
 - for any Borel measurable function $f \colon \RR \to [0, \infty)$ 
     - we want $\inf_\RR f = \sup \int_{0 \le \phi \le L}$
     - $\phi$ will be a "simple function" or an "almost step" function.
+
+THM! (Carathéodory's construction) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
 
 TODO. State Carathéodory's construction of a measure from an outer measure.
 
