@@ -554,16 +554,19 @@ PROP! (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary f
 
 - If $\sum_1^\infty \mu^*(A_j) = \infty$ we are done, since the $\mu^*(\cup A_j) \le \infty$.
 
-- Assume for contradiction that $\sum_1^\infty \mu^*(A_j) < \mu^*(\cup_1^\infty A_j)$.
-    - Then we may find $\epsilon > 0$ such that $\sum_1^\infty \mu^*(A_j) + \epsilon < \mu^*(\cup_1^\infty A_j)$.
-
 - Now for each $j$ find $\{E_j^k\}_{k=1}^\infty$ such that 
     - $\bigcup_{k=1}^\infty E_j^k \supset A_j$ (a covering)
-    - $\sum_{k=1}^\infty \rho(E_j^k) - 2^{-j}\epsilon < \mu^*(A_j) \leq \sum_{k=1}^\infty \rho(E_j^k)$ (noting $\mu^*$ is defined an inifimum of sums of the "masses" of coverings of this sort).
+    - $\sum_{k=1}^\infty \rho(E_j^k) - 2^{-j}\epsilon \le \mu^*(A_j)$ (noting $\mu^*$ is defined an inifimum of sums of the "masses" of coverings of this sort).
 
 - Now I have a countable cover of the union $A = \cup_1^\infty A_j$, it's $\cup_{k=1}^\infty \cup_{j=1}^\infty E_j^k$.
     - Note again that $\mu^*(A)$ is a *lower bound* of the sums of masses of such countable covers.
     - That is, $\mu^*(\cup_{j=1}^\infty A_j) \le \sum_{j=1}^\infty \sum_{k=1}^\infty \rho(E_j^k)$.
+    - But we have an inequality for the sum over $k$ (why?), that is $\sum_{j=1}^\infty \sum_{k=1}^\infty \rho(E_j^k) \leq \sum_j \mu^*(A_j) + \epsilon$
+    - (Note the convergence of the geometric series to $\epsilon$.)
+
+- String together the last two inequalities: $$\mu^*(\cup_{j=1}^\infty A_j) \le \sum_j \mu^*(A_j) + \epsilon$$
+- Let $\epsilon >0$ become arbitrarily small.
+- We've shown that $\mu^*$ is countably subadditive.
 
 DEF! If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
