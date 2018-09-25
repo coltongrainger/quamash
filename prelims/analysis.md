@@ -223,11 +223,9 @@ DEF: State the axiom of completeness for the extended reals $\overline{\RR} = \R
 
 FACT: Suppose $\{x_n\}$ is a sequence of extended real numbers. Then $\limsup x_n$ and $\liminf x_n$ both ... always exist.
 
-<---!
 DEF: The limit superior (of a sequence of elements $x_n$ in a linearly ordered set) is denoted $\limsup x_n$ and defined ... $\limsup x_n := \inf_{k\geq 1}\left(\sup_{n\geq k} x_n \right)$.
 
 DEF: The limit inferior (of a sequence of elements $x_n$ in a linearly ordered set) is denoted $\liminf x_n$ and defined ... $\liminf x_n := \sup_{k\geq 1}\left(\inf_{n\geq k} x_n \right)$.
---->
 
 #### Products
 
@@ -367,7 +365,7 @@ DEF: A set $E$ in a topological space is called nowhere dense in $X$ if ... $(\o
 
 DEF: A metric space $(X, \rho)$ is said to be separable if ... $X$ has a countable dense subset.
 
-#### View of measure theory
+#### Naive counter examples
 
 From [@Go08, number III.55]: suppose we have a sequence of intervals in $[0,1]$, say $[a_i, b_i]$ with $\sum_1^n (b_i - a_i) < 1$, it is possible that their union $\cup_1^n [a_i, b_i] = [0,1]$? Why not?
 
@@ -397,7 +395,7 @@ Take as a warning, even with the key idea, some sets $A$ and $B$, though disjoin
 
 DEF: One says that a subset $A$ of $[0,1]$ is measurable if ... the measures of $A$ and of its complement $A^c$ add up to $1$.
 
-#### Borel sets
+#### The Borel sigma algebra
 
 Q: What is the Borel $\sigma$-algebra on $\RR$? ... It's the smallest $\sigma$-algebra $\mathcal{B}_\RR$ that contains all $\RR$ standard open intervals.
 
@@ -448,6 +446,32 @@ PROP: Let $X_1, \ldots, X_n$ be metric spaces and let $\prod_1^n X_j$ equipped w
 
 ### Week 3
 
+#### Elementary families
+
+DEF! An elementary family (or semi-algebra) on a set $X$ is a nonempty collection of subsets of $X$ such that ... (SA1) $\emptyset \in \sE$; (SA2) if $E, F \in \sE$, then $E\cap F \in \sE$; (SA3) if $E \in \sE$, then $E^c = X \setminus E$ can be written as a finite disjoint union of elements of $\sE$.
+
+- Find an elementary family.
+- Generate an algebra from that elementary family.
+- Generate the smallest sigma algebra containing that algebra.
+
+Riemann–Stieltjes measures arise when $f \colon \RR \to \RR$ is monotone, increasing, bounded, (and right continuous?) and we take as a elementary family $$\sE = \{f^{-1}((a,b]), f^{-1}(\emptyset), f^{-1}(\RR) : -\infty\le a < b \le \infty\}.$$
+
+PROP! If $\sE$ is an elementary family of subsets of $X$, then the collections $\sA$ of finite disjoint unions of members of $\sE$ is ... an algebra of subsets of $X$.
+
+- check $\emptyset \in \sA$
+- check if $A, B \in \sA$, then $A \cup B \in \sA$ (try $A \cup B = [A \cap B^c] \sqcup B$)
+- check if $A \in \sA$, then $A^c \in \sA$
+    - requires induction
+    - complements of elements in an elementary family are disjoint?
+    - do something awful, distribute the intersection over the union
+    - then $\sE$ is closed under intersection 
+    - ... and Bob's your uncle.
+
+Coming up: outer measures on algebras!
+
+#### Defining measures
+
+DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\cup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j).$$
 ### Week 4
 
 An analogy (from Rudin).
@@ -457,7 +481,6 @@ topological spaces | measurable spaces
 topology | $\sigma$-algebra
 open set | measurable set
 continuous function | measurable function
-
 
 DEF: A collection $\sM$ of subsets of a set $X$ is said to be a $\sigma$-algebra in $X$ if $\sM$ has the following properties ... (SA1) $X \in \sM$; (SA2) If $A \in \sM$ then $A^c \in \sM$ where $A^c$ is the complement of $A$ relative to $X$; (SA3) if $A = \cup_{n=1}^\infty A_n$ and $A_n \in \sM$ for $n =1, 2, 3, \ldots$, then $A \in \sM$.
 
