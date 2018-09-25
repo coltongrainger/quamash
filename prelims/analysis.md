@@ -553,7 +553,7 @@ Constellation of concepts so far:
     - we'll define measurable functions as "almost continuous"
     - with $f \colon X \to \RR$, $f$ ought to be measurable if $f^{-1}((\alpha, \infty)) \in \sM$
 - for any Borel measurable function $f \colon \RR \to [0, \infty)$ 
-    - we want $\inf_\RR f = \sup \int_{0 \le \phi \le \L}$
+    - we want $\inf_\RR f = \sup \int_{0 \le \phi \le L}$
     - $\phi$ will be a "simple function" or an "almost step" function.
 
 TODO. State Carathéodory's construction of a measure from an outer measure.
