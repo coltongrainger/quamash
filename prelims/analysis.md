@@ -546,15 +546,27 @@ DEF! A measure whose domain contains all subsets of null sets is called ... comp
 
 THM! Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
 
-We say that the measure $\overline{\mu}$ and the $\sigma$-algebra $\overline{\sM}$ are the *completions* of $\mu$ and $\sM$ (with respect to $\mu$).
+DEF! We say that triple $(X, \overline{\sM}, \overline{\mu})$ is the completion, with respect to ... $\mu$, of the measure space ($X$, $\sM$, $\mu$).
 
-PROP! Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
+PROP! (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
+
+- To show countable subadditivity, consider $\{A_j\}_1^\infty \subset \sP(X)$.
+
+- If $\sum_1^\infty \mu^*(A_j) = \infty$ we are done, since the $\mu^*(\cup A_j) \le \infty$.
+
+- Assume for contradiction that $\sum_1^\infty \mu^*(A_j) < \mu^*(\cup_1^\infty A_j)$.
+    - Then we may find $\epsilon > 0$ such that $\sum_1^\infty \mu^*(A_j) + \epsilon < \mu^*(\cup_1^\infty A_j)$.
+
+- Now for each $j$ find $\{E_j^k\}_{k=1}^\infty$ such that 
+    - $\bigcup_{k=1}^\infty E_j^k \supset A_j$ (a covering)
+    - $\sum_{k=1}^\infty \rho(E_j^k) - 2^{-j}\epsilon < \mu^*(A_j) \leq \sum_{k=1}^\infty \rho(E_j^k)$ 
+    - (note $\mu^*$ is defined an inifimum of sums of the "masses" of coverings of this sort)
 
 DEF! If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
 ### Week 4
 
-Constellation of concepts so far:
+To constellate the concepts so far.
 
 - $(\RR,\sB_\RR)$ is not complete with respect to the Lebesgue measure
     - somehow the cantor set has measure zero
@@ -570,20 +582,22 @@ Constellation of concepts so far:
     - we want $\inf_\RR f = \sup \int_{0 \le \phi \le L}$
     - $\phi$ will be a "simple function" or an "almost step" function.
 
-THM! (Carathéodory's construction) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
+THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
 
-TODO. State Carathéodory's construction of a measure from an outer measure.
+Here's an outline of steps to obtain a measure from an outer measure with Carathéodory's theorem.
 
 - take an elementary family and a mass assigning set $\rho$
 - form the outer measure 
-    - we *must* have $\mu^*$ measurable sets
+    - we *must* have $\mu^*$ measurable sets---why?
 - pass to $\sM \subset 2^X$ where $\sM$ is the collection of all $\mu^*$ measurable sets
     - on which $\mu^*$ is a complete measure
 - we thus obtain a complete measure space
-- a premeasure
-    - idea: lengths of intervals give a premeasure
 
-See notes from 2018-09-19. Need to connect premeasures and outermeasures.
+What's a premeasure? (not a proto-measure).
+
+Lengths of intervals ought to give a premeasure. See notes from 2018-09-19. 
+
+To connect premeasures and outermeasures?
 
 - arguments involving the "smallest algebras" satisfying... what?
 - need the definition of $\mu^*$ as an infimum, in particular for the contradiction $$\sum_1^\infty \mu_0(B_j) \le \mu^*(E) + \epsilon$$
