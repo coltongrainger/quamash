@@ -471,16 +471,22 @@ Coming up: outer measures on algebras!
 
 #### Defining measures
 
-DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\cup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j).$$
+DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j).$$
+
+DEF! Let $(X, \sM)$ be a nonempty set and a $\sigma$-algebra pair. A measure on $(X, \sM)$ is a function $\mu
+
+
 ### Week 4
 
-An analogy (from Rudin).
+From [@Ru87], and analogy to unify the material yet covered.
 
 topological spaces | measurable spaces
 --- | ---
 topology | $\sigma$-algebra
 open set | measurable set
 continuous function | measurable function
+
+And we borrow some more clean definitions.
 
 DEF: A collection $\sM$ of subsets of a set $X$ is said to be a $\sigma$-algebra in $X$ if $\sM$ has the following properties ... (SA1) $X \in \sM$; (SA2) If $A \in \sM$ then $A^c \in \sM$ where $A^c$ is the complement of $A$ relative to $X$; (SA3) if $A = \cup_{n=1}^\infty A_n$ and $A_n \in \sM$ for $n =1, 2, 3, \ldots$, then $A \in \sM$.
 
