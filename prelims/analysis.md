@@ -471,14 +471,112 @@ Coming up: outer measures on algebras!
 
 #### Defining measures
 
-DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j).$$
+DEF! Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j)$$ where it's possible that both sides are infinite.
 
-DEF! Let $(X, \sM)$ be a nonempty set and a $\sigma$-algebra pair. A measure on $(X, \sM)$ is a function $\mu
+\newcommand{\ZZ}{\mathbf{Z}}
+
+For example, consider the counting measure on the measurable space $(\ZZ, 2^\ZZ)$
+
+- fix $f \colon \ZZ \to [0,\infty]$
+- define $\mu_f(E) = \sum_{n \in E} f(n)$ as a measure (verify)
+- if $f(n) =1$ for all $n \in \ZZ$ then $\mu_1(E) = \mathrm{card}(E)$
+- if $E$ is uncountable, we have no fancy notation 
+- just map $\mu_1 \colon E \mapsto +\infty$
+
+Now we usually leave $(\RR, \sB_\RR)$ on the corner of the board to indicate where (in which space and $\sigma$-algebra) we're working.
+
+Ian asked a question about signed measures (or complex measures?). Packer immediately jumped to $C^*$ algebras(?) and mentioned that we have complex measures, usually *finite*, but that we can also consider (the projections of?) bounded operators that are self-adjoint and idempotent.
+
+DEF! A measure space is ... a triple consisting of a set, a $\sigma$-algebra on that set, and a measure defined on that $\sigma$-algebra, $(X, \sM, \mu)$.
+
+DEF! A probability space is ... a "normalized" measure space $(X, \sM, \mu)$ where $\mu(X) = 1$.
+
+DEF! A finite measure space is ... a measure space $(X, \sM, \mu)$ where $\mu(X) < \infty$ [and thus for all $E \in \sM$ we have $\mu(E) < \infty$].
+
+DEF! Now if some measure space can be written as the union $X = \cup_1^\infty X_n$ with each $X_n \in \sM$ (for all $n \in \NN$) and $\mu(X_n) < \infty$ we say that $(X, \sM, \mu)$ is ... $\sigma$-finite ($\sigma$ for "Somme").
+
+EX! The counting measure on the integers as a measure space $(\ZZ, 2^\ZZ, \mu_1)$ is $\sigma$-finite because ... $\mu(\ZZ) = \infty$ yet $$\ZZ = \bigcup_{-\infty}^\infty \{n\} \text{ and } \mu(\{n\}) = 1 < \infty.$$
+
+DEF! We say $(X, \sM, \mu)$ is semifinite if whenever $E \in \sM$ such that $\mu(E) = \infty$ there's a ... measurable set $F \in \sM$ where $F \subset E$ and $\mu(F) < \infty$.
+
+We can sets of finite measure in a semifinite measure space *as large as we want*.
+
+EX! $(\RR, 2^\RR, \mu_1)$ is the measure space of real numbers with the counting measure. It's semifinite because ... if $\mu(A) = \infty$ then $A \neq \emptyset$ and so we can find $r \in A$ with $\mu_1(\{r\}) = 1 < \infty$.
+
+In general any $\sigma$-finite measure space is semifinite. Now, as we want Fubini's theorem, we'll likely work in $\sigma$-finite spaces.
+
+#### Properties of measures
+
+THM! Let $(X, \sM, \mu)$ be a measure space. Then $\mu$ has four basic properties ... monotonicity, countable subadditivity, continuity from below, and continuity from above (with finiteness restriction).
+
+DEF! What's monotonicity of $\mu$ in a measure space? ... If $E, F \in \sM$ then $E \subset F$ and $\mu(E) \le \mu(F)$. (key idea: order preserving)
+
+DEF! What's countable subadditivity of $\mu$ in a measure space? ... For any countable sequence $E_1, E_2, E_3, \ldots$ of (not necessarily disjoint) measurable sets, $$\mu\left(\bigcup_1^\infty E_j \right) \le \sum_1^\infty \mu(E_j).$$
+
+DEF! What's continuity from below of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j$ is a subset of $E_{j+1}$ for all $j \in \NN$, then the union of the sets $E_j$ is measurable, and $$\mu\left(\bigcup_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: nested-ness)
+
+DEF! What's continuity from above of $\mu$ in a measure space? ... If $E_1, E_2, E_3, \ldots$ are measurable sets and $E_j \supset E_{j+1}$ for all $j \in \NN$, then the intersection of the sets $E_j$ is measurable; futhermore, if at least one of the $E_n$ has finite measure, then $$\mu\left(\bigcap_1^\infty E_j \right) = \lim_{n \to \infty}\mu(E_n).$$ (key idea: one of the sets down the line needs be finite)
+
+For example, in the measure space $(\ZZ, 2^\ZZ, \mu)$, if we take sets $E_n = \{n , n + 1, \ldots\}$ for all $n \in \NN$, then 
+$$0 = \mu(\emptyset) = \mu\left(\bigcap_1^\infty E_n \right) \neq \lim_{n \to \infty}\mu(E_n) = \infty.$$
+
+#### Complete measure spaces
+
+See notes from 2018-09-14. Need to define
+
+- null sets and statements "almost everywhere"
+- complete spaces
+- completion of a measure
+- an outer measure $\mu^*$ (defined out of $2^X$)
+    - "relaxing requirements"
+    - no mass for null sets
+    - monotone
+    - countably subadditive
+- constructing an outer measure
+    - $\mu^*(A)$ as the infimum of the $\rho$ weights of all countable coverings of $A$
+- outer-measurable?
+    - $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$
 
 
 ### Week 4
 
-From [@Ru87], and analogy to unify the material yet covered.
+Constellation of concepts so far:
+
+- $(\RR,\sB_\RR)$ is not complete with respect to the Lebesgue measure
+    - somehow the cantor set has measure zero
+    - yet its subsets get larger and larger
+- we want to prove convergence theorems.
+- we *need* measure theoretic arguments.
+- we might as well build up measurable functions in an abstract setting.
+    - hence the measurable spaces $(X, \sM)$
+- constructing functions?
+    - we'll define measurable functions as "almost continuous"
+    - with $f \colon X \to \RR$, $f$ ought to be measurable if $f^{-1}((\alpha, \infty)) \in \sM$
+- for any Borel measurable function $f \colon \RR \to [0, \infty)$ 
+    - we want $\inf_\RR f = \sup \int_{0 \le \phi \le \L}$
+    - $\phi$ will be a "simple function" or an "almost step" function.
+
+TODO. State Carathéodory's construction of a measure from an outer measure.
+
+- take an elementary family and a mass assigning set $\rho$
+- form the outer measure 
+    - we *must* have $\mu^*$ measurable sets
+- pass to $\sM \subset 2^X$ where $\sM$ is the collection of all $\mu^*$ measurable sets
+    - on which $\mu^*$ is a complete measure
+- we thus obtain a complete measure space
+- a premeasure
+    - idea: lengths of intervals give a premeasure
+
+See notes from 2018-09-19. Need to connect premeasures and outermeasures.
+
+- arguments involving the "smallest algebras" satisfying... what?
+- need the definition of $\mu^*$ as an infimum, in particular for the contradiction $$\sum_1^\infty \mu_0(B_j) \le \mu^*(E) + \epsilon$$
+    - restricting an outer measure to a premeasure (see proposition 1.13)
+- need also the argument for to prove prop 1.14
+    - Q: how to show countable subadditivity of measures?
+    - A: see notes #11 on 2018-09-21
+   
+From [@Ru87], an analogy to unify the material yet covered.
 
 topological spaces | measurable spaces
 --- | ---
@@ -495,4 +593,12 @@ DEF: If $\sM$ is a $\sigma$-algebra in $X$ then $X$ is called a measurable space
 DEF: If $X$ is a measurable space, $Y$ a topological space, and $f \colon X \to Y$ a function, then $f$ is said to be measurable provided that ... $f^{-1}(V)$ is a measurable set in $X$ for every open set $V$ in $Y$.
 
 ### Week 5
+
+TODO 
+
+- defining a cumulative distribution function
+- h intervals 
+- right continuous functions
+- measures on right continuous functions
+
 
