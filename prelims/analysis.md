@@ -579,7 +579,7 @@ To constellate the concepts so far.
     - we'll define measurable functions as "almost continuous"
     - with $f \colon X \to \RR$, $f$ ought to be measurable if $f^{-1}((\alpha, \infty)) \in \sM$
 - for any Borel measurable function $f \colon \RR \to [0, \infty)$ 
-    - we want $\inf_\RR f = \sup \int_{0 \le \phi \le L}$
+    - we want $\int f = \sup \int_{0 \le \phi \le L} \phi$
     - $\phi$ will be a "simple function" or an "almost step" function.
 
 THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
