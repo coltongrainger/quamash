@@ -559,8 +559,11 @@ PROP! (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary f
 
 - Now for each $j$ find $\{E_j^k\}_{k=1}^\infty$ such that 
     - $\bigcup_{k=1}^\infty E_j^k \supset A_j$ (a covering)
-    - $\sum_{k=1}^\infty \rho(E_j^k) - 2^{-j}\epsilon < \mu^*(A_j) \leq \sum_{k=1}^\infty \rho(E_j^k)$ 
-    - (note $\mu^*$ is defined an inifimum of sums of the "masses" of coverings of this sort)
+    - $\sum_{k=1}^\infty \rho(E_j^k) - 2^{-j}\epsilon < \mu^*(A_j) \leq \sum_{k=1}^\infty \rho(E_j^k)$ (noting $\mu^*$ is defined an inifimum of sums of the "masses" of coverings of this sort).
+
+- Now I have a countable cover of the union $A = \cup_1^\infty A_j$, it's $\cup_{k=1}^\infty \cup_{j=1}^\infty E_j^k$.
+    - Note again that $\mu^*(A)$ is a *lower bound* of the sums of masses of such countable covers.
+    - So $\mu^*(\cup_{j=1}^\infty A_j \le \sum_{j=1}^\infty \sum_{k=1}^\infty \rho(E_j^k)$.
 
 DEF! If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
