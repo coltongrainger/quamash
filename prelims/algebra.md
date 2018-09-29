@@ -431,6 +431,7 @@ We see that $D_{2n} = \langle r,s \rangle$.
 TODO: Represent $\CC$ as a subset of $GL_2(\RR)$ defined by $$\left\{\begin{pmatrix} a & b \\ -b & a \end{pmatrix} : a,b \in \RR\right\}$$
 and show that it is "[outer automorphic](https://en.wikipedia.org/wiki/Outer_automorphism_group)". To what?
 
+DEF: A subgroup $M$ of a group $G$ is called a *maximal subgroup* if $M \neq G$ and ... the only subgroups of $G$ which contain $M$ are $M$ itself and $G$.
 
 ### Week 2
 
@@ -625,7 +626,7 @@ DEF: (Normalizer definition) A subgroup $H \le G$ is normal in $G$ if ... $\Norm
 
 - Since $N_G(Z(G)) = G$, we have $Z(G) \triangleleft G$.
 
-DEF! If $G$ acts on a set $A$, the orbit of $a \in A$ is ... the set $\{g(a) : g \in G\} \subset A$.
+DEF: If $G$ acts on a set $A$, the orbit of $a \in A$ is ... the set $\{g(a) : g \in G\} \subset A$.
 
 When does a group act *transitively* on a set?
 
@@ -633,21 +634,21 @@ When does a group act *transitively* on a set?
 - Both $S_n$ and $D_{2n}$ act transitively on $\{1,\ldots, n\}$.
 - $D_{2n}$ does *not* act transitively on $\{(i,j) : 1 \le i \le j\le n, i \neq j\}$. Action by the dihedral group preserves a metric between adjacent elements.
 
-DEF! A right action of a group $G$ on a set $A$ is a function $$A \times G \to A\\(a,g) \mapsto (ag)$$ such that ... $(a1) = a$ for all $a \in A$ and $(agh) = ((ag)h)$ for all $a \in A$ and $g,h \in G$.
+DEF: A right action of a group $G$ on a set $A$ is a function $$A \times G \to A\\(a,g) \mapsto (ag)$$ such that ... $(a1) = a$ for all $a \in A$ and $(agh) = ((ag)h)$ for all $a \in A$ and $g,h \in G$.
 
-DEF! Let $G$ and $H$ be groups. A biaction of $(G,H)$ on a set $A$ is a function $$G\times A \times H \to A\\(g,a,h) \mapsto (g(a)h)$$ such that ... $(g,a) \mapsto (g(a)1)$ is a left action, $(a,h) \mapsto (1(a)h)$ is a right action, and $((g(a))h) = g(ah)$ for all $g \in G$, $a \in A$, $h \in H$.
+DEF: Let $G$ and $H$ be groups. A biaction of $(G,H)$ on a set $A$ is a function $$G\times A \times H \to A\\(g,a,h) \mapsto (g(a)h)$$ such that ... $(g,a) \mapsto (g(a)1)$ is a left action, $(a,h) \mapsto (1(a)h)$ is a right action, and $((g(a))h) = g(ah)$ for all $g \in G$, $a \in A$, $h \in H$.
 
-DEF! One can convert a biaction of the group pair $(G,H)$ on $A$ to a left action by $G \times H$ on $A$ given by the mapping ... $(g, h, a) \mapsto (g(a)h^{-1})$, (The idea is to multiply by an inverse, or induce another anti-isomorphism that reverses the order of multiplication, e.g., transpose of matrices.)
+DEF: One can convert a biaction of the group pair $(G,H)$ on $A$ to a left action by $G \times H$ on $A$ given by the mapping ... $(g, h, a) \mapsto (g(a)h^{-1})$, (The idea is to multiply by an inverse, or induce another anti-isomorphism that reverses the order of multiplication, e.g., transpose of matrices.)
 
-DEF! Suppose $G$ is a group and $H < G$. Consider the left and right actions of $H$ on $G$. The set of left cosets $G/H$ (respectively right cosets $H \backslash G$) is ... the set of orbits of the right (respectively left) action of $H$ on $G$. 
+DEF: Suppose $G$ is a group and $H < G$. Consider the left and right actions of $H$ on $G$. The set of left cosets $G/H$ (respectively right cosets $H \backslash G$) is ... the set of orbits of the right (respectively left) action of $H$ on $G$. 
 
-EX! A typical element of $G/H$ is of the form ... $$gH = \{gh : h \in H\}.$$
+EX: A typical element of $G/H$ is of the form ... $$gH = \{gh : h \in H\}.$$
 
-CORO! (Lagrange's theorem) Suppose $G$ is a group and $H < G$. Then the order of $H$ divides the order of $G$.
+CORO: (Lagrange's theorem) Suppose $G$ is a group and $H < G$. Then the order of $H$ divides the order of $G$.
 
 \newcommand{\sS}{\mathscr{S}}
 
-EX! Since membership in cosets is an equivalence relation, we often select a set of coset representatives for a subset $\sS \subset G$ such that ... $\abs{\sS \cap gH} = 1$ for all $g \in G$.
+EX: Since membership in cosets is an equivalence relation, we often select a set of coset representatives for a subset $\sS \subset G$ such that ... $\abs{\sS \cap gH} = 1$ for all $g \in G$.
 
 Now braid diagrams represent permutations in $S_n$, and one can consider the set of $S_n / (S_2 \times S_{n-2})$ as a set of concatenated permutations, first an element of $S_n$, then an element of $S_2 \times S_{n-2}$. (It's "philosophically easier" to work with braids rotated by $90^\circ$ counterclockwise, as then the left and right actions *flow* left or right.) How ought we to choose coset representatives from $S_2 \times S_{n-2}$? Suppose we choose to take only minimal crossing representatives. Then to which coset does a braid diagram from $S_n$ belong? Well, can reduce to a minimal crossing representative the braid diagram of an element $\sigma$ in $S_n$ by finding the (unique) element $\tau$ of $S_2 \times S_{n-2}$ for which $\tau\sigma$ has minimal crossings. We imagine the group $S_2 \times S_{n-2}$ as "vacuuming up" as many crossings as possible from $S_n$. 
 
@@ -655,7 +656,7 @@ In this light, row reduction of matrices is essentially picking coset representa
 
 Concepts I struggled with: 
 
-- A subgroup $M$ of a group $G$ is called a *maximal subgroup* if $M \neq G$ and the only subgroups of $G$ which contain $M$ are $M$ itself and $G$.
+- the Heisenberg group of unit upper triangular $3 \times 3$ matrices in $\FF$
 - A finite group with no more that two maximal subgroups is cyclic.
 
 ### Week 4
@@ -699,13 +700,42 @@ $$B \backslash GL_n(\FF) /B = \{BgB | g \in G\}.$$
 
 Note that elementary matrices in $B$ perform row operations on elements $g \in GL_n(\FF)$. So, given an arbitrary $g \in G$, we choose $b \in B$ to maximize the number of leading $0$'s of the product $bg$. 
 
-But $bg$ might not be in upper triangular (generally, echelon) form, so find a permutation (matrix) $w \in S_n \le GL_n(\FF)$ such that $wbg \in B$. So $wbg = b
-' \in B$. But then $g = b^{-1}w^{-1}b' \in Bw^{-1}B$, the double coset labelled by an element of the symmetric group.
+But $bg$ might not be in upper triangular (generally, echelon) form, so find a permutation (matrix) $\omega \in S_n \le GL_n(\FF)$ such that $\omega bg \in B$. So $\omegabg = b' \in B$. But then $g = b^{-1}\omega^{-1}b' \in B\omega^{-1}B$, the double coset labelled by an element of the symmetric group.
 
+Are $B \omega B$ and $B \sigma B$ the same if $\omega, \sigma \in S_n$ and $\omega \neq \sigma$?
+
+Suppose $B \omega B$ and $B \nu B$ are equal where $\omega, \nu \in S_n$. Then there are upper triangular matrices $a,b \in B$ such that $\nu = awb$, so $\omega^{-1}a^{-1}\nu \in B$. Here's the idea: the diagonal entries of an upper triangular matrix are unique. Hence if $\omega^{-1}a^{-1} \nu \in B$, then $\omega^{-1}\nu \in B$. Moreover, $\omega^{-1}\nu \in S_n \cap B = \{I\}$ (why?) so $\omega = \nu$.
+
+THM! (Bruhat decomposition) We can write the group of general linear $n \times n$ matrices over the field $\FF$ as ... $$GL_n(\FF) = \sqcup_{ \omega \in S_n} B\omega B$$ where $B$ is the set of upper triangular matrices.
+
+1. Bruhat decomposition is the "the right way" to remember row reduction
+2. $\abs{B \omega B} \neq \abs{B\nu B}$ when $\FF$ is finite
+    - consider $\omega = I$ and $\nu$ as a simple transposition
+    - then $\abs{ B \omega B }  = \abs{ B } < \abs{B \nu B}$
+    - simple transpositions flip exactly one entry pass the diagonal
+3. $PLU$-decomposition is similar, but we need to factor $B$ through $\omega$.
+
+#### Quotient groups
+
+- Suppose $\phi \colon G \to H$ is a surjective homomorphism with kernel $K = \ker(\phi)$. 
+- Does $H$ gives a group structure to $G/K$ the left cosets of $K$ in $G$. If so, how? Why?
+
+Consider "pullbacks of images" of elements in $G$, say, for $a$ and $b$. (Alternatively, consider cosets generated by orbits of elements in $G$ under the action of $K$.) Is it true that $\phi^{-1}(\phi(ab))) = \phi^{-1}(\phi(a)))\phi^{-1}(\phi(b)))$? (That $aKbK = abK$?)
+
+- Clearly $abK \subset aK bK$. 
+- Conversely, suppose $akbh \in aKbK$. 
+- Note $akbh = ab(b^{-1}kb)h$. 
+- But $\phi(b^{-1}kb) = \phi(b)^{-1}\phi(k)\phi(b) = \phi(b)^{-1}\phi(b) = 1$.
+- Hence $b^{-1}k b \in K$ and $akbh \in abK$.
+
+IDEA! If $G$ is a group with $K < G$ is the operation $(aK)(bK) = abK$ on the quotient structure well-defined? ... only if $K$ normal in $G$.
+
+THM! Suppose $K$ is a subgroup of $G$. The following are equivalent. (1) $(aK)(bK) = abK$ for all $a,b \in G$; (2) $K = \ker(\phi)$ for some group homomorphism $\phi\colon G \to H$
 
 Concepts I struggled with:
 
-- the Heisenberg group of unit upper triangular $3 \times 3$ matrices in $\FF$,
+- applying the isomorphism theorems
+    - (from Hunter) *check Aluffi's Chapter 0!*
 
 ### Week 5
 
