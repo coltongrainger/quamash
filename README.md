@@ -11,7 +11,7 @@ For definition lists, notes, and references. Meant as a prose complement to [git
     - for [preliminary exams](prelims/)
     - teaching [math1300](teaching/math1300)
     - [references](lit)
-    - [lecture notes](raw)
+    - [scanned notes](raw)
 
 ### Contributing
 

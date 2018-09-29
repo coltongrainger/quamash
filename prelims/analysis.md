@@ -536,19 +536,19 @@ See notes from 2018-09-14. Need to define
     - $\mu^*(A)$ as the infimum of the $\rho$ weights of all countable coverings of $A$
 - outer-measurable?
 
-DEF! If $(X, \sM, \mu)$ is a measure space, a set $E \in \sM$ such that $\mu(E) = 0$ is called a ... null set.
+DEF: If $(X, \sM, \mu)$ is a measure space, a set $E \in \sM$ such that $\mu(E) = 0$ is called a ... null set.
 
-DEF! If a statement about points $x \in X$ in a measure space is true expect for $x$ in some null set, we say that it is true ... almost everywhere (or $\mu$-almost everywhere).
+DEF: If a statement about points $x \in X$ in a measure space is true expect for $x$ in some null set, we say that it is true ... almost everywhere (or $\mu$-almost everywhere).
 
-DEF! A measure whose domain contains all subsets of null sets is called ... complete.
+DEF: A measure whose domain contains all subsets of null sets is called ... complete.
 
 \newcommand{\sN}{\mathscr{N}}
 
-THM! Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
+THM: Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
 
-DEF! We say that triple $(X, \overline{\sM}, \overline{\mu})$ is the completion, with respect to ... $\mu$, of the measure space ($X$, $\sM$, $\mu$).
+DEF: We say that triple $(X, \overline{\sM}, \overline{\mu})$ is the completion, with respect to ... $\mu$, of the measure space ($X$, $\sM$, $\mu$).
 
-PROP! (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
+PROP: (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
 
 - To show countable subadditivity, consider $\{A_j\}_1^\infty \subset \sP(X)$.
 
@@ -564,11 +564,11 @@ PROP! (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary f
     - But we have an inequality for the sum over $k$ (why?), that is $\sum_{j=1}^\infty \sum_{k=1}^\infty \rho(E_j^k) \leq \sum_j \mu^*(A_j) + \epsilon$
     - (Note the convergence of the geometric series to $\epsilon$.)
 
-- String together the last two inequalities: $$\mu^*(\cup_{j=1}^\infty A_j) \le \sum_j \mu^*(A_j) + \epsilon$$
+- String together the last two inequalities: $$\mu^*(\cup_{j=1}^\infty A_j) \le \sum_{j=1}^\infty \mu^*(A_j) + \epsilon$$
 - Let $\epsilon >0$ become arbitrarily small.
 - We've shown that $\mu^*$ is countably subadditive.
 
-DEF! If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
+DEF: If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
 ### Week 4
 
