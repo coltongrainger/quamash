@@ -699,9 +699,9 @@ Concepts I struggled with:
 Concepts I struggled with:
 
 - *timeliness!*
-  - With no time to revise, I glossed over difficult-to-typeset notation I had introduced when sketching up the proofs. I think this hurriedness came at the cost of clarity, and Thiem didn't really follow the arguments.
+    - With no time to revise the problem set, I glossed over difficult-to-typeset notation I had introduced when sketching up the proofs. My hurriedness cost me clarity, and Thiem didn't really follow the arguments. (F**k! I don't really follow my arguments!)
 - Fermat's little theorem
 - order of groups and subgroups when factored through a quotient group
-  - what relations exist between $\pi(H) < G/N$ and $H < G$?
+    - what relations exist between $\pi(H) < G/N$ and $H < G$?
 - specifying *in which group* a subgroup is normal
 
