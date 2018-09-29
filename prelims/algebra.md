@@ -639,7 +639,7 @@ DEF! Let $G$ and $H$ be groups. A biaction of $(G,H)$ on a set $A$ is a function
 
 DEF! One can convert a biaction of the group pair $(G,H)$ on $A$ to a left action by $G \times H$ on $A$ given by the mapping ... $(g, h, a) \mapsto (g(a)h^{-1})$, (The idea is to multiply by an inverse, or induce another anti-isomorphism that reverses the order of multiplication, e.g., transpose of matrices.)
 
-DEF! Suppose $G$ is a group and $H < G$. Consider the left and right actions of $H$ on $G$. The set of left cosets $G/H$ (respectively right cosets $H\G$) is ... the set of orbits of the right (respectively left) action of $H$ on $G$. 
+DEF! Suppose $G$ is a group and $H < G$. Consider the left and right actions of $H$ on $G$. The set of left cosets $G/H$ (respectively right cosets $H \backslash G$) is ... the set of orbits of the right (respectively left) action of $H$ on $G$. 
 
 EX! A typical element of $G/H$ is of the form ... $$gH = \{gh : h \in H\}.$$
 
@@ -660,7 +660,7 @@ Concepts I struggled with:
 
 ### Week 4
 
-- [“Bruhat decomposition - Wikipedia”](https://en.wikipedia.org/wiki/Bruhat_decomposition). English Wikipedia. Retrieved September 18, 2018.
+#### Progress so far
 
 Consulting Prof Thiem during office hours, we seemed to agree that, of the curriculum, 
 
@@ -686,8 +686,21 @@ had been covered so far and
 
 would be coming up in the next 3 weeks.
 
-Ian, Erik, Hunter, and I tried to show that two presentations of a group are isomorphic if we bijectively identify the "correct elements" in each presentation, and show that certain relations in each presentation are satisfied. I felt hand-wavy to talk about an isomorphism of words via letters without having grounded the argument in the *set of reduced words*. We cited [@Hu80, chapter 1.9] and started a weekly review group.
+Ian, Erik, Hunter, and I tried to show that two presentations of a group are isomorphic if we bijectively identify the "correct elements" in each presentation, and show that certain relations in each presentation are satisfied. I felt hand-wavy to talk about an isomorphism of words via letters without having grounded the argument in the *set of reduced words* see [@Hu80, chapter 1.9]. 
 
+I started a [review group](https://github.com/coltongrainger/pro19alg1/blob/master/midterm01-review.md)!
+
+#### Bruhat decomposition
+
+What is [Bruhat decomposition](https://en.wikipedia.org/wiki/Bruhat_decomposition)? 
+
+Let $B$ be the subgroup of upper triangular matrices in $GL_n(\FF)$. We want to choose double coset representatives from the set 
+$$B \backslash GL_n(\FF) /B = \{BgB | g \in G\}.$$
+
+Note that elementary matrices in $B$ perform row operations on elements $g \in GL_n(\FF)$. So, given an arbitrary $g \in G$, we choose $b \in B$ to maximize the number of leading $0$'s of the product $bg$. 
+
+But $bg$ might not be in upper triangular (generally, echelon) form, so find a permutation (matrix) $w \in S_n \le GL_n(\FF)$ such that $wbg \in B$. So $wbg = b
+' \in B$. But then $g = b^{-1}w^{-1}b' \in Bw^{-1}B$, the double coset labelled by an element of the symmetric group.
 
 
 Concepts I struggled with:
