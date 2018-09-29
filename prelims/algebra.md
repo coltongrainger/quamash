@@ -557,6 +557,12 @@ Concepts I struggled with:
 - distinguishing elements from actions in this case
 - *timeliness!*
 
+To dispell any mystery surrounding considering permutations as group elements, we have (emphasis added) <https://en.wikipedia.org/wiki/Group_action>:
+
+> A common way of specifying non-canonical actions is to describe a homomorphism $\varphi$ from a group $G$ to the group of symmetries of a set $X$. The action of an element $g \in G$ on a point $x\in X$ *is assumed to be identical to the action of its image* $\varphi (g)\in {\text{Sym}}(X)$ on the point $x$. The homomorphism $\varphi$ is also frequently called the "action" of $G$, since specifying $\varphi$ is equivalent to specifying an action. Thus, if $G$ is a group and $X$ is a set, then an action of $G$ on $X$ may be formally defined as a group homomorphism $\varphi$ from $G$ to the symmetric group of $X$. The action assigns a permutation of $X$ to each element of the group in such a way that:
+>     - the identity element of $G$ is assigned the identity transformation of $X$;
+>     - any product $gk$ of two elements of $G$ is assigned the composition of the permutations assigned to $g$ and $k$.
+
 ### Week 3
 
 We had a definition quiz on:
