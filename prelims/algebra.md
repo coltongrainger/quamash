@@ -598,7 +598,7 @@ DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizeer $\Norm{G}{A}$ of 
 - $\Norm{S_n}{\{1,\ldots, n\}} \cong S_{n-2}\times S_2$
 - Where, again, $x$ is an $n$th root of unity, $\Norm{D_{2n}}{\{x\}}  = \Stab{D_{2n}}{\{x\}} \cong \{1, rsr^{-1}\}$. Why?
 
-DEF: The conjugation action of a group $G$ on itself is defined as ... the function $G \times G \to G$ which maps $(g,h) \to gh^g{-1}$. We write $g(h) = ghg^{-1}$ for all $g,h \in G$.
+DEF: The conjugation action of a group $G$ on itself is defined as ... the function $G \times G \to G$ which maps $(g,h) \to ghg^{-1}$. We write $g(h) = ghg^{-1}$ for all $g,h \in G$.
 
 - Conjugation is a group action.
 - Conjugation is not necessarily faithful.
@@ -700,7 +700,7 @@ $$B \backslash GL_n(\FF) /B = \{BgB | g \in G\}.$$
 
 Note that elementary matrices in $B$ perform row operations on elements $g \in GL_n(\FF)$. So, given an arbitrary $g \in G$, we choose $b \in B$ to maximize the number of leading $0$'s of the product $bg$. 
 
-But $bg$ might not be in upper triangular (generally, echelon) form, so find a permutation (matrix) $\omega \in S_n \le GL_n(\FF)$ such that $\omega bg \in B$. So $\omegabg = b' \in B$. But then $g = b^{-1}\omega^{-1}b' \in B\omega^{-1}B$, the double coset labelled by an element of the symmetric group.
+But $bg$ might not be in upper triangular (generally, echelon) form, so find a permutation (matrix) $\omega \in S_n \le GL_n(\FF)$ such that $\omega bg \in B$. So $\omega bg = b' \in B$. But then $g = b^{-1}\omega^{-1}b' \in B\omega^{-1}B$, the double coset labelled by an element of the symmetric group.
 
 Are $B \omega B$ and $B \sigma B$ the same if $\omega, \sigma \in S_n$ and $\omega \neq \sigma$?
 
