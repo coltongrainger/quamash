@@ -567,6 +567,8 @@ ANALOGY: The permutation representation of a group action on a set is like ... t
 
 PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
 
+\newcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
+
 DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
 
 #### Review
@@ -599,7 +601,6 @@ With $G$ a group and $A \subset G$, the words of $A$ coincide with the subgroup 
 
 In the following definitions, let some group $G$ act on $B$ and fix a subset $A \subset B$. Note $G$ doesn't necessarily act on $A$ since some $g \in G$ could send element out of $A$.
 
-\newcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The stabilizer $\Stab{G}{A}$ of $A$ in $G$ is ... the subgroup $\Stab{G}{A} = \{g \in G: g(a) = a, a \in A\}$.
 
