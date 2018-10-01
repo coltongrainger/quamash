@@ -544,7 +544,7 @@ TODO: What's $\FF^n$?
 
 EX: (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv \quad (\text{matrix multiplication}).$$
 
-#### G-modules
+#### Representations
 
 PROP: The vector space $V$ is a $G$-module if and only if ... there exists a homomorphism $G \to GL(V) = \{ \text{invertible linear transf. of $V$}\} \subset S_V$. 
 
@@ -557,16 +557,17 @@ To specify the homomorphism from $GL(V)$ to $S_V$ we need to choose both a *basi
 To dispell any mystery surrounding considering permutations as group elements, we have (emphasis added) <https://en.wikipedia.org/wiki/Group_action>:
 
 > A common way of specifying non-canonical actions is to describe a homomorphism $\varphi$ from a group $G$ to the group of symmetries of a set $X$. The action of an element $g \in G$ on a point $x\in X$ *is assumed to be identical to the action of its image* $\varphi (g)\in {\text{Sym}}(X)$ on the point $x$. The homomorphism $\varphi$ is also frequently called the "action" of $G$, since specifying $\varphi$ is equivalent to specifying an action. Thus, if $G$ is a group and $X$ is a set, then an action of $G$ on $X$ may be formally defined as a group homomorphism $\varphi$ from $G$ to the symmetric group of $X$. The action assigns a permutation of $X$ to each element of the group in such a way that:
+>
 >     - the identity element of $G$ is assigned the identity transformation of $X$;
 >     - any product $gk$ of two elements of $G$ is assigned the composition of the permutations assigned to $g$ and $k$.
 
-DEF! Let $G$ be a group. A permutation representation of $G$ is ... any group homomorphisms into the symmetric group $S_A$ for some nonempty set $A$. Any action of $G$ on $A$ affords or induces the associated permutation representation of $G$.
+DEF: Let $G$ be a group. A permutation representation of $G$ is ... any group homomorphisms into the symmetric group $S_A$ for some nonempty set $A$. Any action of $G$ on $A$ affords or induces the associated permutation representation of $G$.
 
-ANALOGY! The permutation representation of a group action on a set is like ... the matrix representation of a linear transformation.
+ANALOGY: The permutation representation of a group action on a set is like ... the matrix representation of a linear transformation.
 
-PROP! Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
+PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
 
-DEF! For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
+DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
 
 #### Review
 
