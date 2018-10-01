@@ -100,7 +100,7 @@ date: 2018-08-27
 
 ## Fall semester notes
 
-### Week 1
+### Week 1: preliminaries
 
 The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/pro19ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
 
@@ -301,8 +301,7 @@ PROP: The axiom of choice states ... if $\{X_\alpha\}$ is a nonempty family of n
 
 - Will eventually be invoked in the proof of [Tychonoff's theorem](https://en.wikipedia.org/wiki/Tychonoff%27s_theorem).
 
-
-### Week 2
+### Week 2: more preliminaries, the Borel sigma algebra 
 
 #### Metric Spaces
 
@@ -444,7 +443,7 @@ PROP: If $A$ is a countable index set, then $\otimes_{\alpha\in A} \sM_\alpha$ i
 
 PROP: Let $X_1, \ldots, X_n$ be metric spaces and let $\prod_1^n X_j$ equipped with the product metric (coordinate max), then the product $\sigma$-algebra of each Borel $\sigma$-algebra on the $X_j$ is ... a subset  $\otimes_{j=1}^n \sB_{X_j} \subset \sB_X$ with equality iff the $X_j$ are each separable.
 
-### Week 3
+### Week 3: measure spaces
 
 #### Elementary families
 
@@ -469,7 +468,7 @@ PROP: If $\sE$ is an elementary family of subsets of $X$, then the collections $
 
 Coming up: outer measures on algebras!
 
-#### Defining measures
+#### Definitions
 
 DEF: Let $X$ be a set and $\sM$ a $\sigma$-algebra on $X$. A measure on $\sM$ is a function $\mu \colon \sM \to [0,\infty]$ such that ... (M1) the empty set is a null set, i.e., $\mu(\emptyset) = 0$; (M2) $\mu$ is countably additive, i.e., $\{E_j\}_1^\infty$ is a sequence of disjoint sets in $\sM$, then $$\mu\left(\bigsqcup_1^\infty E_j \right) = \sum_1^\infty \mu(E_j)$$ where it's possible that both sides are infinite.
 
@@ -505,7 +504,7 @@ EX: $(\RR, 2^\RR, \mu_1)$ is the measure space of real numbers with the counting
 
 In general any $\sigma$-finite measure space is semifinite. Now, as we want Fubini's theorem, we'll likely work in $\sigma$-finite spaces.
 
-#### Properties of measures
+#### Properties
 
 THM: Let $(X, \sM, \mu)$ be a measure space. Then $\mu$ has four basic properties ... monotonicity, countable subadditivity, continuity from below, and continuity from above (with finiteness restriction).
 
@@ -520,21 +519,7 @@ DEF: What's continuity from above of $\mu$ in a measure space? ... If $E_1, E_2,
 For example, in the measure space $(\ZZ, 2^\ZZ, \mu)$, if we take sets $E_n = \{n , n + 1, \ldots\}$ for all $n \in \NN$, then 
 $$0 = \mu(\emptyset) = \mu\left(\bigcap_1^\infty E_n \right) \neq \lim_{n \to \infty}\mu(E_n) = \infty.$$
 
-#### Complete measure spaces
-
-See notes from 2018-09-14. Need to define
-
-- null sets and statements "almost everywhere"
-- complete spaces
-- completion of a measure
-- an outer measure $\mu^*$ (defined out of $2^X$)
-    - "relaxing requirements"
-    - no mass for null sets
-    - monotone
-    - countably subadditive
-- constructing an outer measure
-    - $\mu^*(A)$ as the infimum of the $\rho$ weights of all countable coverings of $A$
-- outer-measurable?
+#### Null sets and complete measures
 
 DEF: If $(X, \sM, \mu)$ is a measure space, a set $E \in \sM$ such that $\mu(E) = 0$ is called a ... null set.
 
@@ -542,13 +527,31 @@ DEF: If a statement about points $x \in X$ in a measure space is true expect for
 
 DEF: A measure whose domain contains all subsets of null sets is called ... complete.
 
-\newcommand{\sN}{\mathscr{N}}
+\renewcommand{\sN}{\mathscr{N}}
 
 THM: Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
 
+*Proof sketch*. TODO
+
 DEF: We say that triple $(X, \overline{\sM}, \overline{\mu})$ is the completion, with respect to ... $\mu$, of the measure space ($X$, $\sM$, $\mu$).
 
+#### Outer measures
+
+The outer measure $\mu^*$ (defined out of $2^X$) measures a set "from the outside". Here's the gist of an outer measure's "relaxed definition":
+
+- $\mu^*$ assigns no mass to null sets
+- $\mu^*$ is monotone
+- $\mu^*$ is countably subadditive
+
+DEF! (Outer measures) TODO
+
+DEF: If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
+
+To construct an outer measure, we can take $\mu^*(A)$ as the infimum of the sum of $\rho$ weights from any countable coverings of $A$.
+
 PROP: (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary family, and $\rho\colon \sE \to [0,\infty]$ be a "mass assigning" function, such that $\emptyset \in \sE$, $X \in \sE$, and $\rho(\emptyset) = 0$. We can construct an outer measure $\mu^* \colon \sP(X) \to [0,\infty]$ by mapping $A \subset X$ to ... $$\mu^*(A) = \inf \left\{ \sum_1^\infty \rho(E_j) : E_j \in \sE \text{ and } A \subset \cup_1^\infty E_j\right\}.$$
+
+*Proof sketch*.
 
 - To show countable subadditivity, consider $\{A_j\}_1^\infty \subset \sP(X)$.
 
@@ -568,50 +571,61 @@ PROP: (Carathéodory's construction) Let $\sE \subset \sP(X)$ be an elementary f
 - Let $\epsilon >0$ become arbitrarily small.
 - We've shown that $\mu^*$ is countably subadditive.
 
-DEF: If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
+### Week 4: manipulating outer measures
 
-### Week 4
+#### Progress so far
 
-To constellate the concepts so far.
+To motivate development of measure theory so far, and justify the pains with which we've attended to the details of $\sigma$-algebras.
 
-- $(\RR,\sB_\RR)$ is not complete with respect to the Lebesgue measure
+- The measure space $(\RR,\sB_\RR)$ is not complete with respect to the Lebesgue measure
+
     - somehow the cantor set has measure zero
     - yet its subsets get larger and larger
-- we want to prove convergence theorems.
-- we *need* measure theoretic arguments.
-- we might as well build up measurable functions in an abstract setting.
-    - hence the measurable spaces $(X, \sM)$
-- constructing functions?
+
+- We want to prove convergence theorems
+
+    - we'll *need* measure theoretic arguments anyways
+    - we might as well build up measurable functions in an abstract setting.
+    - hence the measure spaces $(X, \sM, \mu)$
+
+- We need measurable functions
+
     - we'll define measurable functions as "almost continuous"
-    - with $f \colon X \to \RR$, $f$ ought to be measurable if $f^{-1}((\alpha, \infty)) \in \sM$
-- for any Borel measurable function $f \colon \RR \to [0, \infty)$ 
-    - we want $\int f = \sup \int_{0 \le \phi \le L} \phi$
+    - for $f \colon X \to \RR$, it ought to be that $f$ is measurable if $f^{-1}((\alpha, \infty)) \in \sM$
+    - for any "Borel measurable function" $f \colon \RR \to [0, \infty)$ we want $\int f = \sup \int_{0 \le \phi \le L} \phi$
     - $\phi$ will be a "simple function" or an "almost step" function.
+
+
+#### Carathéodory's theorem
 
 THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
 
-Here's an outline of steps to obtain a measure from an outer measure with Carathéodory's theorem.
+*Proof sketch*. TODO
+
+With Carathéodory's result, we may construct a complete measure space (or "pass to the completion") from an elementary family and some proto-measure.
 
 - take an elementary family and a mass assigning set $\rho$
 - form the outer measure 
-    - we *must* have $\mu^*$ measurable sets---why?
+    - we *do* have $\mu^*$ measurable sets---why?
 - pass to $\sM \subset 2^X$ where $\sM$ is the collection of all $\mu^*$ measurable sets
-    - on which $\mu^*$ is a complete measure
-- we thus obtain a complete measure space
+- $\mu^*$ is a complete measure on $\sM$.
 
-What's a premeasure? (not a proto-measure).
+DEF! (Premeasure) TODO
 
-Lengths of intervals ought to give a premeasure. See notes from 2018-09-19. 
-
-To connect premeasures and outermeasures?
-
+- Lengths of intervals ought to give a premeasure. See notes from 2018-09-19. 
+- To connect premeasures and outermeasures?
 - arguments involving the "smallest algebras" satisfying... what?
-- need the definition of $\mu^*$ as an infimum, in particular for the contradiction $$\sum_1^\infty \mu_0(B_j) \le \mu^*(E) + \epsilon$$
-    - restricting an outer measure to a premeasure (see proposition 1.13)
-- need also the argument for to prove prop 1.14
-    - Q: how to show countable subadditivity of measures?
-    - A: see notes #11 on 2018-09-21
-   
+
+PROP! If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is defined by $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ then $\mu^* | \sA = \mu$ and ... every set in $\sA$ is $\mu^*$-measurable.
+
+*Proof sketch*. TODO
+
+THM! Let $\sA \subset \sP(X)$ be an algebra, $\mu$ a premeasure on $\sA$, and $\sM$ the $\sigma$-algebra generated by $\sA$. There exists a measure $\bar{\mu}$ on $\sM$ whose restriction to $\sA$ is $\mu$. If $\nu$ is another such measure on $\sM$, then $\nu(E) \le \bar{\mu}(E)$ for all $E \in \sM$, with equality when $\bar{\mu}(E) < \infty$. If $\mu$ is $\sigma$-finite, then $\bar{\mu}$ is the unique extension of $\mu$ to a measure on $\sM$.
+
+*Proof sketch*. TODO
+
+#### Analogy with topological spaces
+
 From [@Ru87], an analogy to unify the material yet covered.
 
 topological spaces | measurable spaces
@@ -620,7 +634,7 @@ topology | $\sigma$-algebra
 open set | measurable set
 continuous function | measurable function
 
-And we borrow some more clean definitions.
+We borrow some slick definitions.
 
 DEF: A collection $\sM$ of subsets of a set $X$ is said to be a $\sigma$-algebra in $X$ if $\sM$ has the following properties ... (SA1) $X \in \sM$; (SA2) If $A \in \sM$ then $A^c \in \sM$ where $A^c$ is the complement of $A$ relative to $X$; (SA3) if $A = \cup_{n=1}^\infty A_n$ and $A_n \in \sM$ for $n =1, 2, 3, \ldots$, then $A \in \sM$.
 
@@ -628,13 +642,44 @@ DEF: If $\sM$ is a $\sigma$-algebra in $X$ then $X$ is called a measurable space
 
 DEF: If $X$ is a measurable space, $Y$ a topological space, and $f \colon X \to Y$ a function, then $f$ is said to be measurable provided that ... $f^{-1}(V)$ is a measurable set in $X$ for every open set $V$ in $Y$.
 
-### Week 5
+### Week 5: Borel measures on the real line
 
-TODO 
+PROP! Let $F \colon \RR \to \RR$ be increasing and right continuous. If the $(a_j, b_j]$ are (finitely many) disjoint h-intervals, let $\mu\left(\bigcup_1^n (a_j, b_j] )$ be given by ... $$\sum_1^n \left[ F(b_j) - F(a_j)\right]$$ with also $\mu(\emptyset) = 0$. Then $\mu$ is a premeasure on the algebra $\sA$ (of finite disjoint unions of $h$-intervals on the real line).
 
-- defining a cumulative distribution function
-- h intervals 
-- right continuous functions
-- measures on right continuous functions
+*Proof sketch*. TODO
 
+THM! If $F \colon \RR \to \RR$ is any increasing, right continuous function, there is a unique measure $\mu_F$ on $\sB_\RR$ such that ... $\mu_F((a,b]) = F(b) - F(a)$ for all $a,b \in \RR$. If $G$ is another such function, we have $\mu_F = \mu_G$ iff $F - G$ is constant. 
 
+*Proof sketch*. TODO
+
+THM! Conversely, if $\mu$ is a measure on $\sB_\RR$ which is finite on all bounded Borel sets and we define [...], then $F$ is increasing and right continuous, and $\mu = \mu_F$. ... $F(x) = \mu((0,x])$ when $x > 0$, $F(0) = 0$, and $F(x) = -\mu((x,0])$ when $x < 0$.
+
+*Proof sketch*. TODO
+
+DEF! (Cumulative distribution function) TODO
+
+DEF! (Lebesgue-Stieltjies measure associated to $F$) TODO
+
+THM! When is it true that for all $E \in \sM$, we have $\mu(E) = \inf\{\mu(U) : U \supset E \text{ and $U$ is open}\}\\ = \sup\{\mu(K) : K \subset E \text{ and $K$ is compact}\}$? 
+
+TODO
+
+THM! If $E \subset \RR$, the following are equivalent: [...]; $E = V\setminus N_1$ where $V$ is a $G_\delta$ set and $\mu(N_1) = 0$; $E = H \cup N_2$ where $H$ is an $F_\sigma$ set and $\mu(N_2) = 0$. ... $E \in \sM$
+
+<!---
+THM! If $E \subset \RR$, the following are equivalent: $E \in \sM$; $E = V\setminus N_1$ where $V$ is a $G_\delta$ set and $\mu(N_1) = 0$; [...] ... $E = H \cup N_2$ where $H$ is an $F_\sigma$ set and $\mu(N_2) = 0$
+
+THM! If $E \subset \RR$, the following are equivalent: $E \in \sM$; [...]; $E = H \cup N_2$ where $H$ is an $F_\sigma$ set and $\mu(N_2) = 0$. ... $E = V\setminus N_1$ where $V$ is a $G_\delta$ set and $\mu(N_1) = 0$
+--->
+
+*Proof sketch.* TODO
+
+PROP! If $\mu(E) < \infty$, the for every $\epsilon > 0$, there's a set $A$ which is a finite union of open intervals such that $\mu(E \triangle A) < \epsilon$. TODO
+
+\renewcommand{\sL}{\mathcal{L}}
+
+DEF! Lebesgue measure $m$ on $\RR$. Lebesgue measurable sets $\sL$. TODO
+
+THM! (Translation invariance) if $E \subset \RR$ and $s,r \in \RR$, let $E+s= \{x+s : x \in E\}$ and $rE = \{rx: x \in E\}$. If $E \in \sL$, then $E + s \in \sL$ and $rE \in \sL$ for all $s$ and $r$, moreover $m(E+s) = m(E)$ and $m(rE) = \abs{r}m(E)$. TODO
+
+### Week 6: summary of measures, review for midterm
