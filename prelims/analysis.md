@@ -364,6 +364,14 @@ DEF: A set $E$ in a topological space is called nowhere dense in $X$ if ... $(\o
 
 DEF: A metric space $(X, \rho)$ is said to be separable if ... $X$ has a countable dense subset.
 
+DEF! A sequence in a metric space $(X, \rho)$ is called Cauchy if ... $\rho(x_n,x_m) \to 0$ as $n,m \to \infty$.
+
+DEF! A subset $E$ of a metric space $X$ is called complete if ... every Cauchy sequence in $E$ converges and its limit is in $E$. (E.g., $\RR^n$ is complete, $\QQ^n$ is not.)
+
+DEF! A set $E$ in a metric space is said to be totally bounded if ... for all $\epsilon >0$, $E$ can be covered by finitely many balls of radius $\epsilon$.
+
+THM! If $E$ is a subset of the metric space $(X,\rho)$, the following are equivalent: $E$ is complete and totally bounded. ... (Bolzano Weierstrauss property) Every sequence in $E$ has a subsequence that converges to a point of $E$; (Heine-Borel property) If $\{V_\alpha\}_{\alpha \in A}$ is a finite cover of $E$ by open sets, there is a finite set $F \subset A$ such that $\{V_\alpha\}_{\alpha \in F}$ covers $E$.
+
 #### Naive counter examples
 
 From [@Go08, number III.55]: suppose we have a sequence of intervals in $[0,1]$, say $[a_i, b_i]$ with $\sum_1^n (b_i - a_i) < 1$, it is possible that their union $\cup_1^n [a_i, b_i] = [0,1]$? Why not?
@@ -498,7 +506,7 @@ EX: The counting measure on the integers as a measure space $(\ZZ, 2^\ZZ, \mu_1)
 
 DEF: We say $(X, \sM, \mu)$ is semifinite if whenever $E \in \sM$ such that $\mu(E) = \infty$ there's a ... measurable set $F \in \sM$ where $F \subset E$ and $\mu(F) < \infty$.
 
-We can sets of finite measure in a semifinite measure space *as large as we want*.
+We can find sets of finite measure in a semifinite measure space *as large as we want*.
 
 EX: $(\RR, 2^\RR, \mu_1)$ is the measure space of real numbers with the counting measure. It's semifinite because ... if $\mu(A) = \infty$ then $A \neq \emptyset$ and so we can find $r \in A$ with $\mu_1(\{r\}) = 1 < \infty$.
 
@@ -531,7 +539,40 @@ DEF: A measure whose domain contains all subsets of null sets is called ... comp
 
 THM: Suppose $(X, \sM, \mu)$ is a measure space. Let $\sN = \{ N \in \sM : \mu(N) = 0\}$ and $\overline{\sM} = \{ E \cup F : E \in \sM \text{ and } F \subset N \text{ for some } N \in \sN\}$. Then $\overline{\sM}$ is ... a $\sigma$-algebra, and there is a unique extension $\overline{\mu}$ of $\mu$ to a complete measure on $\overline{\sM}$.
 
-*Proof sketch*. TODO
+*Proof sketch*. 
+
+- $\overline{\sM}$ is a $\sigma$-algebra.
+
+    - $\emptyset \in \overline{\sM}$ since $\emptyset \cup \emptyset \in \overline{\sM}$.
+
+    - $\sM$ and $\sN$ are closed under countable unions, therefore $\overline{\sM}$ is too.
+
+        - Just write $\cup_1^\infty(E_n \cap F_n) = (\cup E_n) \cup (\cup F_n)$.
+
+    - $\overline{\sM}$ is closed under complements.
+
+        - Suppose $E \cup F \in \sM$, where $E \in \sM$ and $F \in \sN$.
+        - Note $F^c \supset N^c$.
+        - Now $(E \cup F)^c = E^c \cap F^c \supset E^c \cap N^c$.
+        - Show that $(E^c \cap F^c) \setminus (E^c \cap N^c) = E^c \cap F^c \cap N \subset N$.
+        - Note $E^c \cap N^c \in \sM$ and $E^c \cap F^c \cap N \in \sN$.
+        - Therefore $E^c \cap F^c = (E^c \cap N^c) \cap (E^c \cap F^c \cap N)$ is in $\overline{\sM}$
+
+- When $E \cup F \in \overline{\sM}$ define $\overline{\mu}(E \cup F) = \mu(E)$.
+
+    - $\overline{\mu}$ is well defined.
+
+        - Take two representations of a set $C \in \overline{\sM}$.
+        - Apply $\overline{\mu}$.
+        - Argue by monotonicity.
+
+    - $\overline{\mu}$ extends $\mu$.
+
+        - If $E \in \sM \subset \overline{\sM}$, then $\overline{\mu}(E) = \overline{\mu}(E \cap \emptyset) = \mu(E)$.
+
+- $\overline{\mu}$ is the unique, complete, measure satisfying $\overline{\mu}\vert_\sM = \mu$.
+
+    - It's painfully straightforward to check.
 
 DEF: We say that triple $(X, \overline{\sM}, \overline{\mu})$ is the completion, with respect to ... $\mu$, of the measure space ($X$, $\sM$, $\mu$).
 
@@ -543,7 +584,7 @@ The outer measure $\mu^*$ (defined out of $2^X$) measures a set "from the outsid
 - $\mu^*$ is monotone
 - $\mu^*$ is countably subadditive
 
-DEF! (Outer measures) TODO
+DEF! (Outer measure) An outer measure on a non-empty set $X$ is a function $\mu^* \colon \sP(X) \to [0,\infty]$ that satisfies ... (OM1) $\mu^*(\emptyset) = 0$; (OM2) $\mu^*(A) \le \mu^*(B)$ if $A \subset B$; (OM3) $\mu^*(\cup_1^\infty A_j) \le \sum_1^\infty \mu^*(A_j)$.
 
 DEF: If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
@@ -598,25 +639,53 @@ To motivate development of measure theory so far, and justify the pains with whi
 
 #### Carathéodory's theorem
 
-THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
+THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is ... a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
 
-*Proof sketch*. TODO
+*Proof sketch*. 
+
+- $\sM$ is an algebra of sets on $X$.
+
+    - $\emptyset$ is outer measurable (and *all null sets are outer measurable*).
+    - If $A$ is outer measurable, then $A^c$ is too.
+        - The outer measurable criterion is symmetric in complements.
+    - If $A$ and $B$ are outer measurable, then $A \cup B$ is too.
+        - For any $E \subset X$, decompose $E \cap (A \cup B)$ into $4$ disjoint unions in terms of $A$, $A^c$, $B$, and $B^c$.
+        - Now disjoint $A \cap B$, $A \cap B^c$, and $A^c \cap B$ form $A \cup B$.
+        - Argue by subadditivity that $\mu^*(E) \ge \mu^*(E \cap (A \cup B)) + \mu^*(E \cap (A \cup B)^c)$.
+
+- $\sM$ is a $\sigma$-algebra too.
+
+    - Get this lemma by induction: "If $\{F_1,\ldots,F_n\} \subset \sM$ and $F_j \cap F_i = \emptyset$, then for all $E \subset X$, $\mu^*\left(E \cap \bigcup_1^n F_j\right) = \sum_1^n \mu^*(E \cap F_j)$."
+    - Decompose any countable collection $\{A_j\}_1^\infty \subset \sM$ into disjoint $\{F_j\}$.
+        - $F_1 = A_1$, $F_n = A_n \setminus \cup_1^{n-1} A_j$.
+        - The finite (resp. infinite) union of the $F_j$ is equal to the finite (resp. infinite) union of $A_j$.
+    - Argue by monotonicity that $\mu^*(E) \ge \sum_1^n \mu^*(E \cap F_j) + \mu^*(E \cap (\cup_1^\infty F_j)^c)$.
+    - Let $n \to \infty$ and argue by subadditivity that $$\mu^*(E) \ge \sum_1^\infty \mu^*(E \cap F_j) + \mu^*(E \cap (\cup_1^\infty F_j)^c) \ge \mu^*(E \cap (\cup_1^\infty F_j)) + \mu^*(E \cap (\cup_1^\infty F_j)^c) \ge \mu^*(E).$$
+    - So $\cup_1^\infty F_j = \cup_1^\infty A_j$ is outer measurable.
+
+- Obtain that $\mu^*$ is countably additive by choosing $E = \cup_1^\infty F_j$ in the previous inequality.
 
 With Carathéodory's result, we may construct a complete measure space (or "pass to the completion") from an elementary family and some proto-measure.
 
-- take an elementary family and a mass assigning set $\rho$
-- form the outer measure 
+- take an elementary family $\sE$ and a mass assigning set $\rho$
+- form the outer measure of as an infimum of the sums of masses of countable coverings
     - we *do* have $\mu^*$ measurable sets---why?
 - pass to $\sM \subset 2^X$ where $\sM$ is the collection of all $\mu^*$ measurable sets
 - $\mu^*$ is a complete measure on $\sM$.
 
-DEF! (Premeasure) TODO
+DEF! (Premeasure) Let $X$ be a nonempty set and let $\sA$ be an algebra of subsets of $X$. We say the function $\mu_0 \colon \sA \to [0,\infty]$ is a premeasure on $\sA$ if ... (PM1) $\mu_0(\emptyset) = 0$; (PM2) whenever (maybe $\sA$ is not infinite) $\{A_j\}_1^\infty \subset \sA$ are pairwise disjoint and $\sqcup_1^\infty \in \sA$, then $$\mu_0(\sqcup_1^\infty A_j) = \sum_1^\infty \mu_0(A_j).$$
 
-- Lengths of intervals ought to give a premeasure. See notes from 2018-09-19. 
-- To connect premeasures and outermeasures?
-- arguments involving the "smallest algebras" satisfying... what?
+For example, let $X = \RR$, and consider some elementary family $$\sE = \{ \emptyset, \RR, (a,b] \text{ for } -\infty \le a < b \le \infty\} \cup \{(b,\infty) \text{ for all } b \in \RR\}.$$
 
-PROP! If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is defined by $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ then $\mu^* | \sA = \mu$ and ... every set in $\sA$ is $\mu^*$-measurable.
+We generate an algebra $\sA$ consisting of finite, disjoint, unions of elements from $\sE$. We define---*this is what we wanted naively*---a premeasure on $\sA$:
+
+- $\mu_0(\emptyset) = 0$,
+- $\mu_0((-\infty,\infty)) = \infty$,
+- $\mu_0((a,b]) = b-a$,
+- $\mu_0((b,\infty]) = \infty$, and lastly, 
+- extend $\mu_0$ to $\sqcup_1^n (a_j, b_j]$ by $$\mu_0 \left(\sqcup_1^n (a_j,b_j]\right) = \sum_1^n (b_j - a_j).$$
+
+PROP! If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is the corresponding outer measure $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ then $\mu^* | \sA = \mu$ and ... every set in $\sA$ is $\mu^*$-measurable.
 
 *Proof sketch*. TODO
 
