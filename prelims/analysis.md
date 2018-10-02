@@ -364,13 +364,13 @@ DEF: A set $E$ in a topological space is called nowhere dense in $X$ if ... $(\o
 
 DEF: A metric space $(X, \rho)$ is said to be separable if ... $X$ has a countable dense subset.
 
-DEF! A sequence in a metric space $(X, \rho)$ is called Cauchy if ... $\rho(x_n,x_m) \to 0$ as $n,m \to \infty$.
+DEF: A sequence in a metric space $(X, \rho)$ is called Cauchy if ... $\rho(x_n,x_m) \to 0$ as $n,m \to \infty$.
 
-DEF! A subset $E$ of a metric space $X$ is called complete if ... every Cauchy sequence in $E$ converges and its limit is in $E$. (E.g., $\RR^n$ is complete, $\QQ^n$ is not.)
+DEF: A subset $E$ of a metric space $X$ is called complete if ... every Cauchy sequence in $E$ converges and its limit is in $E$. (E.g., $\RR^n$ is complete, $\QQ^n$ is not.)
 
-DEF! A set $E$ in a metric space is said to be totally bounded if ... for all $\epsilon >0$, $E$ can be covered by finitely many balls of radius $\epsilon$.
+DEF: A set $E$ in a metric space is said to be totally bounded if ... for all $\epsilon >0$, $E$ can be covered by finitely many balls of radius $\epsilon$.
 
-THM! If $E$ is a subset of the metric space $(X,\rho)$, the following are equivalent: $E$ is complete and totally bounded. ... (Bolzano Weierstrauss property) Every sequence in $E$ has a subsequence that converges to a point of $E$; (Heine-Borel property) If $\{V_\alpha\}_{\alpha \in A}$ is a finite cover of $E$ by open sets, there is a finite set $F \subset A$ such that $\{V_\alpha\}_{\alpha \in F}$ covers $E$.
+THM: If $E$ is a subset of the metric space $(X,\rho)$, the following are equivalent: $E$ is complete and totally bounded. ... (Bolzano Weierstrauss property) Every sequence in $E$ has a subsequence that converges to a point of $E$; (Heine-Borel property) If $\{V_\alpha\}_{\alpha \in A}$ is a finite cover of $E$ by open sets, there is a finite set $F \subset A$ such that $\{V_\alpha\}_{\alpha \in F}$ covers $E$.
 
 #### Naive counter examples
 
@@ -584,7 +584,7 @@ The outer measure $\mu^*$ (defined out of $2^X$) measures a set "from the outsid
 - $\mu^*$ is monotone
 - $\mu^*$ is countably subadditive
 
-DEF! (Outer measure) An outer measure on a non-empty set $X$ is a function $\mu^* \colon \sP(X) \to [0,\infty]$ that satisfies ... (OM1) $\mu^*(\emptyset) = 0$; (OM2) $\mu^*(A) \le \mu^*(B)$ if $A \subset B$; (OM3) $\mu^*(\cup_1^\infty A_j) \le \sum_1^\infty \mu^*(A_j)$.
+DEF: (Outer measure) An outer measure on a non-empty set $X$ is a function $\mu^* \colon \sP(X) \to [0,\infty]$ that satisfies ... (OM1) $\mu^*(\emptyset) = 0$; (OM2) $\mu^*(A) \le \mu^*(B)$ if $A \subset B$; (OM3) $\mu^*(\cup_1^\infty A_j) \le \sum_1^\infty \mu^*(A_j)$.
 
 DEF: If $\mu^*$ is an outer measure on a set $X$, then a set $A \subset X$ is called $\mu^*$-measurable if ... $\mu^*(E) = \mu^*(E \cap A) + \mu^*(E \cap A^c)$ for all $E \subset X$ (given subadditivity, it suffices to show that $\mu^*(E) \ge \mu^*(E \cap A) + \mu^*(E \cap A^c)$ whenever $\mu^*(E) < \infty$).
 
@@ -639,7 +639,7 @@ To motivate development of measure theory so far, and justify the pains with whi
 
 #### Carathéodory's theorem
 
-THM! (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is ... a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
+THM: (Carathéodory's theorem) If $\mu^*$ is an outer measure on $X$, the collection $\sM$ of all $\mu^*$-measurable sets is ... a $\sigma$-algebra, and the restriction of $\mu^*$ to $\sM$ is a complete measure.
 
 *Proof sketch*. 
 
@@ -673,7 +673,7 @@ With Carathéodory's result, we may construct a complete measure space (or "pass
 - pass to $\sM \subset 2^X$ where $\sM$ is the collection of all $\mu^*$ measurable sets
 - $\mu^*$ is a complete measure on $\sM$.
 
-DEF! (Premeasure) Let $X$ be a nonempty set and let $\sA$ be an algebra of subsets of $X$. We say the function $\mu_0 \colon \sA \to [0,\infty]$ is a premeasure on $\sA$ if ... (PM1) $\mu_0(\emptyset) = 0$; (PM2) whenever (maybe $\sA$ is not infinite) $\{A_j\}_1^\infty \subset \sA$ are pairwise disjoint and $\sqcup_1^\infty \in \sA$, then $$\mu_0(\sqcup_1^\infty A_j) = \sum_1^\infty \mu_0(A_j).$$
+DEF: (Premeasure) Let $X$ be a nonempty set and let $\sA$ be an algebra of subsets of $X$. We say the function $\mu_0 \colon \sA \to [0,\infty]$ is a premeasure on $\sA$ if ... (PM1) $\mu_0(\emptyset) = 0$; (PM2) whenever (maybe $\sA$ is not infinite) $\{A_j\}_1^\infty \subset \sA$ are pairwise disjoint and $\sqcup_1^\infty \in \sA$, then $$\mu_0(\sqcup_1^\infty A_j) = \sum_1^\infty \mu_0(A_j).$$
 
 For example, let $X = \RR$, and consider some elementary family $$\sE = \{ \emptyset, \RR, (a,b] \text{ for } -\infty \le a < b \le \infty\} \cup \{(b,\infty) \text{ for all } b \in \RR\}.$$
 
@@ -685,13 +685,19 @@ We generate an algebra $\sA$ consisting of finite, disjoint, unions of elements 
 - $\mu_0((b,\infty]) = \infty$, and lastly, 
 - extend $\mu_0$ to $\sqcup_1^n (a_j, b_j]$ by $$\mu_0 \left(\sqcup_1^n (a_j,b_j]\right) = \sum_1^n (b_j - a_j).$$
 
-PROP! If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is the corresponding outer measure $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ then $\mu^* | \sA = \mu$ and ... every set in $\sA$ is $\mu^*$-measurable.
+PROP: If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is the corresponding outer measure defined, for each $E \in X$, by $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ then $\mu^* | \sA$ is ... $\mu$ and every set in $\sA$ is $\mu^*$-measurable.
+
+<!---
+PROP: If $\mu$ is a premeasure on $\sA$ and $\mu^*$ is the corresponding outer measure defined, for each $E \in X$, by [...] then $\mu^* | \sA = \mu$ and every set in $\sA$ is $\mu^*$-measurable. ... $$\mu^*(E) = \inf \left\{ \sum_1^\infty \mu(A_j) : A_j \in \sE \text{ and } E \subset \cup_1^\infty A_j\right\}$$ 
+--->
 
 *Proof sketch*. TODO
 
 THM! Let $\sA \subset \sP(X)$ be an algebra, $\mu$ a premeasure on $\sA$, and $\sM$ the $\sigma$-algebra generated by $\sA$. There exists a measure $\bar{\mu}$ on $\sM$ whose restriction to $\sA$ is $\mu$. If $\nu$ is another such measure on $\sM$, then $\nu(E) \le \bar{\mu}(E)$ for all $E \in \sM$, with equality when $\bar{\mu}(E) < \infty$. If $\mu$ is $\sigma$-finite, then $\bar{\mu}$ is the unique extension of $\mu$ to a measure on $\sM$.
 
 *Proof sketch*. TODO
+
+- $\sA \subset \sM(\sA) \subset \sM^*$, where the last set is the $\sigma$-algebra of $\mu^*$-measurable subsets.
 
 #### Analogy with topological spaces
 
