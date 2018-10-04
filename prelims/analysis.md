@@ -761,11 +761,9 @@ THM: Conversely, if $\mu$ is a measure on $\sB_\RR$ which is finite on all bound
 
 DEF: Suppose $\mu$ is a finite Borel measure on $\RR$. The cumulative distribution function $F$ associated to the measure $\mu$ is defined at $x \in \RR$ by ... $F(x) = \mu(-\infty, x])$.
 
-DEF: Let $F$ be an increasing, right continuous function, and let $\mu_F$ be its associated measure. Then $\mu_F$ is dubbed ... Lebesgue-Stieltjies measure associated to $F$.
+DEF: Let $F$ be an increasing, right continuous function, and let $\mu_F$ be its associated measure. Then $\mu_F$ is dubbed ... Lebesgue-Stieltjes measure associated to $F$.
 
 THM: When is it true that for all $E \in \sM_\mu$, we have $\mu(E) = \inf\{\mu(U) : U \supset E \text{ and $U$ is open}\}\\ = \sup\{\mu(K) : K \subset E \text{ and $K$ is compact}\}$? ... When we fix a complete Lebesgue-Stieltjes measure $\mu$ on $\RR$ associated to the increasing, right continuous function $F$, and we denote $\sM_\mu$ the domain of $\mu$.
-
-TODO
 
 THM: If $E \subset \RR$, the following are equivalent: [...]; $E = V\setminus N_1$ where $V$ is a $G_\delta$ set and $\mu(N_1) = 0$; $E = H \cup N_2$ where $H$ is an $F_\sigma$ set and $\mu(N_2) = 0$. ... $E \in \sM$
 
@@ -786,3 +784,20 @@ DEF! Lebesgue measure $m$ on $\RR$. Lebesgue measurable sets $\sL$. TODO
 THM! (Translation invariance) if $E \subset \RR$ and $s,r \in \RR$, let $E+s= \{x+s : x \in E\}$ and $rE = \{rx: x \in E\}$. If $E \in \sL$, then $E + s \in \sL$ and $rE \in \sL$ for all $s$ and $r$, moreover $m(E+s) = m(E)$ and $m(rE) = \abs{r}m(E)$. TODO
 
 ### Week 6: summary of measures, review for midterm
+
+I took the midterm today and! ...Made some very untrue arguments about sets of outer Lebesgue measure zero. Shucks.
+
+Concepts I struggled with:
+
+- associated Lebesgue-Stieltjes measures $\mu_F$ for an increasing, right continuous function $F$
+- techniques used to navigate the proofs of basic properties of measures 
+    - e.g., monotonicity, continuity from below
+- the "white bread" Lebesgue measure
+- citing the Cantor set as a counter example
+- *timeliness* 
+    - e.g., being about two weeks behind in Folland 
+    - and therefore being about two weeks behind in comprehension of the lectures
+
+<!---
+Not sure if I'm continuing in the course or what. Have to ask about the GPA requirement. Can't lose funding over the Lebesgue measure.
+--->
