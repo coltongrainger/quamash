@@ -747,7 +747,7 @@ DEF: If $X$ is a measurable space, $Y$ a topological space, and $f \colon X \to 
 
 ### Week 5: Borel measures on the real line
 
-PROP: Let $F \colon \RR \to \RR$ be increasing and right continuous. If the $(a_j, b_j]$ are (finitely many) disjoint h-intervals, let $\mu\left(\bigcup_1^n (a_j, b_j] )$ be given by ... $$\sum_1^n \left[ F(b_j) - F(a_j)\right]$$ with also $\mu(\emptyset) = 0$. Then $\mu$ is a premeasure on the algebra $\sA$ (of finite disjoint unions of $h$-intervals on the real line).
+PROP: Let $F \colon \RR \to \RR$ be increasing and right continuous. If the $(a_j, b_j]$ are (finitely many) disjoint h-intervals, let $\mu\left(\bigcup_1^n (a_j, b_j] \right)$ be given by ... $$\sum_1^n \left[ F(b_j) - F(a_j)\right]$$ with also $\mu(\emptyset) = 0$. Then $\mu$ is a premeasure on the algebra $\sA$ (of finite disjoint unions of $h$-intervals on the real line).
 
 *Proof sketch*. TODO
 
@@ -785,19 +785,18 @@ THM! (Translation invariance) if $E \subset \RR$ and $s,r \in \RR$, let $E+s= \{
 
 ### Week 6: summary of measures, review for midterm
 
-I took the midterm today and! ...Made some very untrue arguments about sets of outer Lebesgue measure zero. Shucks.
+I took the midterm today and realized I don't quite understand sets of outer Lebesgue measure zero. 
 
-Concepts I struggled with:
+To summarize concepts I struggled with:
 
-- associated Lebesgue-Stieltjes measures $\mu_F$ for an increasing, right continuous function $F$
 - techniques used to navigate the proofs of basic properties of measures 
     - e.g., monotonicity, continuity from below
-- the "white bread" Lebesgue measure
-- citing the Cantor set as a counter example
+- associated Lebesgue-Stieltjes measures $\mu_F$ for an increasing, right continuous function $F$
+- "white bread" Lebesgue measures
+- the Cantor set as a counter example
+<!---
 - *timeliness* 
     - e.g., being about two weeks behind in Folland 
     - and therefore being about two weeks behind in comprehension of the lectures
-
-<!---
 Not sure if I'm continuing in the course or what. Have to ask about the GPA requirement. Can't lose funding over the Lebesgue measure.
 --->
