@@ -132,7 +132,7 @@ EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of 
 
 EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
 
-\renewcommand{\RR}{\mathbf{R}}
+\providecommand{\RR}{\mathbf{R}}
 
 EX: $GL_n(\RR)$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
@@ -144,7 +144,7 @@ EX: What is the order of the permutation group on $n$ letters? ... $S_n$ is a fi
 
 FACT: The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
 
-\renewcommand{\ZZ}{\mathbf{Z}}
+\providecommand{\ZZ}{\mathbf{Z}}
 
 EX: What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
 
@@ -202,7 +202,7 @@ Course with Nat Thiem. Still haven't hammered out the bibliography. Maybe:
 - R. Vakil 
 - E. Riehl
 
-I created a repo for sage projects and assignments at <http://github.com/coltongrainger/alg1>.
+I created a repo for sage projects and assignments at <http://github.com/coltongrainger/pro19alg1>.
 
 #### What to expect?
 
@@ -228,11 +228,11 @@ EX: In the category of groups, the morphisms are ... group homomorphisms.
 
 EX: In the category of rings, the morphisms are ... ring homomorphisms.
 
-\renewcommand{\FF}{\mathbf{F}}
+\providecommand{\FF}{\mathbf{F}}
 
 DEF: (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
 
-\renewcommand{\phi}{\varphi}
+\providecommand{\phi}{\varphi}
 
 DEF: (Naive) A vector space homomorphism $\phi \colon V \to U$, also known as a linear transformation, is a function that ... respects scalar multiplication and vector addition.
 
@@ -240,7 +240,7 @@ DEF: A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such t
 
 DEF: A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
 
-\renewcommand{\KK}{\mathbf{K}}
+\providecommand{\KK}{\mathbf{K}}
 
 DEF: (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
 
@@ -266,13 +266,13 @@ We do our best to state the isomorphism theorems in categorical language.
 
 #### Basic framework for category theory
 
-\renewcommand{\sC}{\mathscr{C}}
+\providecommand{\sC}{\mathscr{C}}
 
 Notes from [@Ja84, chapter 1].
 
 DEF: To define a category, we need  a class of objects, call it $\sC$ (containing capital letters), with two functions satisfying ... (CL1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$, written $X\xrightarrow{f} Y$; (CL2) the other function assigns to each triple $(X,Y,Z)$ of objects of $\sC$ an operation $\hom(Y,Z) \times \hom(X,Y) \to \hom(X,Z)$ called composition.
 
-\renewcommand{\id}{\mathrm{id}}
+\providecommand{\id}{\mathrm{id}}
 
 DEF: To suppose we have a class $\sC$ with a morphism and composition assigning functions. The class $\sC$ is a category if the following conditions hold. ... (CL1) if $X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}W$ are morphisms of $\sC$, then composition of morphisms is associative $(h \circ g) \circ f = h \circ (g \circ f)$; (CT2) for each object $X$ of $\sC$ there's a morphism $\id_{X}\colon X \to X$ such that $\id_X \circ f = f$ and $g\circ \id_X = g$ for each morphism $f$ and $g$ on the appropriate domains.
 
@@ -359,7 +359,7 @@ We can argue that for any partition $\pi$ there's an (natural) equivalence class
 
 #### Modular arithmetic
 
-\renewcommand{\NN}{\mathbf{N}}
+\providecommand{\NN}{\mathbf{N}}
 
 We work from two intuitive examples: the additive group $\ZZ/n\ZZ$ of integers modulo $n \in \NN$ and the multiplicative group of units in $\ZZ/n\ZZ$. We need to define *residue classes* of integers as the elements in each group.
 
@@ -415,7 +415,7 @@ DEF: The order $\langle g \rangle$ of an element $g \in G$ ... is the size of th
 
 DEF: A group $G$ is cyclic iff ... there's a $g \in G$ such that $G = \langle g \rangle$.
 
-\renewcommand{\CC}{\mathbf{C}}
+\providecommand{\CC}{\mathbf{C}}
 
 EX: Suppose $x$ is an nth root of unity in $\CC$. Then $C_n :=$ ... $\{1,x,x^2,\ldots,x^{n-1}\}$ with the usual product in $\CC$. Note $C_n = \langle x \rangle$.
 
@@ -477,8 +477,8 @@ Coming up, group actions!
 
 Reading from [@DF04, chapter 1.6].
 
-\renewcommand{\sG}{\mathscr{G}}
-\renewcommand{\sP}{\mathscr{P}}
+\providecommand{\sG}{\mathscr{G}}
+\providecommand{\sP}{\mathscr{P}}
 
 - We have $G \cong G$ perhaps with many isomorphisms.
 - With $\sG$ any nonempty collection of groups, isomorphism $\cong$ is an equivalence relation on $\sG$.
@@ -514,7 +514,7 @@ DEF: An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \i
 
 (Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
 
-\renewcommand{\id}{\mathrm{id}}
+\providecommand{\id}{\mathrm{id}}
 
 THM: If $G$ acts faithfully on $A$ then $G \cong H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
 
@@ -528,11 +528,11 @@ Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi
 
 EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
 
-\renewcommand{\QQ}{\mathbf{Q}}
+\providecommand{\QQ}{\mathbf{Q}}
 
 EX: Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
 
-\renewcommand{\FF}{\mathbf{F}}
+\providecommand{\FF}{\mathbf{F}}
 
 DEF: ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
 
@@ -567,7 +567,7 @@ ANALOGY: The permutation representation of a group action on a set is like ... t
 
 PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
 
-\renewcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
+\providecommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
 
 DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
 
@@ -612,7 +612,7 @@ If $\phi \colon G \to S_B$ is the corresponding homomorphism, then $\Stab{G}{A} 
 
 Stabilizers are easy to compute; stable elements are somehow easier to find than the images of every element in $A$.
 
-\renewcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
+\newcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
 
@@ -670,7 +670,7 @@ EX: A typical element of $G/H$ is of the form ... $$gH = \{gh : h \in H\}.$$
 
 CORO: (Lagrange's theorem) Suppose $G$ is a group and $H < G$. Then the order of $H$ divides the order of $G$.
 
-\renewcommand{\sS}{\mathscr{S}}
+\providecommand{\sS}{\mathscr{S}}
 
 EX: Since membership in cosets is an equivalence relation, we often select a set of coset representatives for a subset $\sS \subset G$ such that ... $\abs{\sS \cap gH} = 1$ for all $g \in G$.
 
@@ -705,8 +705,8 @@ PROP: Let $H$ and $K$ be finite subgroups of a group $G$. Then $\abs{HK}$ is equ
 
 PROP: If $H$ and $K$ are subgroups of $G$, then $\abs{H : H \cap K} \le \abs{G : K}$. Moreover, if $\abs{G : K}$ is finite, then $\abs{H : H \cap K} = \abs{G : K}$ iff .. $G = HK$.
 
-\renewcommand{\sA}{\mathscr{A}}
-\renewcommand{\sB}{\mathscr{B}}
+\providecommand{\sA}{\mathscr{A}}
+\providecommand{\sB}{\mathscr{B}}
 
 *Proof sketch.*
 
@@ -830,6 +830,11 @@ Advice from the book [@DF04, chapter 3.1] for demonstrating normality:
     - So when is $HK = \langle H, K \rangle$?
 - If $H,K$ are finite subgroups, what's the size of $\abs{HK}$?
     - The strategy here is to prove $HK$ is a subgroup by finding some subgroup of order $\abs{HK} = \abs{H}\abs{K}/\abs{H \cap K}$ that *contains* $HK$. Thereby that subgroup *must be* $HK$.
+
+#### Orbit stabilizer
+
+\providecommand{\Stab}[2]{\mathrm{Stab}_{#1}(#2)}
+\providecommand{\Norm}[2]{\mathrm{Norm}_{#1}(#2)}
 
 THM: (Orbit Stabilizer) Let $G$ act on $A$ and fix $a \in A$. Then the orbit containing $a$ has size $\abs{G(a)}$ given by ... $\frac{\abs{G}}{\abs{\Stab{G}{a}}}$ (idea: mod out the elements of $G$ that fix $a$).
 
