@@ -132,7 +132,7 @@ EX: The Ur monoid on a non-trivial set $S$ is ... the set of transformations of 
 
 EX: The Ur group on a non-trivial set $T$ is ... the set of automorphisms $\mathrm{Sym}(T)$ (bijections from $T$ to itself) with composition of functions as the binary operation.
 
-\newcommand{\RR}{\mathbf{R}}
+\renewcommand{\RR}{\mathbf{R}}
 
 EX: $GL_n(\RR)$ is a subgroup, properly contained in ... $\mathrm{Sym}(\RR^n)$.
 
@@ -144,7 +144,7 @@ EX: What is the order of the permutation group on $n$ letters? ... $S_n$ is a fi
 
 FACT: The multiplication table of an Abelian group with $n$ elements is (what type of matrix)? ... symmetric.
 
-\newcommand{\ZZ}{\mathbf{Z}}
+\renewcommand{\ZZ}{\mathbf{Z}}
 
 EX: What's the matrical subgroup of $GL_2(\RR)$ that stabilizes the line $y=0$? ... $H = \left\{ \begin{pmatrix}a & b \\ 0 & d\end{pmatrix} : ad \neq 0 \right\}$, since the first basis vector is taken to a scalar multiple of itself!
 
@@ -228,7 +228,7 @@ EX: In the category of groups, the morphisms are ... group homomorphisms.
 
 EX: In the category of rings, the morphisms are ... ring homomorphisms.
 
-\newcommand{\FF}{\mathbf{F}}
+\renewcommand{\FF}{\mathbf{F}}
 
 DEF: (Naive) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... $V$ is an abelian group under vector addition $+$, and the distributive law holds for scalar multiplication $\cdot$ across addition $+$.
 
@@ -240,7 +240,7 @@ DEF: A group is a set $G$ with a function $\cdot \colon G \times G \to G$ such t
 
 DEF: A group homomorphism from the group $(G, \cdot)$ to the group $(H, \circ)$ is a function ... respecting the binary operation on $G$ and $H$, that is, for all $a,b \in G$, we have $\phi(ab) = \phi(a) \circ \phi(b)$.
 
-\newcommand{\KK}{\mathbf{K}}
+\renewcommand{\KK}{\mathbf{K}}
 
 DEF: (Naive) A ring $\KK$ is a set with functions $+ \colon \KK \times \KK \to \KK$ and $\cdot \colon \KK \times \KK \to \KK$ such that ... $\KK$ is an abelian group under addition $+$ (with identity $0$), $\KK \setminus \{0\}$ is an abelian group under multiplication $\cdot$, and both multiplication and addition distribute across each other.
 
@@ -266,13 +266,13 @@ We do our best to state the isomorphism theorems in categorical language.
 
 #### Basic framework for category theory
 
-\newcommand{\sC}{\mathscr{C}}
+\renewcommand{\sC}{\mathscr{C}}
 
 Notes from [@Ja84, chapter 1].
 
 DEF: To define a category, we need  a class of objects, call it $\sC$ (containing capital letters), with two functions satisfying ... (CL1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$, written $X\xrightarrow{f} Y$; (CL2) the other function assigns to each triple $(X,Y,Z)$ of objects of $\sC$ an operation $\hom(Y,Z) \times \hom(X,Y) \to \hom(X,Z)$ called composition.
 
-\newcommand{\id}{\mathrm{id}}
+\renewcommand{\id}{\mathrm{id}}
 
 DEF: To suppose we have a class $\sC$ with a morphism and composition assigning functions. The class $\sC$ is a category if the following conditions hold. ... (CL1) if $X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}W$ are morphisms of $\sC$, then composition of morphisms is associative $(h \circ g) \circ f = h \circ (g \circ f)$; (CT2) for each object $X$ of $\sC$ there's a morphism $\id_{X}\colon X \to X$ such that $\id_X \circ f = f$ and $g\circ \id_X = g$ for each morphism $f$ and $g$ on the appropriate domains.
 
@@ -359,7 +359,7 @@ We can argue that for any partition $\pi$ there's an (natural) equivalence class
 
 #### Modular arithmetic
 
-\newcommand{\NN}{\mathbf{N}}
+\renewcommand{\NN}{\mathbf{N}}
 
 We work from two intuitive examples: the additive group $\ZZ/n\ZZ$ of integers modulo $n \in \NN$ and the multiplicative group of units in $\ZZ/n\ZZ$. We need to define *residue classes* of integers as the elements in each group.
 
@@ -415,7 +415,7 @@ DEF: The order $\langle g \rangle$ of an element $g \in G$ ... is the size of th
 
 DEF: A group $G$ is cyclic iff ... there's a $g \in G$ such that $G = \langle g \rangle$.
 
-\newcommand{\CC}{\mathbf{C}}
+\renewcommand{\CC}{\mathbf{C}}
 
 EX: Suppose $x$ is an nth root of unity in $\CC$. Then $C_n :=$ ... $\{1,x,x^2,\ldots,x^{n-1}\}$ with the usual product in $\CC$. Note $C_n = \langle x \rangle$.
 
@@ -477,8 +477,8 @@ Coming up, group actions!
 
 Reading from [@DF04, chapter 1.6].
 
-\newcommand{\sG}{\mathscr{G}}
-\newcommand{\sP}{\mathscr{P}}
+\renewcommand{\sG}{\mathscr{G}}
+\renewcommand{\sP}{\mathscr{P}}
 
 - We have $G \cong G$ perhaps with many isomorphisms.
 - With $\sG$ any nonempty collection of groups, isomorphism $\cong$ is an equivalence relation on $\sG$.
@@ -514,7 +514,7 @@ DEF: An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \i
 
 (Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
 
-\newcommand{\id}{\mathrm{id}}
+\renewcommand{\id}{\mathrm{id}}
 
 THM: If $G$ acts faithfully on $A$ then $G \cong H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
 
@@ -528,11 +528,11 @@ Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi
 
 EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
 
-\newcommand{\QQ}{\mathbf{Q}}
+\renewcommand{\QQ}{\mathbf{Q}}
 
 EX: Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
 
-\newcommand{\FF}{\mathbf{F}}
+\renewcommand{\FF}{\mathbf{F}}
 
 DEF: ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
 
@@ -567,7 +567,7 @@ ANALOGY: The permutation representation of a group action on a set is like ... t
 
 PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
 
-\newcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
+\renewcommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
 
 DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
 
@@ -612,7 +612,7 @@ If $\phi \colon G \to S_B$ is the corresponding homomorphism, then $\Stab{G}{A} 
 
 Stabilizers are easy to compute; stable elements are somehow easier to find than the images of every element in $A$.
 
-\newcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
+\renewcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
 
@@ -845,7 +845,7 @@ THM: (Orbit Stabilizer) Let $G$ act on $A$ and fix $a \in A$. Then the orbit con
 - Is $\phi$ injective?
     - Run the previous argument in reverse.
 - Is $\phi$ surjective?
-    - How is $\phi$ defined?
+    - Note how $\phi$ is defined.
 
 CORO: Give proof that for $H$ and $K$ subgroups of $G$ we have $$\abs{H : K} = \frac{\abs{H}\abs{K}}{\abs{H \cap K}}.$$ ... By orbit stabilizer, $$\abs{H(1\cdot K)} = \frac{\abs{H}}{\Stab{H}{1\cdot K}}$$ where $\Stab{H}{1\cdot K} = \{h \in H: hK = K\} = H \cap K$.
 
@@ -945,11 +945,27 @@ Let $\phi \colon G/K \to G/H$ such that $gK \mapsto gH$. We'll show $\phi$ is a 
 - By the first isomorphism theorem, $G/H \cong \frac{G/K}{\ker{\phi}}$.
 - Note $\ker{\phi} = \{gK \in G/K : gH = H\} = \{gK \in G/K : g \in H\} = H/K$.
 
-THM! (Fourth, or lattice, isomorphism theorem)
+THM: (Fourth, or lattice, isomorphism theorem) Let $\phi \colon G \to H$ be a surjective homomorphism with $K = \ker \phi$ and let $$\mathrm{sbgp}_K(G) = \{ K \subset L \subset G : L \text{ a subgroup}\}$$ $$\mathrm{sbgp}(H) = \{J\subset H : J \text{ a subgroup}\}.$$ Then ... (LT1) the function $\theta \colon \mathrm{sbgp}(G) \to \mathrm{sbgp}(H)$ defined by $$L \mapsto \phi(L)$$ (where also $J \mapsto \phi^{-1}(J) \le K$) is (obvious,) well defined, and a bijection; (LT2) for $A,B \in \mathrm{sbgp}(G)$, $A \triangleleft B$ iff $\theta(A) \triangleleft \theta(B)$ and if $A \triangleleft B$, then $B/A \cong \theta(A)/\theta(B)$; (LT3) for $A, B \in \mathrm{sbgp}(G)$ we have $\theta(A \cap B) = \theta(A) \cap \theta(B)$ and $\theta(\langle A, B\rangle) = \langle \theta(A), \theta(B) \rangle$. Plausible, no?
 
-- what does the fourth isomorphism theorem say to you?
+```   
+       \phi
+   G --------> H
+   ||         ||
+   ||         ||
+   ||         ||
+   ||         ||
+\ker\phi ---> {1}
 
-TODO
+"groupprops transferring over"
+```
+- From [Richard Green](https://math.colorado.edu/~rmg/): what does the fourth isomorphism theorem say to you?
+- Everyone should prove the fourth isomorphism theorem at least one in their life.
+
+*Proof sketch.*
+
+- check $\theta$ is a bijection
+- check the homomorphisms
+- check that the subgroups contain the kernel
 
 #### Review
 
@@ -961,7 +977,145 @@ Concepts I struggled with:
 
 ### Week 5: simple groups and composition series
 
+#### Simple groups
+
+DEF: A group is simple if $N \triangleleft G$ implies $N \in \{\{1\},G\}$.
+
+- simple as in "atomic building blocks" of group theory
+- if some group $G$ is not simple we have $N$ a normal, nontrivial, proper subgroup of $G$
+    - we then "factor" $G$ into $G/N$ and $N$ 
+
+```
+   G---\
+   ||  |
+   ||  | \cong G/N
+   ||  |
+   N---<
+   ||  |
+   ||  | \cong N
+   ||  |
+   {1}-/
+```
+
+- yet the factorization is not necessarily unique
+    - (therefore it's not nearly as convenient as prime factorization of natural numbers)
+
+EX: An obvious (abelian) finite simple group is ... the cyclic group $C_p$ when $p$ is prime.
+
+EX: An apparent (non-abelian) finite simple group is ... the alternating group $A_n$ where $A_n \triangleleft S_n$ and $n \ge 5$.
+
+From Martin W. Liebeck [@Go08, number V.7]:
+
+DEF: For an integer $n \ge 2$ and a field $K$, the special linear group $\mathrm{SL}_n(K)$ is ... the set of all $n \times n$ matrices with entries in $K$ and with determinant equal to $1$, together with matrix multiplication as a binary operation. (When $K$ is finite, $\mathrm{SL}_n(K)$ is a finite group.)
+
+- For each prime power $q$, there is up to isomorphism a unique field of order $q$, and the corresponding special linear group in dimension $n$ is denoted $\mathrm{SL}_n(\FF_q)$. 
+- These groups are not in general simple, since $Z = \{ \lambda I : \lambda^n = 1\}$, the subgroup of scalar matrices in $\mathrm{SL}_n(\FF_q)$, is a normal subgroup.
+
+EX: The family of projective special linear groups is ... the collection of factor groups $\mathrm{P\mathrm{SL}}_n(\FF_q) = \mathrm{SL}_n(\FF_q)/Z$ where $Z = \{ \lambda I : \lambda^n = 1\}$, which is a family of simple groups expect when $(n,q) = (2,2)$ or $(2,3)$.
+
+- From Chris: Are there any more simple groups as groups modulo the center?
+    - Sure, take any simple group and extend it by something that's simple
+
+#### Composition series
+
+How to construct a composition series in the first place?
+
+> "It's really a filtration of $G$ rather than a decomposition of $G$---a way to fill up $G$ rather than breaking it apart."
+
+*Sketch.*
+
+- start with the whole group as maximal in the subgroup lattice
+- chip off going down the lattice
+    - connections are (anyways already) defined only between groups and their maximal subgroups
+
+*Construction*. Let $G$ be a finite group. Enumerate a sequence of subgroups of $G$ as follows.
+
+- Let $N_0 = G$.
+- Let $N_k$ be maximal in $N_{k-1}$ with the property that $N_k \triangleright N_{k-1}$. Now if $N_k ={1}$ we are done. Else repeat this step for $k+1$.
+
+By maximality and the fourth isomorphism theorem, $N_{k-1} / N_l$ is simple, since:
+
+```
+                   \pi
+        N_{k-1} ---------> N_{k-1}/N_k
+         ||                    ||
+  no     ||                    ||  neither
+normal   ||                    ||  normal
+subgps   ||                    ||  subgps
+ here    ||                    ||   here 
+         ||                    ||
+        N_k ----------------> {1}
+```
+
+DEF: A composition series of a group $G$ is a sequence $(N_0, N_1, N_2, \ldots, N_r)$ of subgroups such that ... (CS1) $G = N_0 \triangleright N_1 \triangleright \ldots \triangleright N_r = \{1\}$ and (CS2) the factor $N_k / N_{k+1}$ is simple for $0 \le k \le r-1$.
+
+Now the construction (which terminates in a finite number of steps) suffices as proof that a composition series exists for all finite groups (observing each maximal subgroup in the construction has order less than the group it's maximal in).
+
+THM: (Jordan-Hölder) Let $G$ be a group with composition series $(N_0, \ldots, N_r)$ and $(M_0, \ldots, M_s)$. Then ... $r =s$ (e.g., every construction of a composition series of $G$ halts in the same number of steps) and there exists $\omega \in S_{\{0,1,\ldots, r\}}$ such that $N_{\omega(k)}/N_{\omega(k+1)} \cong M_k / M_{k+1}$ for all $0 \le k \le r -1$.
+
+#### Solvable groups
+
+DEF: A group $G$ is solvable if there exists a sequence of subgroups $(N_0, N_1, \ldots, N_r)$ such that ... $G = N_0 \triangleright N_1 \triangleright \ldots \triangleright N_r = \{1\}$ and for each $0 \le k \le r-1$ $N_k/ N_{k+1}$ is abelian.
+
+EX: A solvable subgroup in $\mathrm{GL}_n(\FF)$ is ... the group $B$ of upper triangular matrices. (They're finite solvable of "Lie type".)
+
+DEF: The commutator subgroup $[G, G]$ of $G$ is the subgroup ... generated by elements $ghg^{-1}h^{-1}$. Note the first group where $$\{xyx^{-1}y^{-1} : x,y \in G\} \neq \langle xyx^{-1}y^{-1} : x,y \in G \rangle$$ has order $96$.
+
+Eventually we'll see a relation between nontrivial centers and proper commutators, arising from the construction of lower and upper central series.
+
+PROP: The commutator subgroup $N$ is the smallest group of $G$ such that ... $G/N$ is abelian. 
+
+- This should seem reasonable---we're just "dividing out" all the hairy non-commutative bits.
+    - Note conjugation sends the commutator subgroup to itself.
+
+- Solvable groups are somehow orthogonal to simple groups.
+    - The only groups both simple and solvable are $(\ZZ/p\ZZ)$ for prime $p$.
+
+PROP: Let $G$ be a group with $N \triangleleft G$. Then $G$ is solvable iff ... $N$ and $G/N$ are solvable.
+
+*Proof sketch*. TODO (see notes 2018-09-26)
+
+- What's the goal? To find upper and lower central series. Usually we'll want to limit a result to solvable groups then ratchet up. We can readily handle Abelian subgroups en route to a stronger argument.
+- How to show a group is not solvable? Show that a series doesn't proceed from $G$ to $\{1\}$.
+
+#### Symmetric and alternating groups
+
+DEF: A simple transposition in $S_n$ is a ... $2$-cycle of the form $(i, i+1)$ for $1 \le i \le n-1$. We often write $s_i = (i, i+1)$ to abbreviate.
+
+The simple transpositions give a generating set for $S_n$.
+
+*Proof by example.* Suppose $\sigma \in S_n$ and write $\sigma$ in braid notation. We have a poset on the crossings because the strands never turn back up the braid diagram. We can then pull out the simple transpositions by ordering the crossings on each string. Lo and behold, this method gives us the minimal number of transpositions to use.
+
+DEF! (Sign of a permutation) TODO
+
+DEF! (Discriminant) TODO
+
+- What relation to eigenvalues of the action if $D$ is considered to be a subspace in $\FF[x_1, \ldots, x_n]$?
+
+THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation matrices. Then for any $\omega \in S_n$, we have $\det(\omega)$ given by ... $\epsilon(\omega)$.
+
+*Proof sketch*. TODO
+
+- what's the determinant of a simple transposition?
+    - should be analogous to the *discriminant* of a simple transposition
+- generalize to the set of generators of $S_n$
+
+DEF: The alternating group $A_n$ is the subgroup ... $\ker{\epsilon} \triangleleft S_n$, the set of "even permutations", where $\epsilon\colon S_n \to \{-1,1\}$ is the sign function. ($A_n$ is normal for $n \ge 5$.)
+
+- When is the commutator subgroup simple?
+    - TODO describe some relation between commutator subgroups and simple groups
+
+THM: Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G:H} = p$, ... then $H \triangleleft G$.
+
+*Proof sketch*. TODO
+
 #### Review
+
+Coming up:
+
+- Sylow theory (6th week to 10th week)
+- fundamental theorem of abelian groups
+- midterm on 2018-10-05
 
 Concepts I struggled with:
 
@@ -974,3 +1128,28 @@ Concepts I struggled with:
 - specifying *in which group* a subgroup is normal
 
 ### Week 6: conjugacy classes and automorphisms
+
+We had a definition quiz on
+
+- bijection
+- $S_n$
+- cycle
+- $\epsilon$
+
+where we were assumed as known
+
+- set (and related accouterments)
+- function
+- group
+- homomorphism
+- action
+- abelian
+
+#### Conjugacy classes
+
+#### Automorphisms
+
+#### Characteristic subgroups
+
+- the rule of "the"
+- Burnside's lemma
