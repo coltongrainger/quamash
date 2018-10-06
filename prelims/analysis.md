@@ -794,9 +794,21 @@ To summarize concepts I struggled with:
 - associated Lebesgue-Stieltjes measures $\mu_F$ for an increasing, right continuous function $F$
 - "white bread" Lebesgue measures
 - the Cantor set as a counter example
-<!---
 - *timeliness* 
     - e.g., being about two weeks behind in Folland 
     - and therefore being about two weeks behind in comprehension of the lectures
-Not sure if I'm continuing in the course or what. Have to ask about the GPA requirement. Can't lose funding over the Lebesgue measure.
---->
+
+To summarize with perspective from the end of the week. While I may feel as if *I'm in a race* to get through preliminary exams, I don't feel compelled to 
+
+- book myself solid,
+- compete superficially with my peers, or
+- scrape by with the minimal passing requirements.
+
+I *do want to*
+
+- have an "epsilon of room" (pardon the pun) for reading 
+    - e.g., <https://terrytao.wordpress.com/category/teaching/245b-real-analysis>
+- devote lavish attention to the *subject*, math.CA,
+- follow the precedent of older graduate students who've cheerfully completed the required pillar coursework across their first 4 (rather than 2) semesters of study.
+
+So I'm putting a (mental) bookmark in these notes (2018-10-05) with plans return to them next year. Until then!
