@@ -1078,10 +1078,33 @@ PROP: The commutator subgroup $N$ is the smallest group of $G$ such that ... $G/
 
 PROP: Let $G$ be a group with $N \triangleleft G$. Then $G$ is solvable iff ... $N$ and $G/N$ are solvable.
 
-*Proof sketch*. TODO (see notes 2018-09-26)
+*Proof sketch*. ($\Leftarrow$) 
 
-- What's the goal? To find upper and lower central series. Usually we'll want to limit a result to solvable groups then ratchet up. We can readily handle Abelian subgroups en route to a stronger argument.
-- How to show a group is not solvable? Show that a series doesn't proceed from $G$ to $\{1\}$.
+- Suppose that $G/N$ is solvable.
+    - There's a normal series $$G/N = H_0/N \triangleright H_1/N \triangleright \cdots \triangleright H_n/N = \{1\}.$$
+    - Note $( H_i/N )/( H_{i+1}/N)$ is abelian.
+- By the lattice (the fourth) isomorphism theorem, we have the "transferred normal series" $$G = H_0N \triangleright H_1N \triangleright \cdots \triangleright H_nN = N.$$
+    - Note the subquotients are abelian
+        - Why? Take the preimages. They're products.
+        - What's $\{1\}/N$ in the lattice isomorphism theorem?
+        - Cosets are just a right action by $N$ on some subset $$A/N = \{aN : a \in A\}$$
+        - Then the pull back of $A/N$ is $AN$?
+- Suppose also that $N$ is solvable. 
+    - There's a normal series $$N = M_0 \triangleright M_1 \triangleright \cdots \triangleright M_s = \{1\}.$$
+    - Note each subquotient $M_k/M_{k+1}$ is abelian.
+    
+- We conclude $$G = H_0N \triangleright H_1N \triangleright \cdots \triangleright H_nN = N = M_0 \triangleright M_1 \triangleright \cdots \triangleright M_s = \{1\}.$$
+
+
+What's our goal here? 
+
+- To find upper and lower central series. 
+- Usually we'll want to limit a result to solvable groups then ratchet up. 
+- We can readily handle Abelian subgroups en route to a stronger argument.
+
+How to show a group is not solvable? 
+
+- Show a normal with abelian subquotients can't proceed from $G$ to $\{1\}$.
 
 #### Symmetric and alternating groups
 
@@ -1116,12 +1139,6 @@ THM: Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. 
 
 #### Review
 
-Coming up:
-
-- Sylow theory (6th week to 10th week)
-- fundamental theorem of abelian groups
-- midterm on 2018-10-05
-
 Concepts I struggled with:
 
 - still about a week behind in the lecture notes
@@ -1150,7 +1167,46 @@ where we were assumed as known
 - action
 - abelian
 
+Coming up:
+
+- Sylow theory (6th week to 10th week)
+- fundamental theorem of abelian groups
+
 #### Conjugacy classes
+
+Definitions from the book [@DF04, chapter 4.3]:
+
+DEF! Two elements $a$ and $b$ are said to be conjugate in $G$ if ... there is some $g \in G$ such that $b = gag^{-1}$ (i.e., iff they are in the same orbit of $G$ acting on itself by conjugation).
+
+- In linear algebra, "conjugate" elements of a $n\times n$ general linear group are said to be *similar*.
+- Conjugation by $g$ on $G$ induces an isomorphism (*not unrelated to normality*) --- how?
+
+EX! The conjugacy classes of an abelian group $G$ are given ... $\{\{g\} : g \in G\}$ (analogous to "totally disconnected"?)
+
+DEF! The conjugacy classes of $G$ are ... the orbits of $G$ acting on itself by conjugation.
+
+Cycle decomposition shines when we're handling conjugacy.
+
+LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = c_1c_2\cdots c_\ell$ where the $c_i$ are cycles, then $vwv^{-1}$ is given by ... $vc_1v^{-1}vc_2v^{-1}\cdots vc_\ellv^{-1}$.
+
+LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = (i_1, i_2, \ldots, i_\ell)$, then $vwv^{-1}$ is given by ... $vwv^{-1} = (v(i_1), v(i_2), \ldots, v(i_\ell))$.
+
+CORO!  Let $w, v \in S_n$ have cycle decompositions $w =  c_1c_2\cdots c_k$  and $v = d_1 d_2 \cdots d_\ell$. Then $w$ and $v$ are conjugate iff ... $k = \ell$ and there exists $\omega \in S_n$ to reorder coordinates such that $$\mathrm{length}(c_{\omega(j)}) = \mathrm{length}(d_j)$$ for all $1 \le j \le \ell$.
+
+- One can express $S_n$ acting on $\mathrm{GL}_n(\FF_q)$ by permutation matrices. 
+- I hear $\mathrm{GL}_n(\CC)$ has rad matrix similarity.
+- TODO: translate the above corollary for matrix representations.
+
+DEF! An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, \ldots, \lambda_\ell)$ such that ... (IP1) $\lambda_1 \ge \lambda_2 \ge \ldots \ge \lambda_\ell > 0$ and (IP2) $n = \lambda_1 + \lambda_2 + \ldots + \lambda_\ell$.
+
+DEF! The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
+
+THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G \ Z(G)$ be representatives for the conjugacy classes not in the center. Then, by orbit stabilizer, the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
+
+*Proof sketch.* TODO
+
+- Now the number of elements in the center of $G$ is the number of singleton conjugacy classes.
+
 
 #### Automorphisms
 
@@ -1158,3 +1214,5 @@ where we were assumed as known
 
 - the rule of "the"
 - Burnside's lemma
+
+### Week 7:
