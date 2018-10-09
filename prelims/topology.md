@@ -109,9 +109,29 @@ date: 2018-08-27
 
 ## Fall semester notes
 
+\newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\RR}{\mathbf{R}}
+\newcommand{\sB}{\mathscr{B}}
+\newcommand{\sC}{\mathscr{C}}
+\newcommand{\sT}{\mathscr{T}}
+
 ### Week 1
 
-Course with Carla Farsi. We'll cover Munkres [@Mu00], excluding
+Course with [Carla Farsi](https://math.colorado.edu/~farsi/). 
+
+assessment | weight
+--- | ---
+presentations | 10%
+homeworks | 20%
+midterm 1 | 20%
+midterm 2 | 20%
+final exam | 30%
+
+The course's first part will cover point-set topology up to the definitions of connected, respectively compact, spaces (which, fortunately, mirrors Rosoff's notes [@Ro16]). 
+
+After passing through canonical definitions, counter examples, etc. in point-set, the second part  will introduce algebraic topology, namely, the correspondence between covering spaces and fundamental groups.
+
+We'll cover Munkres [@Mu00], *excluding*
 
 - the Tychonoff theorem
     - Stone-Čech compactification
@@ -127,19 +147,17 @@ Course with Carla Farsi. We'll cover Munkres [@Mu00], excluding
     - covering spaces of a graph
     - subgroups of free groups
 
-The course's first part will address point-set topology up to the definitions of connected, respectively compact, spaces (which, fortunately, mirrors Rosoff's notes [@Ro16]).
+#### Axioms
 
-### Week 2
+We defined a topological structure on a set and the corresponding topological space.
 
-#### Local to global principles
-
-From [@Su75, chapter 3.1] and [@Ru87], an introduction.
-
-\newcommand{\sT}{\mathscr{T}}
+An introduction from [@Su75, chapter 3.1] and [@Ru87].
 
 DEF: (Sutherland) A topological space is a nonempty set $A$ together with ... a fixed collection $\sT$ of subsets of $A$  satisfying (T1) $A, \emptyset \in A$; (T2) the intersection of any two sets in $\sT$ is again in $\sT$; (T3) the union of an arbitrary collection of sets in $\sT$ is again in $\sT$.
 
-We keep in mind the following abstract analogy between topological spaces and [measurable spaces](/prelims/algebra).
+DEF: (Rudin) A collection of subset of $X$ is said to be a topology in $X$ if $\sT$ has the following properties ... (i) $\emptyset \in \sT$ and $X \in \sT$; (ii) if $V_i \in \sT$ for $i = 1, \ldots, n$, then $V_1 \cap \ldots \cap V_n \in \sT$; (iii) if $\{V_\alpha\}$ is an arbitrary collection of members of $\sT$, then $\cup_\alpha V_\alpha \in \sT$.
+
+We can draw an abstract analogy between topological spaces and [measurable spaces](/prelims/algebra).
 
 topological spaces | measurable spaces
 --- | ---
@@ -147,39 +165,55 @@ topology | $\sigma$-algebra
 open set | measurable set
 continuous function | measurable function
 
-DEF: (Rudin) A collection of subset of $X$ is said to be a topology in $X$ if $\sT$ has the following properties ... (i) $\emptyset \in \sT$ and $X \in \sT$; (ii) if $V_i \in \sT$ for $i = 1, \ldots, n$, then $V_1 \cap \ldots \cap V_n \in \sT$; (iii) if $\{V_\alpha\}$ is an arbitrary collection of members of $\sT$, then $\cup_\alpha V_\alpha \in \sT$.
-
 DEF: If $\sT$ is a topology on $X$, then $X$ is called a topological space, and the members of $\sT$ are called the open sets in $X$.
 
 DEF: (Rudin) If $X$ and $Y$ are topological spaces and if $f$ is a mapping of $X$ into $Y$, then $f$ is said to be continuous provided that ... $f^{-1}(V)$ is an open set in $X$ for every open set $V$ in $Y$.
 
-Our goal is to generalize continuity, moving from the notion of *distance as a measurement* to that of *closeness as inclusion* in sufficiently many open sets. In the transition, one might ask of functions:
+To laundry list some exemplar topological structures
 
-- Does the image of any sequence converge to the "correct" functional limit?
-- Do I have a local neighborhood system?
-- Can I show $f$ is continuous at a point $a$? At all points in the domain?
-- Are inverse images of open sets open in the domain?
+#### Little examples
+
+- a discrete space $(X, 2^X)$
+- an indiscrete space $X$ with open sets $X$ and $\emptyset$
+- the arrow, $X = [0, \infty)$ with open sets of the form $(a, \infty)$ for $a \ge 0$.
+- a cofinite topology
+    - the real line with $T_1$ topology, where the open sets are $\RR$, $\emptyset$, and sets with finite complements
+    - the complex plane with the cofinite topology
+- a cocountable topology
+    - the real line with open sets having countable complements
+- the poset $\{a,b,c,d\}$ with open sets $\emptyset, X, \{a\}, \{b\}, \{a,c\},\{a,b,c\},\{a,b\}$
+- the connected pair of points
+- the Sierpiŉski topology, $\{\emptyset, \{0\},\{0,1\}\}$ on $X = \{0,1\}$
+- a particular point topology $Y= X \cup \{a\}$, whose definition requires some finite topological space $(X, \Omega)$, with the topological structure $$\{\{a\} \cup U: U \in \Omega\}\cup \{\emptyset\}.$$
+- the arithmetic progressions of positive integers form a base for some topology on $\NN$ (and $\ZZ$)
+    - whence a slick proof of the infinitude of prime numbers
+- the empty space as "the empty set endowed with the only possible topology on it"
+    - the *initial object* in the category of topological spaces
+
+The following example we'll have to revisit. Its open sets are defined *synthetically* (and we haven't yet the notion of a basis or subbasis for a topological structure).
+
+- the standard topology on the real line, with topological structure as an *linear continuum*
+    - $\RR$ having the least upper bound property
+    - for $x < y$ in $\RR$, there's a $z \in \RR$ such that $x<z<y$
+
+Now, Vipul Naik has a category of [particular topological spaces](https://topospaces.subwiki.org/wiki/Category:Particular_topological_spaces) on the Topospaces wiki, but to describe their open sets, we'll need, e.g., Emily Reihl's [On the construction of new topological spaces from existing ones](http://math.jhu.edu/~eriehl/topologies.pdf).
+
+Ordered by set theoretic containment, we compare topological structures (*on the same set!*) as finer or coarser, where a discrete topology is the finest and an indiscrete topology the coarsest.
+
+#### Motivation
+
+##### Topological structures qua sets
 
 From [@Gow08, number III.90]: The concept of a straight up topological structure might be a bit too general. We'll often require our topological space to be *Hausdorff*, and we'll usually work with basis sets rather than open sets.
 
 DEF! The topological space $X$ is said to be Hausdorff iff ... for any two points $x_1$ and $x_2$ in $X$ there are disjoint open sets $U_1$ and $U_2$ such that $U_1 \ni x_1$ and $U_2 \ni x_2$.
 
-\newcommand{\sB}{\mathscr{B}}
-
 DEF! A basis $\sB$ for a topological space $(X, \sT)$ is a subcollection of $\sT$ such that ... every open set is a union of open sets in $\sB$.
-
-To list non-trivial examples of topological structures.
-
-- the discrete topology
-- the euclidean $\RR^n$
-- the subspace topology
-- the [Zariski topology](https://en.wikipedia.org/wiki/Zariski_topology)
-    - What is Hilbert's basis theorem?
 
 What properties do we study of topological structures alone?
 
-\newcommand{\QQ}{\mathbf{Q}}
-
+- separability
+- countability
 - connectedness
     - Are the points in $\RR^2$ with exactly one rational coordinate connected?
     - That is, is the space $((\QQ \times \RR) \cup (\RR \times \QQ)) \setminus (\QQ \times \QQ)$ connected or not?
@@ -190,21 +224,26 @@ DEF! We say that a space $X$ is connected if ... there is no decomposition $X = 
 
 Note, in $\RR$, open sets may be written as countable unions of open intervals.
 
-\newcommand{\sC}{\mathscr{C}}
+DEF! We say that a space $X$ is compact if ... given any collection $\sC$ of open sets that cover $X$ (i.e., whose union is $X$) we may find a finite subcollection $\{U_1, \ldots, U_k\} \subset \sC$ that still covers $X$.
 
-DEF! We say that a space $X$ is compact if .. given any collection $\sC$ of open sets that cover $X$ (i.e., whose union is $X$) we may find a finite subcollection $\{U_1, \ldots, U_k\} \subset \sC$ that still covers $X$.
+##### Functions
 
-#### Compactness and Compactification
+In some sense, we care deeply about set theory only insofar that *functions between sets* are well defined and mathematically interesting. In topology our goal is to generalize continuity. We aim to abstract notions of distance and measurement in favor of a notion of inclusion in sufficiently many open sets.
 
-Notes from [@Go08, number III.9]: Each of the following is true when $X$ is finite and false otherwise.
+##### Local to global principles
+
+Now the structure of domain and codomain constrains the families of functions that are well defined between them.
+
+- for coarse topologies, we're interested in functions taking values in the codomain [@Re15]
+- for fine topologies, we want to know which functions can be defined out of the domain
+
+From [@Go08, number III.9] on compactness: Each of the following is true when $X$ is finite and false otherwise.
 
 - all functions defined on $X$ are bounded
 - all functions defined on $X$ attain a maximum
 - all sequences in $X$ have convergent subsequences
 
-We want to proceed from local principles towards global properties (and vice versa). For example, suppose a function's values are bounded at each point separately. In what cases can one argue that because $f$ is bounded pointwise, there's a single, global bound, $M$ such that $M \le \abs{f(x)}$ for all $x \in X$?
-
-What should our domain be?
+How can we proceed from local principles towards global properties (and vice versa)? For example, suppose a function's values are bounded at each point separately. In what cases can one argue that because $f$ is bounded pointwise, there's a single, global bound, $M$ such that $M \le \abs{f(x)}$ for all $x \in X$? What should our domain be?
 
 - a set
 - a topological space
@@ -217,4 +256,4 @@ EX! In the category of topological and metric spaces these "almost finite" objec
 
 Likewise, in the category of groups we have the notion of a pro-finite group, and in the category of normed spaces with linear operators there's a notion of a compact operator which is of "almost finite rank".
 
-\newcommand{\sB}{\mathscr{B}}
+### Week 2
