@@ -4,7 +4,8 @@ author: Colton Grainger
 date: 2018-10-09
 ---
 
- Scans of some handwritten notes.
+ Unfinished! Handwritten!
+
 - [2018-10-09.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-09.pdf) (3.0M)
 - [2018-10-07.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-07.pdf) (1.6M)
 - [2018-10-06.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-06.pdf) (1.5M)
