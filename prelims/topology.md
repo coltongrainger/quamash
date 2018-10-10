@@ -110,6 +110,8 @@ date: 2018-08-27
 ## Fall semester notes
 
 \newcommand{\QQ}{\mathbf{Q}}
+\newcommand{\NN}{\mathbf{N}}
+\newcommand{\ZZ}{\mathbf{Z}}
 \newcommand{\RR}{\mathbf{R}}
 \newcommand{\sB}{\mathscr{B}}
 \newcommand{\sC}{\mathscr{C}}
@@ -149,7 +151,7 @@ We'll cover Munkres [@Mu00], *excluding*
 
 #### Axioms
 
-We defined a topological structure on a set and the corresponding topological space.
+We defined a topological structure on a set and the corresponding topological space. 
 
 An introduction from [@Su75, chapter 3.1] and [@Ru87].
 
@@ -169,9 +171,9 @@ DEF: If $\sT$ is a topology on $X$, then $X$ is called a topological space, and 
 
 DEF: (Rudin) If $X$ and $Y$ are topological spaces and if $f$ is a mapping of $X$ into $Y$, then $f$ is said to be continuous provided that ... $f^{-1}(V)$ is an open set in $X$ for every open set $V$ in $Y$.
 
-To laundry list some exemplar topological structures
-
 #### Little examples
+
+To laundry list some exemplar topological structures
 
 - a discrete space $(X, 2^X)$
 - an indiscrete space $X$ with open sets $X$ and $\emptyset$
@@ -228,13 +230,13 @@ DEF! We say that a space $X$ is compact if ... given any collection $\sC$ of ope
 
 ##### Functions
 
-In some sense, we care deeply about set theory only insofar that *functions between sets* are well defined and mathematically interesting. In topology our goal is to generalize continuity. We aim to abstract notions of distance and measurement in favor of a notion of inclusion in sufficiently many open sets.
+In a naive sense, we care deeply about set theory only insofar that *functions between sets* are well defined and (mathematically) interesting. At least one driving motivation in the historical development of the subject was to generalize continuity, that is, to abstract an analytic notion of distance in favor of a set theoretic notion of inclusion in sufficiently many neighborhoods of a point.
 
 ##### Local to global principles
 
 Now the structure of domain and codomain constrains the families of functions that are well defined between them.
 
-- for coarse topologies, we're interested in functions taking values in the codomain [@Re15]
+- for coarse topologies, we're interested in functions taking values in the codomain [@Ri15]
 - for fine topologies, we want to know which functions can be defined out of the domain
 
 From [@Go08, number III.9] on compactness: Each of the following is true when $X$ is finite and false otherwise.
@@ -256,4 +258,82 @@ EX! In the category of topological and metric spaces these "almost finite" objec
 
 Likewise, in the category of groups we have the notion of a pro-finite group, and in the category of normed spaces with linear operators there's a notion of a compact operator which is of "almost finite rank".
 
+#### Bases for topological structures
+
+Associated to each topology $\sT$, we have a family of collections of sets $\{\Sigma\}$ called *bases for the topology*. In the wild, we may encounter a base $\Sigma$ either before ("synthetically") or after ("analytically") seeing the topology. 
+
+That is, we can both
+
+- *find* $\Sigma$ such that every open set in a given topological structure $\sT$ can be written as a union of elements in $\Sigma$, which is equivalent to requiring that if $U$ is an open set in $\sT$ and $x \in U$, there exists a basis element $B \in \Sigma$ such that $x \in B \subset U$, or
+- *generate* a topological structure $\sT$ on $X$ from $\Sigma$, where the union of elements in $\Sigma$ is $X$ and the intersection of any two sets in $\Sigma$ is the union of some sets in $\Sigma$; in this case the open sets in $\sT$ are *defined* as unions of sets in $\Sigma$.
+
+To borrow a definition and proposition (base vs basis---why?) from Sutherland, [@Su75, chapter 3]:
+
+DEF! (Synthetic basis criteria) Given a set $A$, a collection $\sB$ of subsets of $A$ is a basis for $A$ if ... (B1) $A$ is a union of sets from $\sB$, (B2) if  $B_1, B_2 \in \sB$, then the intersection of $B_1 \cap B_2$ is a union of sets from $\sB$.
+
+In the synthetic case, to specify a topology on a set, we may say "Let $\sT$ be a topology with the sets ... as a basis." In this case, the named sets should satisfy (B1) and (B2).
+
+PROP! Suppose that $\sB$ is a basis for a nonempty set $A$, and let $\sT$ be given by ... $\{U \in 2^A : U \text{ is a union of sets from } \sB\}$. Then $\sT$ is a topology for $A$.
+
+In the analytic case, when we "find a base" for a topological structure $\sT$, we say that $\sT$ *admits* a basis.
+
+DEF! A topological space that admits a countable basis is called ... second countable.
+
+Now $\RR^n$ is a metric space (with a family of equivalent $\ell_p$ metrics). To specify a topological structure on $\RR^n$, let the open sets be those sets $E$ such that for all $x \in E$, there's an open ball $B_\epsilon(x)$ of some radius $\epsilon >0$ around $x$ such that $x \in B_\epsilon(x) \subset E$. Note that with rational balls $\RR^n$ is second countable.
+
+Base elements should be easier to handle than open sets qua elements of the topology. We'll cite two examples, the first due to the of connective properties of $\RR$, and the second fora 
+EX! Every nonempty open set in $\RR$ can be written as a ... countable union of open intervals.
+
 ### Week 2
+
+#### Continuous functions
+
+Morphisms we care about, from [@Su75, chapter 3.1]:
+
+DEF! Given any two topological spaces $X$ and $Y$, we say a function $f\colon X \to Y$ is continuous if ... for every $Y$-open $U$, $f^{-1}(U)$ is $X$-open too.
+
+DEF! A function $f \colon X \to Y$ between topological spaces $X$ and $Y$, is strongly continuous if ... $U$ is $Y$-open iff $f^{-1}(U)$ is $X$-open.
+
+DEF! A function $f\colon X \to Y$ is continuous at a point $a \in X$ if ... given any neighborhood $U$ of $f(a)$ there exists a neighborhood $V$ of $a$ such that $f(V) \subset U$.
+
+\newcommand{\Int}[1]{\left(#1\right)^\circ}
+\newcommand{\Cl}[1]{\overline{#1}}
+
+With interiors, closures, and a local definition of continuity, we can cycle through the following characterizations of continuity. 
+
+Suppose that $X$ and $Y$ are topological spaces. Consider a function $f \colon X \to Y$. The following are equivalent.
+
+(a) $f$ is continuous.
+(b) $f^{-1}(\Int{B}) \subset \Int{f^{-1}(B)}$ for all sets $B\subset Y$ in the codomain.
+(c) $\Cl{f^{-1}(B)} \subset f^{-1}\left(\Cl{B}\right)$ for all sets $B \subset Y$ in the codomain.
+(d) $f\left(\Cl{A}\right) \subset \Cl{f(A)}$ for all sets $A\subset X$ in the domain.
+(e) $f$ is continuous at the point $x$ for all $x \in X$ in the domain.
+
+For a function between metric spaces, the $\epsilon$-$\delta$ definition usually studied in Calculus is also equivalent to those criteria above.
+
+Lastly, since the inverse image is a set map that respects unions and intersections, to check that $f \colon X \to Y$ is continous, it's enough to show that, for each set $B$ is some basis $\sB$ for the topology of $Y$, the inverse image $f^{-1}(B)$ is open in $X$.
+
+> For suppose that this has been proven. Then for any open set $U$ in $Y$, we write $U = \cup B_i$ for basis elements $B_i$ in $\sB$. Thence $f^{-1}(U) = f^{-1}\left(\cup B_i\right) = \cup f^{-1}(B_i)$. [@Su75, chapter 3.2]
+
+#### New spaces from old: products
+
+There are three reasonable topologies with which to endow a product of topological spaces
+
+- a box topology, 
+- a uniform topology,
+- a product topology,
+
+but only one of the above has the desirable universal property. From [@Ri15, page 8]:
+
+DEF! (Coarsest topology for the product) Given spaces $X_\alpha$, the product topology on $\prod_\alpha X_\alpha$ is the coarsest topology so that ... the canonical projections $\prod_\alpha X_\alpha \to X_\alpha$ are continuous.A
+
+ALTDEF! (Product topology) Given spaces $X_\alpha$ the product topology on $\prod_\alpha X_\alpha$ has open sets: ... $\prod_\alpha U_\alpha$ where $U_\alpha \subset X_\alpha$ is open and $U_\alpha = X_\alpha$ for all but finitely many indices $\alpha$.
+
+THM! (Universal property of the product topology) Let $Z$ be a topological space, let $X_\alpha$ be a collection of spaces, and give $\prod_\alpha X_\alpha$ the product topology. Then a function $f \colon Z \to \prod_\alpha X_\alpha$ is continuous if and only if ... each coordinate function $f_\alpha \colon Z \to X_\alpha$ is continuous.
+
+The box topology is defined by amending "all but finitely many indices $\alpha$" to "maybe" in the definition of the product topology. When $A$ is finite, the box and product topology coincide. Otherwise, when $A$ is infinite, the box topology is strictly finer than the product topology. Hence for the box topology, the universal property "degrades" into a single sided implication. 
+
+> Consider $\RR^\omega$ with the box topology, the function $t \mapsto (t,t,t,\ldots):\RR \to \RR^\omega$ is not continuous even though its coordinate functions are. [@Ri15, p. 9]
+
+As a warning against naive interpretation, note that the product topology is *not* necessarily hyperconnected (as a cofinite topology on an infinite set must be). That is, two open sets in these topologies intersect when they intersect in *all coordinates*, not just a handful.
+
