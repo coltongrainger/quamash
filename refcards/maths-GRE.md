@@ -12,6 +12,8 @@ revised: 2018-07-19
 
 These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the accompanying [tab separated text file](/2016-10-27-maths-GRE-flashcards.txt) for importing into spaced repetition software, e.g., mnemosyne.)
 
+Disclaimer: there are *many typos*.
+
 To take motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*:
 
 > "As with any other ‘sport,’ basketball players need to stay in shape through regular ‘practice meets’," explains Gary Richardson, a "coach" of one of the camp’s teams. "You don’t want your bicep neurons to go weak."

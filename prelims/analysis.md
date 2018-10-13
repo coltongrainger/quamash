@@ -102,7 +102,7 @@ date: 2018-08-27
 
 ### Week 1: preliminaries
 
-The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/pro19ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
+The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/fy19ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
 
 We'll be evaluated on:
 

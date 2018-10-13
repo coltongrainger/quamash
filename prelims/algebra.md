@@ -202,7 +202,7 @@ Course with Nat Thiem. Still haven't hammered out the bibliography. Maybe:
 - R. Vakil 
 - E. Riehl
 
-I created a repo for sage projects and assignments at <http://github.com/coltongrainger/pro19alg1>.
+I created a repo for sage projects and assignments at <http://github.com/coltongrainger/fy19alg1>.
 
 #### What to expect?
 
@@ -757,7 +757,7 @@ would be coming up in the next 3 weeks.
 
 Ian, Erik, Hunter, and I tried to show that two presentations of a group are isomorphic if we bijectively identify the "correct elements" in each presentation, and show that certain relations in each presentation are satisfied. I felt hand-wavy to talk about an isomorphism of words via letters without having grounded the argument in the *set of reduced words* see [@Hu80, chapter 1.9]. 
 
-I started a [review group](https://github.com/coltongrainger/pro19alg1/blob/master/midterm01-review.md)!
+I started a [review group](https://github.com/coltongrainger/fy19alg1/blob/master/midterm01-review.md)!
 
 #### Bruhat decomposition
 
@@ -1215,4 +1215,4 @@ THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G \ Z(G)$ be representat
 - the rule of "the"
 - Burnside's lemma
 
-### Week 7:
+### Week 7: Sylow theory
