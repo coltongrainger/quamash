@@ -529,37 +529,15 @@ We have Cayley's theorem, philosophically pleasing, yet useless.
 
 THM: (Cayley's theorem) If $G$ is a group and $\abs{G} = n$ then ... $G \cong H \leq S_n$. That is, every finite group of order $n$ is isomorphic to a subgroup of the group of symmetries on $n$ elements.
 
-To sketch the proof. $G$ acts on $G$ by $G \times G \to G$ where $(g,h) \mapsto g(h) = gh$. The action is faithful ("hyperfaithful") because $gh = h$ implies $g=1$.
+*Proof sketch*. 
 
-Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi\colon G \to S_G$, which we've shown is injective. Now $\phi(G) \subset S_G \cong S_n$, from whence we conclude the desired subgroup $\phi(G) \cong (?) \subset S_n$ exists.
+- $G$ acts on $G$ by $G \times G \to G$ where $(g,h) \mapsto g(h) = gh$. 
+- The action is faithful ("hyperfaithful") because $gh = h$ implies $g=1$.
+- Thus $G\cong \phi(G)$ where $\phi$ is the action's associated homomorphism $\phi\colon G \to S_G$, which we've shown is injective. 
+- Now $\phi(G) \subset S_G \cong S_n$, from whence we conclude the desired subgroup exists.
 
 EX: $D_{2n} \subset S_{D_{2n}} \cong S_{2n}$. However, $D_{2n}$ already acts faithfully on $\{1,\ldots,n\}$, so $D_{2n} \subset S_n$.
 
-\providecommand{\QQ}{\mathbf{Q}}
-
-EX: Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
-
-\providecommand{\FF}{\mathbf{F}}
-
-DEF: ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
-
-DEF: An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \mapsto u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
-
-EX: (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\vdots \\v_{\sigma(1)}\end{pmatrix}$$
-
-TODO: What's $\FF^n$?
-
-EX: (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv \quad (\text{matrix multiplication}).$$
-
-#### Representations
-
-PROP: The vector space $V$ is a $G$-module if and only if ... there exists a homomorphism $G \to GL(V) = \{ \text{invertible linear transf. of $V$}\} \subset S_V$. 
-
-To specify the homomorphism from $GL(V)$ to $S_V$ we need to choose both a *basis set* and an *order of the coordinates*. This leads to representation theory.
-
-- How to represent a group as a set of matrices?
-- What are the possible dimensions of such a matrical representation?
-- What eigenvalues arise? What traces? u.s.w.
 
 To dispell any mystery surrounding considering permutations as group elements, we have (emphasis added) <https://en.wikipedia.org/wiki/Group_action>:
 
@@ -577,6 +555,32 @@ PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined b
 \providecommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
 
 DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
+
+#### Preview of representation theory
+
+\providecommand{\QQ}{\mathbf{Q}}
+
+EX: Some fields to think about ... $\RR$, $\CC$, $\QQ$, $(\ZZ/p\ZZ)^\times$, $\{\text{units in }(\ZZ/n\ZZ)^\times\}$. Note that $\ZZ$ is not a field.
+
+\providecommand{\FF}{\mathbf{F}}
+
+DEF: ($\FF$-module) A vector space $V$ over a field $\FF$ is a set with functions $+ \colon V \times V \to V$ and $\cdot \colon \FF \times V \to V$ such that ... (V1) $V$ is an abelian group under vector addition $+$; (V2) $\cdot \colon \FF \times V \to V$ gives an action of $\FF^{\times}$ on $V$; (V3) the distributive law holds for scalar multiplication $\cdot$ across addition $+$ and vice versa, i.e., for $r,s \in \FF$ and $u,v \in V$ we have $(r + s)(u + v) = ru + rv + su + sv$.
+
+DEF: An action of a group $G$ on an $\FF$-module $V$ is a function $G\times V \to V$ that maps $(g,v) \mapsto u$ such that ... (M1) $G\times V \to V$ is a group action of $G$ on a set $V$ and (M2) for $g \in G$, $a,b \in F$ and $v,u \in V$ we have $$g(au + bv) = ag(u) + bg(v).$$
+
+EX: (Permuting coordinates) For $\FF^n$ define the action $S_n \times \FF^n \to \FF^n$ by ... $$(\sigma, v) \mapsto \begin{pmatrix} v_{\sigma(1)}\\v_{\sigma(2)}\\\vdots \\v_{\sigma(1)}\end{pmatrix}$$
+
+TODO: What's $\FF^n$?
+
+EX: (General linear action) With $GL_n(\FF)$ the group of invertible $n \times n$ matrices, define the action $GL_n(\FF) \times \FF^n \to \FF^n$ by ... $$(g, v) \mapsto gv \quad (\text{matrix multiplication}).$$
+
+PROP: The vector space $V$ is a $G$-module if and only if ... there exists a homomorphism $G \to GL(V) = \{ \text{invertible linear transf. of $V$}\} \subset S_V$. 
+
+To specify the homomorphism from $GL(V)$ to $S_V$ we need to choose both a *basis set* and an *order of the coordinates*. This leads to representation theory.
+
+- How to represent a group as a set of matrices?
+- What are the possible dimensions of such a matrical representation?
+- What eigenvalues arise? What traces? u.s.w.
 
 #### Review
 
@@ -891,9 +895,6 @@ DEF: The orbits of an element $\sigma$ in $S_n$ will refer to ... the orbits of 
 - How is the orbit stabilizer theorem fundamental (uniquely) to group theory? 
 - Why don't we have a similar result in topology for quotient spaces?
 
-THM! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then ... $H \triangleleft G$.
-
-*Proof sketch*. TODO (see notes 2018-09-28)
 
 #### Isomorphism theorems
 
@@ -961,6 +962,33 @@ Let $\phi \colon G/K \to G/H$ such that $gK \mapsto gH$. We'll show $\phi$ is a 
 - That $\phi$ is surjective follows from $gH$ being a union of $gK$ cosets in $G/K$.
 - By the first isomorphism theorem, $G/H \cong \frac{G/K}{\ker{\phi}}$.
 - Note $\ker{\phi} = \{gK \in G/K : gH = H\} = \{gK \in G/K : g \in H\} = H/K$.
+
+Here's one particular application of the third isomorphism theorem, which relies on Cayley's theorem [@DF04, chapter 4.2].
+
+PROP! If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividing $\abs{G}$, then any subgroup of index $p$ is normal.
+
+*Proof sketch*. 
+
+- Suppose $H \le G$ and $\abs{G : H} = p$. 
+- Let $\pi_H$ be the permutation representation $\pi \colon G \to S_G$ afforded by left multiplication of the cosets of $H$ in $G$, let $K = \ker \pi_H$, and let $\abs{H:K} = k$.
+- Now $\abs{G:K} = \abs{G:H}\abs{H:K} = pk$. Since $H$ has $p$ left cosets, $G/K$ is isomorphic to a subgroup of $S_p$ be the first isomorphism theorem. 
+- By Lagrange's theorem, $pk = \abs{G/K}$ divides $p = \abs{G/H}$.
+- Thus $k$ divides $(p-1)!$
+- But all the prime divisors of $k$ are at least as large as $p$.
+- With $p$ chosen minimally, we're forced to accept $k = 1$, so $K = H$, and therefore $H \triangleleft G$.
+
+<!---
+PROP! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then ... $H \triangleleft G$.
+
+*Proof sketch*. (Thiem) I didn't really feel this was clear in lecture, so I'm opting to use Dummit and Foote's version.
+
+- Let $G$ act on the cosets $G/N$ by left multiplication. 
+- Consider the homomorphism $\phi \colon G \to S_{G/H}$ 
+    - where $\phi$ is given by $g \mapsto L_g \colon G/H \to G/H$ 
+    - where $\L_g$ is given by $aH \mapsto gaH$.
+- What's the kernel of $\phi$? 
+  - (We don't have a strong enough hypothesis to show $\ker \phi \subset H$.)
+--->
 
 THM: (Fourth, or lattice, isomorphism theorem) Let $\phi \colon G \to H$ be a surjective homomorphism with $K = \ker \phi$ and let $$\mathrm{sbgp}_K(G) = \{ K \subset L \subset G : L \text{ a subgroup}\}$$ $$\mathrm{sbgp}(H) = \{J\subset H : J \text{ a subgroup}\}.$$ Then ... (LT1) the function $\theta \colon \mathrm{sbgp}(G) \to \mathrm{sbgp}(H)$ defined by $$L \mapsto \phi(L)$$ (where also $J \mapsto \phi^{-1}(J) \le K$) is (obvious,) well defined, and a bijection; (LT2) for $A,B \in \mathrm{sbgp}(G)$, $A \triangleleft B$ iff $\theta(A) \triangleleft \theta(B)$ and if $A \triangleleft B$, then $B/A \cong \theta(A)/\theta(B)$; (LT3) for $A, B \in \mathrm{sbgp}(G)$ we have $\theta(A \cap B) = \theta(A) \cap \theta(B)$ and $\theta(\langle A, B\rangle) = \langle \theta(A), \theta(B) \rangle$. Plausible, no?
 
@@ -1093,6 +1121,7 @@ DEF: The commutator subgroup $[G, G]$ of $G$ is the subgroup ... generated by el
 
 - We want some relation between commutator subgroups and simple groups.
 - When is the commutator subgroup simple? TODO
+
 - Eventually we'll see a relation between nontrivial centers and proper commutators, arising from the construction of lower and upper central series.
 
 PROP: The commutator subgroup $N$ is the smallest group of $G$ such that ... $G/N$ is abelian. 
@@ -1150,7 +1179,7 @@ DEF! (Sign of a permutation) TODO
 
 DEF! (Discriminant) TODO
 
-- Open question: the discriminant $\Delta$ under the group action of $S_n$ on the indices of the polynomial has *what* relation to eigenvalues if $\Delta$ $ is considered to be a subspace inm $\FF[x_1, \ldots, x_n]$?
+- Open question: the discriminant $\Delta$ under the group action of $S_n$ on the indices of the polynomial has *what* relation to eigenvalues if $\Delta$ is considered to be a subspace inm $\FF[x_1, \ldots, x_n]$?
 
 THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation matrices. Then for any $\omega \in S_n$, we have $\det(\omega)$ given by ... $\epsilon(\omega)$.
 
@@ -1360,7 +1389,9 @@ We had a definition quiz on
 
 #### Main results
 
-TODO see notes 2018-10-09
+TODO see notes 
+    - 2018-10-08 
+    - 2018-10-10
 
 - we split the sylow theorem into three memorable parts
     - existence
@@ -1371,13 +1402,13 @@ TODO see notes 2018-10-09
 
 #### $A_n$ is simple for $n \ge 5$
 
-TODO list the conjugacy classes of $A_n$.
-
 THM! For $n \ge 5$, notably $A_n$ is ... simple.
 
 *Proof by induction*.
 
 Any normal subgroup of $A_n$ is closed under conjugation, so $A_n$ must be the union of conjugate classes.
+
+TODO see notes 2018-10-12
 
 #### Apocrypha
 
