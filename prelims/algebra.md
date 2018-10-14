@@ -883,9 +883,9 @@ DEF: The orbits of an element $\sigma$ in $S_n$ will refer to ... the orbits of 
 - How is the orbit stabilizer theorem fundamental (uniquely) to group theory? 
 - Why don't we have a similar result in topology for quotient spaces?
 
-THM! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then $H \triangleleft G$.
+THM! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then ... $H \triangleleft G$.
 
-*Proof sketch*. TODO (see notes [2018-09-28.pdf]())
+*Proof sketch*. TODO (see notes 2018-09-28)
 
 #### Isomorphism theorems
 
@@ -1146,12 +1146,9 @@ THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation 
 
 DEF: The alternating group $A_n$ is the subgroup ... $\ker{\epsilon} \triangleleft S_n$, the set of "even permutations", where $\epsilon\colon S_n \to \{-1,1\}$ is the sign function. ($A_n$ is normal for $n \ge 5$.)
 
-- When is the commutator subgroup simple?
-    - TODO describe some relation between commutator subgroups and simple groups
+- When is the commutator subgroup simple? TODO
+    - we want some relation between commutator subgroups and simple groups
 
-THM: Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G:H} = p$, ... then $H \triangleleft G$.
-
-*Proof sketch*. TODO
 
 #### Review
 
@@ -1170,10 +1167,15 @@ Concepts I struggled with:
 We had a definition quiz on
 
 - bijection
+    - one really should just bite the bullet 
+    - define injectivity and surjectivity
 - $S_n$
+    - requires "binary operation"
 - cycle
+    - naive attempt: "a cycle is an element of $S_n$ that cannot be factored into disjoint simple transpositions distinct form itself"
 - $\epsilon$
-
+    - the sign of a permutation
+    - requires "matrix representation" or "discriminant"
 where we were assumed as known
 
 - set (and related accouterments)
@@ -1203,7 +1205,7 @@ DEF! The conjugacy classes of $G$ are ... the orbits of $G$ acting on itself by 
 
 Cycle decomposition shines when we're handling conjugacy.
 
-LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = c_1c_2\cdots c_\ell$ where the $c_i$ are cycles, then $vwv^{-1}$ is given by ... $vc_1v^{-1}vc_2v^{-1}\cdots vc_\ellv^{-1}$.
+LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = c_1c_2\cdots c_\ell$ where the $c_i$ are cycles, then $vwv^{-1}$ is given by ... $vc_1v^{-1}vc_2v^{-1}\cdots vc_\ell v^{-1}$.
 
 LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = (i_1, i_2, \ldots, i_\ell)$, then $vwv^{-1}$ is given by ... $vwv^{-1} = (v(i_1), v(i_2), \ldots, v(i_\ell))$.
 
@@ -1217,24 +1219,98 @@ DEF! An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, 
 
 DEF! The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
 
-THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G \ Z(G)$ be representatives for the conjugacy classes not in the center. Then, by orbit stabilizer, the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
+THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representatives for the conjugacy classes not in the center. Then, by orbit stabilizer, the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
 
-*Proof sketch.* TODO
+*Proof sketch.* TODO (see notes 2018-10-01)
 
-- Note the number of elements in the center of $G$ is the number of singleton conjugacy classes.
+- Note the number of elements in the center of $G$ is the number of singleton conjugacy classes. 
+- (Categorically akin to totally disconnected components in topology? Maybe not.)
+
+DEF! Let $G$ be a transitive permutation group on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
+
+DEF! A transitive group $G$ acting on a set $A$ is said to be *primitive* if ... the only blocks in $A$ are the trivial ones, the sets of size $1$ and $\abs{A}$.
 
 #### Automorphisms
 
+TODO see notes from 2018-10-30
+
 #### Characteristic subgroups
+
+TODO see notes from 2018-10-30
 
 - the rule of "the"
 - Burnside's lemma
 
+#### Review
+
+Moral of the first midterm: *state* and *prove*. 
+
+To list little mistakes I made
+
+- using notation $A \le \Norm{G}{B}$ without specifying the action
+- running out of time to show in the diamond isomorphism theorem that $\phi \colon AB \to A/ A \cap B$ is a group homomorphism with kernel $B$
+- failing to disclaim that $\mathrm{SL}_n(\FF_q)$ is abelian when $(n,q) = (2,2)$ or $(3,2)$ (something like that)
+- not proving a result I needed
+    - first isomorphism theorem or Lagrange's theorem
+- sloppy handwriting towards the end, running out of time, reading directions
+    - not *playing it cool*
+
+Concepts I struggled with included
+
+- 
 ### Week 7: Sylow theory
+
+We had a definition quiz on 
+
+- orbit (again)
+- conjugacy class
+    - requires conjugation
+- integer partition
+    - requires tuple
+- cycle type
+    - requires cycle, cycle decomposition, cycle length
 
 #### Main results
 
+TODO see notes 2018-10-09
+
+- we split the sylow theorem into three memorable parts
+    - existence
+    - conjugacy
+    - number
+
+
 #### Applications
 
-#### Reading
+#### Apocrypha
+
+I don't terribly enjoy printing handouts for extra reading, but I found myself sending quite a few jobs to the printer this week (An eco-crime justified mainly as a supplement for topology, but, aloof and awash in sin, I did print out the following for algebra).
+
+- [George Bergman](https://math.berkeley.edu/~gbergman)
+
+    - [Answers to questions asked by students in Math H113](https://math.berkeley.edu/~gbergman/ug.hndts/09Sp_H113_q+a.txt), taught from Dummit and Foote 
+    - [Exercises supplementing those in Dummit and Foote's "Abstract Algebra", 3rd Edition.](https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps)
+    - [Sketch of proof of first sylow theorem](https://math.berkeley.edu/~gbergman/ug.hndts/#sylow)
+    - [Proof that the group A_n is simple for all n ≥ 5](https://math.berkeley.edu/~gbergman/ug.hndts/#A_n_simple)
+
+- [Schedules and form of examinations for the mathematical tripos](https://www.maths.cam.ac.uk/undergrad/course/schedules.pdf)
+
+    - Part IA: Groups
+    - Part IB: Groups, Rings, and Modules
+
+- [Alan Beardon: Algebra and Geometry](/2005-beardon-algebra-and-geometry.pdf)
+
+    - namely chapters 12 and 14
+    - conjugation, group actions, symmetries of regular polyhedra
+
+- [Jerry Shurman](https://www.google.com/search?q=site%3Ahttps%3A%2F%2Fpeople.reed.edu%2F~jerry%2F332%2F+*pdf)
+
+    - [The Sylow Theorems](https://people.reed.edu/~jerry/332/13sylow.pdf)
+    - [Group Products](https://people.reed.edu/~jerry/332/11product.pdf)
+    - [The Three Isomorphism Theorems](https://people.reed.edu/~jerry/332/09isom.pdf)
+
+- [Keith Conrad](http://www.math.uconn.edu/~kconrad/blurbs/)
+
+    - [Subgroup series I](http://www.math.uconn.edu/~kconrad/blurbs/grouptheory/subgpseries1.pdf)
+
 ### Week 8: 
