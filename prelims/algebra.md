@@ -599,8 +599,9 @@ With $G$ a group and $A \subset G$, the words of $A$ coincide with the subgroup 
 
 #### More group actions
 
-In the following definitions, let some group $G$ act on $B$ and fix a subset $A \subset B$. Note $G$ doesn't necessarily act on $A$ since some $g \in G$ could send element out of $A$.
+TODO crossref Hungerford definitions from 2018-10-10
 
+In the following definitions, let some group $G$ act on $B$ and fix a subset $A \subset B$. Note $G$ doesn't necessarily act on $A$ since some $g \in G$ could send element out of $A$.
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The stabilizer $\Stab{G}{A}$ of $A$ in $G$ is ... the subgroup $\Stab{G}{A} = \{g \in G: g(a) = a, a \in A\}$.
 
