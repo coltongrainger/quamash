@@ -618,7 +618,7 @@ If $\phi \colon G \to S_B$ is the corresponding homomorphism, then $\Stab{G}{A} 
 
 Stabilizers are easy to compute; stable elements are somehow easier to find than the images of every element in $A$.
 
-\newcommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
+\providecommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
 
@@ -641,8 +641,11 @@ DEF: The centralizer $C_G(A)$ of a subset $A \subset G$ is ... the subgroup $\St
 
 DEF: The center $Z(G)$ of $G$ is ... the (nonempty, perhaps trivial, definitely abelian) subgroup $Z(G) = C_{G}(G)$ which consists of every element that commutes with all elements of $G$.
 
-- Conjugation is faithful when the center of a group is trivial.
-- Conjugation is trivial when the center of a group is the group itself.
+AGAIN! The center of a group $G$ is the kernel of the group homomorphism $\tau \colon G \to \mathrm{Aut}(G)$ where $\tau \colon g \mapsto \tau_g \colon G \to G$ such that $x \mapsto gxg^{-1}$, i.e., $\ker \tau$ is given by $\{gxg^{-1} = x : \text{ for all } x,g \in G\}.$
+
+*Key idea*. [@Hu80, chapter II.4] Let $G$ act on itself by conjugation. The image of the group homomorphism $\tau \colon G \to S_G$ induced by the group action is contained in $\mathrm{Aut}(G)$. Clearly, for all $x \in G$, $$g \in \ker \tau \iff \tau_g(x) = x \iff gxg^{-1} = x  \iff gx = xg.$$
+
+- Note that conjugation is *faithful* when the center of a group is trivial, and is *trivial* when the center of a group is the group itself.
 
 DEF: The normalizer $N_G(A)$ of a set $A \subset G$ is the subgroup $\Norm{G}{A}$ where $G$ acts on itself by conjugation.
 
@@ -839,9 +842,6 @@ Advice from the book [@DF04, chapter 3.1] for demonstrating normality:
 
 #### Orbit stabilizer
 
-\providecommand{\Stab}[2]{\mathrm{Stab}_{#1}(#2)}
-\providecommand{\Norm}[2]{\mathrm{Norm}_{#1}(#2)}
-
 THM: (Orbit Stabilizer) Let $G$ act on $A$ and fix $a \in A$. Then the orbit containing $a$ has size $\abs{G(a)}$ given by ... $\frac{\abs{G}}{\abs{\Stab{G}{a}}}$ (idea: mod out the elements of $G$ that fix $a$).
 
 *Proof sketch*.
@@ -857,6 +857,8 @@ THM: (Orbit Stabilizer) Let $G$ act on $A$ and fix $a \in A$. Then the orbit con
     - Run the previous argument in reverse.
 - Is $\phi$ surjective?
     - Note how $\phi$ is defined.
+
+*Key idea.* Verify $gx = hx$ iff $g^{-1}hx = x$ iff $gh^{-1} \in \Stab{G}{x}$ iff $g \Stab{G}{x} = h\Stab{G}{x}$.
 
 CORO: Give proof that for $H$ and $K$ subgroups of $G$ we have $$\abs{H : K} = \frac{\abs{H}\abs{K}}{\abs{H \cap K}}.$$ ... By orbit stabilizer, $$\abs{H(1\cdot K)} = \frac{\abs{H}}{\Stab{H}{1\cdot K}}$$ where $\Stab{H}{1\cdot K} = \{h \in H: hK = K\} = H \cap K$.
 
@@ -1006,7 +1008,8 @@ We had a definition quiz on
 
 #### Simple groups
 
-DEF: A group is simple if $N \triangleleft G$ implies $N \in \{\{1\},G\}$.
+DEF: A group is simple if $N \triangleleft G$ implies ... $N \in \{\{1\},G\}$.
+
 
 - simple as in "atomic building blocks" of group theory
 - if some group $G$ is not simple we have $N$ a normal, nontrivial, proper subgroup of $G$
@@ -1140,7 +1143,7 @@ DEF! (Sign of a permutation) TODO
 
 DEF! (Discriminant) TODO
 
-- What relation to eigenvalues of the action if $D$ is considered to be a subspace in $\FF[x_1, \ldots, x_n]$?
+- What relation to eigenvalues of the action if $D$ is considered to be a subspace inm $\FF[x_1, \ldots, x_n]$?
 
 THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation matrices. Then for any $\omega \in S_n$, we have $\det(\omega)$ given by ... $\epsilon(\omega)$.
 
@@ -1150,7 +1153,7 @@ THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation 
     - should be analogous to the *discriminant* of a simple transposition
 - generalize to the set of generators of $S_n$
 
-DEF: The alternating group $A_n$ is the subgroup ... $\ker{\epsilon} \triangleleft S_n$, the set of "even permutations", where $\epsilon\colon S_n \to \{-1,1\}$ is the sign function. ($A_n$ is normal for $n \ge 5$.)
+DEF: The alternating group $A_n$ is the subgroup ... $\ker{\epsilon} \triangleleft S_n$, the set of "even permutations", where $\epsilon\colon S_n \to \{-1,1\}$ is the sign function.
 
 - When is the commutator subgroup simple? TODO
     - we want some relation between commutator subgroups and simple groups
@@ -1202,7 +1205,11 @@ EX! The conjugacy classes of an abelian group $G$ are given ... $\{\{g\} : g \in
 
 DEF! If a group $G$ acts on itself by conjugation, then the conjugacy class of an element $x \in G$ is ... the orbit $\{gxg^{-1} : g \in G \}$.
 
-DEF!
+PROP! A group $G$ is simple if and only if for any $1\neq x\in G$, the conjugacy class of $x$ in $G$ ... generates the whole group $G$.
+
+We've already seen the centralizer of $x$ in $G$ as $C_G(x)$, now we generalize to define the centralizer of an element in a subgroup $H < G$.
+
+DEF! If a subgroup $H$ of $G$ acts on $G$ by conjugation, then the stabilizer $\Stab{H}{x} = \{h \in H : h x h^{-1} = x\}$ is called ... the centralizer of $x$ in $H$, denoted $C_H(x)$
 
 EX! Let $H < G$, groups, and suppose $G$ acts on itself by conjugation. For each $a \in G$, the set $a H a^{-1}$ is ... a subgroup for that's is isomorphic to $H$.
 
@@ -1222,12 +1229,84 @@ DEF! An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, 
 
 DEF! The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
 
-THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representatives for the conjugacy classes not in the center. Then, by orbit stabilizer, the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
+As a corollary to orbit stabilizer, we have the following [@Hu80, chapter II.4].
 
-*Proof sketch.* TODO (see notes 2018-10-01)
+CORO! (Justification for class equation) Let $G$ be a finite group and $K$ a subgroup of $G$. (i) The number of elements in the conjugacy class of $x \in G$ is $\abs{G : C_G(x)}$, which divides $\abs{G}$; (ii) the number of subgroups of $G$ conjugate to $K$ is $\abs{G : N_G(K)}$, which divides $\abs{G}$; (iii) if $G(x_1),\ldots, G(x_n)$ are the distinct conjugacy classes  then ... $$\abs{G} = \sum_{i=1}^n \abs{G: C_G(x_i)}.$$
+
+*Proof sketch*. 
+
+i. The set $G$ is partitioned into disjoint orbits under the conjugation group action of $G$ on its elements. By orbit-stabilizer, then, summing the index of each conjugacy class in $G$, we have $\abs{G}$. 
+ii. $G$ also acts by conjugation on the set of its subgroups. Now $N_G(K)$ is a subgroup of $G$, so by Lagrange's theorem, $\abs{N_G(K)}$ divides $\abs{G}$. Therefore $\abs{G : N_G(K)}$ divides $\abs{G}$.
+iii. $G$ is the disjoint union of such conjugacy classes.
+
+THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representatives for the conjugacy classes not in the center of a group $G$. Then (by orbit stabilizer) the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
 
 - Note the number of elements in the center of $G$ is the number of singleton conjugacy classes. 
 - (Categorically akin to totally disconnected components in topology? Maybe not.)
+
+CORO! If $\abs{G} = p^k$ for $p$ prime, then $Z(G) \neq \{1\}$.
+
+*Proof sketch*. 
+
+- Consider the class equation: $\abs{G} = \abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{C_G(g_j)}$.
+- Now $\abs{C_G(g_j)} > 1$ else we'd have $g_j \in Z(G)$.
+- Hence $\abs{C_G(g_j)}$ divides $\abs{G}$.
+- Therefore $\sum_{j=1}^\ell \frac{\abs{G}}{C_G(g_j)} \equiv 0 (\mod p)$.
+- It follows that $\abs{G} \equiv \abs{Z(G)} (\mod p)$.
+- By hypothesis, $\abs{G} \equiv 0 (\mod p)$.
+- From last two points, together with the fact that $Z(G) \ni \{1\}$, we conclude $\abs{Z(G)} \ge p > 1$.
+
+The style here should be familiar from J.H. McKay's proof of Cauchy's theorem. Before Cauchy's theorem, though, we borrow a lemma from [@Hu80, chapter II.5]:
+
+LEMMA! If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $S$ and $$S_0 = \{x \in S: hx = x \text{ for all } h \in H\},$$ then $\abs{S} \equiv$ ... $\abs{S_0} (\mod p)$.
+
+*Proof sketch*. 
+
+- $S_0$ is the collection of all $x \in S$ with singleton orbits under the action of $H$, $H(x) = \{x\}$. 
+- Now the orbits of $H$ partition the set $S$, and by construction of $S_0$ we can write $S = S_0 \sqcup H(x_1) \sqcup H(x_2) \sqcup \cdots \sqcup H(x_n)$ with $abs{H(x_i)} > 1$ for all $i$. 
+- Hence $\abs{S} = \abs{S_0} + \sum_{i=1}^n \abs{H(x_i)}.$
+- Why does $\abs{p}$ divide $\abs{H(x_i)}$? 
+    - Because $\abs{H(x_i)} > 1$ and $\abs{H(x_i)}  = \frac{\abs{H}}{\abs{\Stab{H}{x}}}$ divides $\abs{H}  = p^n$.
+- Therefore $\abs{S} \equiv  \abs{S_0} (\mod p)$.
+
+#### Cauchy's theorem
+
+THM! (Cauchy) If $G$ is a finite group whose order is divisible by a prime $p$,then $G$ contains an element of order $p$.
+
+*Key idea*. $Z_p$ acts on by cyclic permutation on the set of $p$-tuples of group elements $$\{(a_1, a_2, \ldots, a_p) : a_i \in G \text{ and } a_1a_2 \cdots a_p = e\}.$$
+
+*Proof.*^[Prompted by an exercise (3.2.9) in Dummit and Foote, derived from James McKay (*Another proof of Cauchy's group theorem*, Amer. Math. Monthly, 66(1959), p. 119)]
+
+Let $G$ be a finite group and let $p$ be a prime dividing $\order{G}$. Let $\sS$ denote the set of $p$-tuples of elements of $G$ the product of whose coordinates is $1$: 
+$$S\sS = \left\{(x_1 , x_2, \ldots, x_p) : x_i \in G \text{ and } x_1x_2 \cdots x_p = 1\right\}.$$
+
+(a) $\sS$ has $\order{G}^{p-1}$ elements, hence has order divisible by $p$. Why? Of $\abs{G}$ elements, choose $p-1$ with repetitions, and such that the product of the $p$ elements is $1$, we must take the unique inverse $x_p = (x_1 \cdots x_{p-1})^{-1}$. So $\abs{\sS} = \abs{G}^{p-1}$. By Fermat's little theorem, $p$ divides $\abs{G}^{p-1}$.
+
+For notation's sake, let $C_p$ (considered as a subgroup of the symmetric group on $p$ letters) act on $\sS$ by $$\sigma(x_1, \ldots, x_p) \mapsto (x_{\sigma(1)}, \ldots, x_{\sigma(p)}).$$ Now we identify each cyclic permutation shifting $j$ entries right of every $\alpha \in \sS$ with $\sigma^j(\alpha)$ where for $j \in \ZZ$ $\sigma^j$ is the $p$-cycle $(1\, 2\, \cdots p)^j$. Now the action is faithful, and additionally for all $j \in ZZ$ and all $\alpha \in \sS$ we know $\sigma^j(\alpha) \in \sS$ since $x_p$ remains nested in cyclic order between $x_{p-1} and x_1$.
+
+Define the relation $\sim$ on $\sS$ by letting $\alpha \sim \beta$ if $\beta$ is a cyclic permutation of $\alpha$. 
+
+(b) We've shown a cyclic permutation of an element of $S$ is again an element of $\sS$.
+
+(c) $\sim$ is an equivalence relation on S. Why? 
+
+  - $\sigma^0(\alpha) = \alpha$ gives reflexivity,
+  - $\sigma^{-k}(\beta) = \alpha$ whenever $\sigma^j(\alpha) = \beta$ gives symmetry, and lastly 
+  - for $\sigma^j(\alpha) = \beta$, $\sigma^k(\beta) = \gamma$ then $\sigma^{k+j}(\alpha) = \gamma$.
+
+(d) An equivalence class in $\sS$ contains a single element if and only if it is of the form $(x, x, \ldots, x)$ with $x^p = 1$.
+
+Note that $\sigma^j$ stabilizes elements of the form $(x, x, \ldots, x)$ for all $j \in \ZZ$. Now if $\alpha \in \sS$ is not of the form $(x, x, \ldots, x)$ then the equivalence class in $\alpha$ has $p$ distinct elements, because $\sigma^j(\alpha) = \alpha$ if and only if $j \in \ZZ/p\ZZ$. There are no more distinct elements in $\alpha$'s equivalence class than those already conspicuous, namely $\alpha, \sigma(\alpha), \ldots, \sigma^{p-1}(\alpha)$.
+
+(e) Every equivalence class has order $1$ or $p$ (note that p is a prime). Whence $\order{G}^{p-1} = k + pd$, where $k$ is the number of classes of size $1$ and $d$ is the number of classes of size $p$.
+
+Since $\sS$ is partitioned by $\sim$, summing the elements in each class will produce $\abs{G}^{p-1}$. Well, an $\h{\alpha} \in \sS/\sim$ has size $1$ or $p$. Say there are $k$ classes of size $1$ and $d$ classes of size $p$. Thus $\abs{G}^{p-1} = k + dp$.
+
+(f) Since $\{(1, 1, \ldots , 1)\}$ is an equivalence class of size $1$, from (e) there must be a nonidentity element $x$ in $G$ with $x^p = 1$, that is, $G$ contains an element of order $p$. 
+
+Since $p$ divides $\abs{G}^{p-1}$ we must have that $p$ divides $k + dp$ hence $p | k$. Because $k > 1$, we have $k = mp$ for some integer $m \neq 0$, so there's a non-identity element $x \in G$ with $x^p = 1$. \qedsymbol
+
+#### Permutation groups
 
 DEF! Let $G$ be a transitive permutation group on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
 
@@ -1235,11 +1314,11 @@ DEF! A transitive group $G$ acting on a set $A$ is said to be *primitive* if ...
 
 #### Automorphisms
 
-TODO see notes from 2018-10-30
+TODO see notes from 2018-10-03
 
 #### Characteristic subgroups
 
-TODO see notes from 2018-10-30
+TODO see notes from 2018-10-03
 
 - the rule of "the"
 - Burnside's lemma
@@ -1280,6 +1359,16 @@ TODO see notes 2018-10-09
     - number
 
 #### Applications
+
+#### $A_n$ is simple for $n \ge 5$
+
+TODO list the conjugacy classes of $A_n$.
+
+THM! For $n \ge 5$, notably $A_n$ is ... simple.
+
+*Proof by induction*.
+
+Any normal subgroup of $A_n$ is closed under conjugation, so $A_n$ must be the union of conjugate classes.
 
 #### Apocrypha
 
