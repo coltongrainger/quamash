@@ -582,7 +582,7 @@ Concepts I struggled with:
 
 ### Week 3: subgroups through actions
 
-We had a definition quiz on:
+We had a definition quiz on
 
 - functions
 - homomorphisms
@@ -883,6 +883,10 @@ DEF: The orbits of an element $\sigma$ in $S_n$ will refer to ... the orbits of 
 - How is the orbit stabilizer theorem fundamental (uniquely) to group theory? 
 - Why don't we have a similar result in topology for quotient spaces?
 
+THM! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then $H \triangleleft G$.
+
+*Proof sketch*. TODO (see notes [2018-09-28.pdf]())
+
 #### Isomorphism theorems
 
 THM: (First isomorphism theorem) Let $\phi \colon G \to H$ be a group homomorphism. Then ... $$\phi(G) \cong G/\ker{\phi}.$$
@@ -981,6 +985,18 @@ Concepts I struggled with:
     - (from Hunter) *check Aluffi's Chapter 0!*
 
 ### Week 5: simple groups and composition series
+
+We had a definition quiz on 
+
+- kernel
+- subgroup 
+    - it's nonempty!
+- laundry listing definitions of normal
+    - e.g., writing $N_G(N)$ (rather than $\Norm{G}{N}$) to indicate the normalizer of $N$ in $G$ when $G$ is acting on itself by conjugation
+    - one needs to defined how a set can be "fixed" by a group action
+        - element- or set-wise?
+- the orbit $G(a)$ of $G$ acting on $a$
+
 
 #### Simple groups
 
@@ -1205,8 +1221,7 @@ THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G \ Z(G)$ be representat
 
 *Proof sketch.* TODO
 
-- Now the number of elements in the center of $G$ is the number of singleton conjugacy classes.
-
+- Note the number of elements in the center of $G$ is the number of singleton conjugacy classes.
 
 #### Automorphisms
 
@@ -1216,3 +1231,10 @@ THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G \ Z(G)$ be representat
 - Burnside's lemma
 
 ### Week 7: Sylow theory
+
+#### Main results
+
+#### Applications
+
+#### Reading
+### Week 8: 
