@@ -1132,6 +1132,12 @@ How to show a group is not solvable?
 
 - Show a normal with abelian subquotients can't proceed from $G$ to $\{1\}$.
 
+#### Blocks under the action of a permutation group
+
+DEF! Let $G$ be a permutation group acting transitively on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
+
+DEF! A transitive group $G$ acting on a set $A$ is said to be *primitive* if ... the only blocks in $A$ are the trivial ones, the sets of size $1$ and $\abs{A}$.
+
 #### Symmetric and alternating groups
 
 DEF: A simple transposition in $S_n$ is a ... $2$-cycle of the form $(i, i+1)$ for $1 \le i \le n-1$. We often write $s_i = (i, i+1)$ to abbreviate.
@@ -1231,6 +1237,9 @@ DEF! An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, 
 
 DEF! The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
 
+
+#### The class equation
+
 As a corollary to orbit stabilizer, we have the following [@Hu80, chapter II.4].
 
 CORO! (Justification for class equation) Let $G$ be a finite group and $K$ a subgroup of $G$. (i) The number of elements in the conjugacy class of $x \in G$ is $\abs{G : C_G(x)}$, which divides $\abs{G}$; (ii) the number of subgroups of $G$ conjugate to $K$ is $\abs{G : N_G(K)}$, which divides $\abs{G}$; (iii) if $G(x_1),\ldots, G(x_n)$ are the distinct conjugacy classes  then ... $$\abs{G} = \sum_{i=1}^n \abs{G: C_G(x_i)}.$$
@@ -1253,14 +1262,16 @@ CORO! If $\abs{G} = p^k$ for $p$ prime, then $Z(G) \neq \{1\}$.
 - Consider the class equation: $\abs{G} = \abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{C_G(g_j)}$.
 - Now $\abs{C_G(g_j)} > 1$ else we'd have $g_j \in Z(G)$.
 - Hence $\abs{C_G(g_j)}$ divides $\abs{G}$.
-- Therefore $\sum_{j=1}^\ell \frac{\abs{G}}{C_G(g_j)} \equiv 0 (\mod p)$.
-- It follows that $\abs{G} \equiv \abs{Z(G)} (\mod p)$.
-- By hypothesis, $\abs{G} \equiv 0 (\mod p)$.
+- Therefore $\sum_{j=1}^\ell \frac{\abs{G}}{C_G(g_j)} \equiv 0 \mod p$.
+- It follows that $\abs{G} \equiv \abs{Z(G)} \mod p$.
+- By hypothesis, $\abs{G} \equiv 0 \mod p$.
 - From last two points, together with the fact that $Z(G) \ni \{1\}$, we conclude $\abs{Z(G)} \ge p > 1$.
 
-The style here should be familiar from J.H. McKay's proof of Cauchy's theorem. Before Cauchy's theorem, though, we borrow a lemma from [@Hu80, chapter II.5]:
+The style here should be familiar from J.H. McKay's proof of Cauchy's theorem. 
 
-LEMMA! If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $S$ and $$S_0 = \{x \in S: hx = x \text{ for all } h \in H\},$$ then $\abs{S} \equiv$ ... $\abs{S_0} (\mod p)$.
+To give another example of the "mod $p$" style, we'll present a quick result from [@Hu80, chapter II.5].
+
+LEMMA! If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $S$ and $$S_0 = \{x \in S: hx = x \text{ for all } h \in H\},$$ then $\abs{S} \equiv$ ... $\abs{S_0} \mod p$.
 
 *Proof sketch*. 
 
@@ -1269,7 +1280,9 @@ LEMMA! If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $
 - Hence $\abs{S} = \abs{S_0} + \sum_{i=1}^n \abs{H(x_i)}.$
 - Why does $\abs{p}$ divide $\abs{H(x_i)}$? 
     - Because $\abs{H(x_i)} > 1$ and $\abs{H(x_i)}  = \frac{\abs{H}}{\abs{\Stab{H}{x}}}$ divides $\abs{H}  = p^n$.
-- Therefore $\abs{S} \equiv  \abs{S_0} (\mod p)$.
+- Therefore $\abs{S} \equiv  \abs{S_0} \mod p$.
+
+Onwards!
 
 #### Cauchy's theorem
 
@@ -1279,10 +1292,10 @@ THM! (Cauchy) If $G$ is a finite group whose order is divisible by a prime $p$,t
 
 *Proof.*^[Prompted by an exercise (3.2.9) in Dummit and Foote, derived from James McKay (*Another proof of Cauchy's group theorem*, Amer. Math. Monthly, 66(1959), p. 119)]
 
-Let $G$ be a finite group and let $p$ be a prime dividing $\order{G}$. Let $\sS$ denote the set of $p$-tuples of elements of $G$ the product of whose coordinates is $1$: 
-$$S\sS = \left\{(x_1 , x_2, \ldots, x_p) : x_i \in G \text{ and } x_1x_2 \cdots x_p = 1\right\}.$$
+Let $G$ be a finite group and let $p$ be a prime dividing $\abs{G}$. Let $\sS$ denote the set of $p$-tuples of elements of $G$ the product of whose coordinates is $1$: 
+$$\sS = \left\{(x_1 , x_2, \ldots, x_p) : x_i \in G \text{ and } x_1x_2 \cdots x_p = 1\right\}.$$
 
-(a) $\sS$ has $\order{G}^{p-1}$ elements, hence has order divisible by $p$. Why? Of $\abs{G}$ elements, choose $p-1$ with repetitions, and such that the product of the $p$ elements is $1$, we must take the unique inverse $x_p = (x_1 \cdots x_{p-1})^{-1}$. So $\abs{\sS} = \abs{G}^{p-1}$. By Fermat's little theorem, $p$ divides $\abs{G}^{p-1}$.
+(a) $\sS$ has $\abs{G}^{p-1}$ elements, hence has order divisible by $p$. Why? Of $\abs{G}$ elements, choose $p-1$ with repetitions, and such that the product of the $p$ elements is $1$, we must take the unique inverse $x_p = (x_1 \cdots x_{p-1})^{-1}$. So $\abs{\sS} = \abs{G}^{p-1}$. By Fermat's little theorem, $p$ divides $\abs{G}^{p-1}$.
 
 For notation's sake, let $C_p$ (considered as a subgroup of the symmetric group on $p$ letters) act on $\sS$ by $$\sigma(x_1, \ldots, x_p) \mapsto (x_{\sigma(1)}, \ldots, x_{\sigma(p)}).$$ Now we identify each cyclic permutation shifting $j$ entries right of every $\alpha \in \sS$ with $\sigma^j(\alpha)$ where for $j \in \ZZ$ $\sigma^j$ is the $p$-cycle $(1\, 2\, \cdots p)^j$. Now the action is faithful, and additionally for all $j \in ZZ$ and all $\alpha \in \sS$ we know $\sigma^j(\alpha) \in \sS$ since $x_p$ remains nested in cyclic order between $x_{p-1} and x_1$.
 
@@ -1300,19 +1313,13 @@ Define the relation $\sim$ on $\sS$ by letting $\alpha \sim \beta$ if $\beta$ is
 
 Note that $\sigma^j$ stabilizes elements of the form $(x, x, \ldots, x)$ for all $j \in \ZZ$. Now if $\alpha \in \sS$ is not of the form $(x, x, \ldots, x)$ then the equivalence class in $\alpha$ has $p$ distinct elements, because $\sigma^j(\alpha) = \alpha$ if and only if $j \in \ZZ/p\ZZ$. There are no more distinct elements in $\alpha$'s equivalence class than those already conspicuous, namely $\alpha, \sigma(\alpha), \ldots, \sigma^{p-1}(\alpha)$.
 
-(e) Every equivalence class has order $1$ or $p$ (note that p is a prime). Whence $\order{G}^{p-1} = k + pd$, where $k$ is the number of classes of size $1$ and $d$ is the number of classes of size $p$.
+(e) Every equivalence class has order $1$ or $p$ (note that p is a prime). Whence $\abs{G}^{p-1} = k + pd$, where $k$ is the number of classes of size $1$ and $d$ is the number of classes of size $p$.
 
-Since $\sS$ is partitioned by $\sim$, summing the elements in each class will produce $\abs{G}^{p-1}$. Well, an $\h{\alpha} \in \sS/\sim$ has size $1$ or $p$. Say there are $k$ classes of size $1$ and $d$ classes of size $p$. Thus $\abs{G}^{p-1} = k + dp$.
+Since $\sS$ is partitioned by $\sim$, summing the elements in each class will produce $\abs{G}^{p-1}$. Well, an $\bar{\alpha} \in \sS/\sim$ has size $1$ or $p$. Say there are $k$ classes of size $1$ and $d$ classes of size $p$. Thus $\abs{G}^{p-1} = k + dp$.
 
 (f) Since $\{(1, 1, \ldots , 1)\}$ is an equivalence class of size $1$, from (e) there must be a nonidentity element $x$ in $G$ with $x^p = 1$, that is, $G$ contains an element of order $p$. 
 
-Since $p$ divides $\abs{G}^{p-1}$ we must have that $p$ divides $k + dp$ hence $p | k$. Because $k > 1$, we have $k = mp$ for some integer $m \neq 0$, so there's a non-identity element $x \in G$ with $x^p = 1$. \qedsymbol
-
-#### Permutation groups
-
-DEF! Let $G$ be a transitive permutation group on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
-
-DEF! A transitive group $G$ acting on a set $A$ is said to be *primitive* if ... the only blocks in $A$ are the trivial ones, the sets of size $1$ and $\abs{A}$.
+Since $p$ divides $\abs{G}^{p-1}$ we must have that $p$ divides $k + dp$ hence $p | k$. Because $k > 1$, we have $k = mp$ for some integer $m \neq 0$, so there's a non-identity element $x \in G$ with $x^p = 1$. QED
 
 #### Automorphisms
 
