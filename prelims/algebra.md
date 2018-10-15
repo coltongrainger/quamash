@@ -1432,14 +1432,11 @@ How many cubes can we have under different coloring schemes? Counting orbits? Co
 
 - Let $\sF = \{(g,a) \in G \times A : g(a) = a\}$.
 - On one hand, $\abs{\sF} = \sum_{g \in G} \abs{\{a \in A: g(a) = a\}} = \sum_{g \in G} \abs{\mathrm{Fix}_A(g)}$.
-- On the other hand,
-\begin{align*}
-\abs{\sF} &= \sum_{a \in a} \abs{\{a \in A: g(a) = a\}}\\
-  &= \sum_{a \in A} \abs{\Stab{G}{a}}\\
-  &= \sum_{a \in A} \abs{G}/\abs{G(a)}\\
-  &= \abs{G} \sum_{a \in A} \frac{1}{\abs{G(a)}}\\
-  &= \abs{G} \cdot \abs{\text{ \# of orbits}}
-\end{align*}
+- On the other hand, $$\abs{\sF} = \sum_{a \in a} \abs{\{a \in A: g(a) = a\}}$$
+    - which is $\sum_{a \in A} \abs{\Stab{G}{a}}$
+    - which is $\sum_{a \in A} \abs{G}/\abs{G(a)}$
+    - which is $\abs{G} \sum_{a \in A} \frac{1}{\abs{G(a)}}$
+    - which is $\abs{G} \cdot \abs{\text{ \# of orbits}}$
 - Note one only needs to sum over orbits (we'll specify later to conjugacy classes).
 
 #### Review
