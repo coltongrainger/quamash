@@ -971,7 +971,7 @@ PROP! If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividi
 
 - Suppose $H \le G$ and $\abs{G : H} = p$. 
 - Let $\pi_H$ be the permutation representation $\pi \colon G \to S_G$ afforded by left multiplication of the cosets of $H$ in $G$, let $K = \ker \pi_H$, and let $\abs{H:K} = k$.
-- Now $\abs{G:K} = \abs{G:H}\abs{H:K} = pk$. Since $H$ has $p$ left cosets, $G/K$ is isomorphic to a subgroup of $S_p$ be the first isomorphism theorem. 
+- Now $\abs{G:K} = \abs{G:H}\abs{H:K} = pk$. Since $H$ has $p$ left cosets, $G/K$ is isomorphic to a subgroup of $S_p$ by the first isomorphism theorem. 
 - By Lagrange's theorem, $pk = \abs{G/K}$ divides $p = \abs{G/H}$.
 - Thus $k$ divides $(p-1)!$
 - But all the prime divisors of $k$ are at least as large as $p$.
@@ -1354,12 +1354,93 @@ Since $p$ divides $\abs{G}^{p-1}$ we must have that $p$ divides $k + dp$ hence $
 
 TODO see notes from 2018-10-03
 
+> Essential to the study of any class of algebraic objects are the functions that preserve the given algebraic structure in the following sense. [@Hu80, chapter I.2]
+
+DEF! Let $G$ and $H$ be semigroups.  A function $f \colon G \to H$ is a homomorphism provided $f(ab) = f(a)f(b)$ for all $a,b \in G$. If $f$ is injective as a map of sets, $f$ is said to be a [1]. If $f$ is bijective, $f$ is called a [2]. A homomorphism $f \colon G \to G$ is called an [3] of $G$ and an isomorphism $f \colon G \to G$ is called an [4] of $G$. ... 1: monomorphism, 2: isomorphism, 3: epimorphism. 4: automorphism.
+
+\providecommand{\Aut}[1]{\mathrm{Aut}\left( #1 \right)}
+
+FACT! The set of all automorphisms $\Aut{G}$ forms ... a group under composition.
+
+\providecommand{\inn}[1]{\mathrm{inn}\left( #1 \right)}
+\providecommand{\Inn}[1]{\mathrm{Inn}\left( #1 \right)}
+
+DEF! For each $g \in G$ we have an isomorphism $\inn{g} \colon G \to G$ given by ... $h \mapsto ghg^{-1}$ for all $h \in G$.
+
+DEF! The set of inner automorphisms of a group $G$, denoted $\Inn{G}$, is ... $\{\inn{g} : g \in G\} \subset \Aut{G}$.
+
+FACT! The set of inner automorphisms $\Inn{G}$ arises from ... the permutation representation of the conjugation action of $G$ on itself.
+
+PROP! If $N \triangleleft G$, then $\Inn{N} \le$ [?] $\le \Aut{N}$ ... $\underbrace{\Inn{G}}_{\text{restricted to $N$}}$.
+
+PROP! For an arbitrary group, $\Inn{G}$ is normal in ... $\Aut{G}$.
+
+PROP! For an arbitrary group, $\Inn{G}$ is isomorphic to ... $G/Z(G)$.
+
+*Proof sketch.*
+
+- To show normality, take $g,h \in G$ and $\phi \in \Aut{G}$.
+    - $(\phi \circ \inn{g} \circ \phi^{-1})(h) = \phi(g\phi^{-1}(h)g^{-1}) = \phi(g)h\phi(g^{-1}) = \inn{\phi(g)}(h)$
+    - Therefore $\phi \circ \phi^{-1} \in \Inn{G}$.
+- For isomorphism, consider the epimorphism $\mathrm{Inn} \colon G \to \Inn{G}$ that maps $g \mapsto \inn{g}$.
+    - By the first isomorphism theorem $\Inn{G} \cong G/\ker{\mathrm{Inn}}$.
+    - What's? $\ker{\mathrm{Inn}}$?
+    - $Z(G) = \{g \in G : ghg^{-1} = h \text{ for all } h \in G\}$.
+
+EX! For $n \neq 2,6$ the inner automorphisms $\Inn{S_n}$ coincide with ... $\Aut{S_n}$.
+
+EX! If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\Aut{V}}_{\text{as an abelian group}}$ is isomorphic to  ... $\mathrm{GL}(V) \cong \mathrm{GL}_{\dim V}(\ZZ/p\ZZ)$.
+
+*Proof sketch.* 
+
+- Let $a,b  \in \ZZ/p\ZZ$, let $u,v \in V$, and let $\phi \in \Aut{V}$. 
+- $\phi(au + bv) = \phi(\underbrace{u + \cdots + u}_{\text{$a$ times}} + \underbrace{v + \cdots + v}_{\text{$b$ times}}) = a\phi(u) + b\phi(v)$.
+- So $\phi \in \mathrm{GL}(V)$.
+- The opposite direction is obvious, consider the definition of a general linear transformation.
+
+EX! Expectations from $\Inn{G}$ don't politely transfer over to $\Aut{G}$, especially not to ... the group of outer automorphisms $\Aut{G}/\Inn{G}$.
+
 #### Characteristic subgroups
+
+DEF! A subgroup $N$ is characteristic (in $G$) if ... $\phi(N) = N$ for all $\phi \in \Aut{G}$.
+
+PROP! If $C \subset N \triangleleft G$ and $C$ is characteristic in $N$, then $C$ is normal in ... $G$.
+
+*Proof sketch.* 
+
+- We assume $C$ is invariant under automorphisms in $\Aut{N}$.
+- Since $N$ is normal in $G$, $\underbrace{\Inn{G}}_{\text{restricted to $N$}}$ is a subgroup of $\Aut{N}$.
+- Therefore $C$ is normal in $G$.
+
+FACT! The commutator subgroup $[G,G]$ is characteristic in $G$ because ... for $g,h \in G$, and $\phi \in \Aut{G}$, $\phi([g,h]) = [\phi(g), \phi(h)] \in G$, sending generators to generators by the lattice isomorphism theorem.
 
 TODO see notes from 2018-10-03
 
-- the rule of "the"
-- Burnside's lemma
+The rule of "the" states ... any subgroup that is "the subgroup of ..." will be characteristic.
+
+- What's $[G,G]$? It's *the* smallest subgroup whose quotient with $G$ is abelian.
+- What's *the* center of $G$?
+- What's *the* unique maximal Sylow subgroup? 
+
+THM! (Cauchy Frobenius) Let $G$ act on $A$, then the number of orbits in $A$ is equal to ... $$\frac{1}{\abs{G}} \sum_{g \in G} \abs{\mathrm{Fix}_A(g)}$$ where $\mathrm{Fix}_A(g) = \{a \in A: g(a) = a\}$.
+
+How many cubes can we have under different coloring schemes? Counting orbits? Counting faces?
+
+*Proof sketch*.
+
+\newcommand{\sF}{\mathscr{F}}
+
+- Let $\sF = \{(g,a) \in G \times A : g(a) = a\}$.
+- On one hand, $\abs{\sF} = \sum_{g \in G} \abs{\{a \in A: g(a) = a\}} = \sum_{g \in G} \abs{\mathrm{Fix}_A(g)}$.
+- On the other hand,
+\begin{align*}
+\abs{\sF} &= \sum_{a \in a} \abs{\{a \in A: g(a) = a\}}\\
+  &= \sum_{a \in A} \abs{\Stab{G}{a}}\\
+  &= \sum_{a \in A} \abs{G}/\abs{G(a)}\\
+  &= \abs{G} \sum_{a \in A} \frac{1}{\abs{G(a)}}\\
+  &= \abs{G} \cdot \abs{\text{ \# of orbits}}
+\end{align*}
+- Note one only needs to sum over orbits (we'll specify later to conjugacy classes).
 
 #### Review
 
@@ -1375,7 +1456,7 @@ To list little mistakes I made
 - sloppy handwriting towards the end, running out of time, reading directions
     - not *playing it cool*
 
-### Week 7: Sylow theory
+### Week 7: Sylow theory and simplicity of alternating groups
 
 We had a definition quiz on 
 
@@ -1457,4 +1538,4 @@ I hope we'll go through a few deep applications in lecture. Maybe...
 - group actions for symmetries of polyhedra
 - topological groups?
 
-### Week 8: free groups
+### Week 8: products of groups and series
