@@ -1,11 +1,12 @@
 ---
 title: Scanned notes
 author: Colton Grainger
-date: 2018-10-15
+date: 2018-10-18
 ---
 
  Unfinished! Handwritten!
 
+- [2018-10-15.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-15.pdf) (4.2M)
 - [2018-10-14.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-14.pdf) (960K)
 - [2018-10-13.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-13.pdf) (1.1M)
 - [2018-10-12.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-12.pdf) (1.6M)
@@ -14,6 +15,7 @@ date: 2018-10-15
 - [2018-10-08.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-08.pdf) (3.0M)
 - [2018-10-07.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-07.pdf) (1.6M)
 - [2018-10-06.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-06.pdf) (1.5M)
+- [2018-10-05.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-05.pdf) (2.8M)
 - [2018-10-03.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-03.pdf) (1.4M)
 - [2018-10-02.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-02.pdf) (1.2M)
 - [2018-10-01.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-10-01.pdf) (2.5M)
