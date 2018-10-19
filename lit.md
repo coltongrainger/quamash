@@ -1,6 +1,6 @@
 ---
 title: Literature
-date: 2018-10-08
+date: 2018-10-19
 ---
 
 - [2018-tierny-topological-data-analysis.pdf](/2018-tierny-topological-data-analysis.pdf) (9.8M)
@@ -131,9 +131,11 @@ date: 2018-10-08
 - [2005-sternberg-theory-real-variable.pdf](/2005-sternberg-theory-real-variable.pdf) (1.5M)
 - [2005-schey-div-grad-curl-and-all-that.pdf](/2005-schey-div-grad-curl-and-all-that.pdf) (23M)
 - [2005-Numerical-Methods-in-Electromagnetics.pdf](/2005-Numerical-Methods-in-Electromagnetics.pdf) (6.5M)
+- [2005-mitzenmacher-probability-and-computing.pdf](/2005-mitzenmacher-probability-and-computing.pdf) (6.9M)
 - [2005-koch-the-long-line.pdf](/2005-koch-the-long-line.pdf) (160K)
 - [2005-hatcher-notes-on-introductory-point-set-topology.pdf](/2005-hatcher-notes-on-introductory-point-set-topology.pdf) (464K)
 - [2005-griffiths-quantum-mechanics.pdf](/2005-griffiths-quantum-mechanics.pdf) (20M)
+- [2005-beardon-algebra-and-geometry.pdf](/2005-beardon-algebra-and-geometry.pdf) (2.4M)
 - [2004-rael-predatory-reading.pdf](/2004-rael-predatory-reading.pdf) (28K)
 - [2004-korner-in-praise-of-lectures.pdf](/2004-korner-in-praise-of-lectures.pdf) (68K)
 - [2004-dummit-foote-abstract-algebra.pdf](/2004-dummit-foote-abstract-algebra.pdf) (34M)
@@ -150,7 +152,7 @@ date: 2018-10-08
 - [2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu](/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) (4.8M)
 - [2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu](/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) (7.2M)
 - [2000-outline-summary-of-point-set-topology.pdf](/2000-outline-summary-of-point-set-topology.pdf) (128K)
-- [2000-munkres-topology.djvu](/2000-munkres-topology.djvu) (4.4M)
+- [2000-munkres-topology.pdf](/2000-munkres-topology.pdf) (30M)
 - [2000-may-outline-summary-of-basic-point-set-topology.pdf](/2000-may-outline-summary-of-basic-point-set-topology.pdf) (128K)
 - [2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf](/2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf) (6.2M)
 - [1999-needham-visual-complex-analysis.pdf](/1999-needham-visual-complex-analysis.pdf) (9.2M)
