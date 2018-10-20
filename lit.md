@@ -1,6 +1,6 @@
 ---
 title: Literature
-date: 2018-10-19
+date: 2018-10-20
 ---
 
 - [2018-tierny-topological-data-analysis.pdf](/2018-tierny-topological-data-analysis.pdf) (9.8M)
@@ -22,14 +22,17 @@ date: 2018-10-19
 - [2017-lamport-pluscal-c-manual.pdf](/2017-lamport-pluscal-c-manual.pdf) (540K)
 - [2017-jia-calculus-of-variations.pdf](/2017-jia-calculus-of-variations.pdf) (120K)
 - [2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc.pdf](/2017-gallier-convex-geometry-polyhedra-linear-programming-shellings-etc.pdf) (6.3M)
+- [2017-edelsbrunner-morozov-persistent-homology.pdf](/2017-edelsbrunner-morozov-persistent-homology.pdf) (736K)
 - [2017-donoho-50-years-of-data-science.pdf](/2017-donoho-50-years-of-data-science.pdf) (1.3M)
 - [2017-chazal-michel-intro-to-topological-data-analysis.pdf](/2017-chazal-michel-intro-to-topological-data-analysis.pdf) (1.6M)
+- [2017-chazal-high-dimensionsal-topological-data-analysis.pdf](/2017-chazal-high-dimensionsal-topological-data-analysis.pdf) (476K)
 - [2017-beaudry-intro-topology.pdf](/2017-beaudry-intro-topology.pdf) (972K)
 - [2016-zorich-mathematical-analysis-II.pdf](/2016-zorich-mathematical-analysis-II.pdf) (6.0M)
 - [2016-vanderplas-a-whirlwind-tour-of-python.pdf](/2016-vanderplas-a-whirlwind-tour-of-python.pdf) (3.3M)
 - [2016-naik-linear-algebra-lecture-omnibus.pdf](/2016-naik-linear-algebra-lecture-omnibus.pdf) (1.8M)
 - [2016-koch-complex-variable-outline.pdf](/2016-koch-complex-variable-outline.pdf) (5.6M)
 - [2016-colah-topology.pdf](/2016-colah-topology.pdf) (280K)
+- [2016-chazal-de-silva-glisse-oudot-persistence-modules.pdf](/2016-chazal-de-silva-glisse-oudot-persistence-modules.pdf) (2.0M)
 - [2016-beck-marchesi-pixton-sabalka-complex.pdf](/2016-beck-marchesi-pixton-sabalka-complex.pdf) (1.1M)
 - [2016-ashi-basic-life-support.pdf](/2016-ashi-basic-life-support.pdf) (2.5M)
 - [2015-zorich-mathematical-analysis-I.pdf](/2015-zorich-mathematical-analysis-I.pdf) (5.1M)
@@ -48,10 +51,12 @@ date: 2018-10-19
 - [2014-riehl-category-theory-in-context.pdf](/2014-riehl-category-theory-in-context.pdf) (1.4M)
 - [2014-lerma-easy-putnam-problems.pdf](/2014-lerma-easy-putnam-problems.pdf) (164K)
 - [2014-katz-taming-the-unknown.pdf](/2014-katz-taming-the-unknown.pdf) (13M)
+- [2014-ghrist-elementary-applied-topology.pdf](/2014-ghrist-elementary-applied-topology.pdf) (18M)
 - [2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf](/2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf) (7.8M)
 - [2013-univalent-foundations-program-homotopy-type-theory.pdf](/2013-univalent-foundations-program-homotopy-type-theory.pdf) (3.2M)
 - [2013-struwe-analysis-III-mass-und-integral.pdf](/2013-struwe-analysis-III-mass-und-integral.pdf) (724K)
 - [2013-roach-college-mathematics-and-question-strategies.pdf](/2013-roach-college-mathematics-and-question-strategies.pdf) (304K)
+- [2013-morozov-persistent-homology-theory-practice-ecm.pdf](/2013-morozov-persistent-homology-theory-practice-ecm.pdf) (400K)
 - [2013-mahavier-linear-topology.pdf](/2013-mahavier-linear-topology.pdf) (60K)
 - [2013-klein-coding-the-matrix.pdf](/2013-klein-coding-the-matrix.pdf) (8.6M)
 - [2013-hand-teaching-statement.pdf](/2013-hand-teaching-statement.pdf) (108K)
@@ -107,8 +112,9 @@ date: 2018-10-19
 - [2009-carlsson-topology-and-data.pdf](/2009-carlsson-topology-and-data.pdf) (1.8M)
 - [2009-boyce-diprima-diffeqs.pdf](/2009-boyce-diprima-diffeqs.pdf) (5.5M)
 - [2009-aluffi-algebra-chapter-0.pdf](/2009-aluffi-algebra-chapter-0.pdf) (22M)
-- [2008-viro-ivanov-netzvetaev-kharlamov.pdf](/2008-viro-ivanov-netzvetaev-kharlamov.pdf) (2.5M)
+- [2008-viro-ivanov-netzvetaev-kharlamov-elementary-topology-problem-textbook.pdf](/2008-viro-ivanov-netzvetaev-kharlamov-elementary-topology-problem-textbook.pdf) (2.5M)
 - [2008-levine-motivic-homotopy-theory.pdf](/2008-levine-motivic-homotopy-theory.pdf) (320K)
+- [2008-ghrist-barcodes-the-persistent-topology-of-data.pdf](/2008-ghrist-barcodes-the-persistent-topology-of-data.pdf) (896K)
 - [2008-feuerstein-green-dharma.pdf](/2008-feuerstein-green-dharma.pdf) (1.2M)
 - [2008-edwards-penny-differential-equations.pdf](/2008-edwards-penny-differential-equations.pdf) (14M)
 - [2008-clark-linear-algebra.pdf](/2008-clark-linear-algebra.pdf) (180K)
