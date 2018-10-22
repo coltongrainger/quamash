@@ -1436,7 +1436,7 @@ How many cubes can we have under different coloring schemes? Counting orbits? Co
     - which is $\sum_{a \in A} \abs{\Stab{G}{a}}$
     - which is $\sum_{a \in A} \abs{G}/\abs{G(a)}$
     - which is $\abs{G} \sum_{a \in A} \frac{1}{\abs{G(a)}}$
-    - which is $\abs{G} \cdot \abs{\text{ \# of orbits}}$
+    - which is $\abs{G} \cdot \abs{\text{# of orbits}}$
 - Note one only needs to sum over orbits (we'll specify later to conjugacy classes).
 
 #### Review
@@ -1472,9 +1472,9 @@ Cauchy's theorem is the "baby case".
 Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of
 the mnemonic
 
-- (E) existence
-- (C) conjugacy
-- (N) number
+- E existence
+- C conjugacy
+- N number
 
 \providecommand{\Syl}[2]{\mathrm{Syl}_{ #1 }\left( #2 \right)}
 
@@ -1482,13 +1482,13 @@ DEF! Suppose $G$ is a group with order $\abs{G} = p^n m$, where $p$ is prime and
 
 DEF! Let $\Syl p G$ be ... the set of all Sylow $p$-subgroups of $G$.
 
-THM!  (Sylow via Thiem) Let $\abs{G} = p^n m$, with $p$ prime and $gcd(p,m) = 1$. ... (E) $\Syl p G \neq \emptyset$; (C) $G$ acts transitively on $\Syl p G$ by conjugation; (N) denoting $n_p = \abs{\Syl p G}$, we have $n_p \equiv 1 \mod p$.
+THM!  (Sylow via Thiem) Let $\abs{G} = p^n m$, with $p$ prime and $\gcd(p,m) = 1$. ... (E) $\Syl p G \neq \emptyset$; (C) $G$ acts transitively on $\Syl p G$ by conjugation; (N) denoting $n_p = \abs{\Syl p G}$, we have $n_p \equiv 1 \mod p$.
 
 CORO! For $\abs{G} = p^n m$, why does $\abs{\Syl p G}$ divide $m$? ... By orbit stabilizer (where $G$ acts on its powerset by conjugation) and the Sylow theorem (part C), $$\abs{\Syl p G} = \frac{\abs{G}}{\abs{N_G(H_p)}}, \quad H_p \in \Syl p G.$$
 
-THM!  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ prime to $m$ ... (E) there's a Sylow $p$-subgroup, (C) every two Sylow $p$-subgroups are conjugate, (N) the number $\ell$ of such subgroups satisfies both $\ell | m$ and $\ell \equiv 1 (\mathrm{mod} p)$. 
+THM!  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ prime to $m$ ... (E) there's a Sylow $p$-subgroup, (C) every two Sylow $p$-subgroups are conjugate, (N) the number $\ell$ of such subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$. 
 
-THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 (\mathrm{mod} p)$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
+THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
 
 - How to find a normal subgroup? We're set if $\abs{\Syl p G} = 1$.
 - Eventually we have a stronger conclusion, that is, that a [normal sylow subgroup of a finite group is characteristic](https://math.stackexchange.com/questions/93499/normal-sylow-subgroup-of-a-finite-group-is-characteristic).
@@ -1497,10 +1497,9 @@ THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (
 An application: 
 
 - We find a Sylow $p$-subgroup such that $\abs{H_k} = p^k$.
-- Since $Z(H_k)$ is not trivial, by Cauchy's theorem we can find a cyclic subgroup $\ZZ/p\ZZ \conj H_1 \triangleleft Z(H_k)$.
+- Since $Z(H_k)$ is not trivial, by Cauchy's theorem we can find a cyclic subgroup $\ZZ/p\ZZ \cong H_1 \triangleleft Z(H_k)$.
 - We mod out by $H_1$ to obtain a subgroup of order $p^{k-1}$.
 - And so on...
-
 
 
 #### Applications
@@ -1562,3 +1561,29 @@ Other directions
 - topological groups?
 
 ### Week 8: products of groups and series
+
+#### Group products
+
+From Jerry Shurman, [Group Products](https://people.reed.edu/~jerry/332/11product.pdf), we define a product by its characteristic mapping property.
+Our goal? 
+
+> A viewpoint of direct products in which there's literally no difference between internal and external definitions.
+
+DEF! (Miracle of producthood) Let $G_1$ and $G_2$ be groups. A product of $G_1$ and $G_2$ is ... a group $G$ and homomorphisms  $G \xrightarrow{\pi_i} G_i$ for $i \in \{1,2\}$ (called projections) having the following property: for any passerby group $\tilde{G}$ with homomorphisms $\tilde{G} \xrightarrow{f_i} G$ for $i \in \{1,2\}$ there exists a unique homomorphism $f \colon \tilde{G} \to G$ such that $f_i = f \circ \pi_i$, to wit, any collection of homomorphisms from a passerby group into the productands factor uniquely through the product.
+
+DEF! The external direct product of groups $G_1$ and $G_2$ is ... the cartesian product $G = G_1 \times G_2$ equipped with the obvious component-wise multiplication.
+
+DEF! The internal direct product $G = G_1G_2$ of groups $G_1$ and $G_2$ is defined when ... $G_1 \cap G_2 = \{e\}$ and both $G_1$ and $G_2$ are normal in $G$.
+
+In lecture, I asked about [permutable complements](https://groupprops.subwiki.org/wiki/Permutable_complements) without much success. See also [“Complement to normal subgroup is isomorphic to quotient group - Groupprops”](https://groupprops.subwiki.org/wiki/Complement_to_normal_subgroup_is_isomorphic_to_quotient_group).
+
+#### Review
+
+
+### Week 9: subgroup series
+
+We had a definition quiz on
+
+- subgroup
+- 
+- [composition series](https://en.wikipedia.org/wiki/Composition_series)
