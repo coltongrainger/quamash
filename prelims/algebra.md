@@ -505,11 +505,11 @@ DEF: A group action of a group $G$ on set $A$ is a map from $G\times A$ to $A$ (
 
 Discussion from [@Hu80, chapter II.4]:
 
-EX! $S_n$ obviously acts on ... $I_n = \{1,\ldots, n\}$.
+EX: $S_n$ obviously acts on ... $I_n = \{1,\ldots, n\}$.
 
-EX! With $G$ a group and $H$ a subgroup, an action of $H$ on the set $G$ is given by $(h,x) \mapsto hx$; the action of $h \in H$ on $G$ is called a ... left translation.
+EX: With $G$ a group and $H$ a subgroup, an action of $H$ on the set $G$ is given by $(h,x) \mapsto hx$; the action of $h \in H$ on $G$ is called a ... left translation.
 
-IDEA! If $G > K$, $G>H$, and $H$ acts on $G$ by left translation, then $H$ also acts by left translation on the set $\sS$ of cosets of $K$ in $G$. The action of $H$ on $\sS$ is explicitly given by ... $(h, xK) \mapsto hxK$.
+IDEA: If $G > K$, $G>H$, and $H$ acts on $G$ by left translation, then $H$ also acts by left translation on the set $\sS$ of cosets of $K$ in $G$. The action of $H$ on $\sS$ is explicitly given by ... $(h, xK) \mapsto hxK$.
 
 The idea of "$G$ acting on a set $A$" is that for a fixed $g \in G$, we have a permutation $\sigma_g \colon A \to A$ defined by $a \mapsto g\cdot a$. We might think that a group $G$ acts on a set $A$ if there exists a homomorphism $\phi \colon G \to S_A$. Indeed, the map $\phi \colon G \to S_A$ defined by $g\mapsto \sigma_g$ is a homomorphism because $\phi(gh) = \phi(g)\circ\phi(h)$ for all $g,h \in G$. We formalize this notion in the following proposition.
 
@@ -645,7 +645,7 @@ DEF: The centralizer $C_G(A)$ of a subset $A \subset G$ is ... the subgroup $\St
 
 DEF: The center $Z(G)$ of $G$ is ... the (nonempty, perhaps trivial, definitely abelian) subgroup $Z(G) = C_{G}(G)$ which consists of every element that commutes with all elements of $G$.
 
-AGAIN! The center of a group $G$ is the kernel of the group homomorphism $\tau \colon G \to \mathrm{Aut}(G)$ where $\tau \colon g \mapsto \tau_g \colon G \to G$ such that $x \mapsto gxg^{-1}$, i.e., $\ker \tau$ is given by $\{gxg^{-1} = x : \text{ for all } x,g \in G\}.$
+AGAIN: The center of a group $G$ is the kernel of the group homomorphism $\tau \colon G \to \mathrm{Aut}(G)$ where $\tau \colon g \mapsto \tau_g \colon G \to G$ such that $x \mapsto gxg^{-1}$, i.e., $\ker \tau$ is given by $\{gxg^{-1} = x : \text{ for all } x,g \in G\}.$
 
 *Key idea*. [@Hu80, chapter II.4] Let $G$ act on itself by conjugation. The image of the group homomorphism $\tau \colon G \to S_G$ induced by the group action is contained in $\mathrm{Aut}(G)$. Clearly, for all $x \in G$, $$g \in \ker \tau \iff \tau_g(x) = x \iff gxg^{-1} = x  \iff gx = xg.$$
 
@@ -965,7 +965,7 @@ Let $\phi \colon G/K \to G/H$ such that $gK \mapsto gH$. We'll show $\phi$ is a 
 
 Here's one particular application of the third isomorphism theorem, which relies on Cayley's theorem [@DF04, chapter 4.2].
 
-PROP! If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividing $\abs{G}$, then any subgroup of index $p$ is normal.
+PROP: If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividing $\abs{G}$, then any subgroup of [?] $p$ is normal in $G$ ... index.
 
 *Proof sketch*. 
 
@@ -978,7 +978,7 @@ PROP! If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividi
 - With $p$ chosen minimally, we're forced to accept $k = 1$, so $K = H$, and therefore $H \triangleleft G$.
 
 <!---
-PROP! Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then ... $H \triangleleft G$.
+PROP: Let $G$ be finite and $p$ be the smallest prime dividing the order of $G$. If $H \le G$ satisfies $\abs{G : H} = p$, then ... $H \triangleleft G$.
 
 *Proof sketch*. (Thiem) I didn't really feel this was clear in lecture, so I'm opting to use Dummit and Foote's version.
 
@@ -1163,9 +1163,9 @@ How to show a group is not solvable?
 
 #### Blocks under the action of a permutation group
 
-DEF! Let $G$ be a permutation group acting transitively on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
+DEF: Let $G$ be a permutation group acting transitively on the finite set $A$. A block is a nonempty subset $B$ of $A$ such that for all $\sigma \in G$ either ... $\sigma(B) = B$ or $\sigma(B) \cap B = \emptyset$ (where $\sigma(B)$ is the set $\{\sigma(b) : b \in B\}$).
 
-DEF! A transitive group $G$ acting on a set $A$ is said to be *primitive* if ... the only blocks in $A$ are the trivial ones, the sets of size $1$ and $\abs{A}$.
+DEF: A transitive group $G$ acting on a set $A$ is said to be *primitive* if ... the only blocks in $A$ are the trivial ones, the sets of size $1$ and $\abs{A}$.
 
 #### Symmetric and alternating groups
 
@@ -1227,51 +1227,51 @@ Coming up:
 
 Definitions from the book [@DF04, chapter 4.3]:
 
-DEF! Two elements $a$ and $b$ are said to be conjugate in $G$ if ... there is some $g \in G$ such that $b = gag^{-1}$ (i.e., iff they are in the same orbit of $G$ acting on itself by conjugation).
+DEF: Two elements $a$ and $b$ are said to be conjugate in $G$ if ... there is some $g \in G$ such that $b = gag^{-1}$ (i.e., iff they are in the same orbit of $G$ acting on itself by conjugation).
 
-DEF! If $G > H$ and $G> K$, then for $h \in H$ we have $K \cong hKh^{-1} < G$. Hence $H$ acts on the set $\sS$ of all ... subgroups of $G$ by conjugation $(h,K) \mapsto hKh^{-1}$. Note the subgroup $hKh^{-1}$ is said to be conjugate to $K$.
+DEF: If $G > H$ and $G> K$, then for $h \in H$ we have $K \cong hKh^{-1} < G$. Hence $H$ acts on the set $\sS$ of all ... subgroups of $G$ by conjugation $(h,K) \mapsto hKh^{-1}$. Note the subgroup $hKh^{-1}$ is said to be conjugate to $K$.
 
 - In linear algebra, "conjugate" elements of a $n\times n$ general linear group are said to be *similar*.
 - Conjugation by $g$ on $G$ induces an isomorphism (*not unrelated to normality*) --- how?
 
-EX! The conjugacy classes of an abelian group $G$ are given ... $\{\{g\} : g \in G\}$ (analogous to "totally disconnected"?)
+EX: The conjugacy classes of an abelian group $G$ are given ... $\{\{g\} : g \in G\}$ (analogous to "totally disconnected"?)
 
-DEF! If a group $G$ acts on itself by conjugation, then the conjugacy class of an element $x \in G$ is ... the orbit $\{gxg^{-1} : g \in G \}$.
+DEF: If a group $G$ acts on itself by conjugation, then the conjugacy class of an element $x \in G$ is ... the orbit $\{gxg^{-1} : g \in G \}$.
 
-PROP! A group $G$ is simple if and only if for any $1\neq x\in G$, the conjugacy class of $x$ in $G$ ... generates the whole group $G$.
+PROP: A group $G$ is simple if and only if for any $1\neq x\in G$, the conjugacy class of $x$ in $G$ ... generates the whole group $G$.
 
 *Proof sketch*. TODO
 
 We've already seen the centralizer of $x$ in $G$ as $C_G(x)$, now we generalize to define the centralizer of an element in a subgroup $H < G$.
 
-AGAIN! If a subgroup $H$ of $G$ acts on $G$ by conjugation, then the stabilizer $\Stab{H}{x} = \{h \in H : h x h^{-1} = x\}$ is called ... the centralizer of $x$ in $H$, denoted $C_H(x)$.
+AGAIN: If a subgroup $H$ of $G$ acts on $G$ by conjugation, then the stabilizer $\Stab{H}{x} = \{h \in H : h x h^{-1} = x\}$ is called ... the centralizer of $x$ in $H$, denoted $C_H(x)$.
 
-EX! Let $H < G$, groups, and suppose $G$ acts on itself by conjugation. For each $a \in G$, the set $a H a^{-1}$ is ... a subgroup for that's is isomorphic to $H$.
+EX: Let $H < G$, groups, and suppose $G$ acts on itself by conjugation. For each $a \in G$, the set $a H a^{-1}$ is ... a subgroup for that's is isomorphic to $H$.
 
 #### Conjugacy classes in $S_n$
 
 Cycle decomposition shines when we're handling conjugacy.
 
-LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = c_1c_2\cdots c_\ell$ where the $c_i$ are cycles, then $vwv^{-1}$ is given by ... $vc_1v^{-1}vc_2v^{-1}\cdots vc_\ell v^{-1}$.
+LEMMA: Let $w$ and $v$ be permutations in $S_n$. If $w = c_1c_2\cdots c_\ell$ where the $c_i$ are cycles, then $vwv^{-1}$ is given by ... $vc_1v^{-1}vc_2v^{-1}\cdots vc_\ell v^{-1}$.
 
-LEMMA! Let $w$ and $v$ be permutations in $S_n$. If $w = (i_1, i_2, \ldots, i_\ell)$, then $vwv^{-1}$ is given by ... $vwv^{-1} = (v(i_1), v(i_2), \ldots, v(i_\ell))$.
+LEMMA: Let $w$ and $v$ be permutations in $S_n$. If $w = (i_1, i_2, \ldots, i_\ell)$, then $vwv^{-1}$ is given by ... $vwv^{-1} = (v(i_1), v(i_2), \ldots, v(i_\ell))$.
 
-CORO!  Let $w, v \in S_n$ have cycle decompositions $w =  c_1c_2\cdots c_k$  and $v = d_1 d_2 \cdots d_\ell$. Then $w$ and $v$ are conjugate iff ... $k = \ell$ and there exists $\omega \in S_n$ to reorder coordinates such that $$\mathrm{length}(c_{\omega(j)}) = \mathrm{length}(d_j)$$ for all $1 \le j \le \ell$.
+CORO:  Let $w, v \in S_n$ have cycle decompositions $w =  c_1c_2\cdots c_k$  and $v = d_1 d_2 \cdots d_\ell$. Then $w$ and $v$ are conjugate iff ... $k = \ell$ and there exists $\omega \in S_n$ to reorder coordinates such that $$\mathrm{length}(c_{\omega(j)}) = \mathrm{length}(d_j)$$ for all $1 \le j \le \ell$.
 
 - One can express $S_n$ acting on $\mathrm{GL}_n(\FF_q)$ by permutation matrices. 
 - I hear $\mathrm{GL}_n(\CC)$ has rad matrix similarity.
 - TODO: translate the above corollary for matrix representations.
 
-DEF! An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, \ldots, \lambda_\ell)$ such that ... (IP1) $\lambda_1 \ge \lambda_2 \ge \ldots \ge \lambda_\ell > 0$ and (IP2) $n = \lambda_1 + \lambda_2 + \ldots + \lambda_\ell$.
+DEF: An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, \ldots, \lambda_\ell)$ such that ... (IP1) $\lambda_1 \ge \lambda_2 \ge \ldots \ge \lambda_\ell > 0$ and (IP2) $n = \lambda_1 + \lambda_2 + \ldots + \lambda_\ell$.
 
-DEF! The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
+DEF: The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
 
 
 #### The class equation
 
 As a corollary to orbit stabilizer, we have the following [@Hu80, chapter II.4].
 
-CORO! (Justification for class equation) Let $G$ be a finite group and $K$ a subgroup of $G$. (i) The number of elements in the conjugacy class of $x \in G$ is $\abs{G : C_G(x)}$, which divides $\abs{G}$; (ii) the number of subgroups of $G$ conjugate to $K$ is $\abs{G : N_G(K)}$, which divides $\abs{G}$; (iii) if $G(x_1),\ldots, G(x_n)$ are the distinct conjugacy classes  then ... $$\abs{G} = \sum_{i=1}^n \abs{G: C_G(x_i)}.$$
+CORO: (Justification for class equation) Let $G$ be a finite group and $K$ a subgroup of $G$. (i) The number of elements in the conjugacy class of $x \in G$ is $\abs{G : C_G(x)}$, which divides $\abs{G}$; (ii) the number of subgroups of $G$ conjugate to $K$ is $\abs{G : N_G(K)}$, which divides $\abs{G}$; (iii) if $G(x_1),\ldots, G(x_n)$ are the distinct conjugacy classes  then ... $$\abs{G} = \sum_{i=1}^n \abs{G: C_G(x_i)}.$$
 
 *Proof sketch*. 
 
@@ -1284,7 +1284,7 @@ THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representat
 - Note the number of elements in the center of $G$ is the number of singleton conjugacy classes. 
 - (Categorically akin to totally disconnected components in topology? Maybe not.)
 
-CORO! If $\abs{G} = p^k$ for $p$ prime, then $Z(G) \neq \{1\}$.
+CORO: If $\abs{G} = p^k$ for $p$ prime, then $Z(G)$ is not ... trivial.
 
 *Proof sketch*. 
 
@@ -1300,7 +1300,7 @@ The style here should be familiar from J.H. McKay's proof of Cauchy's theorem.
 
 To give another example of the "mod $p$" style, we'll present a quick result from [@Hu80, chapter II.5].
 
-LEMMA! If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $S$ and $$S_0 = \{x \in S: hx = x \text{ for all } h \in H\},$$ then $\abs{S} \equiv$ ... $\abs{S_0} \mod p$.
+LEMMA: If a group $H$ of order $p^n$ (where $p$ is prime) acts on a finite set $S$ and $$S_0 = \{x \in S: hx = x \text{ for all } h \in H\},$$ then $\abs{S} \equiv$ ... $\abs{S_0} \mod p$.
 
 *Proof sketch*. 
 
@@ -1315,7 +1315,7 @@ Onwards!
 
 #### Cauchy's theorem
 
-THM! (Cauchy) If $G$ is a finite group whose order is divisible by a prime $p$,then $G$ contains an element of order $p$.
+THM: (Cauchy) If $G$ is a finite group whose order is divisible by a prime $p$, then $G$ contains an element ... of order $p$.
 
 *Key idea*. $Z_p$ acts on by cyclic permutation on the set of $p$-tuples of group elements $$\{(a_1, a_2, \ldots, a_p) : a_i \in G \text{ and } a_1a_2 \cdots a_p = e\}.$$
 
@@ -1356,26 +1356,26 @@ TODO see notes from 2018-10-03
 
 > Essential to the study of any class of algebraic objects are the functions that preserve the given algebraic structure in the following sense. [@Hu80, chapter I.2]
 
-DEF! Let $G$ and $H$ be semigroups.  A function $f \colon G \to H$ is a homomorphism provided $f(ab) = f(a)f(b)$ for all $a,b \in G$. If $f$ is injective as a map of sets, $f$ is said to be a [1]. If $f$ is bijective, $f$ is called a [2]. A homomorphism $f \colon G \to G$ is called an [3] of $G$ and an isomorphism $f \colon G \to G$ is called an [4] of $G$. ... 1: monomorphism, 2: isomorphism, 3: epimorphism. 4: automorphism.
+DEF: Let $G$ and $H$ be semigroups.  A function $f \colon G \to H$ is a homomorphism provided $f(ab) = f(a)f(b)$ for all $a,b \in G$. If $f$ is injective as a map of sets, $f$ is said to be a [1]. If $f$ is bijective, $f$ is called a [2]. A homomorphism $f \colon G \to G$ is called an [3] of $G$ and an isomorphism $f \colon G \to G$ is called an [4] of $G$. ... 1: monomorphism, 2: isomorphism, 3: epimorphism. 4: automorphism.
 
 \providecommand{\Aut}[1]{\mathrm{Aut}\left( #1 \right)}
 
-FACT! The set of all automorphisms $\Aut{G}$ forms ... a group under composition.
+FACT: The set of all automorphisms $\Aut{G}$ forms ... a group under composition.
 
 \providecommand{\inn}[1]{\mathrm{inn}\left( #1 \right)}
 \providecommand{\Inn}[1]{\mathrm{Inn}\left( #1 \right)}
 
-DEF! For each $g \in G$ we have an isomorphism $\inn{g} \colon G \to G$ given by ... $h \mapsto ghg^{-1}$ for all $h \in G$.
+DEF: For each $g \in G$ we have an isomorphism $\inn{g} \colon G \to G$ given by ... $h \mapsto ghg^{-1}$ for all $h \in G$.
 
-DEF! The set of inner automorphisms of a group $G$, denoted $\Inn{G}$, is ... $\{\inn{g} : g \in G\} \subset \Aut{G}$.
+DEF: The set of inner automorphisms of a group $G$, denoted $\Inn{G}$, is ... $\{\inn{g} : g \in G\} \subset \Aut{G}$.
 
-FACT! The set of inner automorphisms $\Inn{G}$ arises from ... the permutation representation of the conjugation action of $G$ on itself.
+FACT: The set of inner automorphisms $\Inn{G}$ arises from ... the permutation representation of the conjugation action of $G$ on itself.
 
-PROP! If $N \triangleleft G$, then $\Inn{N} \le$ [?] $\le \Aut{N}$ ... $\underbrace{\Inn{G}}_{\text{restricted to $N$}}$.
+PROP: If $N \triangleleft G$, then $\Inn{N} \le$ [?] $\le \Aut{N}$ ... $\underbrace{\Inn{G}}_{\text{restricted to $N$}}$.
 
-PROP! For an arbitrary group, $\Inn{G}$ is normal in ... $\Aut{G}$.
+PROP: For an arbitrary group, $\Inn{G}$ is normal in ... $\Aut{G}$.
 
-PROP! For an arbitrary group, $\Inn{G}$ is isomorphic to ... $G/Z(G)$.
+PROP: For an arbitrary group, $\Inn{G}$ is isomorphic to ... $G/Z(G)$.
 
 *Proof sketch.*
 
@@ -1387,9 +1387,9 @@ PROP! For an arbitrary group, $\Inn{G}$ is isomorphic to ... $G/Z(G)$.
     - What's? $\ker{\mathrm{Inn}}$?
     - $Z(G) = \{g \in G : ghg^{-1} = h \text{ for all } h \in G\}$.
 
-EX! For $n \neq 2,6$ the inner automorphisms $\Inn{S_n}$ coincide with ... $\Aut{S_n}$.
+EX: For $n \neq 2,6$ the inner automorphisms $\Inn{S_n}$ coincide with ... $\Aut{S_n}$.
 
-EX! If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\Aut{V}}_{\text{as an abelian group}}$ is isomorphic to  ... $\mathrm{GL}(V) \cong \mathrm{GL}_{\dim V}(\ZZ/p\ZZ)$.
+EX: If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\Aut{V}}_{\text{as an abelian group}}$ is isomorphic to  ... $\mathrm{GL}(V) \cong \mathrm{GL}_{\dim V}(\ZZ/p\ZZ)$.
 
 *Proof sketch.* 
 
@@ -1398,13 +1398,13 @@ EX! If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\A
 - So $\phi \in \mathrm{GL}(V)$.
 - The opposite direction is obvious, consider the definition of a general linear transformation.
 
-EX! Expectations from $\Inn{G}$ don't politely transfer over to $\Aut{G}$, especially not to ... the group of outer automorphisms $\Aut{G}/\Inn{G}$.
+EX: Expectations from $\Inn{G}$ don't politely transfer over to $\Aut{G}$, especially not to ... the group of outer automorphisms $\Aut{G}/\Inn{G}$.
 
 #### Characteristic subgroups
 
-DEF! A subgroup $N$ is characteristic (in $G$) if ... $\phi(N) = N$ for all $\phi \in \Aut{G}$.
+DEF: A subgroup $N$ is characteristic (in $G$) if ... $\phi(N) = N$ for all $\phi \in \Aut{G}$.
 
-PROP! If $C \subset N \triangleleft G$ and $C$ is characteristic in $N$, then $C$ is normal in ... $G$.
+PROP: If $C \subset N \triangleleft G$ and $C$ is characteristic in $N$, then $C$ is normal in ... $G$.
 
 *Proof sketch.* 
 
@@ -1412,7 +1412,7 @@ PROP! If $C \subset N \triangleleft G$ and $C$ is characteristic in $N$, then $C
 - Since $N$ is normal in $G$, $\underbrace{\Inn{G}}_{\text{restricted to $N$}}$ is a subgroup of $\Aut{N}$.
 - Therefore $C$ is normal in $G$.
 
-FACT! The commutator subgroup $[G,G]$ is characteristic in $G$ because ... for $g,h \in G$, and $\phi \in \Aut{G}$, $\phi([g,h]) = [\phi(g), \phi(h)] \in G$, sending generators to generators by the lattice isomorphism theorem.
+FACT: The commutator subgroup $[G,G]$ is characteristic in $G$ because ... for $g,h \in G$, and $\phi \in \Aut{G}$, $\phi([g,h]) = [\phi(g), \phi(h)] \in G$, sending generators to generators by the lattice isomorphism theorem.
 
 TODO see notes from 2018-10-03
 
@@ -1422,7 +1422,7 @@ The rule of "the" states ... any subgroup that is "the subgroup of ..." will be 
 - What's *the* center of $G$?
 - What's *the* unique maximal Sylow subgroup? 
 
-THM! (Cauchy Frobenius) Let $G$ act on $A$, then the number of orbits in $A$ is equal to ... $$\frac{1}{\abs{G}} \sum_{g \in G} \abs{\mathrm{Fix}_A(g)}$$ where $\mathrm{Fix}_A(g) = \{a \in A: g(a) = a\}$.
+THM: (Cauchy Frobenius) Let $G$ act on $A$, then the number of orbits in $A$ is equal to ... $$\frac{1}{\abs{G}} \sum_{g \in G} \abs{\mathrm{Fix}_A(g)}$$ where $\mathrm{Fix}_A(g) = \{a \in A: g(a) = a\}$.
 
 How many cubes can we have under different coloring schemes? Counting orbits? Counting faces?
 
@@ -1467,14 +1467,41 @@ We had a definition quiz on
 
 #### Main results
 
-TODO see notes 
-    - 2018-10-08 
-    - 2018-10-10
+Cauchy's theorem is the "baby case".
 
-- we split the sylow theorem into three memorable parts
-    - existence
-    - conjugacy
-    - number
+Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of
+the mnemonic
+
+- (E) existence
+- (C) conjugacy
+- (N) number
+
+\providecommand{\Syl}[2]{\mathrm{Syl}_{ #1 }\left( #2 \right)}
+
+DEF! Suppose $G$ is a group with order $\abs{G} = p^n m$, where $p$ is prime and $\gcd(p,m) = 1$. A Sylow $p$-subgroup $P$ of $G$ is ... a subgroup of order $p^n$ ($n \in \ZZ_{\ge 0}$).
+
+DEF! Let $\Syl p G$ be ... the set of all Sylow $p$-subgroups of $G$.
+
+THM!  (Sylow via Thiem) Let $\abs{G} = p^n m$, with $p$ prime and $gcd(p,m) = 1$. ... (E) $\Syl p G \neq \emptyset$; (C) $G$ acts transitively on $\Syl p G$ by conjugation; (N) denoting $n_p = \abs{\Syl p G}$, we have $n_p \equiv 1 \mod p$.
+
+CORO! For $\abs{G} = p^n m$, why does $\abs{\Syl p G}$ divide $m$? ... By orbit stabilizer (where $G$ acts on its powerset by conjugation) and the Sylow theorem (part C), $$\abs{\Syl p G} = \frac{\abs{G}}{\abs{N_G(H_p)}}, \quad H_p \in \Syl p G.$$
+
+THM!  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ prime to $m$ ... (E) there's a Sylow $p$-subgroup, (C) every two Sylow $p$-subgroups are conjugate, (N) the number $\ell$ of such subgroups satisfies both $\ell | m$ and $\ell \equiv 1 (\mathrm{mod} p)$. 
+
+THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 (\mathrm{mod} p)$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
+
+- How to find a normal subgroup? We're set if $\abs{\Syl p G} = 1$.
+- Eventually we have a stronger conclusion, that is, that a [normal sylow subgroup of a finite group is characteristic](https://math.stackexchange.com/questions/93499/normal-sylow-subgroup-of-a-finite-group-is-characteristic).
+- We can expect the prelim questions to be about two levels deeper than superficial applications as fining $p$ such that $\abs{\Syl p G} = 1$.
+
+An application: 
+
+- We find a Sylow $p$-subgroup such that $\abs{H_k} = p^k$.
+- Since $Z(H_k)$ is not trivial, by Cauchy's theorem we can find a cyclic subgroup $\ZZ/p\ZZ \conj H_1 \triangleleft Z(H_k)$.
+- We mod out by $H_1$ to obtain a subgroup of order $p^{k-1}$.
+- And so on...
+
+
 
 #### Applications
 
@@ -1525,14 +1552,13 @@ I don't terribly enjoy printing handouts for extra reading, but I found myself s
 
 #### Review
 
-We've at least touched on all the topics for the prelim exam, though I would like get more rote practice (e.g., in Bergman's supplemental exercises) with finite groups while we're here in the muck. 
+We've at least touched on all the topics for the prelim exam, though I would like get more rote practice (e.g., in Bergman's supplemental exercises) with finite groups while we're in the muck.
 
-I hope we'll go through a few deep applications in lecture. Maybe...
+Other directions
 
 - universal properties for products and quotients
 - ramping up vocabulary endo- and auto-morphisms
-- constructing subgroup series
-- group actions for symmetries of polyhedra
+- symmetries of regular polyhedra
 - topological groups?
 
 ### Week 8: products of groups and series
