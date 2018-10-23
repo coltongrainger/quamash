@@ -1590,6 +1590,8 @@ PROP! In particular, the number of conjugates of an element $s$ of $G$ is ... th
 
 PROP! The number of conjugacy classes of $S_n$ is (list them up to $n = 7$)... the number $p(n)$ of partitions of $n$, starting with $p(0)$, they are $1, 1, 2, 3, 5, 7, 11, 15, \ldots$
 
+\providecommand{\sK}{\mathscr{K}}
+
 FACT! Normal subgroups of a group $G$ are the union of ... conjugacy classes of $G$, i.e., if $H \triangleleft G$, then for every conjugacy class $\sK$ of $G$, either $\sK \subset H$ or $\sK \cap H = \emptyset$.
 
 #### Apocrypha
