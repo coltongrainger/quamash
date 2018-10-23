@@ -1352,8 +1352,6 @@ Since $p$ divides $\abs{G}^{p-1}$ we must have that $p$ divides $k + dp$ hence $
 
 #### Automorphisms
 
-TODO see notes from 2018-10-03
-
 > Essential to the study of any class of algebraic objects are the functions that preserve the given algebraic structure in the following sense. [@Hu80, chapter I.2]
 
 DEF: Let $G$ and $H$ be semigroups.  A function $f \colon G \to H$ is a homomorphism provided $f(ab) = f(a)f(b)$ for all $a,b \in G$. If $f$ is injective as a map of sets, $f$ is said to be a [1]. If $f$ is bijective, $f$ is called a [2]. A homomorphism $f \colon G \to G$ is called an [3] of $G$ and an isomorphism $f \colon G \to G$ is called an [4] of $G$. ... 1: monomorphism, 2: isomorphism, 3: epimorphism. 4: automorphism.
@@ -1387,7 +1385,35 @@ PROP: For an arbitrary group, $\Inn{G}$ is isomorphic to ... $G/Z(G)$.
     - What's? $\ker{\mathrm{Inn}}$?
     - $Z(G) = \{g \in G : ghg^{-1} = h \text{ for all } h \in G\}$.
 
-EX: For $n \neq 2,6$ the inner automorphisms $\Inn{S_n}$ coincide with ... $\Aut{S_n}$.
+EX: For $n \ge 2$ with $n \neq 6$ the inner automorphisms $\Inn{S_n}$ coincide with ... $\Aut{S_n}$.
+
+Results from the book [@DF04, chapter 4.4]:
+
+PROP! Let $H$ be a normal subgroup of $G$. The action of $G$ on $H$ by conjugation induces permutation representation, that is a homomorphism of $G$ into $\Aut{H}$ with kernel given by ... $G/C_G(H)$. 
+
+PROP! For any subgroup $H$ of a group $G$, the quotient group [...] is isomorphic to a subgroup of $\Aut{H}$ ... where that quotient group is $N_G(H)/C_G(H)$.
+
+
+EX! Assume $G$ is a group of order $pq$, where $p$ and $q$ are primes with $p \le q$. If $p \not\vert q - 1$, then $G$ is ... abelian.
+
+*Proof sketch*.
+
+- If the center is nontrivial, Lagrange's theorem forces $G/Z(G)$ to be cyclic.
+- Suppose then the center is trivial.
+- If every non-identity element of $G$ has order $p$, the centralizer of every non-identity element has index $q$, so the class equation reads $pq = 1 + kq$, a contradiction.
+- Thus $G$ contains an element of order $q$, call the subgroup it generates $H = \langle x \rangle$.
+- Now $H$ has index $p$, and $p$ is the smallest prime dividing $pq$, so (prelude to Sylow theory) $H$ is normal in $G$.
+- Moreover, $H$ is cyclic, thus abelian.
+- Noting $H$ is maximal among abelian subgroups of $G$, for $Z(G) = 1$, we have $C_G(H) = H$.
+    - <https://groupprops.subwiki.org/wiki/Self-centralizing_subgroup>
+    - <https://groupprops.subwiki.org/wiki/Equivalence_of_definitions_of_maximal_among_abelian_subgroups>
+    - <https://en.wikipedia.org/wiki/Centralizer_and_normalizer>
+- Then $G/H = N_G(H)/C_G(H)$, which is isomorphic to a subgroup of $\Aut{H}$.
+- But the order of that automorphism group is $\abs{\Aut{H}} = q-1$. 
+- We obtain the contradiction $p | q-1$. 
+- So $Z(G) = G$.
+
+DEF! Let $p$ be a prime and let $V$ be an abelian group with the property that $pv = 0$ for all $v \in V$. When $\abs{V} = p^n$, $V$ is called the elementary abelian group of order $p^n$, and turns out to be ... an $n$-dimensional vector space over the field $\FF_p = \ZZ/p\ZZ$, with $\Aut{V} \cong \mathrm{GL}_n(\FF_p)$. 
 
 EX: If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\Aut{V}}_{\text{as an abelian group}}$ is isomorphic to  ... $\mathrm{GL}(V) \cong \mathrm{GL}_{\dim V}(\ZZ/p\ZZ)$.
 
@@ -1397,6 +1423,10 @@ EX: If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\A
 - $\phi(au + bv) = \phi(\underbrace{u + \cdots + u}_{\text{$a$ times}} + \underbrace{v + \cdots + v}_{\text{$b$ times}}) = a\phi(u) + b\phi(v)$.
 - So $\phi \in \mathrm{GL}(V)$.
 - The opposite direction is obvious, consider the definition of a general linear transformation.
+
+EX! The automorphism group of a cyclic group of order $n$ is isomorphic to ... $(\ZZ/n\ZZ)^\times$, an abelian group of order $\phi(n)$.
+
+EX! The automorphism group of a cyclic group of order $p^n$ is isomorphic to ... the cyclic group of order $p^{n-1}(p-1)$.
 
 EX: Expectations from $\Inn{G}$ don't politely transfer over to $\Aut{G}$, especially not to ... the group of outer automorphisms $\Aut{G}/\Inn{G}$.
 
@@ -1413,8 +1443,6 @@ PROP: If $C \subset N \triangleleft G$ and $C$ is characteristic in $N$, then $C
 - Therefore $C$ is normal in $G$.
 
 FACT: The commutator subgroup $[G,G]$ is characteristic in $G$ because ... for $g,h \in G$, and $\phi \in \Aut{G}$, $\phi([g,h]) = [\phi(g), \phi(h)] \in G$, sending generators to generators by the lattice isomorphism theorem.
-
-TODO see notes from 2018-10-03
 
 The rule of "the" states ... any subgroup that is "the subgroup of ..." will be characteristic.
 
@@ -1467,10 +1495,11 @@ We had a definition quiz on
 
 #### Main results
 
-Cauchy's theorem is the "baby case".
+Cauchy's theorem is the "baby case" (baby face).
 
-Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of
-the mnemonic
+![Cauchy's baby face](https://upload.wikimedia.org/wikipedia/commons/e/e3/Augustin-Louis_Cauchy.jpg)
+
+Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of the mnemonic
 
 - E existence
 - C conjugacy
@@ -1501,9 +1530,6 @@ An application:
 - We mod out by $H_1$ to obtain a subgroup of order $p^{k-1}$.
 - And so on...
 
-
-#### Applications
-
 #### $A_n$ is simple for $n \ge 5$
 
 THM! For $n \ge 5$, notably $A_n$ is ... simple.
@@ -1513,6 +1539,32 @@ THM! For $n \ge 5$, notably $A_n$ is ... simple.
 Any normal subgroup of $A_n$ is closed under conjugation, so $A_n$ must be the union of conjugate classes.
 
 TODO see notes 2018-10-12
+
+I went to office hours looking for a geometric interpretation of conjugacy classes. 
+
+geometric interpretation | concept
+--- | ---
+symmetries of regular polyhedra | group actions by $S_4$ and $A_5$
+conjugate rotations of polyhedra | conjugacy classes, counting arguments
+products of reflections | simple transpositions
+inscribing diagonals, cubes | finding a permutation representation
+? | Cayley graphs
+eigenspaces in $\RR^5$ | eigenvalues fixed by conjugation 
+canonical forms | decompositions
+
+Other directions?
+
+- permuting conjugacy classes by moving to the automorphism group
+- finding an orbit containing two objects of interest
+- larger orbits as unions of smaller conjugacy classes, *fusion*
+
+PROP! The number of conjugates of a subset $S$ in a group $G$ is the index of ... the normalizer of $S$, $[G : N_G(S)]$ (where $G$ acts by conjugation on its powerset).
+
+PROP! In particular, the number of conjugates of an element $s$ of $G$ is ... the index of the centralizers of $s$, $[G:C_G(s)]$, where $N_G(\{s\}) = C_G(s)$.
+
+PROP! The number of conjugacy classes of $S_n$ is (list them up to $n = 7$)... the number $p(n)$ of partitions of $n$, starting with $p(0)$, they are $1, 1, 2, 3, 5, 7, 11, 15, \ldots$
+
+FACT! Normal subgroups of a group $G$ are the union of ... conjugacy classes of $G$, i.e., if $H \triangleleft G$, then for every conjugacy class $\sK$ of $G$, either $\sK \subset H$ or $\sK \cap H = \emptyset$.
 
 #### Apocrypha
 
@@ -1556,13 +1608,13 @@ We've at least touched on all the topics for the prelim exam, though I would lik
 Other directions
 
 - universal properties for products and quotients
-- ramping up vocabulary endo- and auto-morphisms
+- ramping up vocabulary endo- and automorphisms
 - symmetries of regular polyhedra
 - topological groups?
 
 ### Week 8: products of groups and series
 
-#### Group products
+#### Direct (sums and) products
 
 From Jerry Shurman, [Group Products](https://people.reed.edu/~jerry/332/11product.pdf), we define a product by its characteristic mapping property.
 Our goal? 
@@ -1575,15 +1627,41 @@ DEF! The external direct product of groups $G_1$ and $G_2$ is ... the cartesian 
 
 DEF! The internal direct product $G = G_1G_2$ of groups $G_1$ and $G_2$ is defined when ... $G_1 \cap G_2 = \{e\}$ and both $G_1$ and $G_2$ are normal in $G$.
 
+Notation to straighten out
+
+- projection homomorphisms
+- $S_n$ acting by permutations of indices (preludes the wreath product)
+- identifying $(x_1,\ldots,x_n)^k$ with $x_1^k\cdots x_n^k$
+- identifying $i$th components with the coordinate axis subgroups
+
+More examples
+
+- products of subgroups of $S_n$
+- groups of order $pq$ for $p < q$ primes and $q | p - 1$
+
+#### Semidirect products
+
 In lecture, I asked about [permutable complements](https://groupprops.subwiki.org/wiki/Permutable_complements) without much success. See also [“Complement to normal subgroup is isomorphic to quotient group - Groupprops”](https://groupprops.subwiki.org/wiki/Complement_to_normal_subgroup_is_isomorphic_to_quotient_group).
 
-#### Review
+Often we want to know when $H \triangleleft G$ how $H$ can be acted upon by some subgroup of $G$. If $H$ is abelian but not contained in $Z(G)$, then there's a element $g \in G\setminus H$ such that conjugation restricted to $H$ is not an inner automorphism of $H$. Consider $V_4 \le A_4$ and any $3$-cycle conjugating $V_4$.
 
+Here's a case in which every conjugation restricted to $H$ is an inner automorphism of $H$.
+
+- Suppose $H \cong Z_2$. 
+- Then $\Aut{Z_2} = 1$.
+- We must have that $N_G(H)/C_G(H) \cong 1$.
+- Therefore $N_G(H) = C_G(H)$.
+- Suppose we know $H \triangleleft G$, then $G = C_G(H)$.
+- So element $g \in G$ commutes with every $h \in H$.
+- Therefore $H \le Z_(G)$.
+
+
+#### Review
 
 ### Week 9: subgroup series
 
 We had a definition quiz on
 
 - subgroup
-- 
 - [composition series](https://en.wikipedia.org/wiki/Composition_series)
+- 
