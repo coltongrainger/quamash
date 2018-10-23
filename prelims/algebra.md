@@ -898,9 +898,19 @@ DEF: The orbits of an element $\sigma$ in $S_n$ will refer to ... the orbits of 
 
 #### Isomorphism theorems
 
+From Spivak:
+
+> There are good reasons why the theorems should be easy and the definitions hard.
+
+From Benedict Gross:
+
+> The names are idiotic. I mean, the fundamental theorem of algebra is a result in complex analysis. But not to go on about the pretension of the names. The work is in the subgroup definition for normal and the group operation on the coset space. We've built up enough ammo to just *kill* the theorem.
+
 THM: (First isomorphism theorem) Let $\phi \colon G \to H$ be a group homomorphism. Then ... $$\phi(G) \cong G/\ker{\phi}.$$
 
-Commutative diagrammatically, where $\pi$ is the natural projection $G \to G/\ker{\phi}$, we have:
+> "any homomorphism of groups factors uniquely through the quotient group by the kernel"
+
+Where $\pi$ is the natural projection $G \to G/\ker{\phi}$, the following diagram commutes.
 
 ```
      \phi
@@ -920,7 +930,16 @@ What's the basis strategy in using the first isomorphism theorem?
 - Find the kernel of some group homomorphism.
 - "Mod out" by the kernel.
 
-THM: (Second, or diamond, isomorphism theorem) Let $H, K \le G$ be a subgroup with $H \le \Norm{G}{K}$. Then ... $H \cap K \triangleleft H$ and $H / (H \cap K) \cong ( HK )/K$. (A mouthful without the diagram; key idea: what do $H$ and $K$ generate? where do they meet?)
+DEF! (Eilenberg) A short exact sequence of groups is a diagram $$1 \to H \xrightarrow{g} G \xrightarrow{f} G' \to 1$$ where $f$ and $g$ are group homomorphisms and ... the image $g(H) = \ker f$, with $g$ injective and $f$ surjective.
+
+- By the first isomorphism theorem, $G' \cong G/H$. 
+- The image is the kernel of the next map.
+- Warning! The inputs $H$ and $G'$ do not determine the group $G$.
+  - e.g., $S_3 \not\cong \ZZ/6\ZZ$ 
+  - yet $1 \to A_3       \hookrightarrow S_3      \xrightarrow{\mathrm{sgn}} \langle \pm 1 \rangle \to 1$
+  - and $1 \to 2\ZZ/6\ZZ \hookrightarrow \ZZ/6\ZZ \xrightarrow{\mod 2} \ZZ/2\ZZ \to 1$
+
+THM: (Second, or diamond, isomorphism theorem) Let $H, K \le G$ be subgroups with $H \le \Norm{G}{K}$. Then ... $H \cap K \triangleleft H$ and $H / (H \cap K) \cong ( HK )/K$. (A mouthful without the diagram; key idea: what do $H$ and $K$ generate? where do they meet?)
 
 Hence, the Hasse poset.
 
@@ -1175,19 +1194,19 @@ The simple transpositions give a generating set for $S_n$.
 
 *Proof by example.* Suppose $\sigma \in S_n$ and write $\sigma$ in braid notation. We have a poset on the crossings because the strands never turn back up the braid diagram. We can then pull out the simple transpositions by ordering the crossings on each string. Lo and behold, this method gives us the minimal number of transpositions to use.
 
-DEF! (Sign of a permutation) TODO
-
-DEF! (Discriminant) TODO
 
 - Open question: the discriminant $\Delta$ under the group action of $S_n$ on the indices of the polynomial has *what* relation to eigenvalues if $\Delta$ is considered to be a subspace inm $\FF[x_1, \ldots, x_n]$?
 
 THM: Let $S_n \to \mathrm{GL}_n(\FF)$ act by left multiplication of permutation matrices. Then for any $\omega \in S_n$, we have $\det(\omega)$ given by ... $\epsilon(\omega)$.
 
-*Proof sketch*. TODO
+*Proof sketch*. TODO (see notes 2018-10-19 #8)
 
-- what's the determinant of a simple transposition?
-    - should be analogous to the *discriminant* of a simple transposition
-- generalize to the set of generators of $S_n$
+We ought also to define the sign of a permutation. Here's a sketch.
+
+- either define the determinant independent of the sign
+- then ask what's the determinant of a simple transposition?
+- (it's analogous to the *discriminant* of a simple transposition)
+- one then generalizes to the set simple transpositions, which are generators for $S_n$
 
 DEF: The alternating group $A_n$ is the subgroup ... $\ker{\epsilon} \triangleleft S_n$, the set of "even permutations", where $\epsilon\colon S_n \to \{-1,1\}$ is the sign function.
 
@@ -1493,11 +1512,9 @@ We had a definition quiz on
 - cycle type
     - requires cycle, cycle decomposition, cycle length
 
-#### Main results
+#### Sylow's theorem
 
-Cauchy's theorem is the "baby case" (baby face).
-
-![Cauchy's baby face](https://upload.wikimedia.org/wikipedia/commons/e/e3/Augustin-Louis_Cauchy.jpg)
+Cauchy's theorem is the "baby case", [a kind of converse to Lagrange's theorem](https://math.stackexchange.com/questions/41731/)
 
 Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of the mnemonic
 
@@ -1519,11 +1536,15 @@ THM!  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ pri
 
 THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
 
-- How to find a normal subgroup? We're set if $\abs{\Syl p G} = 1$.
+*Proof sketch.* (TODO, see notes 2018-10-20)
+
+How to find a normal subgroup? 
+
+- We're set if $\abs{\Syl p G} = 1$.
 - Eventually we have a stronger conclusion, that is, that a [normal sylow subgroup of a finite group is characteristic](https://math.stackexchange.com/questions/93499/normal-sylow-subgroup-of-a-finite-group-is-characteristic).
 - We can expect the prelim questions to be about two levels deeper than superficial applications as fining $p$ such that $\abs{\Syl p G} = 1$.
 
-An application: 
+How to find "white bread" $p$-groups?
 
 - We find a Sylow $p$-subgroup such that $\abs{H_k} = p^k$.
 - Since $Z(H_k)$ is not trivial, by Cauchy's theorem we can find a cyclic subgroup $\ZZ/p\ZZ \cong H_1 \triangleleft Z(H_k)$.
@@ -1534,11 +1555,16 @@ An application:
 
 THM! For $n \ge 5$, notably $A_n$ is ... simple.
 
-*Proof by induction*.
+*Proof by induction*. TODO
 
-Any normal subgroup of $A_n$ is closed under conjugation, so $A_n$ must be the union of conjugate classes.
+- Thiem's proof (directly, combinatorial) on 2018-10-12 
+- Gross's proof (via the icosahedron) on 2018-10-20
 
-TODO see notes 2018-10-12
+Key idea: Any normal subgroup of $A_n$ is closed under conjugation, so $A_n$ must be the union of conjugate classes.
+
+Note also $\abs{\mathrm{PSL}_2(\ZZ/p\ZZ)} = \frac{(p^2 - 1)p}{2}$ and indeed $\mathrm{PSL}_2(\ZZ/5\ZZ) \cong A_5$.
+
+#### Geometric interpretation
 
 I went to office hours looking for a geometric interpretation of conjugacy classes. 
 
@@ -1645,7 +1671,7 @@ In lecture, I asked about [permutable complements](https://groupprops.subwiki.or
 
 Often we want to know when $H \triangleleft G$ how $H$ can be acted upon by some subgroup of $G$. If $H$ is abelian but not contained in $Z(G)$, then there's a element $g \in G\setminus H$ such that conjugation restricted to $H$ is not an inner automorphism of $H$. Consider $V_4 \le A_4$ and any $3$-cycle conjugating $V_4$.
 
-Here's a case in which every conjugation restricted to $H$ is an inner automorphism of $H$.
+Here's a case (?) in which every conjugation restricted to $H$ is an inner automorphism of $H$.
 
 - Suppose $H \cong Z_2$. 
 - Then $\Aut{Z_2} = 1$.
@@ -1655,8 +1681,75 @@ Here's a case in which every conjugation restricted to $H$ is an inner automorph
 - So element $g \in G$ commutes with every $h \in H$.
 - Therefore $H \le Z_(G)$.
 
+DEF! Let $H$ and $K$ be groups with $\phi \colon K \to \Aut{H}$ a homomorphism. The semidirect product $K \ltimes_\phi H$ induced by $\phi$ is ... the cartesian product $K \times H$ equipped with multiplication $(k, h)(k', h') = (kk', h[\phi(k)(h')])$.
+
+What if $\ker\phi = \mathrm{id}_K$? 
+
+- then $K \ltimes_\phi H \cong K \times H$, and 
+- the "twist" is straightened out for free, $\phi(k)(h') = h'$
+
+Do we have a different semidirect product for different automorphisms? 
+
+- Yes, provided that $H$ and $K$ are not already nested in a larger group.
+- If $H, K \le G$ are already subgroups with $K \le N_{G}(H)$, then the action of $K$ on $H$ will necessarily be by conjugation.
+
+To list examples.
+
+- $D_{2n} = C_n \rtimes_\phi C_2 = \langle r \rangle \rtimes \langle s \rangle$ 
+    - define $\phi \colon \langle s \rangle \to \Aut{\langle r \rangle}$ by $\phi(s)(r) = r^{-1}$
+
+#### Aside: classification theorems
+
+Recall the familiar setup, where $G$ is a group of order $\abs{G} = pq$ and $p < q$ are primes. There exist Sylow subgroups $H_p$ and $H_q$ of order $p$ respectively $q$ (with $H_q \triangleleft G$).
+
+- As a *set*, with $\langle \sigma \rangle = H_q$ and $\langle \tau \rangle = H_p$, we have $G = H_p H_q = \{\tau^a \sigma^b : 0 \le a \le p, 0 \le b \le q\}$. 
+- *Why?* Consider that $G = \bigcup_{ 0 \le a \le p} \tau^a H_q.$
+- We want to show the cosets are distinct.
+- Let $\tau, \tau' \in H_p$, and suppose that $\tau H_q = \tau' H_q$. 
+- Then $\tau(\tau')^{-1} \in H_q$.
+- Therefore $\tau(\tau')^{-1} \in H_q \cap H_p = \{1\}$.
+
+To construct a group, all we need to do is devise a multiplication for $(\tau^a \underbrace{\sigma^b)(\tau^{a'}}_{\text{to commute?}}\sigma^{b'})$. 
+
+- Now the Sylow subgroup $H_q$ for the bigger prime $q$ is normal in $G$.
+- So $\tau\sigma\tau^{-1} = \sigma^a$ as an element of $H_q$.
+- Hence $\tau\sigma = \sigma^a\tau$.
+- We see that $a \in \ZZ$ determines the group!
+- In general, $a^p \equiv 1 \mod q$.
+
+For example, suppose $\abs{G} = 2 \times q$. 
+
+- Then $H_q  = \langle 1, \sigma, \sigma^2, \sigma^{q-1} \rangle$, and
+- $H_p = \langle 1,   \tau \rangle$.
+- Either $\tau \sigma \tau^{-1} = \sigma$ and $G \cong \ZZ/2q\ZZ$.
+- Or     $\tau \sigma \tau^{-1} = \sigma^{-1}$ and $G \cong D_{2q}$.
+    - To wit, $\tau^2 \sigma \tau^{-2} = \tau(\sigma^a)\tau^{-1} = \underbrace{\sigma^a \cdots \sigma^a}_{\text{$a$ times}} = \sigma^{a^2}$.
+    - On the other hand, $\tau^2 = e$, so $\sigma^{a^2} = \sigma$.
+    - Thus $a^2 \equiv 1 \mod q$ and so $a \equiv \pm 1 \mod q$.
+        - Where $q | a^2 - 1$ iff $q | (a-1)(a+1)$.
+
+Further in this direction?
+
+- Coxeter presentations
+- classification of groups of order $12$
+- intuition for semidirect products
 
 #### Review
+
+To list concepts I struggled with:
+
+- applications of Sylow's theorem
+    - what helped was reviewing proofs from Thiem, from [@DF04], from Artin, from Gross, from Judson.
+- timeliness, to some extent
+- getting buried in lecture notes
+    - wriggled out of this one by [writing a script](https://github.com/coltongrainger/dotfiles/blob/master/.local/bin/scripts/revcat.sh) to compile and view specified date ranges as single pdfs
+
+Over the weekend, I caught up with [Benedict Gross's lectures](http://www.math.harvard.edu/archive/122_fall_03/), namely:
+
+- Week 6. Isometries of plane figures. Cyclic and dihedral groups. Finite and discrete subgroups of symmetry groups.
+- Week 7. Group actions. Basic properties and constructions. Groups acting on themselves by left multiplication. Groups acting on themselves by conjugation.
+- Week 8. A5 and the symmetries of an icosahedron. Sylow theorems. Study of permutation groups.
+- here's a [study-sheet](http://courses.dce.harvard.edu/%7Emathe222/study-sheet.pdf) for that course
 
 ### Week 9: subgroup series
 
@@ -1664,4 +1757,5 @@ We had a definition quiz on
 
 - subgroup
 - [composition series](https://en.wikipedia.org/wiki/Composition_series)
-- 
+- derived series
+- semi-direct products
