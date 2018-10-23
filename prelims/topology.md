@@ -502,6 +502,7 @@ See also
 
 - Dimension Theory and Separation Theorems, A History of Algebraic and Differential Topology, 1900-1969 by J. Dieudonné, Birkhäuser (1989) <https://www.maths.ed.ac.uk/~v1ranick/jordan/dieujord.pdf>
 - <https://terrytao.wordpress.com/2011/06/13/brouwers-fixed-point-and-invariance-of-domain-theorems-and-hilberts-fifth-problem/>
+- [“Space-filling curve”](https://en.wikipedia.org/wiki/Space-filling_curve#The_Hahn%E2%80%93Mazurkiewicz_theorem). English Wikipedia. Retrieved October 23, 2018.
 
 #### Images, preimages, etc
 
@@ -572,3 +573,4 @@ For normal spaces, here's fine: <https://en.wikipedia.org/wiki/Normal_space>.
 
 DEF! A topological space is normal if ... given two disjoint closed subsets $E$ and $F$, there are neighborhoods $U$ of $E$ and $V$ of $F$ that are also disjoint.
 
+- 

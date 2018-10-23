@@ -1490,7 +1490,7 @@ How many cubes can we have under different coloring schemes? Counting orbits? Co
 
 Moral of the first midterm: *state* and *prove*. 
 
-To list little mistakes I made
+To list little mistakes.
 
 - using notation $A \le \Norm{G}{B}$ without specifying the action
 - running out of time to show in the diamond isomorphism theorem that $\phi \colon AB \to A/ A \cap B$ is a group homomorphism with kernel $B$
@@ -1697,6 +1697,18 @@ To list examples.
 
 - $D_{2n} = C_n \rtimes_\phi C_2 = \langle r \rangle \rtimes \langle s \rangle$ 
     - define $\phi \colon \langle s \rangle \to \Aut{\langle r \rangle}$ by $\phi(s)(r) = r^{-1}$
+- the wreath product
+- upper triangular matrices
+- $S_n = A_n \rtimes C_2$
+  - Consider $S_n \ge A_n$. 
+  - Does $A_n$ have a complement? 
+  - Yes, it's $C_2  = \langle (1,2) \rangle$, the set of coset representatives of $S_n / A_n$.
+- $\abs{G} = pq$ with $p < q$ primes and $q \equiv 1 \mod p$.
+  - Let $G = P \times Q$, $P \in \Syl q G$, and $Q \in \Syl q G$.
+  - Consider $\phi \colon P \to \Aut{Q} \cong C_{q-1}$.
+  - Since $P$ is simple $\ker \phi = P$ or $1$.
+  - If $\ker \phi = P$, then $G \cong P \times Q$.
+  - Else if $\ker \phi =1$, all the non-abelian semidirect products are isomorphic.
 
 #### Aside: classification theorems
 
@@ -1734,9 +1746,38 @@ Further in this direction?
 - classification of groups of order $12$
 - intuition for semidirect products
 
+#### Series of normal subgroups
+
+- we either ask for subquotients
+- or specify the subgroups (e.g., some characteristic subgroups)
+
+DEF! For $j \in \ZZ_{\ge 0}$, let $G^{(0)} = G$, and $G^{(j)} = [G^{(j-1)},G^{(j-1)}]$. The derived series of $G$ is ... $G = G^{(0)} \triangleright \ldots \triangleright G^{(j)} \triangleright \ldots \triangleright \{1\}$.
+
+- we're as greedy as possible, choosing large commutators for small abelian subquotients
+
+THM! A group is solvable iff ... $G^{(m)} = \{1\}$ for some $m \in \ZZ_{\ge 0}$.
+
+DEF! For $j \in \ZZ_{\ge 0}$, let $Z_0(G) = \{1\}$, and $Z_j(G) = \pi^{-1}(Z(G/Z_{j-1}(G)))$. The upper central series of $G$ is ... $G = Z_0(G) \triangleleft Z_1(G) \triangleleft \ldots \stackrel{?}{=} G$. (Either the series terminates at $G$ or stabilizes.)
+
+- e.g., the upper triangular matrices over $\FF$ have a terminating upper central series
+
+DEF! A group $G$ is nilpotent with nilpotent class $c$ if $Z_c (G) = G$ and $Z_{c-1}(G) \neq G$.
+
+EX! The upper triangular matrices $UT_n(\FF)$ are nilpotent with nilpotent class ... $n-1$.
+
+- In fact, if $\FF$ is a finite field, then $UT_n(\FF)$ is a $p$-subgroup.
+- The special linear matrices are trivially nilpotent? TODO
+- $p$-groups are nilpotent. TODO
+
+DEF! The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1 \triangleright \ldots $ where ... $G_j = [G, G_{j-1}]$ and $G_0 = G$.
+
+- easier here to stall out
+- upper and lower central series complete iff *both* terminate
+  - one implies the other
+
 #### Review
 
-To list concepts I struggled with:
+To list concepts I struggled with.
 
 - applications of Sylow's theorem
     - what helped was reviewing proofs from Thiem, from [@DF04], from Artin, from Gross, from Judson.
@@ -1759,3 +1800,5 @@ We had a definition quiz on
 - [composition series](https://en.wikipedia.org/wiki/Composition_series)
 - derived series
 - semi-direct products
+
+#### Lower central series
