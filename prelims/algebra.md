@@ -1884,7 +1884,7 @@ DEF: The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1
 
 For the group of upper triangular matrices, $UT_4(\FF)$, the upper and lower central series are the same up, to reversing the order.
 
-THM! Let $G$ be a group. (a) If $\gamma_c(G) = \{1\}$ for some $c \in \ZZ_{\ge 0}$, then $G$ is [...]; (b) Moreover $\gamma_c(G) = \{1\}$ iff [...]. ... $G$ is nilpotent; the upper central series terminates $Z_c(G) = G$.
+THM: Let $G$ be a group. (a) If $\gamma_c(G) = \{1\}$ for some $c \in \ZZ_{\ge 0}$, then $G$ is [...]; (b) Moreover $\gamma_c(G) = \{1\}$ iff [...]. ... $G$ is nilpotent; the upper central series terminates $Z_c(G) = G$.
 
 *Proof sketch.* 
 
@@ -1898,57 +1898,57 @@ THM! Let $G$ be a group. (a) If $\gamma_c(G) = \{1\}$ for some $c \in \ZZ_{\ge 0
 
 #### Structure of $p$-groups
 
-THM! If $G$ is a nontrivial $p$-group, then the center ... $Z(G) \neq 1$.
+THM: If $G$ is a nontrivial $p$-group, then the center ... $Z(G) \neq 1$.
 
-THM! If $G$ is a $p$-group and $H \triangleleft G$ is a nontrivial normal subgroup, then $H$ meets ... the center nontrivially $H \cap Z(G) \neq 1$.
+THM: If $G$ is a $p$-group and $H \triangleleft G$ is a nontrivial normal subgroup, then $H$ meets ... the center nontrivially $H \cap Z(G) \neq 1$.
 
-THM! If $G$ is a $p$-group, $H \triangleleft G$, and $p^a$ divides the order of $H$, then $H$ has a subgroup ... of order $p^a$.
+THM: If $G$ is a $p$-group, $H \triangleleft G$, and $p^a$ divides the order of $H$, then $H$ has a subgroup ... of order $p^a$.
 
-THM! If $G$ is a $p$-group and $H < G$ is a proper subgroup, then the normalizer $N_G(H)$ of $H$ in $G$ is strictly ... larger than $H$.
+THM: If $G$ is a $p$-group and $H < G$ is a proper subgroup, then the normalizer $N_G(H)$ of $H$ in $G$ is strictly ... larger than $H$.
 
-THM! If $G$ is a $p$-group and $H < G$ is maximal, then ... $H \triangleleft G$.
+THM: If $G$ is a $p$-group and $H < G$ is maximal, then ... $H \triangleleft G$.
 
 *Proof sketch.* TODO (see notes 2018-10-22 #3)
 
-FACT! If $p$ is the least prime dividing the order of $G$, then any subgroup $H$ of index ... $p$ is normal in $G$.
+FACT: If $p$ is the least prime dividing the order of $G$, then any subgroup $H$ of index ... $p$ is normal in $G$.
 
 *Proof sketch.* TODO
 
 #### Structure of nilpotent groups
 
-THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) [...] ... if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$.
+THM: Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) [...] ... if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$.
 
 <!---
 
-THM! Let $G$ be a finite group. TFAE: (a) [...]  (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... $G$ is nilpotent;
+THM: Let $G$ be a finite group. TFAE: (a) [...]  (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... $G$ is nilpotent;
 
-THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) [...]  (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly);
+THM: Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) [...]  (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly);
 
-THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) [...] (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $Q \in \Syl p G$, then $Q \triangleleft G$;  
+THM: Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) [...] (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $Q \in \Syl p G$, then $Q \triangleleft G$;  
 --->
 
 *Proof sketch.* TODO (see notes 2018-10-24, 2--3)
 
-CORO! If $G$ is abelian and finite, then it's the direct product of ... its Sylow subgroups.
+CORO: If $G$ is abelian and finite, then it's the direct product of ... its Sylow subgroups.
 
 #### Frattini argument
 
-PROP! (Frattini argument) Let $G$ be finite and $H \triangleleft G$. For $P \in \Syl p H$, we have that ... ($\abs{G/H}$ divides $\abs{N_G(P)}$ and) $G = HN_G(P)$.
+PROP: (Frattini argument) Let $G$ be finite and $H \triangleleft G$. For $P \in \Syl p H$, we have that ... ($\abs{G/H}$ divides $\abs{N_G(P)}$ and) $G = HN_G(P)$.
 
 *Proof sketch.* TODO (notes 2018-10-26)
 
-CORO! A finite group $G$ is nilpotent iff all its maximal subgroups are ... normal.
+CORO: A finite group $G$ is nilpotent iff all its maximal subgroups are ... normal.
 
 #### Elementary abelian $p$-groups
 
-DEF! A finite abelian $p$-group $A$ is elementary if ... $a^p = 1$ for all $a \in A$. (We view elementary abelian $p$-groups as a vector space over $\FF_p$).
+DEF: A finite abelian $p$-group $A$ is elementary if ... $a^p = 1$ for all $a \in A$. (We view elementary abelian $p$-groups as a vector space over $\FF_p$).
 
-PROP! If $A$ is elementary abelian and $a \in A$, then there exists $A' \le A$ such that ... $A \cong A' \times \langle a \rangle$.
+PROP: If $A$ is elementary abelian and $a \in A$, then there exists $A' \le A$ such that ... $A \cong A' \times \langle a \rangle$.
 
 *Proof sketch* TODO (notes 2018-10-26)
 
-CORO! IF $A$ is an elementary abelian $p$-group (of order $p^n$), then $A$ is isomorphic to ... $\underbrace{C_p \times \cdots \times C_p}_{n \text{ times}}$.
+CORO: IF $A$ is an elementary abelian $p$-group (of order $p^n$), then $A$ is isomorphic to ... $\underbrace{C_p \times \cdots \times C_p}_{n \text{ times}}$.
 
-THM! (FTFGAG) TODO
+THM! (FTFGAG) Let $A$ be an abelian group of order $$p_1^{k_1}p_2^{k_2}\cdots p_\ell^{k_\ell}$$ with $p_1 < \ldots < p_\ell$ primes. Then (a) $$A \cong A_1 \times A_2 \times \cdots \times A_\ell$$ with $\abs{A_j} = p_j^{k_j}$, (b) for each $1 \le j \le \ell$ there's an integer partition $\lambda$ of $k_j$ such that ... $$A_j \cong C_{p_j}^{\lambda_1} \times C_{p_j}^{\lambda_2} \times \cdots \times C_{p_j}^{\lambda_r}.$$
 
-
+*Proof sketch* TODO (notes 2018-10-26)
