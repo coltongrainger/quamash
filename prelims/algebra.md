@@ -930,7 +930,7 @@ What's the basis strategy in using the first isomorphism theorem?
 - Find the kernel of some group homomorphism.
 - "Mod out" by the kernel.
 
-DEF! (Eilenberg) A short exact sequence of groups is a diagram $$1 \to H \xrightarrow{g} G \xrightarrow{f} G' \to 1$$ where $f$ and $g$ are group homomorphisms and ... the image $g(H) = \ker f$, with $g$ injective and $f$ surjective.
+DEF: (Eilenberg) A short exact sequence of groups is a diagram $$1 \to H \xrightarrow{g} G \xrightarrow{f} G' \to 1$$ where $f$ and $g$ are group homomorphisms and ... the image $g(H) = \ker f$, with $g$ injective and $f$ surjective.
 
 - By the first isomorphism theorem, $G' \cong G/H$. 
 - The image is the kernel of the next map.
@@ -989,7 +989,7 @@ PROP: If $G$ is a finite group of order $n$ and $p$ is the smallest prime dividi
 *Proof sketch*. 
 
 - Suppose $H \le G$ and $\abs{G : H} = p$. 
-- Let $\pi_H$ be the permutation representation $\pi \colon G \to S_G$ afforded by left multiplication of the cosets of $H$ in $G$, let $K = \ker \pi_H$, and let $\abs{H:K} = k$.
+- Let $\pi_H$ be the permutation representation $\pi \colon G \to S_p$ afforded by left multiplication of the cosets of $H$ in $G$, let $K = \ker \pi_H$, and let $\abs{H:K} = k$.
 - Now $\abs{G:K} = \abs{G:H}\abs{H:K} = pk$. Since $H$ has $p$ left cosets, $G/K$ is isomorphic to a subgroup of $S_p$ by the first isomorphism theorem. 
 - By Lagrange's theorem, $pk = \abs{G/K}$ divides $p = \abs{G/H}$.
 - Thus $k$ divides $(p-1)!$
@@ -1283,7 +1283,7 @@ CORO:  Let $w, v \in S_n$ have cycle decompositions $w =  c_1c_2\cdots c_k$  and
 
 DEF: An integer partition $\lambda$ of $n$ is a sequence $\lambda = (\lambda_1, \ldots, \lambda_\ell)$ such that ... (IP1) $\lambda_1 \ge \lambda_2 \ge \ldots \ge \lambda_\ell > 0$ and (IP2) $n = \lambda_1 + \lambda_2 + \ldots + \lambda_\ell$.
 
-DEF: The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
+  DEF: The cycle type of a permutation $\omega \in S_n$ is ... the unique integer partition of $n$ obtained by reordering the cycle length of the cycle decomposition of $\omega$ into nonincreasing order (a mouthful, yes).
 
 
 #### The class equation
@@ -1298,7 +1298,7 @@ i. The set $G$ is partitioned into disjoint orbits under the conjugation group a
 ii. $G$ also acts by conjugation on the set of its subgroups. Now $N_G(K)$ is a subgroup of $G$, so by Lagrange's theorem, $\abs{N_G(K)}$ divides $\abs{G}$. Therefore $\abs{G : N_G(K)}$ divides $\abs{G}$.
 iii. $G$ is the disjoint union of such conjugacy classes.
 
-THM! (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representatives for the conjugacy classes not in the center of a group $G$. Then (by orbit stabilizer) the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
+THM: (Class equation) Let $g_1, g_2, \ldots, g_\ell \in G / Z(G)$ be representatives for the conjugacy classes not in the center of a group $G$. Then (by orbit stabilizer) the order of $G$ is given by ... $$\abs{Z(G)} + \sum_{j=1}^\ell \frac{\abs{G}}{\abs{C_G(g_j)}}.$$
 
 - Note the number of elements in the center of $G$ is the number of singleton conjugacy classes. 
 - (Categorically akin to totally disconnected components in topology? Maybe not.)
@@ -1408,12 +1408,12 @@ EX: For $n \ge 2$ with $n \neq 6$ the inner automorphisms $\Inn{S_n}$ coincide w
 
 Results from the book [@DF04, chapter 4.4]:
 
-PROP! Let $H$ be a normal subgroup of $G$. The action of $G$ on $H$ by conjugation induces permutation representation, that is a homomorphism of $G$ into $\Aut{H}$ with kernel given by ... $G/C_G(H)$. 
+PROP: Let $H$ be a normal subgroup of $G$. The action of $G$ on $H$ by conjugation induces permutation representation, that is a homomorphism of $G$ into $\Aut{H}$ with kernel given by ... $G/C_G(H)$. 
 
-PROP! For any subgroup $H$ of a group $G$, the quotient group [...] is isomorphic to a subgroup of $\Aut{H}$ ... where that quotient group is $N_G(H)/C_G(H)$.
+PROP: For any subgroup $H$ of a group $G$, the quotient group [...] is isomorphic to a subgroup of $\Aut{H}$ ... where that quotient group is $N_G(H)/C_G(H)$.
 
 
-EX! Assume $G$ is a group of order $pq$, where $p$ and $q$ are primes with $p \le q$. If $p \not\vert q - 1$, then $G$ is ... abelian.
+EX: Assume $G$ is a group of order $pq$, where $p$ and $q$ are primes with $p \le q$. If $p \not\vert q - 1$, then $G$ is ... abelian.
 
 *Proof sketch*.
 
@@ -1432,7 +1432,7 @@ EX! Assume $G$ is a group of order $pq$, where $p$ and $q$ are primes with $p \l
 - We obtain the contradiction $p | q-1$. 
 - So $Z(G) = G$.
 
-DEF! Let $p$ be a prime and let $V$ be an abelian group with the property that $pv = 0$ for all $v \in V$. When $\abs{V} = p^n$, $V$ is called the elementary abelian group of order $p^n$, and turns out to be ... an $n$-dimensional vector space over the field $\FF_p = \ZZ/p\ZZ$, with $\Aut{V} \cong \mathrm{GL}_n(\FF_p)$. 
+DEF: Let $p$ be a prime and let $V$ be an abelian group with the property that $pv = 0$ for all $v \in V$. When $\abs{V} = p^n$, $V$ is called the elementary abelian group of order $p^n$, and turns out to be ... an $n$-dimensional vector space over the field $\FF_p = \ZZ/p\ZZ$, with $\Aut{V} \cong \mathrm{GL}_n(\FF_p)$. 
 
 EX: If $V$ is a vector space over $\ZZ/p\ZZ$ for prime $p$, then $\underbrace{\Aut{V}}_{\text{as an abelian group}}$ is isomorphic to  ... $\mathrm{GL}(V) \cong \mathrm{GL}_{\dim V}(\ZZ/p\ZZ)$.
 
@@ -1524,17 +1524,17 @@ Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of t
 
 \providecommand{\Syl}[2]{\mathrm{Syl}_{ #1 }\left( #2 \right)}
 
-DEF! Suppose $G$ is a group with order $\abs{G} = p^n m$, where $p$ is prime and $\gcd(p,m) = 1$. A Sylow $p$-subgroup $P$ of $G$ is ... a subgroup of order $p^n$ ($n \in \ZZ_{\ge 0}$).
+DEF: Suppose $G$ is a group with order $\abs{G} = p^n m$, where $p$ is prime and $\gcd(p,m) = 1$. A Sylow $p$-subgroup $P$ of $G$ is ... a subgroup of order $p^n$ ($n \in \ZZ_{\ge 0}$).
 
-DEF! Let $\Syl p G$ be ... the set of all Sylow $p$-subgroups of $G$.
+DEF: Let $\Syl p G$ be ... the set of all Sylow $p$-subgroups of $G$.
 
-THM!  (Sylow via Thiem) Let $\abs{G} = p^n m$, with $p$ prime and $\gcd(p,m) = 1$. ... (E) $\Syl p G \neq \emptyset$; (C) $G$ acts transitively on $\Syl p G$ by conjugation; (N) denoting $n_p = \abs{\Syl p G}$, we have $n_p \equiv 1 \mod p$.
+THM:  (Sylow via Thiem) Let $\abs{G} = p^n m$, with $p$ prime and $\gcd(p,m) = 1$. ... (E) $\Syl p G \neq \emptyset$; (C) $G$ acts transitively on $\Syl p G$ by conjugation; (N) denoting $n_p = \abs{\Syl p G}$, we have $n_p \equiv 1 \mod p$.
 
-CORO! For $\abs{G} = p^n m$, why does $\abs{\Syl p G}$ divide $m$? ... By orbit stabilizer (where $G$ acts on its powerset by conjugation) and the Sylow theorem (part C), $$\abs{\Syl p G} = \frac{\abs{G}}{\abs{N_G(H_p)}}, \quad H_p \in \Syl p G.$$
+CORO: For $\abs{G} = p^n m$, why does $\abs{\Syl p G}$ divide $m$? ... By orbit stabilizer (where $G$ acts on its powerset by conjugation) and the Sylow theorem (part C), $$\abs{\Syl p G} = \frac{\abs{G}}{\abs{N_G(H_p)}}, \quad H_p \in \Syl p G.$$
 
-THM!  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ prime to $m$ ... (E) there's a Sylow $p$-subgroup, (C) every two Sylow $p$-subgroups are conjugate, (N) the number $\ell$ of such subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$. 
+THM:  (Sylow via Gross) If $G$ is finite of order $N = p^n \cdot m$ with $p$ prime to $m$ ... (E) there's a Sylow $p$-subgroup, (C) every two Sylow $p$-subgroups are conjugate, (N) the number $\ell$ of such subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$. 
 
-THM!  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
+THM:  (Conjugation note) If $G$ is finite of order $N = p^n \cdot m$, by Sylow (N) the number $\ell$ of Sylow $p$-subgroups satisfies both $\ell | m$ and $\ell \equiv 1 \mod p$ and we note ... $\ell = 1$ iff $H_p \triangleleft G$.
 
 *Proof sketch.* (TODO, see notes 2018-10-20)
 
@@ -1550,6 +1550,45 @@ How to find "white bread" $p$-groups?
 - Since $Z(H_k)$ is not trivial, by Cauchy's theorem we can find a cyclic subgroup $\ZZ/p\ZZ \cong H_1 \triangleleft Z(H_k)$.
 - We mod out by $H_1$ to obtain a subgroup of order $p^{k-1}$.
 - And so on...
+
+LEMMA! TODO, source: <https://math.stackexchange.com/questions/891564/>
+
+> Since $N \trianglelefteq G $, $NP$ is  subgroup of $G$ and $[NP:P]=[N:N \cap P]$ (use that $NP/N \cong P/(N \cap P))$. Since $P \in Syl_p(G)$ and $[NP:P]$ divides $[G:P]$, the index $[N:N \cap P]$ is not divisible by $p$. This implies that the $p$-subgroup $N \cap P \in Syl_p(N)$.
+>
+> Conversely, if $Q \in Syl_p(N)$, then the $p$-subgroup $Q$ is contained in some $P \in Syl_p(G)$ (this is a well-known lemma). Hence $Q \subseteq N \cap P$. But we just showed that $N \cap P \in Syl_p(N)$, whence $Q=N \cap P$. In other words, all Sylow $p$-subgroups of $N$ arise by intersecting those of $G$ with $N$.
+
+#### Sylow-theoretic classifications
+
+EX: If $\abs{G} = pq$, where $p < q$, both prime, and $p \not| q-1$, then ... $1 = \abs{\Syl q G} = \abs{\Syl p G}$ and $G \cong Z_{pq}$.
+
+EX: If $\abs{G} = pq$, where $p < q$, both prime, and $p | q-1$, then ... the Sylow subgroup $H_q \triangleleft G$, and we need to define a twist for the action of $H_p \in \Syl p G$ on $\Aut{H_q}$.
+
+EX: A group $G$ of order $12$ either has a normal Sylow $3$-subgroup or ... $G \cong A_4$ in which case $G$ has a normal Sylow $2$-subgroup.
+
+EX: A group $G$ of order $p^2 q$ where $p > q$ has a normal ... Sylow $p$-subgroup.
+
+EX: Given a group $G$ of order $p^2 q$ where $p < q$ either ... $G$ has a normal $q$-subgroup or $p^2 q = 12$ and $G \cong A_4$, the degenerate case.
+
+EX: Let $\abs{G} = pqr$ where $p$, $q$ and $r$ are primes with $p < q < r$. Then $G$ has ... a normal Sylow subgroup for either $p$, $q$ or $r$.
+
+*Given.* The number of Sylow subgroups for each prime respectively denoted $n_p$, $n_q$, and $n_r$. 
+
+*To prove.* $n_p = 1$, $n_q = 1$, or $n_r = 1$, forcing a normal Sylow subgroup. 
+
+*Proof by contradiction.* 
+
+- Assume $n_p, n_q$, and $n_r$ are all strictly greater than $1$. To achieve a contradiction, let $k,s,t \in \NN$ parameterize $$n_p = kp + 1,\quad n_q = sq + 1, \quad n_r = tr+1.$$ 
+    - For the largest prime $r$, from $tr+1 | pq$ we deduce $tr + 1 = pq$. 
+    - For the middle prime $q$, we have $sq + 1 = r \text{ or } pr$. 
+      - For the least prime $p$, we don't have much restriction, and in turn $kp + 1 = q \text{ or } r \text{ or } qr$.
+  - How many non-identity elements are in $G$? Exactly $pqr - 1$. 
+      - We'll violate this upper bound. 
+  - Since the Sylow $p,q,r$-subgroups are conjugate to each other Sylow subgroup of the same prime, and cyclic, the number of non-identity elements from the Sylow subgroups must be
+  $$n_r(r-1) + n_q(q-1) + n_p(p-1).$$
+      - But the number of such nonidentity elements is bounded above by $pqr -1$. 
+      - Working towards contradiction, we take the most conservative possible values for $n_r, n_q$, and $n_p$, and present the inequality
+  $$pqr - 1 \ge pq(r-1) + r(q-1) + q(p-1).$$
+      - From which it follows that $r + q \ge rq + 1$, which is absurd, as $r, q \ge 3$.
 
 #### $A_n$ is simple for $n \ge 5$
 
@@ -1584,15 +1623,15 @@ Other directions?
 - finding an orbit containing two objects of interest
 - larger orbits as unions of smaller conjugacy classes, *fusion*
 
-PROP! The number of conjugates of a subset $S$ in a group $G$ is the index of ... the normalizer of $S$, $[G : N_G(S)]$ (where $G$ acts by conjugation on its powerset).
+PROP: The number of conjugates of a subset $S$ in a group $G$ is the index of ... the normalizer of $S$, $[G : N_G(S)]$ (where $G$ acts by conjugation on its powerset).
 
-PROP! In particular, the number of conjugates of an element $s$ of $G$ is ... the index of the centralizers of $s$, $[G:C_G(s)]$, where $N_G(\{s\}) = C_G(s)$.
+PROP: In particular, the number of conjugates of an element $s$ of $G$ is ... the index of the centralizers of $s$, $[G:C_G(s)]$, where $N_G(\{s\}) = C_G(s)$.
 
-PROP! The number of conjugacy classes of $S_n$ is (list them up to $n = 7$)... the number $p(n)$ of partitions of $n$, starting with $p(0)$, they are $1, 1, 2, 3, 5, 7, 11, 15, \ldots$
+PROP: The number of conjugacy classes of $S_n$ is (list them up to $n = 7$) ... the number $p(n)$ of partitions of $n$, starting with $p(0)$, they are $1, 1, 2, 3, 5, 7, 11, 15, \ldots$
 
 \providecommand{\sK}{\mathscr{K}}
 
-FACT! Normal subgroups of a group $G$ are the union of ... conjugacy classes of $G$, i.e., if $H \triangleleft G$, then for every conjugacy class $\sK$ of $G$, either $\sK \subset H$ or $\sK \cap H = \emptyset$.
+FACT: Normal subgroups of a group $G$ are the union of ... conjugacy classes of $G$, i.e., if $H \triangleleft G$, then for every conjugacy class $\sK$ of $G$, either $\sK \subset H$ or $\sK \cap H = \emptyset$.
 
 #### Apocrypha
 
@@ -1649,11 +1688,11 @@ Our goal?
 
 > A viewpoint of direct products in which there's literally no difference between internal and external definitions.
 
-DEF! (Miracle of producthood) Let $G_1$ and $G_2$ be groups. A product of $G_1$ and $G_2$ is ... a group $G$ and homomorphisms  $G \xrightarrow{\pi_i} G_i$ for $i \in \{1,2\}$ (called projections) having the following property: for any passerby group $\tilde{G}$ with homomorphisms $\tilde{G} \xrightarrow{f_i} G$ for $i \in \{1,2\}$ there exists a unique homomorphism $f \colon \tilde{G} \to G$ such that $f_i = f \circ \pi_i$, to wit, any collection of homomorphisms from a passerby group into the productands factor uniquely through the product.
+DEF: (Miracle of producthood) Let $G_1$ and $G_2$ be groups. A product of $G_1$ and $G_2$ is ... a group $G$ and homomorphisms  $G \xrightarrow{\pi_i} G_i$ for $i \in \{1,2\}$ (called projections) having the following property: for any passerby group $\tilde{G}$ with homomorphisms $\tilde{G} \xrightarrow{f_i} G$ for $i \in \{1,2\}$ there exists a unique homomorphism $f \colon \tilde{G} \to G$ such that $f_i = f \circ \pi_i$, to wit, any collection of homomorphisms from a passerby group into the productands factor uniquely through the product.
 
-DEF! The external direct product of groups $G_1$ and $G_2$ is ... the cartesian product $G = G_1 \times G_2$ equipped with the obvious component-wise multiplication.
+DEF: The external direct product of groups $G_1$ and $G_2$ is ... the cartesian product $G = G_1 \times G_2$ equipped with the obvious component-wise multiplication.
 
-DEF! The internal direct product $G = G_1G_2$ of groups $G_1$ and $G_2$ is defined when ... $G_1 \cap G_2 = \{e\}$ and both $G_1$ and $G_2$ are normal in $G$.
+DEF: The internal direct product $G = G_1G_2$ of groups $G_1$ and $G_2$ is defined when ... $G_1 \cap G_2 = \{e\}$ and both $G_1$ and $G_2$ are normal in $G$.
 
 Notation to straighten out
 
@@ -1665,7 +1704,7 @@ Notation to straighten out
 More examples
 
 - products of subgroups of $S_n$
-- groups of order $pq$ for $p < q$ primes and $q | p - 1$
+- groups of order $pq$, where $p$ and $q$ are primes, $p < q$, and $p | 1 - 1$
 
 #### Semidirect products
 
@@ -1683,7 +1722,7 @@ Here's a case (?) in which every conjugation restricted to $H$ is an inner autom
 - So element $g \in G$ commutes with every $h \in H$.
 - Therefore $H \le Z_(G)$.
 
-DEF! Let $H$ and $K$ be groups with $\phi \colon K \to \Aut{H}$ a homomorphism. The semidirect product $K \ltimes_\phi H$ induced by $\phi$ is ... the cartesian product $K \times H$ equipped with multiplication $(k, h)(k', h') = (kk', h[\phi(k)(h')])$.
+DEF: Let $H$ and $K$ be groups with $\phi \colon K \to \Aut{H}$ a homomorphism. The semidirect product $K \ltimes_\phi H$ induced by $\phi$ is ... the cartesian product $K \times H$ equipped with multiplication $(k, h)(k', h') = (kk', h[\phi(k)(h')])$.
 
 What if $\ker\phi = \mathrm{id}_K$? 
 
@@ -1698,21 +1737,26 @@ Do we have a different semidirect product for different automorphisms?
 To list examples.
 
 - $D_{2n} = C_n \rtimes_\phi C_2 = \langle r \rangle \rtimes \langle s \rangle$ 
-    - define $\phi \colon \langle s \rangle \to \Aut{\langle r \rangle}$ by $\phi(s)(r) = r^{-1}$
+
+      - define $\phi \colon \langle s \rangle \to \Aut{\langle r \rangle}$ by $\phi(s)(r) = r^{-1}$
+
 - the wreath product
 - upper triangular matrices
 - $S_n = A_n \rtimes C_2$
-  - Consider $S_n \ge A_n$. 
-  - Does $A_n$ have a complement? 
-  - Yes, it's $C_2  = \langle (1,2) \rangle$, the set of coset representatives of $S_n / A_n$.
-- $\abs{G} = pq$ with $p < q$ primes and $q \equiv 1 \mod p$.
-  - Let $G = P \times Q$, $P \in \Syl q G$, and $Q \in \Syl q G$.
-  - Consider $\phi \colon P \to \Aut{Q} \cong C_{q-1}$.
-  - Since $P$ is simple $\ker \phi = P$ or $1$.
-  - If $\ker \phi = P$, then $G \cong P \times Q$.
-  - Else if $\ker \phi =1$, all the non-abelian semidirect products are isomorphic.
 
-#### Aside: classification theorems
+    - Consider $S_n \ge A_n$. 
+    - Does $A_n$ have a complement? 
+    - Yes, it's $C_2  = \langle (1,2) \rangle$, the set of coset representatives of $S_n / A_n$.
+
+- $\abs{G} = pq$ with $p < q$ primes and $q \equiv 1 \mod p$.
+
+    - Let $G = P \times Q$, $P \in \Syl q G$, and $Q \in \Syl q G$.
+    - Consider $\phi \colon P \to \Aut{Q} \cong C_{q-1}$.
+    - Since $P$ is simple $\ker \phi = P$ or $1$.
+    - If $\ker \phi = P$, then $G \cong P \times Q$.
+    - Else if $\ker \phi =1$, all the non-abelian semidirect products are isomorphic.
+
+#### Classification theorems revisited
 
 Recall the familiar setup, where $G$ is a group of order $\abs{G} = pq$ and $p < q$ are primes. There exist Sylow subgroups $H_p$ and $H_q$ of order $p$ respectively $q$ (with $H_q \triangleleft G$).
 
@@ -1737,9 +1781,11 @@ For example, suppose $\abs{G} = 2 \times q$.
 - $H_p = \langle 1,   \tau \rangle$.
 - Either $\tau \sigma \tau^{-1} = \sigma$ and $G \cong \ZZ/2q\ZZ$.
 - Or     $\tau \sigma \tau^{-1} = \sigma^{-1}$ and $G \cong D_{2q}$.
+
     - To wit, $\tau^2 \sigma \tau^{-2} = \tau(\sigma^a)\tau^{-1} = \underbrace{\sigma^a \cdots \sigma^a}_{\text{$a$ times}} = \sigma^{a^2}$.
     - On the other hand, $\tau^2 = e$, so $\sigma^{a^2} = \sigma$.
     - Thus $a^2 \equiv 1 \mod q$ and so $a \equiv \pm 1 \mod q$.
+
         - Where $q | a^2 - 1$ iff $q | (a-1)(a+1)$.
 
 Further in this direction?
@@ -1748,34 +1794,7 @@ Further in this direction?
 - classification of groups of order $12$
 - intuition for semidirect products
 
-#### Series of normal subgroups
-
-- we either ask for subquotients
-- or specify the subgroups (e.g., some characteristic subgroups)
-
-DEF! For $j \in \ZZ_{\ge 0}$, let $G^{(0)} = G$, and $G^{(j)} = [G^{(j-1)},G^{(j-1)}]$. The derived series of $G$ is ... $G = G^{(0)} \triangleright \ldots \triangleright G^{(j)} \triangleright \ldots \triangleright \{1\}$.
-
-- we're as greedy as possible, choosing large commutators for small abelian subquotients
-
-THM! A group is solvable iff ... $G^{(m)} = \{1\}$ for some $m \in \ZZ_{\ge 0}$.
-
-DEF! For $j \in \ZZ_{\ge 0}$, let $Z_0(G) = \{1\}$, and $Z_j(G) = \pi^{-1}(Z(G/Z_{j-1}(G)))$. The upper central series of $G$ is ... $G = Z_0(G) \triangleleft Z_1(G) \triangleleft \ldots \stackrel{?}{=} G$. (Either the series terminates at $G$ or stabilizes.)
-
-- e.g., the upper triangular matrices over $\FF$ have a terminating upper central series
-
-DEF! A group $G$ is nilpotent with nilpotent class $c$ if $Z_c (G) = G$ and $Z_{c-1}(G) \neq G$.
-
-EX! The upper triangular matrices $UT_n(\FF)$ are nilpotent with nilpotent class ... $n-1$.
-
-- In fact, if $\FF$ is a finite field, then $UT_n(\FF)$ is a $p$-subgroup.
-- The special linear matrices are trivially nilpotent? TODO
-- $p$-groups are nilpotent. TODO
-
-DEF! The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1 \triangleright \ldots $ where ... $G_j = [G, G_{j-1}]$ and $G_0 = G$.
-
-- easier here to stall out
-- upper and lower central series complete iff *both* terminate
-  - one implies the other
+(We also introduced subgroup series, but I've moved those notes to next week.)
 
 #### Review
 
@@ -1803,4 +1822,133 @@ We had a definition quiz on
 - derived series
 - semi-direct products
 
+DEF: A normal series is ... a chain of subgroups of a group $G$, with least element $\{e\}$ and greatest element $G$, such that each intermediate term is normal in the next.
+
+DEF: A normal series $$\{e\} = G_0 \triangleleft G_1 \triangleleft \cdots \triangleleft G_n = G$$ is said to be nontrivially refinable if ... a factor $G_{i+1}/ G_i$ is not a simple group, as then we may find a nontrivial normal subgroup $N/G_i$ for which $G_i \triangleleft N \triangleleft G_{i+1}$.
+
+DEF: A composition series is ... an unrefinable normal series that includes no repetitions.
+
+Open question: How is one to construct subgroup series?
+
+- <https://groupprops.subwiki.org/wiki/Inductive_proof_methods_for_the_ascending_series_corresponding_to_a_subgroup-defining_function>
+- we either ask for subquotients (as with the upper central series)
+- or specify the subgroups (e.g., some characteristic subgroups)
+
+From Keith Conrad's [Subgroup series I](http://www.math.uconn.edu/~kconrad/blurbs/grouptheory/subgpseries1.pdf), our motivation is
+
+- to generalize the commutator subgroup with 
+  
+    - the derived series $G^{(i)}$
+    - the lower central series $\gamma_i(G)$
+
+        - both define a chain of subgroups starting at $G$ and tending *down lower* to $\{e\}$
+        - the lower central series stabilizes at the *hypocenter*
+        - the intersection of all numbers of the derived series is a group's [perfect core](https://groupprops.subwiki.org/wiki/Perfect_core)
+
+- and to generalize the center $Z(G)$ with
+
+    - the upper central series $Z_i$
+
+        - which defines a chain of subgroups starting at $\{e\}$, tending *on upwards* to $G$, and stabilizing at the *hypercenter*.
+
+#### Derived series
+
+- <https://groupprops.subwiki.org/wiki/Derived_series>
+
+DEF: For $j \in \ZZ_{\ge 0}$, let $G^{(0)} = G$, and $G^{(j)} = [G^{(j-1)},G^{(j-1)}]$. The derived series of $G$ is ... $G = G^{(0)} \triangleright \ldots \triangleright G^{(j)} \triangleright \ldots \triangleright \{1\}$.
+
+- we're as greedy as possible, choosing large commutators for small abelian subquotients (?)
+
+THM: A group is solvable iff ... $G^{(m)} = \{1\}$ for some $m \in \ZZ_{\ge 0}$.
+
+#### Upper central series
+
+DEF: For $j \in \ZZ_{\ge 0}$, let $Z_0(G) = \{1\}$, and $Z_j(G) = \pi^{-1}(Z(G/Z_{j-1}(G)))$. The upper central series of $G$ is ... $G = Z_0(G) \triangleleft Z_1(G) \triangleleft \ldots \stackrel{?}{=} G$. (Either the series terminates at $G$ or stabilizes.)
+
+- e.g., the upper triangular matrices over $\FF$ have a terminating upper central series
+
+DEF: A group $G$ is nilpotent with nilpotent class $c$ if ... $Z_c (G) = G$ and $Z_{c-1}(G) \neq G$.
+
+EX: The upper triangular matrices $UT_n(\FF)$ are nilpotent with nilpotent class ... $n-1$.
+
+- In fact, if $\FF$ is a finite field, then $UT_n(\FF)$ is a $p$-subgroup, so we get nilpotence from a more general result.
+- TODO: show the special linear matrices are trivially nilpotent.
+
 #### Lower central series
+
+DEF: The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1 \triangleright \ldots $ where ... $G_j = [G, G_{j-1}]$ and $G_0 = G$.
+
+- The lower central series might be thought "more likely to stall out" when compared to the derived series.
+
+- The upper series completes iff lower central series completes.
+
+For the group of upper triangular matrices, $UT_4(\FF)$, the upper and lower central series are the same up, to reversing the order.
+
+THM! Let $G$ be a group. (a) If $\gamma_c(G) = \{1\}$ for some $c \in \ZZ_{\ge 0}$, then $G$ is [...]; (b) Moreover $\gamma_c(G) = \{1\}$ iff [...]. ... $G$ is nilpotent; the upper central series terminates $Z_c(G) = G$.
+
+*Proof sketch.* 
+
+- (a) follows from (b).
+    - TODO (see notes 2018-10-24 #1)
+
+- For (b), assume $G$ is nilpotent with nilpotence class $c$. 
+- We'll show that $\gamma_j(G) \subset Z_{c-j}(G)$.
+- We induct on $\gamma_j(G)$ for $j \ge 0$. 
+    - TODO (see notes 2018-10-22 #2)
+
+#### Structure of $p$-groups
+
+THM! If $G$ is a nontrivial $p$-group, then the center ... $Z(G) \neq 1$.
+
+THM! If $G$ is a $p$-group and $H \triangleleft G$ is a nontrivial normal subgroup, then $H$ meets ... the center nontrivially $H \cap Z(G) \neq 1$.
+
+THM! If $G$ is a $p$-group, $H \triangleleft G$, and $p^a$ divides the order of $H$, then $H$ has a subgroup ... of order $p^a$.
+
+THM! If $G$ is a $p$-group and $H < G$ is a proper subgroup, then the normalizer $N_G(H)$ of $H$ in $G$ is strictly ... larger than $H$.
+
+THM! If $G$ is a $p$-group and $H < G$ is maximal, then ... $H \triangleleft G$.
+
+*Proof sketch.* TODO (see notes 2018-10-22 #3)
+
+FACT! If $p$ is the least prime dividing the order of $G$, then any subgroup $H$ of index ... $p$ is normal in $G$.
+
+*Proof sketch.* TODO
+
+#### Structure of nilpotent groups
+
+THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) [...] ... if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$.
+
+<!---
+
+THM! Let $G$ be a finite group. TFAE: (a) [...]  (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... $G$ is nilpotent;
+
+THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) [...]  (c) if $Q \in \Syl p G$, then $Q \triangleleft G$; (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly);
+
+THM! Let $G$ be a finite group. TFAE: (a) $G$ is nilpotent; (b) if $H < G$ is a proper subgroup, then so too $H < N_G(H)$ (properly); (c) [...] (d) if $p_1 < p_2 < \ldots < p_\ell$ are the primes dividing $\abs{G}$, and $Q_j \in \Syl{p_j}{G}$, then $G \cong Q_1 \times Q_2 \times \cdots \times Q_\ell$. ... if $Q \in \Syl p G$, then $Q \triangleleft G$;  
+--->
+
+*Proof sketch.* TODO (see notes 2018-10-24, 2--3)
+
+CORO! If $G$ is abelian and finite, then it's the direct product of ... its Sylow subgroups.
+
+#### Frattini argument
+
+PROP! (Frattini argument) Let $G$ be finite and $H \triangleleft G$. For $P \in \Syl p H$, we have that ... ($\abs{G/H}$ divides $\abs{N_G(P)}$ and) $G = HN_G(P)$.
+
+*Proof sketch.* TODO (notes 2018-10-26)
+
+CORO! A finite group $G$ is nilpotent iff all its maximal subgroups are ... normal.
+
+#### Elementary abelian $p$-groups
+
+DEF! A finite abelian $p$-group $A$ is elementary if ... $a^p = 1$ for all $a \in A$. (We view elementary abelian $p$-groups as a vector space over $\FF_p$).
+
+PROP! If $A$ is elementary abelian and $a \in A$, then there exists $A' \le A$ such that ... $A \cong A' \times \langle a \rangle$.
+
+*Proof sketch* TODO (notes 2018-10-26)
+
+CORO! IF $A$ is an elementary abelian $p$-group (of order $p^n$), then $A$ is isomorphic to ... $\underbrace{C_p \times \cdots \times C_p}_{n \text{ times}}$.
+
+THM! (FTFGAG) TODO
+
+
