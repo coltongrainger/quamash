@@ -293,6 +293,8 @@ EX: To check that $f \colon X \to Y$ is continuous, it's enough to show that, fo
 
 > For suppose that this has been proven. Then for any open set $U$ in $Y$, we write $U = \cup B_i$ for basis elements $B_i$ in $\sB$. Thence $f^{-1}(U) = f^{-1}\left(\cup B_i\right) = \cup f^{-1}(B_i)$. [@Su75, chapter 3.2]
 
+\renewcommand{\sS}{\mathsf{S}}
+
 DEF: A subbasis for a topology $\sT$ is a subcollection $\sS \in \sT$ such that any set in $\sT$ can be written ... as a union of finite intersections of sets from $\sS$.
 
 To sketch a (naive) analogy between three hierarchies in three subjects. 
