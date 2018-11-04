@@ -118,7 +118,7 @@ date: 2018-08-27
 \newcommand{\sT}{\mathscr{T}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
-### Week 1: axioms and motivation
+### Week 1: Axioms and motivation
 
 Course with [Carla Farsi](https://math.colorado.edu/~farsi/). 
 
@@ -204,9 +204,7 @@ Now, Vipul Naik has a category of [particular topological spaces](https://toposp
 
 Ordered by set theoretic containment, we compare topological structures (*on the same set!*) as finer or coarser, where a discrete topology is the finest and an indiscrete topology the coarsest.
 
-#### Motivation
-
-##### Topological structures qua sets
+#### Motivation: topological structures as sets
 
 From [@Gow08, number III.90]: The concept of a straight up topological structure might be a bit too general. We'll often require our topological space to be *Hausdorff*, and we'll usually work with basis sets rather than open sets.
 
@@ -232,14 +230,12 @@ DEF: We say that a space $X$ is compact if ... given any collection $\sC$ of ope
 
 ##### Functions
 
-In a naive sense, we care deeply about set theory only insofar that *functions between sets* are well defined and (mathematically) interesting. At least one driving motivation in the historical development of the subject was to generalize continuity, that is, to abstract an analytic notion of distance in favor of a set theoretic notion of inclusion in sufficiently many neighborhoods of a point.
+- I (almost entirely) care about set theory so as to make interesting arguments about *functions between sets*. 
+- A motivating question: how to abstract an analytic notion of distance in favor of a set theoretic notion of inclusion in sufficiently many neighborhoods of a point?
+- For coarse topologies, we're interested in functions taking values in the codomain [@Ri15]
+- For fine topologies, we want to know which functions can be defined out of the domain
 
 ##### Local to global principles
-
-Now the structure of domain and codomain constrains the families of functions that are well defined between them.
-
-- for coarse topologies, we're interested in functions taking values in the codomain [@Ri15]
-- for fine topologies, we want to know which functions can be defined out of the domain
 
 From [@Go08, number III.9] on compactness: Each of the following is true when $X$ is finite and false otherwise.
 
@@ -260,7 +256,10 @@ EX: In the category of topological and metric spaces these "almost finite" objec
 
 Likewise, in the category of groups we have the notion of a pro-finite group, and in the category of normed spaces with linear operators there's a notion of a compact operator which is of "almost finite rank".
 
-### Week 2: Bases, subspaces, and maps
+### Week 2: Bases, maps, subspaces, and products
+
+- I'm glossing over our initial discussion of the position of a point with respect to a set.
+- See [week 7](#week-7:-review-for-midterm).
 
 #### Bases for topological structures
 
@@ -313,7 +312,7 @@ SCHEMA: Consider a family of spaces $X_\alpha$ and a set $X$ given the coarsest 
 
 #### Continuous functions
 
-Morphisms we care about, from [@Su75, chapter 3.1]:
+They're called maps! They're the morphism we care about, e.g., [@Su75, chapter 3.1]:
 
 AGAIN: Given any two topological spaces $X$ and $Y$, we say a function $f\colon X \to Y$ is continuous if ... for every $Y$-open $U$, $f^{-1}(U)$ is $X$-open too.
 
@@ -336,6 +335,20 @@ Suppose that $X$ and $Y$ are topological spaces. Consider a function $f \colon X
 
 For a function between metric spaces, the $\epsilon$-$\delta$ definition usually studied in Calculus is also equivalent to those criteria above.
 
+#### New spaces from old: subspaces
+
+From [@Ri15]:
+
+DEF! Given a space $X$ and a subset $A$, the subspace topology is ... the coarsest topology on $A$ such that the canonical inclusion $A \hookrightarrow X$ is continuous.
+
+PROP! Let $X$ and $Z$ be spaces and let $A \subset X$ be given the subspace topology. A function $f \colon Z \to A$ is continuous iff ... the composite $Z \to A \hookrightarrow X$ is continuous.
+
+Riehl's exemplar inclusion is that of the space of observable coin flips $2^\NN$ into the closed interval $[0,1]$ via the injection $$(e_1, e_2, e_3, \ldots) \mapsto \sum_{n > 0} \frac{2e_n}{3}.$$
+
+We had a bit of discussion of strong/weak topologies, which is extended by [[“245B, Notes 8: A quick review of point set topology”](https://terrytao.wordpress.com/2009/01/30/254a-notes-8-a-quick-review-of-point-set-topology/). What's new. August 26, 2017.]
+
+> Remark 2. The stronger a topology becomes, the more open and closed sets it will have, but fewer sequences will converge, there are fewer (sequentially) adherent points and (sequentially) compact sets, closures become smaller, and interiors become larger.  There will be more (sequentially) continuous functions on this space, but fewer (sequentially) continuous functions into the space.   Note also that the identity map from a space X with one topology ${\mathcal F}$ to the same space X with a different topology ${\mathcal F}'$ is continuous precisely when $\mathcal F$ is stronger than ${\mathcal F}'$.
+
 #### New spaces from old: products
 
 There are three reasonable topologies with which to endow a product of topological spaces
@@ -348,7 +361,9 @@ but only one of the above has the desirable universal property. From [@Ri15, pag
 
 DEF: (Coarsest topology for the product) Given spaces $X_\alpha$, the product topology on $\prod_\alpha X_\alpha$ is the coarsest topology so that ... the canonical projections $\prod_\alpha X_\alpha \to X_\alpha$ are continuous.A
 
-ALTDEF: (Product topology) Given spaces $X_\alpha$ the product topology on $\prod_\alpha X_\alpha$ has open sets: ... $\prod_\alpha U_\alpha$ where $U_\alpha \subset X_\alpha$ is open and $U_\alpha = X_\alpha$ for all but finitely many indices $\alpha$.
+ALTDEF: (Product topology) Given spaces $X_\alpha$ the product topology on $\prod_\alpha X_\alpha$ is ... generated by a subbasis of sets of the form $\prod_\alpha U_\alpha$ where $U_\alpha \subset X_\alpha$ is open and $U_\alpha = X_\alpha$ for all but finitely many indices $\alpha$ (note these are just preimages of open sets in each coordinate space).
+
+Unlike the subspace topology, this subbasis is *not* closed under finite intersections and unions, so open sets in the product topology are *not* of the
 
 THM: (Universal property of the product topology) Let $Z$ be a topological space, let $X_\alpha$ be a collection of spaces, and give $\prod_\alpha X_\alpha$ the product topology. Then a function $f \colon Z \to \prod_\alpha X_\alpha$ is continuous if and only if ... each coordinate function $f_\alpha \colon Z \to X_\alpha$ is continuous.
 
@@ -358,25 +373,35 @@ The box topology is defined by amending "all but finitely many indices $\alpha$"
 
 As a warning against naive interpretation, note that the product topology is *not* necessarily hyperconnected (as a cofinite topology on an infinite set must be). That is, two open sets in these topologies intersect when they intersect in *all coordinates*, not just a handful.
 
-### Week 3: bases, subspaces, 
+#### Piecing lemma
+
+From [@La03]:
+
+PROP! (Piecing lemma) Suppose $X = A \cup B$ are closed subsets of $X$. Let $f \colon X \to Y$ be a function so that [...]. Then $f$ is continuous. ... the restrictions of $f$ to $A$ and $B$ (given the subspace topology) are each continuous.
+
+PROP! (Piecing lemma for homeomorphisms) Suppose $X = A \cup B$ and $Y = C \cup D$ where $A,B$ are closed in $X$ and $C,D$ are closed in $Y$. Let $f \colon A \to C$ and $g \colon B \to D$ be homeomorphisms, and suppose that the restrictions of $f$ and $g$ to the intersection $A \cap B$ agree as maps into $Y$. [...] If $h$ is a bijection, then $h$ is a homeomorphism. ... Define $h \colon X\to Y$ such that $h|A = f$ and $h|B = g$.
+
+### Week 3: Separation axioms, new textbook
 
 #### A problem textbook is found!
 
-Great news: I started into Viro, Ivanov, Netsvetaev, and Kharlamov's *[Elementary Topology: Problem Textbook](https://www.maths.ed.ac.uk/~v1ranick/papers/viro.pdf)*. And then, in a backwards looking fit of anxiety, I pulled these definitions out of context. 
+Great news: I started into Viro, Ivanov, Netsvetaev, and Kharlamov's *[Elementary Topology: Problem Textbook](https://www.maths.ed.ac.uk/~v1ranick/papers/viro.pdf)*. In a backwards looking fit of anxiety, I pulled these definitions out of context. 
 
-DEF: Fix $x \in X$. An (open) neighborhood of $x$ is ... an open set containing $x$.
-
-DEF: Let $X$ be a space and $a$ some point in $X$. A neighborhood base at $a$ (or just a base of $X$ at $a$) is a collection $\Sigma$ of neighborhoods of $a$ such that ... each neighborhood of $a$ contains a neighborhood from $\alpha$.
-
-DEF: A collection $\sigma = \{U_\alpha\}$ of open sets is said to be an open cover of a subset $A$ if ... $$A \subset \cup_\alpha U_\alpha.$$
-
-DEF: The subset $A$ of a topological space is compact if given any open cover of $A$, there's a finite subcover.
-
-DEF: A topological space $X$ is connected if it's not possible to find two open sets $U$ and $V$ in $X$ with $X = U \cup V$ and $U \cap V = \emptyset$.
-
-DEF: A topological space $X$ is path connected if given any two points $a,b \in X$ there's a continuous map $f \colon [0,1] \to X$ where $f(0) = a$ and $f(1) = b$.
+> DEF: Fix $x \in X$. An (open) neighborhood of $x$ is ... an open set containing $x$.
+> 
+> DEF: Let $X$ be a space and $a$ some point in $X$. A neighborhood base at $a$ (or just a base of $X$ at $a$) is a collection $\Sigma$ of neighborhoods of $a$ such that ... each neighborhood of $a$ contains a neighborhood from $\alpha$.
+> 
+> DEF: A collection $\sigma = \{U_\alpha\}$ of open sets is said to be an open cover of a subset $A$ if ... $$A \subset \cup_\alpha U_\alpha.$$
+> 
+> DEF: The subset $A$ of a topological space is compact if given any open cover of $A$, there's a finite subcover.
+> 
+> DEF: A topological space $X$ is connected if it's not possible to find two open sets $U$ and $V$ in $X$ with $X = U \cup V$ and $U \cap V = \emptyset$.
+> 
+> DEF: A topological space $X$ is path connected if given any two points $a,b \in X$ there's a continuous map $f \colon [0,1] \to X$ where $f(0) = a$ and $f(1) = b$.
 
 #### Separation properties
+
+Didn't cover much in lecture this week.
 
 DEF: A topological space $X$ is $T_0$ (Kolmogorov) if ... for all distinct $x,y \in X$, there's a neighborhood of one of the points not containing the other.
 
@@ -394,62 +419,45 @@ THM: (Recognizing Tikhonov) A space is $T_1$ iff ... for all points $x \neq y$ w
 
 THM: (Recognizing Hausdorff) A space $X$ is $T_2$ iff ... the diagonal $\Delta \subset (X \times X, \sT_{\mathrm{PROD}})$ (defined $\Delta = \{(x,x) : x \in X\}$) is closed, i.e., $\Cl{\Delta} = \Delta$.
 
-#### Homeomorphism
-
-- We defined homeomorphism in lecture (2018-09-21).
-    - what are the necessary conditions to check?
-    - there's a laundry list of equivalent definitions
-
-Further directions:
-- relate to embeddings in $\RR^n$
-    - why can't certain compact non-orientable curves be embedded here?
-- state the pasting lemma (see notes from 2018-09-17)
-
-#### New spaces from old: subspaces 
-
-TODO
-
-- inclusions
-- universal property?
-- behaviour of closure and interior
+### Week 4: homeomorphisms and quotient spaces
 
 #### New spaces from old: quotient spaces
 
-TODO
+DEF! Let $X$ be a space, $Y$ a set, and $\pi \colon X \twoheadrightarrow Y$ a surjection. The quotient topology on $Y$ (with respect to $\pi$) is ... $$\mathscr{Q}_Y = \{U \subset Y: \pi^{-1}(U) \text{ is open in $X$}\}.$$
 
-- laundry list the definitions
-    - via equivalence relation
-    - via surjection
-    - just the quotient map
-    - (see notes 2018-09-29)
-    - (see notes 2018-09-30
-- identification topology (see notes 2018-09-19)
-- what's the universal property?
+> A subset downstairs is open iff it's preimage is open upstairs.
 
-- describe "quotienting out" the real line by the $K$-topology.
+From [@Ri15]:
 
-> Quotienting out $K$ in the $K$-topology [@Mu00, number 22.6]
-> 
-> Let $Y$ be the quotient space obtained from $\RR_K$ by collapsing the set $K$ to point, with $p \colon \RR_K \to Y$ as the corresponding quotient map.
-> 
-> (a) $Y$ is $T_1$ but not Hausdorff.
-> (b) The map $p \times p \colon \RR_K \times\RR_K \to Y \times Y$ is not a quotient map. (Hint: The diagonal is not closed in $Y \times Y$, but its inverse image is closed in $\RR_K \times \RR_K$.)
+DEF! We say a surjective map $\pi \colon X \twoheadrightarrow Y$ is a quotient map when ... $U \subset Y$ is open if and only if $\pi^{-1}(U) \subset X$ is open.
 
-### Week 4: products and quotient spaces
+THM! (Universal property of the quotient topology II) Let $\pi \colon X \twoheadrightarrow Y$ be a quotient map and let $Z$ be a topological space.  Given any continuous function $h \colon X \to Z$ that is constant on fibers, i.e., so that $h(x) = h(x')$ whenever $p(x) = p(x')$, then there is a unique continuous function $f \colon Y \to Z$ so that $g \circ p = h$.
 
-TODO (see notes 2018-09-26)
+> To define a continuous function whose domain is a quotient space, it suffices to define the function "upstairs", provided that the "upstairs" function is constant on fibers. For example, to define a function on $\RR P^n$, it suffices to define a function on $S_n$ that is constant on antipodes.
 
-- quotient topology examples
-- define the connected sum
+The quotient topology is synonymously the "identification topology", apropos of obtaining a quotient space $X/\backsim$ relative to inclusion map $X \hookrightarrow X/\backsim$. In this case $\backsim$ is an equivalence relation where 
 
-TODO (see notes 2018-09-28)
+- each point is equivalent to itself, 
+- perhaps we draw a diagram with arrows on the boundaries to indicate equivalence classes.
 
-- state classification of compact orientable surfaces
-    - e.g., the connected sum of two tori is an $8$ sided polygon with sides $a,b,c,d$ and boundary symbol $aba^{-1}b^{-1}cdc^{-1}d^{-1}$.
-- define projective space
-- upper hemisphere vs Poincaré disk model for projective space
+THM! Every compact connected orientable surface $S \subset \RR^3$ of genus $g$ is homeomorphic to a polygon with ... $4g$ edges and pairs of edges appropriately identified.
+
+EX! The connected sum of two tori is an $8$ sided polygon with sides $a,b,c,d$ and boundary symbol ... $aba^{-1}b^{-1}cdc^{-1}d^{-1}$.
+
+Further directions:
+
+- Why can't certain compact non-orientable curves be embedded in $\RR^n$?
+- [“A Guide to the Classification Theorem for Compact Surfaces”](https://www.cis.upenn.edu/~jean/gbooks/surftop.html). Retrieved November 4, 2018.
+- Obtain $\RR P^2$ from $\RR^3$ with the equivalence relation $p \backsim q$ iff the line through $p$ and $q$ contains the origin.
+- The upper hemisphere and Poincaré disk model for projective space are the same! Crush the hat!
+- What is $S^1 \times S_1$ (considered as $\{z \in \CC: \abs{z} = 1\}^2$ with points $(z,w)$ and $(-z,-w)$ identified?
+
+#### Homeomorphisms
+
+They're maps with inverses---topological isomorphisms.
 
 ### Week 5: order and metric topologies
+
 ### Week 6: connectedness
 
 #### Connectedness
