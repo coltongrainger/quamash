@@ -118,7 +118,7 @@ date: 2018-08-27
 \newcommand{\sT}{\mathscr{T}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
-### Week 1
+### Week 1: axioms and motivation
 
 Course with [Carla Farsi](https://math.colorado.edu/~farsi/). 
 
@@ -260,7 +260,7 @@ EX: In the category of topological and metric spaces these "almost finite" objec
 
 Likewise, in the category of groups we have the notion of a pro-finite group, and in the category of normed spaces with linear operators there's a notion of a compact operator which is of "almost finite rank".
 
-### Week 2
+### Week 2: Bases, subspaces, and maps
 
 #### Bases for topological structures
 
@@ -358,7 +358,7 @@ The box topology is defined by amending "all but finitely many indices $\alpha$"
 
 As a warning against naive interpretation, note that the product topology is *not* necessarily hyperconnected (as a cofinite topology on an infinite set must be). That is, two open sets in these topologies intersect when they intersect in *all coordinates*, not just a handful.
 
-### Week 3
+### Week 3: bases, subspaces, 
 
 #### A problem textbook is found!
 
@@ -396,11 +396,11 @@ THM: (Recognizing Hausdorff) A space $X$ is $T_2$ iff ... the diagonal $\Delta \
 
 #### Homeomorphism
 
-TODO 
+- We defined homeomorphism in lecture (2018-09-21).
+    - what are the necessary conditions to check?
+    - there's a laundry list of equivalent definitions
 
-- define homeomorphism (2018-09-21)
-    - necessary and sufficient conditions to check
-    - laundry list equivalent definitions
+Further directions:
 - relate to embeddings in $\RR^n$
     - why can't certain compact non-orientable curves be embedded here?
 - state the pasting lemma (see notes from 2018-09-17)
@@ -433,9 +433,9 @@ TODO
 > Let $Y$ be the quotient space obtained from $\RR_K$ by collapsing the set $K$ to point, with $p \colon \RR_K \to Y$ as the corresponding quotient map.
 > 
 > (a) $Y$ is $T_1$ but not Hausdorff.
-> (b) The map $p \times p \colon \RR_K \times\RR_K \to Y \times Y$ is not a quotient map.^[The diagonal is not closed in $Y \times Y$, but its inverse image is closed in $\RR_K \times \RR_K$.]
+> (b) The map $p \times p \colon \RR_K \times\RR_K \to Y \times Y$ is not a quotient map. (Hint: The diagonal is not closed in $Y \times Y$, but its inverse image is closed in $\RR_K \times \RR_K$.)
 
-### Week 4
+### Week 4: products and quotient spaces
 
 TODO (see notes 2018-09-26)
 
@@ -449,7 +449,8 @@ TODO (see notes 2018-09-28)
 - define projective space
 - upper hemisphere vs Poincaré disk model for projective space
 
-### Week 6: 
+### Week 5: order and metric topologies
+### Week 6: connectedness
 
 #### Connectedness
 
