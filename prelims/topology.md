@@ -568,7 +568,7 @@ EX! $\QQ$ is not the intersection of countably many ... open sets in $\RR$.
 
 Took a set theoretic digression through [@VINK08, II.9]
 
-PROP: $f(f^{-1}(B)) = B$ iff ... $B \subset \Im f$.
+PROP: $f(f^{-1}(B)) = B$ iff ... $B \subset \mathrm{im} f$.
 
 PROP: $f^{-1}(f(A)) = A$ iff ... $f(A) \cap f(X\setminus A) = \emptyset$.
 
@@ -592,21 +592,21 @@ See also
 
 #### On the construction of sets
 
-Here's a quick constellation from Emily Riehl's [On the construction of new topological spaces from existing ones](http://math.jhu.edu/~eriehl/topologies.pdf). Let $f \colon X \to Y$ be a function.
+Here's a quick review of concepts from Emily Riehl's [On the construction of new topological spaces from existing ones](http://math.jhu.edu/~eriehl/topologies.pdf). Let $f \colon X \to Y$ be a function.
 
-- "coarse"
+- Need a "coarse" topology?
 
     - define a topology on $X$ such that it's the coarsest topology so that $f$ is continuous
     - a sub-basis in $X$ is given by inverse images of open sets in $Y$
     - a function $W \to X$ is continuous iff the composite function $W \to Y$ is continuous
 
-- "fine"
+- Need a "fine" topology?
 
     - define a topology on $Y$ be asking that it's the finest so that $f$ is continuous
     - a subset of $Y$ is open iff its preimage in $X$ is open
     - a function $Y \to Z$ is continuous iff the composite $X \to Z$ is continuous
 
-- constructions
+- Constructions and applications
 
     - disjoint unions (coproducts)
     - products
@@ -633,7 +633,7 @@ For normal spaces, here's fine: <https://en.wikipedia.org/wiki/Normal_space>.
 
 DEF: A topological space is normal if ... given two disjoint closed subsets $E$ and $F$, there are neighborhoods $U$ of $E$ and $V$ of $F$ that are also disjoint.
 
-### Week 9: compactness
+### Week 8: compactness
 
 We defined compactness
 
@@ -732,6 +732,21 @@ Further directions in metrization theory.
 
 CORO! A compact Hausdorff space is metrizable iff ... it's second-countable.
 
+#### Compactification
+
+- We exhibited the [Alexandroff extension](https://en.wikipedia.org/wiki/Alexandroff_extension), but not 
+- [Stone-Čech compactification](https://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification).
+
+IDEA! Take a locally compact, Hausdorff space $(X, \sT)$. The Alexandroff extension of $X$ is ... $\hat{X} = X \sqcup \{\infty\}$ with the topology $\sT \cup \{A \subset \hat{X} : A^c \text{ is closed and compact in $X$}\}$.
+
+EX! The one-point compactification of $\hat{R}$ is ... homeomorphic to $S_1$, via stereographic projection.
+
+Further directions. See [@Mu00, number 38.10].
+
+### Week 9: Countability, intro to homotopy
+
+(We finished a proof of equivalences for compact sets in $\RR^n$, which took some time.)
+
 #### Countability
 
 - first countability
@@ -744,23 +759,19 @@ EX! What countability property does $\RR^\omega$ with the uniform topology posse
 
 EX! What countability property does $\RR_\ell$ (the h-interval topology) possess? ... First countable, yet not second countable.
 
-### Week 9: homotopy
-
 #### Pivoting to algebraic topology.
 
 > Before functoriality, people lived in caves. --- B. Conrad
 
 Alas, we're only half-heartedly pivoting into algebraic topology. 
 
-- Weeks 9 and 10 we still had to finish countability and present the problem sets on metrization.
-- Week 11 we have a summative midterm.
+- Week 11 [Robin Deeley](http://math.colorado.edu/~rode5916/) is lecturing on separation axioms.
+- We'll also have a summative midterm over:
 
     - separation axioms
     - compactness
     - path connectedness
     - definitions required for the fundamental group
-
-- [Robin Deeley](http://math.colorado.edu/~rode5916/) is lecturing on separation axioms.
 
 But, prospects are good! Weeks 12 and on we'll assume many lovely properties of spaces that we're working with:
 
@@ -801,6 +812,8 @@ Here's a baby example.
 EX! For $n \ge 1$, denote by $[S^n, S^0]$ the homotopy equivalence classes in $\{\text{maps from $S_n$ to $S_0$}\}$. Then $[S_n, S_0]$ is ... $\{\star_1, \star_{-1}\}$, the classes of maps sending $S_n$ to either $1$ or $-1$, as any continuous image of $S_n$ must connected.
 
 ### Week 10: the fundamental group
+
+(Friday, we present problem sets on compactness, which took some time.)
 
 #### Definitions for the fundamental group
 
@@ -881,4 +894,4 @@ Munkres has a nice exercise here called "review of the basics" [@Mu00, page 228]
 >
 > Which properties are preserved under continuous maps?
 
-Peter and I took a mock midterm: we both had forgotten how to apply sequential compactness.
+Peter and I took a mock midterm: we both had forgotten how to apply sequential compactness. Eek!
