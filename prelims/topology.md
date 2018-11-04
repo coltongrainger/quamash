@@ -15,8 +15,8 @@ date: 2018-08-27
 - countability axioms
 - properties of spaces
     - $T$-separation axioms
-    - compact
-    - connected
+    - compactness
+    - connectedness
 - canonical examples
     - spheres
     - projective spaces
@@ -447,18 +447,27 @@ TODO (see notes 2018-09-28)
 - define projective space
 - upper hemisphere vs Poincaré disk model for projective space
 
-### Week 6: more vocab
-
-- position of point with respect to a set
-    - closure
-    - interior
-    - boundary
-    - limit/adherent points
-    - dense/nowhere dense sets
-
-### Week 7: review for midterm
+### Week 6: 
 
 #### Connectedness
+
+From lecture:
+
+- definitions
+    - connected
+    - path connected
+    - local connected 
+    - locally path connected
+
+- propositions
+    - unions of connected spaces (with nonempty intersection) are connected
+    - products of connected spaces are connected
+    - connected components are maximal connected subspaces
+    - homeomorphisms preserve the number of connected components
+    - a set nested between a connected set and its closure is connected
+    - path connected implies connected
+
+From [@VINK, chapter III]:
 
 DEF! We say topological space $X$ is connected if ... $X$ has only two subsets that are both open and closed.
 
@@ -467,7 +476,6 @@ PROP! A topological space $X$ is connected iff ... $X$ does not admit a partitio
 PROP! Is the closure of a connected set connected? ... yes.
 
 PROP! If $A$ is connected and $B$ is a set such that $A \subset B \subset \Cl{A}$, is $B$ connected? ... yes.
-
 
 DEF! A connected component of a space $X$ is a ... maximal (with respect to set inclusion) connected subset of $X$.
 
@@ -504,25 +512,49 @@ See also
 - <https://terrytao.wordpress.com/2011/06/13/brouwers-fixed-point-and-invariance-of-domain-theorems-and-hilberts-fifth-problem/>
 - [“Space-filling curve”](https://en.wikipedia.org/wiki/Space-filling_curve#The_Hahn%E2%80%93Mazurkiewicz_theorem). English Wikipedia. Retrieved October 23, 2018.
 
+### Week 7: review for midterm
+
+- position of a point with respect to a set [@VINK08, I.6]
+    - closure
+    - interior
+    - boundary
+    - exterior
+    - limit/adherent points
+    - dense/nowhere dense sets
+
+PROP! A set is everywhere dense in a space iff it meets ... each nonempty open set.
+
+PROP! A space $X$ is discrete iff it contains a unique ... everywhere dense set, namely $X$ itself.
+
+DEF! We say a set $A$ is nowhere dense in a space $X$ when ... its exterior is everywhere dense.
+
+PROP! A set $A$ is nowhere dense in $X$ iff ... each neighborhood of each point $x \in X$ contains a point $y \in X \setminus A$ such that there's a neighborhood $U \ni y$ for which $U \cap A = \emptyset$.
+
+EX! $\RR$ is not the union of countably many ... nowhere dense subsets.
+
+EX! A countable intersection of open everywhere dense sets in $\RR$ is ... everywhere dense.
+
+EX! $\QQ$ is not the intersection of countably many ... open sets in $\RR$.
+
 #### Images, preimages, etc
 
-Took a set theoretic digression through [@VINK08, I.6].
+Took a set theoretic digression through [@VINK08, II.9]
 
-PROP! $f(f^{-1}(B)) = B$ iff ... $B \subset \Im f$.
+PROP: $f(f^{-1}(B)) = B$ iff ... $B \subset \Im f$.
 
-PROP! $f^{-1}(f(A)) = A$ iff ... $f(A) \cap f(X\setminus A) = \emptyset$.
+PROP: $f^{-1}(f(A)) = A$ iff ... $f(A) \cap f(X\setminus A) = \emptyset$.
 
-PROP! Let $g \circ f$ be bijective. It's not necessarily true that $f$ or $g$ is bijective. Though ... $f$ must be injective and $g$ must be surjective.
+PROP: Let $g \circ f$ be bijective. It's not necessarily true that $f$ or $g$ is bijective. Though ... $f$ must be injective and $g$ must be surjective.
 
-DEF! If $A \subset X$ and $B \subset Y$, then for every $f \colon X \to Y$ such that $f(A) \subset B$, we call $A \xrightarrow{?} B$ mapping $x \mapsto f(x)$ ... $\mathrm{ab}(f)  = f\vert_{A,B}$, the abbreviation, or submap, of $f$ to $A$ and $B$.
+DEF: If $A \subset X$ and $B \subset Y$, then for every $f \colon X \to Y$ such that $f(A) \subset B$, we call $A \xrightarrow{?} B$ mapping $x \mapsto f(x)$ ... $\mathrm{ab}(f)  = f\vert_{A,B}$, the abbreviation, or submap, of $f$ to $A$ and $B$.
 
-DEF! If $A \subset X$ and $f \colon X \to Y$, the restriction of $f$ to $A$ is ... the abbreviation $A \xrightarrow{\mathrm{ab}(f)} Y$, denoted $f\vert_A$.
+DEF: If $A \subset X$ and $f \colon X \to Y$, the restriction of $f$ to $A$ is ... the abbreviation $A \xrightarrow{\mathrm{ab}(f)} Y$, denoted $f\vert_A$.
 
-PROP! The restriction of a map $f \colon X \to Y$ to $A \subset X$ is just the composition ... $A \hookrightarrow X \xrightarrow{f} Y$.
+PROP: The restriction of a map $f \colon X \to Y$ to $A \subset X$ is just the composition ... $A \hookrightarrow X \xrightarrow{f} Y$.
 
-PROP! Any submap of an injection is ... injective.
+PROP: Any submap of an injection is ... injective.
 
-PROP! If a map possesses a surjective restriction, then it is ... surjective.
+PROP: If a map possesses a surjective restriction, then it is ... surjective.
 
 See also
 
@@ -561,16 +593,119 @@ On 2018-10-19, we started a [review group](https://github.com/coltongrainger/fy1
 
 Another perspective on separation properties [@Su75, chapter 4]. What's the Hausdorff condition? 
 
-DEF! A topological space satisfies the Hausdorff condition if ... given any two distinct points $x$ and $y$ in $T$ there exist disjoint open subsets $U, V$ of $T$ containing $x$ and $y$ respectively.
+DEF: A topological space satisfies the Hausdorff condition if ... given any two distinct points $x$ and $y$ in $T$ there exist disjoint open subsets $U, V$ of $T$ containing $x$ and $y$ respectively.
 
-PROP! In a Hausdorff space, any given convergent sequence has ... a unique limit.
+PROP: In a Hausdorff space, any given convergent sequence has ... a unique limit.
 
-WARNING! A quotient space of a Hausdorff space ... may not be Hausdorff.
+WARNING: A quotient space of a Hausdorff space ... may not be Hausdorff.
 
-DEF! A topological space is regular if ... given any closed subset $V$ and $x$ in $T\setminus V$, there're disjoint open subsets separating $V$ and $x$.
+DEF: A topological space is regular if ... given any closed subset $V$ and $x$ in $T\setminus V$, there're disjoint open subsets separating $V$ and $x$.
 
 For normal spaces, here's fine: <https://en.wikipedia.org/wiki/Normal_space>.
 
-DEF! A topological space is normal if ... given two disjoint closed subsets $E$ and $F$, there are neighborhoods $U$ of $E$ and $V$ of $F$ that are also disjoint.
+DEF: A topological space is normal if ... given two disjoint closed subsets $E$ and $F$, there are neighborhoods $U$ of $E$ and $V$ of $F$ that are also disjoint.
 
-- 
+### Week 9: compactness
+
+We defined compactness
+
+- with open covers
+- with closed sets having empty intersection 
+- with closed sets having the finite intersection property
+
+To list basic examples
+
+- $\RR$ is not compact.
+- Any topological space with the finite complement topology is compact.
+- Any topological space with a finite topology $\abs{\sT} < \infty$ is compact.
+- If $(X, \sT)$ is compact and $\sT \subset \Sigma$, then $(X, \Sigma)$ is compact too.
+
+PROP! If $X$ is compact and $F \subset X$ is closed, then ... $F$ as a subspace is also compact.
+
+We have the partial converse.
+
+PROP! If $X$ is a Hausdorff topological space and $F \subset X$ is a compact subset, then ... $F$ is closed in $X$.
+
+Apparently "compact Hausdorff" (abbreviated CH) is a desirable property of a topological space (though compactness is not hereditary!). For example,
+
+PROP! If $X$ is a compact Hausdorff space, then ... $X$ is regular ($T_3$).
+
+*Key idea.* In a compact Hausdorff space, a subset $F$ is closed iff it's compact.
+
+PROP! The continuous image $f(X)$ of a compact space $X$ is ... compact.
+
+Albeit that compactness is not a hereditary property, compactness is
+
+- preserved under passage to a *closed* subspace
+- preserved by homeomorphism.
+
+CORO! A continuous bijection of a compact space onto a Hausdorff space is a homeomorphism.
+
+> We're really only considering the category of topological spaces modulo homeomorphism equivalence.
+
+On the other hand, Lindelöf is a hereditary property.
+
+DEF! A Lindel\"of space is ... a space in which every open cover has a countable subcover.
+
+Further directions for compactness.
+
+- define [filters](https://proofwiki.org/wiki/Definition:Filter_on_Set), [ultra-filters](https://proofwiki.org/wiki/Definition:Ultrafilter_on_Set)
+- state the [ultrafilter lemma](https://en.wikipedia.org/wiki/Boolean_prime_ideal_theorem#The_ultrafilter_lemma)
+- prove [Alexander's subbase theorem](https://en.wikipedia.org/wiki/Subbase#Alexander_subbase_theorem)
+- prove [Tychonoff's theorem](https://en.wikipedia.org/wiki/Tychonoff%27s_theorem)
+
+#### Revisiting metric spaces
+
+Consider the following equivalences for a subset $C \subset \RR^n$.
+
+- $C$ is closed and bounded.
+- Every sequence in $C$ has subsequence that converges to a point in $C$.
+- Every infinite subset of $C$ has an accumulation point.
+- $C$ is compact.
+
+What of the above result carries over to arguments in metric spaces? 
+
+- In a metric space a set is compact iff it's closed and bounded. 
+
+    - One needs to define the *diameter* of a set for this claim to make any sense.
+    - Alternatively, a *metric space itself* is compact iff it's complete and totally bounded.
+
+In a metric space, we recover intuition from analysis.
+
+- We get familiar definitions.
+
+    - completeness
+    - boundedness
+    - uniform continuity
+
+- We're permitted to make arguments with open balls and closed disks.
+- Moreover, we have (at least three) useful implications [@St78, section 5]:
+
+    - A metric space is compact iff it's sequentially compact (aka limit point compact).
+    - A metric space is separable iff it's second countable iff it's Lindelöf.
+    - A compact subset of a metric space has a countably dense subset.
+
+The difficulty is not in generating topological spaces given a metric, but rather in determining when an existing space is *metrizable*.
+
+DEF! We say two distance functions $d$ and $d'$ are equivalent on a set $X$ when ... there exist $c, c' > 0$ such that for all $x, y \in X$ we've $$c\cdot d(x,y) \le d'(x,y) \le c'\cdot d(x,y).$$
+
+PROP! If two distance functions $d$ and $d'$ on a set $X$ are equivalent, then $d$ and $d'$ induce ... the same topology on $X$.
+
+Further directions in metrization theory.
+
+- [metrizability is a topological property?](https://math.stackexchange.com/questions/320942/metrizability-is-a-topological-property)
+- [“Metrization theorem - Wikipedia”](https://en.wikipedia.org/wiki/Metrization_theorem). English Wikipedia. Retrieved November 3, 2018.
+
+    - Urysohn's sufficient condition
+    - [Nagata-Smirnov Metrization theorem](https://en.wikipedia.org/wiki/Nagata%E2%80%93Smirnov_metrization_theorem)
+    - [Bing's version](https://en.wikipedia.org/wiki/Bing_metrization_theorem)
+
+CORO! A compact Hausdorff space is metrizable iff ... it's second-countable.
+
+### Week 9: Wrapping up point-set
+
+#### Countability
+
+- first countability
+- second countability
+- Lindelöf
