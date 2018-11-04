@@ -339,9 +339,9 @@ For a function between metric spaces, the $\epsilon$-$\delta$ definition usually
 
 From [@Ri15]:
 
-DEF! Given a space $X$ and a subset $A$, the subspace topology is ... the coarsest topology on $A$ such that the canonical inclusion $A \hookrightarrow X$ is continuous.
+DEF: Given a space $X$ and a subset $A$, the subspace topology is ... the coarsest topology on $A$ such that the canonical inclusion $A \hookrightarrow X$ is continuous.
 
-PROP! Let $X$ and $Z$ be spaces and let $A \subset X$ be given the subspace topology. A function $f \colon Z \to A$ is continuous iff ... the composite $Z \to A \hookrightarrow X$ is continuous.
+PROP: Let $X$ and $Z$ be spaces and let $A \subset X$ be given the subspace topology. A function $f \colon Z \to A$ is continuous iff ... the composite $Z \to A \hookrightarrow X$ is continuous.
 
 Riehl's exemplar inclusion is that of the space of observable coin flips $2^\NN$ into the closed interval $[0,1]$ via the injection $$(e_1, e_2, e_3, \ldots) \mapsto \sum_{n > 0} \frac{2e_n}{3}.$$
 
@@ -377,9 +377,9 @@ As a warning against naive interpretation, note that the product topology is *no
 
 From [@La03]:
 
-PROP! (Piecing lemma) Suppose $X = A \cup B$ are closed subsets of $X$. Let $f \colon X \to Y$ be a function so that [...]. Then $f$ is continuous. ... the restrictions of $f$ to $A$ and $B$ (given the subspace topology) are each continuous.
+PROP: (Piecing lemma) Suppose $X = A \cup B$ are closed subsets of $X$. Let $f \colon X \to Y$ be a function so that [...]. Then $f$ is continuous. ... the restrictions of $f$ to $A$ and $B$ (given the subspace topology) are each continuous.
 
-PROP! (Piecing lemma for homeomorphisms) Suppose $X = A \cup B$ and $Y = C \cup D$ where $A,B$ are closed in $X$ and $C,D$ are closed in $Y$. Let $f \colon A \to C$ and $g \colon B \to D$ be homeomorphisms, and suppose that the restrictions of $f$ and $g$ to the intersection $A \cap B$ agree as maps into $Y$. [...] If $h$ is a bijection, then $h$ is a homeomorphism. ... Define $h \colon X\to Y$ such that $h|A = f$ and $h|B = g$.
+PROP: (Piecing lemma for homeomorphisms) Suppose $X = A \cup B$ and $Y = C \cup D$ where $A,B$ are closed in $X$ and $C,D$ are closed in $Y$. Let $f \colon A \to C$ and $g \colon B \to D$ be homeomorphisms, and suppose that the restrictions of $f$ and $g$ to the intersection $A \cap B$ agree as maps into $Y$. [...] If $h$ is a bijection, then $h$ is a homeomorphism. ... Define $h \colon X\to Y$ such that $h|A = f$ and $h|B = g$.
 
 ### Week 3: Separation axioms, new textbook
 
@@ -423,11 +423,11 @@ THM: (Recognizing Hausdorff) A space $X$ is $T_2$ iff ... the diagonal $\Delta \
 
 #### New spaces from old: quotient spaces
 
-DEF! Let $X$ be a space, $Y$ a set, and $\pi \colon X \twoheadrightarrow Y$ a surjection. The quotient topology on $Y$ (with respect to $\pi$) is ... $$\mathscr{Q}_Y = \{U \subset Y: \pi^{-1}(U) \text{ is open in $X$}\}.$$
+DEF: Let $X$ be a space, $Y$ a set, and $\pi \colon X \twoheadrightarrow Y$ a surjection. The quotient topology on $Y$ (with respect to $\pi$) is ... $$\mathscr{Q}_Y = \{U \subset Y: \pi^{-1}(U) \text{ is open in $X$}\}.$$
 
 > A subset downstairs is open iff it's preimage is open upstairs.
 
-PROP! The quotient space $X/S$ is Hausdorff iff ... any two elements in $S$ have disjoint saturated neighborhoods.
+PROP: The quotient space $X/S$ is Hausdorff iff ... any two elements in $S$ have disjoint saturated neighborhoods.
 
 Passing to the quotient?
 
@@ -437,9 +437,9 @@ Passing to the quotient?
 
 Discussion from [@Ri15]:
 
-DEF! We say a surjective map $\pi \colon X \twoheadrightarrow Y$ is a quotient map when ... $U \subset Y$ is open if and only if $\pi^{-1}(U) \subset X$ is open.
+DEF: We say a surjective map $\pi \colon X \twoheadrightarrow Y$ is a quotient map when ... $U \subset Y$ is open if and only if $\pi^{-1}(U) \subset X$ is open.
 
-THM! (Universal property of the quotient topology II) Let $\pi \colon X \twoheadrightarrow Y$ be a quotient map and let $Z$ be a topological space.  Given any continuous function $h \colon X \to Z$ that is constant on fibers, i.e., so that $h(x) = h(x')$ whenever $p(x) = p(x')$, then there is a unique continuous function $f \colon Y \to Z$ so that $g \circ p = h$.
+THM: (Universal property of the quotient topology II) Let $\pi \colon X \twoheadrightarrow Y$ be a quotient map and let $Z$ be a topological space.  Given any continuous function $h \colon X \to Z$ that is constant on fibers, i.e., so that $h(x) = h(x')$ whenever $p(x) = p(x')$, then there is a unique continuous function $f \colon Y \to Z$ so that $g \circ p = h$.
 
 > To define a continuous function whose domain is a quotient space, it suffices to define the function "upstairs", provided that the "upstairs" function is constant on fibers. 
 
@@ -457,11 +457,11 @@ The quotient topology is synonymously the "identification topology", apropos of 
 - each point is equivalent to itself, 
 - perhaps we draw a diagram with arrows on the boundaries to indicate equivalence classes.
 
-DEF! A connected sum of two $m$-dimensional manifolds is a manifold formed by ... deleting a ball inside each manifold and gluing together the resulting boundary spheres. 
+DEF: A connected sum of two $m$-dimensional manifolds is a manifold formed by ... deleting a ball inside each manifold and gluing together the resulting boundary spheres. 
 
-THM! Every compact connected orientable surface $S \subset \RR^3$ of genus $g$ is homeomorphic to a polygon with ... $4g$ edges and pairs of edges appropriately identified.
+THM: Every compact connected orientable surface $S \subset \RR^3$ of genus $g$ is homeomorphic to a polygon with ... $4g$ edges and pairs of edges appropriately identified.
 
-EX! The connected sum of two tori is an $8$ sided polygon with sides $a,b,c,d$ and boundary symbol ... $aba^{-1}b^{-1}cdc^{-1}d^{-1}$.
+EX: The connected sum of two tori is an $8$ sided polygon with sides $a,b,c,d$ and boundary symbol ... $aba^{-1}b^{-1}cdc^{-1}d^{-1}$.
 
 Further directions:
 
@@ -497,27 +497,27 @@ From lecture:
 
 From [@VINK, chapter III]:
 
-DEF! We say topological space $X$ is connected if ... $X$ has only two subsets that are both open and closed.
+DEF: We say topological space $X$ is connected if ... $X$ has only two subsets that are both open and closed.
 
-PROP! A topological space $X$ is connected iff ... $X$ does not admit a partition into two nonempty open sets; equivalently, $X$ does not admit a partition into two nonempty closed sets.
+PROP: A topological space $X$ is connected iff ... $X$ does not admit a partition into two nonempty open sets; equivalently, $X$ does not admit a partition into two nonempty closed sets.
 
-PROP! Is the closure of a connected set connected? ... yes.
+PROP: Is the closure of a connected set connected? ... yes.
 
-PROP! If $A$ is connected and $B$ is a set such that $A \subset B \subset \Cl{A}$, is $B$ connected? ... yes.
+PROP: If $A$ is connected and $B$ is a set such that $A \subset B \subset \Cl{A}$, is $B$ connected? ... yes.
 
-DEF! A connected component of a space $X$ is a ... maximal (with respect to set inclusion) connected subset of $X$.
+DEF: A connected component of a space $X$ is a ... maximal (with respect to set inclusion) connected subset of $X$.
 
 One can spin out profuse variations these themes, e.g., see notes from 2018-10-07 and 2018-10-09, also [@VINK08, III.12].
 
-DEF! A topological space is totally disconnected if ... all of its components are singletons.
+DEF: A topological space is totally disconnected if ... all of its components are singletons.
 
 - discrete spaces
 - the cantor set
 - the rational numbers
 
-PROP! Why is the continuous image of a connected space connected? ... consider the lifts of open sets and argue by contradiction.
+PROP: Why is the continuous image of a connected space connected? ... consider the lifts of open sets and argue by contradiction.
 
-CORO! The number of connected components is ... a topological invariant.
+CORO: The number of connected components is ... a topological invariant.
 
 Other directions
 
@@ -550,19 +550,19 @@ See also
     - limit/adherent points
     - dense/nowhere dense sets
 
-PROP! A set is everywhere dense in a space iff it meets ... each nonempty open set.
+PROP: A set is everywhere dense in a space iff it meets ... each nonempty open set.
 
-PROP! A space $X$ is discrete iff it contains a unique ... everywhere dense set, namely $X$ itself.
+PROP: A space $X$ is discrete iff it contains a unique ... everywhere dense set, namely $X$ itself.
 
-DEF! We say a set $A$ is nowhere dense in a space $X$ when ... its exterior is everywhere dense.
+DEF: We say a set $A$ is nowhere dense in a space $X$ when ... its exterior is everywhere dense.
 
-PROP! A set $A$ is nowhere dense in $X$ iff ... each neighborhood of each point $x \in X$ contains a point $y \in X \setminus A$ such that there's a neighborhood $U \ni y$ for which $U \cap A = \emptyset$.
+PROP: A set $A$ is nowhere dense in $X$ iff ... each neighborhood of each point $x \in X$ contains a point $y \in X \setminus A$ such that there's a neighborhood $U \ni y$ for which $U \cap A = \emptyset$.
 
-EX! $\RR$ is not the union of countably many ... nowhere dense subsets.
+EX: $\RR$ is not the union of countably many ... nowhere dense subsets.
 
-EX! A countable intersection of open everywhere dense sets in $\RR$ is ... everywhere dense.
+EX: A countable intersection of open everywhere dense sets in $\RR$ is ... everywhere dense.
 
-EX! $\QQ$ is not the intersection of countably many ... open sets in $\RR$.
+EX: $\QQ$ is not the intersection of countably many ... open sets in $\RR$.
 
 #### Images, preimages, etc
 
@@ -650,32 +650,32 @@ To give basic examples
 - Any topological space with a finite topology $\abs{\sT} < \infty$ is compact.
 - If $(X, \sT)$ is compact and $\sT \subset \Sigma$, then $(X, \Sigma)$ is compact too.
 
-PROP! If $X$ is compact and $F \subset X$ is closed, then ... $F$ as a subspace is also compact.
+PROP: If $X$ is compact and $F \subset X$ is closed, then ... $F$ as a subspace is also compact.
 
 We have the partial converse.
 
-PROP! If $X$ is a Hausdorff topological space and $F \subset X$ is a compact subset, then ... $F$ is closed in $X$.
+PROP: If $X$ is a Hausdorff topological space and $F \subset X$ is a compact subset, then ... $F$ is closed in $X$.
 
 Apparently "compact Hausdorff" (abbreviated CH) is a desirable property of a topological space (though compactness is not hereditary!). For example,
 
-PROP! If $X$ is a compact Hausdorff space, then ... $X$ is regular ($T_3$).
+PROP: If $X$ is a compact Hausdorff space, then ... $X$ is regular ($T_3$).
 
 *Key idea.* In a compact Hausdorff space, a subset $F$ is closed iff it's compact.
 
-PROP! The continuous image $f(X)$ of a compact space $X$ is ... compact.
+PROP: The continuous image $f(X)$ of a compact space $X$ is ... compact.
 
 Albeit that compactness is not a hereditary property, compactness is
 
 - preserved under passage to a *closed* subspace
 - preserved by homeomorphism.
 
-CORO! A continuous bijection of a compact space onto a Hausdorff space is a homeomorphism.
+CORO: A continuous bijection of a compact space onto a Hausdorff space is a homeomorphism.
 
 > We're really only considering the category of topological spaces modulo homeomorphism equivalence.
 
 On the other hand, Lindelöf is a hereditary property.
 
-DEF! A Lindel\"of space is ... a space in which every open cover has a countable subcover.
+DEF: A Lindel\"of space is ... a space in which every open cover has a countable subcover.
 
 Further directions for compactness.
 
@@ -717,9 +717,9 @@ In a metric space, we recover intuition from analysis.
 
 The difficulty is not in generating topological spaces given a metric, but rather in determining when an existing space is *metrizable*.
 
-DEF! We say two distance functions $d$ and $d'$ are equivalent on a set $X$ when ... there exist $c, c' > 0$ such that for all $x, y \in X$ we've $$c\cdot d(x,y) \le d'(x,y) \le c'\cdot d(x,y).$$
+DEF: We say two distance functions $d$ and $d'$ are equivalent on a set $X$ when ... there exist $c, c' > 0$ such that for all $x, y \in X$ we've $$c\cdot d(x,y) \le d'(x,y) \le c'\cdot d(x,y).$$
 
-PROP! If two distance functions $d$ and $d'$ on a set $X$ are equivalent, then $d$ and $d'$ induce ... the same topology on $X$.
+PROP: If two distance functions $d$ and $d'$ on a set $X$ are equivalent, then $d$ and $d'$ induce ... the same topology on $X$.
 
 Further directions in metrization theory.
 
@@ -730,16 +730,16 @@ Further directions in metrization theory.
     - [Nagata-Smirnov Metrization theorem](https://en.wikipedia.org/wiki/Nagata%E2%80%93Smirnov_metrization_theorem)
     - [Bing's version](https://en.wikipedia.org/wiki/Bing_metrization_theorem)
 
-CORO! A compact Hausdorff space is metrizable iff ... it's second-countable.
+CORO: A compact Hausdorff space is metrizable iff ... it's second-countable.
 
 #### Compactification
 
 - We exhibited the [Alexandroff extension](https://en.wikipedia.org/wiki/Alexandroff_extension), but not 
 - [Stone-Čech compactification](https://en.wikipedia.org/wiki/Stone%E2%80%93%C4%8Cech_compactification).
 
-IDEA! Take a locally compact, Hausdorff space $(X, \sT)$. The Alexandroff extension of $X$ is ... $\hat{X} = X \sqcup \{\infty\}$ with the topology $\sT \cup \{A \subset \hat{X} : A^c \text{ is closed and compact in $X$}\}$.
+IDEA: Take a locally compact, Hausdorff space $(X, \sT)$. The Alexandroff extension of $X$ is ... $\hat{X} = X \sqcup \{\infty\}$ with the topology $\sT \cup \{A \subset \hat{X} : A^c \text{ is closed and compact in $X$}\}$.
 
-EX! The one-point compactification of $\hat{R}$ is ... homeomorphic to $S_1$, via stereographic projection.
+EX: The one-point compactification of $\hat{R}$ is ... homeomorphic to $S_1$, via stereographic projection.
 
 Further directions. See [@Mu00, number 38.10].
 
@@ -753,11 +753,11 @@ Further directions. See [@Mu00, number 38.10].
 - second countability
 - Lindelöf
 
-EX! What countability property does $\RR$ possess? ... Second countable.
+EX: What countability property does $\RR$ possess? ... Second countable.
 
-EX! What countability property does $\RR^\omega$ with the uniform topology possess? ... First countable, not second countable.
+EX: What countability property does $\RR^\omega$ with the uniform topology possess? ... First countable, not second countable.
 
-EX! What countability property does $\RR_\ell$ (the h-interval topology) possess? ... First countable, yet not second countable.
+EX: What countability property does $\RR_\ell$ (the h-interval topology) possess? ... First countable, yet not second countable.
 
 #### Pivoting to algebraic topology.
 
@@ -773,7 +773,7 @@ Alas, we're only half-heartedly pivoting into algebraic topology.
     - path connectedness
     - definitions required for the fundamental group
 
-But, prospects are good! Weeks 12 and on we'll assume many lovely properties of spaces that we're working with:
+But, prospects are good: Weeks 12 and on we'll assume many lovely properties of spaces that we're working with:
 
 - compact, 
 - Hausdorff, 
@@ -795,13 +795,13 @@ And *de facto* all maps under consideration will be continuous (unless obviously
 
 > A homotopy is a continuous family of continuous maps.
 
-DEF! A homotopy between two maps $f, g \colon X \to Y$ is ... a map $H \times I \to Y$ such that $H\vert_{X\times \{0\}} = f$ and $H\vert_{X\times \{1\}} = g$.
+DEF: A homotopy between two maps $f, g \colon X \to Y$ is ... a map $H \times I \to Y$ such that $H\vert_{X\times \{0\}} = f$ and $H\vert_{X\times \{1\}} = g$.
 
-DEF! Let two maps $f, g \colon X \to Y$ agree on a (closed) set $A \subset X$. A homotopy relative to $A$ between $f$ and $g$ is ... a homotopy $H$ between $f$ and $g$ such that $H\vert_{A\times I} = f\vert_A = g\vert_B$. 
+DEF: Let two maps $f, g \colon X \to Y$ agree on a (closed) set $A \subset X$. A homotopy relative to $A$ between $f$ and $g$ is ... a homotopy $H$ between $f$ and $g$ such that $H\vert_{A\times I} = f\vert_A = g\vert_B$. 
 
-DEF! A loop based at a point $x_0$ in a space $X$ is ... either a map $f \colon S_1 \to X$ (where $S_1$ is thought of as $[0,1]$ with boundary points identified) such that $f(0) = x_0$, or a map $f \colon I \to X$ such that $f(0) = f(1)$.
+DEF: A loop based at a point $x_0$ in a space $X$ is ... either a map $f \colon S_1 \to X$ (where $S_1$ is thought of as $[0,1]$ with boundary points identified) such that $f(0) = x_0$, or a map $f \colon I \to X$ such that $f(0) = f(1)$.
 
-DEF! A space is said to be contractible when ... the identity map $X \xrightarrow{\mathrm{id}} X$ is nulhomotopic.
+DEF: A space is said to be contractible when ... the identity map $X \xrightarrow{\mathrm{id}} X$ is nulhomotopic.
 
 From <https://en.wikipedia.org/wiki/Homotopy_groups_of_spheres>:
 
@@ -809,7 +809,7 @@ From <https://en.wikipedia.org/wiki/Homotopy_groups_of_spheres>:
 
 Here's a baby example.
 
-EX! For $n \ge 1$, denote by $[S^n, S^0]$ the homotopy equivalence classes in $\{\text{maps from $S_n$ to $S_0$}\}$. Then $[S_n, S_0]$ is ... $\{\star_1, \star_{-1}\}$, the classes of maps sending $S_n$ to either $1$ or $-1$, as any continuous image of $S_n$ must connected.
+EX: For $n \ge 1$, denote by $[S^n, S^0]$ the homotopy equivalence classes in $\{\text{maps from $S_n$ to $S_0$}\}$. Then $[S_n, S_0]$ is ... $\{\star_1, \star_{-1}\}$, the classes of maps sending $S_n$ to either $1$ or $-1$, as any continuous image of $S_n$ must connected.
 
 ### Week 10: the fundamental group
 
@@ -840,9 +840,9 @@ A pointed map $f \colon (X,x_0)  \to (Y, y_0)$ between pointed spaces induces a 
 - Observe that $*$ takes $f \mapsto f_*$ and $(X, x_0) \mapsto \pi_1(X, x_0)$, so we say $*$ is a *functor*.
 - Verify that $(g \circ f)_* = g_* \circ f_*$ and $(\mathrm{id}_{(X,x_0)})_* = \mathrm{id}_{\pi_1(X, x_0)}$
 
-CORO! If $f \colon (X, x_0) \to (Y, y_0)$ is a homeomorphism, then ... $\pi_1(X,x_0) \cong \pi_1(Y, y_0)$.
+CORO: If $f \colon (X, x_0) \to (Y, y_0)$ is a homeomorphism, then ... $\pi_1(X,x_0) \cong \pi_1(Y, y_0)$.
 
-EX! Star convex subsets of $\RR^n$ have ... trivial first homotopy groups.
+EX: Star convex subsets of $\RR^n$ have ... trivial first homotopy groups.
 
 ### Week 11: review for midterm, separation properties
 

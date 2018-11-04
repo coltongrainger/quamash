@@ -787,6 +787,8 @@ THM! (Translation invariance) if $E \subset \RR$ and $s,r \in \RR$, let $E+s= \{
 
 I took the midterm today and realized I don't quite understand sets of outer Lebesgue measure zero. 
 
+- see e.g., <https://math.stackexchange.com/questions/217319/why-is-the-borel-algebra-on-r-not-equal-the-powerset>
+
 To summarize concepts I struggled with:
 
 - techniques used to navigate the proofs of basic properties of measures 

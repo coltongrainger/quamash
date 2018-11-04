@@ -1813,7 +1813,7 @@ Over the weekend, I caught up with [Benedict Gross's lectures](http://www.math.h
 - Week 8. A5 and the symmetries of an icosahedron. Sylow theorems. Study of permutation groups.
 - here's a [study-sheet](http://courses.dce.harvard.edu/%7Emathe222/study-sheet.pdf) for that course
 
-### Week 9: subgroup series
+### Week 9: Nilpotence, series again, and finitely generated abelian groups
 
 We had a definition quiz on
 
@@ -1952,3 +1952,7 @@ CORO: IF $A$ is an elementary abelian $p$-group (of order $p^n$), then $A$ is is
 THM! (FTFGAG) Let $A$ be an abelian group of order $$p_1^{k_1}p_2^{k_2}\cdots p_\ell^{k_\ell}$$ with $p_1 < \ldots < p_\ell$ primes. Then (a) $$A \cong A_1 \times A_2 \times \cdots \times A_\ell$$ with $\abs{A_j} = p_j^{k_j}$, (b) for each $1 \le j \le \ell$ there's an integer partition $\lambda$ of $k_j$ such that ... $$A_j \cong C_{p_j}^{\lambda_1} \times C_{p_j}^{\lambda_2} \times \cdots \times C_{p_j}^{\lambda_r}.$$
 
 *Proof sketch* TODO (notes 2018-10-26)
+
+### Week 10
+
+During the discussion of free groups, I was reminded of Jorge Luis Borges <https://libraryofbabel.info/libraryofbabel.html>, also Paul Hand's [Most movies are boring](https://www.youtube.com/watch?v=GKlcY1bIYDk)
