@@ -614,8 +614,10 @@ We defined compactness
 - with open covers
 - with closed sets having empty intersection 
 - with closed sets having the finite intersection property
+- (also limit point compactness)
+- (also sequential compactness)
 
-To list basic examples
+To give basic examples
 
 - $\RR$ is not compact.
 - Any topological space with the finite complement topology is compact.
@@ -704,10 +706,153 @@ Further directions in metrization theory.
 
 CORO! A compact Hausdorff space is metrizable iff ... it's second-countable.
 
-### Week 9: Wrapping up point-set
-
 #### Countability
 
 - first countability
 - second countability
 - Lindelöf
+
+EX! What countability property does $\RR$ possess? ... Second countable.
+
+EX! What countability property does $\RR^\omega$ with the uniform topology possess? ... First countable, not second countable.
+
+EX! What countability property does $\RR_\ell$ (the h-interval topology) possess? ... First countable, yet not second countable.
+
+### Week 9: homotopy
+
+#### Pivoting to algebraic topology.
+
+> Before functoriality, people lived in caves. --- B. Conrad
+
+Alas, we're only half-heartedly pivoting into algebraic topology. 
+
+- Weeks 9 and 10 we still had to finish countability and present the problem sets on metrization.
+- Week 11 we have a summative midterm.
+
+    - separation axioms
+    - compactness
+    - path connectedness
+    - definitions required for the fundamental group
+
+- [Robin Deeley](http://math.colorado.edu/~rode5916/) is lecturing on separation axioms.
+
+But, prospects are good! Weeks 12 and on we'll assume many lovely properties of spaces that we're working with:
+
+- compact, 
+- Hausdorff, 
+- connected, 
+- second countable 
+- thus metrizable!
+
+And *de facto* all maps under consideration will be continuous (unless obviously not).
+
+*Key idea.* By attaching groups to topological spaces, we'll have invariants (under homeomorphism) that are relatively easy to compute and that *often* (not always) distinguish non-homeomorphic spaces.
+
+- We'll start with fundamental groups,
+- move onto higher homotopy groups,
+- then conclude with homology.
+
+(I signed up to give a presentation on [persistent homology](https://github.com/coltongrainger/fy19soml) at the end of November, so I dearly hope we'll have covered sufficient background for the presentation to be understood.) 
+
+#### Definitions for homotopy
+
+> A homotopy is a continuous family of continuous maps.
+
+DEF! A homotopy between two maps $f, g \colon X \to Y$ is ... a map $H \times I \to Y$ such that $H\vert_{X\times \{0\}} = f$ and $H\vert_{X\times \{1\}} = g$.
+
+DEF! Let two maps $f, g \colon X \to Y$ agree on a (closed) set $A \subset X$. A homotopy relative to $A$ between $f$ and $g$ is ... a homotopy $H$ between $f$ and $g$ such that $H\vert_{A\times I} = f\vert_A = g\vert_B$. 
+
+DEF! A loop based at a point $x_0$ in a space $X$ is ... either a map $f \colon S_1 \to X$ (where $S_1$ is thought of as $[0,1]$ with boundary points identified) such that $f(0) = x_0$, or a map $f \colon I \to X$ such that $f(0) = f(1)$.
+
+DEF! A space is said to be contractible when ... the identity map $X \xrightarrow{\mathrm{id}} X$ is nulhomotopic.
+
+From <https://en.wikipedia.org/wiki/Homotopy_groups_of_spheres>:
+
+> All the interesting cases of homotopy groups of spheres involve mappings from a higher-dimensional sphere onto one of lower dimension. 
+
+Here's a baby example.
+
+EX! For $n \ge 1$, denote by $[S^n, S^0]$ the homotopy equivalence classes in $\{\text{maps from $S_n$ to $S_0$}\}$. Then $[S_n, S_0]$ is ... $\{\star_1, \star_{-1}\}$, the classes of maps sending $S_n$ to either $1$ or $-1$, as any continuous image of $S_n$ must connected.
+
+### Week 10: the fundamental group
+
+#### Definitions for the fundamental group
+
+Consider a space $X$ and a point $x_0 \in X$.
+
+- Declare that a path homotopy between two maps $f,g \colon I \to X$ is a homotopy relative to the boundary points $\{0,1\}$ of the unit interval.
+- Define the product of two paths in $X$ (sharing a final and initial point) by concatenation.
+- Show that concatenation is compatible with path homotopy equivalence.
+- From here, show that the path homotopy equivalence classes with an operation given by concatenation of equivalence classes is a groupoid.
+    - Check that composition of (appropriately based) equivalence classes is associative.
+    - Check that the equivalence classes of nulhomotopic paths (appropriately based) are (based) identities.
+    - Check that the each equivalence class has an inverse by taking a representative, computing its inverse, and finding the equivalence class of that inverse.
+- Now, choose a point $x_0$ in $X$ and consider the homotopy equivalence classes of *loops* based at $x_0$.
+- From Aluffi [@Al09] "a group is a groupoid a single object."
+    - Or, precisely, "a group is the set of all isomorphisms in $G$, endowed with the operation of composition of morphisms."
+
+We've thus defined the fundamental group $\pi_1(X, x_0)$.
+
+#### Functorial properties
+
+A pointed map $f \colon (X,x_0)  \to (Y, y_0)$ between pointed spaces induces a homomorphism $f_* \colon \pi_1(X,x_0) \to \pi_1(Y, y_0)$. This map $f_*$ is functorial in the following sense.
+
+- We've by defining the fundamental group, we've associated spaces and continuous functions in the category $\mathsf{Top}$ to groups and homomorphisms in the category $\mathsf{Grp}$.
+- Observe that $*$ takes $f \mapsto f_*$ and $(X, x_0) \mapsto \pi_1(X, x_0)$, so we say $*$ is a *functor*.
+- Verify that $(g \circ f)_* = g_* \circ f_*$ and $(\mathrm{id}_{(X,x_0)})_* = \mathrm{id}_{\pi_1(X, x_0)}$
+
+CORO! If $f \colon (X, x_0) \to (Y, y_0)$ is a homeomorphism, then ... $\pi_1(X,x_0) \cong \pi_1(Y, y_0)$.
+
+EX! Star convex subsets of $\RR^n$ have ... trivial first homotopy groups.
+
+### Week 11: review for midterm, separation properties
+
+#### Mock midterms
+
+Munkres has a nice exercise here called "review of the basics" [@Mu00, page 228]:
+
+> Consider the following properties a space may satisfy:
+>
+> (1) connected
+> (1) path connected
+> (1) locally connected
+> (1) locally path connected
+> (1) compact
+> (1) limit point compact
+> (1) sequentially compact [added]
+> (1) locally compact Hausdorff
+> (1) Hausdorff
+> (1) regular
+> (1) normal
+> (1) first-countable
+> (1) second-countable
+> (1) Lindelöf
+> (1) has a countable dense subset
+> (1) locally metrizable
+> (1) metrizable
+>
+> For each of the following spaces, determine which of these properties it satisfies.
+>
+> - the minimal uncountable well-ordered set $S_\Omega$.
+> - the minimal uncountable well-ordered set's closure $\bar{S}_\Omega$.
+> - the product $S_\Omega \times \bar{S}_\Omega$.
+> - the unit square with dictionary order $I_o^2$
+> - the [Sorgenfrey line](https://en.wikipedia.org/wiki/Lower_limit_topology) $\RR_\ell$
+> - the [Sorgenfrey plane](https://en.wikipedia.org/wiki/Sorgenfrey_plane) $\RR_\ell \times \RR_\ell$
+> - $\RR^\omega$ with the product topology
+> - $\RR^\omega$ with the box topology
+> - $\RR^\omega$ with the uniform topology
+> - $\RR^I$ with the product topology ($I = [0,1]$)
+> - the [K-topology](https://en.wikipedia.org/wiki/K-topology) $\RR_K$
+>
+> Which of these properties does a metric space necessarily have?
+>
+> Which of these properties does a compact Hausdorff space have?
+>
+> Which of these properties are preserved when one passes to a subspace? To a closed space? To an open space?
+>
+> Which of these properties are preserved under finite products? Countable products? Arbitrary products?
+>
+> Which properties are preserved under continuous maps?
+
+Peter and I took a mock midterm: we both had forgotten how to apply sequential compactness.
