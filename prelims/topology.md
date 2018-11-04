@@ -427,18 +427,37 @@ DEF! Let $X$ be a space, $Y$ a set, and $\pi \colon X \twoheadrightarrow Y$ a su
 
 > A subset downstairs is open iff it's preimage is open upstairs.
 
-From [@Ri15]:
+PROP! The quotient space $X/S$ is Hausdorff iff ... any two elements in $S$ have disjoint saturated neighborhoods.
+
+Passing to the quotient?
+
+- connectedness and path connectedness preserved
+- countable dense subsets and compactness preserved
+- Hausdorff and other Trennungsaxiome require extra precaution
+
+Discussion from [@Ri15]:
 
 DEF! We say a surjective map $\pi \colon X \twoheadrightarrow Y$ is a quotient map when ... $U \subset Y$ is open if and only if $\pi^{-1}(U) \subset X$ is open.
 
 THM! (Universal property of the quotient topology II) Let $\pi \colon X \twoheadrightarrow Y$ be a quotient map and let $Z$ be a topological space.  Given any continuous function $h \colon X \to Z$ that is constant on fibers, i.e., so that $h(x) = h(x')$ whenever $p(x) = p(x')$, then there is a unique continuous function $f \colon Y \to Z$ so that $g \circ p = h$.
 
-> To define a continuous function whose domain is a quotient space, it suffices to define the function "upstairs", provided that the "upstairs" function is constant on fibers. For example, to define a function on $\RR P^n$, it suffices to define a function on $S_n$ that is constant on antipodes.
+> To define a continuous function whose domain is a quotient space, it suffices to define the function "upstairs", provided that the "upstairs" function is constant on fibers. 
+
+For example, to define a function on $\RR P^n$, it suffices to define a function on $S_n$ that is constant on antipodes [@Ri15, page 15].
+
+### Week 5: identification topologies
+
+This week we digressed to consider two notable occurrences of quotient topologies in the wild, namely, 
+
+- for gluing manifolds, and
+- for classification of compact surfaces.
 
 The quotient topology is synonymously the "identification topology", apropos of obtaining a quotient space $X/\backsim$ relative to inclusion map $X \hookrightarrow X/\backsim$. In this case $\backsim$ is an equivalence relation where 
 
 - each point is equivalent to itself, 
 - perhaps we draw a diagram with arrows on the boundaries to indicate equivalence classes.
+
+DEF! A connected sum of two $m$-dimensional manifolds is a manifold formed by ... deleting a ball inside each manifold and gluing together the resulting boundary spheres. 
 
 THM! Every compact connected orientable surface $S \subset \RR^3$ of genus $g$ is homeomorphic to a polygon with ... $4g$ edges and pairs of edges appropriately identified.
 
@@ -446,17 +465,15 @@ EX! The connected sum of two tori is an $8$ sided polygon with sides $a,b,c,d$ a
 
 Further directions:
 
+\providecommand{\CC}{\mathrm{C}}
+
 - Why can't certain compact non-orientable curves be embedded in $\RR^n$?
 - [“A Guide to the Classification Theorem for Compact Surfaces”](https://www.cis.upenn.edu/~jean/gbooks/surftop.html). Retrieved November 4, 2018.
 - Obtain $\RR P^2$ from $\RR^3$ with the equivalence relation $p \backsim q$ iff the line through $p$ and $q$ contains the origin.
 - The upper hemisphere and Poincaré disk model for projective space are the same! Crush the hat!
-- What is $S^1 \times S_1$ (considered as $\{z \in \CC: \abs{z} = 1\}^2$ with points $(z,w)$ and $(-z,-w)$ identified?
-
-#### Homeomorphisms
-
-They're maps with inverses---topological isomorphisms.
-
-### Week 5: order and metric topologies
+- What is $S^1 \times S_1$ (considered as $\{z \in \CC: \abs{z} = 1\}^2$) with points of the form $(z,w)$ and $(-z,-w)$ identified?
+    - <https://doc.sagemath.org/html/en/reference/schemes/sage/schemes/product_projective/space>
+    - <https://mathoverflow.net/questions/142275/embedding-of-products-of-projective-spaces-into-a-projective-space>
 
 ### Week 6: connectedness
 
