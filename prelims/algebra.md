@@ -196,7 +196,7 @@ DEF: Write the factorial $n!$ in two ways, explicitly and inductively. ... Expli
 
 Course with Nat Thiem. Still haven't hammered out the bibliography. Maybe: 
 
-- Artin (nope)
+- Artin (just for rotation groups)
 - Hungerford (yes)
 - Dummit and Foote (duh)
 - R. Vakil (later)
@@ -1953,6 +1953,88 @@ THM! (FTFGAG) Let $A$ be an abelian group of order $$p_1^{k_1}p_2^{k_2}\cdots p_
 
 *Proof sketch* TODO (notes 2018-10-26)
 
-### Week 10
+#### Review
 
-During the discussion of free groups, I was reminded of Jorge Luis Borges <https://libraryofbabel.info/libraryofbabel.html>, also Paul Hand's [Most movies are boring](https://www.youtube.com/watch?v=GKlcY1bIYDk)
+To list concepts I struggled with.
+
+- Applying Frattini's argument.
+- Splitting time between summative review and the current material.
+    - Having a long back-log of proofs to-do taxes me whenever I start into new (i.e., *current*) material.
+    - Prof Stange described "getting one's sea-legs", which I think for me will look something like:
+        - *more urgently* dealing with topical material, 
+        - wherever possible, making *executive* summaries,
+        - knowing how to stash away interesting problems for later,
+        - prioritizing applications over explorations or refinement of already solid material,
+
+Chris described the tendency (in problem solving) to make a straightforward application of the given definitions as "being dense, using brute force". 
+
+To take some motivation for brute force from Brian Conrad's <http://math.stanford.edu/~conrad/210APage/> Math 210A syllabus:
+
+> This material is **absolutely basic** for anything in advanced pure mathematics which involves algebraic concepts. This course will move rapidly, so please **don’t let yourself fall far behind.**
+
+### Week 10: Sylow theory for medium order, Free groups
+
+We had a definition quiz on 
+
+- quotient group
+- center
+- nilpotent
+- elementary abelian
+
+#### Techniques for groups of medium order
+
+0. Factor into primes and obtain $n_{p_i}$ for all $p_i \mid G$
+1. Count elements
+2. Exploit subgroups of small index
+3. Permutation representations
+4. Playing $p$-groups off each other
+5. Studying normalizers of intersections of Sylow $p$-groups
+
+To outline absolutely fundamental points we'll leverage later. Let $H_p \le G$ be a Sylow $p$-subgroup of $G$. Then:
+
+- $H_p$ is normal in $G$ iff $n_p(G) = 1$.
+    - Consider that $V_4 \triangleleft A_4$ as $n_2(A_n) = 1$.
+
+-  $[G : \N G {H_p}] = n_p(G)$.
+    - Consider that $[A_4 : H_3] = n_3(A_4) = 4$.
+
+-  If $\abs{G} = pm$ for prime $p \nmid m$, then the number of elements of order $p$ in $G$ is $n_p(G)(p-1)$.
+    - The number of order $3$ elements in $A_4$ is $n_3(A_4)(3-1) = 8$.
+
+> Exploiting subgroups of small index.
+
+PROP! If $G$ is a simple group, why does $\abs{G} \mid n_p!$ for all $p \mid \abs{G}$? ... Let $G$ act on the coset space $G/N_G(H_p)$ nontrivially. Suppose $\phi \colon G \to S_{n_p}$ is the permutation representation. Since $G$ is simple, $\ker \phi = \{1\}$ and so $G \le S_{n_p}$. By Lagrange, $\abs{G} \mid n_p!$.
+
+PROP! If $G$ is a finite simple group and $k$ is the least integer such that $\abs{G} \mid k!$, then ... $G$ contains no *proper* subgroups of index less than $k$, via Cayley and Lagrange.
+
+> Permutation representations, working in the alternating group.
+
+PROP! Let $G \le S_k$. If $G \le A_k$, then ... $\abs{G \cap A_k} = \abs{G \setminus A_k}$.
+
+PROP! Let $G \le S_k$. If $G$ has no index $2$ subgroup, then ... $G \le A_k$.
+
+PROP! Let $G \le S_k$. If $P \in \Syl p {S_k}$ and $p$ is an odd prime, then ... $P \in \Syl p {A_k}$ and $\frac12 \abs{ N_{S_k}(P) } = \abs{ N_{A_k}(P)}$.
+
+> Playing p-groups off eachother.
+
+LEMMA! Let $p \mid \abs{G}$ and $p^e \mid \abs{P / (P \cap Q)}$ for all $P, Q \in \Syl p G$ with $P \neq Q$. Then ... $\Syl p G \equiv 1 \mod p^e$.
+
+*Proof sketch.* (See notes 2018-10-29 #4)
+
+CORO! If $\abs{\Syl p G} \not\equiv 1 \mod p^2$, then there exists $P, Q \in \Syl p G$ with $P \neq Q$ and ... $\abs{\frac{P}{P\cap Q}} = P$.
+
+LEMMA! Let $p < q$ with $q \not\equiv 1 \mod p$. Let $p \in \Syl p G$ and $Q \in \Syl q G$ with $\abs{P} = p$ and $\abs{Q} = q$. If $p \mid \abs{N_G(Q)}$, then ... $q \mid \abs{N_G(P)}$.
+
+*Proof sketch.* (It's pretty slick. Just a diagram. See 2018-10-29 #5.)
+
+#### Free groups
+
+During the discussion of free groups, I was reminded of Jorge Luis Borges's *Library of Babel* <https://libraryofbabel.info/libraryofbabel.html>.
+
+> To construct a vector space, we merely insist that some set is a basis for a vector space.
+
+DEF! Let $S$ be a set. The free group $F(S)$ is the unique group such that ... (F1) there's an injective function $\iota \colon S \to F(S)$ and (F2) if $G$ is a group and $\tau \colon S \to G$, there's a unique homomorphism $\pi \colon F(S) \to G$ such that $\pi \circ \tau = \tau$.
+
+> Uniqueness and existence are not obvious. We've defined $F(S)$ with a universal property alone. (Though, some constructive schema should fall out of the requirement, just as we have the [product topology generated by a subbase](topology#new-spaces-from-old:-products)).
+>
+
