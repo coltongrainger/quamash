@@ -2089,3 +2089,118 @@ To take some motivation for brute force from Brian Conrad's <http://math.stanfor
 > This material is **absolutely basic** for anything in advanced pure mathematics which involves algebraic concepts. This course will move rapidly, so please **don’t let yourself fall far behind.**
 
 ### Week 11: Rings and Ideals
+
+DEF! A ring $R$ is a set with two functions $$\cdot \colon R \times R \to R \quad \text{and}\quad + \colon R \times R \to R$$ such that ... (R1) $(R, +)$ is an abelian group, (R2) multiplication is associative, (R3) for $r,s,t,v \in R$ we've $(r + s)(t + v) = rt + rv + st + sv$.
+
+DEF! A ring homomorphism $\phi \colon R \to S$ is a function from a ring $R$ to a ring $S$ such that ... for each $r, s \in R$, $\phi(rs) = \phi(s)\phi(r)$ and $\phi(r + s) = \phi(r) + \phi(s)$.
+
+DEF! The kernel of a ring homomorphism is ... the preimage of the additive identity.
+
+DEF! A ring $R$ is said to be commutative if ... $rs = sr$ for all $r, s \in R$.
+
+DEF! Let $\{X_i\}_1^n$ be a set of indeterminants, and let $R$ be a commutative ring with identity. Consider the monoid $S  = \prod_1^n \{X_i^r : r \ge 0\}$. We define the set of polynomials $B[X_1, \ldots, X_n]$ as ... the set of functions $S \to R$ which are equal to $0$ except for a finite number of elements of $S$.
+
+We further defined: 
+
+notation | set
+--- | ---
+$R(x_1, \ldots, x_n)$ | the ring of polynomials including negative powers of $x_1, \ldots, x_n$
+$R[x_1, x_2, \ldots]$ | $\cup_{n \ge 0} R[x_1, \ldots, x_n]$
+$R[[x_1, \ldots, x_n]]$ | the ring of [formal power series](https://en.wikipedia.org/wiki/Formal_power_series) allowing infinite sums, not infinite products
+$R((x_1, \ldots, x_n))$ | the ring of [formal Laurent series](https://en.wikipedia.org/wiki/Formal_power_series#Formal_Laurent_series)
+
+Why should we care?
+
+> When is the root of a polynomial in $R[x]$ in $R$? What if $R = \FF$ is a field?
+
+From [@La05, II.3]:
+
+> There are polynomials over a finite field which cannot be identified with polynomial functions in that field. One needs polynomials with integer coefficients, and one needs to reduce these polynomials mod $p$ for primes $p$. One needs polynomials over arbitrary commutative rings, both in algebraic geometry and in analysis, for instance the ring of polynomial differential operators.
+
+#### Ring actions
+
+Recall if $G$ acts on a set $A$, we obtain a homomorphism $G \to S_A$. In general, however, rings *don't* act one sets.
+
+- What should the addition of two functions be?
+- The symmetric group doesn't have two operations available---just one, that's composition.
+
+DEF! If $A$ is an abelian group, then an action of $R$ on $A$ is a function $R \times A \to A$ such that ... for all $r,s \in R$ and all $a \in A$ (A1) $r(s(a)) = (rs)(a)$, (A2) $(r+s)(a) = r(a) + s(a)$, (A3) if $1 \in R$ then $1(a) = a$.
+
+\providecommand{\Hom}[1]{\mathrm{Hom}\left( #1 \right)}
+\providecommand{\End}[1]{\mathrm{End}\left( #1 \right)}
+
+Notably, $\Hom{A, A} = \{ \text{group endomorphisms from $A$ to $A$}\}$ is a ring and we've a ring homomorphism (multiplication as composition, addition as sums of images) $\phi \colon R \to \Hom{A,A}$. 
+
+DEF! A ring action on a vector space $V$ is ... a ring homomorphism $\phi \colon R \to \End{V}$.
+
+Examples:
+
+- matrix groups from group actions on vector spaces
+    - We'll define matrix group from *ring* actions on vector spaces.
+- endomorphisms of vector spaces
+    - For a given vector space $V$, let $\End{V}$ be the set of linear transformations $\{ \phi : \phi \colon V \to V\}$.
+    - If we specify a basis of $V$, then $\End{V} \cong M_{\dim V}(\FF)$.
+- group rings
+    - $R \rtimes_\phi G := \{ \sum_{g\in G} r_g g : r_g \in R\}$ 
+    - It's a ring of formal linear combinations! (If $\abs{G} = \infty$ we require all but finitely many coefficients to be $0$.)
+    - Here's addition $\sum_{g \in G} r_g g + \sum_{g \in G} s_g g = \sum_{g \in G}(r_g + s_g) g$.
+    - Here's multiplication $\left(\sum_{g \in G} r_g g\right)\left(\sum_{h \in G} s_h h\right) = \sum_{k \in G} \left(\sum_{g \in G} r_g \phi(g)(s_{g^{-1}k})\right) k$ where $k = gh$.
+    - If $G \le \ker \phi$, then we commute ring elements. Else the action of $G$ on $R$ requires us to twist elements of $R$ past elements of $G$.
+        - In this case we merely write $RG$ for  $R \rtimes_\phi G$.
+    - When $R = \FF$ is a field and $G \le \ker \phi$ then we've a "group algebra".
+        - It's a vector space with basis $G$.
+        - (A vector space with a ring is an algebra?)
+        - Studying the actions of groups on vector spaces is equivalent to the study of the action of $\FF G$ on vector spaces.
+
+#### Elements in Rings
+
+In general if $r \in R$, then $r$ is not necessarily (multiplicatively) invertible (especially if $R$ fails to contain the multiplicative identity $1$).
+
+DEF! If $R$ is a ring with unity $1$, then $R^\times$ is ... $\{r \in R : r^{-1} \in R\}$, the group of invertible elements.
+
+EX! What's $\sM_n(\FF)^\times$? ... It's just $\mathrm{GL}_n(\FF)$.
+
+On the other extreme.
+
+DEF! A zero divisor $r \in R$ is a nonzero element for which ... there's a nonzero element $s \in R$ such that either $rs = 0$ or $sr = 0$.
+
+- In this case $s$ is also a zero divisor.
+- If $r \in \RR^\times$, then $r$ is not a zero divisor.
+- The converse fails to hold, e.g., consider the units $\{\pm\} =  \ZZ^\times$ of $\ZZ$, an integral domain.
+
+Two examples of zero divisors:
+
+- For $A = \begin{pmatrix}0 & 1\\ 0 & 0\end{pmatrix} \in \sM_2(\FF)$, $AA = \begin{pmatrix}0 & 0\\0 &0 \end{pmatrix}$.
+- In a group ring $\ZZ G$, $(1- h)\sum_{g \in G} g = 0$.
+    - Note that in a group ring the identity is $1_R \cdot 1_G = 1$.
+
+EX! What's the group ring $\ZZ\ZZ$? ... It's the set of formal Laurent series with integer coefficients, $\left\{ \sum_j n_j x^j : \text{$n_j = 0$ for all but finitely many $j$}\right\}$.
+
+note that the group elements and the ring elements don't interact---it's a *formal sum*.
+
+DEF! A ring $R$ with a unit $1$ is an integral domain if it's commutative and has no zero divisors.
+
+- the integers $\ZZ$
+- if $R$ itself is an integral domain, then the ring of polynomials $R[x]$ is too
+    - $\ZZ[x_1, \ldots, x_n]$
+
+DEF! (From the integral domain perspective) A field $\FF$ is a ... commutative ring with unity and $\FF^\times = \FF \setminus \{0\}$.
+
+PROP! If $R$ is a finite integral domain, then ... $R$ is a field.
+
+*Proof sketch.* (2018-11-05 #4)
+
+Fields are fairly well-behaved, and we'll see more of them in Algebra II.
+
+#### Substructures
+
+DEF! Let $S$ be a ring. An additive subgroup $R \subset S$ is a subring if $r \cdot t \in R$ for all $r, t \in R$. (Note Thiem doesn't require that subrings have units!)
+
+For groups there was a distinguished class of subgroups called normal subgroups---they allowed construction of quotient subgroups, whence composition series and so on. What's the analogue of a normal subgroup in the category of rings? Well, what are the kernels of ring homomorphisms?
+
+In vector spaces, the kernel of a linear transformation is a *subspace*. Moreover, all subspaces of a given vector space can be written as the kernel of some linear transformation. A "quotient" in the category of vector spaces is the *orthogonal complement*.
+
+DEF! The kernel, denoted $\ker \phi$, of a ring homomorphism $\phi \colon R \to S$ is the subring $\ker \phi = \{r \in R: \phi(r) = 0\}$.
+
+- Under the convention that rings have an identity, then $\ker \phi$ is not generally a subring.
+- Kernels of ring homomorphisms have stronger "normality" properties than we'd expect from our intuition with normal subgroups.
