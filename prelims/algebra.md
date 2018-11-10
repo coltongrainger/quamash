@@ -509,6 +509,8 @@ EX: $S_n$ obviously acts on ... $I_n = \{1,\ldots, n\}$.
 
 EX: With $G$ a group and $H$ a subgroup, an action of $H$ on the set $G$ is given by $(h,x) \mapsto hx$; the action of $h \in H$ on $G$ is called a ... left translation.
 
+\providecommand{\sS}{\mathscr{S}}
+
 IDEA: If $G > K$, $G>H$, and $H$ acts on $G$ by left translation, then $H$ also acts by left translation on the set $\sS$ of cosets of $K$ in $G$. The action of $H$ on $\sS$ is explicitly given by ... $(h, xK) \mapsto hxK$.
 
 The idea of "$G$ acting on a set $A$" is that for a fixed $g \in G$, we have a permutation $\sigma_g \colon A \to A$ defined by $a \mapsto g\cdot a$. We might think that a group $G$ acts on a set $A$ if there exists a homomorphism $\phi \colon G \to S_A$. Indeed, the map $\phi \colon G \to S_A$ defined by $g\mapsto \sigma_g$ is a homomorphism because $\phi(gh) = \phi(g)\circ\phi(h)$ for all $g,h \in G$. We formalize this notion in the following proposition.
@@ -2157,6 +2159,8 @@ Examples:
 In general if $r \in R$, then $r$ is not necessarily (multiplicatively) invertible (especially if $R$ fails to contain the multiplicative identity $1$).
 
 DEF! If $R$ is a ring with unity $1$, then $R^\times$ is ... $\{r \in R : r^{-1} \in R\}$, the group of invertible elements.
+
+\providecommand{\sM}{\mathscr{M}}
 
 EX! What's $\sM_n(\FF)^\times$? ... It's just $\mathrm{GL}_n(\FF)$.
 
