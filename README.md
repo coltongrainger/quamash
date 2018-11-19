@@ -15,13 +15,13 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
 
-- administrivia
+- admin
     - [scanned notes](raw)
-    - [personal information management](pim)
+    - [quotes](pim) from Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
 
 ## Contributing
 
-One fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
+One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
 
 ## See also
 
