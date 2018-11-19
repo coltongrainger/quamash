@@ -3,11 +3,92 @@ title: Interpolation
 author: Colton Grainger
 ---
 
-\newcommand{\NN}{\mathbf{N}}
-\newcommand{\RR}{\mathbf{R}}
-\newcommand{\eps}{\varepsilon}
-\newcommand{\abs}[1]{\lvert #1\rvert}
-\newcommand{\norm}[1]{\lVert #1\rVert}
+## Constellation of concepts
+
+- root-finding
+
+- numerical quadrature
+
+    - differentiation
+    - integration
+
+- interpolation
+
+- matrix eigenvalue problem
+
+- solution of linear systems
+
+    - error analysis
+    - "distance to singularity"
+
+- linearization
+
+    - local/global convergence?
+
+### Desiderata
+
+We can evaluate a method based on:
+
+- accuracy
+
+- stability
+
+- failure modes
+
+- implementation
+
+    - functional/imperative
+    - legibility
+    - sanity
+    - computational complexity
+
+\providecommand{\NN}{\mathbf{N}}
+\providecommand{\RR}{\mathbf{R}}
+\providecommand{\eps}{\varepsilon}
+\providecommand{\abs}[1]{\lvert #1\rvert}
+\providecommand{\norm}[1]{\lVert #1\rVert}
+
+## Special Matrices
+
+\renewcommand{\abs}[1]{\lvert #1\rvert}
+
+When the set of $n \times n$ matrices with entries from $\mathbf{F}$ forms a ring under matrix addition and multiplication, we have a [Matrix Ring](https://en.wikipedia.org/wiki/Matrix_ring) (or "full ring of n-by-n matrices") over the field $\mathbf{F}$, denoted $\mathcal{M}_n(\mathbf{F})$ (or generally $\mathcal{M}_n$).
+
+For example, the [Biquaternions](https://en.wikipedia.org/wiki/Biquaternion), $\mathcal{M}_2(\mathbf{C})$ were in algebraic vogue among British mathematicians during the middle of the 19th century. A notable subset is the set of [Pauli Matrices](https://en.wikipedia.org/wiki/Pauli_matrices)---the biquaternions $hi$, $hj$, $hk$---which forms a basis for the vector space of $2 \times 2$ Hermitian matrices.
+
+DEF! $A \in \mathcal{M}_n$ is positive definite iff ... $x^T A x > 0$ for all $x \neq 0$. 
+
+DEF! $A \in \mathcal{M}_n$ is strictly diagonally dominant iff ... $$\abs{a_{ii}} > \sum_{j\neq i} \abs{a_{ij}}.$$
+
+DEF! $A \in \mathcal{M}_n$ is called a band matrix (with bandwidth $2p+1$) iff ... $a_{ij} = 0$ for $\abs{i-j} > p$.
+
+## Vector norms
+
+DEF! A vector norm is a real valued function $\norm{\cdot}\colon \RR^n \to \RR$ with $3$ properties, namely ... it's positive unless zero, or $\norm{x}\geq 0$ and $\norm{x}= 0$ iff $x=0$; it scales, i.e., $\norm{\alpha x} = \abs{\alpha}\cdot \norm{x}$; and it respects the triangle inequality $\norm{x + y} \leq \norm{x}+\norm{y}$.
+
+DEF! The $l_p$ norms (for $p \in \RR^+$) are given by ... $\norm{x}_p = \sqrt[p]{\sum_{i=1}^n \abs{x_i}^p}$.
+
+FACT! The Holder inequality (of which the Cauchy Bunyakovsky Schwarz inequality is a special case) states ... for all $x,y \in \RR^n$ and $p,q$ such that $\frac1p + \frac1q = 1$ we have $\abs{x^Ty} \leq \norm{x}_p\norm{y}_q$.
+
+DEF! The $l_\infty$ norm is ... $\norm{x}_\infty = \max\{\abs{x_i} : i=1,n\}$.
+
+EXAMPLE! The $l_2$ norm is ... $\norm{x}_2 = \sum_{i=1}^n \abs{x_i}^2 = \sqrt{x^T x}$.
+
+DEF! A matrix norm is a real valued function $\norm{\cdot}\colon \RR^{m\times n} \to \RR$ with $3$ properties, namely ... it's positive unless zero, or $\norm{A}\geq 0$ and $\norm{A}= 0$ iff $A=0$; it scales, i.e., $\norm{\alpha A} = \abs{\alpha}\cdot \norm{A}$; and it respects the triangle inequality $\norm{A + B} \leq \norm{A}+\norm{B}$.
+
+DEF! A matrix norm has the submultiplicative property iff ... $$\forall A \in \RR^{m\times n}\, \forall B \in \RR^{n\times p}\, \norm{AB}\leq\norm{A}\norm{B}.$$
+
+Vector norms induce matrix norms; these are called *natural* matrix norms.
+
+FACT! Some matrix norms guaranteed to have the submultiplicative property are ... those induced by $l_p$ vector norms.
+
+EX! The matrix norm given by the max column sum of magnitudes is ... the $l_1$ matrix norm.
+
+EX! The matrix norm given by the max row sum of magnitudes is ... the $l_\infty$ matrix norm.
+
+EX! Turns out that the scalar $\max_i\{\sqrt{\lambda_i}: \lambda_i \text{ is an eigenvalue of } A^T A\}$ is given by ... $\norm{A}_2$, the spectral norm.
+
+DEF! Given a vector norm, the induced matrix norm is ... $$\norm{A} = \sup_{x\neq 0} \frac{\norm{Ax}}{\norm{x}}.$$
 
 ## Polynomial approximation
 
