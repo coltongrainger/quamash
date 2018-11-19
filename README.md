@@ -6,18 +6,21 @@ toc: false
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-### Fall 2018
-
-- [MATH 6130 Algebra 1](alg1)
-- [MATH 6210 Topology 1](top1)
-- [MATH 1300 Calculus 1](math1300)
 - [scanned notes](raw)
 
-### Contributing
+- courses
+    - [MATH 6130 Algebra 1](alg1)
+    - [MATH 6210 Topology 1](top1)
+    - [MATH 428 Numerical Analysis](num)
+
+- TA-ing
+    - [MATH 1300 Calculus 1](math1300)
+
+## Contributing
 
 One fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
 
-### See also
+## See also
 
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
@@ -25,7 +28,7 @@ One fork the [repository on github](https://github.com/coltongrainger/quamash) a
 - Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
 
-### Colophon
+## Colophon
 
 The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
