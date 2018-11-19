@@ -6,7 +6,6 @@ toc: false
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-- [scanned notes](raw)
 
 - courses
     - [MATH 6130 Algebra 1](alg1)
@@ -15,6 +14,10 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
+
+- administrivia
+    - [scanned notes](raw)
+    - [personal information management](pim)
 
 ## Contributing
 
