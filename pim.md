@@ -3,6 +3,8 @@ title: Personal Information Management
 author: Colton Grainger
 ---
 
+![](http://blog.coltongrainger.com/attached/20180611-personal-information-management.jpg)
+
 p. 3
 
 > PIM is both the practice and the study of the activities people perform to acquire, organize, maintain, retrieve, use, and control the distribution of information items such as documents (paper-based and digital), Web pages, and email messages for everyday use to complete tasks (work-related and not) and to fulfill a person's various roles (as parent, employee, friend, member of the community, etc.).

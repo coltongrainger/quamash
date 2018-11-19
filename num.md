@@ -1,7 +1,9 @@
 ---
-title: Interpolation
+title: Numerical Analysis
 author: Colton Grainger
 ---
+
+I took this course before I had this wiki setup. Course summary: <http://blog.coltongrainger.com/math-428>.
 
 ## Constellation of concepts
 
