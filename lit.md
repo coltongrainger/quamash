@@ -3,8 +3,9 @@ title: Primary and secondary sources
 date: 2018-11-20
 ---
 
- Intended for research, teaching, or classroom use. See <http://jeffe.cs.illinois.edu/pubs/copyright.html>.
+Intended for research, teaching, or classroom use. See <http://jeffe.cs.illinois.edu/pubs/copyright.html>.
 
+I have enabled [Hypothesis annotations](https://web.hypothes.is/) with the [via proxy](https://web.hypothes.is/help/what-is-the-via-proxy/), both [my own use](https://hypothes.is/users/coltongrainger) and for others.
 
 - [2018-tierny-topological-data-analysis.pdf](https://via.hypothes.is/http://quamash.net/2018-tierny-topological-data-analysis.pdf) (9.8M)
 - [2018-tang-quantum-inspired-classical-algorithm.pdf](https://via.hypothes.is/http://quamash.net/2018-tang-quantum-inspired-classical-algorithm.pdf) (760K)
