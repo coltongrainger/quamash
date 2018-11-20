@@ -1,7 +1,10 @@
 ---
-title: Annotated source texts
-date: 2018-11-19
+title: Primary and secondary sources
+date: 2018-11-20
 ---
+
+ Intended for research, teaching, or classroom use. See <http://jeffe.cs.illinois.edu/pubs/copyright.html>.
+
 
 - [2018-tierny-topological-data-analysis.pdf](https://via.hypothes.is/http://quamash.net/2018-tierny-topological-data-analysis.pdf) (9.8M)
 - [2018-tang-quantum-inspired-classical-algorithm.pdf](https://via.hypothes.is/http://quamash.net/2018-tang-quantum-inspired-classical-algorithm.pdf) (760K)
