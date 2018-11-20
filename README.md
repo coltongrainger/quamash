@@ -14,7 +14,7 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
 
--references
+- references
     - [scanned notes](raw)
     - [primary and secondary sources](lit) 
         - annotated with [hypothes.is](https://web.hypothes.is) (?)
