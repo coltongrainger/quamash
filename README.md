@@ -6,7 +6,6 @@ toc: false
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-
 - courses
     - [MATH 6130 Algebra 1](alg1)
     - [MATH 6210 Topology 1](top1)
@@ -15,23 +14,26 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
 
-- admin
-    - [scanned notes](raw)
-    - [quotes](pim) from Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
+- references
+    - [pinboard](https://pinboard.in/u:coltongrainger)
+    - [citeulike](http://www.citeulike.org/user/coltongrainger/)
+    - [mirror of primary sources](lit)
+        - As of 2018-11-20, I'm attempting to annotate these with [hypothes.is](https://web.hypothes.is/).
 
 ## Contributing
 
-One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
+One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request. 
 
-## See also
+## Colophon
 
+[Why should this wiki exist?](pim) See:
+
+- Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
 - Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
-
-## Colophon
 
 The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
