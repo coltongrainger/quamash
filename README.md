@@ -14,12 +14,11 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
 
-## Updates
-
-- 2018-11-20: Started annotating [source texts](lit) with [hypothes.is](https://hypothes.is/users/coltongrainger).
-- 2018-05-22: Started posting to [pinboard](https://pinboard.in/u:coltongrainger).
-- 2018-07-08: Setup wiki with [motivation](pim) from Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
-- 2017-08-06: Started posting to [citeulike](http://www.citeulike.org/user/coltongrainger/).
+- reference management
+    - [primary sources](lit) (annotated with [hypothes.is](https://hypothes.is/users/coltongrainger))
+    - [citeulike](http://www.citeulike.org/user/coltongrainger/)
+    - [pinboard](https://pinboard.in/u:coltongrainger)
+    - [scanned notes](raw)
 
 ## Contributing
 
@@ -27,6 +26,7 @@ One may fork the [repository on github](https://github.com/coltongrainger/quamas
 
 ## See also
 
+- [Selected quotes](pim) from Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
