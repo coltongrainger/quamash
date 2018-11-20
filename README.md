@@ -14,11 +14,12 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - TA-ing
     - [MATH 1300 Calculus 1](math1300)
 
-- reference management
-    - [primary sources](lit) (annotated with [hypothes.is](https://hypothes.is/users/coltongrainger))
+-references
+    - [scanned notes](raw)
+    - [primary and secondary sources](lit) 
+        - annotated with [hypothes.is](https://web.hypothes.is) (?)
     - [citeulike](http://www.citeulike.org/user/coltongrainger/)
     - [pinboard](https://pinboard.in/u:coltongrainger)
-    - [scanned notes](raw)
 
 ## Contributing
 
