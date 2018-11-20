@@ -1,13 +1,16 @@
 ---
-title: Literature
-date: 2018-10-20
+title: Mirror for source texts, i.e., lit
+date: 2018-11-19
 ---
 
 - [2018-tierny-topological-data-analysis.pdf](/2018-tierny-topological-data-analysis.pdf) (9.8M)
 - [2018-tang-quantum-inspired-classical-algorithm.pdf](/2018-tang-quantum-inspired-classical-algorithm.pdf) (760K)
 - [2018-shappell-caffo-pekar-lindquis-improved-state-change-estimation.pdf](/2018-shappell-caffo-pekar-lindquis-improved-state-change-estimation.pdf) (4.0M)
+- [2018-schwichtenberg-PhysicsFromSymmetry.pdf](/2018-schwichtenberg-PhysicsFromSymmetry.pdf) (3.8M)
 - [2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf](/2018-polikarpova-yang-itzhaky-hance-solar-lezama-lifty.pdf) (1.2M)
 - [2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf](/2018-mirzakhani-wright-full-rank-affine-invariant-submanifolds.pdf) (432K)
+- [2018-milne-field-theory.pdf](/2018-milne-field-theory.pdf) (1.1M)
+- [2018-hatcher-algebraic-topology.pdf](/2018-hatcher-algebraic-topology.pdf) (7.7M)
 - [2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks.pdf](/2018-guss-salakhutdinov-on-charaterizing-the-capicity-of-neural-networks.pdf) (6.7M)
 - [2018-grochow-tucker-foltz-computational-topology.pdf](/2018-grochow-tucker-foltz-computational-topology.pdf) (588K)
 - [2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf](/2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf) (12M)
@@ -18,6 +21,7 @@ date: 2018-10-20
 - [2017-wust-do-you-need-a-block-chain.pdf](/2017-wust-do-you-need-a-block-chain.pdf) (180K)
 - [2017-vakil-the-rising-sea.pdf](/2017-vakil-the-rising-sea.pdf) (6.3M)
 - [2017-pappe-ten-myths-about-israel.epub](/2017-pappe-ten-myths-about-israel.epub) (708K)
+- [2017-milne-group-theory.pdf](/2017-milne-group-theory.pdf) (1008K)
 - [2017-lamport-pluscal-p-manual.pdf](/2017-lamport-pluscal-p-manual.pdf) (540K)
 - [2017-lamport-pluscal-c-manual.pdf](/2017-lamport-pluscal-c-manual.pdf) (540K)
 - [2017-jia-calculus-of-variations.pdf](/2017-jia-calculus-of-variations.pdf) (120K)
@@ -53,6 +57,7 @@ date: 2018-10-20
 - [2014-katz-taming-the-unknown.pdf](/2014-katz-taming-the-unknown.pdf) (13M)
 - [2014-ghrist-elementary-applied-topology.pdf](/2014-ghrist-elementary-applied-topology.pdf) (18M)
 - [2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf](/2014-bremer-hotz-pascucci-peikert-topological-methods-in-data-analysis-and-visualization-III.pdf) (7.8M)
+- [2014-beachy-abstract-algebra-supplement.pdf](/2014-beachy-abstract-algebra-supplement.pdf) (896K)
 - [2013-univalent-foundations-program-homotopy-type-theory.pdf](/2013-univalent-foundations-program-homotopy-type-theory.pdf) (3.2M)
 - [2013-struwe-analysis-III-mass-und-integral.pdf](/2013-struwe-analysis-III-mass-und-integral.pdf) (724K)
 - [2013-roach-college-mathematics-and-question-strategies.pdf](/2013-roach-college-mathematics-and-question-strategies.pdf) (304K)
@@ -61,6 +66,7 @@ date: 2018-10-20
 - [2013-klein-coding-the-matrix.pdf](/2013-klein-coding-the-matrix.pdf) (8.6M)
 - [2013-hand-teaching-statement.pdf](/2013-hand-teaching-statement.pdf) (108K)
 - [2013-griffiths-electrodynamics.pdf](/2013-griffiths-electrodynamics.pdf) (153M)
+- [2013-erickson-whittlesey-transforming-curves-on-surfaces-redux.pdf](/2013-erickson-whittlesey-transforming-curves-on-surfaces-redux.pdf) (1.8M)
 - [2013-computing-programmes-england-primary.pdf](/2013-computing-programmes-england-primary.pdf) (116K)
 - [2013-armoni-computer-science-concepts-in-scratch.pdf](/2013-armoni-computer-science-concepts-in-scratch.pdf) (1.3M)
 - [2012-struwe-analysis-I-and-II.pdf](/2012-struwe-analysis-I-and-II.pdf) (2.4M)
@@ -70,6 +76,7 @@ date: 2018-10-20
 - [2012-rogawski-calculus-single-variable-sols.pdf](/2012-rogawski-calculus-single-variable-sols.pdf) (16M)
 - [2012-rogawski-calculus.pdf](/2012-rogawski-calculus.pdf) (81M)
 - [2012-rogawski-calculus-multivariable-sols.pdf](/2012-rogawski-calculus-multivariable-sols.pdf) (15M)
+- [2012-ponto-may-more-concise-algebraic-topology.pdf](/2012-ponto-may-more-concise-algebraic-topology.pdf) (2.4M)
 - [2012-Neil-practical-vim.pdf](/2012-Neil-practical-vim.pdf) (8.9M)
 - [2012-morrow-intro-to-abstract-algebra.pdf](/2012-morrow-intro-to-abstract-algebra.pdf) (124K)
 - [2012-miersemann-pde-notes.pdf](/2012-miersemann-pde-notes.pdf) (1.4M)
@@ -108,6 +115,7 @@ date: 2018-10-20
 - [2009-reinwald-xmlsql.pdf](/2009-reinwald-xmlsql.pdf) (592K)
 - [2009-dieudonne-a-history-of-algebraic-and-differential-topology.pdf](/2009-dieudonne-a-history-of-algebraic-and-differential-topology.pdf) (167M)
 - [2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans.pdf](/2009-Computational-Methods-for-the-Atmosphere-and-the-Oceans.pdf) (22M)
+- [2009-chambers-erickson-nayyeri-homology-flows-cohomology-cuts.pdf](/2009-chambers-erickson-nayyeri-homology-flows-cohomology-cuts.pdf) (932K)
 - [2009-chacon-pro-git.pdf](/2009-chacon-pro-git.pdf) (5.3M)
 - [2009-carlsson-topology-and-data.pdf](/2009-carlsson-topology-and-data.pdf) (1.8M)
 - [2009-boyce-diprima-diffeqs.pdf](/2009-boyce-diprima-diffeqs.pdf) (5.5M)
@@ -127,6 +135,7 @@ date: 2018-10-20
 - [2007-clark-theory-groups.pdf](/2007-clark-theory-groups.pdf) (208K)
 - [2007-bressoud-a-radical-approach-to-real-analysis.pdf](/2007-bressoud-a-radical-approach-to-real-analysis.pdf) (15M)
 - [2007-beah-alongwaygone.pdf](/2007-beah-alongwaygone.pdf) (1.1M)
+- [2007-beachy-review-of-groups-and-galois-theory.pdf](/2007-beachy-review-of-groups-and-galois-theory.pdf) (400K)
 - [2006-telcs-art-random-walks.pdf](/2006-telcs-art-random-walks.pdf) (3.0M)
 - [2006-tao-analysis-I.pdf](/2006-tao-analysis-I.pdf) (31M)
 - [2006-martin-on-the-stability-of-four-legged-tables.pdf](/2006-martin-on-the-stability-of-four-legged-tables.pdf) (120K)
@@ -157,7 +166,6 @@ date: 2018-10-20
 - [2003-chomsky-hegemony-survival.pdf](/2003-chomsky-hegemony-survival.pdf) (3.0M)
 - [2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu](/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) (4.8M)
 - [2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu](/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) (7.2M)
-- [2000-outline-summary-of-point-set-topology.pdf](/2000-outline-summary-of-point-set-topology.pdf) (128K)
 - [2000-munkres-topology.pdf](/2000-munkres-topology.pdf) (30M)
 - [2000-may-outline-summary-of-basic-point-set-topology.pdf](/2000-may-outline-summary-of-basic-point-set-topology.pdf) (128K)
 - [2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf](/2000-bransford-how-people-learn-brain-mind-experience-and-school.pdf) (6.2M)
@@ -212,6 +220,7 @@ date: 2018-10-20
 - [1955-furstenberg-on-the-infinitude-of-primes.pdf](/1955-furstenberg-on-the-infinitude-of-primes.pdf) (188K)
 - [1942-faulkner-go-down-moses.pdf](/1942-faulkner-go-down-moses.pdf) (212K)
 - [1941-dushnik-partially-ordered-sets.pdf](/1941-dushnik-partially-ordered-sets.pdf) (1.2M)
+- [1940-weil-analogy.pdf](/1940-weil-analogy.pdf) (88K)
 - [1926-hemingway-sun-also-rises.pdf](/1926-hemingway-sun-also-rises.pdf) (932K)
 - [1921-hardy-pure-mathematics.pdf](/1921-hardy-pure-mathematics.pdf) (3.2M)
 - [1916-veblen-analysis-situ.pdf](/1916-veblen-analysis-situ.pdf) (10M)
