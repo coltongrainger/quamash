@@ -2146,7 +2146,7 @@ DEF! The kernel, denoted $\ker \phi$, of a ring homomorphism $\phi \colon R \to 
 - Under the convention that rings have an identity, then $\ker \phi$ is not generally a subring.
 - Kernels of ring homomorphisms have stronger "normality" properties than we'd expect from our intuition with normal subgroups.
 
-#### Broken hand
+### Week 12: Broken hand
 
 While biking to class the morning after finishing the problem set for *Further Topics in Group Theory* (Ch 6), I took a spill and [fractured the fifth metacarpal](https://www.orthobullets.com/hand/6037/metacarpal-fractures) in my right hand. Boo. Chris and Hunter allowed me to take copies of their notes until I had a wrist brace that I could write with (around 2018-11-15). I ended up taking off the brace early (around 2018-11-26 as the bone had mended into an alignment that was good enough for me) so that I could type unobstructed. However, having my dominant hand wrapped up for a solid 20 days put into focus the utter amount of bullshittery I had been using it for. I'll share a few observations, seeing as they're meta-relevant to the style of these notes:
 
@@ -2179,6 +2179,3 @@ I'm concerned that the written assignments are too high fidelity to be adequatel
 
 I'm working a bit with my left hand on the rest of the algebra assignment which lo and behold is a bunch of polynomial manipulation---indices all over the place and my handwriting is s***.
 ---> 
-
-#### 
-### Week 
