@@ -2182,22 +2182,26 @@ I'm working a bit with my left hand on the rest of the algebra assignment which 
 
 ### Week 16: "Dead week"
 
-Let talk about *sets* baby. (Problem sets.) 
+
+Let's talk about *sets*, baby. (Problem sets.)
+
+To scaffold myself, here's a series of exams meant to be taken by advanced undergrads. (Anyways, I'm a fan of each author's writing; each of these packets are slick.)
+
+- James McKernan
+    - [18.703 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A18703&unscoped_q=filename%3A18703)
+- Hiro Lee Tanaka
+    - [Fall 2014 Math 122 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A2014-fall*&unscoped_q=filename%3A2014-fall*)
+- Ravi Vakil
+    - [Math 120 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3Avakil&unscoped_q=filename%3Avakil) (no solutions)
+- Evan Dummit
+    - [Summer Enhancement Program 2014](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A2014_algebra_sep*&unscoped_q=filename%3A2014_algebra_sep*)
+
+Measuring with Dummit and Foote: we made it to Gauss' lemma and the Eisenstein criterion. That's just chapter 1--9. Pretty canonical. Everything above should be approachable. What's below is a little denser---meant for drilling.
 
 - J.A. Beachy
     - [A Study Guide for Beginners](http://www.math.niu.edu/~beachy/abstract_algebra/review/contents.html)
     - [Review Problems on Groups and Galois Theory](http://www.math.niu.edu/~beachy/abstract_algebra/guide/contents.html)
-- Hiro Lee Tanaka
-    - [Fall 2014 Math 122 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A2014-fall*&unscoped_q=filename%3A2014-fall*)
-- Evan Dummit
-    - [Summer Enhancement Program 2014](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A2014_algebra_sep*&unscoped_q=filename%3A2014_algebra_sep*)
-- James McKernan
-    - [18.703 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3A18703&unscoped_q=filename%3A18703)
 - James Wilson
     - [Algebra quals notes](http://www.math.colostate.edu/~jwilson/math/Algebra.pdf)
 - [CU Algebra prelims 2006 and older](https://github.com/coltongrainger/fy19alg1/search?q=filename%3Acu-boulder&unscoped_q=filename%3Acu-boulder)
-    - *The solutions are gross, however. Just hardcopies in MATH 350.*
-- Ravi Vakil
-    - [Math 120 exams](https://github.com/coltongrainger/fy19alg1/search?q=filename%3Avakil&unscoped_q=filename%3Avakil) (no solutions)
-
-In terms of Dummit and Foote, we *rigorous* covered material up to Gauss' lemma and the Eisenstein criterion. That's just chapter 1--9. Pretty canonical.
+    - The solutions are *gross* (just hardcopies in MATH 350).
