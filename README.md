@@ -9,7 +9,7 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 - courses (reverse chronological)
 
     - [MATH 6140 Algebra 2](alg2)
-    - [MATH 6230 Differential Geometry 1](diffgeom1)
+    - [MATH 6230 Differential Geometry 1](diffgeo1)
     - [MATH 6130 Algebra 1](alg1)
     - [MATH 6210 Topology 1](top1)
     - [StatOptML Seminar](https://sites.google.com/colorado.edu/statoptml/fall-2018)
