@@ -30,68 +30,68 @@ The [undergraduate handbook](https://warwick.ac.uk/fac/sci/maths/undergrad/ughan
 
 ### Prelim Exam Outline
 
-**Modules and linear algebra**
+- Modules and linear algebra
 
-- foundations
-- canonical examples
-    - finite dimensional vector spaces
-    - linear transformations 
-    - matrix representations
-- modules
-    - lattice of submodules
-    - quotient modules
-- homomorphism theorems
-- structure of finitely generated modules
-- language of categories and functors
-- minimal polynomial of a transformation
-- Cayley-Hamilton theorem over a commutative ring
-- direct sums and products
-- free, projective, injective modules
-- duality
-- multilinear forms
-- determinants
-- canonical forms
-    - Jordan
-    - rational
-    - primary rational
-- invariant factors
-- elementary divisors
-- localization of modules
+    - foundations
+    - canonical examples
+        - finite dimensional vector spaces
+        - linear transformations 
+        - matrix representations
+    - modules
+        - lattice of submodules
+        - quotient modules
+    - homomorphism theorems
+    - structure of finitely generated modules
+    - language of categories and functors
+    - minimal polynomial of a transformation
+    - Cayley-Hamilton theorem over a commutative ring
+    - direct sums and products
+    - free, projective, injective modules
+    - duality
+    - multilinear forms
+    - determinants
+    - canonical forms
+        - Jordan
+        - rational
+        - primary rational
+    - invariant factors
+    - elementary divisors
+    - localization of modules
 
-**Field theory**
+- Field theory
 
-- foundations
-- canonical examples
-    - finite fields
-- field extensions
-    - algebraic
-    - transcendental
-    - cyclotomic and cyclic
-    - transcendence degree
-    - algebraic closure
-- Greek construction problems
-    - impossibility proofs
-    - e.g., trisecting angles
-- Fundamental theorem of Galois theory
-    - Galois correspondence
-- splitting fields
-    - separability
-    - normality
-- Galois groups of extensions/polynomials
-    - solvable and nilpotent groups
-- solvable and radical extensions
-    - the insolvability of the quintic
-- Fundamental Theorem of Algebra
-- Frobenius endomorphism
+    - foundations
+    - canonical examples
+        - finite fields
+    - field extensions
+        - algebraic
+        - transcendental
+        - cyclotomic and cyclic
+        - transcendence degree
+        - algebraic closure
+    - Greek construction problems
+        - impossibility proofs
+        - e.g., trisecting angles
+    - Fundamental theorem of Galois theory
+        - Galois correspondence
+    - splitting fields
+        - separability
+        - normality
+    - Galois groups of extensions/polynomials
+        - solvable and nilpotent groups
+    - solvable and radical extensions
+        - the insolvability of the quintic
+    - Fundamental Theorem of Algebra
+    - Frobenius endomorphism
 
-**Additional Algebra**
+- Additional Algebra
 
-- applications of Zorn’s lemma
-- tensor products
-    - algebras
-- chain conditions
-    - Artinian and Noetherian rings and modules
-    - Hilbert basis theorem
-- Nullstellensatz
+    - applications of Zorn’s lemma
+    - tensor products
+        - algebras
+    - chain conditions
+        - Artinian and Noetherian rings and modules
+        - Hilbert basis theorem
+    - Nullstellensatz
 
 
