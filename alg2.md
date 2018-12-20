@@ -5,9 +5,32 @@ date: 2018-12-01
 revised:
 ---
 
-## Prelim Exam Syllabus
+## Syllabus for MATH 6140 (Modern Algebra 2)
 
-### Modules and linear algebra
+Instructor: [Dr. Richard Green](https://math.colorado.edu/~rmg/)
+
+Website: <https://math.colorado.edu/~rmg/6140/>
+
+Here's the git repo for assignments and handouts: <http://github.com/coltongrainger/fy19alg2>. 
+
+Here're the changes I hope to make in contrast with my [algebra 1](alg1) notes.
+
+- More: discussion, reflection, narration, and reference. 
+- Less: mathjax bloat, rote memorization, agony.
+
+### Prerequisites
+
+Obviously, [Graduate Algebra 1](alg1). Here're exams from MATH 6130 Fall 2017 the last time Dr. Green instructed: [ring theory](http://math.colorado.edu/~rmg/6130/p6130f.pdf), [further topics group theory](http://math.colorado.edu/~rmg/6130/p6130b.pdf), and [basic group theory](http://math.colorado.edu/~rmg/6130/p6130a.pdf).
+
+I also talked a bit with Dr. Thiem about preparing for modules, field theory, Galois theory, etc. Our consensus: one must *know* linear algebra. (One can never know enough linear algebra!) 
+
+The [undergraduate handbook](https://warwick.ac.uk/fac/sci/maths/undergrad/ughandbook/year3/ma377/) for MA337 the University of Warwick suggests:
+
+> MA106 Linear Algebra, familiarity with elementary group theory and the ring theory part of MA249 Algebra II: Groups and Rings is desirable.
+
+### Prelim Exam Outline
+
+**Modules and linear algebra**
 
 - foundations
 - canonical examples
@@ -35,7 +58,7 @@ revised:
 - elementary divisors
 - localization of modules
 
-### Field theory
+**Field theory**
 
 - foundations
 - canonical examples
@@ -61,7 +84,7 @@ revised:
 - Fundamental Theorem of Algebra
 - Frobenius endomorphism
 
-### Additional Algebra
+**Additional Algebra**
 
 - applications of Zorn’s lemma
 - tensor products
@@ -71,18 +94,4 @@ revised:
     - Hilbert basis theorem
 - Nullstellensatz
 
-### Week 0
-
-Course with [Richard Green](https://math.colorado.edu/~rmg/). Git repo for assignments: <http://github.com/coltongrainger/fy19alg2>. 
-
-Changes I hope to make in contrast with the [algebra 1](alg1) notes:
-
-- more
-    - reflection
-    - narrative
-    - references
-- less
-    - mathjax bloat
-    - rote memorization
-    - agony
 
