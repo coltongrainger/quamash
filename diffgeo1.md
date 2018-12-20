@@ -5,26 +5,35 @@ date: 2018-12-01
 revised: 2018-12-19
 ---
 
-## Syllabus for MATH 6230 (Introduction to Differential Geometry)
+## Syllabus for MATH 6230
 
 Instructor: [Prof. Jeanne Clelland](http://math.colorado.edu/~jnc/)
 
+Here's the git repo for assignments and handouts: <http://github.com/coltongrainger/fy19diffgeo1>. 
+
+Here're the changes I hope to make in contrast with my [topology 1](top1) notes.
+
+- More: open questions, metacognitive dialogue
+- Less: mathjax, math macros, definitions
+
 ### Prerequisites
 
-From John Lee's [Math 442 Differential Geometry](https://sites.math.washington.edu/~lee/Courses/442-2013/syllabus.pdf) syllabus:
+Here's a long list from John M. Lee's undergraduate and graduate courses (1.5 years of work!):
+
+From the [Math 442](https://sites.math.washington.edu/~lee/Courses/442-2013/syllabus.pdf) syllabus:
 
 > - Vector calculus: partial derivatives, the chain rule, dot products, cross products, tangent lines, tangent planes, line integrals, surface integrals, gradients, vector fields, the divergence theorem.
 > - Linear algebra: vector spaces, bases and dimension, linear maps and their representation by matrices, rank of a matrix, determinants, matrix algebra, eigenvectors and eigenvalues. 
 > - Analysis in several variables: functions of several variables and their differentials; the inverse and implicit function theorems; the change of variables theorem for double and triple integrals.
 > - Topology: open and closed sets, boundaries, limit points, closures, continuous maps, homeomorphisms, connected sets, compact sets. 
 
-From Lee's [Math 554](https://sites.math.washington.edu/~lee/Courses/544-2006/syllabus.pdf) syllabus, for a study of *topological manifolds*:
+From the [Math 554](https://sites.math.washington.edu/~lee/Courses/544-2006/syllabus.pdf) syllabus, for a study of *topological manifolds*:
 
 > - Set Theory : Operations on sets, functions, equivalence and order relations, number systems and cardinality, the axiom of choice. References : Principles of Mathematical Analysis by Rudin, Chapter 1; Mathematical Analysis by Apostol, Chapters 1 and 2; Appendix to [ITM]. 
 > - Analysis : Metric spaces; convergence and continuity; open and closed sets; interior, exterior, and boundary; compactness. Reference : Principles of Mathematical Analysis by Rudin, Chapters 2,3,4; Mathematical Analysis by Apostol, Chapters 3 and 4; Appendix to [ITM]. 
 > - Algebra : Elementary group theory, homomorphisms, isomorphisms, subgroups, normal sub- groups, permutation groups, cyclic groups, cosets, quotient groups. Reference : Abstract Algebra: An Introduction by Hungerford, Chapter 7; Abstract Algebra by Herstein, Chapters 1–3; Appendix to [ITM].
 
-and for a study of *smooth manifolds*:
+From, again, MATH 554, for a study of *smooth manifolds*:
 
 > - Topology : All the material covered in Math 544. Reference : [ITM].
 > - Linear algebra : Abstract vector spaces, subspaces, bases, dimension, matrices, determinants, change of basis formulas, linear maps, kernel and image, norms and inner products, orthonor- mal bases. Reference : any rigorous linear algebra text, such as Linear Algebra by Friedberg, Insel, and Spence; Appendix to [ISM].
@@ -33,7 +42,7 @@ and for a study of *smooth manifolds*:
 
 ### Prelim Exam Outline
 
-Here's an outline for the geometry half of CU's topology/geometry preliminary exam.
+Here's an outline for the geometry half of CU's topology/geometry preliminary exam. See also [the topology half](top1#prelim-exam-syllabus).
 
 - Smooth manifolds
     - implicit function theorem and regular values of functions
