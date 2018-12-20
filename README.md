@@ -6,20 +6,26 @@ toc: false
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-- courses
-    - [MATH 6130 Algebra 1](alg1)
-    - [MATH 6210 Topology 1](top1)
-    - [MATH 428 Numerical Analysis](num)
+- coursework
 
-- TA-ing
-    - [MATH 1300 Calculus 1](math1300)
+    - Spring 2019
+        - [MATH 6140 Algebra 2](alg2)
+        - [MATH 6230 Differential Geometry 1](diffgeom1)
+
+    - Fall 2018
+        - [MATH 6130 Algebra 1](alg1)
+        - [MATH 6210 Topology 1](top1)
+        - [MATH 428 Numerical Analysis](num)
+
+- teaching
+
+    - [MATH 1300 Calculus 1](math1300) (Fall 2018, Spring 2019)
 
 - references
-    - [scanned notes](raw)
-    - [primary and secondary sources](lit) 
-        - annotated with [hypothes.is](https://web.hypothes.is) (?)
-    - [citeulike](http://www.citeulike.org/user/coltongrainger/)
-    - [pinboard](https://pinboard.in/u:coltongrainger)
+
+    - [scanned notes](raw), [primary and secondary sources](lit) 
+    - [zotero](https://www.zotero.org/coltongrainger/items), [citeulike](http://www.citeulike.org/user/coltongrainger/) 
+    - [pinboard](https://pinboard.in/u:coltongrainger), [hypothes.is](https://web.hypothes.is)
 
 ## Contributing
 
@@ -27,7 +33,7 @@ One may fork the [repository on github](https://github.com/coltongrainger/quamas
 
 ## See also
 
-- [Selected quotes](pim) from Jones and Teevan, 2007. [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html).
+- Jones and Teevan's 2007 [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html) ([selected quotes](pim))
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
 - Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
