@@ -6,20 +6,18 @@ toc: false
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
-- coursework
+- courses (reverse chronological)
 
-    - Spring 2019
-        - [MATH 6140 Algebra 2](alg2)
-        - [MATH 6230 Differential Geometry 1](diffgeom1)
-
-    - Fall 2018
-        - [MATH 6130 Algebra 1](alg1)
-        - [MATH 6210 Topology 1](top1)
-        - [MATH 428 Numerical Analysis](num)
+    - [MATH 6140 Algebra 2](alg2)
+    - [MATH 6230 Differential Geometry 1](diffgeom1)
+    - [MATH 6130 Algebra 1](alg1)
+    - [MATH 6210 Topology 1](top1)
+    - [StatOptML Seminar](https://sites.google.com/colorado.edu/statoptml/fall-2018)
+    - [MATH 428 Numerical Analysis](num)
 
 - teaching
 
-    - [MATH 1300 Calculus 1](math1300) (Fall 2018, Spring 2019)
+    - [MATH 1300 Calculus 1](math1300)
 
 - references
 
