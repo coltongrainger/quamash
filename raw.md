@@ -1,11 +1,18 @@
 ---
 title: Scanned notes
 author: Colton Grainger
-date: 2018-12-10
+date: 2018-12-23
 ---
 
  Unfinished! Handwritten!
 
+- [2018-12-17.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-17.pdf) (2.7M)
+- [2018-12-16.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-16.pdf) (4.4M)
+- [2018-12-15.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-15.pdf) (880K)
+- [2018-12-13.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-13.pdf) (800K)
+- [2018-12-12.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-12.pdf) (3.3M)
+- [2018-12-11.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-11.pdf) (1.5M)
+- [2018-12-10.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-10.pdf) (152K)
 - [2018-12-09.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-09.pdf) (1.9M)
 - [2018-12-08.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-08.pdf) (888K)
 - [2018-12-07.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-07.pdf) (644K)
