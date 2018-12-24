@@ -4,33 +4,31 @@ author: Colton Grainger
 toc: false
 ---
 
-Meant as a prose complement to [github](https://github.com/coltongrainger/).
-
-
-studies
-
-- [MATH 6140 Algebra 2](alg2) (S19)
-- [MATH 6230 Differential Geometry 1](diffgeo1) (S19)
-- [MATH ???? Probability Seminar](prob1) (S19)
-
-- [MATH 6130 Algebra 1](alg1) (F18)
-- [MATH 6210 Topology 1](top1) (F18)
-- [APPM 8500 StatOptML Seminar](https://sites.google.com/colorado.edu/statoptml/fall-2018) (F18)
-
-- [MATH 428 Numerical Analysis](num) (S18)
-
-teaching
-
-- [MATH 1300 Calculus 1](math1300) (F18, S19)
-
-references
+Meant as a prose complement to [github](https://github.com/coltongrainger/). 
 
 - [scanned notes](raw)
-- [primary and secondary sources](lit) 
-- [zotero](https://www.zotero.org/coltongrainger/items)
-- [citeulike](http://www.citeulike.org/user/coltongrainger/) 
-- [pinboard](https://pinboard.in/u:coltongrainger)
-- [hypothes.is](https://web.hypothes.is)
+
+- studies
+
+    - [MATH 6140 Algebra 2](alg2)
+    - [MATH 6230 Differential Geometry 1](diffgeo1)
+    - [Probability reading course](prob1)
+    - [MATH 6130 Algebra 1](alg1)
+    - [MATH 6210 Topology 1](top1)
+    - [APPM 8500 StatOptML seminar](https://github.com/coltongrainger/fy19soml)
+    - [MATH 428 Numerical Analysis](num)
+
+- TA-ing
+
+    - [MATH 1300 Calculus 1](math1300)
+
+- references
+
+    - [primary and secondary sources](lit) 
+    - [zotero](https://www.zotero.org/coltongrainger/items)
+    - [citeulike](http://www.citeulike.org/user/coltongrainger/) 
+    - [pinboard](https://pinboard.in/u:coltongrainger)
+    - [hypothes.is](https://web.hypothes.is)
 
 ## Contributing
 
@@ -38,12 +36,13 @@ One may fork the [repository on github](https://github.com/coltongrainger/quamas
 
 ## See also
 
-- Jones and Teevan's 2007 [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html) ([selected quotes](pim))
+- Jones and Teevan's [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html) ([selected quotes](pim))
 - W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
-- Vipul Naik's [Groupprops Subwiki](https://groupprops.subwiki.org/wiki/Main_Page)
-- Issa Rice's [Cause Prioritization Wiki](https://causeprioritization.org/)
+- Issa Rice's [Updates](https://issarice.wordpress.com/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
+- Michael Goerz's [Studies](https://michaelgoerz.net/studies/)
+- <https://learning.subwiki.org>
 
 ## Colophon
 
