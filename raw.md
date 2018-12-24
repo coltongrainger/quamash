@@ -1,7 +1,7 @@
 ---
 title: Scanned notes
 author: Colton Grainger
-date: 2018-12-23
+date: 2018-12-24
 ---
 
  Unfinished! Handwritten!
