@@ -24,7 +24,7 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
 
 - references
 
-    - [primary and secondary sources](lit) 
+    - [literature](lit) 
     - [zotero](https://www.zotero.org/coltongrainger/items)
     - [citeulike](http://www.citeulike.org/user/coltongrainger/) 
     - [pinboard](https://pinboard.in/u:coltongrainger)

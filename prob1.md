@@ -31,3 +31,7 @@ Fall 2018, Ed Perkins taught [Math 418/544](http://www.math.ubc.ca/~perkins/418o
 > The course is intended to be useful for those who use probability as a tool in other fields, or planning to do research in probability.  Probability theory has applications in analysis, electrical and computer engineering, statistics, economics,  finance,  applied mathematics,  math biology,  combinatorics and partial  differential  equations  and  has  ties  to  many  other  fields.   Students interested in these fields are encouraged to enrol.
 > 
 > Prerequisite:  Background in measure theory (e.g.  math 420) is not strictly required, and the requisite notions will be introduced in class.  Some results from measure theory will be stated without proofs.  It is often rewarding to take a measure theory course at the same time although it is not a corequisite either.
+
+Fall 2014, Dr. O'Rourke taught [MATH 6534 Topics in Mathematical Probability](http://math.colorado.edu/~seor3821/teaching/6534.14f/):
+
+> This course is intended as an introduction to modern probability theory. We will cover the foundations of measure theory, independence and conditioning, limit theorems for independent sums, large deviation estimates, Markov chains, and martingales. 
