@@ -1,13 +1,12 @@
 ---
 title: Primary and secondary sources
-date: 2018-12-09
+date: 2018-12-23
 ---
 
 
 This content is intended for research, teaching, or classroom use (in the spirit of Erickson's <http://jeffe.cs.illinois.edu/pubs/copyright.html>). I have enabled [annotations](https://web.hypothes.is/) by [via proxy](https://web.hypothes.is/help/what-is-the-via-proxy/). To just see the file, know that, for example,  is hosted here <http://quamash.net/1962-tolstov-fourier-series.pdf>.
 
 
-- [Hicks - 2017 - Combinatorial Topology A project oriented guide.pdf](https://via.hypothes.is/http://quamash.net/Hicks - 2017 - Combinatorial Topology A project oriented guide.pdf) (8.4M)
 - [2018-tierny-topological-data-analysis.pdf](https://via.hypothes.is/http://quamash.net/2018-tierny-topological-data-analysis.pdf) (9.8M)
 - [2018-tdastats.pdf](https://via.hypothes.is/http://quamash.net/2018-tdastats.pdf) (144K)
 - [2018-tang-quantum-inspired-classical-algorithm.pdf](https://via.hypothes.is/http://quamash.net/2018-tang-quantum-inspired-classical-algorithm.pdf) (764K)
@@ -24,6 +23,8 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [2018-goldfeld_et_al-estimating_information_flow_in_neural_networks.pdf](https://via.hypothes.is/http://quamash.net/2018-goldfeld_et_al-estimating_information_flow_in_neural_networks.pdf) (19M)
 - [2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf](https://via.hypothes.is/http://quamash.net/2018-gallier-fundementals-of-linear-algebra-and-optimization.pdf) (12M)
 - [2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci.pdf](https://via.hypothes.is/http://quamash.net/2018-gallier-algebra-topology-differential-calculus-optimization-theory-for-compsci.pdf) (14M)
+- [2018-durrett-probability-theory-and-examples.pdf](https://via.hypothes.is/http://quamash.net/2018-durrett-probability-theory-and-examples.pdf) (2.1M)
+- [2018-durrett-probability.pdf](https://via.hypothes.is/http://quamash.net/2018-durrett-probability.pdf) (2.1M)
 - [2018-demailly-complex-analytic-and-differential-geometry.pdf](https://via.hypothes.is/http://quamash.net/2018-demailly-complex-analytic-and-differential-geometry.pdf) (3.4M)
 - [2018-boissonnat-chazal-yvinec-geometric-and-topological-inference.pdf](https://via.hypothes.is/http://quamash.net/2018-boissonnat-chazal-yvinec-geometric-and-topological-inference.pdf) (12M)
 - [2018-beaudry-motivic-homotopical-galois-extensions.pdf](https://via.hypothes.is/http://quamash.net/2018-beaudry-motivic-homotopical-galois-extensions.pdf) (1.4M)
@@ -206,6 +207,7 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [2003-Computational-Chemistry.pdf](https://via.hypothes.is/http://quamash.net/2003-Computational-Chemistry.pdf) (29M)
 - [2003-chomsky-hegemony-survival.pdf](https://via.hypothes.is/http://quamash.net/2003-chomsky-hegemony-survival.pdf) (3.0M)
 - [2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu](https://via.hypothes.is/http://quamash.net/2002-Solution-of-Equations-in-Rn-Part-4-Techniques-of-Scientific-Computing-Part-4-Numerical-Methods-for-Fluids-Part-2.djvu) (4.8M)
+- [2002-ash-abstract_algebra.pdf](https://via.hypothes.is/http://quamash.net/2002-ash-abstract_algebra.pdf) (2.8M)
 - [2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu](https://via.hypothes.is/http://quamash.net/2000-Solution-of-Equations-in-Rn-Part-3-Techniques-of-Scientific-Computing-Part-3.djvu) (7.2M)
 - [2000-munkres-topology.pdf](https://via.hypothes.is/http://quamash.net/2000-munkres-topology.pdf) (5.5M)
 - [2000-may-outline-summary-of-basic-point-set-topology.pdf](https://via.hypothes.is/http://quamash.net/2000-may-outline-summary-of-basic-point-set-topology.pdf) (128K)
@@ -247,6 +249,7 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [1976-serafini-codex-seraphinianus.pdf](https://via.hypothes.is/http://quamash.net/1976-serafini-codex-seraphinianus.pdf) (54M)
 - [1976-knuth-coping-with-finiteness.pdf](https://via.hypothes.is/http://quamash.net/1976-knuth-coping-with-finiteness.pdf) (1.7M)
 - [1974-ross-first-course-probability.pdf](https://via.hypothes.is/http://quamash.net/1974-ross-first-course-probability.pdf) (3.1M)
+- [1974-halmos-finite-dimensional_vector_spaces.pdf](https://via.hypothes.is/http://quamash.net/1974-halmos-finite-dimensional_vector_spaces.pdf) (18M)
 - [1972-iser-the-reading-process.pdf](https://via.hypothes.is/http://quamash.net/1972-iser-the-reading-process.pdf) (2.0M)
 - [1971-maclane-categories-for-the-working-mathematician.pdf](https://via.hypothes.is/http://quamash.net/1971-maclane-categories-for-the-working-mathematician.pdf) (2.8M)
 - [1970-feller-probability-theory-applications.pdf](https://via.hypothes.is/http://quamash.net/1970-feller-probability-theory-applications.pdf) (41M)
