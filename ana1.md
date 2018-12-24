@@ -1,10 +1,21 @@
 ---
-title: Analysis for prelims
+title: Analysis 1
 author: Colton Grainger
 date: 2018-08-27
 ---
 
-## Exam syllabus
+## Syllabus
+
+The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/fy19ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
+
+We'll be evaluated on:
+
+- three timed exams
+- biweekly homework
+
+Update: I withdrew from Analysis on 2018-10-05, planning to re-enroll next year. I'll likely use the measure theory for [a probability reading course](prob1) this Spring.
+
+## Prelim Exam Outline
 
 ### Calculus
 
@@ -102,12 +113,6 @@ date: 2018-08-27
 
 ### Week 1: preliminaries
 
-The course is under professor Judith Packer. I created a repo for assignments at <https://github.com/coltongrainger/fy19ana1>. We'll cover Folland [@Fo99] up to chapter 3, with the goal of defining measures sufficient for general spaces while, along the way, treating the foundations of measure theory and Lebesgue integration.
-
-We'll be evaluated on:
-
-- three timed exams
-- biweekly homework
 
 Immediately, we're looking to address
 

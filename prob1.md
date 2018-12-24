@@ -7,7 +7,7 @@ revised:
 
 ## Announcement
 
-From [Dr. Sean O'Rourke](http://www.math.ubc.ca/~perkins/418outline.pdf):
+From [Dr. Sean O'Rourke](http://math.colorado.edu/~seor3821/):
 
 > I will be organizing an introductory probability theory reading course next semester.  We plan to meet Thursdays at 3pm (which is the same time as the probability seminar) when there is no external speaker for the probability seminar.  The goal is to go through parts of Rick Durrett's book "Probability: Theory and Examples."  The book is available free online:
 > <https://services.math.duke.edu/~rtd/PTE/PTEfive.pdf>

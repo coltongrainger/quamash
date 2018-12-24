@@ -5,7 +5,7 @@ date: 2018-12-01
 revised: 2018-12-19
 ---
 
-## Syllabus for MATH 6230
+## MATH 6230 Syllabus
 
 Instructor: [Prof. Jeanne Clelland](http://math.colorado.edu/~jnc/)
 

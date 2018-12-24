@@ -50,4 +50,4 @@ The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
 > 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages...for the purpose of collecting quamash.
 
-The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). I have uploaded `pdf`s in [fair use](https://libguides.bc.edu/copyright/fairuse). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
+The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). I have uploaded documents in [fair use](https://libguides.bc.edu/copyright/fairuse). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
