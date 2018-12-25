@@ -1,6 +1,6 @@
 ---
 title: Primary and secondary sources
-date: 2018-12-23
+date: 2018-12-24
 ---
 
 
@@ -272,5 +272,4 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [1872-nietzsche-the-birth-of-tragedy.pdf](https://via.hypothes.is/http://quamash.net/1872-nietzsche-the-birth-of-tragedy.pdf) (628K)
 - [1678-bunyan-pilgrims-progress.pdf](https://via.hypothes.is/http://quamash.net/1678-bunyan-pilgrims-progress.pdf) (4.7M)
 - [1620-bacon-novum_organon.pdf](https://via.hypothes.is/http://quamash.net/1620-bacon-novum_organon.pdf) (684K)
-- [1400-voynich-manuscript.pdf](https://via.hypothes.is/http://quamash.net/1400-voynich-manuscript.pdf) (54M)
 
