@@ -4,11 +4,11 @@ author: Colton Grainger
 toc: false
 ---
 
-My goals in hosting this wiki are:
+Why should this notebook exist?
 
-- to archive my [handwritten notes](raw)
+- To archive [handwritten notes](raw).
 
-- to (informally!) structure my coursework
+- To (informally!) structure my coursework.
 
     - [MATH 6140 Algebra 2](alg2)
     - [MATH 6230 Differential Geometry 1](diffgeo1)
@@ -20,19 +20,19 @@ My goals in hosting this wiki are:
 
     - [MATH 428 Numerical Analysis](num)
 
-- to organize some references
+- To organize references and external links.
 
     - [primary and secondary sources](lit) 
     - [zotero](https://www.zotero.org/coltongrainger/items), [citeulike](http://www.citeulike.org/user/coltongrainger/) 
     - [pinboard](https://pinboard.in/u:coltongrainger), [hypothes.is](https://web.hypothes.is)
 
-- to accumulate curriculum for my TA-ship
+- To accumulate curriculum for teaching.
 
     - [MATH 1300 Calculus 1](math1300)
 
 ## Contributing
 
-One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request.
+One may fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request. Alternatively, [contact me](mailto:colton.grainger@colorado.edu).
 
 ## See also
 
