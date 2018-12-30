@@ -4,7 +4,7 @@ author: Colton Grainger
 toc: false
 ---
 
-This wiki is the prose complement of course-specific repositories I have on [github](https://github.com/coltongrainger/). My goals here are:
+This wiki is a prose complement to [github](https://github.com/coltongrainger/). My goals here are:
 
 - to archive [lecture notes](raw)
 
