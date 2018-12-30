@@ -1,7 +1,6 @@
 ---
-title: Course notes
+title: Open notebook
 author: Colton Grainger
-toc: false
 ---
 
 Meant as a prose complement to [github](https://github.com/coltongrainger/). 
