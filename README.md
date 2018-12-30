@@ -1,32 +1,32 @@
 ---
-title: Open notebook
+title: Course notes
 author: Colton Grainger
 toc: false
 ---
 
-This wiki is an academic prose complement to [github](https://github.com/coltongrainger/). My goals are:
+My goals in hosting this wiki are:
 
-- to archive [handwritten notes](raw)
+- to archive my [handwritten notes](raw)
 
 - to (informally!) structure my coursework
 
     - [MATH 6140 Algebra 2](alg2)
     - [MATH 6230 Differential Geometry 1](diffgeo1)
     - [Probability reading course](prob1)
+
     - [MATH 6130 Algebra 1](alg1)
     - [MATH 6210 Topology 1](top1)
     - [APPM 8500 StatOptML seminar](https://github.com/coltongrainger/fy19soml)
+
     - [MATH 428 Numerical Analysis](num)
 
-- to organize references
+- to organize some references
 
     - [primary and secondary sources](lit) 
-    - [zotero](https://www.zotero.org/coltongrainger/items)
-    - [citeulike](http://www.citeulike.org/user/coltongrainger/) 
-    - [pinboard](https://pinboard.in/u:coltongrainger)
-    - [hypothes.is](https://web.hypothes.is)
+    - [zotero](https://www.zotero.org/coltongrainger/items), [citeulike](http://www.citeulike.org/user/coltongrainger/) 
+    - [pinboard](https://pinboard.in/u:coltongrainger), [hypothes.is](https://web.hypothes.is)
 
-- to share curriculum in my role as a graduate student instructor
+- to accumulate curriculum for my TA-ship
 
     - [MATH 1300 Calculus 1](math1300)
 
