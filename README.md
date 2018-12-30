@@ -1,13 +1,14 @@
 ---
 title: Open notebook
 author: Colton Grainger
+toc: false
 ---
 
-Meant as a prose complement to [github](https://github.com/coltongrainger/). 
+This wiki is the prose complement of course-specific repositories I have on [github](https://github.com/coltongrainger/). My goals here are:
 
-- [scanned notes](raw)
+- to archive [lecture notes](raw)
 
-- studies
+- to (informally!) structure my coursework
 
     - [MATH 6140 Algebra 2](alg2)
     - [MATH 6230 Differential Geometry 1](diffgeo1)
@@ -17,17 +18,17 @@ Meant as a prose complement to [github](https://github.com/coltongrainger/).
     - [APPM 8500 StatOptML seminar](https://github.com/coltongrainger/fy19soml)
     - [MATH 428 Numerical Analysis](num)
 
-- TA-ing
+- to organize references
 
-    - [MATH 1300 Calculus 1](math1300)
-
-- references
-
-    - [literature](lit) 
+    - [primary and secondary sources](lit) 
     - [zotero](https://www.zotero.org/coltongrainger/items)
     - [citeulike](http://www.citeulike.org/user/coltongrainger/) 
     - [pinboard](https://pinboard.in/u:coltongrainger)
     - [hypothes.is](https://web.hypothes.is)
+
+- to disseminate curriculum in my role as a TA
+
+    - [MATH 1300 Calculus 1](math1300)
 
 ## Contributing
 
