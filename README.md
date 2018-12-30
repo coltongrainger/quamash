@@ -1,5 +1,5 @@
 ---
-title: Course notes
+title: Open notebook
 author: Colton Grainger
 toc: false
 ---
