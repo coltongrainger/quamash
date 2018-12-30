@@ -1,10 +1,10 @@
 ---
 title: Primary and secondary sources
-date: 2018-12-24
+date: 2018-12-30
 ---
 
 
-This content is intended for research, teaching, or classroom use (in the spirit of Erickson's <http://jeffe.cs.illinois.edu/pubs/copyright.html>). I have enabled [annotations](https://web.hypothes.is/) by [via proxy](https://web.hypothes.is/help/what-is-the-via-proxy/). To just see the file, know that, for example,  is hosted here <http://quamash.net/1962-tolstov-fourier-series.pdf>.
+This content is intended for research, teaching, or classroom use (in the spirit of Erickson's <http://jeffe.cs.illinois.edu/pubs/copyright.html>). I have enabled [annotations](https://web.hypothes.is/) by [via proxy](https://web.hypothes.is/help/what-is-the-via-proxy/). To just see the file, know that, for example, 1962-tolstov-fourier-series.pdf is hosted here <http://quamash.net/1962-tolstov-fourier-series.pdf>.
 
 
 - [2018-tierny-topological-data-analysis.pdf](https://via.hypothes.is/http://quamash.net/2018-tierny-topological-data-analysis.pdf) (9.8M)
