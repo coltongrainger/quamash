@@ -1,10 +1,10 @@
 ---
-title: Scanned notes
+title: Handwritten notes
 author: Colton Grainger
-date: 2018-12-24
+date: 2018-12-30
 ---
 
- Unfinished! Handwritten!
+ Rushed! Unfinished! Naïve!
 
 - [2018-12-17.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-17.pdf) (2.7M)
 - [2018-12-16.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-16.pdf) (4.4M)
