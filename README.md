@@ -4,9 +4,9 @@ author: Colton Grainger
 toc: false
 ---
 
-This wiki is a prose complement to [github](https://github.com/coltongrainger/). My goals here are:
+This wiki is an academic prose complement to [github](https://github.com/coltongrainger/). My goals are:
 
-- to archive [lecture notes](raw)
+- to archive [handwritten notes](raw)
 
 - to (informally!) structure my coursework
 
@@ -26,7 +26,7 @@ This wiki is a prose complement to [github](https://github.com/coltongrainger/).
     - [pinboard](https://pinboard.in/u:coltongrainger)
     - [hypothes.is](https://web.hypothes.is)
 
-- to disseminate curriculum in my role as a TA
+- to share curriculum in my role as a graduate student instructor
 
     - [MATH 1300 Calculus 1](math1300)
 
