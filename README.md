@@ -4,7 +4,7 @@ author: Colton Grainger
 toc: false
 ---
 
-Why should this notebook exist?
+Why does this notebook exist?
 
 - To archive [handwritten notes](raw).
 
@@ -20,13 +20,13 @@ Why should this notebook exist?
 
     - [MATH 428 Numerical Analysis](num)
 
-- To organize references and external links.
+- For references and external links.
 
     - [primary and secondary sources](lit) 
     - [zotero](https://www.zotero.org/coltongrainger/items), [citeulike](http://www.citeulike.org/user/coltongrainger/) 
     - [pinboard](https://pinboard.in/u:coltongrainger), [hypothes.is](https://web.hypothes.is)
 
-- To accumulate curriculum for teaching.
+- For teaching.
 
     - [MATH 1300 Calculus 1](math1300)
 
