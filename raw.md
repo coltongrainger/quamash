@@ -1,7 +1,7 @@
 ---
 title: Handwritten notes
 author: Colton Grainger
-date: 2018-12-30
+date: 2019-01-07
 ---
 
  Rushed! Unfinished! Naïve!
