@@ -1,6 +1,6 @@
 ---
 title: Primary and secondary sources
-date: 2018-12-30
+date: 2019-01-07
 ---
 
 
@@ -66,6 +66,7 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [2015-mcdaniel-rubric-for-historical-thinking.pdf](https://via.hypothes.is/http://quamash.net/2015-mcdaniel-rubric-for-historical-thinking.pdf) (84K)
 - [2015-korner-an-unofficial-guide-to-part-III.pdf](https://via.hypothes.is/http://quamash.net/2015-korner-an-unofficial-guide-to-part-III.pdf) (220K)
 - [2015-kolter-linalg-cs229.pdf](https://via.hypothes.is/http://quamash.net/2015-kolter-linalg-cs229.pdf) (208K)
+- [2015-hubbard-hubbard-vector_calculus,_linear_algebra,_and_differential_forms.pdf](https://via.hypothes.is/http://quamash.net/2015-hubbard-hubbard-vector_calculus,_linear_algebra,_and_differential_forms.pdf) (101M)
 - [2015-guo-teaching_statement.pdf](https://via.hypothes.is/http://quamash.net/2015-guo-teaching_statement.pdf) (252K)
 - [2015-bressoud-mesa-rasmussen-insights_and_recommendations_from_the_maa_national_study_of_college_calculus.pdf](https://via.hypothes.is/http://quamash.net/2015-bressoud-mesa-rasmussen-insights_and_recommendations_from_the_maa_national_study_of_college_calculus.pdf) (2.7M)
 - [2015-axler-linear-algebra-done-right.pdf](https://via.hypothes.is/http://quamash.net/2015-axler-linear-algebra-done-right.pdf) (3.1M)
@@ -150,6 +151,7 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [2009-stewart-calculus-concepts-and-contexts.pdf](https://via.hypothes.is/http://quamash.net/2009-stewart-calculus-concepts-and-contexts.pdf) (23M)
 - [2009-starbird-abstr-math-intro.pdf](https://via.hypothes.is/http://quamash.net/2009-starbird-abstr-math-intro.pdf) (1.2M)
 - [2009-reinwald-xmlsql.pdf](https://via.hypothes.is/http://quamash.net/2009-reinwald-xmlsql.pdf) (596K)
+- [2009-lawvere-schanuel-conceptual_mathematics.pdf](https://via.hypothes.is/http://quamash.net/2009-lawvere-schanuel-conceptual_mathematics.pdf) (14M)
 - [2009-erickson-17-homology.pdf](https://via.hypothes.is/http://quamash.net/2009-erickson-17-homology.pdf) (236K)
 - [2009-erickson-16-cell-complexes.pdf](https://via.hypothes.is/http://quamash.net/2009-erickson-16-cell-complexes.pdf) (300K)
 - [2009-erickson-15-cell-complexes.pdf](https://via.hypothes.is/http://quamash.net/2009-erickson-15-cell-complexes.pdf) (200K)
@@ -260,6 +262,7 @@ This content is intended for research, teaching, or classroom use (in the spirit
 - [1962-tolstov-fourier-series.pdf](https://via.hypothes.is/http://quamash.net/1962-tolstov-fourier-series.pdf) (17M)
 - [1960-steenrod-topology-of-fiber-bundles.djvu](https://via.hypothes.is/http://quamash.net/1960-steenrod-topology-of-fiber-bundles.djvu) (11M)
 - [1955-furstenberg-on-the-infinitude-of-primes.pdf](https://via.hypothes.is/http://quamash.net/1955-furstenberg-on-the-infinitude-of-primes.pdf) (192K)
+- [1949-zassenhaus-the-theory-of-groups.djvu](https://via.hypothes.is/http://quamash.net/1949-zassenhaus-the-theory-of-groups.djvu) (3.3M)
 - [1942-faulkner-go-down-moses.pdf](https://via.hypothes.is/http://quamash.net/1942-faulkner-go-down-moses.pdf) (216K)
 - [1941-dushnik-partially-ordered-sets.pdf](https://via.hypothes.is/http://quamash.net/1941-dushnik-partially-ordered-sets.pdf) (1.2M)
 - [1940-weil-analogy.pdf](https://via.hypothes.is/http://quamash.net/1940-weil-analogy.pdf) (92K)
