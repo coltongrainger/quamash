@@ -59,7 +59,6 @@ revised: 2018-12-01
 - irreducibility criteria
 - localization of rings
 - field of fractions
-- integral ring extensions
 
 ## Fall semester notes
 
