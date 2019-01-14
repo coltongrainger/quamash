@@ -12,6 +12,7 @@ Why does this notebook exist?
 
     - [MATH 6140 Algebra 2](alg2)
     - [MATH 6230 Differential Geometry 1](diffgeo1)
+    - [MATH 6220 Topology 2](top2)
     - [Probability reading course](prob1)
 
     - [MATH 6130 Algebra 1](alg1)

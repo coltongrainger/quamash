@@ -1,5 +1,4 @@
 ---
-title: Probability Reading Course
 author: Colton Grainger
 date: 2018-12-23
 revised:
