@@ -15,7 +15,7 @@ Here's my repo for assignments: <http://github.com/coltongrainger/fy19alg2>.
 
 > Continuation of [MATH 6210](top1). Topics covered will be homology, cohomology and some applications. 
 
-### Prelim exam syllabus
+### Prelim exam topics
 
 - singular homology
 - the Eilenberg-Steenrod axioms

@@ -4,7 +4,7 @@ author: Colton Grainger
 date: 2018-08-27
 ---
 
-## Prelim Exam syllabus
+## Prelim Exam topics
 
 ### Point-set topology
 
@@ -44,16 +44,6 @@ date: 2018-08-27
     - lifting lemma
     - covering homotopy
     - group actions
-- homology
-    - singular homology
-    - the Eilenberg-Steenrod axioms
-    - homology group of spheres
-    - the degree of a map between spheres
-    - homology calculations via CW complexes
-    - proof of homotopy invariance
-    - proof of excision
-    - universal coefficient 
-    - Kunneth Theorem
 
 ## Fall semester notes
 

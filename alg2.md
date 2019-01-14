@@ -28,7 +28,7 @@ The [undergraduate handbook](https://warwick.ac.uk/fac/sci/maths/undergrad/ughan
 
 > MA106 Linear Algebra, familiarity with elementary group theory and the ring theory part of MA249 Algebra II: Groups and Rings is desirable.
 
-### Prelim Exam Outline
+### Prelim exam topics
 
 Here's an outline for 3/6 questions on the CU algebra prelim exam. See also [the first half](alg1#prelim-exam-syllabus).
 
