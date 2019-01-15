@@ -1,11 +1,14 @@
 ---
 title: Handwritten notes
 author: Colton Grainger
-date: 2019-01-07
+date: 2019-01-14
 ---
 
  Rushed! Unfinished! Naïve!
 
+- [2019-01-14.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2019-01-14.pdf) (2.0M)
+- [2019-01-06.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2019-01-06.pdf) (1.5M)
+- [2019-01-04.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2019-01-04.pdf) (948K)
 - [2018-12-17.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-17.pdf) (2.7M)
 - [2018-12-16.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-16.pdf) (4.4M)
 - [2018-12-15.pdf](https://docs.google.com/gview?embedded=true&url=http://quamash.net/2018-12-15.pdf) (880K)
