@@ -11,7 +11,7 @@ Instructor: [Dr. Agnès Beaudry](https://sites.google.com/view/agnesbeaudry)
 
 Website: <https://sites.google.com/view/agnesbeaudry/teaching/spring-2019/math-6220>
 
-Here's my repo for assignments: <http://github.com/coltongrainger/fy19alg2>. 
+Git: <http://github.com/coltongrainger/fy19alg2>. 
 
 > Continuation of [MATH 6210](top1). Topics covered will be homology, cohomology and some applications. 
 

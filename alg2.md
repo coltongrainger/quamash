@@ -11,7 +11,7 @@ Instructor: [Dr. Richard Green](https://math.colorado.edu/~rmg/)
 
 Website: <https://math.colorado.edu/~rmg/6140/>
 
-Here's the git repo for assignments and handouts: <http://github.com/coltongrainger/fy19alg2>. 
+Git repo: <http://github.com/coltongrainger/fy19alg2>. 
 
 Here're the changes I hope to make in contrast with my Algebra 1 notes.
 

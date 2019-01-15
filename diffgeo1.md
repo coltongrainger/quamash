@@ -9,7 +9,7 @@ revised: 2018-12-19
 
 Instructor: [Prof. Jeanne Clelland](http://math.colorado.edu/~jnc/)
 
-Here's the git repo for assignments and handouts: <http://github.com/coltongrainger/fy19diffgeo1>. 
+Git repo: <http://github.com/coltongrainger/fy19diffgeo1>. 
 
 Here're the changes I hope to make in contrast with my [topology 1](top1) notes.
 

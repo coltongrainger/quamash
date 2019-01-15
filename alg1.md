@@ -122,7 +122,7 @@ Ideas for making new groups out of old
 
 One should verify that the inverse of an automorphism is an automorphism.
 
-EX: What's a homomorphism from $GL_n(\RR) \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A) + \det(B)$.
+EX: What's a homomorphism from $GL_n(\RR) \to \RR^\times = (\RR \setminus \{0\})$? ... the determinant, since it's well defined and $\det(AB) = \det(A)\det(B)$.
 
 > Show that there exists a bijection from $GL_n(\RR)$ to $\RR^\times$. Show that such a bijection is certainly *not* a isomorphism.
 
@@ -138,7 +138,7 @@ Course with Nat Thiem. Still haven't hammered out the bibliography. Maybe:
 - R. Vakil (later)
 - E. Riehl (yes)
 
-I created a repo for assignments and accoutrements at <http://github.com/coltongrainger/fy19alg1>.
+Git repo: <http://github.com/coltongrainger/fy19alg1>.
 
 #### What to expect?
 
