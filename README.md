@@ -4,16 +4,13 @@ author: Colton Grainger
 toc: false
 ---
 
-Why does this notebook exist?
+- [lecture notes](raw)
 
-- To archive [handwritten notes](raw).
-
-- To (informally!) structure my coursework.
+- course notes
 
     - [MATH 6140 Algebra 2](alg2)
     - [MATH 6230 Differential Geometry 1](diffgeo1)
     - [MATH 6220 Topology 2](top2)
-    - [Probability reading course](prob1)
 
     - [MATH 6130 Algebra 1](alg1)
     - [MATH 6210 Topology 1](top1)
@@ -21,13 +18,12 @@ Why does this notebook exist?
 
     - [MATH 428 Numerical Analysis](num)
 
-- For references and external links.
+- references
 
-    - [primary and secondary sources](lit) 
-    - [zotero](https://www.zotero.org/coltongrainger/items), [citeulike](http://www.citeulike.org/user/coltongrainger/) 
-    - [pinboard](https://pinboard.in/u:coltongrainger), [hypothes.is](https://web.hypothes.is)
+    - [zotero](https://www.zotero.org/coltongrainger/items)
+    - [pinboard](https://pinboard.in/u:coltongrainger)
 
-- For teaching.
+- teaching
 
     - [MATH 1300 Calculus 1](math1300)
 
