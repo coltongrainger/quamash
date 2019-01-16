@@ -1580,7 +1580,7 @@ I don't terribly enjoy printing handouts for extra reading, but I found myself s
     - [Answers to questions asked by students in Math H113](https://math.berkeley.edu/~gbergman/ug.hndts/09Sp_H113_q+a.txt), taught from Dummit and Foote 
     - [Exercises supplementing those in Dummit and Foote's "Abstract Algebra", 3rd Edition.](https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps)
     - [Sketch of proof of first sylow theorem](https://math.berkeley.edu/~gbergman/ug.hndts/#sylow)
-    - [Proof that the group A_n is simple for all n ≥ 5](https://math.berkeley.edu/~gbergman/ug.hndts/#A_n_simple)
+    - [Proof that the group A_n is simple for all n greater than 4](https://math.berkeley.edu/~gbergman/ug.hndts/#A_n_simple)
 
 - [Schedules and form of examinations for the mathematical tripos](https://www.maths.cam.ac.uk/undergrad/course/schedules.pdf)
 
