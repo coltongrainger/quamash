@@ -77,7 +77,7 @@ I have tried (and failed) to talk myself out of keeping notes:
 \begin{CD}
 A     @>\text{ for example }>>  B\\
 @VVbV        @VVcV\\
-C     @> \text{ \phantom{for example}}>>  D
+C     @> \text{ with AMScd }>>  D
 \end{CD}
 
 
@@ -86,7 +86,11 @@ However, in juxtaposed posts,
 - <http://www.aaronsw.com/weblog/greatlectures>
 - <http://www.aaronsw.com/weblog/awfullectures>
 
-Aaron Schwartz via Tufte reminds us "to always ask about the information density of a method of communication". Won't these notes be sparse on content? Well, sure, but some communication is effective "not because of the medium’s informational density, [but] it’s because of its emotional density." So Schwartz' last bit of advice wins out, and I'll bother anyways to update these notes with trivia and slogans that represent how I think and feel about the curriculum.
+Aaron Schwartz via Tufte reminds us "to always ask about the information density of a method of communication".
+
+Won't these notes be sparse on content? 
+
+Well, sure, but some communication owes its efficacy to "emotional density". So Schwartz' second essay wins out, and I'll bother anyways to record how I think and feel about the curriculum.
 
 ## Week 1
 
