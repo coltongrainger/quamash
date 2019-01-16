@@ -5,6 +5,8 @@ date: 2018-12-01
 revised:
 ---
 
+\setcounter{section}{-1}
+
 ## MATH 6140 Syllabus 
 
 Instructor: [Dr. Richard Green](https://math.colorado.edu/~rmg/)
@@ -17,6 +19,26 @@ Here're the changes I hope to make in contrast with my Algebra 1 notes.
 
 - More: discussion, reflection, narration, and reference. 
 - Less: mathjax bloat, rote memorization, agony.
+
+### Grading
+
+The total grade is out of 500.
+
+- 14 Assignments. 100 points. Best 10 of 14 count. Should be conceptual, long, and belabouring as practice for the midterms. Only 3 problems graded.
+- 2 Midterms. 100 points each. Weeks 5 and 10. Should be preparation for the final.
+- Final. 200 points. 2019-05-07 4:30pm. Should be preparation for the prelim. 
+
+### Textbooks
+
+- Dummit and Foote chapters 10 -- 14 is canonical. 
+    - We're encouraged to stick to it, with the goal of stating the fundamental theorem of Galois theory.
+    - I asked about supplemental reading---it's discouraged as Dummit and Foote is just *so big*.
+
+- Topics in Algebra, Herstein
+- Elements of Modern Algebra, Hu
+- Finite Dimensional Vector Spaces, Halmos
+- Algebra, Hungerford
+- Undergraduate/Graduate Algebra, Lang
 
 ### Prerequisites
 
@@ -95,3 +117,24 @@ Here's an outline for 3/6 questions on the CU algebra prelim exam. See also [the
         - Artinian and Noetherian rings and modules
         - Hilbert basis theorem
     - Nullstellensatz
+
+## Week 1
+
+### Introduction
+
+To take intuition from Herstein.
+
+> Solutions to physical and geometric problems are often parameterized as vector spaces.
+
+IDEA! What homs exist from an $\FF$-vector space $V$ to itself? ... Each nonzero $\alpha \in \FF$ defines $v \mapsto \alpha v$, an injective linear transformation $V \to V$.
+
+Canonical examples.
+
+- How are [groups with operators](https://en.wikipedia.org/wiki/Group_with_operators) related to vector spaces?
+
+    > A group with operators is also a mapping $$\Omega\rightarrow\operatorname{End}_{\mathbf{Grp}}(G),$$ where $\operatorname{End}_{\mathbf{Grp}}(G)$ is the set of group endomorphisms of $G$. 
+
+- Let $F$ be a field and $V = F[x]$; ignoring polynomial multiplication, $V$ is a vector space over $F$.
+- Let $\mathcal{P}_n \subset F[x]$ be the set of polynomials of degree less than $n$. Then $\mathcal{P}_n$ is a vector space over $F$, in fact isomorphic to $F^n$.
+
+
