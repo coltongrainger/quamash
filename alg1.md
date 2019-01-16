@@ -1814,7 +1814,7 @@ EX: The upper triangular matrices $UT_n(\FF)$ are nilpotent with nilpotent class
 
 #### Lower central series
 
-DEF: The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1 \triangleright \ldots $ where ... $G_j = [G, G_{j-1}]$ and $G_0 = G$.
+DEF: The lower central series of $G$ is the sequence $G = G_0 \triangleright G_1 \triangleright \ldots$ where ... $G_j = [G, G_{j-1}]$ and $G_0 = G$.
 
 - The lower central series might be thought "more likely to stall out" when compared to the derived series.
 
