@@ -134,15 +134,7 @@ Similarly to affine hulls, the convex hull of the empty set has dimension $-1$ a
 
 Note that convex and affine hulls are distinct, but both are described analogously by restrictive and constructive definitions. <https://en.wikipedia.org/wiki/Convex_hull>
 
-hull | restrictive def | constructive def
-:---: | :---: | :---:
-$\text{aff}(S)$ | An affine hull of a set is the smallest affine subspace containing the set. | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}$$
-$\text{conv}(S)$ | A convex hull is the smallest convex set, etc | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}$$
-
-restrictive def | constructive def
-:---: | :---:
-$\text{aff}(S)$ | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}$$
-$\text{conv}(S)$ | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}$$
+An affine hull $\text{aff}(S)$ of a set is the smallest affine subspace containing the set. Constructively, $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}.$$ A convex hull $\text{conv}(S)$ is the smallest convex set, etc, whereas constructively, $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}.$$
 
 EX! To construct the standard $p$-simplex, consider set of linear combinations ... $$\left\{\sum_{i =1}^p  \lambda_i e_i : \lambda_i \in [0,1] \text{ such that } \sum \lambda_i = 1\right\}.$$
 
