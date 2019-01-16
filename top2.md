@@ -89,9 +89,9 @@ Won't these notes be sparse on content?
 
 Well, sure, but some communication owes its efficacy to "emotional density". So Schwartz' second essay wins out, and I'll bother anyways to record how I think and feel about the curriculum.
 
-## Week 1
+### Week 1
 
-### Pre-requisites 
+#### Pre-requisites 
 
 It's good to have seen
 
@@ -101,7 +101,7 @@ It's good to have seen
 - group actions on covering spaces
 - informally, singular homology.
 
-### Introduction
+#### Introduction
 
 Homology and cohomology theory, as with homotopy theory, associate homeomorphism-invariant algebraic structures to topological spaces. We have functors:
 
@@ -126,7 +126,7 @@ Homology and cohomology theory, as with homotopy theory, associate homeomorphism
 
 We won't look at maps of "higher tetrahedra" modulo homotopy (they're simply connected). Rather we'll define a *homologous* relation between $p$-chains.
 
-### Simplices
+#### Simplices
 
 DEF! Let $\{e_n\}_0^\infty$ be the standard basis for $\RR^\infty$. The standard $p$-simplex is the topological subspace ... given by the convex hull of the first $p+1$ basis vectors.
 
