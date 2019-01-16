@@ -136,8 +136,8 @@ Note that convex and affine hulls are distinct, but both are described analogous
 
 hull | restrictive def | constructive def
 --- | --- | ---
-$\text{aff}(S)$ | An affine hull of a set is the smallest affine subspace containing the set. | $\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}$
-$\text{conv}(S)$ | A convex hull ... smallest convex set ... | $\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}$
+$\text{aff}(S)$ | An affine hull of a set is the smallest affine subspace containing the set. | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}$$
+$\text{conv}(S)$ | A convex hull is the smallest convex set, etc | $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}$$
 
 
 EX! To construct the standard $p$-simplex, consider set of linear combinations ... $$\left\{\sum_{i =1}^p  \lambda_i e_i : \lambda_i \in [0,1] \text{ such that } \sum \lambda_i = 1\right\}.$$
