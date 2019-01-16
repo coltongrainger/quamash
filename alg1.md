@@ -1491,7 +1491,7 @@ How to find "white bread" $p$-groups?
 
 LEMMA! TODO, source: <https://math.stackexchange.com/questions/891564/>
 
-> Since $N \trianglelefteq G $, $NP$ is  subgroup of $G$ and $[NP:P]=[N:N \cap P]$ (use that $NP/N \cong P/(N \cap P))$. Since $P \in Syl_p(G)$ and $[NP:P]$ divides $[G:P]$, the index $[N:N \cap P]$ is not divisible by $p$. This implies that the $p$-subgroup $N \cap P \in Syl_p(N)$.
+> Since $N \trianglelefteq G$, $NP$ is  subgroup of $G$ and $[NP:P]=[N:N \cap P]$ (use that $NP/N \cong P/(N \cap P))$. Since $P \in Syl_p(G)$ and $[NP:P]$ divides $[G:P]$, the index $[N:N \cap P]$ is not divisible by $p$. This implies that the $p$-subgroup $N \cap P \in Syl_p(N)$.
 >
 > Conversely, if $Q \in Syl_p(N)$, then the $p$-subgroup $Q$ is contained in some $P \in Syl_p(G)$ (this is a well-known lemma). Hence $Q \subseteq N \cap P$. But we just showed that $N \cap P \in Syl_p(N)$, whence $Q=N \cap P$. In other words, all Sylow $p$-subgroups of $N$ arise by intersecting those of $G$ with $N$.
 
