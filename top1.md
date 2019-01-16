@@ -47,13 +47,13 @@ date: 2018-08-27
 
 ## Fall semester notes
 
-\renewcommand{\QQ}{\mathbf{Q}}
-\renewcommand{\NN}{\mathbf{N}}
-\renewcommand{\ZZ}{\mathbf{Z}}
-\renewcommand{\RR}{\mathbf{R}}
-\renewcommand{\sB}{\mathscr{B}}
-\renewcommand{\sC}{\mathscr{C}}
-\renewcommand{\sT}{\mathscr{T}}
+\providecommand{\QQ}{\mathbf{Q}}
+\providecommand{\NN}{\mathbf{N}}
+\providecommand{\ZZ}{\mathbf{Z}}
+\providecommand{\RR}{\mathbf{R}}
+\providecommand{\sB}{\mathscr{B}}
+\providecommand{\sC}{\mathscr{C}}
+\providecommand{\sT}{\mathscr{T}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
 ### Week 1: Axioms and motivation
@@ -230,7 +230,7 @@ EX: To check that $f \colon X \to Y$ is continuous, it's enough to show that, fo
 
 > For suppose that this has been proven. Then for any open set $U$ in $Y$, we write $U = \cup B_i$ for basis elements $B_i$ in $\sB$. Thence $f^{-1}(U) = f^{-1}\left(\cup B_i\right) = \cup f^{-1}(B_i)$. [@Su75, chapter 3.2]
 
-\renewcommand{\sS}{\mathsf{S}}
+\providecommand{\sS}{\mathsf{S}}
 
 DEF: A subbasis for a topology $\sT$ is a subcollection $\sS \in \sT$ such that any set in $\sT$ can be written ... as a union of finite intersections of sets from $\sS$.
 
@@ -258,8 +258,8 @@ DEF: A function $f \colon X \to Y$ between topological spaces $X$ and $Y$, is st
 
 DEF: A function $f\colon X \to Y$ is continuous at a point $a \in X$ if ... given any neighborhood $U$ of $f(a)$ there exists a neighborhood $V$ of $a$ such that $f(V) \subset U$.
 
-\renewcommand{\Int}[1]{\left(#1\right)^\circ}
-\renewcommand{\Cl}[1]{\overline{#1}}
+\providecommand{\Int}[1]{\left(#1\right)^\circ}
+\providecommand{\Cl}[1]{\overline{#1}}
 
 With interiors, closures, and a local definition of continuity, we can cycle through the following characterizations of continuity. 
 
