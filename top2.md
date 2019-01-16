@@ -61,13 +61,12 @@ final exam | 20%
 
 - I have no comparative advantage to narrate the development of homology/cohomology.
     - For example, Dr. Beaudry is live-TeXing her lecture notes, and [extensive references](https://math.stackexchange.com/a/1560607/469856) for algebraic topology notes are already listed on stackexchange. 
-- When considering Philip Guo's [heuristic](http://pgbovine.net/writings.htm) when deciding what to write 
 
-  > Will at least 100 people care about this topic three years from now?
+- When considering Philip Guo's [heuristic](http://pgbovine.net/writings.htm) when deciding what to write (*Will at least 100 people care about this topic three years from now?*) I suspect the answer is yes, in general. 
+  - It is unlikely, however, that at least 100 people will care about my hot-take on the topic.
 
-  I suspect the answer is yes, in general---It is unlikely, however, that at least 100 people will care about my hot-take on the topic.
 - My preferred markup language is pandoc markdown, rendered here with MathJax, which has [limited support](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) for [commutative diagrams](http://www.jmilne.org/not/Mamscd.pdf). 
-  - Just to render diagonal arrows, I've had to port images from <http://presheaf.com/>.
+  - Just to render diagonal arrows, I'll have to port images from <http://presheaf.com/>.
 
 `amscd`
 
@@ -80,6 +79,15 @@ C     @>d>>  D
 <http://presheaf.com/>
 
 <a href="http://presheaf.com/?d=d2c2h1p4y36n27141x6g1b5r5i16n3j"><img src="http://presheaf.com/cache/d2c2h1p4y36n27141x6g1b5r5i16n3j.png" title="click to go to presheaf.com for editing"/></a>
+
+However, in juxtaposed posts,
+
+- <http://www.aaronsw.com/weblog/greatlectures>
+- <http://www.aaronsw.com/weblog/awfullectures>
+
+Aaron Schwartz via Tufte reminds us "to always ask about the information density of a method of communication". Do these notes convey any information for utilitarian good? Again, likely not. 
+
+Yet, some communication is effective  "not because of the medium’s informational density, [but] it’s because of its emotional density." So Schwartz' last bit of advice wins out: these notes are intended to represent how I think and feel about the curriculum.
 
 ## Week 1
 
