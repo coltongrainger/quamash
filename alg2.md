@@ -17,8 +17,8 @@ Git repo: <http://github.com/coltongrainger/fy19alg2>.
 
 Here're the changes I hope to make in contrast with my Algebra 1 notes.
 
-- More: discussion, reflection, narration, and reference. 
-- Less: mathjax bloat, rote memorization, agony.
+- More discussion, reflection, narration, and reference. 
+- Less mathjax bloat, rote memorization, agony.
 
 ### Grading
 
@@ -128,13 +128,20 @@ To take intuition from Herstein.
 
 IDEA! What homs exist from an $\FF$-vector space $V$ to itself? ... Each nonzero $\alpha \in \FF$ defines $v \mapsto \alpha v$, an injective linear transformation $V \to V$.
 
-Canonical examples.
-
 - How are [groups with operators](https://en.wikipedia.org/wiki/Group_with_operators) related to vector spaces?
 
     > A group with operators is also a mapping $$\Omega\rightarrow\operatorname{End}_{\mathbf{Grp}}(G),$$ where $\operatorname{End}_{\mathbf{Grp}}(G)$ is the set of group endomorphisms of $G$. 
 
 - Let $F$ be a field and $V = F[x]$; ignoring polynomial multiplication, $V$ is a vector space over $F$.
 - Let $\mathcal{P}_n \subset F[x]$ be the set of polynomials of degree less than $n$. Then $\mathcal{P}_n$ is a vector space over $F$, in fact isomorphic to $F^n$.
+
+SLOGAN! Modules are generalizations of both ... abelian groups and vector spaces.
+
+In a category-theoretic sense, modules add extra structure to abelian groups just as:
+
+- topological spaces have the structure their of open sets, and morphisms given by continuous maps.
+- groups have the structure of their binary operation, with morphisms given by group homs
+- vector spaces have the structure of their underlying abelian groups along with a scalar multiplication,  with morphisms given by linear transformations
+
 
 
