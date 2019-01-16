@@ -1421,7 +1421,7 @@ How many cubes can we have under different coloring schemes? Counting orbits? Co
     - which is $\sum_{a \in A} \abs{\Stab{G}{a}}$
     - which is $\sum_{a \in A} \abs{G}/\abs{G(a)}$
     - which is $\abs{G} \sum_{a \in A} \frac{1}{\abs{G(a)}}$
-    - which is $\abs{G} \cdot \abs{\text{# of orbits}}$
+    - which is $\abs{G} \cdot \abs{\text{card(orbits)}}$
 - Note one only needs to sum over orbits (we'll specify later to conjugacy classes).
 
 #### Review
