@@ -68,8 +68,8 @@ I have tried (and failed) to talk myself out of keeping notes:
 
     > Will at least 100 people care about this topic three years from now?
 
-  - I suspect the answer is yes, in general.
-  - It's unlikely, however, that at least 100 people will care about my perspective.
+    - I suspect the answer is yes, in general.
+    - It's unlikely, however, that at least 100 people will care about my perspective.
 
 - My preferred markup language is pandoc markdown, rendered here with MathJax, which has [limited support](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) for [commutative diagrams](http://www.jmilne.org/not/Mamscd.pdf). 
   - Just to render diagonal arrows, I'll have to port images from <http://presheaf.com/>.
