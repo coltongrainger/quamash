@@ -47,13 +47,13 @@ date: 2018-08-27
 
 ## Fall semester notes
 
-\newcommand{\QQ}{\mathbf{Q}}
-\newcommand{\NN}{\mathbf{N}}
-\newcommand{\ZZ}{\mathbf{Z}}
-\newcommand{\RR}{\mathbf{R}}
-\newcommand{\sB}{\mathscr{B}}
-\newcommand{\sC}{\mathscr{C}}
-\newcommand{\sT}{\mathscr{T}}
+\renewcommand{\QQ}{\mathbf{Q}}
+\renewcommand{\NN}{\mathbf{N}}
+\renewcommand{\ZZ}{\mathbf{Z}}
+\renewcommand{\RR}{\mathbf{R}}
+\renewcommand{\sB}{\mathscr{B}}
+\renewcommand{\sC}{\mathscr{C}}
+\renewcommand{\sT}{\mathscr{T}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 
 ### Week 1: Axioms and motivation
@@ -125,7 +125,7 @@ To laundry list some exemplar topological structures
     - the real line with open sets having countable complements
 - the poset $\{a,b,c,d\}$ with open sets $\emptyset, X, \{a\}, \{b\}, \{a,c\},\{a,b,c\},\{a,b\}$
 - the connected pair of points
-- the Sierpiŉski topology, $\{\emptyset, \{0\},\{0,1\}\}$ on $X = \{0,1\}$
+- the Sierpinski topology, $\{\emptyset, \{0\},\{0,1\}\}$ on $X = \{0,1\}$
 - a particular point topology $Y= X \cup \{a\}$, whose definition requires some finite topological space $(X, \Omega)$, with the topological structure $$\{\{a\} \cup U: U \in \Omega\}\cup \{\emptyset\}.$$
 - the arithmetic progressions of positive integers form a base for some topology on $\NN$ (and $\ZZ$)
     - whence a slick proof of the infinitude of prime numbers
@@ -258,8 +258,8 @@ DEF: A function $f \colon X \to Y$ between topological spaces $X$ and $Y$, is st
 
 DEF: A function $f\colon X \to Y$ is continuous at a point $a \in X$ if ... given any neighborhood $U$ of $f(a)$ there exists a neighborhood $V$ of $a$ such that $f(V) \subset U$.
 
-\newcommand{\Int}[1]{\left(#1\right)^\circ}
-\newcommand{\Cl}[1]{\overline{#1}}
+\renewcommand{\Int}[1]{\left(#1\right)^\circ}
+\renewcommand{\Cl}[1]{\overline{#1}}
 
 With interiors, closures, and a local definition of continuity, we can cycle through the following characterizations of continuity. 
 
