@@ -2,7 +2,6 @@
 title: Modern Algebra 2
 author: Colton Grainger
 date: 2018-12-01
-revised:
 ---
 
 \setcounter{section}{-1}
@@ -31,8 +30,7 @@ The total grade is out of 500.
 ### Textbooks
 
 - Dummit and Foote chapters 10 -- 14 is canonical. 
-    - We're encouraged to stick to it, with the goal of stating the fundamental theorem of Galois theory.
-    - I asked about supplemental reading---it's discouraged as Dummit and Foote is just *so big*.
+    - We're encouraged to stick to it, with the goal of stating the fundamental theorem of Galois theory. I asked about supplemental reading, yet was discouraged apparently because Dummit and Foote is just *so big*. Regardless.
 
 - Topics in Algebra, Herstein
 - Elements of Modern Algebra, Hu
@@ -52,7 +50,15 @@ The [undergraduate handbook](https://warwick.ac.uk/fac/sci/maths/undergrad/ughan
 
 ### Prelim exam topics
 
-Here's an outline for 3/6 questions on the CU algebra prelim exam. See also [the first half](alg1#prelim-exam-syllabus).
+Here's an outline for questions 4--6 on the CU algebra prelim exam. See also [the first half](alg1).
+
+We should expect, according to Dr. Green, 
+
+prelim problem | topic | DF04 chapter
+--- | --- | ---
+4 | canonical forms | 12
+5 | field theory | 13
+6 | Galois theory | 14
 
 - Modules and linear algebra
 
@@ -66,11 +72,11 @@ Here's an outline for 3/6 questions on the CU algebra prelim exam. See also [the
         - quotient modules
     - homomorphism theorems
     - structure of finitely generated modules
-    - language of categories and functors
+    - ~~language of categories and functors~~
     - minimal polynomial of a transformation
     - Cayley-Hamilton theorem over a commutative ring
     - direct sums and products
-    - free, projective, injective modules
+    - ~~free, projective, injective modules~~
     - duality
     - multilinear forms
     - determinants
@@ -80,7 +86,7 @@ Here's an outline for 3/6 questions on the CU algebra prelim exam. See also [the
         - primary rational
     - invariant factors
     - elementary divisors
-    - localization of modules
+    - ~~localization of modules~~
 
 - Field theory
 
@@ -137,11 +143,15 @@ IDEA! What homs exist from an $\FF$-vector space $V$ to itself? ... Each nonzero
 
 SLOGAN! Modules are generalizations of both ... abelian groups and vector spaces.
 
-In a category-theoretic sense, modules add extra structure to abelian groups just as:
+Modules impose additional structure on abelian groups. Impressionistically:
 
-- topological spaces have the structure their of open sets, and morphisms given by continuous maps.
-- groups have the structure of their binary operation, with morphisms given by group homs
-- vector spaces have the structure of their underlying abelian groups along with a scalar multiplication,  with morphisms given by linear transformations
+object | structure | morphisms
+--- | --- | ---
+topological spaces | their open sets | continuous maps
+groups  | their binary operations | group homomorphisms
+abelian groups  | commutative binary operations | group homomorphisms
+vector spaces | fields acting on abelian groups | linear transformations
+modules | rings acting on abelian groups | $R$-linear transformations
 
-
+TODO: how far is it possible to demonstrate that $R[x]$-modules for a commutative ring $R$ have the same properties as $F[x]$-modules? (See <https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps> for an alternative development of the ring of fractions, which seems to build machinery to work with $R$-linear combinations, dropping the condition that $F$ is a field.)
 

@@ -5,6 +5,9 @@ date: 2019-01-13
 nonumbering: true
 ---
 
+\providecommand{\RR}{\mathbf{R}}
+\providecommand{\ZZ}{\mathbf{Z}}
+
 \setcounter{section}{-1}
 
 ## MATH 6220 Syllabus
@@ -110,7 +113,7 @@ Homology and cohomology theory, as with homotopy theory, associate homeomorphism
     - easy enough to compute on manifolds
     - hard on fractals, e.g., Sierpiński and Apollonian gaskets
         - throughout the Fall, using his K-homology expertise, Alex was coloring our chalkboard with different recursions trying to set up a dynamical system on the Sierpiński gasket
-        - cf <https://arxiv.org/abs/1002.3081>
+        - see <https://arxiv.org/abs/1002.3081>
 
 - $\pi_1 \colon \mathsf{Top}_* \to \mathsf{Grp}$
     - where $\pi_1(X, x)$ is the group of loops $\mathsf{Map}_*(S^1, X) / \cong_{\text{homotopy}}$ under concatenation, modulo base-point respecting homotopy.

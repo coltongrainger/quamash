@@ -207,7 +207,8 @@ Notes from [@Ja84, chapter 1].
 
 DEF: To define a category, we need  a class of objects, call it $\sC$ (containing capital letters), with two functions satisfying ... (CL1) One function assigns to each pair $(X,Y)$ of objects of $\sC$ a set $\hom(X,Y)$, an element of which is a morphism from $X$ to $Y$, written $X\xrightarrow{f} Y$; (CL2) the other function assigns to each triple $(X,Y,Z)$ of objects of $\sC$ an operation $\hom(Y,Z) \times \hom(X,Y) \to \hom(X,Z)$ called composition.
 
-\providecommand{\id}{\mathrm{id}}
+\providecommand{\NN}{\mathbf{N}}
+\providecommand{\id}{\text{id}}
 
 DEF: To suppose we have a class $\sC$ with a morphism and composition assigning functions. The class $\sC$ is a category if the following conditions hold. ... (CL1) if $X\xrightarrow{f}Y\xrightarrow{g}Z\xrightarrow{h}W$ are morphisms of $\sC$, then composition of morphisms is associative $(h \circ g) \circ f = h \circ (g \circ f)$; (CT2) for each object $X$ of $\sC$ there's a morphism $\id_{X}\colon X \to X$ such that $\id_X \circ f = f$ and $g\circ \id_X = g$ for each morphism $f$ and $g$ on the appropriate domains.
 
@@ -278,7 +279,7 @@ Compare equivalence relations to partial orderings on a set, which are reflexive
 
 Again from [@DM41]:
 
-> A system is called a partial order if the following conditions are satisfied. (1) If $x < y$, then $y\nless x$; and (2) if $x < y$ and $y < z$, then $x < z$. 
+> A system is called a partial order if the following conditions are satisfied. (1) If $x < y$, then $y \nless x$; and (2) if $x < y$ and $y < z$, then $x < z$. 
 
 Bringing things up to speed, we have Rosoff's [@Ro16] definition:
 
@@ -294,7 +295,6 @@ We can argue that for any partition $\pi$ there's an (natural) equivalence class
 
 #### Modular arithmetic
 
-\providecommand{\NN}{\mathbf{N}}
 
 We work from two intuitive examples: the additive group $\ZZ/n\ZZ$ of integers modulo $n \in \NN$ and the multiplicative group of units in $\ZZ/n\ZZ$. We need to define *residue classes* of integers as the elements in each group.
 
@@ -459,8 +459,6 @@ DEF: An action $G\times A \to A$ is faithful if ... $g\cdot a = a$ for all $a \i
 
 (Such an action occurs when the associated homomorphism $\phi$ from $G$ to $S_A$ is injective (since then $\ker(\phi) = \{\mathrm{id}\}$).)
 
-\providecommand{\id}{\mathrm{id}}
-
 THM: If $G$ acts faithfully on $A$ then $G \cong H \leq S_A$. (Describe the injection.) ... Let $\phi \colon G \to S_A$ be the corresponding homomorphism. If $\phi(g) = \phi(h)$ then $\id_A = \phi(g)\phi(h)^{-1} = \phi(gh^{-1})$. Since $G$ is faithful, $gh^{-1} =1$, hence $g=h$, hence $\phi$ is injective, and thus an isomorphism.
 
 We have Cayley's theorem, philosophically pleasing, yet useless.
@@ -490,7 +488,7 @@ ANALOGY: The permutation representation of a group action on a set is like ... t
 
 PROP: Let $G$, a group, act on a nonempty set $A$. The relation on $A$ defined by $a \sim b$ iff [...] for some $g \in G$ is an equivalence relation. ... $a = g(b)$
 
-\providecommand{\Stab}[2]{\mathrm{Stab}_{#1} \left( #2 \right)}
+\providecommand{\Stab}[2]{\text{Stab}_{#1} \left( #2 \right)}
 
 DEF: For each $a \in A$ the number of elements in the equivalence class containing $a$ is $\abs{G : \Stab{G}{a}}$, the index of the stabilizer in $G$.
 
@@ -560,7 +558,7 @@ If $\phi \colon G \to S_B$ is the corresponding homomorphism, then $\Stab{G}{A} 
 
 Stabilizers are easy to compute; stable elements are somehow easier to find than the images of every element in $A$.
 
-\providecommand{\Norm}[2]{\mathrm{Norm}_{#1} \left( #2 \right)}
+\providecommand{\Norm}[2]{\text{Norm}_{#1} \left( #2 \right)}
 
 DEF: Let $G$ act on $B$ and fix $A \subset B$. The normalizer $\Norm{G}{A}$ of $A$ in $G$ is ... the subgroup $\Norm{G}{A} = \{g \in G: g(a) \in A, a \in A\}$.
 
@@ -1460,7 +1458,7 @@ Here's Thiem's construction, following [@DF04, chapter 4.5] and playing off of t
 - C conjugacy
 - N number
 
-\providecommand{\Syl}[2]{\mathrm{Syl}_{ #1 }\left( #2 \right)}
+\providecommand{\Syl}[2]{\text{Syl}_{ #1 }\left( #2 \right)}
 
 DEF: Suppose $G$ is a group with order $\abs{G} = p^n m$, where $p$ is prime and $\gcd(p,m) = 1$. A Sylow $p$-subgroup $P$ of $G$ is ... a subgroup of order $p^n$ ($n \in \ZZ_{\ge 0}$).
 
