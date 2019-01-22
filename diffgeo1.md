@@ -7,10 +7,10 @@ bibliography: /home/colton/coltongrainger.bib
 ---
 
 \setcounter{section}{-1}
-\providecommand{\ZZ}{\mathbf{Z}}
-\providecommand{\RR}{\mathbf{R}}
-\providecommand{\CC}{\mathbf{C}}
-\providecommand{\sM}{\mathsf{M}}
+\renewcommand{\ZZ}{\mathbf{Z}}
+\renewcommand{\RR}{\mathbf{R}}
+\renewcommand{\CC}{\mathbf{C}}
+\renewcommand{\sM}{\mathsf{M}}
 
 ## MATH 6230 Syllabus
 
