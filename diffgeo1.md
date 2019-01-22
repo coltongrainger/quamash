@@ -2,15 +2,11 @@
 title: Differential Geometry 1
 author: Colton Grainger
 date: 2018-12-01
-revised: 2018-12-19
 bibliography: /home/colton/coltongrainger.bib
 ---
 
 \setcounter{section}{-1}
-\renewcommand{\ZZ}{\mathbf{Z}}
-\renewcommand{\RR}{\mathbf{R}}
-\renewcommand{\CC}{\mathbf{C}}
-\renewcommand{\sM}{\mathsf{M}}
+
 
 ## MATH 6230 Syllabus
 
@@ -130,6 +126,11 @@ Here's an outline for the geometry half of CU's topology/geometry preliminary ex
     - contact manifolds
 
 ## Week 1
+
+\providecommand{\ZZ}{\mathbf{Z}}
+\providecommand{\RR}{\mathbf{R}}
+\providecommand{\CC}{\mathbf{C}}
+\providecommand{\sM}{\mathsf{M}}
 
 For the first lecture, there are about 20 people in class, at noon-time in the Engineering Center.
 
