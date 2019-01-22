@@ -139,7 +139,7 @@ Clelland's goal is to give us practice working with tensors and differential for
 - As applications, we'll study vector fields & vector bundles.
 - Will we discuss [connections](https://en.wikipedia.org/wiki/Connection_(mathematics))? Perhaps not by May, but it's open ended how we progress through Lee.
 
-### Change of bases
+### Review of linear algebra
 
 IDEA! (Basis) Let $V$ be a real vector space $V$ of dimension $n$. Any vector in $V$ can be expressed as a linear combination of the vectors $\{e_1, \ldots, e_n\}$ iff ... that set is a basis for $V$.
 
@@ -179,7 +179,7 @@ To give "intuition" as to why a linear transformation should be a rank $2$ tenso
 - the upper index $i$ with range $1 \le i \le n$ corresponds to $W$, while
 - the lower index $j$ with range $1 \le j \le m$ corresponds to $V$.
 
-### Notation
+### Einstein Notation
 
 From comments to a [“frustrating experience about differential geometry”](https://math.stackexchange.com/questions/1011835/frustrating-experience-about-differential-geometry) on Mathematics Stack Exchange. 
 
@@ -240,6 +240,6 @@ In Friday's lecture we stated the implicit function theorem.
 
 TODO reference a proof for the implicit function theorem.
 
-### Topological Manifolds
+### Topological manifolds
 
 We'll give properties of topological manifolds, then add structure until we've a sufficiently interesting category of "smooth manifolds" with smooth maps as morphisms.
