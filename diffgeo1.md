@@ -131,6 +131,8 @@ Here's an outline for the geometry half of CU's topology/geometry preliminary ex
 \providecommand{\RR}{\mathbf{R}}
 \providecommand{\CC}{\mathbf{C}}
 \providecommand{\sM}{\mathsf{M}}
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
 
 For the first lecture, there are about 20 people in class, at noon-time in the Engineering Center.
 
