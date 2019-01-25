@@ -298,7 +298,7 @@ iii. Suppose $U$ is open in $\RR^n$ and $f = (f^1, \ldots, f^m) \colon U \to \RR
 
 \pf Consider a point $a \in U$. By the chain rule, defining $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$ (as composition of linear maps), the following diagram commutes.
 
-<a href="http://presheaf.com/?d=d6011306w2j6p5x6n5571404173356x55"><img src="http://presheaf.com/cache/d6011306w2j6p5x6n5571404173356x55.png" title="click to go to presheaf.com for editing"/></a>
+<a href="http://presheaf.com/?d=d2h1311b2v3p4u5w4n6u3e12e386r2v"><img src="http://presheaf.com/cache/d2h1311b2v3p4u5w4n6u3e12e386r2v.png" title="click to go to presheaf.com for editing"/></a>
 
 Since $\phi$ is continuous in each coordinate, $\phi$ is a continuous. At the same time, $\psi$ is just the product of linear functions $(A,B) \mapsto AB$, hence is continuous. (Idea from <https://math.stackexchange.com/questions/2826748>.) Thence $g\circ f$ is of class $C^1$.
 
@@ -310,9 +310,9 @@ So we have a continuous $(r-1)$-multilinear map $$D\psi(a) \colon h \mapsto \sum
 
 **Smooth Chain Rule (Inductive Step).** If $U \xrightarrow{f} V \xrightarrow{g} V \xrightarrow G$ are maps of class $C^p$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^p$. 
 
-\pf Let our inductive hypothesis be that the composite of any two compatible $C^{p-1}$ maps on Banach spaces is also $C^{p-1}$. Assume now that $f \in C^p(U, F)$ and $g \in C^p(V,G)$. Say a point $a \in U$. By the chain rule, defining as before $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$, TFDC.
+\pf Let our inductive hypothesis be that the composite of any two compatible $C^{p-1}$ maps on Banach spaces is also $C^{p-1}$. Assume now that $f \in C^p(U, F)$ and $g \in C^p(V,G)$. Say a point $a \in U$. By the chain rule, defining as before $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$, the following diagram commutes.
 
-<a href="http://presheaf.com/?d=d6011306w2j6p5x6n5571404173356x55"><img src="http://presheaf.com/cache/d6011306w2j6p5x6n5571404173356x55.png" title="click to go to presheaf.com for editing"/></a>
+<a href="http://presheaf.com/?d=d2h1311b2v3p4u5w4n6u3e12e386r2v"><img src="http://presheaf.com/cache/d2h1311b2v3p4u5w4n6u3e12e386r2v.png" title="click to go to presheaf.com for editing"/></a>
 
 By assumption, the map $a \mapsto Df(a)$ is in $C^{p-1}(U, L(E,F))$ and $b \mapsto Dg(b)$ is in $C^{p-1}(V, L(F, G))$. By inductive hypotheses, the composition $a \mapsto f(a) \mapsto Dg(f(a))$ of $C^{p-1}$ maps is in $C^{p-1}(U, L(E,G))$. By its coordinates $\phi$ is in $C^{p-1}(U, L(E, F) \times L(F, G))$. By lemma, the continuous bilinear map $\psi$ is in $C^\infty(L(E, F) \times L(F, G), L(E,G))$. By the inductive hypothesis, then $\psi \circ \phi$ is in $C^{p-1}(U, L(E,G))$. so $D(g \circ g)$ is of class $C^{p-1}$, and we conclude $g \circ f$ is of class $C^p$. 
 
