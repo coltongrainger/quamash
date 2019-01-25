@@ -130,6 +130,7 @@ Here's an outline for the geometry half of CU's topology/geometry preliminary ex
 \providecommand{\ZZ}{\mathbf{Z}}
 \providecommand{\RR}{\mathbf{R}}
 \providecommand{\CC}{\mathbf{C}}
+\providecommand{\FF}{\mathbf{F}}
 \providecommand{\sM}{\mathsf{M}}
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
