@@ -2,6 +2,7 @@
 title: Modern Algebra 2
 author: Colton Grainger
 date: 2018-12-01
+nonumbering: true
 ---
 
 \setcounter{section}{-1}
@@ -135,13 +136,13 @@ From Herstein.
 
 > Solutions to physical and geometric problems are often parameterized as vector spaces.
 
-IDEA! What homomorphisms exist from an $\FF$-vector space $V$ to itself? ... Each nonzero $\alpha \in \FF$ defines $v \mapsto \alpha v$, an injective linear transformation $V \to V$.
+IDEA: What homomorphisms exist from an $\FF$-vector space $V$ to itself? ... Each nonzero $\alpha \in \FF$ defines $v \mapsto \alpha v$, an injective linear transformation $V \to V$.
 
 From Green.
 
 > We have a module $M$ for a ring $R$, where if $R = F$ is a field, then $M$ is a vector space.
 
-SLOGAN! Modules are generalizations of both ... abelian groups and vector spaces.
+SLOGAN: Modules are generalizations of both ... abelian groups and vector spaces.
 
 Modules impose additional structure on abelian groups.
 
@@ -173,8 +174,8 @@ We want *four conditions* for the (left) action of a ring $R$ on a abelian group
 4. $1_R.m = R$, forcing unital modules for the course to avoid pathologies (the categories are cleaner?).
 
 <!---
-EX! In $\sM_n(\RR)$, what's the significance of $\text{diag}(1, \ldots, 1, 0)$? ... It's idempotent.
-EX! Say $S$ is entire and $\phi \colon R \to S$ is a ring homomorphism. What is  $\phi(1_R)$? It's idempotent in $S$, so either $0$ or $1$.
+EX: In $\sM_n(\RR)$, what's the significance of $\text{diag}(1, \ldots, 1, 0)$? ... It's idempotent.
+EX: Say $S$ is entire and $\phi \colon R \to S$ is a ring homomorphism. What is  $\phi(1_R)$? ... It's idempotent in $S$, so either $0$ or $1$.
 --->
 
 Right modules are just left modules in a mirror. In particular, left and right modules coincide when the ring $R$ acting is commutative.
@@ -187,17 +188,17 @@ To list archetypical rings that we'll see everywhere acting on abelian groups:
 - the integers $\ZZ$, 
 - and the PID $F[x]$.
 
-EX! If $\FF$ is a field, any unital module $M$ over $\FF$ is a vector space. Conversely if an $R$-module $M$ is a vector space, then ... $R = \FF$ is a field acting by scalar multiplication.
+EX: If $\FF$ is a field, any unital module $M$ over $\FF$ is a vector space. Conversely if an $R$-module $M$ is a vector space, then ... $R = \FF$ is a field acting by scalar multiplication.
 
 EX: Let $F$ be a field and $V = F[x]$; ignoring polynomial multiplication, $V$ is a vector space over $F$.
 
-EX! Let $\mathcal{P}_n \subset F[x]$ be the set of polynomials of degree less than $n$. Then $\mathcal{P}_n$ is a ... vector space over $F$, in fact isomorphic to $F^n$.
+EX: Let $\mathcal{P}_n \subset F[x]$ be the set of polynomials of degree less than $n$. Then $\mathcal{P}_n$ is a ... vector space over $F$, in fact isomorphic to $F^n$.
 
 NONEX: $\ZZ/3\ZZ$ is *not* a module over $\QQ$.
 
-EX! $\ZZ$-modules are the same as ... abelian groups.
+EX: $\ZZ$-modules are the same as ... abelian groups.
 
-PROP! The action of $\ZZ$ on $A \in \text{AbelianGp}$ is completely determined by ... our unital ring axiom for modules, $1.a = a$ for all $a \in A$.
+PROP: The action of $\ZZ$ on $A \in \text{AbelianGp}$ is completely determined by ... our unital ring axiom for modules, $1.a = a$ for all $a \in A$.
 
 In this safe space, it's good to practice "extending by linearity".
 
@@ -210,34 +211,34 @@ Prior to a discussion of $F[x]$-modules, we really ought to define the maps betw
 
 ### Changing scalars and trimming vectors
 
-PROP! Suppose $M$ is a left $R$-module. Say $\phi \colon S \to R$ is a unital ring homomorphism. We have $M$ as an $S$-module by defining $S \times M \to M$ such that ... $s.m = \phi(s).m$.
+PROP: Suppose $M$ is a left $R$-module. Say $\phi \colon S \to R$ is a unital ring homomorphism. We have $M$ as an $S$-module by defining $S \times M \to M$ such that ... $s.m = \phi(s).m$.
 
 Here's a monomorphism between rings: $S \hookrightarrow R$.
 
-EX! When $S \le R$ is a unital subring, $R$ can be seen as ... an $S$-module, with $S$ acting by left multiplication $s.r = sr$. 
+EX: When $S \le R$ is a unital subring, $R$ can be seen as ... an $S$-module, with $S$ acting by left multiplication $s.r = sr$. 
 
 Considering the action of a subring is dubbed "restricting scalars". E.g., $\RR \le \CC$, so while $\CC$ is a $\CC$-vector space of dimension $1$, we had a different object $\CC$ as an $\RR$-vector space of dimension $2$, with generators $i$ and $1$. 
 
 Conversely, given an $S$-module and $S \le R$ as rings, extending to an $R$-module is difficult. (Unlike passing from an entire ring to it's field of fractions. Someone mentioned not every abelian group is a vector space. I don't see immediately what their comment portends.)
 
-CAUTION! A submodule $N$ of an $R$-module $M$ is not obtained by ... restricting scalars. 
+CAUTION: A submodule $N$ of an $R$-module $M$ is not obtained by ... restricting scalars. 
 
 Rather, in the language of linear algebra, we have to trim down the set of *vectors* to obtain *linear subspaces*.
 
-EX! Name a subgroup of a vector space that's not a linear subspace. ... the lattice $\ZZ^2$ is a subgroup of $\RR^2$ yet not a subspace.
+EX: Name a subgroup of a vector space that's not a linear subspace. ... the lattice $\ZZ^2$ is a subgroup of $\RR^2$ yet not a subspace.
 
 Now consider an epimorphism of rings: for a two sided ideal $I \triangleleft R$, the natural projection $\phi \colon R \to R/I$. In these clean circumstances, any $R/I$ module can be recognized as an $R$-module by lifting $r.m = (r+I).m$. 
 
-EX! In one word explain both how any $\ZZ/n\ZZ$-module is a $\ZZ$-module and any $F[x]/(x)$ module is an $F[x]$-module. ... Lifting.
+EX: In one word explain both how any $\ZZ/n\ZZ$-module is a $\ZZ$-module and any $F[x]/(x)$ module is an $F[x]$-module. ... Lifting.
 
-IDEA! Suppose $M$ is an $R$-module and $I \triangleleft R$. Can we make $M$ into an $R/I$ module via $(r + I).m = r.m$? ... iff $I$ annihilates $M$. 
+IDEA: Suppose $M$ is an $R$-module and $I \triangleleft R$. Can we make $M$ into an $R/I$ module via $(r + I).m = r.m$? ... iff $I$ annihilates $M$. 
 
-DEF! We say an $R$-module $M$ is annihilated by an ideal $I \triangleleft R$ when ... for all $m \in M$ and $i \in I$, $i.m = 0$.
+DEF: We say an $R$-module $M$ is annihilated by an ideal $I \triangleleft R$ when ... for all $m \in M$ and $i \in I$, $i.m = 0$.
 
 
 ### $F[x]$-modules
 
-EX! $\FF$-vector spaces $V$ equipped with a linear transformation $T \colon V \to V$ are the same as $F[x]$-modules, knowing ... how each constant polynomial $\lambda \in F \subset F[x]$ and the indeterminate $x$ act.
+EX: $\FF$-vector spaces $V$ equipped with a linear transformation $T \colon V \to V$ are the same as $F[x]$-modules, knowing ... how each constant polynomial $\lambda \in F \subset F[x]$ and the indeterminate $x$ act.
 
 $F[x]$-modules encode vector spaces and their endomorphisms. Why do we care? Well, the machinery of undergraduate linear algebra cannot answer "are these two matrices similar?" With it, we could find traces, determinants, characteristic polynomials, and yet could not hope to determine 
 

@@ -144,23 +144,23 @@ Clelland's goal is to give us practice working with tensors and differential for
 
 ### Review of linear algebra
 
-IDEA! (Basis) Let $V$ be a real vector space $V$ of dimension $n$. Any vector in $V$ can be expressed as a linear combination of the vectors $\{e_1, \ldots, e_n\}$ iff ... that set is a basis for $V$.
+IDEA: (Basis) Let $V$ be a real vector space $V$ of dimension $n$. Any vector in $V$ can be expressed as a linear combination of the vectors $\{e_1, \ldots, e_n\}$ iff ... that set is a basis for $V$.
 
 In Einstein summation notation, we have $v = a^i e_i := \sum_i a^i e_i$ for $n$ real coefficients $a^i$.
 
-Q! Say $\tilde{e}_1, \ldots \tilde{e}_n$ is another basis for the vector space $V$. How can we express $v = a^i {e}_i$ relative to the $\tilde{e}_i$? Say $R \in GL_n(\RR)$ and $[\tilde{e}_1 \ldots \tilde{e}_n] = [{e}_1 \ldots {e}_n] R$. Then $v$ is ... $$[\tilde{e}_1 \ldots \tilde{e}_n] R^{-1} \begin{bmatrix} a^1 \\ \vdots \\ a^n\end{bmatrix}.$$
+Q: Say $\tilde{e}_1, \ldots \tilde{e}_n$ is another basis for the vector space $V$. How can we express $v = a^i {e}_i$ relative to the $\tilde{e}_i$? Say $R \in GL_n(\RR)$ and $[\tilde{e}_1 \ldots \tilde{e}_n] = [{e}_1 \ldots {e}_n] R$. Then $v$ is ... $$[\tilde{e}_1 \ldots \tilde{e}_n] R^{-1} \begin{bmatrix} a^1 \\ \vdots \\ a^n\end{bmatrix}.$$
 
-A! The coefficients $\tilde{a}^i$ of $v = a^i e_i$ relative to the new basis $\tilde{e}_i$ (obtained from the right action of $R \in GL_n(\RR)$ sending each $e_i$ to $\tilde{e}_i$) are given by ... $$[\tilde{a}^i] = R^{-1}[a^i].$$
+A: The coefficients $\tilde{a}^i$ of $v = a^i e_i$ relative to the new basis $\tilde{e}_i$ (obtained from the right action of $R \in GL_n(\RR)$ sending each $e_i$ to $\tilde{e}_i$) are given by ... $$[\tilde{a}^i] = R^{-1}[a^i].$$
 
 Roughly speaking, a vector exhibits a rank $1$ tensor. It's rank $1$ because when we express a vector in terms of a basis, each component is of index $1$. Higher ranked tensors require us to make explicit how components are transformed when one changes bases for the space.
 
-DEF! (Naive) A covariant $k$-tensors on the finite dimensional real vector space $V$ is ... a real-valued multilinear function of $k$ elements of $V$: $$\alpha \colon \underbrace{ V \times \ldots \times V }_\text{$k$ copies} \to \RR.$$
+DEF: (Naive) A covariant $k$-tensors on the finite dimensional real vector space $V$ is ... a real-valued multilinear function of $k$ elements of $V$: $$\alpha \colon \underbrace{ V \times \ldots \times V }_\text{$k$ copies} \to \RR.$$
 
-EX! The (row vector of) basis vectors $$e = [e_1 | \ldots | e_n]$$ and the (column vector of) coefficients $$a = \begin{bmatrix} a^1 \\ \vdots \\ a^n\end{bmatrix}$$ are basis-dependent, but the product ... $v = ea$ is independent of basis.
+EX: The (row vector of) basis vectors $$e = [e_1 | \ldots | e_n]$$ and the (column vector of) coefficients $$a = \begin{bmatrix} a^1 \\ \vdots \\ a^n\end{bmatrix}$$ are basis-dependent, but the product ... $v = ea$ is independent of basis.
 
 *Because* each $v \in V$ is independent of basis, we are *forced* to new coefficients $\tilde{a}^i$ when changing bases to $\tilde{e}_i$ from $e_i$. 
 
-NOTE! If the row vector of basis vectors $[e_i]$ (with lower indices) is right-acted on by an invertible linear map $R$, how are the coefficients of $v = [e_i][a^i]$ transformed? ... The column vector of coefficients $[a^i]$ (with upper indices) are left-acted on by the matrix $R^{-1}$.
+NOTE: If the row vector of basis vectors $[e_i]$ (with lower indices) is right-acted on by an invertible linear map $R$, how are the coefficients of $v = [e_i][a^i]$ transformed? ... The column vector of coefficients $[a^i]$ (with upper indices) are left-acted on by the matrix $R^{-1}$.
 
 Now let $V$ and $W$ be real vector spaces with respective bases $[e_1 \ldots e_m]$ and $[f_1 \ldots f_n]$. Let $T \colon V \to W$ be a linear map. There's some $A_T \in \sM_{n \times m}(\RR)$ such that for all $v \in V$, $A_T v = T(v) =: Tv$. What do we really mean by this?
 
@@ -175,7 +175,7 @@ w &= [f_1 \ldots f_n]\begin{bmatrix} b^1 \\ \vdots \\ b^n\end{bmatrix}\\
   &= T\left([e_1 \ldots e_m]\begin{bmatrix}a^1 \\\vdots\\ a^m\end{bmatrix}\right).
 \end{align*}
 
-Q! Suppose we change bases for $V$ and $W$ by taking transition matrices $R \in GL_n(\RR)$ and $S \in GL_m(\RR)$ so that \begin{align*} { [\tilde{e}_j] }_\text{new in $V$}  &= [e_j]R\\ { [\tilde{f}_i] }_\text{new in $W$}  &= [f_i]S. \end{align*} How is the matrix $A_T$ associated to $V \xrightarrow{T} W$ transformed? ... $$\tilde{A}_T = S^{-1} A_T R.$$
+Q: Suppose we change bases for $V$ and $W$ by taking transition matrices $R \in GL_n(\RR)$ and $S \in GL_m(\RR)$ so that \begin{align*} { [\tilde{e}_j] }_\text{new in $V$}  &= [e_j]R\\ { [\tilde{f}_i] }_\text{new in $W$}  &= [f_i]S. \end{align*} How is the matrix $A_T$ associated to $V \xrightarrow{T} W$ transformed? ... $$\tilde{A}_T = S^{-1} A_T R.$$
 
 To give "intuition" as to why a linear transformation should be a rank $2$ tensor: 
 
@@ -206,15 +206,15 @@ From <https://en.wikipedia.org/wiki/Einstein_notation>.
 
 To borrow from <http://mathworld.wolfram.com/EinsteinSummation>
 
-RULE! (Weisstein) Repeated indices are ... implicitly summed over.
+RULE: (Weisstein) Repeated indices are ... implicitly summed over.
 
-RULE! (Weisstein) Each index can appear at most ... twice in any term.
+RULE: (Weisstein) Each index can appear at most ... twice in any term.
 
-RULE! (Weisstein) Each term must contain ... identical non-repeated indices. 
+RULE: (Weisstein) Each term must contain ... identical non-repeated indices. 
 
-RULE! (Clelland) If the same index appears twice, one up and one down, then ... one sums along the range of that index.
+RULE: (Clelland) If the same index appears twice, one up and one down, then ... one sums along the range of that index.
 
-EX! Given a differentiable function $f \colon \RR^n \to \RR$ and $y \colon \RR^m \to \RR^n$, the term $\frac{\partial f}{\partial x^i}$ in the Jacobian representing the total derivative of $f$ (in Einstein summation notation) is ... $\frac{\partial f}{\partial y^j} \frac{\partial y^j}{\partial x^i}$, where an up index in the denominator counts as a down index in the numerator.
+EX: Given a differentiable function $f \colon \RR^n \to \RR$ and $y \colon \RR^m \to \RR^n$, the term $\frac{\partial f}{\partial x^i}$ in the Jacobian representing the total derivative of $f$ (in Einstein summation notation) is ... $\frac{\partial f}{\partial y^j} \frac{\partial y^j}{\partial x^i}$, where an up index in the denominator counts as a down index in the numerator.
 
 I'd like to know more about "raising and lowering indices" given, e.g., a metric tensor. See also:
 

@@ -51,6 +51,8 @@ From the [syllabus](https://drive.google.com/file/d/1bPOnqftRnfLxF4UrC44a1NZQMoZ
 
 ### Grading
 
+With emphasis on participation.
+
 measure | weigh
 --- | ---
 presentations | 40%
@@ -75,22 +77,12 @@ I have tried (and failed) to talk myself out of keeping notes:
 - My preferred markup language is pandoc markdown, rendered here with MathJax, which has [limited support](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) for [commutative diagrams](http://www.jmilne.org/not/Mamscd.pdf). 
     - Just to render diagonal arrows, I'll have to port images from <http://presheaf.com/>.
 
-$\begin{CD}
-A     @>\text{ for example }>>  B\\
-@VVbV        @VVcV\\
-C     @> \text{ with AMScd }>>  D
-\end{CD}$
-
 However, in juxtaposed posts,
 
 - <http://www.aaronsw.com/weblog/greatlectures>
 - <http://www.aaronsw.com/weblog/awfullectures>
 
-Aaron Schwartz via Tufte reminds us "to always ask about the information density of a method of communication".
-
-Won't these notes be sparse on content? 
-
-Well, sure, but some communication owes its efficacy to "emotional density". So Schwartz' second essay wins out, and I'll bother anyways to record how I think and feel about the curriculum.
+Aaron Schwartz via Tufte reminds us "to always ask about the information density of a method of communication". Won't these notes be sparse on content? Well, sure, but some communication owes its efficacy to "emotional density". So Schwartz' second essay wins out, and I'll bother anyways to record how I think and feel about the curriculum.
 
 ## Week 1
 
@@ -131,27 +123,27 @@ We won't look at maps of "higher tetrahedra" modulo homotopy (they're simply con
 
 ### Simplices
 
-DEF! Let $\{e_n\}_0^\infty$ be the standard basis for $\RR^\infty$. The standard $p$-simplex is the topological subspace ... given by the convex hull of the first $p+1$ basis vectors.
+DEF: Let $\{e_n\}_0^\infty$ be the standard basis for $\RR^\infty$. The standard $p$-simplex $\Delta_p$ is the topological subspace ... given by the convex hull of the first $p+1$ basis vectors.
 
 Similarly to affine hulls, the convex hull of the empty set has dimension $-1$ and is empty. The convex hull of a singleton $\{v_0\}$ has dimension $0$ and is just $\{v_0\}$. 
 
 Note that convex and affine hulls are distinct, but both are described analogously by restrictive and constructive definitions. <https://en.wikipedia.org/wiki/Convex_hull>
 
-An affine hull $\text{aff}(S)$ of a set is the smallest affine subspace containing the set. Constructively, $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\}.$$ A convex hull $\text{conv}(S)$ is the smallest convex set, etc, whereas constructively, $$\{\sum \lambda_i p_i : n \ge 0, p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\}.$$
+DEF: An affine hull $\text{aff}(S)$ of a set is the smallest affine subspace containing the set. Constructively, ... $$\left\{\sum \lambda_i p_i :  p_i \in S, \lambda_i \in \RR, \text{ and } \sum \lambda_i = 1\right\}.$$ 
 
-EX! To construct the standard $p$-simplex, consider set of linear combinations ... $$\left\{\sum_{i =1}^p  \lambda_i e_i : \lambda_i \in [0,1] \text{ such that } \sum \lambda_i = 1\right\}.$$
+DEF: The convex hull $\text{conv}(S)$ is the smallest convex set containing $S$, whereas constructively, ... $$\left\{\sum \lambda_i p_i :  p_i \in S, \lambda_i \in I, \text{ and } \sum \lambda_i = 1\right\}.$$
 
-EX! $\Delta_0$ is ... the set containing the point $\{(1, 0, 0, \ldots ) \}$ in $\RR^\infty$.
+EX: To construct the standard $p$-simplex, consider set of linear combinations ... $$\left\{\sum_{i =0}^p  \lambda_i e_i : \lambda_i \in [0,1] \text{ such that } \sum \lambda_i = 1\right\}.$$
 
-EX! $\Delta_1$ is homeomorphic to ... the closed interval $[0,1]$
+EX: $\Delta_0$ is ... the set containing the point $\{(1, 0, 0, \ldots ) \}$ in $\RR^\infty$.
 
-EX! $\Delta_2$ is homeomorphic to ... a triangle.
+EX: $\Delta_1$ is homeomorphic to ... the closed interval $[0,1]$
 
-We want to describe all possible embeddings of $p$-simplices in a topological space.
+EX: $\Delta_2$ is homeomorphic to ... a triangle.
 
-Let $v_0, \ldots, v_p$ in $\RR^N$ be vectors. 
+We want to describe all possible embeddings of $p$-simplices in a topological space. So let $v_0, \ldots, v_p$ in $\RR^N$ be vectors. 
 
-DEF! Let $[v_0, \ldots, v_p] \colon \Delta_p \to \RR^N$ send ... $$\sum \lambda_i e_i \mapsto \sum \lambda_i v_i.$$
+DEF: Let $[v_0, \ldots, v_p] \colon \Delta_p \to \RR^N$ send ... $$\sum \lambda_i e_i \mapsto \sum \lambda_i v_i.$$
 
 The above map is said to be *degenerate* whenever (TFAE)
 
@@ -162,6 +154,20 @@ The above map is said to be *degenerate* whenever (TFAE)
 
 <https://www.ti.inf.ethz.ch/ew/lehre/ApproxGeom08/notes/01_Basic_Geometry.pdf>
 
-DEF! The ith face of $\Delta_p$ is the map $F_i^p \colon \Delta_{p-1} \to \Delta_p$ given by ... $$[e_0, \ldots, \underbrace{{ \hat{e}_i }}_{\text{omit me}}, \ldots, e_p].$$
+DEF: The ith face of $\Delta_p$ is the map $F_i^p \colon \Delta_{p-1} \to \Delta_p$ given by ... $$[e_0, \ldots, \underbrace{{ \hat{e}_i }}_{\text{omit}}, \ldots, e_p].$$
 
-If you need to, consider the face maps as $F_i^p  \colon \Delta_{p-1} \to \Delta_p \subset R^\infty$, so that the faces respectively line up.
+Why consider face maps $F_i^p  \colon \Delta_{p-1} \to \Delta_p \subset \RR^\infty$? Well, working in $\RR^\infty$ might later be useful for defining a chain complexes.
+
+PROP: When $i < j$, the faces $F_i^p$ satisfy the simplicial identity ... $F_j^{p+1} \circ F_i^p = F_i^{p+1} \circ F_{j-1}^p$.
+
+EX: For $i < j$, sketch the simplicial identity  $F_j^{p+1} \circ F_i^p = F_i^{p+1} \circ F_{j-1}^p$ ... $$\begin{CD} \Delta_{p-1} @>{F_i^p}>> \Delta_p\\ @VV{F_{j-1}^p}V @VV{F_j^{p+1}}V\\ \Delta_p @>{F_i^{p+1}}>>\Delta_{p+1} \end{CD}$$
+
+IDEA: Geometrically describe the transition from homotopy to homology. ... Spheres replaced by simplices, with extra combinatorial data!
+
+### Singular chains
+
+### Graded abelian groups
+
+### Chain complexes
+
+> Given a math banana, you should tell me what's a map of bananas.
