@@ -230,15 +230,88 @@ Wednesday's lecture assumed **finite dimensional normed vector spaces**, presuma
   - partial derivatives as entries in the Jacobian
   - classes of continuously differentiable functions by way of the existence of partials
   - class $C^k$ diffeomorphisms, also local diffeomorphisms
-- We stated the inverse function theorem.
 
-TODO setup the total derivative in Banach spaces. (see notes for 2019-01-23).
-
-TODO reference proofs for the inverse function theorem.
+We stated the inverse function theorem.
 
 In Friday's lecture we stated the implicit function theorem.
 
-TODO reference a proof for the implicit function theorem.
+TODO reference proofs
+
+### Banach spaces and the smooth chain rule
+
+> As before, we prefer to work in a coordinate-free representation. In other words, we develop the differential calculus for maps between Banach spaces. This representation is conceptually simple and actually makes many expressions look much simpler. The classical formulas for the derivatives in the usual coordinate representation follow easily from the general results using the product structure of finite-dimensional Euclidean spaces. [@AE08, ch. VII]
+
+**Road map.** We aim to consider finite dimensional real vector spaces as Banach spaces. We need to:
+
+- Define the Fréchet derivative in Banach spaces.^[Idea from <https://math.stackexchange.com/questions/1851553>, <https://math.stackexchange.com/questions/2826748>.]
+- Prove a composition of $p$-times continuously differentiable maps is again $C^p$.
+- Define partial derivatives in the special case that the codomain is a finite dimensional vector space. 
+- Argue the Jacobian matrix representing the derivative function with respect to the standard bases between finite dimensional real vector spaces has entries given by $$\frac{\partial(G^i \circ F)}{\partial x^j}(x) = \sum_{k = 1}^m \frac{\partial G^i}{\partial y^k}(F(x))\frac{\partial F^k}{\partial x^j}(x).$$
+
+**Definitions.** (Paraphrased from Lang [@Lan99, ch. I]) A *Banach space* is a topological vector space that's complete and whose topology can be defined by a norm. The set of *continuous linear maps* from one Banach space $E$ to another $F$ will be denoted by $L(E,F)$, whereas the set of *continuous $r$-multilinear* maps $$\psi \colon E \times \cdots \times E \to F$$ of $E$ into $F$ will be denoted by $L^r(E, F)$. We put a topology on $L^n(E,F)$ for all $n \ge 0$ by declaring $L^0(E, F) := F$ and defining the norm of an $r$-multilinear map $\psi \in L^r(E, F)$ to be $$\sup\{K : \abs{\psi(x^1, \ldots, x^r)} \le K \abs{x^1} \cdots \abs{x^r}\}.$$ The $L^n(E,F)$ are thus Banach spaces.
+
+**Proposition.** If $E_1, \ldots, E_r$ are Banach spaces, then the canonical map $L\big(E_1, L(E_2, \ldots, L(E_r, F), \ldots )\big)$ to $L^r(E_1, \ldots, E_r, F)$ is a norm-preserving toplinear isomorphism. 
+
+**Definition.** Say $E$ and $F$ are Banach spaces, $U \subset E$ is open and $a \in U$. A map $f \colon U \to F$ is said to be *differentiable at $a$* if there's a linear approximation $\lambda_a \in L(E,F)$ such that $$f(a + v) = f(a) + \lambda_a(v) + r(v) \quad \text{ where } \frac{\abs{r(v)}}{\abs{v}} \to 0 \text{ as } v \to 0.$$
+
+**Remark.** $\lambda_a$ is uniquely determined by $f$ and $a$. We say $\lambda_a$ is the *derivative of $f$ at $a$* (also called the *total* or *Fréchet* derivative of $f$ at $a$). We denote $\lambda_a$ by $\partial f(a)$, $Df(a)$, etc.
+
+If $f$ is differentiable at each $a \in U$, the we have a map $$Df : U \to L(E, F), \quad a \mapsto Df(a),$$ which we say is *the derivative function of $f$* (known also as the *Fréchet*, or *total* derivative of $f$).
+
+**Proposition.** (Chain rule) Say $E$, $F$, and $G$ are Banach spaces and we've maps defined on open subsets $$U \subset E \xrightarrow{f} V \subset F \xrightarrow{g} G.$$ If $f$ and $g$ are differentiable at $a \in U$ and $f(a) \in V$ (resp.), then $g \circ f$ is differentiable at $a$ with derivative $$\underbrace{D(g \circ f)(a)}_\text{in $L(E, G)$} = \underbrace{Dg(f(a))}_\text{in $L(F,G)$} \underbrace{Df(a)}_\text{in $L(E, F)$}.$$
+
+*Proof.* (Adapted from Folland [@Fol02, ch. 2.6]) Let $b = f(a)$. By definition of differentiability at a point, both 
+\begin{align*}
+g(b + h) & = g(b) + Dg(b)h + E_1(h), &\frac{\abs{E_1(h)}}{\abs{h}} \to 0 \text{ as $h \to 0$}\\
+f(a + k) & = f(a) + Df(a)k + E_2(k), &\frac{\abs{E_2(k)}}{\abs{k}} \to 0 \text{ as $k \to 0$}.
+\end{align*}
+
+Let $h := f(a+k) - f(a)$, then so too $h = Df(a)k + E_2(k)$. Consider 
+\begin{align*}
+(g \circ f)(a + k) &= g(b + h) = g(b) + Dg(b)h + E_1(h)\\
+    &= g(f(a)) + Dg(b)[Df(a)k + E_2(k)] + E_1(h)\\
+    &= (g \circ f)(a) + Dg(b)Df(a)k + E_3(k),\\
+\end{align*}
+where $E_3(k) = Dg(b)E_2(k) + E_1(h)$. We claim $E_3(k)/\abs{k} \to 0$ as $k \to 0$, in which case $$(g \circ f)(a +k)  = (g \circ f)(a) + Dg(b)Df(a)k + \text{ remainder }$$ confirms that the linear map $Dg(b)Df(a)$ is the total derivative of $g \circ f$ at $a$. For the claim, consider each term in the error summand. By our definition of a norm for linear maps, $$\frac{\abs{Dg(b)E_2(k)}}{\abs{k}} \le \abs{Dg(b)}\frac{\abs{E_2(k)}}{\abs{k}} \to 0, \quad \text{ as $k \to 0$.}$$
+This also implies when $k$ is a vector close to $0$, then $\abs{E_2(k)} \le \abs{k}$, hence by the triangle inequality and our definition of a norm for linear maps $$\abs{h} = \abs{Df(a)k + E_2(k)} \le \underbrace{ (\abs{Df(a)} + 1)}_\text{constant}\abs{k}.$$ Since $\abs{k}$ is bounded below by a constant multiple of $\abs{k}$, as $k \to 0$, it's true also that $$\frac{\abs{ E_1(h) }}{\abs{k}} \le \frac{\abs{ E_1(h) }}{\text{const.}\cdot\abs{h}} \to 0.$$ 
+
+**Definitions.** (Directional and partial derivatives) Consider a map $f \colon U \to F$ from open $U$ in $E$, choose a base point $a \in U$, and a vector $v \in E \setminus \{0\}$. Because $U$ is open, there's an $\epsilon > 0$ such that $a +tv \in U$ for all $t \in (-\epsilon, \epsilon)$. We dub the *directional derivative of $f$ at $a$ in the $v$ direction to be $$\partial_v f(a) := \frac{d}{dt} f(a + tv)\lvert_{t=0} = \lim_{t \to 0 } \frac{f(a + tv) - f(a)}{t}.$$
+
+To quote [@AE08, pg. 153]:
+
+> If $E = \RR^n$, the derivatives in the direction of the coordinate axes are particularly important, for practical and historical reasons. ... We thus write $\partial_k$ or $\partial/\partial x^k$ for the derivatives in the direction of the standard basis vectors $e_k$ for $k = 1, \ldots,n$.
+
+**Theorems for Euclidean space.** [@AE08, no. VII.2.8]
+
+i. Suppose $E = \RR^n$ and $f \colon U \to F$ is differentiable at $a \in U$. Then $$Df(a) h = \sum_{k =1}^n \partial_k f(a)h^k\quad \text{ for $h = (h^1, \ldots, h^k) \in \RR^n.$}$$
+
+ii. Suppose $E$ is a Banach space and $f = (f^1, \ldots, f^m) \colon U \to \FF^m$ (an $m$ dimensional $\FF$-vector space). The $f$ is differentiable at $a$ if and only if all the coordinate functions $f^j$ are differentiable at $a$. Then $$Df(a) = (Df^1(a), \ldots, Df^m(a)).$$
+
+iii. Suppose $U$ is open in $\RR^n$ and $f = (f^1, \ldots, f^m) \colon U \to \RR^m$ is differentiable at $a$. The matrix representation (in the standard basis) of the derivative of $f$ is the Jacobi matrix of $f$: $$[Df(a)] = [\partial_k f^j(a)].$$
+
+**Definition.** (Continuously differentiable) Let $U$ be open in a Banach space $E$ and say $f \colon U \to F$ is differentiable. When the derivative function $Df \colon U \to L(E, F)$ is continuous, we say that $f$ is *continuously differentiable*, or of *class $C^1$*. To define class $C^p$, we need to inductively define higher total derivatives. The $p$th derivative of $f$ is $D(D^{p-1}f)$, which is a map $$D^p f \colon U \to L\big(E, L(E, \ldots, L(E,F), \ldots )\big) \cong L^p(E, F) \quad \text{by isometry.}$$ A maps is said to be of *class $C^p$* if its $k$th derivative exists $1 \le k \le p$.
+
+**Smooth Chain Rule (Base Case).** If $U \xrightarrow{f} V \xrightarrow{g} V \xrightarrow G$ are maps of class $C^1$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^1$. 
+
+\pf Consider a point $a \in U$. By the chain rule, defining $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$ (as composition of linear maps), the following diagram commutes.
+
+<a href="http://presheaf.com/?d=d6011306w2j6p5x6n5571404173356x55"><img src="http://presheaf.com/cache/d6011306w2j6p5x6n5571404173356x55.png" title="click to go to presheaf.com for editing"/></a>
+
+Since $\phi$ is continuous in each coordinate, $\phi$ is a continuous. At the same time, $\psi$ is just the product of linear functions $(A,B) \mapsto AB$, hence is continuous. (Idea from <https://math.stackexchange.com/questions/2826748>.) Thence $g\circ f$ is of class $C^1$.
+
+**Lemma.** Any *continuous* multilinear map $\psi \in L^r(E, F)$ is infinitely differentiable. 
+
+\pf Let $(a^1, \ldots, a^r)$ be a basepoint and $(h^1, \ldots, h^r)$ be a step vector in $E \times \cdots \times E$. Observe $\psi(a^1 + h^1 , \ldots, a^r + h^r)$ can be written as $2^n$ terms $$\psi(a^1, \ldots, a^r) + \sum_{i=1}^r \psi(a^1, \ldots, h^i, \ldots, a^r) + \sum \text{ terms with at least two coordinates $h_i, h_j$.}$$ Assuming $\psi$ is continuous, the last $2^r - (r + 1)$ terms converge to $0_F$ superlinearly as $(h^1, \ldots, h^r) \to 0$. Note that in whatever norm we choose for $E \times \cdots \times E$, that norm is equivalent to, say, the max norm, so that 
+$$\frac{\abs{\psi(a^1, \ldots, h^i, \ldots, h^j, \ldots, a^r)}}{(\abs{h^1, \ldots, h^r)}} \le \frac{\abs{\psi} \cdot \text{const.} \cdot \abs{h^i}\abs{h^j}}{\abs{h^\text{max}}} \to 0.$$ 
+So we have a continuous $(r-1)$-multilinear map $$D\psi(a) \colon h \mapsto \sum_{i=1}^r \psi(a^1, \ldots, h^i, \ldots, a^r),$$ which implies that the map $D\psi: a \mapsto D\psi(a)$ is $r$-multilinear and continuous as well. Given continuous bilinear maps as a base case, by induction on $r$ we've show all continuous $r$-multilinear maps are infinitely differentiable. 
+
+**Smooth Chain Rule (Inductive Step).** If $U \xrightarrow{f} V \xrightarrow{g} V \xrightarrow G$ are maps of class $C^p$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^p$. 
+
+\pf Let our inductive hypothesis be that the composite of any two compatible $C^{p-1}$ maps on Banach spaces is also $C^{p-1}$. Assume now that $f \in C^p(U, F)$ and $g \in C^p(V,G)$. Say a point $a \in U$. By the chain rule, defining as before $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$, TFDC.
+
+<a href="http://presheaf.com/?d=d6011306w2j6p5x6n5571404173356x55"><img src="http://presheaf.com/cache/d6011306w2j6p5x6n5571404173356x55.png" title="click to go to presheaf.com for editing"/></a>
+
+By assumption, the map $a \mapsto Df(a)$ is in $C^{p-1}(U, L(E,F))$ and $b \mapsto Dg(b)$ is in $C^{p-1}(V, L(F, G))$. By inductive hypotheses, the composition $a \mapsto f(a) \mapsto Dg(f(a))$ of $C^{p-1}$ maps is in $C^{p-1}(U, L(E,G))$. By its coordinates $\phi$ is in $C^{p-1}(U, L(E, F) \times L(F, G))$. By lemma, the continuous bilinear map $\psi$ is in $C^\infty(L(E, F) \times L(F, G), L(E,G))$. By the inductive hypothesis, then $\psi \circ \phi$ is in $C^{p-1}(U, L(E,G))$. so $D(g \circ g)$ is of class $C^{p-1}$, and we conclude $g \circ f$ is of class $C^p$. 
 
 ### Topological manifolds
 
