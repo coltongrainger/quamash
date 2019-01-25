@@ -265,8 +265,8 @@ If $f$ is differentiable at each $a \in U$, the we have a map $$Df : U \to L(E, 
 
 *Proof.* (Adapted from Folland [@Fol02, ch. 2.6]) Let $b = f(a)$. By definition of differentiability at a point, both 
 \begin{align*}
-g(b + h) & = g(b) + Dg(b)h + E_1(h), &\frac{\abs{E_1(h)}}{\abs{h}} \to 0 \text{ as $h \to 0$}\\
-f(a + k) & = f(a) + Df(a)k + E_2(k), &\frac{\abs{E_2(k)}}{\abs{k}} \to 0 \text{ as $k \to 0$}.
+g(b + h) & = g(b) + Dg(b)h + E_1(h), &\frac{|E_1(h)|}{|h|} \to 0 \text{ as $h \to 0$}\\
+f(a + k) & = f(a) + Df(a)k + E_2(k), &\frac{|E_2(k)|}{|k|} \to 0 \text{ as $k \to 0$}.
 \end{align*}
 
 Let $h := f(a+k) - f(a)$, then so too $h = Df(a)k + E_2(k)$. Consider 
