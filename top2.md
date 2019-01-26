@@ -164,10 +164,70 @@ EX: For $i < j$, sketch the simplicial identity  $F_j^{p+1} \circ F_i^p = F_i^{p
 
 IDEA: Geometrically describe the transition from homotopy to homology. ... Spheres replaced by simplices, with extra combinatorial data!
 
+
 ### Singular chains
+
+Let $X$ be a topological space.
+
+DEF! A singular $p$-simplex of $X$ is ... a continuous map $\sigma \colon \Delta_p \to X$.
+
+
 
 ### Graded abelian groups
 
 ### Chain complexes
 
 > Given a math banana, you should tell me what's a map of bananas.
+
+### Functors
+
+To borrow two definitions from [“functor in nLab”](https://ncatlab.org/nlab/show/functor). Retrieved January 25, 2019.
+
+> A functor $F$ from a category $C$ to a category $D$ is a map sending each object $x \in C$ to an object $F(x) \in D$ and each morphism $f : x \to y$ in $C$ to morphism $F(f) : F(x) \to F(y)$ in $D$, such that $F$ preserves composition $F(g\circ f) = F(g)\circ F(f)$ whenever the left-hand side is well-defined, $F$ preserves identity morphisms for each object $x \in X$, $F(1_x) = 1_{F(x)}$.
+> 
+> Or equivalently, since compositions $g f = g\circ f$ (commuting triangles) and identities $1_x$ (commuting loops) are both simple commuting diagrams, we can combine the above conditions to the single statement $F$ preserves commuting diagrams.
+
+### Hurewicz
+
+IDEA! If we have a continuous map from the topological boundary $f \colon \delta \Delta_n \to X$ that extends to a map $\sigma \colon \Delta_n \to X$ such that $\sigma \circ \iota = f$, then the algebraic boundary of the space $\Delta_n$ in the chain complex $\Delta_*(X)$ is just ... the appropriately signed image of the topological boundary $\delta\Delta_n$ in the free abelian group $\Delta_{n-1}(X)$.
+
+Q! In the proof of the Hurewicz theorem, we defined $\psi \colon \sigma \mapsto \lambda_{\sigma(0)} * \sigma * \lambda_{\sigma(1)}^{-1}$, then restricted from $\Delta_1(X)$ to $Z_1(X)$. Why did we argue $\psi$ respects boundaries, that is, $B_1(X) \subset \ker\psi$? ... So that we could find $\psi_*$ that descends to the quotient.
+
+From <https://math.stackexchange.com/questions/1168939/definition-of-descends-to>.
+
+Q! What does it mean for maps to "descend to" other maps?  ... It usually has the same meaning as "induces a function on" (or "is compatible with the given equivalence relation"). It is often used in connection with the universal property of a quotient, which explains the "descend". (mathSE)
+
+### Preview of the relative chain complex
+
+What homomorphism between $H_*(A)$ and $H_*(X)$ is induced by $A \hookrightarrow X$?
+
+Visibly, $\Delta_*(A) \hookrightarrow \Delta_*(X)$. This gives a short exact sequence (of chain complexes) $$0 \to \Delta_*(A) \hookrightarrow \Delta_*(X) \to \frac{\Delta_*(X)}{\Delta_*(A)} \to 0.$$ 
+
+DEF! For a topological space $X$ and a subset $A$, the relative chain complex is ... $\Delta_*(X, A) := \frac{\Delta_*(X)}{\Delta_*(A)}$.
+
+To borrow arguments from <https://en.wikipedia.org/wiki/Relative_homology>.
+
+Q!  What's a topological interpretation of the relative chain complex $\Delta_*(X, A)$? ... Intuitively, it helps determine what part of an absolute homology group comes from which subspace. (Wikipedia)
+
+- We will (likely) need the snake lemma and an excision theorem, to argue that the short exact sequence of chain groups produces a long exact sequence of homology groups.
+- One idea (perhaps) is to approximate a space by CW complexes, then form quotients?
+
+EX! The relative homology group $H_n(X, x_0)$, where $x_0$ is a point in $X$, is just ... the $n$-th reduced homology group of $X$. (Wikipedia)
+
+EX! For all $i > 0$, the relative homology group $H_i(X, x_0) = H_i(X)$. When $i = 0$, $H_0(X, x_0)$ is what? (and why?) ... It's the free module of one rank less than $H_0(X)$, because the connected component containing $x_0$ becomes trivial in relative homology. (Wikipedia)
+
+### Basic exact sequences
+
+To borrow definitions from [@May99, chapter 12.4].
+
+DEF! A sequence $M' \xrightarrow{f} M \xrightarrow{g} M''$ of modules is exact (at $M$) if ... $f(M') = \ker g$.
+
+DEF! Suppose $0 \to M \xrightarrow{g} M''$ is exact. Then ... $g$ is a monomorphism. 
+
+DEF! Suppose $M' \xrightarrow{f} M \to 0$ is exact. Then ... $f$ is an epimorphism.
+
+Now from Beaudry.
+
+EX! The diagram $$\cdots \to A_{n+1} \to A_n \to A_{n-1} \to \cdots$$ of Abelian groups and group homomorphisms is an object in ... the category $\mathrm{Fun}\left(\{\mathrm{Obj}(\ZZ), \mathrm{Morp}(a,b) = \{\emptyset \text{ if $a>b$, else pt. if $a < b$}\}\}, \mathrm{Ab}\right)$. 
+
+DEF! The diagram $$\cdots \to A_{n+1} \to A_n \to A_{n-1} \to \cdots$$ of Abelian groups is exact ... if it's exact in each degree.
