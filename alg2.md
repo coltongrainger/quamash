@@ -130,7 +130,7 @@ prelim problem | topic | DF04 chapter
 
 ## Week 1
 
-### Intuition
+### Intuition for modules
 
 From Herstein.
 
@@ -164,7 +164,7 @@ $R$, a ring | $M$, a module | also scalar multiplication
 
 (A fourth item could go on this list, but I'm not sure where. How do [groups with operators](https://en.wikipedia.org/wiki/Group_with_operators) resemble vector spaces? "A group with operators is also a mapping $\Omega\rightarrow\operatorname{End}_{\mathbf{Grp}}(G),$ where $\operatorname{End}_{\mathbf{Grp}}(G)$ is the set of group endomorphisms of $G$.")
 
-### Axioms
+### Module axioms
 
 We want *four conditions* for the (left) action of a ring $R$ on a abelian group $M$. With $m, m_1, m_2$ arbitrary in $M$ and $r, r_1, r_2$ arbitrary in $R$ it should be that
 
@@ -180,7 +180,7 @@ EX: Say $S$ is entire and $\phi \colon R \to S$ is a ring homomorphism. What is 
 
 Right modules are just left modules in a mirror. In particular, left and right modules coincide when the ring $R$ acting is commutative.
 
-### Canonical examples
+### Canonical examples of modules
 
 To list archetypical rings that we'll see everywhere acting on abelian groups:
 
@@ -207,9 +207,13 @@ In this safe space, it's good to practice "extending by linearity".
 - $\ZZ$ has a single generator, so by induction and with distributivity, for each $n \in \ZZ$, we determine $n.a$.
 - Lastly, we check the ring axioms hold for $m, n \in \ZZ$ in cases by trichotomy.
 
+Recall that extending linearly is just appealing to the universal property of free objects. Beaudry sets up the process as follows:
+
+> If $S$ is a set and $A$ is an abelian group, then there's a bijection $$\{\text{Functions $S \to A$}\} \leftrightsquigarrow \{\text{Homomorphisms $\ZZ\{S\} \to A$}\},$$ which sends $g \colon S \to A$ to $$\left(\sum_{s \in S} n_s s\right) := \sum_{s \in S}n_s g(s).$$ We call this *extending linearly*.
+
 Prior to a discussion of $F[x]$-modules, we really ought to define the maps between modules as objects. It's foreseeable that some maps won't be onto, so we'd also better define our subobjects.
 
-### Changing scalars and trimming vectors
+### Restricting scalars changes the category
 
 PROP: Suppose $M$ is a left $R$-module. Say $\phi \colon S \to R$ is a unital ring homomorphism. We have $M$ as an $S$-module by defining $S \times M \to M$ such that ... $s.m = \phi(s).m$.
 
@@ -235,16 +239,149 @@ IDEA: Suppose $M$ is an $R$-module and $I \triangleleft R$. Can we make $M$ into
 
 DEF: We say an $R$-module $M$ is annihilated by an ideal $I \triangleleft R$ when ... for all $m \in M$ and $i \in I$, $i.m = 0$.
 
-
 ### $F[x]$-modules
 
 EX: $\FF$-vector spaces $V$ equipped with a linear transformation $T \colon V \to V$ are the same as $F[x]$-modules, knowing ... how each constant polynomial $\lambda \in F \subset F[x]$ and the indeterminate $x$ act.
 
-$F[x]$-modules encode vector spaces and their endomorphisms. Why do we care? Well, the machinery of undergraduate linear algebra cannot answer "are these two matrices similar?" With it, we could find traces, determinants, characteristic polynomials, and yet could not hope to determine 
+*Proof sketch.* 
+
+- ($\Rightarrow$) Consider an $F[x]$-module $M$. By restriction to constant polynomials, $M$ is seen to be an $F$-vector space. Let $\alpha, \beta \in F$ be constant polynomials, let $m,n \in M$, and let $x$ be the indeterminate. Observe that $x$ acts linearly on each $F$-linear combination: $$x.(\alpha.m + \beta.n) = x.(\alpha.m) + x.(\beta.n) = \alpha x.m + \beta x.n.$$
+
+- ($\Leftarrow$) Conversely, say we're given an $F$-vector space $V$ and a linear map $T\colon V \to V$. Let $u,v \in V$ and $\alpha, \beta \in F$. By induction, if $T^{n-1}$ is linear, then $$T^n(\alpha u + \beta v) = T ( \alpha T^{n-1}(u) + \beta T^{n-1}(v) ) = \alpha T^n(u) + \beta T^n(v),$$ whence $T^n$ is linear. 
+
+- Define an action of $\{x^n : n \in \NN\}$ on $V$ by $x^n.v = T^n(v)$, then extend this definition linearly to obtain an action of $F[x]$ on $V$. Knowing that compositions, sums, and $F$-scalar multiples of the linear transformation $T$ are $F$-linear, we can prattle off a verification of the module axioms. 
+
+    - $(V, +)$ is an abelian group. 
+    - $F[x]$ is a unital ring. 
+    - For any $p(x), q(x) \in F[x]$, and any $u,v \in V$, the action $F[x] \times V \to V$ satisfies
+
+        - $p(x).(u + v) = p(x).u + p(x).v$ (by linearity)
+        - $p(x)q(x).(u) = p(x).(q(x).u)$ (visibly)
+        - $( p(x) + q(x) ).u = p(x).u + q(x).u$ (also visibly)
+        - $1.u = u$ (from the vector space axioms). 
+
+NONEX! Consider the non-ring $C(\RR)$ endowed with pointwise addition and composition as multiplication. That $(\sin \theta + \cos \theta)^2$ and $\sin^2 \theta + \cos^2 \theta = 1$ are not identical functions violates which ring axiom? ... Distributivity of multiplication over addition.
+
+So $F[x]$-modules encode vector spaces and their endomorphisms. Why do we care? Well, the machinery of undergraduate linear algebra cannot answer "are these two matrices similar?" With it, we could find traces, determinants, characteristic polynomials, and yet could not hope to determine 
 
 > Given $A, B \in \sM_n(\FF)$ does there exist $P \in \sM_n(\FF)$ such that $A = PAP^{-1}$?
 
-Apparently the problem is tractable in the language of rings and modules. One needs only to consider a basis, then compare $A$ and $B$ as linear transformations of the $\FF$-vector space $V \to V$. Along the way, we'll develop a sufficiently general theory with $R$-modules.
+Apparently the problem is tractable in the language of rings and modules. 
 
-TODO: How far is it possible to demonstrate that $R[x]$-modules for a commutative ring $R$ have the same properties as $F[x]$-modules? (See <https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps> for an alternative development of the ring of fractions, which seems to build machinery to work with $R$-linear combinations, dropping the condition that $F$ is a field.)
+- Consider a basis, then compare $A$ and $B$ as linear transformations of the $\FF$-vector space $V \to V$. 
+
+We'll have to develop a sufficiently general theory for $R$-linear maps between modules.
+
+- What should a *canonical form* for matrices look like?
+    - e.g., Diagonal matrices, Jordan normal form, Smith normal form
+    - see <https://en.wikipedia.org/wiki/Category:Matrix_normal_forms>
+
+Sam asked: How far is it possible to demonstrate that $R[x]$-modules for a commutative ring $R$ have the same properties as $F[x]$-modules? (See <https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps> for an alternative development of the ring of fractions, which seems to build machinery to work with $R$-linear combinations, dropping the condition that $F$ is a field.) TODO
+
+### Aside for finite fields
+
+Green posed:
+
+- How is one to construct an finite field of characteristic $p$? 
+- Why are there no finite fields of order $p^n m$ where $p$ is prime and $\gcd(p, m) = 1$. 
+    - Hint: count column vectors.
+
+To borrow the statement of the problem from <https://math.stackexchange.com/questions/1942821>. (See also <https://proofwiki.org/wiki/Field_of_Prime_Characteristic_has_Unique_Prime_Subfield>.)
+
+> Let $F$ be a field. The intersection of all subfields of $F$ is a subfield which is isomorphic to $\mathbb{Q}$ if $\operatorname{char}(F)=0$, and isomorphic to $F_p$ if $\operatorname{char}(F)=p$.
+
+Green argued: any field is a vector space over any of its subfields. We'll eventually show a field of order $p^n$ exists for all $p$ prime and $n \in \NN$, and that each field of order $p^n$ is unique.
+
+### Modules as dual objects
+
+After my office-mate Ulrich gave me a little introduction to the interplay between Gabor transforms and locally compact abelian groups, I think it's safe to quote [“module in nLab”](https://ncatlab.org/nlab/show/module). Retrieved January 26, 2019. “Motivation for and role of modules: generalized vector bundles”:
+
+> The theory of monoids or rings and their modules, its "meaning" and usage, is naturally understood via the duality between algebra and geometry:
+> 
+> 1. a ring $R$ is to be thought of as the ring of functions on some space,
+> 
+> 1. an $R$-module is to be thought of as the space of sections of a vector bundle on that space.
+> 
+> A classical situation where this correspondence holds precisely is topology, where
+> 
+> 1. the Gelfand duality theorem says that sending a compact topological space $X$ to its C-star algebra $C(X,\mathbb{C})$ of continuous functions with values in the complex numbers constitutes an equivalence of categories between compact topological spaces and the opposite category of commutative $C^\ast$-algebras;
+
+### Constructions in the category of $R$-modules
+
+EX! For a unital ring $R$, we can view the abelian group $\bigoplus_1^n R := R^n$ as a left $R$-module by ... defining $r.(a_1, \ldots, a_n) = (r.a_1, \ldots, r.a_n)$.
+
+To borrow three definitions from <https://ncatlab.org/nlab/show/rank>.
+
+DEF! For a unital ring $R$ and an $R$-module $M$, we say that $M$ has a basis $\{e_i\} \subset M$ if ... for each $m \in M$ there's a unique set $\{\alpha_i\} \subset R$ such that $\alpha_i = 0$ for all but finitely many $i$ and $m = \sum_i \alpha_i e_i$.
+
+DEF! If an $R$-module $M$ has a basis, it's called ... a free module (over $R$). 
+
+DEF! If the cardinality of a basis $\{e_i\}$ for an $R$-module $M$ is independent of choice of basis, then $\abs{\{e_i\}}$ called ... the rank of $M$ over $R$.
+
+Green cautioned us not to assume we would always be working with invariant basis number rings, and, in the case that we are, to at least be wary of zero divisors when finding unique $R$-linear combinations. He mentioned that finding such combinations is easy when the ring $R$ is an integral domain, as then we can work in the field of fractions.
+
+TODO define finitely generated submodules
+
+SLOGAN! A submodule is a subgroup that's ... stable under the ring action.
+
+Given a subset $N$ of a unital $R$-module $M$, we need only check 
+
+- For each pair $n_1, n_2 \in N$, we have additive closure $n_1 + n_2 \in N$ (so $N$ is an additive monoid).
+- For each $r \in R$, and each $n \in N$, we have closure under the ring action $r.n \in N$.
+    - Since $R$ is a unital ring, closure under the ring action gives $-1.n = -n \in N$,
+    - in which case $N$ is an abelian subgroup of $M$.
+
+EX! Consider a unital ring $R$ as a module over itself. What are the submodules of $R$? ... Exactly the ideals $\mathfrak{a}_i \subset R$.
+
+In an $F[x]$-module, the $F$-subspaces are not necessarily $F[x]$-submodules. Here's an example in which the categorical subobjects coincide [@DF04, number 10.1.20].
+
+- *Given.* Let $F = \RR$, let $V = \RR^2$, and let $T$ be the linear transformation from $V$ to $V$ that is rotation clockwise about the origin by $\pi$ radians. 
+- *To demonstrate.* Every subspace of $V$ is an $F[x]$-submodule for this $T$.
+- *Demo.* Say $\RR^2$ is an $\RR[x]$-module with the action of $x \in \RR[x]$ given by $$x.v = Av \quad \text{ where } \quad A = \begin{bmatrix} -1 & 0 \\ 0 & -1\end{bmatrix} \quad \text{ w.r.t. the standard basis.}$$ The property of being an $\RR[x]$-submodule is stronger than that of being an $\RR$-linear subspace, so the submodules of $\RR^2$ are all subspaces. Conversely, if $V \subset \RR^2$ is a subspace, then $V$ is an abelian group. For any $v \in V$, the image of $v$ under the action of $x$ is $x.v = -v$. So $V$ is stable under the linear transformation; whence $V$ is an $\RR[x]$-submodule.
+
+### Algebras
+
+To list three definitions for algebras. (It's convenient to assume in this setting that both the rings and the ring homs are unital.)
+
+DEF! For a comm. unital ring $R$, an $R$-algebra is a unital ring $A$ with ... a unital ring hom $f \colon R \to A$ such that $f(R) \subset Z(A)$.
+
+We can quotient by the kernel to obtain the working definition.
+
+SLOGAN! An $R$-algebra is a unital ring $A$ with ... $R$ at its center.
+
+Green also set out a (provisionally) equivalent definition.
+
+DEF! For a comm. unital ring $R$, an $R$-algebra is an $R$-module with ... an $R$-bilinear associative multiplication $$r.m \times s.n = (rs).mn.$$
+
+NONEX! Why is $\RR^3$ with a bilinear multiplication defined by the cross-product not an $\RR$-algebra? ... Because cross-products are not associative. 
+
+- The field $F \hookrightarrow F[x]$, so the PID $F[x]$ is an $F$-algebra.
+- For $G$ a finite group and $R$ a comm. unital ring, the *group ring* $RG$ is an $R$-algebra. 
+    - In fact $RG$ is a free $R$-module, where any element of $RG$ is a linear combination $\sum_{g \in G} r_g g$. 
+    - With $R$ in the center of $RG$, the bilinear product is well defined.
+    - See [comments from Thiem](/alg1#ring-actions) on group rings.
+
+Green asked: what's the dimension of the center of $\CC G$? Here's a hint from [@DF04, number 7.2.13].
+
+- *Given.* Let $\sK$ be one of the conjugacy classes (which will be denoted $\sK_1, \ldots, \sK_r$) of the finite group $G$. Let $R$  be a commutative ring with unity. Consider the group ring $RG$, with center $Z = Z(RG)$.
+- *To demonstrate.* (a) $K = \sum_{k_i \in \sK} k_i \in Z$. (b) $\alpha \in Z$ if and only if $\alpha = \sum a_iK_i$ for $a_i \in R$.
+- *Demo.* 
+
+    (a) Each element $\sum r_gg \in RG$ commutes with $K$ if and only if $gK = Kg$ for all $g \in G$. The conjugation action of $G$ on its powerset $\sP(G)$ is an inner automorphism on elements, so the conjugacy class $\sK$ is fixed. Because $G$ is finite, conjugation permutes the elements in $\sK$. Thus $gKg^{-1} = K$. 
+
+    (b) \fore Suppose $\alpha = \sum a_iK_i$. Then $$\sum_i a_iK_i\sum_g r_g g = \sum_i \left( \sum_g r_g a_i K_i g \right) = \sum_i \left( \sum_g r_g a_i g K_i \right) = \sum_g r_g g\sum_i a_iK_i$$ so $\alpha \in Z$. \back Say $\alpha \in Z$. We can write $\alpha$ as the sum over conjugacy classes $\{k_{n_i}\}$ of elements in $G$: $$\alpha = \sum_i \left(\sum_{n_i} a_{n_i} k_{n_i}\right).$$ For each $i$, $G$ acts transitively on by conjugation on $\{k_{n_i}\}$. Fix $i$. For all $n_i$, transitivity of conjugation implies $a_{n_i} = a_i$ for some $a_i \in R$. We conclude $\alpha = \sum a_i K_i$.
+
+### Isomorphism theorems and categorification
+
+A definition and examples from [“What is Categorification? | The n-Category Café”](https://golem.ph.utexas.edu/category/2008/10/what_is_categorification.html). Retrieved January 25, 2019.
+
+DEF: To categorify a set $S$ is to find a category $C$ and a function $p!\mathrm{Decat}(C) \to S$. What's $\mathrm{Decat}$? ... It's the the set of isomorphism classes of objects of $C$.
+
+EX: How to categorify the natural numbers with the category of finite sets? ... Use cardinality.
+
+EX: How to categorify the natural numbers with the category of finite-dimensional vector spaces? ... Use dimension.
+
+EX: If we categorify the natural numbers to the category of finite sets, addition gets categorified to ... disjoint union.
+
+EX: How did Emmy Noether categorify the concept of Betti number? ... With $\NN$, the category of finitely generated abelian groups, and the rank function.
 
