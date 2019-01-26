@@ -14,6 +14,7 @@ nonumbering: true
 \providecommand{\FF}{\mathbf{F}}
 \providecommand{\sK}{\mathscr{K}}
 \providecommand{\sM}{\mathscr{M}}
+\providecommand{\sP}{\mathscr{P}}
 
 ## MATH 6140 Syllabus 
 
@@ -384,7 +385,7 @@ Green asked: what's the dimension of the center of $\CC G$? Here's a hint from [
 
 A definition and examples from [“What is Categorification? | The n-Category Café”](https://golem.ph.utexas.edu/category/2008/10/what_is_categorification.html). Retrieved January 25, 2019.
 
-DEF: To categorify a set $S$ is to find a category $C$ and a function $p!\mathrm{Decat}(C) \to S$. What's $\mathrm{Decat}$? ... It's the the set of isomorphism classes of objects of $C$.
+DEF: To categorify a set $S$ is to find a category $C$ and a function $p \colon \mathrm{Decat}(C) \to S$. What's $\mathrm{Decat}$? ... It's the the set of isomorphism classes of objects of $C$.
 
 EX: How to categorify the natural numbers with the category of finite sets? ... Use cardinality.
 
