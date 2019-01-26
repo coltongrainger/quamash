@@ -6,6 +6,8 @@ nonumbering: true
 ---
 
 \setcounter{section}{-1}
+
+$$
 \providecommand{\ZZ}{\mathbf{Z}}
 \providecommand{\RR}{\mathbf{R}}
 \providecommand{\CC}{\mathbf{C}}
@@ -13,6 +15,7 @@ nonumbering: true
 \providecommand{\FF}{\mathbf{F}}
 \providecommand{\sK}{\mathscr{K}}
 \providecommand{\sM}{\mathscr{M}}
+$$ 
 
 ## MATH 6140 Syllabus 
 
