@@ -9,6 +9,10 @@ nonumbering: true
 \providecommand{\ZZ}{\mathbf{Z}}
 \providecommand{\RR}{\mathbf{R}}
 \providecommand{\CC}{\mathbf{C}}
+\providecommand{\NN}{\mathbf{N}}
+\providecommand{\FF}{\mathbf{F}}
+\providecommand{\sK}{\mathscr{K}}
+\providecommand{\sM}{\mathscr{M}}
 
 ## MATH 6140 Syllabus 
 
@@ -339,6 +343,8 @@ In an $F[x]$-module, the $F$-subspaces are not necessarily $F[x]$-submodules. He
 - *To demonstrate.* Every subspace of $V$ is an $F[x]$-submodule for this $T$.
 - *Demo.* Say $\RR^2$ is an $\RR[x]$-module with the action of $x \in \RR[x]$ given by $$x.v = Av \quad \text{ where } \quad A = \begin{bmatrix} -1 & 0 \\ 0 & -1\end{bmatrix} \quad \text{ w.r.t. the standard basis.}$$ The property of being an $\RR[x]$-submodule is stronger than that of being an $\RR$-linear subspace, so the submodules of $\RR^2$ are all subspaces. Conversely, if $V \subset \RR^2$ is a subspace, then $V$ is an abelian group. For any $v \in V$, the image of $v$ under the action of $x$ is $x.v = -v$. So $V$ is stable under the linear transformation; whence $V$ is an $\RR[x]$-submodule.
 
+Lecture ended with "the standard yoga of defining a quotient", which, for now, is best left to one's imagination. (TODO define quotients to satisfaction.)
+
 ### Algebras
 
 To list three definitions for algebras. (It's convenient to assume in this setting that both the rings and the ring homs are unital.)
@@ -370,6 +376,8 @@ Green asked: what's the dimension of the center of $\CC G$? Here's a hint from [
     (a) Each element $\sum r_gg \in RG$ commutes with $K$ if and only if $gK = Kg$ for all $g \in G$. The conjugation action of $G$ on its powerset $\sP(G)$ is an inner automorphism on elements, so the conjugacy class $\sK$ is fixed. Because $G$ is finite, conjugation permutes the elements in $\sK$. Thus $gKg^{-1} = K$. 
 
     (b) \fore Suppose $\alpha = \sum a_iK_i$. Then $$\sum_i a_iK_i\sum_g r_g g = \sum_i \left( \sum_g r_g a_i K_i g \right) = \sum_i \left( \sum_g r_g a_i g K_i \right) = \sum_g r_g g\sum_i a_iK_i$$ so $\alpha \in Z$. \back Say $\alpha \in Z$. We can write $\alpha$ as the sum over conjugacy classes $\{k_{n_i}\}$ of elements in $G$: $$\alpha = \sum_i \left(\sum_{n_i} a_{n_i} k_{n_i}\right).$$ For each $i$, $G$ acts transitively on by conjugation on $\{k_{n_i}\}$. Fix $i$. For all $n_i$, transitivity of conjugation implies $a_{n_i} = a_i$ for some $a_i \in R$. We conclude $\alpha = \sum a_i K_i$.
+
+## Week 2
 
 ### Isomorphism theorems and categorification
 
