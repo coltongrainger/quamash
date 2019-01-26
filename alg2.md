@@ -15,6 +15,9 @@ nonumbering: true
 \providecommand{\sK}{\mathscr{K}}
 \providecommand{\sM}{\mathscr{M}}
 \providecommand{\sP}{\mathscr{P}}
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\emptyset}{\varnothing}
 
 ## MATH 6140 Syllabus 
 
@@ -134,9 +137,9 @@ prelim problem | topic | DF04 chapter
         - Hilbert basis theorem
     - Nullstellensatz
 
-## Week 1
+## Week 1, Modules
 
-### Intuition for modules
+### Intuition
 
 From Herstein.
 
@@ -170,7 +173,7 @@ $R$, a ring | $M$, a module | also scalar multiplication
 
 (A fourth item could go on this list, but I'm not sure where. How do [groups with operators](https://en.wikipedia.org/wiki/Group_with_operators) resemble vector spaces? "A group with operators is also a mapping $\Omega\rightarrow\operatorname{End}_{\mathbf{Grp}}(G),$ where $\operatorname{End}_{\mathbf{Grp}}(G)$ is the set of group endomorphisms of $G$.")
 
-### Module axioms
+### Axioms
 
 We want *four conditions* for the (left) action of a ring $R$ on a abelian group $M$. With $m, m_1, m_2$ arbitrary in $M$ and $r, r_1, r_2$ arbitrary in $R$ it should be that
 
@@ -186,7 +189,7 @@ EX: Say $S$ is entire and $\phi \colon R \to S$ is a ring homomorphism. What is 
 
 Right modules are just left modules in a mirror. In particular, left and right modules coincide when the ring $R$ acting is commutative.
 
-### Canonical examples of modules
+### Basic examples
 
 To list archetypical rings that we'll see everywhere acting on abelian groups:
 
@@ -219,7 +222,7 @@ Recall that extending linearly is just appealing to the universal property of fr
 
 Prior to a discussion of $F[x]$-modules, we really ought to define the maps between modules as objects. It's foreseeable that some maps won't be onto, so we'd also better define our subobjects.
 
-### Restricting scalars changes the category
+### About the scalars
 
 PROP: Suppose $M$ is a left $R$-module. Say $\phi \colon S \to R$ is a unital ring homomorphism. We have $M$ as an $S$-module by defining $S \times M \to M$ such that ... $s.m = \phi(s).m$.
 
@@ -284,7 +287,7 @@ We'll have to develop a sufficiently general theory for $R$-linear maps between 
 
 Sam asked: How far is it possible to demonstrate that $R[x]$-modules for a commutative ring $R$ have the same properties as $F[x]$-modules? (See <https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps> for an alternative development of the ring of fractions, which seems to build machinery to work with $R$-linear combinations, dropping the condition that $F$ is a field.) TODO
 
-### Aside for finite fields
+### Preview of finite fields
 
 Green posed:
 
@@ -298,7 +301,7 @@ To borrow the statement of the problem from <https://math.stackexchange.com/ques
 
 Green argued: any field is a vector space over any of its subfields. We'll eventually show a field of order $p^n$ exists for all $p$ prime and $n \in \NN$, and that each field of order $p^n$ is unique.
 
-### Modules as dual objects
+### Modules and duality
 
 After my office-mate Ulrich gave me a little introduction to the interplay between Gabor transforms and locally compact abelian groups, I think it's safe to quote [“module in nLab”](https://ncatlab.org/nlab/show/module). Retrieved January 26, 2019. “Motivation for and role of modules: generalized vector bundles”:
 
@@ -312,28 +315,7 @@ After my office-mate Ulrich gave me a little introduction to the interplay betwe
 > 
 > 1. the Gelfand duality theorem says that sending a compact topological space $X$ to its C-star algebra $C(X,\mathbb{C})$ of continuous functions with values in the complex numbers constitutes an equivalence of categories between compact topological spaces and the opposite category of commutative $C^\ast$-algebras;
 
-### Constructions in the category of $R$-modules
-
-EX! For a unital ring $R$, we can view the abelian group $\bigoplus_1^n R := R^n$ as a left $R$-module by ... defining $r.(a_1, \ldots, a_n) = (r.a_1, \ldots, r.a_n)$.
-
-To borrow three definitions from <https://ncatlab.org/nlab/show/rank>.
-
-DEF! For a unital ring $R$ and an $R$-module $M$, we say that $M$ has a basis $\{e_i\} \subset M$ if ... for each $m \in M$ there's a unique set $\{\alpha_i\} \subset R$ such that $\alpha_i = 0$ for all but finitely many $i$ and $m = \sum_i \alpha_i e_i$.
-
-DEF! If an $R$-module $M$ has a basis, it's called ... a free module (over $R$). 
-
-DEF! If the cardinality of a basis $\{e_i\}$ for an $R$-module $M$ is independent of choice of basis, then $\abs{\{e_i\}}$ called ... the rank of $M$ over $R$.
-
-DEF! A subset $S$ of a module $M$ is linearly independent (over $R$) if whenever we have a linear combination $\sum_{x \in S} r_x x$ that's equal to zero, then ... $r_x = 0$ for all $x \in S$. [@Lan02, ch. III.3]
-
-Green cautioned us not to assume we would always be working with invariant basis number rings, and, in the case that we are, to at least be wary of zero divisors when finding unique $R$-linear combinations. He mentioned that finding such combinations is easy when the ring $R$ is an integral domain, as then we can work in the field of fractions. (See also <https://math.stackexchange.com/questions/220186/ideas-of-linear-independence-in-the-context-of-modules-and-vector-spaces>.)
-
-EX! If we consider $\ZZ$ as a module over itself, what's a set that spans $\ZZ$ but does not contain a basis? ... $\{2,3\}$.
-
-EX! With $\ZZ$ as a module over itself, what's a linearly independent set that cannot be extended to a basis? ... $\{2\}$.
-
-
-EX! List the linearly independent subsets of $\ZZ/n\ZZ$ as a $\ZZ$-module. ... Just $\emptyset$.
+### Submodules
 
 SLOGAN! A submodule is a subgroup that's ... stable under the ring action.
 
@@ -366,7 +348,33 @@ PROP! A subset $G$ generates an $R$-module $M$ iff there's a surjection ... $$\b
 
 DEF! A module $M$ is said to be finitely generated (or of finite type, or finite over $R$) if ... it has a finite number of generators.
 
-Lecture ended with "the standard yoga of defining a quotient". 
+### Direct sums
+
+Here's a finite coproduct of modules. (And it should feel like Euclidean space.)
+
+EX! For a unital ring $R$, we can view the abelian group $\bigoplus_1^n R := R^n$ as a left $R$-module by ... defining $r.(a_1, \ldots, a_n) = (r.a_1, \ldots, r.a_n)$.
+
+Regarding "rank", we'll borrow definitions from <https://ncatlab.org/nlab/show/rank>.
+
+DEF! For a unital ring $R$ and an $R$-module $M$, we say that $M$ has a basis $\{e_i\} \subset M$ if ... for each $m \in M$ there's a unique set $\{\alpha_i\} \subset R$ such that $\alpha_i = 0$ for all but finitely many $i$ and $m = \sum_i \alpha_i e_i$.
+
+DEF! If an $R$-module $M$ has a basis, it's called ... a free module (over $R$). 
+
+DEF! If the cardinality of a basis $\{e_i\}$ for an $R$-module $M$ is independent of choice of basis, then $\abs{\{e_i\}}$ called ... the rank of $M$ over $R$.
+
+DEF! A subset $S$ of a module $M$ is linearly independent (over $R$) if whenever we have a linear combination $\sum_{x \in S} r_x x$ that's equal to zero, then ... $r_x = 0$ for all $x \in S$. [@Lan02, ch. III.3]
+
+Green cautioned us not to assume we would always be working with invariant basis number rings, and, in the case that we are, to at least be wary of zero divisors when finding unique $R$-linear combinations. He mentioned that finding such combinations is easy when the ring $R$ is an integral domain, as then we can work in the field of fractions. (See also <https://math.stackexchange.com/questions/220186/ideas-of-linear-independence-in-the-context-of-modules-and-vector-spaces>.)
+
+EX! If we consider $\ZZ$ as a module over itself, what's a set that spans $\ZZ$ but does not contain a basis? ... $\{2,3\}$.
+
+EX! With $\ZZ$ as a module over itself, what's a linearly independent set that cannot be extended to a basis? ... $\{2\}$.
+
+EX! List the linearly independent subsets of $\ZZ/n\ZZ$ as a $\ZZ$-module. ... Just $\emptyset$.
+
+### Factor modules
+
+Lecture ended with "the standard yoga" of defining the quotient in the category of modules.
 
 IDEA! The ring action $r.(m +N)$ of $R$ on the equivalence classes $M/N$ is well defined iff .. $N$ is a submodule of $M$.
 
@@ -375,6 +383,18 @@ IDEA! The ring action $r.(m +N)$ of $R$ on the equivalence classes $M/N$ is well
 PROP! Let $M$ be a module with submodule $N$. The canonical additive group homomorphism $$f \colon M \to M/N$$ is also a module homomorphism; it is universal in the category of ... homomorphisms of $M$ whose kernel contains $N$. [@Lan02, ch III.3]
 
 We stated the rank-nullity theorem for maps tween finite dimensional vector spaces, then proved it by decategorifying the "ammo built up" in the definition of a quotient module.
+
+From [“What is Categorification? | The n-Category Café”](https://golem.ph.utexas.edu/category/2008/10/what_is_categorification.html). Retrieved January 25, 2019.
+
+DEF: To categorify a set $S$ is to find a category $C$ and a function $p \colon \mathrm{Decat}(C) \to S$. What's $\mathrm{Decat}$? ... It's the set of isomorphism classes of objects of $C$.
+
+EX: How to categorify the natural numbers with the category of finite sets? ... Use cardinality.
+
+EX: How to categorify the natural numbers with the category of finite-dimensional vector spaces? ... Use dimension.
+
+EX: If we categorify the natural numbers to the category of finite sets, addition gets categorified to ... disjoint union.
+
+EX: How did Emmy Noether categorify the concept of Betti number? ... With $\NN$, the category of finitely generated abelian groups, and the rank function.
 
 ### Algebras
 
@@ -410,17 +430,11 @@ Green asked: what's the dimension of the center of $\CC G$? Here's a hint from [
 
 ## Week 2
 
-### Isomorphism theorems and categorification
+### Homomorphisms
 
-A definition and examples from [“What is Categorification? | The n-Category Café”](https://golem.ph.utexas.edu/category/2008/10/what_is_categorification.html). Retrieved January 25, 2019.
+My god it's time to define homomorphisms.
 
-DEF: To categorify a set $S$ is to find a category $C$ and a function $p \colon \mathrm{Decat}(C) \to S$. What's $\mathrm{Decat}$? ... It's the the set of isomorphism classes of objects of $C$.
+### Isomorphism theorems
 
-EX: How to categorify the natural numbers with the category of finite sets? ... Use cardinality.
 
-EX: How to categorify the natural numbers with the category of finite-dimensional vector spaces? ... Use dimension.
-
-EX: If we categorify the natural numbers to the category of finite sets, addition gets categorified to ... disjoint union.
-
-EX: How did Emmy Noether categorify the concept of Betti number? ... With $\NN$, the category of finitely generated abelian groups, and the rank function.
 
