@@ -440,7 +440,23 @@ Green mentioned that so far we're working in *concrete categories*. E.g., catego
 
 DEF! By a module-homomorphism one means a map $f \colon M \to M'$ of one module into another (over the same ring $R$), which is ... an additive group homomorphism, and such that $f(rx) = rf(x)$ for all $r \in R$ and $x \in M$. [@Lan02, ch. III.1]
 
-To call attention to the parent ring of the category, we may also refer to module homomorphisms as $R$-linear maps, or $R$-homomorphisms.
+
+To call attention to the parent ring of the category, we may also refer to module homomorphisms as $R$-linear maps, or $R$-homomorphisms. For example, it's necessary to distinguish $F$-linear and $F[x]$-linear maps. Say that $M, N$ are $F$-vector spaces and we're given $F$-linear endomorphisms 
+\begin{align*}
+S &\colon M \to M, \, S(m) =: x.m\\
+T &\colon N \to N, \, T(n) =: x.n
+\end{align*}
+In terms of $S$ and $T$, what should we expect from an $F[x]$-homomorphism $\phi \colon M \to N$? Green argued that $\phi$ will have to "intertwine the action of the ring", e.g., $$\phi((x^3 + x).m) = T^3(\phi(m)) + T(\phi(m)).$$ 
+
+PROP! If $\phi \colon M \to N$ is a module homomorphism between $F[x]$-modules $M$ and $N$ with endomorphisms $S$ and $T$ respectively, sketch the commutative square for $\phi$. ... $$\begin{CD} M @>{\phi}>> N\\ @VV{S}V @VV{T}V\\ M @>{\phi}>>N \end{CD}$$
+
+(Knowing the square commutes, we might also see $M$ and $N$ sequences of vector spaces with $S$ and $T$ transition maps, such that $\phi$ is a homomorphism between the sequences.)
+
+Green mentioned that in algebra, inverses of bijective homomorphisms are usually homomorphisms in turn, whereas in $\mathsf{Top}$ the inverse of a continuous bijection need not be continuous. Whence:
+
+DEF! A module isomorphism is a ... bijective module  homomorphism (as the inverse function will always be a module hom).
+
+PROP! A module hom $\phi \colon M \to N$ between $F[x]$-modules with endomorphisms $S$ and $T$, is an isomorphism if and only if ... $\phi^{-1} \circ T \circ \phi = S$.
 
 ### Isomorphism theorems
 
