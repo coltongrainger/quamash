@@ -7,6 +7,13 @@ bibliography: /home/colton/coltongrainger.bib
 
 \setcounter{section}{-1}
 
+\providecommand{\ZZ}{\mathbf{Z}}
+\providecommand{\RR}{\mathbf{R}}
+\providecommand{\CC}{\mathbf{C}}
+\providecommand{\FF}{\mathbf{F}}
+\providecommand{\sM}{\mathsf{M}}
+\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
 
 ## MATH 6230 Syllabus
 
@@ -127,14 +134,6 @@ Here's an outline for the geometry half of CU's topology/geometry preliminary ex
 
 ## Week 1
 
-\providecommand{\ZZ}{\mathbf{Z}}
-\providecommand{\RR}{\mathbf{R}}
-\providecommand{\CC}{\mathbf{C}}
-\providecommand{\FF}{\mathbf{F}}
-\providecommand{\sM}{\mathsf{M}}
-\providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
-\providecommand{\norm}[1]{\left\lVert #1 \rVert\right}
-
 For the first lecture, there are about 20 people in class, at noon-time in the Engineering Center.
 
 Clelland's goal is to give us practice working with tensors and differential forms.
@@ -142,7 +141,7 @@ Clelland's goal is to give us practice working with tensors and differential for
 - As applications, we'll study vector fields & vector bundles.
 - Will we discuss [connections](https://en.wikipedia.org/wiki/Connection_(mathematics))? Perhaps not by May, but it's open ended how we progress through Lee.
 
-### Review of linear algebra
+### Change of bases
 
 IDEA: (Basis) Let $V$ be a real vector space $V$ of dimension $n$. Any vector in $V$ can be expressed as a linear combination of the vectors $\{e_1, \ldots, e_n\}$ iff ... that set is a basis for $V$.
 
@@ -154,7 +153,7 @@ A: The coefficients $\tilde{a}^i$ of $v = a^i e_i$ relative to the new basis $\t
 
 Roughly speaking, a vector exhibits a rank $1$ tensor. It's rank $1$ because when we express a vector in terms of a basis, each component is of index $1$. Higher ranked tensors require us to make explicit how components are transformed when one changes bases for the space.
 
-DEF: (Naive) A covariant $k$-tensors on the finite dimensional real vector space $V$ is ... a real-valued multilinear function of $k$ elements of $V$: $$\alpha \colon \underbrace{ V \times \ldots \times V }_\text{$k$ copies} \to \RR.$$
+DEF: (Naive) A covariant $k$-tensor on the finite dimensional real vector space $V$ is ... a real-valued multilinear function of $k$ elements of $V$: $$\alpha \colon \underbrace{ V \times \ldots \times V }_\text{$k$ copies} \to \RR.$$
 
 EX: The (row vector of) basis vectors $$e = [e_1 | \ldots | e_n]$$ and the (column vector of) coefficients $$a = \begin{bmatrix} a^1 \\ \vdots \\ a^n\end{bmatrix}$$ are basis-dependent, but the product ... $v = ea$ is independent of basis.
 
@@ -182,7 +181,7 @@ To give "intuition" as to why a linear transformation should be a rank $2$ tenso
 - the upper index $i$ with range $1 \le i \le n$ corresponds to $W$, while
 - the lower index $j$ with range $1 \le j \le m$ corresponds to $V$.
 
-### Einstein Notation
+### Einstein notation
 
 From comments to a [“frustrating experience about differential geometry”](https://math.stackexchange.com/questions/1011835/frustrating-experience-about-differential-geometry) on Mathematics Stack Exchange. 
 
@@ -221,9 +220,9 @@ I'd like to know more about "raising and lowering indices" given, e.g., a metric
 - <https://en.wikipedia.org/wiki/Metric_tensor>
 - <https://en.wikipedia.org/wiki/Raising_and_lowering_indices>
 
-### Review of differential calculus
+### Differential calculus in euclidean spaces
 
-Wednesday's lecture assumed **finite dimensional normed vector spaces**, presumably over $\RR$ or $\CC$. I'll gloss what we covered in $\RR^n$ as a specific setting.
+Wednesday's lecture assumed *finite dimensional normed vector spaces*, presumably over $\RR$ or $\CC$. To gloss what we covered.
 
 - We defined the total derivative, variously denoted $DF(a)$, $DF\vert_a$, $dF_a$ (no! this is too close to $\partial_a F$), or $(F_*)_a$.
 - We wrote out the Jacobian.
@@ -234,11 +233,23 @@ Wednesday's lecture assumed **finite dimensional normed vector spaces**, presuma
   - classes of continuously differentiable functions by way of the existence of partials
   - class $C^k$ diffeomorphisms, also local diffeomorphisms
 
-We stated the inverse function theorem.
+DEF! We say a bijection $F \colon U \to V$ between open sets $U$ and $V$ in $\RR^n$ is a $C^k$-diffeomorphism when ... both $F$ and $F^{-1}$ are $k$-times continuously differentiable.
 
-In Friday's lecture we stated the implicit function theorem.
+DEF! If $F$ is bijective and has a smooth inverse map, it is called ... a ($C^\infty$) diffeomorphism.
 
-TODO reference proofs
+
+- What's a diffeomorphism of class $C^k$ that's not $C^{k+1}$? 
+  - Define a function by integrating $k$-times a continuous, nowhere differentiable function.
+  - To borrow from <https://math.stackexchange.com/questions/359948/>.
+  - Let the Cantor staircase by $u_0(x)$.
+  - Define $$u_{k+1}(x) = \frac{\int_0^x u_k(s)\, ds}{\int_0^1 u_k(s)\, ds}.$$
+  - $u_k$ is a bijective transformation of $[0,1]$ that's $C^k$ but not $C^{k+1}$.
+- Can you give an example of a non-homeomorphism between $X$ and $Y$  in $\mathsf{Top}$ that's a continuous bijection? 
+  - Try the identity set map out of a discrete topology onto any strictly coarser topology.
+
+DEF! We say a map $F \colon U \subset \RR^m \to \RR^n$ is a local diffeomorphism when ... for all points $p$ in open $U$, there's a neighborhood $p \in U_p \subset U$ such that the restriction $F\vert_{U_p}$ is a diffeomorphism.
+
+THM! Say $U \subset \RR^n$ and $V \subset \RR^m$ are open and $F \colon U \to V$ is a diffeomorphism. Why must $m =n$? ... Specifically, $F$ is a homeomorphism. Apply the domain invariance theorem.
 
 ### Banach spaces and the smooth chain rule
 
@@ -259,7 +270,7 @@ TODO reference proofs
 
 **Remark.** $\lambda_a$ is uniquely determined by $f$ and $a$. We say $\lambda_a$ is the *derivative of $f$ at $a$* (also called the *total* or *Fréchet* derivative of $f$ at $a$). We denote $\lambda_a$ by $\partial f(a)$, $Df(a)$, etc.
 
-If $f$ is differentiable at each $a \in U$, the we have a map $$Df : U \to L(E, F), \quad a \mapsto Df(a),$$ which we say is *the derivative function of $f$* (known also as the *Fréchet*, or *total* derivative of $f$).
+If $f$ is differentiable at each $a \in U$, then we have a map $$Df : U \to L(E, F), \quad a \mapsto Df(a),$$ which we say is *the derivative function of $f$* (known also as the *Fréchet*, or *total* derivative of $f$).
 
 **Proposition.** (Chain rule) Say $E$, $F$, and $G$ are Banach spaces and we've maps defined on open subsets $$U \subset E \xrightarrow{f} V \subset F \xrightarrow{g} G.$$ If $f$ and $g$ are differentiable at $a \in U$ and $f(a) \in V$ (resp.), then $g \circ f$ is differentiable at $a$ with derivative $$\underbrace{D(g \circ f)(a)}_\text{in $L(E, G)$} = \underbrace{Dg(f(a))}_\text{in $L(F,G)$} \underbrace{Df(a)}_\text{in $L(E, F)$}.$$
 
@@ -294,7 +305,7 @@ iii. Suppose $U$ is open in $\RR^n$ and $f = (f^1, \ldots, f^m) \colon U \to \RR
 
 **Definition.** (Continuously differentiable) Let $U$ be open in a Banach space $E$ and say $f \colon U \to F$ is differentiable. When the derivative function $Df \colon U \to L(E, F)$ is continuous, we say that $f$ is *continuously differentiable*, or of *class $C^1$*. To define class $C^p$, we need to inductively define higher total derivatives. The $p$th derivative of $f$ is $D(D^{p-1}f)$, which is a map $$D^p f \colon U \to L\big(E, L(E, \ldots, L(E,F), \ldots )\big) \cong L^p(E, F) \quad \text{by isometry.}$$ A maps is said to be of *class $C^p$* if its $k$th derivative exists $1 \le k \le p$.
 
-**Smooth Chain Rule (Base Case).** If $U \xrightarrow{f} V \xrightarrow{g} V \xrightarrow G$ are maps of class $C^1$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^1$. 
+**Smooth Chain Rule (Base Case).** If $U \xrightarrow{f} V \xrightarrow{g} G$ are maps of class $C^1$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^1$. 
 
 \pf Consider a point $a \in U$. By the chain rule, defining $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$ (as composition of linear maps), the following diagram commutes.
 
@@ -308,14 +319,49 @@ Since $\phi$ is continuous in each coordinate, $\phi$ is a continuous. At the sa
 $$\frac{\abs{\psi(a^1, \ldots, h^i, \ldots, h^j, \ldots, a^r)}}{(\abs{h^1, \ldots, h^r)}} \le \frac{\abs{\psi} \cdot \text{const.} \cdot \abs{h^i}\abs{h^j}}{\abs{h^\text{max}}} \to 0.$$ 
 So we have a continuous $(r-1)$-multilinear map $$D\psi(a) \colon h \mapsto \sum_{i=1}^r \psi(a^1, \ldots, h^i, \ldots, a^r),$$ which implies that the map $D\psi: a \mapsto D\psi(a)$ is $r$-multilinear and continuous as well. Given continuous bilinear maps as a base case, by induction on $r$ we've show all continuous $r$-multilinear maps are infinitely differentiable. 
 
-**Smooth Chain Rule (Inductive Step).** If $U \xrightarrow{f} V \xrightarrow{g} V \xrightarrow G$ are maps of class $C^p$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^p$. 
+**Smooth Chain Rule (Inductive Step).** If $U \xrightarrow{f} V \xrightarrow{g} G$ are maps of class $C^p$ between open sets of Banach spaces $E, F$, and $G$, then the composite $g \circ f$ is of class $C^p$. 
 
 \pf Let our inductive hypothesis be that the composite of any two compatible $C^{p-1}$ maps on Banach spaces is also $C^{p-1}$. Assume now that $f \in C^p(U, F)$ and $g \in C^p(V,G)$. Say a point $a \in U$. By the chain rule, defining as before $\phi (a) = (Dg(f(a)), Df(a))$ and $\psi(A, B) = AB$, the following diagram commutes.
 
 <a href="http://presheaf.com/?d=d2h1311b2v3p4u5w4n6u3e12e386r2v"><img src="http://presheaf.com/cache/d2h1311b2v3p4u5w4n6u3e12e386r2v.png" title="click to go to presheaf.com for editing"/></a>
 
-By assumption, the map $a \mapsto Df(a)$ is in $C^{p-1}(U, L(E,F))$ and $b \mapsto Dg(b)$ is in $C^{p-1}(V, L(F, G))$. By inductive hypotheses, the composition $a \mapsto f(a) \mapsto Dg(f(a))$ of $C^{p-1}$ maps is in $C^{p-1}(U, L(E,G))$. By its coordinates $\phi$ is in $C^{p-1}(U, L(E, F) \times L(F, G))$. By lemma, the continuous bilinear map $\psi$ is in $C^\infty(L(E, F) \times L(F, G), L(E,G))$. By the inductive hypothesis, then $\psi \circ \phi$ is in $C^{p-1}(U, L(E,G))$. so $D(g \circ g)$ is of class $C^{p-1}$, and we conclude $g \circ f$ is of class $C^p$. 
+By assumption, the map $a \mapsto Df(a)$ is in $C^{p-1}(U, L(E,F))$ and $b \mapsto Dg(b)$ is in $C^{p-1}(V, L(F, G))$. By inductive hypothesis, the composition $a \mapsto f(a) \mapsto Dg(f(a))$ of $C^{p-1}$ maps is in $C^{p-1}(U, L(E,G))$. By its coordinates $\phi$ is in $C^{p-1}(U, L(E, F) \times L(F, G))$. By lemma, the continuous bilinear map $\psi$ is in $C^\infty(L(E, F) \times L(F, G), L(E,G))$. By the inductive hypothesis, then $\psi \circ \phi$ is in $C^{p-1}(U, L(E,G))$. so $D(g \circ g)$ is of class $C^{p-1}$, and we conclude $g \circ f$ is of class $C^p$. 
+
+### Inverse function theorem
+
+SLOGAN! If the derivative is invertible, the mapping is ... locally invertible. [@HH15, ch. 2.10]
+
+THM! (Short version) If a mapping $f$ is continuously differentiable, and its derivative is invertible at some point $x_0$, then ... $f$ is locally invertible, with differentiable inverse, in some neighborhood of the points $f(x_0)$.
+
+THM! (Clelland) Say $f \colon U \subset \RR^n \to \RR^n$ is smooth, with $x_0 \in U$ at which the approx $Df(x_0)$ is invertible. It follows: (i) there's a connected neighborhood $V$ about $f(x_0)$ with a smooth map $g \colon V \to U$ that $f$ inverts; (ii) there's a connected neighborhood $B \subset g(V)$ where $f$ restricts to a diffeomorphism $f\vert_B$.
+
+PROP! The derivative of the identity is the identity, so in the statement of the inverse function theorem for a map $f$ with local inverse $g$, at a point $y$ in the domain of $g$, the chain rule implies ... $[Dg(y)] = [Df(g(y))]^{-1}$.
+
+IDEA! To prove the inverse function theorem, we will show that if the derivative of $f$ satisfies some Lipschitz condition, then ... Kantorovich's theorem applies, and Newton's method can be used to find the inverse function. [@HH15, ch. 2.10]
+
+CORO! Say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. How can we describe $F$ as a morphism in $\mathsf{Top}$? ... $F$ maps open sets to open sets.
+
+CORO! Again, say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. If $F$ is injective, then (this should feel like a universal property) ... $F \colon U \to F(U)$ is a diffeomorphism.
+
+### Implicit function theorem
+
+TODO
 
 ### Topological manifolds
 
-We'll give properties of topological manifolds, then add structure until we've a sufficiently interesting category of "smooth manifolds" with smooth maps as morphisms.
+Here's weak motivation:
+
+- How can we apply the techniques of linear algebra to a study of curved surfaces?
+- Which is easier: working with torsion elements in modules or patching together coordinate charts?
+- Where do we have more leverage? Algebra or calculus?
+
+epistemology | definition technique | example
+--- | --- | ---
+by construction | parameterization | (1879 Clifford Seeing and Thinking) When a point moves along a line, that line is the locus of the successive positions of the moving point.
+by restriction | satisfying a set of equations | (1695 W. Alingham Geom. Epit.) The delineating of any Geometrick Scheme or Figure. 
+
+We set out the properties of topological manifolds (pasting topological vector spaces together), then add structure until we have a category of "smooth manifolds" with smooth maps as morphisms.
+
+### Smooth structures
+
+<https://en.wikipedia.org/wiki/Exotic_R4>
