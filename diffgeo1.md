@@ -343,25 +343,63 @@ CORO! Say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant
 
 CORO! Again, say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. If $F$ is injective, then (this should feel like a universal property) ... $F \colon U \to F(U)$ is a diffeomorphism.
 
+<!---
 ### Implicit function theorem
 
 TODO
+--->
 
 ### Topological manifolds
 
-Here's weak motivation:
-
-- How can we apply the techniques of linear algebra to a study of curved surfaces?
-- Which is easier: working with torsion elements in modules or patching together coordinate charts?
-- Where do we have more leverage? Algebra or calculus?
+How to apply linear algebra to study of curved surfaces?
 
 epistemology | definition technique | example
 --- | --- | ---
 by construction | parameterization | (1879 Clifford Seeing and Thinking) When a point moves along a line, that line is the locus of the successive positions of the moving point.
 by restriction | satisfying a set of equations | (1695 W. Alingham Geom. Epit.) The delineating of any Geometrick Scheme or Figure. 
 
-We set out the properties of topological manifolds (pasting topological vector spaces together), then add structure until we have a category of "smooth manifolds" with smooth maps as morphisms.
+The present goal is to set out properties of topological manifolds (intuitively to be thought of as open sets of topological vector spaces pasted together). We'll then add structure until we have a category of so called *smooth manifolds* with morphisms given by *smooth maps*.
 
-### Smooth structures
+### Other structures
+
+Here're results from a *very* sloppy survey of "non-smooth" structures on topological manifolds, mostly inspired by <https://mathoverflow.net/questions/123472/are-there-non-compact-non-smoothable-manifolds>:
+
+> > Are there any non-compact, non-smoothable manifolds?
+>
+> I think Kervaire's example embeds into Euclidean space... maybe you could take a small open neighborhood (that deformation retracts back down to the original)? The obstruction is homotopy invariant, so that should do it. – Dylan Wilson Mar 3 '13 at 14:49
+> 
+> A small open neighborhood of anything in the Euclidean space does admit a smooth structure:)) – Serge Lvovski Mar 3 '13 at 15:31
+>
+> eek! what has happened to me? :P – Dylan Wilson Mar 3 '13 at 22:53
+
+From [Non-smoothable manifold. Yu. I. Rudyak](http://www.encyclopediaofmath.org/index.php?title=Non-smoothable_manifold&oldid=17941)
+
+IDEA! A smoothing of a piecewise-linear manifold $X$ is ... a piecewise-linear isomorphism $f \colon M \to X$ where $M$ is a smooth manifold.
+
+From <https://math.stackexchange.com/questions/846972/triangulations-pl-triangulations-and-related-conecpts>.
+
+DEF! A triangulation of a topological space $X$ is ... a simplicial complex $K$, homeomorphic to $X$, together with a homeomorphism $h \colon K \to X$.
+
+PROP! Each smooth manifold has a triangulation, even a ... piecewise smooth triangulation.
+
+DEF! A piecewise linear map from a simplicial complex $K$ to $\mathbb{R}^n$ is a map such that ... for some subdivision $K'$ of $K$, $f$ is (affine) linear on each simplex of $K'$.
+
+In reply to <https://mathoverflow.net/questions/27656/piecewise-smooth-manifolds>
+
+> We know about the existence of topological (Top), differentiable (Diff) and piecewise-linear (PL) manifolds, and such things that, say, in four dimensions PL=Diff, but PL is not equal to Top. The question is: do there exist piecewise-smooth manifolds? Are they equivalent to something in some dimensions?
+
+DEF! A homeomorphism $h\colon U\rightarrow V$ between open subsets of $\mathbb R^n$ is called piecewise smooth if there is a triangulation of $U$ by linear simplices such that ... the restriction of $h$ to each simplex is a smooth embedding. 
+
+IDEA! Piecewise smooth maps are invariant under composition with ... diffeomorphisms on one side (post-composed), and piecewise linear homeomorphisms on the other (pre-composed). 
+
+> The composition of piecewise smooth (PD) maps is not in general PD, though, so this does not lead (by using "PD atlases") to a notion of PD manifold.
+
+Jacob Lurie has notes on Polyhedra and PL manifolds here: [Lecture17.pdf](http://www.math.harvard.edu/~lurie/287xnotes/Lecture17.pdf) from [“Algebraic L-theory and Surgery (287x)”](http://www.math.harvard.edu/~lurie/287x.html). Retrieved February 2, 2019.
 
 <https://en.wikipedia.org/wiki/Exotic_R4>
+
+## Week 3
+
+### Manifolds with boundaries
+
+Charts on a manifold with corners are homeomorphisms from the manifold to open sets in the upper Corner space. An atlas on a manifold with corners is a maximal collection of charts, whose domain's cover the manifold and whose change of coordinates are smooth in the ordinary euclidean sense. I don't see how this is related to the notion of piecewise smoothness
