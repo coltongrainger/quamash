@@ -4,7 +4,35 @@ author: Colton Grainger
 toc: false
 ---
 
-- [lecture notes](raw)
+Here are scattered notes I've compiled to keep pace with my lectures. The exposition matches that "As apeares in the wast booke", in the sense of
+
+> A rough account-book in which entries are made of all transactions at the time of their occurrence, to be posted afterwards into the more formal books of the set. [OED v4, waste-book]
+
+To emphasize, [Volpone; Or, The Fox, by Ben Jonson](https://www.gutenberg.org/cache/epub/4039/pg4039.txt).
+
+> SIR P: No. This is my diary,<br>
+> Wherein I note my actions of the day.<br>
+> 
+> PER: Pray you let's see, sir. What is here? <br>
+> [READS.] <br>
+> "Notandum, <br>
+> A rat had gnawn my spur-leathers; notwithstanding, <br>
+> I put on new, and did go forth: but first <br>
+> I threw three beans over the threshold. Item, <br>
+> I went and bought two tooth-picks, whereof one <br>
+> I burst immediatly, in a discourse <br>
+> With a Dutch merchant, 'bout ragion del stato. <br>
+> From him I went and paid a moccinigo, <br>
+> For piecing my silk stockings; by the way <br>
+> I cheapen'd sprats; and at St. Mark's I urined." <br>
+> 'Faith, these are politic notes! <br>
+> 
+> SIR P: Sir, I do slip <br>
+> No action of my life, but thus I quote it. <br>
+> 
+> PER: Believe me, it is wise! <br>
+> 
+> SIR P: Nay, sir, read forth.
 
 - course notes
 
@@ -47,4 +75,4 @@ The domain name quamash refers to *Cammassia quamash*, e.g., from the OED,
 
 > 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages...for the purpose of collecting quamash.
 
-The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). I have uploaded documents in [fair use](https://libguides.bc.edu/copyright/fairuse). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
+The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
