@@ -3,6 +3,7 @@ title: Modern Algebra 2
 author: Colton Grainger
 date: 2018-12-01
 nonumbering: true
+bibliography: /home/colton/coltongrainger.bib
 ---
 
 \setcounter{section}{-1}
@@ -19,6 +20,8 @@ nonumbering: true
 \providecommand{\abs}[1]{\left\lvert #1 \right\rvert}
 \renewcommand{\phi}{\varphi}
 \renewcommand{\emptyset}{\varnothing}
+\providecommand{\Hom}{\operatorname{Hom}}
+\providecommand{\End}{\operatorname{End}}
 
 ## MATH 6140 Syllabus 
 
@@ -138,9 +141,9 @@ prelim problem | topic | DF04 chapter
         - Hilbert basis theorem
     - Nullstellensatz
 
-## Week 1, Modules
+## Week 1
 
-### Intuition
+### Intuition and axioms
 
 From Herstein.
 
@@ -174,8 +177,6 @@ $R$, a ring | $M$, a module | also scalar multiplication
 
 (A fourth item could go on this list, but I'm not sure where. How do [groups with operators](https://en.wikipedia.org/wiki/Group_with_operators) resemble vector spaces? "A group with operators is also a mapping $\Omega\rightarrow\operatorname{End}_{\mathbf{Grp}}(G),$ where $\operatorname{End}_{\mathbf{Grp}}(G)$ is the set of group endomorphisms of $G$.")
 
-### Axioms
-
 We want *four conditions* for the (left) action of a ring $R$ on a abelian group $M$. With $m, m_1, m_2$ arbitrary in $M$ and $r, r_1, r_2$ arbitrary in $R$ it should be that
 
 1. $(r_1 +_R r_2).m = r_1.m +_M r_2.m$, e.g., acting then adding scalars in $R$ is the same as adding then acting;
@@ -183,14 +184,13 @@ We want *four conditions* for the (left) action of a ring $R$ on a abelian group
 3. $r.(m_1 +_M m_2) = r.m_1 +_M r.m_2$, e.g., acting then adding scalars in $M$ is the same as adding then acting.;
 4. $1_R.m = R$, forcing unital modules for the course to avoid pathologies (the categories are cleaner?).
 
-<!---
 EX: In $\sM_n(\RR)$, what's the significance of $\text{diag}(1, \ldots, 1, 0)$? ... It's idempotent.
+
 EX: Say $S$ is entire and $\phi \colon R \to S$ is a ring homomorphism. What is  $\phi(1_R)$? ... It's idempotent in $S$, so either $0$ or $1$.
---->
 
 Right modules are just left modules in a mirror. In particular, left and right modules coincide when the ring $R$ acting is commutative.
 
-### Basic examples
+### Examples
 
 To work with a category of modules, we have to fix a ring. Here are rings we'll commonly see acting on abelian groups.
 
@@ -217,8 +217,6 @@ Here's a safe place to practice "extending linearly".
 - $\ZZ$ has a single generator, so by induction and with distributivity, for each $n \in \ZZ$, we determine $n.a$.
 - Lastly, we check the ring axioms hold for $m, n \in \ZZ$ in cases by trichotomy.
 
-### About the scalars
-
 PROP: Suppose $M$ is a left $R$-module. Say $\phi \colon S \to R$ is a unital ring homomorphism. We have $M$ as an $S$-module by defining $S \times M \to M$ such that ... $s.m = \phi(s).m$.
 
 Here's a monomorphism between rings: $S \hookrightarrow R$.
@@ -243,6 +241,18 @@ IDEA: Suppose $M$ is an $R$-module and $I \triangleleft R$. Can we make $M$ into
 
 DEF: We say an $R$-module $M$ is annihilated by an ideal $I \triangleleft R$ when ... for all $m \in M$ and $i \in I$, $i.m = 0$.
 
+As an aside, Green posed:
+
+- How is one to construct an finite field of characteristic $p$? 
+- Why are there no finite fields of order $p^n m$ where $p$ is prime and $\gcd(p, m) = 1$. 
+    - Hint: count column vectors.
+
+To borrow the statement of the problem from <https://math.stackexchange.com/questions/1942821>. (See also <https://proofwiki.org/wiki/Field_of_Prime_Characteristic_has_Unique_Prime_Subfield>.)
+
+> Let $F$ be a field. The intersection of all subfields of $F$ is a subfield which is isomorphic to $\mathbb{Q}$ if $\operatorname{char}(F)=0$, and isomorphic to $F_p$ if $\operatorname{char}(F)=p$.
+
+Green argued: any field is a vector space over any of its subfields. We'll eventually show a field of order $p^n$ exists for all $p$ prime and $n \in \NN$, and that each field of order $p^n$ is unique.
+
 ### $F[x]$-modules
 
 EX: $\FF$-vector spaces $V$ equipped with a linear transformation $T \colon V \to V$ are the same as $F[x]$-modules, knowing ... how each constant polynomial $\lambda \in F \subset F[x]$ and the indeterminate $x$ act.
@@ -264,7 +274,7 @@ EX: $\FF$-vector spaces $V$ equipped with a linear transformation $T \colon V \t
         - $( p(x) + q(x) ).u = p(x).u + q(x).u$ (also visibly)
         - $1.u = u$ (from the vector space axioms). 
 
-NONEX! Consider the non-ring $C(\RR)$ endowed with pointwise addition and composition as multiplication. That $(\sin \theta + \cos \theta)^2$ and $\sin^2 \theta + \cos^2 \theta = 1$ are not identical functions violates which ring axiom? ... Distributivity of multiplication over addition.
+NONEX: Consider the non-ring $C(\RR)$ endowed with pointwise addition and composition as multiplication. That $(\sin \theta + \cos \theta)^2$ and $\sin^2 \theta + \cos^2 \theta = 1$ are not identical functions violates which ring axiom? ... Distributivity of multiplication over addition.
 
 So $F[x]$-modules encode vector spaces and their endomorphisms. Why do we care? Well, the machinery of undergraduate linear algebra cannot answer "are these two matrices similar?" With it, we could find traces, determinants, characteristic polynomials, and yet could not hope to determine 
 
@@ -282,21 +292,7 @@ We'll have to develop a sufficiently general theory for $R$-linear maps between 
 
 Sam asked: How far is it possible to demonstrate that $R[x]$-modules for a commutative ring $R$ have the same properties as $F[x]$-modules? (See <https://math.berkeley.edu/~gbergman/ug.hndts/mH113_D+F_exs.ps> for an alternative development of the ring of fractions, which seems to build machinery to work with $R$-linear combinations, dropping the condition that $F$ is a field.) TODO
 
-### Preview of finite fields
-
-Green posed:
-
-- How is one to construct an finite field of characteristic $p$? 
-- Why are there no finite fields of order $p^n m$ where $p$ is prime and $\gcd(p, m) = 1$. 
-    - Hint: count column vectors.
-
-To borrow the statement of the problem from <https://math.stackexchange.com/questions/1942821>. (See also <https://proofwiki.org/wiki/Field_of_Prime_Characteristic_has_Unique_Prime_Subfield>.)
-
-> Let $F$ be a field. The intersection of all subfields of $F$ is a subfield which is isomorphic to $\mathbb{Q}$ if $\operatorname{char}(F)=0$, and isomorphic to $F_p$ if $\operatorname{char}(F)=p$.
-
-Green argued: any field is a vector space over any of its subfields. We'll eventually show a field of order $p^n$ exists for all $p$ prime and $n \in \NN$, and that each field of order $p^n$ is unique.
-
-### Modules and duality
+### Duality
 
 After my office-mate Ulrich gave me a little introduction to the interplay between Gabor transforms and locally compact abelian groups, I think it's safe to quote [“module in nLab”](https://ncatlab.org/nlab/show/module). Retrieved January 26, 2019. “Motivation for and role of modules: generalized vector bundles”:
 
@@ -312,7 +308,7 @@ After my office-mate Ulrich gave me a little introduction to the interplay betwe
 
 ### Submodules
 
-SLOGAN! A submodule is a subgroup that's ... stable under the ring action.
+SLOGAN: A submodule is a subgroup that's ... stable under the ring action.
 
 Given a subset $N$ of a unital $R$-module $M$, we need only check 
 
@@ -321,7 +317,7 @@ Given a subset $N$ of a unital $R$-module $M$, we need only check
     - Since $R$ is a unital ring, closure under the ring action gives $-1.n = -n \in N$,
     - in which case $N$ is an abelian subgroup of $M$.
 
-EX! Consider a unital ring $R$ as a module over itself. What are the submodules of $R$? ... Exactly the ideals $\mathfrak{a}_i \subset R$.
+EX: Consider a unital ring $R$ as a module over itself. What are the submodules of $R$? ... Exactly the ideals $\mathfrak{a}_i \subset R$.
 
 In an $F[x]$-module, the $F$-subspaces are not necessarily $F[x]$-submodules. But here's an example in which the categorical subobjects coincide [@DF04, number 10.1.20].
 
@@ -333,7 +329,7 @@ This exhibits a rather stupid phenomenon. From the PCM [@GBLP08, section III.43]
 
 > Is every matrix diagonalizable? Over the reals, the answer is no for uninteresting reasons, since there need not even be any eigenvectors: for example, a rotation in the plane clearly has no eigenvectors. So let us restrict our attention to matrices and linear maps over the complex numbers.
 
-### Free modules, generated modules, coproducts
+### Generating sets of a module
 
 (It seems to me, after revision, that the arguments in this section are cyclic. I'll likely revisit the discussion of direct sums and direct products in Week 2 or 3.) Recall that extending linearly is just appealing to the universal property of free objects. Beaudry sets up the process as follows:
 
@@ -341,45 +337,45 @@ This exhibits a rather stupid phenomenon. From the PCM [@GBLP08, section III.43]
 
 To consider *generated submodules*, we'll pull a number of equivalent characterizations from <https://en.wikipedia.org/wiki/Generating_set_of_a_module> and [@Lan02, section III.3]:
 
-DEF! Let $M$ be a module over a ring $R$, let $S \subset M$. We say $N$ is the submodule of $M$ generated by $S$ (denoted $M\{S\}$ or $M\langle S\rangle$) when ... $N$ is the set of all $R$-linear combinations $$\sum_{x \in S} r_x x \subset M$$ of elements in $S$.
+DEF: Let $M$ be a module over a ring $R$, let $S \subset M$. We say $N$ is the submodule of $M$ generated by $S$ (denoted $M\{S\}$ or $M\langle S\rangle$) when ... $N$ is the set of all $R$-linear combinations $$\sum_{x \in S} r_x x \subset M$$ of elements in $S$.
 
-SLOGAN! A generating set $G$ of a module $M$ over a ring $R$ is ... a subset of $M$ such that the smallest submodule of $M$ containing $G$ is $M$ itself.
+SLOGAN: A generating set $G$ of a module $M$ over a ring $R$ is ... a subset of $M$ such that the smallest submodule of $M$ containing $G$ is $M$ itself.
 
-PROP! A subset $G$ generates an $R$-module $M$ iff there's a surjection ... $$\bigoplus_{g \in G} R \to M, \, r_g \mapsto r_g g.$$
+PROP: A subset $G$ generates an $R$-module $M$ iff there's a surjection ... $$\bigoplus_{g \in G} R \to M, \, r_g \mapsto r_g g.$$
 
-DEF! A module $M$ is said to be finitely generated (or of finite type, or finite over $R$) if ... it has a finite number of generators.
+DEF: A module $M$ is said to be finitely generated (or of finite type, or finite over $R$) if ... it has a finite number of generators.
 
 Here's a finite coproduct of modules. (And it should feel like Euclidean space.)
 
-EX! For a unital ring $R$, we can view the abelian group $\bigoplus_1^n R := R^n$ as a left $R$-module by ... defining $r.(a_1, \ldots, a_n) = (r.a_1, \ldots, r.a_n)$.
+EX: For a unital ring $R$, we can view the abelian group $\bigoplus_1^n R := R^n$ as a left $R$-module by ... defining $r.(a_1, \ldots, a_n) = (r.a_1, \ldots, r.a_n)$.
 
 Regarding "rank", we'll borrow definitions from <https://ncatlab.org/nlab/show/rank>.
 
-DEF! For a unital ring $R$ and an $R$-module $M$, we say that $M$ has a basis $\{e_i\} \subset M$ if ... for each $m \in M$ there's a unique set $\{\alpha_i\} \subset R$ such that $\alpha_i = 0$ for all but finitely many $i$ and $m = \sum_i \alpha_i e_i$.
+DEF: For a unital ring $R$ and an $R$-module $M$, we say that $M$ has a basis $\{e_i\} \subset M$ if ... for each $m \in M$ there's a unique set $\{\alpha_i\} \subset R$ such that $\alpha_i = 0$ for all but finitely many $i$ and $m = \sum_i \alpha_i e_i$.
 
-DEF! If an $R$-module $M$ has a basis, it's called ... a free module (over $R$). 
+DEF: If an $R$-module $M$ has a basis, it's called ... a free module (over $R$). 
 
-DEF! If the cardinality of a basis $\{e_i\}$ for an $R$-module $M$ is independent of choice of basis, then $\abs{\{e_i\}}$ called ... the rank of $M$ over $R$.
+DEF: If the cardinality of a basis $\{e_i\}$ for an $R$-module $M$ is independent of choice of basis, then $\abs{\{e_i\}}$ called ... the rank of $M$ over $R$.
 
-DEF! A subset $S$ of a module $M$ is linearly independent (over $R$) if whenever we have a linear combination $\sum_{x \in S} r_x x$ that's equal to zero, then ... $r_x = 0$ for all $x \in S$. [@Lan02, ch. III.3]
+DEF: A subset $S$ of a module $M$ is linearly independent (over $R$) if whenever we have a linear combination $\sum_{x \in S} r_x x$ that's equal to zero, then ... $r_x = 0$ for all $x \in S$. [@Lan02, ch. III.3]
 
 Green cautioned us not to assume we would always be working with invariant basis number rings, and, in the case that we are, to at least be wary of zero divisors when finding unique $R$-linear combinations. He mentioned that finding such combinations is easy when the ring $R$ is an integral domain, as then we can work in the field of fractions. (See also <https://math.stackexchange.com/questions/220186/ideas-of-linear-independence-in-the-context-of-modules-and-vector-spaces>.)
 
-EX! If we consider $\ZZ$ as a module over itself, what's a set that spans $\ZZ$ but does not contain a basis? ... $\{2,3\}$.
+EX: If we consider $\ZZ$ as a module over itself, what's a set that spans $\ZZ$ but does not contain a basis? ... $\{2,3\}$.
 
-EX! With $\ZZ$ as a module over itself, what's a linearly independent set that cannot be extended to a basis? ... $\{2\}$.
+EX: With $\ZZ$ as a module over itself, what's a linearly independent set that cannot be extended to a basis? ... $\{2\}$.
 
-EX! List the linearly independent subsets of $\ZZ/n\ZZ$ as a $\ZZ$-module. ... Just $\emptyset$.
+EX: List the linearly independent subsets of $\ZZ/n\ZZ$ as a $\ZZ$-module. ... Just $\emptyset$.
 
 ### Factor modules
 
 Lecture ended with "the standard yoga" of defining the quotient in the category of modules.
 
-IDEA! The ring action $r.(m +N)$ of $R$ on the equivalence classes $M/N$ is well defined iff .. $N$ is a submodule of $M$.
+IDEA: The ring action $r.(m +N)$ of $R$ on the equivalence classes $M/N$ is well defined iff ... $N$ is a submodule of $M$.
 
 *Proof.* 20 push-ups.
 
-PROP! Let $M$ be a module with submodule $N$. The canonical additive group homomorphism $$f \colon M \to M/N$$ is also a module homomorphism; it is universal in the category of ... homomorphisms of $M$ whose kernel contains $N$. [@Lan02, ch III.3]
+PROP: Let $M$ be a module with submodule $N$. The canonical additive group homomorphism $$f \colon M \to M/N$$ is also a module homomorphism; it is universal in the category of ... homomorphisms of $M$ whose kernel contains $N$. [@Lan02, ch III.3]
 
 We stated the rank-nullity theorem for maps tween finite dimensional vector spaces, then proved it by decategorifying the "ammo built up" in the definition of a quotient module.
 
@@ -387,17 +383,17 @@ We stated the rank-nullity theorem for maps tween finite dimensional vector spac
 
 To list definitions for algebras. (It's convenient to assume in this setting that both the rings and the ring homs are unital.)
 
-DEF! For a comm. unital ring $R$, an $R$-algebra is a unital ring $A$ with ... a unital ring hom $f \colon R \to A$ such that $f(R) \subset Z(A)$.
+DEF: For a comm. unital ring $R$, an $R$-algebra is a unital ring $A$ with ... a unital ring hom $f \colon R \to A$ such that $f(R) \subset Z(A)$.
 
 We can quotient by the kernel to obtain the working definition.
 
-SLOGAN! An $R$-algebra is a unital ring $A$ with ... $R$ at its center.
+SLOGAN: An $R$-algebra is a unital ring $A$ with ... $R$ at its center.
 
 Green also set out a (provisionally) equivalent definition.
 
-DEF! For a comm. unital ring $R$, an $R$-algebra is an $R$-module with ... an $R$-bilinear associative multiplication $$r.m \times s.n = (rs).mn.$$
+DEF: For a comm. unital ring $R$, an $R$-algebra is an $R$-module with ... an $R$-bilinear associative multiplication $$r.m \times s.n = (rs).mn.$$
 
-NONEX! Why is $\RR^3$ with a bilinear multiplication defined by the cross-product not an $\RR$-algebra? ... Because cross-products are not associative. 
+NONEX: Why is $\RR^3$ with a bilinear multiplication defined by the cross-product not an $\RR$-algebra? ... Because cross-products are not associative. 
 
 - The field $F \hookrightarrow F[x]$, so the PID $F[x]$ is an $F$-algebra.
 - For $G$ a finite group and $R$ a comm. unital ring, the *group ring* $RG$ is an $R$-algebra. 
@@ -413,9 +409,13 @@ Green asked: what's the dimension of the center of $\CC G$? Here's a hint from [
 
     (a) Each element $\sum r_gg \in RG$ commutes with $K$ if and only if $gK = Kg$ for all $g \in G$. The conjugation action of $G$ on its powerset $\sP(G)$ is an inner automorphism on elements, so the conjugacy class $\sK$ is fixed. Because $G$ is finite, conjugation permutes the elements in $\sK$. Thus $gKg^{-1} = K$. 
 
-    (b) \fore Suppose $\alpha = \sum a_iK_i$. Then $$\sum_i a_iK_i\sum_g r_g g = \sum_i \left( \sum_g r_g a_i K_i g \right) = \sum_i \left( \sum_g r_g a_i g K_i \right) = \sum_g r_g g\sum_i a_iK_i$$ so $\alpha \in Z$. \back Say $\alpha \in Z$. We can write $\alpha$ as the sum over conjugacy classes $\{k_{n_i}\}$ of elements in $G$: $$\alpha = \sum_i \left(\sum_{n_i} a_{n_i} k_{n_i}\right).$$ For each $i$, $G$ acts transitively on by conjugation on $\{k_{n_i}\}$. Fix $i$. For all $n_i$, transitivity of conjugation implies $a_{n_i} = a_i$ for some $a_i \in R$. We conclude $\alpha = \sum a_i K_i$.
+    (b) Suppose $\alpha = \sum a_iK_i$. Then $$\sum_i a_iK_i\sum_g r_g g = \sum_i \left( \sum_g r_g a_i K_i g \right) = \sum_i \left( \sum_g r_g a_i g K_i \right) = \sum_g r_g g\sum_i a_iK_i$$ so $\alpha \in Z$. 
+    
+        Conversely, say $\alpha \in Z$. We can write $\alpha$ as the sum over conjugacy classes $\{k_{n_i}\}$ of elements in $G$: $$\alpha = \sum_i \left(\sum_{n_i} a_{n_i} k_{n_i}\right).$$ For each $i$, $G$ acts transitively on by conjugation on $\{k_{n_i}\}$. Fix $i$. For all $n_i$, transitivity of conjugation implies $a_{n_i} = a_i$ for some $a_i \in R$. We conclude $\alpha = \sum a_i K_i$.
 
 ## Week 2
+
+### Categorification
 
 I'm now confused. Do we generalize to modules (from vector spaces and abelian groups) in order to *decategorify* or *categorify*? To give *proof* seems an act of decategorification:
 
@@ -438,8 +438,7 @@ Green mentioned that so far we're working in *concrete categories*. E.g., catego
 
 ### Homomorphisms
 
-DEF! By a module-homomorphism one means a map $f \colon M \to M'$ of one module into another (over the same ring $R$), which is ... an additive group homomorphism, and such that $f(rx) = rf(x)$ for all $r \in R$ and $x \in M$. [@Lan02, ch. III.1]
-
+DEF: By a module-homomorphism one means a map $f \colon M \to M'$ of one module into another (over the same ring $R$), which is ... an additive group homomorphism, and such that $f(rx) = rf(x)$ for all $r \in R$ and $x \in M$. [@Lan02, ch. III.1]
 
 To call attention to the parent ring of the category, we may also refer to module homomorphisms as $R$-linear maps, or $R$-homomorphisms. For example, it's necessary to distinguish $F$-linear and $F[x]$-linear maps. Say that $M, N$ are $F$-vector spaces and we're given $F$-linear endomorphisms 
 \begin{align*}
@@ -448,17 +447,90 @@ T &\colon N \to N, \, T(n) =: x.n
 \end{align*}
 In terms of $S$ and $T$, what should we expect from an $F[x]$-homomorphism $\phi \colon M \to N$? Green argued that $\phi$ will have to "intertwine the action of the ring", e.g., $$\phi((x^3 + x).m) = T^3(\phi(m)) + T(\phi(m)).$$ 
 
-PROP! If $\phi \colon M \to N$ is a module homomorphism between $F[x]$-modules $M$ and $N$ with endomorphisms $S$ and $T$ respectively, sketch the commutative square for $\phi$. ... $$\begin{CD} M @>{\phi}>> N\\ @VV{S}V @VV{T}V\\ M @>{\phi}>>N \end{CD}$$
+PROP: If $\phi \colon M \to N$ is a module homomorphism between $F[x]$-modules $M$ and $N$ with endomorphisms $S$ and $T$ respectively, sketch the commutative square for $\phi$. ... $$\begin{CD} M @>{\phi}>> N\\ @VV{S}V @VV{T}V\\ M @>{\phi}>>N \end{CD}$$
 
 (Knowing the square commutes, we might also see $M$ and $N$ sequences of vector spaces with $S$ and $T$ transition maps, such that $\phi$ is a homomorphism between the sequences.)
 
 Green mentioned that in algebra, inverses of bijective homomorphisms are usually homomorphisms in turn, whereas in $\mathsf{Top}$ the inverse of a continuous bijection need not be continuous. Whence:
 
-DEF! A module isomorphism is a ... bijective module  homomorphism (as the inverse function will always be a module hom).
+DEF: A module isomorphism is a ... bijective module  homomorphism (as the inverse function will always be a module hom).
 
-PROP! A module hom $\phi \colon M \to N$ between $F[x]$-modules with endomorphisms $S$ and $T$, is an isomorphism if and only if ... $\phi^{-1} \circ T \circ \phi = S$.
+PROP: A module hom $\phi \colon M \to N$ between $F[x]$-modules with endomorphisms $S$ and $T$, is an isomorphism if and only if ... $\phi^{-1} \circ T \circ \phi = S$.
+
+DEF: Say $M, N$ are $R$-modules. Declare $\Hom_R(M, N)$ to be ... the set $\{\phi \colon M \to N : \phi \text{ is $R$-linear}\}$.
+
+PROP: $\Hom_R(M, N)$ is an abelian group, where the sum of $f, g \in \Hom_R(M, N)$ is defined ... pointwise, $(f+g) \colon m \mapsto f(m) + g(m)$.
+
+PROP: Say $R$ is a commutative unital ring. $\Hom_R(M, N)$ is an $R$-module, where $r \in R$ acts on $f \in \Hom$ by ... $r.f \colon m \mapsto r.(f(m))$. 
+
+PROP: Under composition, if $f \in \Hom_R(M,N)$ and $g \in \Hom_R(N, L)$, then $g \circ f$ is in ... $\Hom_R(M, L)$, i.e., $R$-module homomorphisms are morphisms in the category $\mathsf{Rmod}$.
+
+PROP: How is $\End_R(M)$ a unital (perhaps non-commutative) ring? ... $\End_R(M)$ is an abelian group, with addition pointwise. Multiplication of $f, g \in \End_R(M)$ is given by function composition $gf = g \circ f$.
+
+PROP: Why, if $R$ is a commutative unital ring, is $\End_R(M)$ an $R$-algebra? ... We can map $\phi \colon R \to \End_R(M)$ by $\phi \colon r \mapsto r.\mathbf{1}_M$ into the center of $\End_R(M)$.
+
+From [@Lan02, section III.2]
+
+IDEA: We can also view $\Hom_R$ as a functor. Let $X, X', Y$ be in $\mathsf{Rmod}$ and let $X' \xrightarrow{f} X$ be an $R$-linear map. Then we get an induced homomorphism ... $$\Hom_R(f, Y) \colon \Hom_R(X, Y) \to \Hom_A(X', Y)$$ (reversing the arrow!) given by $g \mapsto g \circ f$.
+
+IDEA: To visualize $\Hom_R$ as a functor $$\Hom_R(f, Y) \colon \Hom_R(X, Y) \to \Hom_A(X', Y)$$ given by $g \mapsto g \circ f$, consider ... $$X' \xrightarrow{f} X \xrightarrow{g} Y.$$
 
 ### Isomorphism theorems
 
+> I know nothing more contemptible in a Writer than the Character of a Plagiary; which he here fixes at a venture, and this, not for a Passage, but a whole Discourse, taken out from another Book only *mutatis mutandis.* [1710 Swift Tale Tub (ed. 5) Author's Apology]
 
+IDEA: (Isomorphism theorems in $\mathsf{Rmod}$) Given the corresponding isomorphisms in $\mathsf{Ab}$, just check that ... they're $R$-linear.
 
+PROP: Say $N \le M$ as $R$-modules and we define $\pi_N \colon x \to x + N$. There's a bijection between ... $\{ \text{submodules $N$ of $M$} \} \leftrightsquigarrow \{\text{isom classes of $R$-hom images of $M$}\}$.
+
+PROP: (Rmod iso I) Say $N \le M$ as $R$-modules and $\pi_N \colon x \to x + N$. We have a short exact sequence ... $0 \to N \to M \xrightarrow{\pi} M/N \to 0$.
+
+To mash up Stange's lecture with Lang's exposition [@Lan02, section III.1]
+
+THM: (Rmod iso II) Let $N$ and $N'$ be two submodules of a module $M$. Then $N + N'$ is also a submodule, and we have an isomorphism ... $$N/(N \cup N') \cong (N + N')/N'.$$
+
+*Proof.* Noting the quotient is well defined, the map $\phi \colon N \to (N + N')/N'$ such that $n \mapsto n + N'$ is [isomorphism of abelian groups](alg1#isomorphism-theorems). Let $r \in R$. Does $\phi$ intertwine the action of the ring? Yes, because $$\phi(r.n) = r.n + N' = r.(n + N') = r.\phi(n).$$
+
+THM: (Rmod iso III) If $M \supset M' \supset M''$ are modules, then we needn't ever think about ... $(M/M'')/(M'/M'')$, because it's isomorphic to $M/M'$.
+
+*Proof.* The map $\phi \colon M/M' \to M/M''$ such that $m + M' \mapsto m + M''$ is an [additive homomorphism](alg1#isomorphism-theorems) with $\ker \phi = M'/M''$. To verify $\phi$ is $R$-linear, take any $r \in R$ and observe $\phi(r.(m + M')) = r.m + M'' = r.(\phi(m + M'))$.
+
+THM: (Rmod iso IV) If $f \colon M \to M'$ is a module-homomorphism, and $N'$ is a reference submodule of $M'$, then $f^{-1}(N')$ is a submodule of $M$ and we have a canonical injective homomorphism ... $\bar{f} \colon M/f^{-1}(N') \to M'/N'$, which is an isomorphism if $f$ is surjective.
+
+Sam ended class with a brainteaser (which Wise happened answer on [mathoverflow in 2009](https://mathoverflow.net/a/47)).
+
+> Can a vector space over an infinite field be a finite union of proper subspaces?
+
+## Week 3
+
+EX: (Decategorification) Let $k$ be a field, let $V$, $W$ be finite $k$-vector spaces. Why should $$\dim(V + W) = \dim(V) + \dim(W) - \dim(V \cap W)?$$ ... Note $$\frac{V + W}{V} = \frac{W}{V \cap W}$$ and apply rank-nullity.
+
+Again, I asked "what's categorification?" Green remarked, to start, it takes *skill*. He gave us a combinatorial example.
+
+EX: (Categorification) By argument with red and blue balls, why is $$2^n = \sum_{k=1}^n {n \choose k}?$$ ... There are $2^n$ distinct arrangements of $n$ balls (either blue or red), which can be found by counting arrangements contiguously from a ratio of $0:5$ red/blue balls up to $5:0$.
+
+### Sums and linear combinations
+
+Green asked us to "show some constraint" when summing. (But, my dude, can't we sum two elements from a product of infinitely many abelian groups?)
+
+IDEA: Infinite linear combinations often should be accompanied with (what? why?) ... a topology, to determine whether a sequence of partial sums converges.
+
+DEF: Consider a finite collection $\{N_i\}_1^k$ of submodules of $M$. The sum $N_1 + \ldots + N_k$ is defined to be ... the submodule $\{n_1 + \ldots + n_k : n_i \in N_i\}$.
+
+IDEA: The sum of submodules is analogous to ... the span of a set of vectors.
+
+- We won't (necessarily) be able to find a linearly independent spanning set.
+- Moreover, a module $M$ need not have a minimal generating set.
+- Lastly, if a module *does* have a minimal generating set, then perhaps another exists with different cardinality.
+    - TODO *How*?
+
+PROP: Let $N\subset M$ be $R$-modules. Then $RN$ is the smallest submodule of $M$ containing $N$. Give two constructions of $RN$. ... Either form $R$-linear combinations or intersect all submodules containing $N$.
+
+EX: For $R \in \mathsf{CRing}$, $R$ is a module over itself. What are the cyclic submodules of $R$? ... They're the principal ideals of $R$.
+
+PROP: If $R \in \mathsf{CRing}$ is seen as a module over itself, then $x$ in $R$ is a unit iff ... $R = R\{x\}$ (i.e., $\{x\}$ is a generating set for $R$).
+
+construction | called what in $\mathsf{Gp}, \mathsf{Ab}$ | application
+--- | --- | ---
+products | direct products | power series
+coproducts | direct sums | polynomials
