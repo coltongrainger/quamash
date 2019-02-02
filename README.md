@@ -4,9 +4,9 @@ author: Colton Grainger
 toc: false
 ---
 
-Here are scattered notes I've compiled to keep pace with my lectures. The exposition matches that "As apeares in the wast booke", in the sense of
+Here are scattered notes I've compiled to keep pace with lectures. The exposition matches that "As apeares in the wast booke", in the sense of
 
-> A rough account-book in which entries are made of all transactions at the time of their occurrence, to be posted afterwards into the more formal books of the set. [OED v4, waste-book]
+> A rough account-book in which entries are made of all transactions at the time of their occurrence, to be posted afterwards into the more formal books of the set. [OED v4, entry for "waste-book"]
 
 - course notes
 

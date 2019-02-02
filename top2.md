@@ -249,3 +249,13 @@ DEF: The objects and morphisms of $\mathrm{Quiv}$ are ... the functors $G\colon 
 Here's another example from [“Functor category”](https://en.wikipedia.org/wiki/Functor_category). English Wikipedia. Retrieved January 26, 2019.
 
 EX: Any group $G$ can be considered as a one-object category in which every morphism is invertible. The category of all $G$-sets is the same as ... the functor category $\mathrm{Set}^G$.
+
+## Week 3
+
+### Presentations
+
+Here's a partial list of arguments TODO.
+
+- Chain maps induce maps on homology.
+- The product of fundamental groups is the fundamental group of the product.
+- Flesh out an example to go with <https://mathoverflow.net/questions/35397/infinite-direct-products-and-derived-subgroups>.
