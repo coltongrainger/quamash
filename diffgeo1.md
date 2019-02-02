@@ -233,9 +233,9 @@ Wednesday's lecture assumed *finite dimensional normed vector spaces*, presumabl
   - classes of continuously differentiable functions by way of the existence of partials
   - class $C^k$ diffeomorphisms, also local diffeomorphisms
 
-DEF! We say a bijection $F \colon U \to V$ between open sets $U$ and $V$ in $\RR^n$ is a $C^k$-diffeomorphism when ... both $F$ and $F^{-1}$ are $k$-times continuously differentiable.
+DEF: We say a bijection $F \colon U \to V$ between open sets $U$ and $V$ in $\RR^n$ is a $C^k$-diffeomorphism when ... both $F$ and $F^{-1}$ are $k$-times continuously differentiable.
 
-DEF! If $F$ is bijective and has a smooth inverse map, it is called ... a ($C^\infty$) diffeomorphism.
+DEF: If $F$ is bijective and has a smooth inverse map, it is called ... a ($C^\infty$) diffeomorphism.
 
 
 - What's a diffeomorphism of class $C^k$ that's not $C^{k+1}$? 
@@ -247,9 +247,9 @@ DEF! If $F$ is bijective and has a smooth inverse map, it is called ... a ($C^\i
 - Can you give an example of a non-homeomorphism between $X$ and $Y$  in $\mathsf{Top}$ that's a continuous bijection? 
   - Try the identity set map out of a discrete topology onto any strictly coarser topology.
 
-DEF! We say a map $F \colon U \subset \RR^m \to \RR^n$ is a local diffeomorphism when ... for all points $p$ in open $U$, there's a neighborhood $p \in U_p \subset U$ such that the restriction $F\vert_{U_p}$ is a diffeomorphism.
+DEF: We say a map $F \colon U \subset \RR^m \to \RR^n$ is a local diffeomorphism when ... for all points $p$ in open $U$, there's a neighborhood $p \in U_p \subset U$ such that the restriction $F\vert_{U_p}$ is a diffeomorphism.
 
-THM! Say $U \subset \RR^n$ and $V \subset \RR^m$ are open and $F \colon U \to V$ is a diffeomorphism. Why must $m =n$? ... Specifically, $F$ is a homeomorphism. Apply the domain invariance theorem.
+THM: Say $U \subset \RR^n$ and $V \subset \RR^m$ are open and $F \colon U \to V$ is a diffeomorphism. Why must $m =n$? ... Specifically, $F$ is a homeomorphism. Apply the domain invariance theorem.
 
 ### Banach spaces and the smooth chain rule
 
@@ -329,19 +329,19 @@ By assumption, the map $a \mapsto Df(a)$ is in $C^{p-1}(U, L(E,F))$ and $b \maps
 
 ### Inverse function theorem
 
-SLOGAN! If the derivative is invertible, the mapping is ... locally invertible. [@HH15, ch. 2.10]
+SLOGAN: If the derivative is invertible, the mapping is ... locally invertible. [@HH15, ch. 2.10]
 
-THM! (Short version) If a mapping $f$ is continuously differentiable, and its derivative is invertible at some point $x_0$, then ... $f$ is locally invertible, with differentiable inverse, in some neighborhood of the points $f(x_0)$.
+THM: (Short version) If a mapping $f$ is continuously differentiable, and its derivative is invertible at some point $x_0$, then ... $f$ is locally invertible, with differentiable inverse, in some neighborhood of the points $f(x_0)$.
 
-THM! (Clelland) Say $f \colon U \subset \RR^n \to \RR^n$ is smooth, with $x_0 \in U$ at which the approx $Df(x_0)$ is invertible. It follows: (i) there's a connected neighborhood $V$ about $f(x_0)$ with a smooth map $g \colon V \to U$ that $f$ inverts; (ii) there's a connected neighborhood $B \subset g(V)$ where $f$ restricts to a diffeomorphism $f\vert_B$.
+THM: (Clelland) Say $f \colon U \subset \RR^n \to \RR^n$ is smooth, with $x_0 \in U$ at which the approx $Df(x_0)$ is invertible. It follows: (i) there's a connected neighborhood $V$ about $f(x_0)$ with a smooth map $g \colon V \to U$ that $f$ inverts; (ii) there's a connected neighborhood $B \subset g(V)$ where $f$ restricts to a diffeomorphism $f\vert_B$.
 
-PROP! The derivative of the identity is the identity, so in the statement of the inverse function theorem for a map $f$ with local inverse $g$, at a point $y$ in the domain of $g$, the chain rule implies ... $[Dg(y)] = [Df(g(y))]^{-1}$.
+PROP: The derivative of the identity is the identity, so in the statement of the inverse function theorem for a map $f$ with local inverse $g$, at a point $y$ in the domain of $g$, the chain rule implies ... $[Dg(y)] = [Df(g(y))]^{-1}$.
 
-IDEA! To prove the inverse function theorem, we will show that if the derivative of $f$ satisfies some Lipschitz condition, then ... Kantorovich's theorem applies, and Newton's method can be used to find the inverse function. [@HH15, ch. 2.10]
+IDEA: To prove the inverse function theorem, we will show that if the derivative of $f$ satisfies some Lipschitz condition, then ... Kantorovich's theorem applies, and Newton's method can be used to find the inverse function. [@HH15, ch. 2.10]
 
-CORO! Say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. How can we describe $F$ as a morphism in $\mathsf{Top}$? ... $F$ maps open sets to open sets.
+CORO: Say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. How can we describe $F$ as a morphism in $\mathsf{Top}$? ... $F$ maps open sets to open sets.
 
-CORO! Again, say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. If $F$ is injective, then (this should feel like a universal property) ... $F \colon U \to F(U)$ is a diffeomorphism.
+CORO: Again, say $F \colon U \to \RR^n$ is a smooth function whose Jacobian determinant is nonzero at every point in $U$. If $F$ is injective, then (this should feel like a universal property) ... $F \colon U \to F(U)$ is a diffeomorphism.
 
 <!---
 ### Implicit function theorem
@@ -362,7 +362,7 @@ The present goal is to set out properties of topological manifolds (intuitively 
 
 ### Other structures
 
-Here're results from a *very* sloppy survey of "non-smooth" structures on topological manifolds, mostly inspired by <https://mathoverflow.net/questions/123472/are-there-non-compact-non-smoothable-manifolds>:
+Here're results from a *very* sloppy survey of "non-smooth" structures on topological manifolds, mostly inspired by <https://mathoverflow.net/questions/123472/>
 
 > > Are there any non-compact, non-smoothable manifolds?
 >
@@ -370,36 +370,36 @@ Here're results from a *very* sloppy survey of "non-smooth" structures on topolo
 > 
 > A small open neighborhood of anything in the Euclidean space does admit a smooth structure:)) – Serge Lvovski Mar 3 '13 at 15:31
 >
-> eek! what has happened to me? :P – Dylan Wilson Mar 3 '13 at 22:53
+> eek: what has happened to me? :P – Dylan Wilson Mar 3 '13 at 22:53
 
 From [Non-smoothable manifold. Yu. I. Rudyak](http://www.encyclopediaofmath.org/index.php?title=Non-smoothable_manifold&oldid=17941)
 
-IDEA! A smoothing of a piecewise-linear manifold $X$ is ... a piecewise-linear isomorphism $f \colon M \to X$ where $M$ is a smooth manifold.
+IDEA: A smoothing of a piecewise-linear manifold $X$ is ... a piecewise-linear isomorphism $f \colon M \to X$ where $M$ is a smooth manifold.
 
 From <https://math.stackexchange.com/questions/846972/triangulations-pl-triangulations-and-related-conecpts>.
 
-DEF! A triangulation of a topological space $X$ is ... a simplicial complex $K$, homeomorphic to $X$, together with a homeomorphism $h \colon K \to X$.
+DEF: A triangulation of a topological space $X$ is ... a simplicial complex $K$, homeomorphic to $X$, together with a homeomorphism $h \colon K \to X$.
 
-PROP! Each smooth manifold has a triangulation, even a ... piecewise smooth triangulation.
+PROP: Each smooth manifold has a triangulation, even a ... piecewise smooth triangulation.
 
-DEF! A piecewise linear map from a simplicial complex $K$ to $\mathbb{R}^n$ is a map such that ... for some subdivision $K'$ of $K$, $f$ is (affine) linear on each simplex of $K'$.
+DEF: A piecewise linear map from a simplicial complex $K$ to $\mathbb{R}^n$ is a map such that ... for some subdivision $K'$ of $K$, $f$ is (affine) linear on each simplex of $K'$.
 
 In reply to <https://mathoverflow.net/questions/27656/piecewise-smooth-manifolds>
 
 > We know about the existence of topological (Top), differentiable (Diff) and piecewise-linear (PL) manifolds, and such things that, say, in four dimensions PL=Diff, but PL is not equal to Top. The question is: do there exist piecewise-smooth manifolds? Are they equivalent to something in some dimensions?
 
-DEF! A homeomorphism $h\colon U\rightarrow V$ between open subsets of $\mathbb R^n$ is called piecewise smooth if there is a triangulation of $U$ by linear simplices such that ... the restriction of $h$ to each simplex is a smooth embedding. 
+DEF: A homeomorphism $h\colon U\rightarrow V$ between open subsets of $\mathbb R^n$ is called piecewise smooth if there is a triangulation of $U$ by linear simplices such that ... the restriction of $h$ to each simplex is a smooth embedding. 
 
-IDEA! Piecewise smooth maps are invariant under composition with ... diffeomorphisms on one side (post-composed), and piecewise linear homeomorphisms on the other (pre-composed). 
+IDEA: Piecewise smooth maps are invariant under composition with ... diffeomorphisms on one side (post-composed), and piecewise linear homeomorphisms on the other (pre-composed). 
 
 > The composition of piecewise smooth (PD) maps is not in general PD, though, so this does not lead (by using "PD atlases") to a notion of PD manifold.
 
 Jacob Lurie has notes on Polyhedra and PL manifolds here: [Lecture17.pdf](http://www.math.harvard.edu/~lurie/287xnotes/Lecture17.pdf) from [“Algebraic L-theory and Surgery (287x)”](http://www.math.harvard.edu/~lurie/287x.html). Retrieved February 2, 2019.
 
-<https://en.wikipedia.org/wiki/Exotic_R4>
-
 ## Week 3
 
 ### Manifolds with boundaries
 
-Charts on a manifold with corners are homeomorphisms from the manifold to open sets in the upper Corner space. An atlas on a manifold with corners is a maximal collection of charts, whose domain's cover the manifold and whose change of coordinates are smooth in the ordinary euclidean sense. I don't see how this is related to the notion of piecewise smoothness
+Also in reply to <https://mathoverflow.net/questions/27656/piecewise-smooth-manifolds>:
+
+> Charts on a manifold with corners are homeomorphisms from the manifold to open sets in the upper Corner space. An atlas on a manifold with corners is a maximal collection of charts, whose domain's cover the manifold and whose change of coordinates are smooth in the ordinary euclidean sense. I don't see how this is related to the notion of piecewise smoothness  – Daniel Barter Jun 10 '10 at 8:55
