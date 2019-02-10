@@ -534,3 +534,8 @@ construction | called what in $\mathsf{Gp}, \mathsf{Ab}$ | application
 --- | --- | ---
 products | direct products | power series
 coproducts | direct sums | polynomials
+
+## Week 4
+
+Taking a pause.
+

@@ -259,3 +259,7 @@ Here's a partial list of arguments TODO.
 - Chain maps induce maps on homology.
 - The product of fundamental groups is the fundamental group of the product.
 - Flesh out an example to go with <https://mathoverflow.net/questions/35397/infinite-direct-products-and-derived-subgroups>.
+
+## Week 4
+
+Taking a pause. Chris convinced me to use Notability on the iPad, so I'm trying it out.
