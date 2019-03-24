@@ -1,14 +1,17 @@
 ---
-title: "HOWTO: Submit Homework in Exceptional Circumstances"
+title: HOWTO Submit Homework in Exceptional Circumstances
 author: Colton Grainger
 date: 2019-03-23
 ---
 
-I have three requirements if you are submitting homework to me in exceptional circumstances.
+## Requirements
+
+I have **three requirements** if you are submitting homework to me in exceptional circumstances.
 
 1. Please let me know if you have an exceptional circumstance **before** the homework deadline. 
 
     - I.e., email me either well ahead of time or *as soon as it becomes apparent* that you have an exceptional circumstance.
+    - I **do not** need to see a letter or written excuse; I will take your word for it.
 
 2. Please **label the header** of your assignment with
 
