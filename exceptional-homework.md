@@ -35,6 +35,3 @@ macOS | <https://en.wikipedia.org/wiki/List_of_PDF_software#macOS>
 Microsoft Windows | <https://en.wikipedia.org/wiki/List_of_PDF_software#Microsoft_Windows>
 Android | <https://en.wikipedia.org/wiki/List_of_PDF_software#Mobile>
 Linux | <https://en.wikipedia.org/wiki/List_of_PDF_software#Linux_and_Unix>
-
-THANK YOU!
-
