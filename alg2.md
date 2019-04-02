@@ -539,3 +539,8 @@ coproducts | direct sums | polynomials
 
 Taking a pause.
 
+## Week 11
+
+Green recommended Hilton and Stammbach's *A Course in Homological Algebra* and corrected me: 
+
+> It was Leray, *not* Thom, at Oflag XVIIA.
