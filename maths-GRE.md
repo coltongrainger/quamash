@@ -10,10 +10,6 @@ revised: 2018-07-19
 \newcommand{\CC}{\mathbf{C}}
 \newcommand{\eps}{\varepsilon}
 
-These are question/answer pairs I used to memorize definitions and basic operations for the mathematics subject GRE. (Here's the accompanying [tab separated text file](/2016-10-27-maths-GRE-flashcards.txt) for importing into spaced repetition software, e.g., mnemosyne.)
-
-Disclaimer: there are *many typos*.
-
 To take motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Would Rather Toss a Ball](https://www.scottaaronson.com/writings/athletes.html)*:
 
 > "As with any other ‘sport,’ basketball players need to stay in shape through regular ‘practice meets’," explains Gary Richardson, a "coach" of one of the camp’s teams. "You don’t want your bicep neurons to go weak."
@@ -21,6 +17,10 @@ To take motivation from Scott Aaronson's *[Trigonometry? No Way: These Teens Wou
 > Ferguson, who started throwing a ball when he was only three years old, describes the camp in almost reverential terms. "At my high school," he says, "I was ostracized as a jock, teased and humiliated because I didn’t enjoy inverting matrices or grinding out Taylor series expansions. But here, I’ve finally found friends who share my passion for basketball."
 >
 > Don’t think, though, that life is all court and hoop for these precocious young wizards. Like anyone else, they need to unwind—except that when they do, their favored recreations are even odder than their eccentric passion. Rather than playing high-stakes Scrabble, beguiling one another with Goedelian logic puzzles, or composing poems without using the letter ‘e,’ these teens regale each other with anecdotes about beer and sex.
+
+Update (2019-05-27): The rest of this page is **garbage**. A much beefier syllabus (worth looking at) is available from the [Chennai Mathematical Institute](https://www.cmi.ac.in//admissions/syllabus.php).
+
+These are question/answer pairs I used for rote memorization before the mathematics subject GRE. Here's the accompanying [tab separated text file](/2016-10-27-maths-GRE-flashcards.txt) for spaced repetition, e.g., mnemosyne. I used Steven A. Leduc's [Cracking the GRE Mathematics Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727).
 
 ## Functions
 
