@@ -32,9 +32,7 @@ The markdown files are licensed in the [public domain (CC-0)](http://creativecom
 
 ### Disclaimer
 
-If not for lack of time, these could have been [shorter](https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter), less [vulgar](https://www.colorado.edu/sccr/honor-code), and presented as [smaller files](https://www.reddit.com/r/ipad/comments/1dw9fs/can_i_get_smaller_annotated_pdfs_out_of/).
-
-Presently, however, the exposition is "As apeares in the wast booke", for example, as in *Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt)*:
+If not for lack of time, these could have been [shorter](https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter), less [vulgar](https://www.colorado.edu/sccr/honor-code), and presented as [smaller files](https://www.reddit.com/r/ipad/comments/1dw9fs/can_i_get_smaller_annotated_pdfs_out_of/). Presently, however, the exposition is "As apeares in the wast booke", i.e., 
 
 ```
 PER: Pray you let's see, sir. What is here?
@@ -61,3 +59,4 @@ PER: Believe me, it is wise!
 
 SIR P: Nay, sir, read forth.
 ```
+[Ben Jonson, *Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt)*]
