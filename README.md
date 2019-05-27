@@ -4,7 +4,7 @@ author: Colton Grainger
 toc: false
 ---
 
-Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled either to keep pace with lectures, or in retrospective.
+Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace with lectures.
 
 - coursework
 
@@ -24,13 +24,13 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled either to ke
 
 ## About
 
-I am available at [`colton.grainger@colorado.edu`](mailto:colton.grainger@colorado.edu?subject=notes\%20on\%20quamash\%20wiki) to respond to questions, comments, complaints, and corrections.
-
 1. *Any mistakes are my own.*
 
-1. These could have been [shorter](https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter), less [vulgar](https://www.colorado.edu/sccr/honor-code), and presented as [smaller files](https://www.reddit.com/r/ipad/comments/1dw9fs/can_i_get_smaller_annotated_pdfs_out_of/).
+1. Please send questions, comments, complaints, and corrections to [`colton.grainger@colorado.edu`](mailto:colton.grainger@colorado.edu?subject=notes\%20on\%20quamash\%20wiki).
 
-1. The exposition is "As apeares in the wast booke", in the sense of 
+1. If not for lack of time, these could have been [shorter](https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter), less [vulgar](https://www.colorado.edu/sccr/honor-code), and presented as [smaller files](https://www.reddit.com/r/ipad/comments/1dw9fs/can_i_get_smaller_annotated_pdfs_out_of/).
+
+1. The exposition is "As apeares in the wast booke", in the sense of *Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt)*
 
     > PER: Pray you let's see, sir. What is here? <br>
     > [READS.] <br>
@@ -52,14 +52,16 @@ I am available at [`colton.grainger@colorado.edu`](mailto:colton.grainger@colora
     > PER: Believe me, it is wise! <br>
     > 
     > SIR P: Nay, sir, read forth.
-    > 
-    > [Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt)]
 
-## License
+### License
 
-The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). The `pdf` files are included under "fair use" and include work that is not my own, which the handwriting/labelling should make clear. The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
+The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0), the `pdf` files are also CC0, uploaded in [fair use](https://libguides.bc.edu/copyright/fairuse). 
 
-## See also
+### Colophon
+
+The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
+
+### See also
 
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
 - Michael Goerz's [Studies](https://michaelgoerz.net/studies/)
