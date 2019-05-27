@@ -18,15 +18,20 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
         - [syllabus](top2) (wiki)
         - [omnibus](2019-05-11-top2-omnibus.pdf) (`pdf`, 86 MB) 
 
-    - [MATH 6130 Algebra 1](alg1) (wiki)
-    - [MATH 6210 Topology 1](top1) (wiki)
-    - [APPM 8500 StatOptML seminar](https://github.com/coltongrainger/fy19soml) (git repo)
+    - MATH 6130 Algebra 1
+        - [week-by-week](alg1) (wiki, incomplete)
+    - MATH 6210 Topology 1
+        - [week-by-week](top1) (wiki, incomplete)
+    - APPM 8500 StatOptML seminar
+        - [talk slides](https://github.com/coltongrainger/fy19soml) (git repo)
 
-    - [MATH 428 Numerical Analysis](num) (wiki)
+    - MATH 428 Numerical Analysis
+        - [topics](num) (wiki)
 
 - teaching
 
-    - [MATH 1300 Calculus 1](math1300) (wiki)
+    - MATH 1300 Calculus 1
+        - [week-by-week](math1300) (wiki)
 
 ### About
 
