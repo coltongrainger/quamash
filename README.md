@@ -36,11 +36,6 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
 
     - MATH 1300 Calculus 1
         - [week-by-week](math1300) (wiki)
-        - [duckduckgo refcard](duckduckgo) (wiki)
-        - ["personal information management"](pim) (quotes)
-
-    - Mathematics Subject GRE
-        - [refcard](maths-GRE) (wiki, mnemosyne file)
 
 ### About
 

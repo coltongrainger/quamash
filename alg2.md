@@ -23,7 +23,8 @@ bibliography: /home/colton/coltongrainger.bib
 \providecommand{\Hom}{\operatorname{Hom}}
 \providecommand{\End}{\operatorname{End}}
 
-## MATH 6140 Syllabus 
+
+## MATH 6140 syllabus 
 
 Instructor: [Dr. Richard Green](https://math.colorado.edu/~rmg/)
 
