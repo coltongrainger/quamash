@@ -17,11 +17,15 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
     - MATH 6220 Topology 2 
         - [syllabus](top2) (wiki)
         - [omnibus](2019-05-11-top2-omnibus.pdf) (`pdf`, 86 MB) 
+    - Probability reading course
+        - [syllabus](prob1) (wiki)
 
     - MATH 6130 Algebra 1
-        - [week-by-week](alg1) (wiki, incomplete)
+        - [week-by-week](alg1) (partial wiki)
     - MATH 6210 Topology 1
-        - [week-by-week](top1) (wiki, incomplete)
+        - [week-by-week](top1) (partial wiki)
+    - MATH 6310 Analysis 1
+        - [week-by-week](ana1) (incomplete wiki)
     - APPM 8500 StatOptML seminar
         - [talk slides](https://github.com/coltongrainger/fy19soml) (git repo)
 
@@ -32,6 +36,11 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
 
     - MATH 1300 Calculus 1
         - [week-by-week](math1300) (wiki)
+        - [duckduckgo refcard](duckduckgo) (wiki)
+        - ["personal information management"](pim) (quotes)
+
+    - Mathematics Subject GRE
+        - [refcard](maths-GRE) (wiki, mnemosyne file)
 
 ### About
 
