@@ -20,7 +20,7 @@ revised: 2018-07-19
 
 These are question/answer pairs I used for rote memorization before the mathematics subject GRE. Here's the accompanying [tab separated text file](/2016-10-27-maths-GRE-flashcards.txt) for spaced repetition, e.g., mnemosyne. I used Steven A. Leduc's [Cracking the GRE Mathematics Subject Test](https://www.amazon.com/Cracking-GRE-Mathematics-Subject-Test/dp/0375429727).
 
-Update (2019-05-27): The rest of this page is quite **outdated**. Consider looking at [these syllabi](https://www.cmi.ac.in//admissions/syllabus.php) for admissions at the Chennai Mathematical Institute.
+Update (2019-05-27): The rest of this page is quite **outdated**. Consider perhaps looking at [these syllabi](https://www.cmi.ac.in//admissions/syllabus.php) from the Chennai Mathematical Institute.
 
 ## Functions
 
