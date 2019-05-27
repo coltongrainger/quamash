@@ -8,9 +8,9 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
 
 - coursework
 
-    - [MATH 6140 Algebra 2](2019-05-11-alg2-omnibus.pdf) (`pdf`, 111 MB)
-    - [MATH 6230 Differential Geometry 1](2019-05-11-diffgeo1-omnibus.pdf) (`pdf`, 124 MB)
-    - [MATH 6220 Topology 2](2019-05-11-top2-omnibus.pdf) (`pdf`, 86 MB)
+    - [MATH 6140 Algebra 2](2019-05-11-alg2-omnibus.pdf) (`pdf`, 111 MB), [syllabus](alg2.md) (wiki)
+    - [MATH 6230 Differential Geometry 1](2019-05-11-diffgeo1-omnibus.pdf) (`pdf`, 124 MB), [syllabus](diffgeo1.md) (wiki)
+    - [MATH 6220 Topology 2](2019-05-11-top2-omnibus.pdf) (`pdf`, 86 MB), [syllabus](top2.md) (wiki)
 
     - [MATH 6130 Algebra 1](alg1) (wiki)
     - [MATH 6210 Topology 1](top1) (wiki)
