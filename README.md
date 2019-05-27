@@ -26,7 +26,7 @@ Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled to keep pace
 
 Any mistakes are my own. Please send questions, comments, complaints, and corrections to [colton.grainger@colorado.edu](mailto:colton.grainger@colorado.edu?subject=notes\%20on\%20quamash\%20wiki).
 
-### License and colophon
+### License
 
 The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). The `pdf` files are also CC-0, but uploaded in [fair use](https://libguides.bc.edu/copyright/fairuse). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
 
