@@ -4,28 +4,7 @@ author: Colton Grainger
 toc: false
 ---
 
-Here are scattered notes I've compiled to keep pace with lectures. The exposition is "As apeares in the wast booke", in the sense of Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt):
-
-> PER: Pray you let's see, sir. What is here? <br>
-> [READS.] <br>
-> "Notandum, <br>
-> A rat had gnawn my spur-leathers; notwithstanding, <br>
-> I put on new, and did go forth: but first <br>
-> I threw three beans over the threshold. Item, <br>
-> I went and bought two tooth-picks, whereof one <br>
-> I burst immediatly, in a discourse <br>
-> With a Dutch merchant, 'bout ragion del stato. <br>
-> From him I went and paid a moccinigo, <br>
-> For piecing my silk stockings; by the way <br>
-> I cheapen'd sprats; and at St. Mark's I urined." <br>
-> 'Faith, these are politic notes! <br>
-> 
-> SIR P: Sir, I do slip <br>
-> No action of my life, but thus I quote it. <br>
-> 
-> PER: Believe me, it is wise! <br>
-> 
-> SIR P: Nay, sir, read forth.
+Here are *rough*, *gargantuan*, and *unfocused* notes I've compiled either to keep pace with lectures, or in retrospective.
 
 - coursework
 
@@ -43,25 +22,47 @@ Here are scattered notes I've compiled to keep pace with lectures. The expositio
 
     - [MATH 1300 Calculus 1](math1300)
 
-## Contributing
-
-Either fork the [repository on github](https://github.com/coltongrainger/quamash) and open a pull-request, or [email me](mailto:colton.grainger@colorado.edu?subject=notes\%20on\%20quamash\%20wiki).
-
 ## About
 
-The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
+I am available at [`colton.grainger@colorado.edu`](mailto:colton.grainger@colorado.edu?subject=notes\%20on\%20quamash\%20wiki) to respond to questions, comments, complaints, and corrections.
 
-The domain name quamash refers to *Cammassia quamash*, e.g., 
+1. *Any mistakes are my own.*
 
-> 1814 *Lewis & Clarke's Exp.* The Chopunnish are now dispersed in villages...for the purpose of collecting quamash.
+1. These could have been [shorter](https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter), less [vulgar](https://www.colorado.edu/sccr/honor-code), and presented as [smaller files](https://www.reddit.com/r/ipad/comments/1dw9fs/can_i_get_smaller_annotated_pdfs_out_of/).
+
+1. The exposition is "As apeares in the wast booke", in the sense of 
+
+    > PER: Pray you let's see, sir. What is here? <br>
+    > [READS.] <br>
+    > "Notandum, <br>
+    > A rat had gnawn my spur-leathers; notwithstanding, <br>
+    > I put on new, and did go forth: but first <br>
+    > I threw three beans over the threshold. Item, <br>
+    > I went and bought two tooth-picks, whereof one <br>
+    > I burst immediatly, in a discourse <br>
+    > With a Dutch merchant, 'bout ragion del stato. <br>
+    > From him I went and paid a moccinigo, <br>
+    > For piecing my silk stockings; by the way <br>
+    > I cheapen'd sprats; and at St. Mark's I urined." <br>
+    > 'Faith, these are politic notes! <br>
+    > 
+    > SIR P: Sir, I do slip <br>
+    > No action of my life, but thus I quote it. <br>
+    > 
+    > PER: Believe me, it is wise! <br>
+    > 
+    > SIR P: Nay, sir, read forth.
+    > 
+    > [Act 4. Scene 4.1, [Volpone](https://www.gutenberg.org/cache/epub/4039/pg4039.txt)]
+
+## License
+
+The markdown files are licensed in the [public domain (CC-0)](http://creativecommons.org/about/cc0). The `pdf` files are included under "fair use" and include work that is not my own, which the handwriting/labelling should make clear. The site is served with [gitit](https://github.com/jgm/gitit/), released under the [GPL](http://www.aaronsw.com/weblog/000360). The font is [Fira Sans](https://github.com/mozilla/Fira), and the mathematics is rendered with [MathJax](https://www.mathjax.org/).
 
 ## See also
 
-- Jones and Teevan's [*Personal Information Management*](https://www.washington.edu/uwpress/search/books/JONPEP.html) ([selected quotes](pim))
-- W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
-- Joachim Breitner's [MitScriebWiki](http://mitschriebwiki.nomeata.de/)
-- Issa Rice's [Updates](https://issarice.wordpress.com/)
 - Michael Pacer's [Qualifying Exam Materials](https://mpacer.org/qualifying-exam-materials/#/qualifying-exam-written-portion/)
 - Michael Goerz's [Studies](https://michaelgoerz.net/studies/)
+- W. Caleb McDaniel's [academic wiki](http://wiki.wcaleb.rice.edu/)
 - <https://learning.subwiki.org>
 
